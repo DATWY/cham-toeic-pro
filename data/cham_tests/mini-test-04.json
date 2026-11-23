@@ -22,9 +22,9 @@
     {
       "part": 1,
       "range": "1",
-      "audio": "https://storage.googleapis.com/estudyme/dev/2022/06/26/26525500.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/57f0465a6b5c.mp3",
       "images": [
-        "https://storage.googleapis.com/estudyme/legacy-data/kslearning/images/941522750-1620189460389-part1-4.png"
+        "https://datwy.github.io/cham-toeic-media-bank-2/img/299e3fb335a0.webp"
       ],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript: </b><br />\n(A) The frames are being hung on the wall.<br />\n(B) The men are talking to each other on the phone.<br />\n(C) Documents have been spread out on the desk.<br />\n(D) One man is pointing something on the board.</p>",
@@ -62,9 +62,9 @@
     {
       "part": 1,
       "range": "2",
-      "audio": "https://storage.googleapis.com/estudyme/dev/2022/06/26/51242855.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/2f74ef22f76c.mp3",
       "images": [
-        "https://storage.googleapis.com/estudyme/legacy-data/kslearning/images/972377013-1620189484782-part1-5.png"
+        "https://datwy.github.io/cham-toeic-media-bank-2/img/b41830eb084f.webp"
       ],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript: </b><br />\n(A) A woman is shopping for some food.<br />\n(B) Some clothes have been hung on racks.<br />\n(C) A sales clerk is reaching into a box.<br />\n(D) Some bags have been placed on the floor.</p>",
@@ -102,9 +102,9 @@
     {
       "part": 1,
       "range": "3",
-      "audio": "https://storage.googleapis.com/estudyme/dev/2022/06/26/42434772.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/0b8c225b6dae.mp3",
       "images": [
-        "https://storage.googleapis.com/estudyme/legacy-data/kslearning/images/430979198-1620189500963-part1-6.png"
+        "https://datwy.github.io/cham-toeic-media-bank-2/img/8309e7f7e056.webp"
       ],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript: </b><br />\n(A) Some people are having their hair cut.<br />\n(B) Some people are trimming branches.<br />\n(C) Some people are sitting around the table.<br />\n(D) Some people are putting on aprons.</p>",
@@ -142,7 +142,7 @@
     {
       "part": 2,
       "range": "4",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.13.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/803a043ff751.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nBenson Lawn Care has excellent customer service.<br />\n(A) What a great company logo!<br />\n(B) I&rsquo;ve read about it on the Internet.<br />\n(C) At the customer service desk.</p>",
@@ -176,7 +176,7 @@
     {
       "part": 2,
       "range": "5",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.14.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/8364555db213.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nHow far from your house is Sharper Mall?<br />\n(A) Well, I&rsquo;d like to go shopping.<br />\n(B) From noon until 1 o&rsquo;clock.<br />\n(C) Let me check a map quickly.</p>",
@@ -210,7 +210,7 @@
     {
       "part": 2,
       "range": "6",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.15.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-2/audio/b1a0f3959d89.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nWhen do you expect to hire a permanent assistant?<br />\n(A) It&rsquo;ll be permanently installed.<br />\n(B) I&rsquo;m waiting for approval.<br />\n(C) The help is much appreciated.</p>",
@@ -244,7 +244,7 @@
     {
       "part": 2,
       "range": "7",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.16.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-2/audio/eea8f9da4aa4.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nThe mayor is giving a speech today in the town square.<br />\n(A) I&rsquo;m glad you decided to give a lecture.<br />\n(B) I heard it&rsquo;ll cover education funding.<br />\n(C) If I have enough time.</p>",
@@ -278,7 +278,7 @@
     {
       "part": 2,
       "range": "8",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.17.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-2/audio/e2838452e9c6.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nWho created the notice that&rsquo;s hanging in the front window?<br />\n(A) A sign was put up there?<br />\n(B) I registered to receive e-mail notifications.<br />\n(C)We can hang them next to the door.</p>",
@@ -312,7 +312,7 @@
     {
       "part": 2,
       "range": "9",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.18.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/514ceb2d7cff.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nWhy haven&rsquo;t you unpacked your belongings yet?<br />\n(A)Because the price tag was removed.<br />\n(B)I was meeting with a colleague.<br />\n(C) No, we haven&rsquo;t done it yet.</p>",
@@ -346,7 +346,7 @@
     {
       "part": 2,
       "range": "10",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.19.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/7676cc383a16.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nHas the singer Jeff Bloom agreed to perform at our charity event?<br />\n(A) Cash donations are preferred.<br />\n(B) Some musicians were playing along the street.<br />\n(C) It appears that he can participate.</p>",
@@ -380,7 +380,7 @@
     {
       "part": 2,
       "range": "11",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.20.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/17d170e5c05d.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nThe heat in the office can be turned down, can&rsquo;t it?<br />\n(A) I&rsquo;m not sure who can adjust it.<br />\n(B) Yes, both of these sheets.<br />\n(C) The rack is a bit too high.</p>",
@@ -414,7 +414,7 @@
     {
       "part": 2,
       "range": "12",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.21.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/48d8bb73b532.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nWe need to send out the wedding invitations for Ms. Lang and her fianc&eacute;.<br />\n(A) The ceremony is in Hall A.<br />\n(B) No, Mr. Cho is not invited.<br />\n(C) I totally forgot about that.</p>",
@@ -448,7 +448,7 @@
     {
       "part": 2,
       "range": "13",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.22.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/078664d0d5ba.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nWhat&rsquo;s the problem with the flyers we printed for the seminar?<br />\n(A) There is a stack of printer paper over there.<br />\n(B) Everything seems fine.<br />\n(C) I&rsquo;m flying into Madrid for the seminar.</p>",
@@ -482,7 +482,7 @@
     {
       "part": 2,
       "range": "14",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.23.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-2/audio/dbee2abaac4a.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nDo you think we should buy a new refrigerator?<br />\n(A) Our current one still works well.<br />\n(B) Across from the break room.<br />\n(C) No, I think they&rsquo;re next to the stoves.</p>",
@@ -516,7 +516,7 @@
     {
       "part": 2,
       "range": "15",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.24.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/5205815e5d0e.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nShould I order a filing cabinet with a single drawer or one with three?<br />\n(A) Extra storage is always helpful.<br />\n(B) In the top drawer.<br />\n(C)Most of the documents are in there.</p>",
@@ -550,7 +550,7 @@
     {
       "part": 2,
       "range": "16",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0302.25.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/7a6e496a8a3e.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\n<b>Transcript:</b><br />\nWhile Peter is editing the slide show, we should rehearse the rest of the presentation.<br />\n(A) Why don&rsquo;t you go first?<br />\n(B) Everyone found it relaxing.<br />\n(C) The editor likes the manuscript.</p>",
@@ -584,7 +584,7 @@
     {
       "part": 3,
       "range": "17-19",
-      "audio": "https://storage.googleapis.com/estudyme/dev/2022/06/26/60253404.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/27c4eaefcb80.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><b>Transcript</b><br>\nW: I just read an annual report for Mandy’s division and their sales have almost doubled since she became the manager of her sales team.<br>\nM: I agree. I think she is really talented in terms of motivating her staff. I heard she encourages everyone to share their sales strategies at a weekly meeting.<br>\nW: Yes, I think that helps new sales representatives to improve their skills a lot. Maybe we should <u>ask other managers to follow Mandy’s example.</u></p>",
@@ -676,7 +676,7 @@
     {
       "part": 3,
       "range": "20-22",
-      "audio": "https://storage.googleapis.com/estudyme/dev/2022/06/26/76124185.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-2/audio/f8ce0f4a005b.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><b>Transcript</b><br>\nW: Hello, This is Angela from Summerville Health Clinic. Your sales person dropped some information on one of your new products, the Easy Thermo?<br>\nM: Yes, we started supplying these to many pediatric hospitals and they all loved it. Easy Thermo looks friendly and is easy to operate. So, children are less scared of medical procedures, not to mention its accuracy.<br>\nW: Well, our staff would like to see the product and try them on ourselves. Could you send us samples?<br>\nM: Sorry, ma’am. We don’t give out sample equipment, but I would be glad to visit and show you the product in person. I think the short demonstration will answer any questions you might have.</p>",
@@ -768,7 +768,7 @@
     {
       "part": 3,
       "range": "23-25",
-      "audio": "https://storage.googleapis.com/estudyme/dev/2022/06/26/32943390.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/8a4e09f9524b.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><b>Transcript</b><br />\nM: Hi, Stella. I&rsquo;m having trouble getting the sales figures for the international market. I need those numbers for my presentation tomorrow.<br />\nW: Those records should be in the company online database. Don&rsquo;t you have the password to use it?<br />\nM: I do, but for some reasons, it&rsquo;s not working this morning.<br />\nI already talked with someone in the technical support. But, it&rsquo;s not fixed yet and I&rsquo;m in a hurry.<br />\nW: Well, I should have that data in my computer. I can email them to you. Let me know if you haven&rsquo;t received them in a few minutes.</p>",
@@ -860,7 +860,7 @@
     {
       "part": 3,
       "range": "26-28",
-      "audio": "https://storage.googleapis.com/estudyme/prod/2022/11/13/17024422.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/2ce82880dbe5.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p>Transcript:</p>\n\n<p>W: I really appreciate your dropping by, Mr. Gardner. I want to show you exactly what&rsquo;s wrong with my apartment so that everything can be repaired.</p>\n\n<p>M: I came here as soon as I received your voicemail message, Ms. Woodrow. You indicated that there&rsquo;s a leaky pipe in the kitchen.</p>\n\n<p>W: Actually, that&rsquo;s happening in the bathroom. In the kitchen, the problem is that the light keeps blinking on and off, and it&rsquo;s driving me crazy.</p>\n\n<p>M: All right. Well, let me take a look at the pipe first since that&#39;s likely to be the more serious of the two issues.</p>",
@@ -952,7 +952,7 @@
     {
       "part": 3,
       "range": "29-31",
-      "audio": "https://storage.googleapis.com/estudyme/dev/2022/06/26/14074396.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/348a0582aa11.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><b>Transcript</b><br />\nW: Hey, Kendrick. Have you heard the news that we finally purchased digital microscopes in our laboratory?<br />\nM: Really? That is good news. I&rsquo;m a little surprised though since those microscopes are rather expensive and I thought we already spent our budget for this year.<br />\nW: I guess the administration has finally realized the importance of having high-quality equipment at a teaching hospital like ours.<br />\nM: True. With these advanced and improved images, it would be much easier to train our medical students from this semester.</p>",
@@ -1044,9 +1044,9 @@
     {
       "part": 3,
       "range": "32-34",
-      "audio": "https://storage.googleapis.com/estudyme/dev/2022/06/26/33146474.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/28df951e98bc.mp3",
       "images": [
-        "https://storage.googleapis.com/estudyme/dev/2022/06/26/32317059.jpg"
+        "https://datwy.github.io/cham-toeic-media-bank-2/img/edfc64cc295f.webp"
       ],
       "passageHtml": "",
       "transcriptHtml": "<p><b>Transcript</b><br />\nW: Hey, George, Hi Scott. We&rsquo;re thinking about selling some of the new natural tiles that have been introduced to the market. Do you think our customers will like the ceramic ones?<br />\nM1: Well, I heard they&rsquo;ve been sold in other locations and customers actually favor them over other types of tiles.<br />\nM2: They are supposed to be environmentally friendly and good for your health, too.<br />\nM1: But aren&rsquo;t the ceramic ones are much more expensive than the regular tiles?<br />\nM2: True, but they are usually cheaper than the natural marble ones.<br />\nW: Some of our customers would like to have affordable construction materials. There is no point in bringing them in if our customers won&rsquo;t like them.<br />\nM1: I&rsquo;m sure the manufacturer has a wide selection of new tiles. Why don&rsquo;t we take a look at its website?<br />\nW: Good idea. There should be some new ceramic tiles with a reasonable price range.</p>",
@@ -1139,9 +1139,9 @@
     {
       "part": 3,
       "range": "35-37",
-      "audio": "https://storage.googleapis.com/estudyme/dev/2022/06/26/33103370.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-2/audio/ea2e1ca844be.mp3",
       "images": [
-        "https://storage.googleapis.com/estudyme/dev/2022/06/26/75904673.jpg"
+        "https://datwy.github.io/cham-toeic-media-bank-2/img/fba70c74986e.webp"
       ],
       "passageHtml": "",
       "transcriptHtml": "<p><b>Transcript</b><br />\nW: Hi, the radio announcer at your station just mentioned the details of a play that is about to open next week. I&rsquo;m calling because he gave the wrong information about it.<br />\nM: Oh, thanks for calling. We used the information from an official invitation that the production sent us. Something must have changed after that.<br />\nW: Well, there was a last-minute change and we had to move the performance to Marcus Theater. The time is still at seven though.<br />\nM: I&rsquo;ll make sure that the announcer will give an update right away with the information about the new venue. Thanks and good luck on the opening night.</p>",
@@ -1234,7 +1234,7 @@
     {
       "part": 4,
       "range": "38-40",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0404.06.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/97c65fa15b92.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\nTranscript:<br />\nIn business news, local firm Digital Solutions has announced plans to release the latest version of its mobile phone application, SpeakVid. The application allows users to record, edit, and share short video messages. It has become hugely popular, resulting in a sharp rise in the developer&rsquo;s stock prices. The upgrade is anticipated among consumers and investors alike. The general public is excited for the application&rsquo;s updated interface, while business analysts predict that the upgrade will expand the firm&rsquo;s market base. SpeakVid has attracted national media coverage already, and experts believe that interest will increase next month when the new version of the application comes out.</p>",
@@ -1326,7 +1326,7 @@
     {
       "part": 4,
       "range": "41-43",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0404.07.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/3d57d363fa41.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\nTranscript:<br />\nI&rsquo;ve got an announcement for all IT staff members. I know you&rsquo;ve had many requests for technical assistance from other departments. There were more problems than expected following our recent merger with Fairfield Financial. I&rsquo;m happy to inform you, though, that new staff members have been hired for our team . . . um, five in total. Once they start working in October, your workload should be significantly reduced. But keep in mind that we still need to update the customer database software this month. The marketing team isn&rsquo;t able to access some records, so it needs to be done as soon as possible. This means that you&rsquo;ll be working long hours over the next few weeks, but the end is in sight.</p>",
@@ -1418,7 +1418,7 @@
     {
       "part": 4,
       "range": "44-46",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0404.08.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/1363dc2806e6.mp3",
       "images": [],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\nTranscript:<br />\nI&rsquo;m calling on behalf of Music Central in Newark, New Jersey. I apologize for this last-minute change, but I need to update the order that my store put in yesterday for a bulk shipment of electronics. As of now, the order is for 20 portable Kentmoore speakers, 25 wireless Conquest microphones, and 25 Pure Sound noise-canceling headphones. However, we need 10 more Kentmoore speakers than were originally requested. If it&rsquo;s not too late to add items to our order, please do so and bill us for the additional costs. Also, I&rsquo;d appreciate it if you could e-mail me an updated invoice at purchasing@soundequip.com this afternoon.</p>",
@@ -1510,9 +1510,9 @@
     {
       "part": 4,
       "range": "47-49",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0404.09.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-2/audio/ba27b8b7bfa8.mp3",
       "images": [
-        "https://storage.googleapis.com/estudyme/dev/2022/06/26/52425736.jpg"
+        "https://datwy.github.io/cham-toeic-media-bank-2/img/2e255818de0f.webp"
       ],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\nTranscript:<br />\nThank you for participating in this focus group. The designer of the product . . . uh, Greg Henderson . . . wanted to welcome you personally, but he&rsquo;s dealing with a problem at our factory. Anyway, the goal today is to get your feedback on our newest product, the Flow S60. We are confident that there is a strong demand for it. In a recent survey about upcoming purchases, a large percentage of respondents indicated that they plan to buy this type of device soon. Next to air conditioners, it was the most popular choice. However, we&rsquo;re concerned that our model may be difficult to operate. So to start, please give your opinion about the most recent draft of the user instructions. I&rsquo;ll hand this document out now . . .</p>",
@@ -1605,9 +1605,9 @@
     {
       "part": 4,
       "range": "50-52",
-      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kslearning/sound/hacker3_0404.10.mp3",
+      "audio": "https://datwy.github.io/cham-toeic-media-bank-1/audio/656c15111cd4.mp3",
       "images": [
-        "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/images/9557567_1611222639962.png"
+        "https://datwy.github.io/cham-toeic-media-bank-2/img/2216988bf9e2.webp"
       ],
       "passageHtml": "",
       "transcriptHtml": "<p><br />\nTranscript:<br />\nLooking for a quick and affordable way to see the sights in Boston? Then hop on the Bean Bus! Our bus stops at historical sites throughout the city. To purchase a ticket, drop by our company&rsquo;s information booth in the lobby of the Stanford Hotel. Tickets usually cost $20, but we will be offering a 10 percent discount during the month of May to celebrate our company&rsquo;s fifth anniversary. For route information, visit www.beanbus.com. Please note that the bus will not stop at the site between Boston Harbor and Bunker Hill from June 25 until July 15 due to ongoing road construction in the area. Explore Boston with the Bean Bus today!</p>",

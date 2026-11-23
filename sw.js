@@ -1,4 +1,4 @@
-const CACHE_NAME = "neuro-toeic-pro-v22.3";
+const CACHE_NAME = "neuro-toeic-pro-v22.4";
 const CHAM_OFFLINE_CACHE = "cham-toeic-offline-v1";
 const CHAM_JSON_CACHE = "cham-toeic-json-bank-v1";
 const APP_SHELL = [
@@ -11,7 +11,7 @@ const APP_SHELL = [
   "./styles/layout.css?v=21.0",
   "./styles/components.css?v=19.5",
   "./styles/cham-hub.css?v=21.0",
-  "./styles/v21-remake.css?v=22.3",
+  "./styles/v21-remake.css?v=22.4",
   "./data.js?v=19.0",
   "./js/part7Data.js?v=19.0",
   "./js/part56Data.js?v=19.0",
@@ -20,9 +20,9 @@ const APP_SHELL = [
   "./js/toeicMaterialsData.js?v=19.3",
   "./data/cham_tests/test-au-vao-01.json",
   "./manifest.json",
-  "./js/main.js?v=22.3",
+  "./js/main.js?v=22.4",
   "./js/dashboardPractice.js?v=22.1",
-  "./js/chamTestCenter.js?v=22.3",
+  "./js/chamTestCenter.js?v=22.4",
   "./js/materialsCenter.js?v=22.1",
   "./js/toeicVocabData.js?v=19.0",
   "./js/toeicStrategyData.js?v=19.4",
@@ -214,7 +214,11 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) {
-    if (url.hostname.includes("chamtoeic.edu.vn") || url.hostname.includes("storage.googleapis.com")) {
+    if (
+      url.hostname.includes("datwy.github.io") ||
+      url.hostname.includes("chamtoeic.edu.vn") ||
+      url.hostname.includes("storage.googleapis.com")
+    ) {
       event.respondWith(
         caches.open(CHAM_OFFLINE_CACHE).then(async (cache) => {
           const cached = await cache.match(req.url);
@@ -232,10 +236,11 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Media files: Cache-First with HTTP 206 Range support for smooth offline audio seeking
-  if (url.pathname.includes("/media/")) {
+  // Media files (local /media/ OR same-origin GitHub Pages media repos /cham-toeic-media-*): Cache-First with HTTP 206 Range support
+  if (url.pathname.includes("/media/") || url.pathname.includes("/cham-toeic-media-")) {
+    const targetCacheName = url.pathname.includes("/cham-toeic-media-") ? CHAM_OFFLINE_CACHE : CACHE_NAME;
     event.respondWith(
-      caches.open(CACHE_NAME).then(async (cache) => {
+      caches.open(targetCacheName).then(async (cache) => {
         const cached = await cache.match(url.href, { ignoreSearch: true });
         if (cached) {
           return req.headers.get("range") ? handleRangeRequest(req, cached) : cached;
