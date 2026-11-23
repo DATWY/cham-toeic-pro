@@ -1,0 +1,943 @@
+{
+  "id": "cham_part_4_test_09",
+  "sourceId": "613f25be65d71f3a51f6255b",
+  "slug": "part-4-test-09",
+  "title": "Đề lẻ Part 4 · Test 9",
+  "collection": "ĐỀ LẺ LISTENING",
+  "testType": "part",
+  "duration": 15,
+  "totalQuestions": 30,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_4": 30
+  },
+  "groups": [
+    {
+      "part": 4,
+      "range": "71-73",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0401.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<b> Transcript: </b> <br> Hello, this is Sam Booth calling from Crimson Realty. <b> Q1 This message is for Jordan King. I’m happy to say that someone is interested in making an offer on your house. Q2 I would like to stop by with the potential buyer this Thursday to discuss the sale in more detail. </b> Please let me know what time on Thursday you’re available and I’ll arrange a time with the potential buyer. <b> Q3 In the meantime, I suggest you clean up the house so it looks as impressive as possible for Thursday.</b> Thank you.",
+      "explanationHtml": "<b> Transcript: </b> <br> Xin chào, đây là Sam Booth gọi từ Crimson Realty. <b> Q1 Tin nhắn này dành cho Jordan King. Tôi rất vui khi nói rằng có người đã đưa ra lời đề nghị mua căn nhà của anh. Q2 Tôi và người khách mua nhà muốn ghé qua chỗ anh vào thứ Năm tuần này để thảo luận chi tiết hơn về việc mua bán. </b> Vui lòng cho tôi biết anh có thể có mặt lúc mấy giờ vào thứ Năm và tôi sẽ sắp xếp thời gian với khách. <b> Q3 Trong lúc chờ đợi, tôi khuyên anh nên dọn dẹp nhà cửa để trông ấn tượng nhất có thể cho cuộc hẹn ngày thứ Năm.</b> Cảm ơn anh.",
+      "questions": [
+        {
+          "num": 71,
+          "stem": "Who most likely is the speaker?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A potential buyer"
+            },
+            {
+              "choice": "B",
+              "text": "A bank teller"
+            },
+            {
+              "choice": "C",
+              "text": "A real estate agent"
+            },
+            {
+              "choice": "D",
+              "text": "An architect"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 72,
+          "stem": "Why would the speaker like to arrange a meeting?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To discuss a sale"
+            },
+            {
+              "choice": "B",
+              "text": "To renew a contract"
+            },
+            {
+              "choice": "C",
+              "text": "To draw up a budget"
+            },
+            {
+              "choice": "D",
+              "text": "To introduce his co-worker"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 73,
+          "stem": "What does the speaker suggest doing?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Updating a website"
+            },
+            {
+              "choice": "B",
+              "text": "Accepting an offer"
+            },
+            {
+              "choice": "C",
+              "text": "Making the house neat"
+            },
+            {
+              "choice": "D",
+              "text": "Lowering a price"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi hàm ý (Intent)"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "74-76",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0402.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<b> Transcript: </b> <br> Good morning, radio listeners. This is Tim Lester with your Morning Newsflash. <b> Q1 An hour ago, there was a serious collision at the intersection of Smith Avenue and Main street.</b> Traffic is extremely congested and it’s almost impossible to get anywhere downtown. <b> Q2 As a result, tonight’s soccer match has been delayed by two hours to allow spectators time to make it to the stadium.</b> Oh, also remember, during half time there will be a hot dog eating contest. <b> Q3 The winner will receive an airline ticket to Hawaii.</b>",
+      "explanationHtml": "<b> Transcript: </b> <br> Chào buổi sáng các thính giả đài. Đây là Tim Lester với bản tin buổi sáng. <b> Q1 Một giờ trước, đã xảy ra một vụ va chạm nghiêm trọng tại nút giao giữa Đại lộ Smith và Phố Chính.</b> Giao thông cực kỳ tắc nghẽn và gần như không thể di chuyển đến bất kỳ đâu trong trung tâm thành phố. <b> Q2 Do đó, trận bóng đá tối nay đã bị hoãn hai tiếng để khán giả có thời gian đến sân vận động.</b> À, cũng xin nhắc nhở rằng, trong thời gian nghỉ giữa hiệp sẽ có cuộc thi ăn xúc xích. <b> Q3 Người chiến thắng sẽ nhận được một vé máy bay tới Hawaii.</b>",
+      "questions": [
+        {
+          "num": 74,
+          "stem": "What is the news report mainly about?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A weather forecast"
+            },
+            {
+              "choice": "B",
+              "text": "A road construction project"
+            },
+            {
+              "choice": "C",
+              "text": "A traffic accident"
+            },
+            {
+              "choice": "D",
+              "text": "A cooking contest"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 75,
+          "stem": "What event has been delayed?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A sports game"
+            },
+            {
+              "choice": "B",
+              "text": "A live concert"
+            },
+            {
+              "choice": "C",
+              "text": "An opening ceremony"
+            },
+            {
+              "choice": "D",
+              "text": "An orientation"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 76,
+          "stem": "What will the winner of the eating contest receive?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A concert ticket"
+            },
+            {
+              "choice": "B",
+              "text": "A gift certificate"
+            },
+            {
+              "choice": "C",
+              "text": "A cash prize"
+            },
+            {
+              "choice": "D",
+              "text": "A plane ticket"
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Hành động tiếp theo"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "77-79",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0403.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<b> Transcript: </b> <br> <b> Q1 Welcome, spectators. Please listen to a short announcement before the match begins. Q2 As of today, you are no longer allowed to bring food and drinks from outside into the stadium. Please adhere to this new regulation</b>. However, there are concession stands selling a variety of delicious snacks and beverages at reasonable prices. <b> Q3 In addition, 5 percent of the proceeds made from concession stands will be donated to a charity that helps children with disabilities.</b> Thank you.",
+      "explanationHtml": "<b> Transcript: </b> <br> <b> Q1 Xin chào quý khán giả. Hãy nghe một thông báo ngắn trước khi trận đấu bắt đầu. Q2 Kể từ hôm nay, các bạn không còn được phép mang đồ ăn và đồ uống từ bên ngoài vào sân vận động nữa. Hãy tuân thủ quy định mới này</b>. Tuy nhiên, bên trong sân cũng có nhiều gian hàng nhượng quyền bán nhiều loại đồ ăn nhẹ và đồ uống thơm ngon với giá cả hợp lý. <b> Q3 Ngoài ra, 5 phần trăm daonh thu từ các gian hàng nhượng quyền sẽ được quyên góp cho tổ chức từ thiện giúp đỡ trẻ em khuyết tật.</b> Cảm ơn các bạn.",
+      "questions": [
+        {
+          "num": 77,
+          "stem": "Where is the announcement being made?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "At a campground"
+            },
+            {
+              "choice": "B",
+              "text": "At a movie theater"
+            },
+            {
+              "choice": "C",
+              "text": "At a concert hall"
+            },
+            {
+              "choice": "D",
+              "text": "At a sports stadium"
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 78,
+          "stem": "What is being announced?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A new restriction"
+            },
+            {
+              "choice": "B",
+              "text": "Operating hours"
+            },
+            {
+              "choice": "C",
+              "text": "Price changes"
+            },
+            {
+              "choice": "D",
+              "text": "A discount policy"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 79,
+          "stem": "What is said about some proceeds?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "They will be used for a worthy cause."
+            },
+            {
+              "choice": "B",
+              "text": "They will be put toward updating facilities."
+            },
+            {
+              "choice": "C",
+              "text": "They will be saved for a special event."
+            },
+            {
+              "choice": "D",
+              "text": "They will be awarded to some spectators."
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "80-82",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0404.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transcript: </b><br />\n<b>Q1 The National Weather Service has issued a tornado warning for Allison County beginning at 4:00 P.M. and lasting until 8:00 P.M. Q2 Therefore, all after-school activities in Allison County have been canceled. Q3 Local residents are urged to take shelter in a basement or windowless room and wait until the tornado has passed.</b> Please stay tuned for more updates.</p>",
+      "explanationHtml": "<b> Transcript: </b> <br> <b> Q1 Cơ quan Thời tiết Quốc gia đã đưa ra cảnh báo lốc xoáy cho Quận Allison bắt đầu vào lúc 4 giờ chiều và kéo dài đến 8 giờ tối. Q2 Vì vậy, tất cả các hoạt động sau giờ học ở Quận Allison đã bị hủy bỏ. Q3 Người dân địa phương được khuyến cáo nên trú ẩn trong tầng hầm hoặc trong các phòng không có cửa sổ và đợi cho đến khi cơn lốc xoáy đi qua.</b> Vui lòng theo dõi để biết thêm thông tin cập nhật.",
+      "questions": [
+        {
+          "num": 80,
+          "stem": "What is the speaker discussing?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A new curriculum"
+            },
+            {
+              "choice": "B",
+              "text": "A weather warning"
+            },
+            {
+              "choice": "C",
+              "text": "A quarterly report"
+            },
+            {
+              "choice": "D",
+              "text": "A travel advisory"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 81,
+          "stem": "What has been canceled?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Television programs"
+            },
+            {
+              "choice": "B",
+              "text": "Graduation ceremonies"
+            },
+            {
+              "choice": "C",
+              "text": "Educational programs"
+            },
+            {
+              "choice": "D",
+              "text": "Fundraising events"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 82,
+          "stem": "What are local residents advised to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Update their anti-virus software"
+            },
+            {
+              "choice": "B",
+              "text": "Wear protective gear"
+            },
+            {
+              "choice": "C",
+              "text": "Go into a safe place"
+            },
+            {
+              "choice": "D",
+              "text": "Take an alternative route"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "83-85",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0405.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transcript: </b><br />\nThank you, thank you so much... <b> Q1 It&rsquo;s an incredible honor to be nominated as Sales Manager of the Year.</b> I have enjoyed working at Optimal Telecommunications since my first day and it&rsquo;s a privilege to be acknowledged for doing a job that I really love. <b> Q2 This year, our branch broke all the records for cell phone contracts</b> and I have to say <b> Q3 I couldn&rsquo;t have done this without my talented team.</b> Their passion and persistence has been vital to our success. So, I&rsquo;d like to say I&#39;m going to share my bonus amongst my team members as a sign of my appreciation for their hard work.</p>",
+      "explanationHtml": "<b> Transcript: </b> <br> Cảm ơn, cảm ơn rất nhiều... <b> Q1 Thật vinh dự khi được đề cử là Giám đốc kinh doanh của năm.</b> Tôi đã yêu thích môi trường làm việc tại Optimal Telecommunications ngay từ ngày đầu tiên và đó thật sự là niềm vinh dự khi được ghi nhận thành quả và cống hiến cho công việc mà tôi thực sự yêu thích. <b> Q2 Năm nay, chi nhánh của chúng ta đã phá vỡ mọi kỷ lục về hợp đồng điện thoại di động</b> và tôi phải nói rằng <b> Q3 Tôi không thể làm được điều này nếu không có đội ngũ nhân viên tài năng của mình.</b> Niềm đam mê và sự kiên trì của họ đã chính là chìa khoá cho sự thành công của chúng ta. Vì vậy, tôi muốn nói rằng tôi sẽ chia tiền thưởng của mình với các thành viên trong nhóm như một cách để thể hiện sự đánh giá cao của tôi đối với những đóng góp của họ.",
+      "questions": [
+        {
+          "num": 83,
+          "stem": "What is the purpose of the speech?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To accept a nomination"
+            },
+            {
+              "choice": "B",
+              "text": "To announce a retirement"
+            },
+            {
+              "choice": "C",
+              "text": "To announce a merger"
+            },
+            {
+              "choice": "D",
+              "text": "To request funding"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 84,
+          "stem": "Why does the speaker say: “I couldn’t have done this without my talented team”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She dislikes her team."
+            },
+            {
+              "choice": "B",
+              "text": "She is asking for some extra awards."
+            },
+            {
+              "choice": "C",
+              "text": "She wants to thank her colleagues."
+            },
+            {
+              "choice": "D",
+              "text": "She wants to offer her services."
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 85,
+          "stem": "Where most likely does the speaker work?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Cell phone shop"
+            },
+            {
+              "choice": "B",
+              "text": "Computer shop"
+            },
+            {
+              "choice": "C",
+              "text": "Shoe store"
+            },
+            {
+              "choice": "D",
+              "text": "Flower shop"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "86-88",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0406.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transcript: </b><br />\nHi, everybody. This week we will be renovating the restaurant. The work will be taking place from 8:00 A.M. to 11:30 A.M. for one week. <b> Q1 Unfortunately, we will not be having a breakfast service during this period.</b> If anyone was planning to come in and eat, <b> Q2 you might want to come in the evening.</b> I know a lot of people really love our breakfast menu, so <b> Q3 I will be giving a 10% discount on all dinner meals until renovations are complete.</b></p>",
+      "explanationHtml": "<p><b>Transcript: </b><br />\nCh&agrave;o mọi người. Tuần n&agrave;y ch&uacute;ng t&ocirc;i sẽ cải tạo lại nh&agrave; h&agrave;ng. C&ocirc;ng việc sẽ diễn ra từ 8 giờ đến 11 giờ 30 s&aacute;ng trong suốt một tuần. <b> Q1 Thật kh&ocirc;ng may, ch&uacute;ng t&ocirc;i sẽ kh&ocirc;ng phục vụ bữa s&aacute;ng trong thời gian n&agrave;y.</b> Kh&aacute;ch hang n&agrave;o c&oacute; dự định đến thưởng thức m&oacute;n ăn tại nh&agrave; h&agrave;ng, <b> Q2 vui l&ograve;ng đến v&agrave;o buổi tối.</b> T&ocirc;i biết rất nhiều người thực sự y&ecirc;u th&iacute;ch thực đơn bữa s&aacute;ng của ch&uacute;ng t&ocirc;i, v&igrave; vậy <b> Q3 t&ocirc;i sẽ giảm gi&aacute; 10% cho tất cả c&aacute;c bữa tối cho đến khi việc cải tạo ho&agrave;n tất.</b></p>",
+      "questions": [
+        {
+          "num": 86,
+          "stem": "What problem does the speaker mention?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "No breakfast service"
+            },
+            {
+              "choice": "B",
+              "text": "No dinner service"
+            },
+            {
+              "choice": "C",
+              "text": "Extra items on the menu"
+            },
+            {
+              "choice": "D",
+              "text": "There are rats in the kitchen."
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 87,
+          "stem": "What does the speaker imply when he says, “you might want to come in the evening”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "We will offer free breakfast."
+            },
+            {
+              "choice": "B",
+              "text": "The dinner menu is better."
+            },
+            {
+              "choice": "C",
+              "text": "Don’t come during the day."
+            },
+            {
+              "choice": "D",
+              "text": "They are installing air conditioners."
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi hàm ý (Intent)"
+          ]
+        },
+        {
+          "num": 88,
+          "stem": "What does the speaker say he will do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Serve breakfast at night"
+            },
+            {
+              "choice": "B",
+              "text": "Charge more"
+            },
+            {
+              "choice": "C",
+              "text": "Offer free breakfast"
+            },
+            {
+              "choice": "D",
+              "text": "Offer a discount"
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "89-91",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0407.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transcript: </b><br />\n<b>Q1 Hi, Trent, this is Fiona calling from the fashion warehouse.</b> The delivery just came in, and <b> Q2 there is a lot of clothing on here we don&rsquo;t usually order.</b> I don&rsquo;t recall any special sales coming up, and l phoned Head Office and they said there is no reason why we received them. Did you make the order? I&rsquo;m going to call the supplier but I want to check with you first in case you ordered the products.<b> Q3 Please call me back; I need to let Head Office know what to do by 1:00 P.M. and it&rsquo;s already midday.</b> Thanks Trent.</p>",
+      "explanationHtml": "<b> Transcript: </b> <br> <b>Q1 Xin chào, Trent, đây là Fiona đang gọi từ kho thời trang.</b> Hàng vừa mới được giao và <b> Q2 có rất nhiều mặt hàng quần áo nằm ngoài danh sách đặt hang thông thường của chúng tôi.</b>. Tôi hề không nhớ có bất kỳ đợt giảm giá đặc biệt nào sắp tới và tôi đã gọi điện cho Trụ sở chính và họ nói rằng không có lý do gì để chúng tôi lại nhận những mặt hang này cả. Anh đã thực hiện đơn đặt hàng đúng không? Tôi định gọi cho nhà cung cấp nhưng tôi muốn kiểm tra với anh trước trong trường hợp anh đã đặt mua sản phẩm.<b> Q3 Vui lòng gọi lại cho tôi; Tôi cần báo lại thông tin cho Trụ sở chính trước 1 giờ chiều và giờ đã là giữa trưa rồi.</b> Cảm ơn Trent.",
+      "questions": [
+        {
+          "num": 89,
+          "stem": "Where does the speaker work?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A fashion company"
+            },
+            {
+              "choice": "B",
+              "text": "A restaurant"
+            },
+            {
+              "choice": "C",
+              "text": "A factory"
+            },
+            {
+              "choice": "D",
+              "text": "A clinic"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 90,
+          "stem": "What problem does the speaker describe?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The delivery driver is lost."
+            },
+            {
+              "choice": "B",
+              "text": "The delivery is late."
+            },
+            {
+              "choice": "C",
+              "text": "The order is perfect."
+            },
+            {
+              "choice": "D",
+              "text": "The order has extra items."
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 91,
+          "stem": "What does the woman mean when she says “I need to let Head Office know what to do by 1:00 P.M. and it’s already midday”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She would like a response after midday."
+            },
+            {
+              "choice": "B",
+              "text": "She would like a response as soon as possible."
+            },
+            {
+              "choice": "C",
+              "text": "She would like extra time off."
+            },
+            {
+              "choice": "D",
+              "text": "She will call Head Office now."
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi hàm ý (Intent)"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "92-94",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0408.mp3",
+      "images": [
+        "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/images/9739517_1564545885823.png"
+      ],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transcript: </b><br />\nHello, is this Barry White? <b> Q2 This is James Holden calling on behalf of the National Center for the Blind.</b> We noticed that you did not renew your yearly donation to our center. <b> Q1 If you could give me a few moments of your time, I would like to share some information with you. I would appreciate the opportunity to tell you how we use the donations we receive to help the blind</b>. You should have received a brochure in the mail; if I could direct your attention to it while we talk, l am sure that you will see how valuable our service is.</p>",
+      "explanationHtml": "<b> Transcript: </b> <br> Xin chào, đó có phải là Barry White không? <b> Q2 Tôi là James Holden, gọi cho anh từ Trung tâm Người mù Quốc gia.</b> Chúng tôi nhận thấy rằng anh đã không gia hạn khoản đóng góp hàng năm cho trung tâm của chúng tôi. <b> Q1 Nếu anh có thể dành chút thời gian cho tôi, tôi muốn chia sẻ một số thông tin với anh. Tôi đánh giá cao cơ hội được kể cho anh biết cách chúng tôi sử dụng số tiền quyên góp nhận được để giúp đỡ người mù</b>. Có lẽ anh đã nhận được tập tài liệu mà chúng tôi gửi qua đường bưu điện; Nếu anh có thể xem tập tài liệu đó trong khi chúng ta nói chuyện, tôi chắc chắn rằng anh sẽ thấy dịch vụ của chúng tôi có giá trị như thế nào.",
+      "questions": [
+        {
+          "num": 92,
+          "stem": "Look at the graphic. What is the largest expense?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Dog training"
+            },
+            {
+              "choice": "B",
+              "text": "Technology"
+            },
+            {
+              "choice": "C",
+              "text": "Meal preparation"
+            },
+            {
+              "choice": "D",
+              "text": "Driving assistance"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết",
+            "[Part 4] Câu hỏi kết hợp bảng biểu"
+          ]
+        },
+        {
+          "num": 93,
+          "stem": "What is the listener asked to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Give more money than last year"
+            },
+            {
+              "choice": "B",
+              "text": "Learn about the ways the National Center for the Blind uses their donations"
+            },
+            {
+              "choice": "C",
+              "text": "Become a volunteer"
+            },
+            {
+              "choice": "D",
+              "text": "Become a member of the National Center for the Blind"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 94,
+          "stem": "Where does the speaker most likely work?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A hospital"
+            },
+            {
+              "choice": "B",
+              "text": "The National Center for the Blind"
+            },
+            {
+              "choice": "C",
+              "text": "A church"
+            },
+            {
+              "choice": "D",
+              "text": "The local government"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "95-97",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0409.mp3",
+      "images": [],
+      "passageHtml": "<table align =\"center\"  width=\"90%\" width=\"90%\" border=1 cellspacing=0 cellpadding=0  style=border-collapse:collapse > <tr> <td colspan=\"4\" align =\"center\"> <h4> FFFS Seminar Schedule and Price Guide</h4> </td></tr><tr><td align =\"center\"> Orlando </b> </td><td align =\"center\"> \"3 Weeks to Riches!\" </td><td align =\"center\"> 3 weeks </b> </td><td align =\"center\"> $1,500</td></tr><tr><td align =\"center\"> New York</b> </td><td align =\"center\"> \"The Big Apple is Yours\" </td><td align =\"center\"> 5 days </b> </td><td align =\"center\"> $750</td></tr><tr><td align =\"center\"> Boston </b> </td><td align =\"center\"> \"Revolutionary\" </td><td align =\"center\"> 13 days </b> </td><td align =\"center\"> $1,200</td></tr><tr><td align =\"center\"> Seatle</b> </td><td align =\"center\"> \"Prepare for Your Rainy Day\" </td><td align =\"center\"> 20 days </b> </td><td align =\"center\"> $3,000</td></tr></table>",
+      "transcriptHtml": "<b> Transcript: </b> <br> Hello, everyone. I would like to begin today’s seminar by asking you all to consider a few questions. First, how many of you would like to be rich? Everyone? Exactly. Second, how many of you would like to be happy? Everyone? Of course! <b> Q2 I can promise you all that if you follow a few simple steps, you will be able to make your financial and life goals a reality.</b> The Fast Forward Financial System, or FFFS, that I have developed is an easy step-by-step guide to living the good life. <b> Q3 Today’s seminar is just an introduction of course. In order to fulfill your financial potential, you will need to enroll in one of our immersion programs.</b>",
+      "explanationHtml": "<b> Transcript: </b> <br> Xin chào tất cả mọi người. Tôi muốn bắt đầu buổi hội thảo ngày hôm nay bằng cách yêu cầu tất cả các bạn cân nhắc một số câu hỏi. Đầu tiên, có bao nhiêu bạn muốn trở nên giàu có? Tất cả mọi người? Chính xác. Thứ hai, có bao nhiêu bạn muốn được hạnh phúc? Tất cả mọi người luôn? Tất nhiên rồi! <b> Q2 Tôi có thể hứa với tất cả các bạn rằng nếu làm theo một vài bước đơn giản, các bạn sẽ có thể biến các mục tiêu tài chính và mục tiêu cuộc sống của mình thành hiện thực.</b> Hệ thống tài chính chuyển tiếp nhanh, hay FFFS, mà tôi đã phát triển cung cấp hướng dẫn từng bước dễ dàng để có một cuộc sống tốt đẹp. <b> Q3 Buổi hội thảo hôm nay chỉ là phần giới thiệu khóa học. Để phát huy tiềm năng tài chính của mình, các bạn cần đăng ký vào một trong các chương trình chuyên sâu của chúng tôi.</b>",
+      "questions": [
+        {
+          "num": 95,
+          "stem": "Look at the graphic. What is the longest course?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Orlando"
+            },
+            {
+              "choice": "B",
+              "text": "Boston"
+            },
+            {
+              "choice": "C",
+              "text": "New York"
+            },
+            {
+              "choice": "D",
+              "text": "Seattle"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết",
+            "[Part 4] Câu hỏi kết hợp bảng biểu"
+          ]
+        },
+        {
+          "num": 96,
+          "stem": "Why is the listener most likely at the seminar?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "They are rich."
+            },
+            {
+              "choice": "B",
+              "text": "They want to get rich."
+            },
+            {
+              "choice": "C",
+              "text": "They are bored."
+            },
+            {
+              "choice": "D",
+              "text": "They were invited by a friend."
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 97,
+          "stem": "What is the speaker trying to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Sell real estate"
+            },
+            {
+              "choice": "B",
+              "text": "Sell seminar packages"
+            },
+            {
+              "choice": "C",
+              "text": "Sell vacations"
+            },
+            {
+              "choice": "D",
+              "text": "Sell small businesses"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "98-100",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test09_0410.mp3",
+      "images": [],
+      "passageHtml": "<table align =\"center\"  width=\"60%\" width=\"90%\" border=1 cellspacing=0 cellpadding=0  style=border-collapse:collapse > <tr> <td colspan=\"6\" align =\"center\"> <h4> Common Area Cleanliness Checklist</h4> </td></tr><tr><td align =\"center\"><b>Area </b> </td><td align =\"center\"> <b> Monday </td><td align =\"center\"> <b> Tuesday </b> </td><td align =\"center\"> <b> Wednesday</td> <td align =\"center\"> <b> Thursday </b> </td><td align =\"center\"> <b> Friday</td> </tr><tr><td align =\"center\"> Kitchen</b> </td><td align =\"center\"> Scott W.</td><td align =\"center\"> Scott W.</td><td align =\"center\"> Scott W.</td><td align =\"center\"> Bill T. </b> </td><td align =\"center\"> Bill T.</td></tr><tr><td align =\"center\"> Foyer </b> </td><td align =\"center\"> Bill T. </td><td align =\"center\"> Bill T. </td><td align =\"center\"> Hillary P. </td><td align =\"center\"> Hillary P. </b> </td><td align =\"center\"> Hillary P.</td></tr><tr><td align =\"center\"> Rec A.</b> </td><td align =\"center\">Lawrence P.</td><td align =\"center\">Lawrence P.</td><td align =\"center\">Lawrence P.</td><td align =\"center\"> Hillary P. </b> </td><td align =\"center\"> Scott W.</td></tr><td align =\"center\"> Lounge C</b> </td><td align =\"center\">Hillary P.</td><td align =\"center\">Hillary P.</td><td align =\"center\">Bill T.</td><td align =\"center\"> Scott W. </b> </td><td align =\"center\"> Lawrence P.</td></tr></table>",
+      "transcriptHtml": "<b> Transcript: </b> <br> Thank you all for coming to this meeting on such short notice. <b> Q3 It has come to my attention that the Human Resource Department has been overwhelmed lately with reports about messes in the common areas. As your regional manager</b>, I feel it is my responsibility to take ownership of this problem before it gets completely out of control. Just so everybody is clear, the common areas include the kitchen, the foyer, recreation room A, and lounge c on the second floor. I don’t know who is responsible for this recent run of uncleanliness, but from now on we are going to assign a staff member to monitor the condition of each area and sign off on it at the end of every day. We will do this until I feel everyone has learned to respect the space. Be sure to check the schedule to see which area you will be responsible for.",
+      "explanationHtml": "<b> Transcript: </b> <br> Cảm ơn tất cả các bạn đã tham dự cuộc họp này với thời gian cấp bách như vậy. <b> Q3 Tôi nhận thấy rằng gần đây Phòng Nhân sự đã tràn ngập các báo cáo về tình trạng lộn xộn ở các khu vực chung. Với tư cách là quản lý khu vực</b>, tôi cảm thấy mình có trách nhiệm phải giải quyết vấn đề này trước khi nó hoàn toàn vượt quá tầm kiểm soát. Để mọi người rõ ràng, các khu vực chung bao gồm nhà bếp, tiền sảnh, phòng giải trí A và phòng khách C trên tầng hai. Tôi không biết ai chịu trách nhiệm cho tình trạng mất vệ sinh gần đây, nhưng từ giờ trở đi chúng ta sẽ phân công một nhân viên theo dõi tình trạng của từng khu vực và ký xác nhận vào cuối mỗi ngày. Chúng ta sẽ làm điều này cho đến khi tôi cảm thấy mọi người đã học được cách tôn trọng không gian. Hãy nhớ kiểm tra lịch trình để xem ai sẽ chịu trách nhiệm về khu vực nào.",
+      "questions": [
+        {
+          "num": 98,
+          "stem": "Who is speaking to the staff?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Human Resources"
+            },
+            {
+              "choice": "B",
+              "text": "The regional manager"
+            },
+            {
+              "choice": "C",
+              "text": "The CEO"
+            },
+            {
+              "choice": "D",
+              "text": "The sales manager"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 99,
+          "stem": "Look at the graphic. Which employee was given responsibility for two common areas on the same day?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Lawrence R"
+            },
+            {
+              "choice": "B",
+              "text": "Hillary p."
+            },
+            {
+              "choice": "C",
+              "text": "Scott w."
+            },
+            {
+              "choice": "D",
+              "text": "Bill T."
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết",
+            "[Part 4] Câu hỏi kết hợp bảng biểu"
+          ]
+        },
+        {
+          "num": 100,
+          "stem": "What is indicated in the meeting?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The staff will get reprimanded."
+            },
+            {
+              "choice": "B",
+              "text": "The staff will need to work weekends."
+            },
+            {
+              "choice": "C",
+              "text": "Everyone will get holiday bonus."
+            },
+            {
+              "choice": "D",
+              "text": "There have been a lot of complaints."
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 4
+}

@@ -1,0 +1,311 @@
+{
+  "id": "cham_part_7_double_test_24",
+  "sourceId": "6a33ac0460281800269d795d",
+  "slug": "part-7-double-test-24",
+  "title": "Đề lẻ Part 7 Kép · Test 24",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 12,
+  "totalQuestions": 10,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_7": 10
+  },
+  "groups": [
+    {
+      "part": 7,
+      "range": "176-180",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 711px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 133px; text-align: center;\">Flight #</td>\n\t\t\t<td style=\"width: 135px;\">\n\t\t\t<p style=\"text-align: center;\">Departure time</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 113px; text-align: center;\">Arrival time</td>\n\t\t\t<td style=\"width: 105px; text-align: center;\">Destination</td>\n\t\t\t<td style=\"width: 192px; text-align: center;\">Notes</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 133px; text-align: center;\">ALA222</td>\n\t\t\t<td style=\"width: 135px;\">\n\t\t\t<p style=\"text-align: center;\">23:05</p>\n\n\t\t\t<p style=\"text-align: center;\">May 2nd&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 113px;\">\n\t\t\t<p style=\"text-align: center;\">06:30</p>\n\n\t\t\t<p style=\"text-align: center;\">May 3rd</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 105px; text-align: center;\">Pisa</td>\n\t\t\t<td style=\"width: 192px;\">\n\t\t\t<p style=\"text-align: center;\">1 Aisle seat</p>\n\n\t\t\t<p style=\"text-align: center;\">1 Kosher meal</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 133px; text-align: center;\">ALA223</td>\n\t\t\t<td style=\"width: 135px;\">\n\t\t\t<p style=\"text-align: center;\">15:50</p>\n\n\t\t\t<p style=\"text-align: center;\">May 5th</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 113px;\">\n\t\t\t<p style=\"text-align: center;\">10:00</p>\n\n\t\t\t<p style=\"text-align: center;\">May 6th</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 105px; text-align: center;\">Tokyo</td>\n\t\t\t<td style=\"width: 192px;\">\n\t\t\t<p style=\"text-align: center;\">1 Aisle seat</p>\n\n\t\t\t<p style=\"text-align: center;\">1 Kosher meal</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p style=\"text-align: justify;\"><strong>May 3rd</strong></p>\n\n<p style=\"text-align: justify;\">06:30 Arrival at airport - pick-up by representative from Ferrari</p>\n\n<p style=\"text-align: justify;\">10:30 Meeting with car interiors design team</p>\n\n<p style=\"text-align: justify;\">12:00 Lunch</p>\n\n<p style=\"text-align: justify;\">13:00 Tour of factory</p>\n\n<p style=\"text-align: justify;\">15:00 Meeting with Chief Engineers</p>\n\n<p style=\"text-align: justify;\">16:30 Your presentation (to Board of Directors)</p>\n\n<p style=\"text-align: justify;\">19:00 Dinner with members of the Board of Directors</p>\n\n<p style=\"text-align: justify;\"><strong>May 4th</strong></p>\n\n<p style=\"text-align: justify;\">08:00 Breakfast meeting with Paolo Svegli</p>\n\n<p style=\"text-align: justify;\">09:15 Tour of second factory site</p>\n\n<p style=\"text-align: justify;\">11:30 Meeting with Maria Modesta</p>\n\n<p style=\"text-align: justify;\">13:00 Lunch- free time</p>\n\n<p style=\"text-align: justify;\">16:00 Your second presentation (to export division)</p>\n\n<p style=\"text-align: justify;\">19:00 Dinner reception</p>\n\n<p style=\"text-align: justify;\"><strong>May 5th</strong></p>\n\n<p style=\"text-align: justify;\">A.M, Free time (9:00-13:00 sightseeing - individual tour arranged)</p>\n\n<p style=\"text-align: justify;\">13:30 check in for flight. Tour guide will accompany you to airport.</p>\n\n<p style=\"text-align: justify;\">Hotel reservation: 2 nights, single room at the Astoria</p>\n\n<hr>\n<p><span style=\"font-size:16px;\"><strong>MEMO</strong></span></p>\n\n<p>To:&nbsp; &nbsp; &nbsp; Alistair Black</p>\n\n<p>Fax #:&nbsp;023-999-9998</p>\n\n<p>From:&nbsp;Wendy Hartwell [Travel]</p>\n\n<p>Fax #: 023-998-9998</p>\n\n<p>Dear Mr. Black,</p>\n\n<p style=\"text-align: justify;\">As requested. I am sending you a detailed itinerary for your forthcoming trip to Italy. As you will see, both your outgoing and return flights have been confirmed, and I have reserved an aisle seat both ways, I have been in direct contact with our Pisa branch, and they have obtained the schedule of meetings and events planned for your stay in Italy.We have succeeded in arranging a brief meeting with Mr. Paolo Svegli of the Italian Motor Vehicle Manufacturers Association, although he is willing to give no more than 1 hour of his time, I know that you have already been in touch with him by email, so I think that this should be long enough to discuss your proposal in person. If he is interested enough to set up this initial meeting, I think we may have a good chance of setting up the contract.</p>\n\n<p style=\"text-align: justify;\">You'll have one morning of sightseeing before you leave.The guide will take you directly to the airport. Don't hesitate to get in touch if you have any questions.</p>\n\n<p style=\"text-align: justify;\">Have a good trip.</p>\n\n<p style=\"text-align: justify;\">Regards,</p>\n\n<p style=\"text-align: justify;\">Wendy Hartwell.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 176,
+          "stem": "What is probably the purpose of Alistair Black's trip?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To set up a new factory"
+            },
+            {
+              "choice": "B",
+              "text": "To have an aisle seat"
+            },
+            {
+              "choice": "C",
+              "text": "To fly to Tokyo"
+            },
+            {
+              "choice": "D",
+              "text": "To set up' a contract with an Italian motor manufacturer"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Wendy viết: <em>“I think we may have a good chance of setting up the contract.”</em> → Điều này cho thấy mục đích chính của chuyến đi là đàm phán kinh doanh cho một hợp đồng.</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 177,
+          "stem": "To whom will Alistair Black be making presentations?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The Board of Directors and the Export Division"
+            },
+            {
+              "choice": "B",
+              "text": "Paolo Svegli and the Chief Engineers"
+            },
+            {
+              "choice": "C",
+              "text": "Maria Modesta"
+            },
+            {
+              "choice": "D",
+              "text": "Employees at two factories"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Hành trình cho thấy:</p><p>Ngày 3/5, 16:30 → Thuyết trình trước Ban Giám đốc</p><p>Ngày 4 tháng 5, 16:00 → Trình bày với Phòng Xuất khẩu</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 178,
+          "stem": "Which of the following statements is probably NOT true?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Alistair Black has been communicating with Paolo Svegli."
+            },
+            {
+              "choice": "B",
+              "text": "Paolo Svegli has little spare time to meet with Alistair Black."
+            },
+            {
+              "choice": "C",
+              "text": "Alistair Black has Paolo Svegli's email address."
+            },
+            {
+              "choice": "D",
+              "text": "Alistair Black is good friends with Paolo Svegli."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Bản ghi nhớ có nội dung: <em>“you have already been in touch with him by email”</em> → Điều này cho thấy họ đã liên lạc với nhau nhưng không có bằng chứng nào cho thấy họ là bạn bè.</p><p>Các tuyên bố khác được hỗ trợ bởi văn bản:</p><p>Anh ấy có địa chỉ email của Paolo.</p><p>Anh ấy đã liên lạc với Paolo.</p><p>Paolo có rất ít thời gian rảnh (chỉ có một giờ).</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 179,
+          "stem": "Whom will Mr. Black probably be traveling with?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "No one"
+            },
+            {
+              "choice": "B",
+              "text": "With a business associate"
+            },
+            {
+              "choice": "C",
+              "text": "Paolo Svegli"
+            },
+            {
+              "choice": "D",
+              "text": "With his spouse"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Việc đặt phòng khách sạn dành cho: <em>“2 nights, single room”</em>. Ngoài ra, không có đề cập đến việc vợ/chồng hoặc đối tác kinh doanh đi du lịch cùng anh ta.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 180,
+          "stem": "How long will Mr. Black spend sightseeing?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "One full day"
+            },
+            {
+              "choice": "B",
+              "text": "3 days and 2 nights"
+            },
+            {
+              "choice": "C",
+              "text": "No time during this trip"
+            },
+            {
+              "choice": "D",
+              "text": "Several hours"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Hành trình cho biết: <em>“9:00–13:00 sightseeing”</em> → Đây là 4 giờ, tức là vài giờ, không phải cả ngày.</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "181-185",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><span style=\"font-size:16px;\"><strong>Agenda</strong></span></p>\n\n<p><strong>Personnel Department Monthly Meeting&nbsp;</strong></p>\n\n<p><strong>Monday 14th July, 4:30 p.m</strong></p>\n\n<p><strong>Interview Room 3</strong></p>\n\n<p><strong>New Business</strong></p>\n\n<ul>\n\t<li>Appointment of new department head</li>\n\t<li>Relocation - new office sites</li>\n\t<li>New policy on interviewing</li>\n\t<li>New employee health insurance system</li>\n</ul>\n\n<p><strong>Reports</strong></p>\n\n<ul>\n\t<li>Interviewer training committee</li>\n\t<li>Employee relations workshop</li>\n</ul>\n\n<p><strong>Other business</strong></p>\n\n<p>(please notify me by July 10th if you have other items to add)</p>\n\n<hr>\n<p><strong><span style=\"font-size:16px;\">MEMO</span></strong></p>\n\n<p style=\"text-align: justify;\">To:&nbsp; &nbsp; &nbsp; All Personnel Department employees</p>\n\n<p style=\"text-align: justify;\">From: Ursula</p>\n\n<p style=\"text-align: justify;\">Date: July 2nd</p>\n\n<p style=\"text-align: justify;\">Re:&nbsp; &nbsp; Meeting agenda</p>\n\n<p style=\"text-align: justify;\">This is a quick reminder about this month's meeting, which will be held a week earlier than usual. This is because the third Monday this month is a national holiday, and all offices will be closed. Be sure to make a note of this date because absences will not be excused. In addition, please note the change of location. It will be held in interview room 3 this time, not room 2 because of complaints about the broken air conditioner. The management has decided not to fix the air conditioning because we will be relocating around the middle of August. The new location of our office is item number 3 on the agenda. Please bring any ideas you have on facilities that you feel should be provided in our new location. I will be handing out forms at the meeting for you to fill in with your ideas. There will be an explanation of our new employee health insurance system. Mark Southwold will be explaining how the new system will save you money, while increasing overall coverage. He has asked me to inform you that he is willing to talk one on one with anyone interested, but please make an appointment with his secretary first.</p>\n\n<p style=\"text-align: justify;\">Because we have a lot of important things to discuss, I foresee the meeting running a little longer than usual, so please be sure to arrive on time.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 181,
+          "stem": "Why is the meeting earlier than usual?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The regular time is being moved from Mondays."
+            },
+            {
+              "choice": "B",
+              "text": "There was no meeting last month."
+            },
+            {
+              "choice": "C",
+              "text": "The regular meeting day will be a day off this month."
+            },
+            {
+              "choice": "D",
+              "text": "The company felt that it was time for a change."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Bản ghi nhớ có nội dung: <em>“the third Monday this month is a national holiday, and all offices will be closed.”</em> → Do đó, cuộc họp được tổ chức sớm hơn.</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 182,
+          "stem": "What would have been the date of the meeting if it had not been changed?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "July 21st"
+            },
+            {
+              "choice": "B",
+              "text": "Monday"
+            },
+            {
+              "choice": "C",
+              "text": "July 28th"
+            },
+            {
+              "choice": "D",
+              "text": "Seven days early"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Cuộc họp diễn ra vào thứ Hai, ngày 14 tháng 7, sớm hơn một tuần so với thường lệ.</p><p>Một tuần sau là Thứ Hai, ngày 21 tháng 7, nên đó sẽ là ngày ban đầu.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 183,
+          "stem": "Why isn't the management going to repair the air conditioning?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The company will move to another building."
+            },
+            {
+              "choice": "B",
+              "text": "It is too expensive."
+            },
+            {
+              "choice": "C",
+              "text": "The weather is cooler these days."
+            },
+            {
+              "choice": "D",
+              "text": "They are waiting for permission."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Bản ghi nhớ có nội dung: <em>“The management has decided not to fix the air conditioning because we will be relocating around the middle of August.”</em> → Vậy là họ sắp chuyển đi và không muốn sửa chữa.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 184,
+          "stem": "Who should notify Ursula by July 10th?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "People who want to add items to the agenda"
+            },
+            {
+              "choice": "B",
+              "text": "People who will be absent from the meeting"
+            },
+            {
+              "choice": "C",
+              "text": "People who wish to attend the meeting"
+            },
+            {
+              "choice": "D",
+              "text": "People who want to consult Mark Southwold"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Chương trình nghị sự nêu rõ: <em>“please notify me by July 10th if you have other items to add”</em></p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 185,
+          "stem": "Which of the following statements is NOT true?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The personnel department will have a new head."
+            },
+            {
+              "choice": "B",
+              "text": "The new insurance system is costlier than the old one."
+            },
+            {
+              "choice": "C",
+              "text": "The department has at least three interview rooms."
+            },
+            {
+              "choice": "D",
+              "text": "The department is changing its interview policy."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Bản ghi nhớ có nội dung: <em>“the new system will save you money”</em> → Vì vậy hệ thống bảo hiểm mới rẻ hơn, không đắt hơn.</p><p>Các tuyên bố khác được hỗ trợ:</p><p>Trưởng bộ phận mới → nội dung chương trình nghị sự</p><p>Chính sách phỏng vấn mới → mục chương trình nghị sự</p><p>Phòng Phỏng vấn 3 ngụ ý có ít nhất 3 phòng phỏng vấn</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 7,
+  "subLabel": "Đoạn kép"
+}

@@ -1,0 +1,457 @@
+{
+  "id": "cham_part_7_triple_test_20",
+  "sourceId": "631b1a21f2fe240a4043b031",
+  "slug": "part-7-triple-test-20",
+  "title": "Đề lẻ Part 7 Ba · Test 20",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 18,
+  "totalQuestions": 15,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_7": 15
+  },
+  "groups": [
+    {
+      "part": 7,
+      "range": "186-190",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>To: Customer Service [cs@tailwiiidairlines.com]<br>\nFrom: Maggie Flowers [m.flo@fastmail.com]<br>\nDate: May 29<br>\nSubject: Compensation<br>\nAttachment: Rental receipt<br>\n<br>\nDear Customer Service,<br>\nOn May 25, I was scheduled to fly on Flight 535 from Cleveland to Pittsburgh. However, the flight was canceled due to mechanical problems. While at the airport, I was promised a flight voucher as compensation for the inconvenience. I never claimed it and would like to follow up now. Also, I'd like reimbursement for an incurred expense. I had a job interview to attend and could not wait until the following day. So, I rented a car and drove to my destination. I have attached a copy of the rental receipt in case you need it.<br>\nI hope you can help me resolve this matter.<br>\nSincerely,<br>\nMaggie Flowers</p>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p>To: Maggie Flowers [m.flo@fastmail.com]<br>\nFrom: Customer service [cs@tailwindairlines.com]<br>\nDate: June 8<br>\nAttachment: reimbursement_form<br>\nSubject: Re: Compensation<br>\n<br>\nDear Ms. Flowers,<br>\nI am sorry to hear of your inconvenience. Let me correct the situation.<br>\nFirst, our system indicates that you are entitled to the voucher. We normally tell customers that they will get it within four weeks. I apologize if our airline staff failed to <b>convey</b> this information properly at the time your flight was canceled. The voucher has been mailed and should arrive shortly. Second, all of the passengers on your flight were offered a night's stay at an airport hotel.<br>\nOur policy states that we can reimburse a passenger with exceptional circumstances up to the price of the hotel stay. Your situation qualifies since the car rental amount was less than this cost.<br>\nTo proceed, complete the attached form and mail it to us along with your original receipt.<br>\nIf I can assist you further, please contact me again. Thank you for being a loyal, valued customer.<br>\nYours Truly,<br>\nPaul Russell<br>\nCustomer service representative</p>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p>TAILWIND AIRLINES</p>\n\n<p>Please allow up to 30 days for settlement.</p>\n\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 918px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 475px;\">Name: Maggie Flowers</td>\n\t\t\t<td style=\"width: 430px;\">Membership rewards no.: 4793345</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 475px;\">Address: 12704 Gruss Court, Cleveland, OH 44018</td>\n\t\t\t<td style=\"width: 430px;\">Tel: 555-2348</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 475px;\">&nbsp;</td>\n\t\t\t<td style=\"width: 430px;\">Email: m.flo@fastmail.com</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"width: 908px;\">Type of claim:&nbsp; &nbsp; &nbsp; &nbsp;[&nbsp; &nbsp;]&nbsp;Damage&nbsp; &nbsp; &nbsp; &nbsp; [&nbsp; &nbsp;] Loss&nbsp; &nbsp; &nbsp; &nbsp;[ X&nbsp;]&nbsp; Reimbursement</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 475px;\">Amount of claim: $135.00</td>\n\t\t\t<td style=\"width: 430px;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 475px;\">Flight no.: 535</td>\n\t\t\t<td style=\"width: 430px;\">Date: May 25</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 475px;\">Origin: Cleveland, OH</td>\n\t\t\t<td style=\"width: 430px;\">Destination: Pittsburgh, PA</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"width: 908px;\">Please explain the reason(s) for your claim:<br>\n\t\t\tMy flight was canceled, and I'd like to be reimbursed for some expenses.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"width: 908px;\">Supporting documents (please attach): Car rental receipt</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp; &nbsp; &nbsp;<u> &nbsp; Maggie Flowers&nbsp; &nbsp; &nbsp; </u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<u> &nbsp; &nbsp; &nbsp; &nbsp;June 10&nbsp; &nbsp; &nbsp;</u></p>\n\n<p>Please sign your name here&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Date&nbsp;</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 186,
+          "stem": "Why did Ms. Flowers write the e-mail?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To pursue some claims"
+            },
+            {
+              "choice": "B",
+              "text": "To recover some items"
+            },
+            {
+              "choice": "C",
+              "text": "To change a reservation"
+            },
+            {
+              "choice": "D",
+              "text": "To complain about an attendant"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Thông tin:  Khi ở sân bay, tôi đã được hứa tặng một phiếu chuyến bay để đền bù cho sự bất tiện này. Tôi chưa bao giờ xác nhận điều đó và muốn theo dõi ngay bây giờ.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 187,
+          "stem": "What does Mr. Russell ask Ms. Flowers to provide?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A copy of her passport"
+            },
+            {
+              "choice": "B",
+              "text": "An airline boarding pass"
+            },
+            {
+              "choice": "C",
+              "text": "A hotel reservation number"
+            },
+            {
+              "choice": "D",
+              "text": "A car rental receipt"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Thông tin: Để tiếp tục, hãy điền vào biểu mẫu đính kèm và gửi cho chúng tôi cùng với biên nhận ban đầu của bạn.</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 188,
+          "stem": "In the second e-mail, the word \"convey\" in paragraph 2, line 2, is closest in meaning to",
+          "options": [
+            {
+              "choice": "A",
+              "text": "pick up"
+            },
+            {
+              "choice": "B",
+              "text": "make known"
+            },
+            {
+              "choice": "C",
+              "text": "take into consideration"
+            },
+            {
+              "choice": "D",
+              "text": "take to another place"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>truyền đạt (v): bày tỏ suy nghĩ, cảm giác hoặc ý tưởng để người khác hiểu được = làm cho người khác biết</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        },
+        {
+          "num": 189,
+          "stem": "What is indicated about passengers on the canceled flight?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "They all took the next available flight."
+            },
+            {
+              "choice": "B",
+              "text": "Their hotel rooms cost over $135 each."
+            },
+            {
+              "choice": "C",
+              "text": "They all received their promised vouchers."
+            },
+            {
+              "choice": "D",
+              "text": "Their meals were paid for by the airline."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Thông tin trong thư thứ hai: Chính sách của chúng tôi nêu rõ rằng chúng tôi có thể bồi hoàn cho hành khách trong các trường hợp đặc biệt lên tới mức giá lưu trú tại khách sạn. Trường hợp của bạn đủ điều kiện vì số tiền thuê xe thấp hơn chi phí này.</p><p>Thông tin theo mẫu: Số tiền yêu cầu bồi thường:  $ 135,00</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 190,
+          "stem": "What does the form indicate about Ms. Flowers?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She received extra membership rewards for her trouble."
+            },
+            {
+              "choice": "B",
+              "text": "She applied the voucher to a future flight."
+            },
+            {
+              "choice": "C",
+              "text": "She may have to wait until July to be repaid."
+            },
+            {
+              "choice": "D",
+              "text": "She did not provide a document as proof."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Cô Flowers điền đơn vào ngày 10/6 và phải mất tới 30 ngày để giải quyết. Điều này có nghĩa là cô ấy có thể phải đợi đến tháng 7 mới được hoàn trả.</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "191-195",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><b>12th Green Technology Conference</b><br>\nThursday, June 9 | Singapore Convention Hall, Room A<br>\nHosted by the Green Technology Association<br>\n<b>Program Outline</b></p>\n\n<table align=\"center\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 138px; text-align: center;\">12:30 P.M.</td>\n\t\t\t<td style=\"width:486px;\">Registration</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 138px; text-align: center;\">1:00 P.M.</td>\n\t\t\t<td style=\"width:486px;\">Welcome address<br>\n\t\t\tSpeaker: Ellen Matsushita, Chair, Green Technology Association</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 138px; text-align: center;\">1:30 P.M.</td>\n\t\t\t<td style=\"width:486px;\">Keynote address<br>\n\t\t\tSpeaker: Harold Baker, President, Greentrade Technologies</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 138px; text-align: center;\">2:00 P.M.</td>\n\t\t\t<td style=\"width:486px;\">Industry outlook<br>\n\t\t\tSpeaker: Jeremy Porter, Managing Director, Green Research Institute</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 138px; text-align: center;\">2:30 P.M.</td>\n\t\t\t<td style=\"width:486px;\">Wind, solar, and biomass power<br>\n\t\t\tSpeaker: Nathan Chaudry, CEO, Leaftech International</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 138px; text-align: center;\">3:00 P.M.</td>\n\t\t\t<td style=\"width:486px;\">Coffee break</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 138px; text-align: center;\">3:30 P.M.</td>\n\t\t\t<td style=\"width:486px;\">New applications in green technology<br>\n\t\t\tSpeaker: Thomas Keng, Chair, Environmental Research Group</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 138px; text-align: center;\">4:00 P.M.</td>\n\t\t\t<td style=\"width:486px;\">Panel discussion: Financing green projects<br>\n\t\t\tModerator: Barbara Woodbine, CFO, Global Lending</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 138px; text-align: center;\">5:00 P.M.</td>\n\t\t\t<td style=\"width:486px;\">Closing remarks<br>\n\t\t\tSpeaker: Sylvia Klein, President, European Green Initiative</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p>To: Eduardo Ferrer [edfer@greentech.com]<br>\nFrom: Ellen Matsushita [elmat@greentech.com]<br>\nDate: May 14<br>\nSubject: Re: Conference program<br>\n<br>\nThere are a few additional changes to make. As it turns out, the president of Greentrade Technologies is unavailable. Instead, we will have Dr. Connor Aromdee from Thailand University. In addition, Ms. Woodbine from Global Lending will be leaving the conference early, so she cannot moderate the panel discussion. She suggested that we invite the minister of the Singapore Economic Development Board to take her place. I have contacted him, and he has accepted the invitation. If there are any other changes to make, I'll let you know in the morning. After that, the program will be finalized.<br>\nThanks!<br>\nEllen</p>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p style=\"text-align: center;\"><b>Business Bulletin</b></p>\n\n<p>Singapore, June 11 - The Green Technology Association (GTA) recently held its 12th Green Technology Conference at the Singapore Convention Hall. The heads of several organizations playing a critical role in the development of green technologies around the world were in attendance. According to speaker Jeremy Porter of the Green Research Institute, the outlook for the industry appears stable despite politicians in some nations who are holding back the use of green technologies. GTA chair Ellen Matsushita was equally hopeful, citing insightful comments from the minister of the Singapore Economic Development Board, David Mah. Download a full report on the talks and material presented at the conference by visiting the organization's Web site at www.gta.org.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 191,
+          "stem": "What has NOT been scheduled for the conference?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A closing speech"
+            },
+            {
+              "choice": "B",
+              "text": "A presentation on solar power"
+            },
+            {
+              "choice": "C",
+              "text": "A special luncheon"
+            },
+            {
+              "choice": "D",
+              "text": "A talk on the future of the industry"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Đề cương chương trình không hiển thị thời gian ăn trưa</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 192,
+          "stem": "What time did Dr. Aromdee most likely speak?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "At 1:00 p.m."
+            },
+            {
+              "choice": "B",
+              "text": "At 1:30 p.m."
+            },
+            {
+              "choice": "C",
+              "text": "At 2:00 p.m."
+            },
+            {
+              "choice": "D",
+              "text": "At 2:30 p.m."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Thông tin trong đề cương chương trình và email: Tiến sĩ Connor Aromdee sẽ là chủ tịch của Greentrade Technologies, người sẽ trình bày vào lúc 1:30 chiều</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 193,
+          "stem": "What does the article mention about green technology?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Its development has been stunted by high equipment costs."
+            },
+            {
+              "choice": "B",
+              "text": "Its adoption is being opposed by some people in government."
+            },
+            {
+              "choice": "C",
+              "text": "Its role is particularly important in developing nations."
+            },
+            {
+              "choice": "D",
+              "text": "Its supporters are pessimistic about the future."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Thông tin:  Theo diễn giả Jeremy Porter của Viện Nghiên cứu Xanh, triển vọng của ngành có vẻ ổn định mặc dù các chính trị gia ở một số quốc gia đang hạn chế sử dụng công nghệ xanh.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 194,
+          "stem": "In the article, the word \"critical\" in paragraph 1, line 3, is closest in meaning to",
+          "options": [
+            {
+              "choice": "A",
+              "text": "analytical"
+            },
+            {
+              "choice": "B",
+              "text": "opinionated"
+            },
+            {
+              "choice": "C",
+              "text": "disapproving"
+            },
+            {
+              "choice": "D",
+              "text": "crucial"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>quan trọng (adj) = quan trọng (adj): cực kỳ quan trọng hoặc cần thiết</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        },
+        {
+          "num": 195,
+          "stem": "What is indicated about David Mah?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He was contacted by a government group about a schedule."
+            },
+            {
+              "choice": "B",
+              "text": "He is a member of the GTA board of directors."
+            },
+            {
+              "choice": "C",
+              "text": "He led a panel discussion on funding green projects."
+            },
+            {
+              "choice": "D",
+              "text": "He participated in a conference call hosted by Ms. Matsushita."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>David Mah, bộ trưởng Ban Phát triển Kinh tế Singapore sẽ thay thế bà Woodbine trình bày tại Hội thảo thảo luận: Tài trợ cho các dự án xanh</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "196-200",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><b>Westerburn Public Library Online Renewal Policy</b></p>\n\n<p>All books owned by Westerburn can be renewed through your online account. Simply log in, click on the \"View\" menu, select \"Checked out items,\" and mark the boxes next to the titles you wish to renew. Then press \"Send\" at the bottom of the screen. Members are allowed to renew our material for two-week periods provided there are no pending requests for them. If materials you have checked out have been requested in advance by any other member, the system will indicate that they cannot be borrowed again.<br>\nInterlibrary loans can also be renewed online. However, some restrictions may apply. Please check the sticker on the back of the book cover for the lending library's renewal policies, which may be different from our own.</p>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p><b>List of Active Loans for Westerburn Public Library Member No.<br>\n0177634 - Melissa Terrance</b><br>\nDate: 08/08</p>\n\n<table align=\"center\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 125px; text-align: center;\"><strong>Renew</strong></td>\n\t\t\t<td style=\"width: 125px; text-align: center;\"><strong>Title</strong></td>\n\t\t\t<td style=\"width: 125px; text-align: center;\"><strong>Call No.</strong></td>\n\t\t\t<td style=\"width: 125px; text-align: center;\"><strong>Source</strong></td>\n\t\t\t<td style=\"width: 125px; text-align: center;\"><strong>Due Date</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 125px; text-align: center;\">Non-Renewable</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">The Reign of King Jordanius/ Hans schoffer</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">834.04 SCH</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">Westerburn Public Library</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">08/10</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 125px; text-align: center;\">x</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">The Science of Memory/ Laurence Templeton</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">216.94 TEM</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">Westerburn Public Library</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">08/10</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 125px; text-align: center;\">x</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">A History of Medicinal Plants / Daniel Wu</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">147.09 WUD</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">(Interlibrary Loan)<br>\n\t\t\tHighland Marsh Public Library<br>\n\t\t\t&nbsp;</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">08/10</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 125px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">Tell Her: Short Stories /Maya Teller</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">924.07 TEL<br>\n\t\t\t&nbsp;</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">\n\t\t\t<p>(Interlibrary Loan)</p>\n\n\t\t\t<p>Greenport University Library&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 125px; text-align: center;\">08/15</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"5\" style=\"width: 623px; text-align: center;\"><strong>SEND</strong></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p>To: Melissa Terrance [mellit@greatmail.com]<br>\nFrom: Agnes Featherstone [agnesf@westerburn.com]<br>\nDate: August 9<br>\nSubject: Re: Inquiry<br>\n<br>\nDear Ms. Terrance,<br>\nTo answer your question, the reason your request was rejected is that the book you wanted to renew (Call No. 147.09WUD) is from another library with different lending policies than our own, and our online renewal system is not set up to reflect them. If you check the sticker on the back of the book, you'll see that the library where the book is from only allows reference materials to be renewed a single time. Unlike the other items on your list of active loans, you have already renewed this item once before. Please note that it is due tomorrow.<br>\nThank you.<br>\nAgnes Featherstone<br>\nWesterburn Public Library Staff</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 196,
+          "stem": "What is the information mainly about?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Requesting items from other libraries"
+            },
+            {
+              "choice": "B",
+              "text": "Accessing library databases online"
+            },
+            {
+              "choice": "C",
+              "text": "Extending loans using the Internet"
+            },
+            {
+              "choice": "D",
+              "text": "Returning books after their due date"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Thông tin chủ yếu về Chính sách gia hạn trực tuyến của thư viện. Nói cách khác, đó là về việc Gia hạn khoản vay bằng Internet.</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 197,
+          "stem": "What is NOT indicated about Westerburn Public Library?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Its books can be renewed for 14 days at a time."
+            },
+            {
+              "choice": "B",
+              "text": "It allows material to be reserved in advance."
+            },
+            {
+              "choice": "C",
+              "text": "Its late fees can be paid through online accounts."
+            },
+            {
+              "choice": "D",
+              "text": "Its policies may vary from those of other libraries."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Thông tin dành cho (A): Các thành viên được phép gia hạn tài liệu của chúng tôi trong khoảng thời gian hai tuần miễn là không có yêu cầu nào đang chờ xử lý đối với họ.</p><p>Thông tin cho (B):  Nếu tài liệu bạn đã xem đã được bất kỳ thành viên nào khác yêu cầu trước, hệ thống sẽ thông báo rằng bạn không thể mượn lại tài liệu đó.</p><p>Thông tin cho (D): Vui lòng kiểm tra nhãn dán ở mặt sau bìa sách để biết chính sách gia hạn của thư viện cho mượn, chính sách này có thể khác với chính sách của chúng tôi.</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 198,
+          "stem": "What is true about The Reign of King Jordaniusl",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It is a part of a special collection."
+            },
+            {
+              "choice": "B",
+              "text": "Someone else made a request for it."
+            },
+            {
+              "choice": "C",
+              "text": "Another copy of it is available at a partner library."
+            },
+            {
+              "choice": "D",
+              "text": "Its sticker indicates renewal is forbidden."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Dựa trên bảng, tài liệu này không thể tái tạo nên đã được thành viên khác yêu cầu trước</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 199,
+          "stem": "What is indicated in the Web Page?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Maya Teller's book may be returned to Westerburn Public Library."
+            },
+            {
+              "choice": "B",
+              "text": "The lending period of Highland Marsh Public Library is two weeks."
+            },
+            {
+              "choice": "C",
+              "text": "Ms. Terrance holds a special type of membership at her library."
+            },
+            {
+              "choice": "D",
+              "text": "The Science of Memory has been overdue for several days now."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Dựa trên bảng, cuốn sách của Maya Teller là sách được mượn liên thư viện nên có thể được trả lại cho Thư viện Công cộng Westerburn</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 200,
+          "stem": "Which book has Ms. Terrance already renewed once?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The Science of Memory"
+            },
+            {
+              "choice": "B",
+              "text": "A History of Medicinal Plants"
+            },
+            {
+              "choice": "C",
+              "text": "Tell Her: Short Stories"
+            },
+            {
+              "choice": "D",
+              "text": "The Reign of King Jordanius"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Cuốn sách cô muốn gia hạn (gọi số 147.09WUD) là Lịch sử cây thuốc.  Cô ấy đã gia hạn mặt hàng này một lần trước đây.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 7,
+  "subLabel": "Đoạn ba"
+}

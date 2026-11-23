@@ -1,0 +1,1158 @@
+{
+  "id": "cham_part_5_test_23",
+  "sourceId": "6a13d158716fea002570a861",
+  "slug": "part-5-test-23",
+  "title": "Đề lẻ Part 5 · Test 23",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 15,
+  "totalQuestions": 30,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_5": 30
+  },
+  "groups": [
+    {
+      "part": 5,
+      "range": "101",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 101,
+          "stem": "The lecture is scheduled for 7:00 P.M.,........... which participants may ask questions.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "after"
+            },
+            {
+              "choice": "B",
+              "text": "before"
+            },
+            {
+              "choice": "C",
+              "text": "beside"
+            },
+            {
+              "choice": "D",
+              "text": "during"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) after (Giới từ): sau, theo sau về mặt thời gian.<br />\n(B) before (Giới từ): trước một điều g&igrave; đ&oacute;.<br />\n(C) beside (Giới từ): b&ecirc;n cạnh.<br />\n(D) during (Giới từ): trong suốt một khoảng thời gian.</p>\n\n<p>Chỗ trống đứng trước &ldquo;which participants may ask questions,&rdquo; tạo th&agrave;nh một mệnh đề quan hệ li&ecirc;n quan đến thời gian.</p>\n\n<p>Cụm từ &ldquo;after which&rdquo; c&oacute; nghĩa l&agrave; một sự việc xảy ra sau một sự việc kh&aacute;c.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (A) after</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nafter which + S + V = sau đ&oacute; / tiếp theo đ&oacute;.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>B&agrave;i giảng được l&ecirc;n lịch v&agrave;o l&uacute;c 7:00 tối, sau đ&oacute; người tham dự c&oacute; thể đặt c&acirc;u hỏi.</p>",
+          "tags": [
+            "[Part 5] Liên từ & Giới từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "102",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 102,
+          "stem": "The............... antique store in Harau Valley is going to close next month.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "final"
+            },
+            {
+              "choice": "B",
+              "text": "last"
+            },
+            {
+              "choice": "C",
+              "text": "lasted"
+            },
+            {
+              "choice": "D",
+              "text": "lasting"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>(A) final (T&iacute;nh từ): cuối c&ugrave;ng / tối hậu.<br />\n(B) last (T&iacute;nh từ): c&ograve;n lại / c&aacute;i cuối c&ugrave;ng c&ograve;n s&oacute;t lại.<br />\n(C) lasted (Động từ - qu&aacute; khứ): k&eacute;o d&agrave;i trong một khoảng thời gian.<br />\n(D) lasting (T&iacute;nh từ/Ph&acirc;n từ): l&acirc;u d&agrave;i, bền vững.</p>\n\n<p>Chỗ trống đứng trước cụm danh từ &ldquo;antique store,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một t&iacute;nh từ để bổ nghĩa cho danh từ.</p>\n\n<p>C&acirc;u n&agrave;y mang nghĩa đ&acirc;y l&agrave; cửa h&agrave;ng đồ cổ duy nhất c&ograve;n lại ở Harau Valley, v&igrave; vậy &ldquo;last&rdquo; l&agrave; lựa chọn ph&ugrave; hợp nhất.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (B) last</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nthe last + noun = người/vật cuối c&ugrave;ng c&ograve;n lại.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>Cửa h&agrave;ng đồ cổ cuối c&ugrave;ng ở thung lũng Harau sẽ đ&oacute;ng cửa v&agrave;o th&aacute;ng tới.</p>",
+          "tags": [
+            "[Part 5] Thì & Dạng động từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "103",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 103,
+          "stem": "Residents of Merryville will get an online status............ regarding the ongoing bridge construction project.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "exchange"
+            },
+            {
+              "choice": "B",
+              "text": "payment"
+            },
+            {
+              "choice": "C",
+              "text": "request"
+            },
+            {
+              "choice": "D",
+              "text": "update"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>(A) exchange (Danh từ): h&agrave;nh động trao đổi một thứ để nhận lại thứ kh&aacute;c.<br />\n(B) payment (Danh từ): khoản tiền được trả cho một thứ g&igrave; đ&oacute;.<br />\n(C) request (Danh từ): y&ecirc;u cầu ch&iacute;nh thức về một điều g&igrave; đ&oacute;.<br />\n(D) update (Danh từ): th&ocirc;ng tin hoặc b&aacute;o c&aacute;o tiến độ mới nhất.</p>\n\n<p>Chỗ trống đứng sau &ldquo;online status&rdquo; v&agrave; trước &ldquo;regarding the ongoing bridge construction project,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một danh từ mang nghĩa th&ocirc;ng tin mới hoặc hiện tại.</p>\n\n<p>&ldquo;Status update&rdquo; l&agrave; một cụm từ th&ocirc;ng dụng, c&oacute; nghĩa l&agrave; b&aacute;o c&aacute;o mới nhất về một t&igrave;nh huống hoặc dự &aacute;n.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (D) update</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nstatus update = th&ocirc;ng tin mới nhất về tiến độ hoặc t&igrave;nh trạng hiện tại.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Cư d&acirc;n của Merryville sẽ nhận được bản cập nhật trực tuyến về t&igrave;nh trạng của dự &aacute;n x&acirc;y dựng cầu đang diễn ra.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "104",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 104,
+          "stem": "As a result of............. many years of leading major media organizations, Ms. Ayo was awarded the Dowel Journalism Prize.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "her"
+            },
+            {
+              "choice": "B",
+              "text": "hers"
+            },
+            {
+              "choice": "C",
+              "text": "herself"
+            },
+            {
+              "choice": "D",
+              "text": "she"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) her (T&iacute;nh từ sở hữu/Đại từ t&acirc;n ngữ): thuộc về hoặc c&oacute; li&ecirc;n quan đến c&ocirc; ấy.<br />\n(B) hers (Đại từ sở hữu): thứ thuộc về c&ocirc; ấy.<br />\n(C) herself (Đại từ phản th&acirc;n): ch&iacute;nh bản th&acirc;n người phụ nữ đ&oacute;.<br />\n(D) she (Đại từ chủ ngữ): được d&ugrave;ng l&agrave;m chủ ngữ trong c&acirc;u.</p>\n\n<p>Chỗ trống đứng trước cụm danh từ &ldquo;many years of leading major media organizations,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một t&iacute;nh từ sở hữu để bổ nghĩa cho cụm danh từ.</p>\n\n<p>Chỉ c&oacute; &ldquo;her&rdquo; c&oacute; thể bổ nghĩa đ&uacute;ng cho &ldquo;many years.&rdquo;</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (A) her</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nAs a result of + N/V-ing = bởi v&igrave; / do.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Nhờ nhiều năm l&atilde;nh đạo c&aacute;c tổ chức truyền th&ocirc;ng lớn, b&agrave; Ayo đ&atilde; được trao Giải B&aacute;o ch&iacute; Dowel.</p>",
+          "tags": [
+            "[Part 5] Đại từ & Mệnh đề quan hệ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "105",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 105,
+          "stem": "To prevent the................ of computer viruses, avoid opening suspicious e-mails.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "balance"
+            },
+            {
+              "choice": "B",
+              "text": "break"
+            },
+            {
+              "choice": "C",
+              "text": "cover"
+            },
+            {
+              "choice": "D",
+              "text": "spread"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>(A) balance (Danh từ): trạng th&aacute;i ổn định hoặc c&acirc;n bằng.<br />\n(B) break (Danh từ/Động từ): sự nứt vỡ, t&aacute;ch rời hoặc gi&aacute;n đoạn.<br />\n(C) cover (Danh từ/Động từ): thứ d&ugrave;ng để bảo vệ hoặc che phủ.<br />\n(D) spread (Danh từ/Động từ): sự lan rộng hoặc ph&acirc;n t&aacute;n.</p>\n\n<p>Chỗ trống đứng sau &ldquo;the&rdquo; v&agrave; trước &ldquo;of computer viruses,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một danh từ.</p>\n\n<p>C&acirc;u n&agrave;y n&oacute;i về việc ngăn chặn virus m&aacute;y t&iacute;nh l&acirc;y lan từ m&aacute;y t&iacute;nh n&agrave;y sang m&aacute;y t&iacute;nh kh&aacute;c, v&igrave; vậy &ldquo;spread&rdquo; l&agrave; lựa chọn ph&ugrave; hợp nhất.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (D) spread</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nprevent the spread of + noun = ngăn chặn sự l&acirc;y lan của điều g&igrave; đ&oacute;.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Để ngăn chặn sự l&acirc;y lan của virus m&aacute;y t&iacute;nh, h&atilde;y tr&aacute;nh mở c&aacute;c email đ&aacute;ng ngờ.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "106",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 106,
+          "stem": "The hiring manager............... reviewed each applicant’s résumé and qualifications.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "careful"
+            },
+            {
+              "choice": "B",
+              "text": "carefully"
+            },
+            {
+              "choice": "C",
+              "text": "carefulness"
+            },
+            {
+              "choice": "D",
+              "text": "caring"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>(A) careful (T&iacute;nh từ): cẩn thận v&agrave; ch&uacute; &yacute;.<br />\n(B) carefully (Trạng từ): một c&aacute;ch cẩn thận v&agrave; ch&uacute; &yacute;.<br />\n(C) carefulness (Danh từ): sự cẩn thận.<br />\n(D) caring (T&iacute;nh từ): thể hiện sự quan t&acirc;m v&agrave; chăm s&oacute;c người kh&aacute;c.</p>\n\n<p>Chỗ trống đứng trước động từ &ldquo;reviewed,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một trạng từ để m&ocirc; tả c&aacute;ch người quản l&yacute; tuyển dụng xem x&eacute;t hồ sơ v&agrave; bằng cấp.</p>\n\n<p>Chỉ c&oacute; &ldquo;carefully&rdquo; hoạt động như một trạng từ trong c&acirc;u n&agrave;y.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (B) carefully</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nAdverb + verb = trạng từ bổ nghĩa cho h&agrave;nh động của động từ.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Người quản l&yacute; tuyển dụng đ&atilde; cẩn thận xem x&eacute;t sơ yếu l&yacute; lịch v&agrave; tr&igrave;nh độ của từng ứng vi&ecirc;n.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ loại"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "107",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 107,
+          "stem": "In October, Mr. Sakamoto will depart for New Zealand............ oversee the opening of the new Auckland branch.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "and"
+            },
+            {
+              "choice": "B",
+              "text": "because"
+            },
+            {
+              "choice": "C",
+              "text": "before"
+            },
+            {
+              "choice": "D",
+              "text": "however"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) and (Li&ecirc;n từ): d&ugrave;ng để th&ecirc;m một h&agrave;nh động hoặc &yacute; tưởng kh&aacute;c.<br />\n(B) because (Li&ecirc;n từ): diễn tả l&yacute; do.<br />\n(C) before (Li&ecirc;n từ/Giới từ): trước một thời điểm hoặc sự kiện.<br />\n(D) however (Trạng từ): diễn tả sự tương phản.</p>\n\n<p>C&acirc;u n&agrave;y m&ocirc; tả hai h&agrave;nh động của c&ugrave;ng một chủ ngữ:</p>\n\n<p>&ldquo;will depart for New Zealand&rdquo;<br />\n&ldquo;oversee the opening of the new Auckland branch&rdquo;</p>\n\n<p>Ch&uacute;ng ta cần một li&ecirc;n từ để nối hai h&agrave;nh động song song.</p>\n\n<p>Chỉ c&oacute; &ldquo;and&rdquo; li&ecirc;n kết hợp l&yacute; hai h&agrave;nh động n&agrave;y.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (A) and</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nS + will + V1 and V1 = hai h&agrave;nh động trong tương lai của c&ugrave;ng một chủ ngữ.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;V&agrave;o th&aacute;ng Mười, &ocirc;ng Sakamoto sẽ khởi h&agrave;nh đến New Zealand v&agrave; gi&aacute;m s&aacute;t việc khai trương chi nh&aacute;nh mới tại Auckland.</p>",
+          "tags": [
+            "[Part 5] Liên từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "108",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 108,
+          "stem": "Tarateer Pharmaceuticals is expanding its product............... to include over-the-counter medicines.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "line"
+            },
+            {
+              "choice": "B",
+              "text": "lined"
+            },
+            {
+              "choice": "C",
+              "text": "lines"
+            },
+            {
+              "choice": "D",
+              "text": "lining"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) line (Danh từ): một d&ograve;ng hoặc một chuỗi c&aacute;c sản phẩm tương tự.<br />\n(B) lined (Động từ - ph&acirc;n từ qu&aacute; khứ/t&iacute;nh từ): được l&oacute;t hoặc được sắp xếp th&agrave;nh h&agrave;ng.<br />\n(C) lines (Danh từ số nhiều): số nhiều của &ldquo;line,&rdquo; thường chỉ c&aacute;c vạch kẻ hoặc h&agrave;ng người.<br />\n(D) lining (Danh từ/Động từ): lớp l&oacute;t b&ecirc;n trong hoặc h&agrave;nh động l&oacute;t b&ecirc;n trong một vật.</p>\n\n<p>Chỗ trống đứng sau &ldquo;product,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một danh từ kết hợp cố định với &ldquo;product ___.&rdquo;</p>\n\n<p>Cụm từ đ&uacute;ng l&agrave; &ldquo;product line&rdquo;, nghĩa l&agrave; một d&ograve;ng sản phẩm do c&ocirc;ng ty cung cấp.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (A) line</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nproduct line = nh&oacute;m/d&ograve;ng c&aacute;c sản phẩm li&ecirc;n quan do một c&ocirc;ng ty cung cấp.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong> Tarateer Pharmaceuticals đang mở rộng d&ograve;ng sản phẩm của m&igrave;nh để bao gồm c&aacute;c loại thuốc kh&ocirc;ng cần k&ecirc; đơn.</p>",
+          "tags": [
+            "[Part 5] Thì & Dạng động từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "109",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 109,
+          "stem": "Dynart, Inc. continuously.............. innovative ways to reduce its plastic usage.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "seeker"
+            },
+            {
+              "choice": "B",
+              "text": "seeking"
+            },
+            {
+              "choice": "C",
+              "text": "seeks"
+            },
+            {
+              "choice": "D",
+              "text": "to seek"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>(A) seeker (Danh từ): người t&igrave;m kiếm điều g&igrave; đ&oacute;.<br />\n(B) seeking (Động từ - hiện tại ph&acirc;n từ): đang trong qu&aacute; tr&igrave;nh t&igrave;m kiếm.<br />\n(C) seeks (Động từ th&igrave; hiện tại đơn, ng&ocirc;i thứ ba số &iacute;t): t&igrave;m kiếm.<br />\n(D) to seek (Động từ nguy&ecirc;n thể): t&igrave;m kiếm.</p>\n\n<p>Chủ ngữ l&agrave; &ldquo;Dynart, Inc.&rdquo;, l&agrave; một thực thể c&ocirc;ng ty số &iacute;t, v&igrave; vậy động từ phải chia ở th&igrave; hiện tại đơn.</p>\n\n<p>&ldquo;Continuously&rdquo; l&agrave; một trạng từ chỉ tần suất, bổ nghĩa cho động từ &ldquo;seeks.&rdquo;</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (C) seeks</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nS (chủ ngữ số &iacute;t) + V(s/es) = th&igrave; hiện tại đơn d&ugrave;ng cho h&agrave;nh động chung hoặc th&oacute;i quen.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Dynart, Inc. li&ecirc;n tục t&igrave;m kiếm những phương ph&aacute;p đổi mới để giảm lượng nhựa sử dụng.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "110",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 110,
+          "stem": "The cash registers at Pirkle Books automatically................... the number of books still available in inventory.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "calculate"
+            },
+            {
+              "choice": "B",
+              "text": "calculating"
+            },
+            {
+              "choice": "C",
+              "text": "calculation"
+            },
+            {
+              "choice": "D",
+              "text": "calculator"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) calculate (Động từ): t&iacute;nh to&aacute;n bằng phương ph&aacute;p to&aacute;n học hoặc logic.<br />\n(B) calculating (Động từ - hiện tại ph&acirc;n từ): đang trong qu&aacute; tr&igrave;nh t&iacute;nh to&aacute;n.<br />\n(C) calculation (Danh từ): sự t&iacute;nh to&aacute;n hoặc kết quả của ph&eacute;p t&iacute;nh.<br />\n(D) calculator (Danh từ): thiết bị d&ugrave;ng để t&iacute;nh to&aacute;n.</p>\n\n<p>Chủ ngữ l&agrave; &ldquo;The cash registers,&rdquo; l&agrave; số nhiều, v&agrave; c&acirc;u cần một động từ ch&iacute;nh đứng sau &ldquo;automatically.&rdquo;</p>\n\n<p>V&igrave; vậy, ch&uacute;ng ta cần một động từ thể hiện h&agrave;nh động m&agrave; m&aacute;y t&iacute;nh tiền thực hiện.</p>\n\n<p>&ldquo;calculate&rdquo; đ&uacute;ng chức năng l&agrave; động từ ch&iacute;nh, mang nghĩa &ldquo;t&iacute;nh to&aacute;n số lượng.&rdquo;</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (A) calculate</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nS + automatically + V = diễn tả h&agrave;nh động tự động được thực hiện bởi hệ thống hoặc thiết bị.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;C&aacute;c m&aacute;y t&iacute;nh tiền tại Pirkle Books tự động t&iacute;nh to&aacute;n số lượng s&aacute;ch c&ograve;n lại trong kho.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ loại"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "111",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 111,
+          "stem": "The product team is creating mapping software that can.............. identify underground minerals.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "honestly"
+            },
+            {
+              "choice": "B",
+              "text": "loosely"
+            },
+            {
+              "choice": "C",
+              "text": "precisely"
+            },
+            {
+              "choice": "D",
+              "text": "widely"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>(A) honestly (Trạng từ): một c&aacute;ch trung thực.<br />\n(B) loosely (Trạng từ): một c&aacute;ch lỏng lẻo; kh&ocirc;ng ch&iacute;nh x&aacute;c.<br />\n(C) precisely (Trạng từ): một c&aacute;ch ch&iacute;nh x&aacute;c; với độ chuẩn x&aacute;c cao.<br />\n(D) widely (Trạng từ): một c&aacute;ch rộng r&atilde;i; tr&ecirc;n phạm vi lớn.</p>\n\n<p>Chỗ trống bổ nghĩa cho động từ &ldquo;identify,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một trạng từ m&ocirc; tả mức độ ch&iacute;nh x&aacute;c khi phần mềm c&oacute; thể x&aacute;c định kho&aacute;ng sản dưới l&ograve;ng đất.</p>\n\n<p>Ngữ cảnh nhấn mạnh độ ch&iacute;nh x&aacute;c v&agrave; t&iacute;nh đ&uacute;ng tuyệt đối.</p>\n\n<p>&ldquo;precisely&rdquo; l&agrave; ph&ugrave; hợp nhất v&igrave; c&oacute; nghĩa &ldquo;một c&aacute;ch ch&iacute;nh x&aacute;c cao.&rdquo;</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (C) precisely</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\ncan + trạng từ + động từ = diễn tả khả năng với một c&aacute;ch thức cụ thể (độ ch&iacute;nh x&aacute;c, tốc độ, v.v.).</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>Nh&oacute;m sản phẩm đang ph&aacute;t triển phần mềm bản đồ c&oacute; thể x&aacute;c định ch&iacute;nh x&aacute;c c&aacute;c kho&aacute;ng sản dưới l&ograve;ng đất.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "112",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 112,
+          "stem": "According to CEO Mayu Yamada, it would not be................. responsible to enlarge the warehouse at this moment.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "finance"
+            },
+            {
+              "choice": "B",
+              "text": "financed"
+            },
+            {
+              "choice": "C",
+              "text": "financial"
+            },
+            {
+              "choice": "D",
+              "text": "financially"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>(A) finance (Động từ/Danh từ): quản l&yacute; tiền hoặc cung cấp t&agrave;i ch&iacute;nh.<br />\n(B) financed (Động từ - ph&acirc;n từ qu&aacute; khứ): được t&agrave;i trợ hoặc hỗ trợ t&agrave;i ch&iacute;nh.<br />\n(C) financial (T&iacute;nh từ): thuộc về tiền bạc hoặc t&agrave;i ch&iacute;nh.<br />\n(D) financially (Trạng từ): theo c&aacute;ch li&ecirc;n quan đến t&agrave;i ch&iacute;nh.</p>\n\n<p>Chỗ trống đứng trước t&iacute;nh từ &ldquo;responsible,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một trạng từ để bổ nghĩa cho t&iacute;nh từ.</p>\n\n<p>Cấu tr&uacute;c l&agrave;: it would not be + trạng từ + t&iacute;nh từ.<br />\n&ldquo;Financially responsible&rdquo; l&agrave; cụm phổ biến, nghĩa l&agrave; hợp l&yacute; về mặt kinh tế.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (D) financially</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nnot + trạng từ + t&iacute;nh từ = điều chỉnh mức độ hoặc c&aacute;ch thức của t&iacute;nh từ.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Theo CEO Mayu Yamada, việc mở rộng kho h&agrave;ng v&agrave;o thời điểm n&agrave;y sẽ kh&ocirc;ng hợp l&yacute; về mặt t&agrave;i ch&iacute;nh.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ loại"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "113",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 113,
+          "stem": "Analysts cannot predict with any.............. what the regional demand for electric trucks will be.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "achievement"
+            },
+            {
+              "choice": "B",
+              "text": "certainty"
+            },
+            {
+              "choice": "C",
+              "text": "fairness"
+            },
+            {
+              "choice": "D",
+              "text": "refusal"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>(A) achievement (Danh từ): th&agrave;nh tựu, điều đạt được th&agrave;nh c&ocirc;ng.<br />\n(B) certainty (Danh từ): sự chắc chắn, trạng th&aacute;i r&otilde; r&agrave;ng v&agrave; kh&ocirc;ng nghi ngờ.<br />\n(C) fairness (Danh từ): sự c&ocirc;ng bằng, t&iacute;nh kh&ocirc;ng thi&ecirc;n vị.<br />\n(D) refusal (Danh từ): sự từ chối, h&agrave;nh động n&oacute;i &ldquo;kh&ocirc;ng&rdquo;.</p>\n\n<p>Cụm &ldquo;cannot predict with any ____&rdquo; cần một danh từ diễn tả sự thiếu chắc chắn hoặc kh&ocirc;ng c&oacute; đảm bảo.</p>\n\n<p>&ldquo;certainty&rdquo; ph&ugrave; hợp nhất v&igrave; mang nghĩa sự chắc chắn; &ldquo;with any certainty&rdquo; nghĩa l&agrave; &ldquo;kh&ocirc;ng c&oacute; bất kỳ sự chắc chắn n&agrave;o&rdquo;.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (B) certainty</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nwith any certainty = kh&ocirc;ng c&oacute; sự chắc chắn / kh&ocirc;ng thể chắc chắn.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>C&aacute;c nh&agrave; ph&acirc;n t&iacute;ch chưa thể dự đo&aacute;n một c&aacute;ch chắc chắn nhu cầu xe tải điện tại từng khu vực sẽ ra sao.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "114",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 114,
+          "stem": "As part of its advertising campaign, Elegancia Dishware is............... requesting feedback from customers.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "actively"
+            },
+            {
+              "choice": "B",
+              "text": "brightly"
+            },
+            {
+              "choice": "C",
+              "text": "faithfully"
+            },
+            {
+              "choice": "D",
+              "text": "quietly"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) actively (Trạng từ): một c&aacute;ch t&iacute;ch cực, chủ động v&agrave; tham gia mạnh mẽ.<br />\n(B) brightly (Trạng từ): một c&aacute;ch s&aacute;ng sủa, rực rỡ.<br />\n(C) faithfully (Trạng từ): một c&aacute;ch trung th&agrave;nh hoặc ch&iacute;nh x&aacute;c.<br />\n(D) quietly (Trạng từ): một c&aacute;ch y&ecirc;n lặng hoặc k&iacute;n đ&aacute;o.</p>\n\n<p>Chỗ trống bổ nghĩa cho động từ &ldquo;requesting,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một trạng từ m&ocirc; tả c&aacute;ch c&ocirc;ng ty thực hiện h&agrave;nh động n&agrave;y.</p>\n\n<p>C&acirc;u n&agrave;y n&oacute;i về một chiến dịch quảng c&aacute;o, h&agrave;m &yacute; sự tương t&aacute;c li&ecirc;n tục v&agrave; c&oacute; chủ đ&iacute;ch với kh&aacute;ch h&agrave;ng.</p>\n\n<p>&ldquo;actively&rdquo; ph&ugrave; hợp nhất v&igrave; nghĩa l&agrave; c&ocirc;ng ty đang chủ động v&agrave; mạnh mẽ y&ecirc;u cầu phản hồi.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (A) actively</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nbe + trạng từ + V-ing = m&ocirc; tả một h&agrave;nh động đang diễn ra với c&aacute;ch thức cụ thể.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>Trong khu&ocirc;n khổ chiến dịch quảng c&aacute;o, Elegancia Dishware đang t&iacute;ch cực thu thập phản hồi từ kh&aacute;ch h&agrave;ng.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "115",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 115,
+          "stem": "Rain gardens are designed to.................. water in order to prevent flooding on local roads.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "absorb"
+            },
+            {
+              "choice": "B",
+              "text": "experience"
+            },
+            {
+              "choice": "C",
+              "text": "flood"
+            },
+            {
+              "choice": "D",
+              "text": "involve"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) absorb (Động từ): hấp thụ, h&uacute;t v&agrave;o (chất lỏng hoặc năng lượng).<br />\n(B) experience (Động từ): trải qua hoặc cảm nhận một điều g&igrave; đ&oacute;.<br />\n(C) flood (Động từ/Danh từ): l&agrave;m ngập nước; sự lũ lụt, tr&agrave;n nước.<br />\n(D) involve (Động từ): bao gồm như một phần cần thiết hoặc yếu tố li&ecirc;n quan.</p>\n\n<p>C&acirc;u n&agrave;y m&ocirc; tả chức năng của c&aacute;c khu vườn mưa (rain gardens), được thiết kế để xử l&yacute; nước nhằm ngăn ngập lụt.</p>\n\n<p>V&igrave; vậy, ch&uacute;ng ta cần một động từ mang nghĩa &ldquo;h&uacute;t hoặc thấm nước&rdquo;.</p>\n\n<p>&ldquo;absorb&rdquo; l&agrave; lựa chọn đ&uacute;ng v&igrave; c&aacute;c khu vườn mưa c&oacute; khả năng hấp thụ lượng nước dư thừa.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (A) absorb</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nbe designed to + V = được tạo ra với một mục đ&iacute;ch cụ thể.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Vườn mưa được thiết kế để hấp thụ nước nhằm ngăn ngừa t&igrave;nh trạng ngập lụt tr&ecirc;n c&aacute;c tuyến đường địa phương.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "116",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 116,
+          "stem": "Theta Industries' training program is intended to improve the...................... of its manufacturing systems.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "producing"
+            },
+            {
+              "choice": "B",
+              "text": "production"
+            },
+            {
+              "choice": "C",
+              "text": "productive"
+            },
+            {
+              "choice": "D",
+              "text": "productivity"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>(A) producing (Động từ - hiện tại ph&acirc;n từ): h&agrave;nh động tạo ra hoặc sản xuất thứ g&igrave; đ&oacute;.<br />\n(B) production (Danh từ): qu&aacute; tr&igrave;nh sản xuất hoặc chế tạo h&agrave;ng h&oacute;a.<br />\n(C) productive (T&iacute;nh từ): c&oacute; khả năng tạo ra nhiều kết quả hoặc đầu ra.<br />\n(D) productivity (Danh từ): hiệu suất hoặc mức độ hiệu quả của sản xuất.</p>\n\n<p>Chỗ trống đứng sau &ldquo;the,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một danh từ.</p>\n\n<p>Cụm n&agrave;y n&oacute;i về việc cải thiện mức độ hiệu quả của hệ thống sản xuất, v&igrave; vậy &ldquo;productivity&rdquo; l&agrave; ph&ugrave; hợp nhất.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (D) productivity</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nimprove the productivity of + N = tăng hiệu suất hoặc sản lượng của một hệ thống.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>Chương tr&igrave;nh đ&agrave;o tạo của Theta Industries nhằm cải thiện năng suất của c&aacute;c hệ thống sản xuất.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ loại"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "117",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 117,
+          "stem": "The board of directors voted to award Mr. Mitrakos a bonus for his role............. securing the international contract.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "besides"
+            },
+            {
+              "choice": "B",
+              "text": "in"
+            },
+            {
+              "choice": "C",
+              "text": "on"
+            },
+            {
+              "choice": "D",
+              "text": "outside"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>(A) besides (Giới từ): ngo&agrave;i ra; b&ecirc;n cạnh.<br />\n(B) in (Giới từ): trong; được d&ugrave;ng trong nhiều cấu tr&uacute;c cố định, bao gồm &ldquo;role in + V-ing&rdquo;.<br />\n(C) on (Giới từ): tr&ecirc;n bề mặt; đ&ocirc;i khi d&ugrave;ng trong một số cụm động từ.<br />\n(D) outside (Giới từ): b&ecirc;n ngo&agrave;i; vượt ra ngo&agrave;i ranh giới.</p>\n\n<p>Cụm đ&uacute;ng l&agrave; &ldquo;role in + V-ing&rdquo;, một cấu tr&uacute;c ngữ ph&aacute;p cố định mang nghĩa vai tr&ograve; hoặc sự đ&oacute;ng g&oacute;p của ai đ&oacute; trong việc thực hiện một h&agrave;nh động.</p>\n\n<p>Ở đ&acirc;y, &ldquo;securing the international contract&rdquo; l&agrave; một cụm danh động từ, v&igrave; vậy cần &ldquo;in.&rdquo;</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (B) in</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nrole in + V-ing = vai tr&ograve; hoặc sự đ&oacute;ng g&oacute;p của ai đ&oacute; trong một h&agrave;nh động hay th&agrave;nh tựu.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>Hội đồng quản trị đ&atilde; bỏ phiếu quyết định thưởng cho &ocirc;ng Mitrakos v&igrave; vai tr&ograve; của &ocirc;ng trong việc k&yacute; kết hợp đồng quốc tế.</p>",
+          "tags": [
+            "[Part 5] Giới từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "118",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 118,
+          "stem": "The finance director granted approval.................. the project could move forward.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "carefully"
+            },
+            {
+              "choice": "B",
+              "text": "moreover"
+            },
+            {
+              "choice": "C",
+              "text": "nearby"
+            },
+            {
+              "choice": "D",
+              "text": "so that"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>(A) carefully (Trạng từ): một c&aacute;ch cẩn thận.<br />\n(B) moreover (Trạng từ): hơn nữa; th&ecirc;m v&agrave;o đ&oacute;.<br />\n(C) nearby (Trạng từ/T&iacute;nh từ): ở gần; gần về khoảng c&aacute;ch.<br />\n(D) so that (Li&ecirc;n từ): để m&agrave;; nhằm mục đ&iacute;ch rằng.</p>\n\n<p>Cấu tr&uacute;c c&acirc;u l&agrave;:<br />\n&ldquo;granted approval ______ the project could move forward.&rdquo;</p>\n\n<p>Ch&uacute;ng ta cần một li&ecirc;n từ thể hiện mục đ&iacute;ch (việc ph&ecirc; duyệt được đưa ra v&igrave; một l&yacute; do).</p>\n\n<p>&ldquo;So that&rdquo; ph&ugrave; hợp v&igrave; n&oacute; d&ugrave;ng để mở đầu mệnh đề chỉ mục đ&iacute;ch hoặc kết quả mong muốn.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (D) so that</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\ngrant + N + so that + S + V = cấp ph&eacute;p/h&agrave;nh động để một việc kh&aacute;c c&oacute; thể xảy ra.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Gi&aacute;m đốc t&agrave;i ch&iacute;nh đ&atilde; ph&ecirc; duyệt để dự &aacute;n c&oacute; thể tiếp tục triển khai.</p>",
+          "tags": [
+            "[Part 5] Liên từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "119",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 119,
+          "stem": "The newspaper article explains ways job seekers can................... for having limited workplace experience.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "answer"
+            },
+            {
+              "choice": "B",
+              "text": "collect"
+            },
+            {
+              "choice": "C",
+              "text": "compensate"
+            },
+            {
+              "choice": "D",
+              "text": "gather"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>(A) answer (Động từ): trả lời một c&acirc;u hỏi hoặc phản hồi một t&igrave;nh huống.<br />\n(B) collect (Động từ): thu thập, gom lại.<br />\n(C) compensate (Động từ): b&ugrave; đắp cho một điểm yếu, sự thiếu hụt hoặc hạn chế.<br />\n(D) gather (Động từ): tập hợp hoặc thu thập lại.</p>\n\n<p>Cấu tr&uacute;c &ldquo;can ______ for having limited workplace experience&rdquo; cần một động từ đi với &ldquo;for&rdquo; v&agrave; mang nghĩa xử l&yacute; hoặc b&ugrave; đắp cho một bất lợi.</p>\n\n<p>Cụm cố định &ldquo;compensate for&rdquo; c&oacute; nghĩa l&agrave; b&ugrave; đắp cho sự thiếu hụt hoặc điểm yếu.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (C) compensate</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\ncompensate for + N/V-ing = b&ugrave; đắp cho một bất lợi hoặc thiếu s&oacute;t.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;B&agrave;i b&aacute;o giải th&iacute;ch những c&aacute;ch m&agrave; người t&igrave;m việc c&oacute; thể b&ugrave; đắp cho việc thiếu kinh nghiệm l&agrave;m việc.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "120",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 120,
+          "stem": "Mr. Ellis and Ms. Barnes were both very qualified, but................ received the job.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "neither"
+            },
+            {
+              "choice": "B",
+              "text": "ourselves"
+            },
+            {
+              "choice": "C",
+              "text": "somebody"
+            },
+            {
+              "choice": "D",
+              "text": "whichever"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) neither (Từ hạn định/Đại từ): kh&ocirc;ng c&aacute;i n&agrave;o trong hai người hoặc hai vật.<br />\n(B) ourselves (Đại từ phản th&acirc;n): d&ugrave;ng khi &ldquo;we&rdquo; vừa l&agrave; chủ ngữ vừa l&agrave; t&acirc;n ngữ.<br />\n(C) somebody (Đại từ): một người kh&ocirc;ng x&aacute;c định.<br />\n(D) whichever (Đại từ): bất kỳ một trong số c&aacute;c lựa chọn.</p>\n\n<p>C&acirc;u n&agrave;y đề cập đến hai người (Mr. Ellis v&agrave; Ms. Barnes) v&agrave; n&oacute;i rằng kh&ocirc;ng ai trong số họ được nhận việc.</p>\n\n<p>V&igrave; vậy, ch&uacute;ng ta cần một từ mang nghĩa &ldquo;kh&ocirc;ng ai trong hai người.&rdquo;</p>\n\n<p>&ldquo;neither&rdquo; diễn đạt ch&iacute;nh x&aacute;c rằng cả hai đều kh&ocirc;ng được chọn.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (A) neither</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nneither + động từ số &iacute;t = kh&ocirc;ng một trong hai người hoặc hai vật.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;&Ocirc;ng Ellis v&agrave; b&agrave; Barnes đều rất c&oacute; tr&igrave;nh độ, nhưng kh&ocirc;ng ai trong số họ được nhận c&ocirc;ng việc.</p>",
+          "tags": [
+            "[Part 5] Đại từ & Mệnh đề quan hệ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "121",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 121,
+          "stem": "Ennis Photography bought completely new lighting equipment................. the high expense.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "because of"
+            },
+            {
+              "choice": "B",
+              "text": "before"
+            },
+            {
+              "choice": "C",
+              "text": "despite"
+            },
+            {
+              "choice": "D",
+              "text": "nevertheless"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>(A) because of (Giới từ): v&igrave;; do nguy&ecirc;n nh&acirc;n của.<br />\n(B) before (Giới từ): trước một thời điểm hoặc sự kiện.<br />\n(C) despite (Giới từ): mặc d&ugrave;; bất chấp.<br />\n(D) nevertheless (Trạng từ): tuy nhi&ecirc;n; d&ugrave; vậy.</p>\n\n<p>C&acirc;u n&agrave;y thể hiện sự đối lập: c&ocirc;ng ty vẫn mua thiết bị mới d&ugrave; n&oacute; đắt.</p>\n\n<p>Ch&uacute;ng ta cần một giới từ diễn tả sự tương phản đứng trước cụm danh từ (&ldquo;the high expense&rdquo;).</p>\n\n<p>&ldquo;despite&rdquo; ph&ugrave; hợp v&igrave; d&ugrave;ng để diễn tả sự tương phản với một danh từ hoặc cụm danh từ.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (C) despite</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\ndespite + N/V-ing = d&ugrave;ng để thể hiện sự tương phản (tương đương &ldquo;in spite of&rdquo;).</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>Ennis Photography đ&atilde; mua to&agrave;n bộ thiết bị chiếu s&aacute;ng mới mặc d&ugrave; chi ph&iacute; rất cao.</p>",
+          "tags": [
+            "[Part 5] Liên từ & Giới từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "122",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 122,
+          "stem": "Marburton residents who want to.............. a home should get in touch with the award-winning staff at Kwan Real Estate.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "salesman"
+            },
+            {
+              "choice": "B",
+              "text": "sell"
+            },
+            {
+              "choice": "C",
+              "text": "seller"
+            },
+            {
+              "choice": "D",
+              "text": "selling"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>(A) salesman (Danh từ): người b&aacute;n h&agrave;ng hoặc cung cấp dịch vụ.<br />\n(B) sell (Động từ): b&aacute;n, trao đổi thứ g&igrave; đ&oacute; để lấy tiền.<br />\n(C) seller (Danh từ): người b&aacute;n một thứ g&igrave; đ&oacute;.<br />\n(D) selling (Động từ - danh động từ/hiện tại ph&acirc;n từ): h&agrave;nh động b&aacute;n.</p>\n\n<p>Cấu tr&uacute;c l&agrave;:<br />\n&ldquo;who want to ______ a home&rdquo; &rarr; ch&uacute;ng ta cần một động từ nguy&ecirc;n thể (sau &ldquo;want to&rdquo; l&agrave; động từ nguy&ecirc;n mẫu).</p>\n\n<p>&ldquo;sell&rdquo; l&agrave; động từ đ&uacute;ng, mang nghĩa b&aacute;n một ng&ocirc;i nh&agrave; để lấy tiền.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (B) sell</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nwant to + V = diễn tả mong muốn thực hiện một h&agrave;nh động.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Những cư d&acirc;n Marburton muốn b&aacute;n nh&agrave; n&ecirc;n li&ecirc;n hệ với đội ngũ từng đoạt giải thưởng tại Kwan Real Estate.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ loại"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "123",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 123,
+          "stem": "Maswa Bistro established a....................... agreement with local farmers to buy a fixed quantity of produce every week.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "competitive"
+            },
+            {
+              "choice": "B",
+              "text": "cooperative"
+            },
+            {
+              "choice": "C",
+              "text": "thankful"
+            },
+            {
+              "choice": "D",
+              "text": "worried"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>(A) competitive (T&iacute;nh từ): mang t&iacute;nh cạnh tranh.<br />\n(B) cooperative (T&iacute;nh từ): hợp t&aacute;c, c&ugrave;ng l&agrave;m việc với nhau để đạt mục ti&ecirc;u chung.<br />\n(C) thankful (T&iacute;nh từ): biết ơn, thể hiện sự cảm k&iacute;ch.<br />\n(D) worried (T&iacute;nh từ): lo lắng, băn khoăn.</p>\n\n<p>C&acirc;u n&agrave;y m&ocirc; tả một thỏa thuận giữa Maswa Bistro v&agrave; n&ocirc;ng d&acirc;n địa phương nhằm c&ugrave;ng hợp t&aacute;c để cung cấp n&ocirc;ng sản thường xuy&ecirc;n.</p>\n\n<p>V&igrave; vậy, ch&uacute;ng ta cần một t&iacute;nh từ diễn tả sự hợp t&aacute;c.</p>\n\n<p>&ldquo;cooperative&rdquo; ph&ugrave; hợp v&igrave; m&ocirc; tả một thỏa thuận trong đ&oacute; cả hai b&ecirc;n c&ugrave;ng l&agrave;m việc với nhau.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (B) cooperative</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\ncooperative agreement = thỏa thuận hợp t&aacute;c, trong đ&oacute; c&aacute;c b&ecirc;n c&ugrave;ng phối hợp v&igrave; lợi &iacute;ch chung.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>Maswa Bistro đ&atilde; k&yacute; kết một thỏa thuận hợp t&aacute;c với c&aacute;c n&ocirc;ng d&acirc;n địa phương để mua một lượng n&ocirc;ng sản cố định mỗi tuần.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "124",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 124,
+          "stem": "The City of Doyle's new downtown parking.................. have faced opposition from both residents and visitors.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "limitation"
+            },
+            {
+              "choice": "B",
+              "text": "limiting"
+            },
+            {
+              "choice": "C",
+              "text": "restrictions"
+            },
+            {
+              "choice": "D",
+              "text": "restrictively"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>(A) limitation (Danh từ - số &iacute;t): sự hạn chế hoặc giới hạn.<br />\n(B) limiting (T&iacute;nh từ/Động từ): mang t&iacute;nh hạn chế hoặc l&agrave;m giảm bớt điều g&igrave; đ&oacute;.<br />\n(C) restrictions (Danh từ - số nhiều): c&aacute;c quy định hoặc giới hạn kiểm so&aacute;t h&agrave;nh vi hay hoạt động.<br />\n(D) restrictively (Trạng từ): theo c&aacute;ch mang t&iacute;nh hạn chế.</p>\n\n<p>C&acirc;u n&agrave;y cần một danh từ số nhiều đứng sau &ldquo;parking ____ have faced opposition.&rdquo;</p>\n\n<p>V&igrave; vậy, ch&uacute;ng ta cần một danh từ chỉ c&aacute;c quy định hoặc giới hạn li&ecirc;n quan đến việc đỗ xe.</p>\n\n<p>&ldquo;restrictions&rdquo; l&agrave; danh từ số nhiều ph&ugrave; hợp, thường d&ugrave;ng trong cụm &ldquo;parking restrictions&rdquo;.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (C) restrictions</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nparking restrictions = c&aacute;c quy định giới hạn việc đỗ xe (nơi v&agrave; thời gian được ph&eacute;p đỗ).</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>C&aacute;c quy định đỗ xe mới ở khu trung t&acirc;m của Th&agrave;nh phố Doyle đ&atilde; vấp phải sự phản đối từ cả cư d&acirc;n lẫn du kh&aacute;ch.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ loại"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "125",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 125,
+          "stem": "The plumbing job requires extensive training, even for those who studied.................... in technical school.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "carefully"
+            },
+            {
+              "choice": "B",
+              "text": "firmly"
+            },
+            {
+              "choice": "C",
+              "text": "neutrally"
+            },
+            {
+              "choice": "D",
+              "text": "scientifically"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>(A) carefully (Trạng từ): một c&aacute;ch cẩn thận.<br />\n(B) firmly (Trạng từ): một c&aacute;ch vững chắc, ki&ecirc;n định.<br />\n(C) neutrally (Trạng từ): một c&aacute;ch trung lập, kh&ocirc;ng thi&ecirc;n vị.<br />\n(D) scientifically (Trạng từ): một c&aacute;ch khoa học, c&oacute; hệ thống.</p>\n\n<p>C&acirc;u n&agrave;y ngụ &yacute; rằng ngay cả những người đ&atilde; học ở trường kỹ thuật vẫn cần đ&agrave;o tạo chuy&ecirc;n s&acirc;u về nghề ống nước.</p>\n\n<p>V&igrave; vậy, chỗ trống cần một trạng từ m&ocirc; tả c&aacute;ch họ đ&atilde; học trong m&ocirc;i trường kỹ thuật/học thuật.</p>\n\n<p>&ldquo;scientifically&rdquo; ph&ugrave; hợp nhất v&igrave; n&oacute; diễn tả phương ph&aacute;p học mang t&iacute;nh hệ thống, kỹ thuật, ph&ugrave; hợp với &ldquo;technical school.&rdquo;</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (D) scientifically</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nstudy + trạng từ = m&ocirc; tả c&aacute;ch thức hoặc phương ph&aacute;p học tập.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;C&ocirc;ng việc sửa ống nước đ&ograve;i hỏi đ&agrave;o tạo chuy&ecirc;n s&acirc;u, ngay cả đối với những người đ&atilde; học c&aacute;c m&ocirc;n khoa học tại trường kỹ thuật.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "126",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 126,
+          "stem": "With its fixed-price.................., Omega Cellular promises no increases in phone bills for three years.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "assurance"
+            },
+            {
+              "choice": "B",
+              "text": "assure"
+            },
+            {
+              "choice": "C",
+              "text": "assured"
+            },
+            {
+              "choice": "D",
+              "text": "assuring"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) assurance (Danh từ): sự đảm bảo hoặc lời cam kết.<br />\n(B) assure (Động từ): đảm bảo, l&agrave;m ai đ&oacute; tin chắc.<br />\n(C) assured (T&iacute;nh từ/Qu&aacute; khứ ph&acirc;n từ): được đảm bảo hoặc chắc chắn.<br />\n(D) assuring (T&iacute;nh từ/Hiện tại ph&acirc;n từ): mang lại sự y&ecirc;n t&acirc;m hoặc tin tưởng.</p>\n\n<p>Chỗ trống đứng sau &ldquo;fixed-price&rdquo; v&agrave; trước dấu phẩy, v&igrave; vậy ch&uacute;ng ta cần một danh từ để tạo cụm danh từ gh&eacute;p.</p>\n\n<p>&ldquo;fixed-price assurance&rdquo; c&oacute; nghĩa l&agrave; một kế hoạch gi&aacute; cố định được đảm bảo.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (A) assurance</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nfixed-price + danh từ = một kế hoạch gi&aacute; được đảm bảo kh&ocirc;ng thay đổi.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Với cam kết gi&aacute; cố định, Omega Cellular hứa kh&ocirc;ng tăng h&oacute;a đơn điện thoại trong ba năm.</p>",
+          "tags": [
+            "[Part 5] Thì & Dạng động từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "127",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 127,
+          "stem": "As chief analytics officer, Mr. Ko has served at Lochston Ltd. with great................... for over twenty years.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "announcement"
+            },
+            {
+              "choice": "B",
+              "text": "conclusion"
+            },
+            {
+              "choice": "C",
+              "text": "dedication"
+            },
+            {
+              "choice": "D",
+              "text": "repetition"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>(A) announcement (Danh từ): một th&ocirc;ng b&aacute;o hoặc tuy&ecirc;n bố c&ocirc;ng khai.<br />\n(B) conclusion (Danh từ): sự kết th&uacute;c hoặc kết luận cuối c&ugrave;ng.<br />\n(C) dedication (Danh từ): sự tận t&acirc;m, cam kết mạnh mẽ với một nhiệm vụ hoặc mục đ&iacute;ch.<br />\n(D) repetition (Danh từ): sự lặp lại một h&agrave;nh động hoặc lời n&oacute;i.</p>\n\n<p>Cụm &ldquo;with great ______ for over twenty years&rdquo; cần một danh từ m&ocirc; tả sự cam kết l&acirc;u d&agrave;i với c&ocirc;ng việc.</p>\n\n<p>&ldquo;dedication&rdquo; ph&ugrave; hợp nhất v&igrave; mang nghĩa sự tận tụy v&agrave; ki&ecirc;n tr&igrave;.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (C) dedication</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nwith great dedication = với sự tận t&acirc;m v&agrave; cam kết mạnh mẽ trong thời gian d&agrave;i.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Với vai tr&ograve; Gi&aacute;m đốc ph&acirc;n t&iacute;ch dữ liệu, &ocirc;ng Ko đ&atilde; cống hiến hết m&igrave;nh cho Lochston Ltd. trong hơn hai mươi năm qua.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "128",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 128,
+          "stem": "Milltown Hospital's cafeteria provides lunch seven days a week.................. only during weekdays.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "as if"
+            },
+            {
+              "choice": "B",
+              "text": "close to"
+            },
+            {
+              "choice": "C",
+              "text": "rather than"
+            },
+            {
+              "choice": "D",
+              "text": "whenever"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>(A) as if (Li&ecirc;n từ): như thể l&agrave;.<br />\n(B) close to (Giới từ/Trạng từ): gần về thời gian hoặc địa điểm.<br />\n(C) rather than (Li&ecirc;n từ): thay v&igrave;; hơn l&agrave;.<br />\n(D) whenever (Li&ecirc;n từ/Trạng từ): bất cứ khi n&agrave;o.</p>\n\n<p>C&acirc;u n&agrave;y đối lập hai khoảng thời gian:</p>\n\n<p>&ldquo;seven days a week&rdquo;<br />\n&ldquo;only during weekdays&rdquo;</p>\n\n<p>Ch&uacute;ng ta cần một cụm từ thể hiện sự lựa chọn đối lập giữa hai phương &aacute;n.</p>\n\n<p>&ldquo;rather than&rdquo; mang nghĩa &ldquo;thay v&igrave;&rdquo;, ph&ugrave; hợp với ngữ cảnh n&agrave;y.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (C) rather than</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\nA rather than B = A thay v&igrave; B.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;Căng tin của Bệnh viện Milltown phục vụ bữa trưa bảy ng&agrave;y một tuần thay v&igrave; chỉ v&agrave;o c&aacute;c ng&agrave;y trong tuần.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "129",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 129,
+          "stem": "The store's full inventory of lumber is supplied by a nearby.................... supplier.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "advertising"
+            },
+            {
+              "choice": "B",
+              "text": "commercial"
+            },
+            {
+              "choice": "C",
+              "text": "economic"
+            },
+            {
+              "choice": "D",
+              "text": "industrial"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>(A) advertising (T&iacute;nh từ): thuộc về quảng c&aacute;o hoặc tiếp thị.<br />\n(B) commercial (T&iacute;nh từ): thuộc về thương mại hoặc kinh doanh.<br />\n(C) economic (T&iacute;nh từ): thuộc về nền kinh tế hoặc hệ thống t&agrave;i ch&iacute;nh.<br />\n(D) industrial (T&iacute;nh từ): thuộc về c&ocirc;ng nghiệp hoặc sản xuất.</p>\n\n<p>C&acirc;u n&agrave;y m&ocirc; tả nguồn cung cấp gỗ cho h&agrave;ng tồn kho của một cửa h&agrave;ng. Ch&uacute;ng ta cần một t&iacute;nh từ ph&ugrave; hợp để m&ocirc; tả nh&agrave; cung cấp trong bối cảnh kinh doanh.</p>\n\n<p>&ldquo;commercial supplier&rdquo; l&agrave; một cụm phổ biến, nghĩa l&agrave; nh&agrave; cung cấp hoạt động trong lĩnh vực thương mại.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (B) commercial</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\ncommercial supplier = nh&agrave; cung cấp hoạt động trong lĩnh vực thương mại, kinh doanh.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:</strong>&nbsp;To&agrave;n bộ lượng gỗ trong kho của cửa h&agrave;ng được cung cấp bởi một nh&agrave; cung cấp thương mại gần đ&oacute;.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "130",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 130,
+          "stem": "For a $95................. fee, our mechanics will identify what repairs are necessary.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "diagnosable"
+            },
+            {
+              "choice": "B",
+              "text": "diagnose"
+            },
+            {
+              "choice": "C",
+              "text": "diagnosing"
+            },
+            {
+              "choice": "D",
+              "text": "diagnostic"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>(A) diagnosable (T&iacute;nh từ): c&oacute; thể được chẩn đo&aacute;n.<br />\n(B) diagnose (Động từ): chẩn đo&aacute;n, x&aacute;c định vấn đề hoặc bệnh.<br />\n(C) diagnosing (Động từ - danh động từ/hiện tại ph&acirc;n từ): h&agrave;nh động chẩn đo&aacute;n.<br />\n(D) diagnostic (T&iacute;nh từ/Danh từ): li&ecirc;n quan đến việc chẩn đo&aacute;n hoặc ph&acirc;n t&iacute;ch lỗi.</p>\n\n<p>Chỗ trống đứng trước danh từ &ldquo;fee,&rdquo; v&igrave; vậy ch&uacute;ng ta cần một t&iacute;nh từ để bổ nghĩa cho danh từ.</p>\n\n<p>Cụm tự nhi&ecirc;n l&agrave; &ldquo;diagnostic fee,&rdquo; nghĩa l&agrave; ph&iacute; kiểm tra hoặc chẩn đo&aacute;n.</p>\n\n<p><strong>&rarr; Đ&aacute;p &aacute;n đ&uacute;ng: (D) diagnostic</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\ndiagnostic fee = ph&iacute; d&ugrave;ng để kiểm tra v&agrave; x&aacute;c định vấn đề.</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\"><strong>Tạm dịch:&nbsp;</strong>Với mức ph&iacute; chẩn đo&aacute;n 95 đ&ocirc; la, c&aacute;c kỹ thuật vi&ecirc;n của ch&uacute;ng t&ocirc;i sẽ tiến h&agrave;nh x&aacute;c định những hạng mục cần sửa chữa.</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ loại"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 5
+}

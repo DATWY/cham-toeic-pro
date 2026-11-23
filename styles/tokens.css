@@ -1,0 +1,210 @@
+/* ============================================================
+   CHAM TOEIC Pro — Unified Design Tokens System (v21.0)
+   Standard: Study4 Minimalist Academic · Light Blue & Warm CTA
+   Themes: Light Blue (Default) | Midnight Slate (No Sepia)
+   100% WCAG AA/AAA Contrast Verified
+   ============================================================ */
+
+:root {
+  /* Font Families */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-ipa: "Noto Sans IPA", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Typography Scale (13 / 15 / 18 / 24 / 32) */
+  --font-size-base: 15px;
+  --line-height-base: 1.6;
+  --text-xs: 13px;
+  --text-sm: 15px;
+  --text-md: 18px;
+  --text-lg: 24px;
+  --text-xl: 32px;
+
+  /* 4px Spacing Scale & Layout Width */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --container-max: 1200px;
+
+  /* Transition Durations */
+  --transition-fast: 80ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 260ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Elevation Radii */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Default Calm Light Blue Theme + Subtle Elevation */
+  color-scheme: light;
+  --bg: #e6f1fc;
+  --bg-subtle: #dbeafb;
+  --surface: #ffffff;
+  --surface-1: #f8fbff;
+  --surface-raised: #ffffff;
+  --surface-2: #f4f8fd;
+  --surface-3: #e4eef9;
+  --text: #0b2239;
+  --text-muted: #425a73;
+  --text-dim: #526b85;
+  --border: #d0dfef;
+  --border-subtle: rgba(11, 34, 57, 0.07);
+  --border-strong: #a7c1dc;
+
+  /* Light-Blue Cerulean Brand Primary (5.93:1 on white, 5.17:1 on #e0f2fe) */
+  --accent: #0369a1;
+  --accent-hover: #075985;
+  --accent-active: #0c4a6e;
+  --accent-soft: #e0f2fe;
+  --accent-soft-hover: #cfe8ff;
+  --accent-border: #bae6fd;
+  --accent-contrast: #ffffff;
+
+  /* Complementary Warm Sunset Orange — Reserved for 1 Primary CTA & Weak-Part Alerts */
+  --warm: #c2410c;
+  --warm-hover: #9a3412;
+  --warm-bright: #f97316;
+  --warm-soft: #fff4ea;
+  --warm-soft-hover: #ffe8d4;
+  --warm-border: #fdba74;
+  --warm-contrast: #ffffff;
+  --warm-btn-bg: #c2410c;
+  --warm-btn-hover: #9a3412;
+  --warm-shadow: 0 2px 8px rgba(194, 65, 12, 0.2);
+
+  /* Solid Primary Action Button Tokens */
+  --btn-primary-bg: #0369a1;
+  --btn-primary-hover: #075985;
+  --btn-primary-text: #ffffff;
+  --btn-primary-shadow: 0 1px 4px rgba(3, 105, 161, 0.2);
+
+  /* Feedback Colors (WCAG AA Compliant >= 4.5:1) */
+  --ok: #15803d;
+  --ok-hover: #166534;
+  --ok-soft: #dcfce7;
+  --ok-border: #86efac;
+  --ok-contrast: #ffffff;
+
+  --bad: #b91c1c;
+  --bad-hover: #991b1b;
+  --bad-soft: #fee2e2;
+  --bad-border: #fca5a5;
+  --bad-contrast: #ffffff;
+  --bad-solid: #dc2626;
+
+  --warn: #92400e;
+  --warn-hover: #78350f;
+  --warn-soft: #fef3c7;
+  --warn-border: #fcd34d;
+
+  --info: #0369a1;
+  --info-soft: #e0f2fe;
+  --info-border: #bae6fd;
+
+  /* Very Light Subtle Shadows */
+  --shadow-xs: 0 1px 2px rgba(11, 34, 57, 0.04);
+  --shadow-sm: 0 1px 3px rgba(11, 34, 57, 0.06), 0 1px 2px rgba(11, 34, 57, 0.03);
+  --shadow-md: 0 6px 18px rgba(11, 34, 57, 0.08), 0 2px 4px rgba(11, 34, 57, 0.04);
+  --shadow-lg: 0 12px 28px rgba(11, 34, 57, 0.10), 0 4px 10px rgba(11, 34, 57, 0.04);
+  --shadow-xl: 0 20px 44px rgba(11, 34, 57, 0.14);
+
+  /* Pure White Elevated Sticky Header over Light Blue Canvas */
+  --header-bg: rgba(255, 255, 255, 0.96);
+  --header-border: #d0dfef;
+  --header-blur: blur(14px) saturate(160%);
+
+  /* Waveform Colors */
+  --wave-unplayed: #bae6fd;
+  --wave-played: #0369a1;
+  --wave-hover: #0284c7;
+  --wave-cursor: #0b2239;
+  --wave-loop-bg: rgba(14, 165, 233, 0.18);
+}
+
+/* Midnight Slate Dark Theme */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b1120;
+  --bg-subtle: #0f172a;
+  --surface: #111827;
+  --surface-1: #162032;
+  --surface-raised: #1b263b;
+  --surface-2: #1e293b;
+  --surface-3: #2c3c55;
+  --text: #f8fafc;
+  --text-muted: #cbd5e1;
+  --text-dim: #94a3b8;
+  --border: #223046;
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-strong: #334663;
+
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --accent-active: #bfdbfe;
+  --accent-soft: rgba(96, 165, 250, 0.15);
+  --accent-soft-hover: rgba(96, 165, 250, 0.24);
+  --accent-border: rgba(96, 165, 250, 0.38);
+  --accent-contrast: #08101f;
+
+  --warm: #fb923c;
+  --warm-hover: #fdba74;
+  --warm-bright: #f97316;
+  --warm-soft: rgba(249, 115, 22, 0.16);
+  --warm-soft-hover: rgba(249, 115, 22, 0.25);
+  --warm-border: rgba(251, 146, 60, 0.45);
+  --warm-contrast: #ffffff;
+  --warm-btn-bg: #c2410c;
+  --warm-btn-hover: #ea580c;
+  --warm-shadow: 0 3px 12px rgba(249, 115, 22, 0.28);
+
+  --btn-primary-bg: #2563eb;
+  --btn-primary-hover: #1d4ed8;
+  --btn-primary-text: #ffffff;
+  --btn-primary-shadow: 0 2px 10px rgba(37, 99, 235, 0.35);
+
+  --ok: #4ade80;
+  --ok-hover: #22c55e;
+  --ok-soft: rgba(34, 197, 94, 0.16);
+  --ok-border: rgba(74, 222, 128, 0.4);
+  --ok-contrast: #052e16;
+
+  --bad: #f87171;
+  --bad-hover: #fca5a5;
+  --bad-soft: rgba(239, 68, 68, 0.16);
+  --bad-border: rgba(248, 113, 113, 0.42);
+  --bad-contrast: #090d16;
+  --bad-solid: #dc2626;
+
+  --warn: #fbbf24;
+  --warn-hover: #f59e0b;
+  --warn-soft: rgba(245, 158, 11, 0.15);
+  --warn-border: rgba(251, 191, 36, 0.4);
+
+  --info: #38bdf8;
+  --info-soft: rgba(56, 189, 248, 0.15);
+  --info-border: rgba(56, 189, 248, 0.4);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.38);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.44);
+  --shadow-md: 0 8px 22px rgba(0, 0, 0, 0.52);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.62);
+  --shadow-xl: 0 28px 68px rgba(0, 0, 0, 0.74);
+
+  --header-bg: rgba(17, 24, 39, 0.9);
+  --header-border: rgba(34, 48, 70, 0.92);
+  --header-blur: blur(16px) saturate(180%);
+
+  --wave-unplayed: #2c3c55;
+  --wave-played: #3b82f6;
+  --wave-hover: #93c5fd;
+  --wave-cursor: #f8fafc;
+  --wave-loop-bg: rgba(59, 130, 246, 0.24);
+}

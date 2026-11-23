@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="conSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7dd3fc"/><stop offset="100%" stop-color="#e0f2fe"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#conSky)"/>
+  <!-- Construction site ground / gravel -->
+  <polygon points="0,270 600,270 600,400 0,400" fill="#a1a1aa"/>
+  <!-- Construction scaffolding in background -->
+  <line x1="80" y1="120" x2="80" y2="270" stroke="#f97316" stroke-width="4"/>
+  <line x1="160" y1="120" x2="160" y2="270" stroke="#f97316" stroke-width="4"/>
+  <line x1="80" y1="170" x2="160" y2="170" stroke="#f97316" stroke-width="3"/>
+  <line x1="80" y1="220" x2="160" y2="220" stroke="#f97316" stroke-width="3"/>
+  <line x1="80" y1="120" x2="160" y2="220" stroke="#fb923c" stroke-width="2"/>
+  <!-- Construction worker -->
+  <!-- Hardhat -->
+  <ellipse cx="300" cy="140" rx="18" ry="12" fill="#facc15"/>
+  <circle cx="300" cy="150" r="14" fill="#fed7aa"/>
+  <!-- Safety vest -->
+  <rect x="282" y="165" width="36" height="55" rx="5" fill="#ea580c"/>
+  <rect x="290" y="175" width="20" height="10" fill="#fef08a"/>
+  <!-- Blue jeans legs -->
+  <line x1="290" y1="220" x2="285" y2="300" stroke="#1d4ed8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="310" y1="220" x2="315" y2="300" stroke="#1d4ed8" stroke-width="8" stroke-linecap="round"/>
+  <rect x="278" y="295" width="16" height="10" fill="#422006"/>
+  <rect x="310" y="295" width="16" height="10" fill="#422006"/>
+  <!-- Large metal pipes being carried / lifted -->
+  <!-- Pipe 1 -->
+  <rect x="210" y="175" width="220" height="14" rx="7" fill="#64748b" stroke="#334155" stroke-width="2"/>
+  <!-- Pipe 2 -->
+  <rect x="220" y="190" width="210" height="14" rx="7" fill="#94a3b8" stroke="#334155" stroke-width="2"/>
+  <!-- Pipe 3 -->
+  <rect x="230" y="182" width="200" height="12" rx="6" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+  <!-- Worker arms holding pipes -->
+  <path d="M 285,185 Q 260,200 280,210" fill="none" stroke="#ea580c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 315,185 Q 340,200 320,210" fill="none" stroke="#ea580c" stroke-width="8" stroke-linecap="round"/>
+  <!-- Watermark -->
+  <rect x="15" y="15" width="260" height="32" rx="6" fill="rgba(15,23,42,0.75)"/>
+  <text x="25" y="36" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">TOEIC PART 1 · PHOTO #6</text>
+</svg>

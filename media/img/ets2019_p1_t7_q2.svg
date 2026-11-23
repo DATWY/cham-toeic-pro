@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="officeWall2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f1f5f9"/><stop offset="100%" stop-color="#cbd5e1"/></linearGradient>
+    <linearGradient id="carpet2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#1e293b"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#officeWall2)"/>
+  <!-- Carpet Floor -->
+  <polygon points="0,250 600,250 600,400 0,400" fill="url(#carpet2)"/>
+  <!-- Photocopier / Multifunction printer in background -->
+  <rect x="420" y="150" width="130" height="150" rx="4" fill="#e2e8f0" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="435" y="165" width="80" height="14" rx="2" fill="#0284c7"/>
+  <rect x="440" y="195" width="90" height="35" rx="2" fill="#cbd5e1"/>
+  <line x1="440" y1="245" x2="530" y2="245" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="440" y1="265" x2="530" y2="265" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Office Desk with telephone -->
+  <polygon points="50,220 370,220 350,370 20,370" fill="#d97706" stroke="#b45309" stroke-width="2"/>
+  <!-- Office Telephone with handset and cord -->
+  <rect x="180" y="210" width="46" height="34" rx="3" fill="#1e293b"/>
+  <rect x="185" y="218" width="22" height="20" fill="#f8fafc"/>
+  <!-- Keypad buttons on phone -->
+  <circle cx="190" cy="223" r="1.5" fill="#334155"/>
+  <circle cx="196" cy="223" r="1.5" fill="#334155"/>
+  <circle cx="202" cy="223" r="1.5" fill="#334155"/>
+  <circle cx="190" cy="230" r="1.5" fill="#334155"/>
+  <circle cx="196" cy="230" r="1.5" fill="#334155"/>
+  <circle cx="202" cy="230" r="1.5" fill="#334155"/>
+  <rect x="214" y="206" width="10" height="38" rx="3" fill="#0f172a"/>
+  <!-- Coiled wire -->
+  <path d="M 218,244 Q 212,255 218,260 Q 224,265 218,270" fill="none" stroke="#475569" stroke-width="2"/>
+  <!-- Man 1 standing and reaching arm forward towards telephone -->
+  <circle cx="100" cy="110" r="22" fill="#fed7aa"/>
+  <rect x="82" y="132" width="36" height="85" rx="4" fill="#0284c7"/>
+  <line x1="90" y1="217" x2="80" y2="330" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+  <line x1="110" y1="217" x2="115" y2="330" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+  <!-- Reaching right arm explicitly toward telephone -->
+  <path d="M 116,145 L 155,185 L 182,216" fill="none" stroke="#0284c7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="184" cy="217" r="5" fill="#fed7aa"/>
+  <!-- Man 2 standing in middle background reviewing notes -->
+  <circle cx="310" cy="130" r="18" fill="#fde047"/>
+  <rect x="296" y="148" width="28" height="70" rx="3" fill="#475569"/>
+  <line x1="302" y1="218" x2="298" y2="300" stroke="#1e293b" stroke-width="6" stroke-linecap="round"/>
+  <line x1="318" y1="218" x2="322" y2="300" stroke="#1e293b" stroke-width="6" stroke-linecap="round"/>
+  <!-- Watermark -->
+  <rect x="15" y="15" width="280" height="32" rx="6" fill="rgba(15,23,42,0.8)"/>
+  <text x="25" y="36" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="13">ETS 2019 T7 · PART 1 PHOTO #2</text>
+</svg>

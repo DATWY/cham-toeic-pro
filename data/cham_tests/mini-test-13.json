@@ -1,0 +1,3250 @@
+{
+  "id": "cham_mini_test_13",
+  "sourceId": "642e78cc50297922ca838acf",
+  "slug": "mini-test-13",
+  "title": "TOEIC Mini Test 13",
+  "collection": "MINI TEST",
+  "testType": "mini",
+  "duration": 60,
+  "totalQuestions": 100,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_1": 3,
+    "PART_2": 13,
+    "PART_3": 18,
+    "PART_4": 15,
+    "PART_5": 15,
+    "PART_6": 8,
+    "PART_7": 28
+  },
+  "groups": [
+    {
+      "part": 1,
+      "range": "1",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/68102210.mp3",
+      "images": [
+        "https://storage.googleapis.com/estudyme/legacy-data/kslearning/images/742506103-1620287081675-q4.png"
+      ],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> (A)The men are sitting around the table. <br> (B)The men are rearranging some furniture. <br> (C)Some people are resting on the porch. <br> (D)Some rugs have been rolled up in the corner.",
+      "explanationHtml": "<b>Bản dịch:</b><br> (A) Những người đàn ông đang ngồi quanh bàn.<br> (B) Những người đàn ông đang sắp xếp lại một số đồ đạc.<br> (C) Một vài người đang nghỉ ngơi trên hiên nhà.<br> (D) Một vài tấm thảm đã được cuộn lại ở góc phòng.",
+      "questions": [
+        {
+          "num": 1,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            },
+            {
+              "choice": "D",
+              "text": ""
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 1] Tranh tả người"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 1,
+      "range": "2",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/83694630.mp3",
+      "images": [
+        "https://storage.googleapis.com/estudyme/legacy-data/kslearning/images/309829400-1620287095307-q5.png"
+      ],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> (A)Some people are shopping for clothes. <br> (B)Books have been organized on tables. <br> (C)Students are purchasing books for their examination. <br> (D)Some chairs have been lined up in rows.",
+      "explanationHtml": "<b>Bản dịch:</b> <br> (A) Một số người đang mua sắm quần áo. <br> (B) Sách đã được sắp xếp trên các bàn. <br> (C) Học sinh đang mua sách cho kỳ thi của họ. <br> (D) Một số ghế đã được xếp thành hàng.",
+      "questions": [
+        {
+          "num": 2,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            },
+            {
+              "choice": "D",
+              "text": ""
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 1] Tranh tả người"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 1,
+      "range": "3",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/61412919.mp3",
+      "images": [
+        "https://storage.googleapis.com/estudyme/legacy-data/kslearning/images/384209407-1620287106393-q6.png"
+      ],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> (A)Some children are seated around the fountain. <br> (B)Steps lead to the front of the house. <br> (C)They are all sitting side by side. <br> (D)They are holding onto the hand rail.",
+      "explanationHtml": "<b>Bản dịch tiếng Việt:</b><br> (A) Một số trẻ em đang ngồi quanh đài phun nước.<br> (B) Các bậc thang dẫn đến phía trước ngôi nhà.<br> (C) Tất cả bọn họ đều đang ngồi cạnh nhau.<br> (D) Họ đang bám vào tay vịn.",
+      "questions": [
+        {
+          "num": 3,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            },
+            {
+              "choice": "D",
+              "text": ""
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 1] Tranh tả người"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "4",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/99250685.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> The path to Mount Cape is this way.<br> (A) He’s heading our way.<br> (B) With my hiking gear.<br> (C) Are you positive about that?",
+      "explanationHtml": "<b>Bản dịch:</b> <br> Đường lên núi Cape là lối này.<br> (A) Anh ấy đang đi về phía chúng ta.<br> (B) Với đồ leo núi của tôi.<br> (C) Bạn có chắc về điều đó không?",
+      "questions": [
+        {
+          "num": 4,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu trần thuật (Statement)"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "5",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/8783843.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> What materials have been prepared for the trade fair?<br> (A) Someone else is handling that.<br> (B) The fares are reasonable.<br> (C) Yes, a booth has been reserved.",
+      "explanationHtml": "<b>Bản dịch và giải thích:</b><br>Câu hỏi: \"Những tài liệu nào đã được chuẩn bị cho hội chợ thương mại?\"<br>(A) Người khác đang xử lý việc đó.<br>(B) Giá vé hợp lý.<br>(C) Vâng, một gian hàng đã được đặt trước.",
+      "questions": [
+        {
+          "num": 5,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi WHAT / WHICH"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "6",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/7050861.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><br />\n<b>Transcript: </b><br />\nHow often are performance reviews held?<br />\n(A) Hold on. I&rsquo;ll give you a tour.<br />\n(B) The counters are washed every day.<br />\n(C) Usually once per year.</p>",
+      "explanationHtml": "<p><b>Bản dịch tiếng Việt:</b><br />\nC&aacute;c buổi đ&aacute;nh gi&aacute; hiệu suất được tổ chức thường xuy&ecirc;n như thế n&agrave;o?<br />\n(A) Chờ một ch&uacute;t. T&ocirc;i sẽ đưa bạn đi tham quan.<br />\n(B) Quầy được lau rửa mỗi ng&agrave;y.<br />\n(C) Thường l&agrave; một lần mỗi năm.</p>",
+      "questions": [
+        {
+          "num": 6,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi HOW"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "7",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/4641188.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> Which assignment should I prioritize next?<br> (A) Before I get home.<br> (B) I agree. You should.<br> (C) Please edit this press release.",
+      "explanationHtml": "<b>Bản dịch tiếng Việt:</b><br> Câu hỏi: Tôi nên ưu tiên làm bài tập nào tiếp theo?<br> (A) Trước khi tôi về nhà.<br> (B) Tôi đồng ý. Bạn nên làm vậy.<br> (C) Vui lòng chỉnh sửa thông cáo báo chí này.",
+      "questions": [
+        {
+          "num": 7,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi WHAT / WHICH"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "8",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/99200188.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> The lounge area is located on the ground floor, isn’t it?<br> (A) Yes, down the hall from the elevator.<br> (B) No, the floors have been mopped.<br> (C) The lounge is spacious.",
+      "explanationHtml": "<b>Bản dịch và giải thích:</b><br>Câu hỏi: Khu vực phòng chờ nằm ở tầng trệt, phải không?<br>(A) Đúng vậy, đi xuống hành lang từ thang máy.<br>(B) Không, các tầng đã được lau dọn.<br>(C) Phòng chờ rộng rãi.",
+      "questions": [
+        {
+          "num": 8,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi đuôi / Gián tiếp"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "9",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/402536.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> Why are you returning this monitor?<br> (A) Keep monitoring the situation.<br> (B) I’m interested in something larger.<br> (C) Whenever you get back.",
+      "explanationHtml": "<b>Bản dịch:</b> <br> Tại sao bạn trả lại màn hình này?<br> (A) Tiếp tục theo dõi tình hình.<br> (B) Tôi quan tâm đến một cái lớn hơn.<br> (C) Bất cứ khi nào bạn quay lại.",
+      "questions": [
+        {
+          "num": 9,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi WHY"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "10",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/55417897.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> When will the company merger be officially announced?<br> (A) I have a question about the new regulation.<br> (B) With another manufacturing firm.<br> (C) At the shareholder meeting.",
+      "explanationHtml": "<b>Bản dịch và giải thích:</b><br>Câu hỏi: Khi nào việc sáp nhập công ty sẽ được công bố chính thức?<br>(A) Tôi có một câu hỏi về quy định mới.<br>(B) Với một công ty sản xuất khác.<br>(C) Tại cuộc họp cổ đông.",
+      "questions": [
+        {
+          "num": 10,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi WHEN"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "11",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/80039950.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> Does this cruise ship feature live entertainment?<br> (A) It’s an entertaining radio program.<br> (B) This pamphlet should say.<br> (C) Passengers require boarding passes.",
+      "explanationHtml": "<b>Bản dịch Tiếng Việt:</b><br>Con tàu du lịch này có chương trình giải trí trực tiếp không?<br>(A) Đó là một chương trình radio giải trí.<br>(B) Tờ rơi này sẽ cho biết.<br>(C) Hành khách cần thẻ lên tàu.",
+      "questions": [
+        {
+          "num": 11,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi đuôi / Gián tiếp"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "12",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/13020442.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br>The spare bedroom needs to be cleaned out.<br> (A) Have James give you a hand.<br> (B) A double mattress.<br> (C) The kitchen looks clean to me.",
+      "explanationHtml": "<b>Bản dịch:</b> <br>Phòng ngủ dự phòng cần được dọn dẹp.<br> (A) Nhờ James giúp bạn một tay.<br> (B) Một tấm nệm đôi.<br> (C) Theo tôi thì nhà bếp trông sạch sẽ.",
+      "questions": [
+        {
+          "num": 12,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu trần thuật (Statement)"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "13",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/36340334.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> Would you rather keep your reward points, or use them for a room upgrade?<br> (A) Well, the banquet was rather long.<br> (B) Both resorts have views of the mountains.<br> (C) I’ll save them for my next visit.",
+      "explanationHtml": "<b>Bản dịch tiếng Việt:</b> <br>Bạn muốn giữ điểm thưởng của mình, hay sử dụng chúng để nâng cấp phòng?<br>(A) Ừm, buổi tiệc khá dài.<br>(B) Cả hai khu nghỉ dưỡng đều có tầm nhìn ra núi.<br>(C) Tôi sẽ để dành chúng cho lần ghé thăm tiếp theo.",
+      "questions": [
+        {
+          "num": 13,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi lựa chọn (OR)"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "14",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/69732055.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> I can put in some overtime this evening.<br> (A) Go ahead and set them here.<br> (B) Patrick offered to make some desserts.<br> (C) Let’s discuss the matter later this afternoon.",
+      "explanationHtml": "<b>Bản dịch:</b> <br>Tôi có thể làm thêm giờ vào tối nay.<br>(A) Cứ để chúng ở đây.<br>(B) Patrick đã đề nghị làm một số món tráng miệng.<br>(C) Hãy thảo luận vấn đề này vào chiều nay.",
+      "questions": [
+        {
+          "num": 14,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu trần thuật (Statement)"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "15",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/94506734.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> Would you like some milk in your tea as well?<br> (A) I ordered coffee.<br> (B) We provide tea and snacks to clients.<br> (C) I don’t like the new menus.",
+      "explanationHtml": "<b>Bản dịch và giải thích:</b><br>Câu hỏi: Bạn có muốn thêm sữa vào trà của mình không?<br>(A) Tôi đã gọi cà phê.<br>(B) Chúng tôi cung cấp trà và đồ ăn nhẹ cho khách hàng.<br>(C) Tôi không thích thực đơn mới.",
+      "questions": [
+        {
+          "num": 15,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi đuôi / Gián tiếp"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "range": "16",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/28939721.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript: </b> <br> How will we transport the furniture to the new office?<br> (A) Let’s meet near the exit.<br> (B) They tested out the same chairs.<br> (C) It comes fully furnished.",
+      "explanationHtml": "<b>Bản dịch và giải thích:</b><br><b>Câu hỏi:</b> Làm thế nào chúng ta sẽ vận chuyển đồ nội thất đến văn phòng mới?<br><b>(A)</b> Hãy gặp nhau gần lối ra.<br><b>(B)</b> Họ đã thử cùng những chiếc ghế đó.<br><b>(C)</b> Nó được trang bị đầy đủ nội thất.",
+      "questions": [
+        {
+          "num": 16,
+          "stem": "",
+          "options": [
+            {
+              "choice": "A",
+              "text": ""
+            },
+            {
+              "choice": "B",
+              "text": ""
+            },
+            {
+              "choice": "C",
+              "text": ""
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 2] Câu hỏi HOW"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "17-19",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/31547431.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript</b> <br>  W: Michael, Andrew, new shipment has arrived from Hong Kong. Can you handle it for me? <br>M1: Yes, Ms. Hatcher. I’m supposed to store it in the warehouse Aisle B, shelf 30, but the shelf is already with boxes. <br>M2: Oh, those boxes were supposed to be loaded on the truck and be sent out today, but shipping date was changed at the last minute. <br>W: When is the new shipping date? <br>M2: Now we’re not sending them out until tomorrow. <br>M1: Oh, then we have to get a new assignment for today’s shipment from the management. <br>W: Why don’t I call the warehouse supervisor and find the new space? <br>M1: Thank you. I don’t see much free space on the shelves in this area. <br>M2: Meanwhile, I’ll cover it and make sure it is safe.",
+      "explanationHtml": "<div><b>Giải thích nội dung đoạn hội thoại (Tiếng Việt):</b><br><br><b>Bối cảnh:</b> Một lô hàng mới vừa được chuyển đến từ Hồng Kông. Ba người là cô Hatcher (quản lý), Michael và Andrew đang trao đổi về việc sắp xếp lô hàng này trong kho.<br><br><b>Nội dung chi tiết:</b><br>- Cô Hatcher nhờ Michael và Andrew xử lý lô hàng mới.<br>- Michael nói rằng anh dự định để hàng ở kệ số 30, dãy B, nhưng chỗ đó đã đầy hộp.<br>- Andrew giải thích rằng những hộp đó lẽ ra phải được chuyển đi hôm nay, nhưng lịch vận chuyển bị thay đổi vào phút chót.<br>- Cô Hatcher hỏi ngày vận chuyển mới là khi nào.<br>- Andrew trả lời là đến ngày mai mới chuyển đi.<br>- Michael nói rằng họ cần nhận chỉ dẫn mới từ ban quản lý về chỗ để lô hàng hôm nay.<br>- Cô Hatcher đề nghị sẽ gọi cho giám sát kho để tìm chỗ trống mới.<br>- Michael cảm ơn và nói rằng khu vực này không còn nhiều chỗ trống.<br>- Andrew nói trong lúc đó anh sẽ che chắn lô hàng và đảm bảo an toàn.<br><br><b>Tóm tắt:</b> Đoạn hội thoại thể hiện sự phối hợp giữa các nhân viên kho khi có sự thay đổi đột xuất về lịch vận chuyển, và cách họ xử lý để đảm bảo lô hàng mới được bảo quản an toàn.</div>",
+      "questions": [
+        {
+          "num": 17,
+          "stem": "Where do the speakers most likely work?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "In a warehouse"
+            },
+            {
+              "choice": "B",
+              "text": "In a shopping center"
+            },
+            {
+              "choice": "C",
+              "text": "At a real estate agency"
+            },
+            {
+              "choice": "D",
+              "text": "At a moving company"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div><p>Các nhân vật trong đoạn hội thoại rất có thể làm việc tại một kho hàng. Điều này được thể hiện qua nhiều chi tiết trong bài nghe. Ví dụ, cô Hatcher nói: \"Can you handle it for me?\" khi đề cập đến lô hàng mới, và M1 nói: \"I’m supposed to store it in the warehouse Aisle B, shelf 30.\" Ngoài ra, họ còn bàn về việc thiếu không gian trống trên các kệ và cần liên hệ với giám sát kho để tìm vị trí mới. Những chi tiết này cho thấy rõ môi trường làm việc của họ là kho hàng, nơi công việc chính là quản lý các lô hàng và sắp xếp lưu trữ.</p></div>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 18,
+          "stem": "What is the cause of the problem?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A store closed earlier than usual."
+            },
+            {
+              "choice": "B",
+              "text": "A shipping date was delayed."
+            },
+            {
+              "choice": "C",
+              "text": "A package was heavier than expected."
+            },
+            {
+              "choice": "D",
+              "text": "A customer complaint was filed."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Nguyên nhân của vấn đề là <b>ngày giao hàng đã bị hoãn lại</b>. Theo nội dung bài nghe, M2 nói: \"those boxes were supposed to be loaded on the truck and be sent out today, but shipping date was changed at the last minute.\" Điều này có nghĩa là các thùng hàng lẽ ra phải được chuyển đi vẫn còn chiếm chỗ trên kệ, gây ra khó khăn trong việc lưu trữ lô hàng mới.</p>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 19,
+          "stem": "What does the woman say she will do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Call the customer about the delay"
+            },
+            {
+              "choice": "B",
+              "text": "Label some boxes"
+            },
+            {
+              "choice": "C",
+              "text": "Check the database for information"
+            },
+            {
+              "choice": "D",
+              "text": "Talk to a supervisor"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><b>Giải th&iacute;ch:</b><br />\nNgười phụ nữ n&oacute;i: &quot;Why don&rsquo;t I call the warehouse supervisor and find the new space?&quot; (Tại sao t&ocirc;i kh&ocirc;ng gọi cho gi&aacute;m s&aacute;t kho v&agrave; t&igrave;m chỗ mới nhỉ?). Điều n&agrave;y c&oacute; nghĩa l&agrave; c&ocirc; ấy sẽ n&oacute;i chuyện với gi&aacute;m s&aacute;t vi&ecirc;n để giải quyết vấn đề t&igrave;m chỗ cho l&ocirc; h&agrave;ng mới. V&igrave; vậy, đ&aacute;p &aacute;n đ&uacute;ng l&agrave; c&ocirc; ấy sẽ n&oacute;i chuyện với gi&aacute;m s&aacute;t vi&ecirc;n.<br />\nWhy don&rsquo;t I call the warehouse supervisor and find the new space?</div>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "20-22",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/71350407.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript</b> <br>  W: Thank you for coming. Our company has not been too happy with our current shipping company and we’re trying to find a new one. <br>M: Well, I’m happy to give you more information on our company and services. I’m sure you’ll find our rates are all very competitive, especially the international ones. <br>W: We produce fresh flowers especially the rare and exotic ones such as peony or magnolia for the special occasions. We need them to be delivered to many locations domestically and internationally. Do you think you company is equipped to handle these kinds of shipment? <br>M: Yes, we have plenty of experience with fresh and fragile shipment. Now, can we talk about your budget and standard charges? Then, we can start drafting a contract.",
+      "explanationHtml": "<div><b>Giải thích bằng Tiếng Việt</b><br><br><b>Người phụ nữ (W):</b> Cảm ơn bạn đã đến. Công ty chúng tôi không hài lòng với công ty vận chuyển hiện tại và đang tìm kiếm một đối tác mới.<br><b>Người đàn ông (M):</b> Tôi rất sẵn lòng cung cấp thêm thông tin về công ty và dịch vụ của chúng tôi. Tôi tin rằng bạn sẽ thấy mức giá của chúng tôi rất cạnh tranh, đặc biệt là đối với các dịch vụ quốc tế.<br><b>Người phụ nữ (W):</b> Chúng tôi sản xuất hoa tươi, đặc biệt là các loại hoa hiếm và độc đáo như mẫu đơn hoặc mộc lan cho các dịp đặc biệt. Chúng tôi cần giao hoa đến nhiều địa điểm trong nước và quốc tế. Liệu công ty bạn có đủ khả năng xử lý những lô hàng như vậy không?<br><b>Người đàn ông (M):</b> Chúng tôi có nhiều kinh nghiệm với các lô hàng tươi và dễ vỡ. Bây giờ, chúng ta có thể bàn về ngân sách và các mức phí tiêu chuẩn không? Sau đó, chúng ta có thể bắt đầu soạn thảo hợp đồng.</div>",
+      "questions": [
+        {
+          "num": 20,
+          "stem": "Where does the man work?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A manufacturing facility"
+            },
+            {
+              "choice": "B",
+              "text": "An airline company"
+            },
+            {
+              "choice": "C",
+              "text": "A shipping company"
+            },
+            {
+              "choice": "D",
+              "text": "A travel agency"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div>Đáp án đúng là (C) Một công ty vận chuyển.<br><br>Giải thích:<br>Người đàn ông nói: \"I’m happy to give you more information on our company and services. I’m sure you’ll find our rates are all very competitive, especially the international ones.\" Người phụ nữ cũng đề cập: \"Our company has not been too happy with our current shipping company and we’re trying to find a new one.\" Điều này cho thấy cuộc trò chuyện xoay quanh dịch vụ vận chuyển. Ngoài ra, người đàn ông xác nhận: \"we have plenty of experience with fresh and fragile shipment,\" đây là dịch vụ đặc trưng của một công ty vận chuyển. Vì vậy, người đàn ông làm việc cho một công ty vận chuyển.</div>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 21,
+          "stem": "What does the man mean when he says, “you’ll find our rates are all very competitive”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "They are the fastest growing company."
+            },
+            {
+              "choice": "B",
+              "text": "They’re providing faster services."
+            },
+            {
+              "choice": "C",
+              "text": "They can accommodate large orders."
+            },
+            {
+              "choice": "D",
+              "text": "Their prices are lower than other companies."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Người đàn ông nói: “you’ll find our rates are all very competitive, especially the international ones.” Trong ngữ cảnh này, 'competitive rates' có nghĩa là giá của họ thấp hơn hoặc ít nhất là ngang bằng với các công ty khác trong cùng lĩnh vực. Ông ấy nhấn mạnh rằng chi phí vận chuyển của công ty mình hấp dẫn hơn so với các đối thủ, đặc biệt là đối với các lô hàng quốc tế. Vì vậy, cách hiểu đúng là giá của họ thấp hơn các công ty khác.</p>",
+          "tags": [
+            "[Part 3] Câu hỏi hàm ý (Intent)"
+          ]
+        },
+        {
+          "num": 22,
+          "stem": "What will the speakers probably do next?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Deliver some merchandise"
+            },
+            {
+              "choice": "B",
+              "text": "Look for more suppliers"
+            },
+            {
+              "choice": "C",
+              "text": "Arrange shipping schedules"
+            },
+            {
+              "choice": "D",
+              "text": "Discuss a business contract"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div>Đáp án đúng là (D) Thảo luận về hợp đồng kinh doanh.<br><br>Dựa vào nội dung bài nghe, sau khi hai bên trao đổi về nhu cầu vận chuyển và xác nhận công ty vận chuyển có kinh nghiệm với các lô hàng tươi và dễ vỡ, người đàn ông nói: \"Now, can we talk about your budget and standard charges? Then, we can start drafting a contract.\" (Bây giờ, chúng ta có thể nói về ngân sách và các mức phí tiêu chuẩn của bạn không? Sau đó, chúng ta có thể bắt đầu soạn thảo hợp đồng.) Điều này cho thấy bước tiếp theo của hai bên là thảo luận về hợp đồng kinh doanh. Không có thông tin nào về việc giao hàng, tìm thêm nhà cung cấp hay sắp xếp lịch vận chuyển ở giai đoạn này của cuộc trò chuyện.</div>",
+          "tags": [
+            "[Part 3] Hành động tiếp theo"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "23-25",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/36852879.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript</b> <br>  M: Hi, Dennis. Can you help me join the conference call? I’ve never done it and I’ve got one scheduled in 30 minutes. <br>W :Sure, It’s not too bad. First, all the callers have to call a special number at a given time and enter a common access code. Do you have all the numbers with you? <br>M: They should be written in the e-mail I got from the committee. Let me go and check that out again. <br>W: Once you have those numbers, you are all set to start the conference call.",
+      "explanationHtml": "<div><b>Giải thích bằng tiếng Việt</b><br><b>M:</b> Chào Dennis. Bạn có thể giúp tôi tham gia cuộc gọi hội nghị không? Tôi chưa từng làm việc này và tôi có một cuộc gọi được lên lịch trong 30 phút nữa.<br><b>W:</b> Được chứ, không khó lắm đâu. Đầu tiên, tất cả những người tham gia phải gọi vào một số điện thoại đặc biệt vào đúng thời gian đã định và nhập mã truy cập chung. Bạn đã có các số điện thoại đó chưa?<br><b>M:</b> Chúng chắc là được ghi trong email tôi nhận từ ban tổ chức. Để tôi kiểm tra lại.<br><b>W:</b> Khi bạn đã có các số đó, bạn đã sẵn sàng để bắt đầu cuộc gọi hội nghị rồi.</div>",
+      "questions": [
+        {
+          "num": 23,
+          "stem": "Why is the man concerned?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He’s trying something new."
+            },
+            {
+              "choice": "B",
+              "text": "He has to talk to the company president."
+            },
+            {
+              "choice": "C",
+              "text": "He forgot about an appointment."
+            },
+            {
+              "choice": "D",
+              "text": "He forgot to send a reply."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Người đàn ông lo lắng vì anh ấy <b>đang thử một điều mới</b>. Trong đoạn hội thoại, anh ấy nói: \"Can you help me join the conference call? I’ve never done it and I’ve got one scheduled in 30 minutes.\" Điều này cho thấy anh ấy chưa từng tham gia cuộc gọi hội nghị trước đây và đang lo lắng về việc làm thế nào để tham gia lần đầu tiên.</p>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 24,
+          "stem": "What does the man ask the woman to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Help with a telephone call"
+            },
+            {
+              "choice": "B",
+              "text": "Check some calculations"
+            },
+            {
+              "choice": "C",
+              "text": "Make a reservation"
+            },
+            {
+              "choice": "D",
+              "text": "Prepare some report"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Người đàn ông nhờ người phụ nữ giúp đỡ để tham gia một cuộc gọi hội nghị. Anh ấy nói: \"Can you help me join the conference call? I’ve never done it and I’ve got one scheduled in 30 minutes.\" Điều này cho thấy anh ấy cần sự hỗ trợ về việc thực hiện một cuộc gọi điện thoại, cụ thể là cuộc gọi hội nghị. Vì vậy, đáp án đúng là (A) Giúp đỡ với một cuộc gọi điện thoại.</p>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 25,
+          "stem": "Why is the man going to check his e-mail again?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It needs to be printed out."
+            },
+            {
+              "choice": "B",
+              "text": "It needs to be replied soon."
+            },
+            {
+              "choice": "C",
+              "text": "It was sent to a wrong person."
+            },
+            {
+              "choice": "D",
+              "text": "It contains some information."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Đáp án đúng là (D) Nó chứa một số thông tin. Trong đoạn hội thoại, người đàn ông nói: \"They should be written in the e-mail I got from the committee. Let me go and check that out again.\" Điều này có nghĩa là anh ấy sẽ kiểm tra lại email để tìm số điện thoại đặc biệt và mã truy cập cần thiết cho cuộc gọi hội nghị. Vì vậy, anh ấy cần kiểm tra lại email vì nó chứa thông tin cần thiết để tham gia cuộc gọi.</p>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "26-28",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/8453449.mp3",
+      "images": [
+        "https://storage.googleapis.com/estudyme/prod/2023/04/07/61312235.png"
+      ],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript</b> <br>  M: Ms. Bingham. I just received the new safety permit from the regional inspector issued for our factory. Do you want me to hang it behind the receptionist counter? <br>W: Actually, no. The rule has changed this year. Now, the permit has to be within the two meters of the main entrance to the factory floor. We should put it on the wall right next to the main door. <br>M: Okay, but we still have some time. The old one doesn’t expire until Friday. So, I will put up a new one on next Monday. <br> W: Thanks. I really appreciate that.",
+      "explanationHtml": "<div><b>Giải thích bằng tiếng Việt</b><br><ul><li>Một nhân viên nam thông báo với cô Bingham rằng anh vừa nhận được giấy phép an toàn mới do thanh tra khu vực cấp cho nhà máy.</li><li>Anh hỏi cô Bingham có muốn treo giấy phép này phía sau quầy lễ tân không.</li><li>Cô Bingham trả lời rằng quy định năm nay đã thay đổi: giấy phép phải được đặt trong phạm vi hai mét từ cửa chính vào khu vực sản xuất của nhà máy.</li><li>Cô đề nghị nên treo giấy phép lên tường ngay cạnh cửa chính.</li><li>Nhân viên nam nói rằng giấy phép cũ vẫn còn hiệu lực đến thứ Sáu, nên anh sẽ treo giấy phép mới vào thứ Hai tuần sau.</li><li>Cô Bingham cảm ơn anh vì điều đó.</li></ul></div>",
+      "questions": [
+        {
+          "num": 26,
+          "stem": "Where do the speakers work?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "At a production facility"
+            },
+            {
+              "choice": "B",
+              "text": "At a medical clinic"
+            },
+            {
+              "choice": "C",
+              "text": "At a restaurant"
+            },
+            {
+              "choice": "D",
+              "text": "At a government agency"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div><b>Giải thích:</b><br>Đáp án đúng là (A) Tại một cơ sở sản xuất.<br><br>Trong đoạn hội thoại, các nhân vật nhắc đến \"nhà máy\" và \"khu vực sản xuất của nhà máy.\" Ví dụ, người đàn ông nói: \"I just received the new safety permit from the regional inspector issued for our factory,\" và người phụ nữ nói: \"the permit has to be within the two meters of the main entrance to the factory floor.\" Những chi tiết này cho thấy rõ họ làm việc tại một cơ sở sản xuất, không phải phòng khám y tế, nhà hàng hay cơ quan chính phủ.</div>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 27,
+          "stem": "Look at the graphic. Which location should the document be posted?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "1"
+            },
+            {
+              "choice": "B",
+              "text": "2"
+            },
+            {
+              "choice": "C",
+              "text": "3"
+            },
+            {
+              "choice": "D",
+              "text": "4"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><b>Giải th&iacute;ch:</b><br />\nTrong đoạn hội thoại c&oacute; n&oacute;i: &quot;the permit has to be within the two meters of the main entrance to the factory floor. We should put it on the wall right next to the main door.&quot; Điều n&agrave;y c&oacute; nghĩa l&agrave; vị tr&iacute; đ&uacute;ng l&agrave; nơi gần cửa ch&iacute;nh v&agrave;o khu vực sản xuất nhất, cụ thể l&agrave; tr&ecirc;n tường ngay cạnh cửa ch&iacute;nh. V&igrave; vậy, bạn n&ecirc;n chọn vị tr&iacute; 2 nằm s&aacute;t cửa ch&iacute;nh theo như h&igrave;nh minh họa.</div>",
+          "tags": [
+            "[Part 3] Kết hợp bảng biểu / hình ảnh",
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 28,
+          "stem": "According to the man, what will occur on Friday?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A facility will shut down."
+            },
+            {
+              "choice": "B",
+              "text": "New employees will start."
+            },
+            {
+              "choice": "C",
+              "text": "A permit will expire."
+            },
+            {
+              "choice": "D",
+              "text": "An inspector will visit."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Theo nội dung bài nghe, người đàn ông nói: \"The old one doesn’t expire until Friday.\" Điều này có nghĩa là giấy phép hiện tại sẽ hết hạn vào thứ Sáu. Vì vậy, đáp án đúng là một giấy phép sẽ hết hạn vào thứ Sáu.</p>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "29-31",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/23631183.mp3",
+      "images": [
+        "https://storage.googleapis.com/estudyme/prod/2023/04/07/17279655.png"
+      ],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript</b> <br>   M: How may I help you? <br>W :Yes, My doctor recommended I change my diet to include more protein in it. I am a vegetarian. I don’t eat meat but I think I can drink milk. Milk does have a lot of protein, right?<br>M: Of course, milk is a good source of protein and calcium. Come this way. We have a lot of options to choose from. <br>W: You’re right. There are many kinds. Hmm. I have to watch out my weight too. My doctor also warned me about having too much of fried and sugary food. This one has more than 5 grams of it. <br>M: In that case, I would suggest non-fat milk and you can add nuts or grains for more vitamins and minerals.  <br> W: Thank you. You’ve been a great help.",
+      "explanationHtml": "<div><b>Bản giải thích tiếng Việt</b><br><b>M:</b> Tôi có thể giúp gì cho bạn?<br><b>W:</b> Vâng, bác sĩ của tôi khuyên tôi nên thay đổi chế độ ăn để bổ sung thêm protein. Tôi là người ăn chay, không ăn thịt nhưng tôi nghĩ mình có thể uống sữa. Sữa có nhiều protein đúng không?<br><b>M:</b> Đúng vậy, sữa là nguồn cung cấp protein và canxi rất tốt. Mời bạn đi lối này, chúng tôi có rất nhiều loại để bạn lựa chọn.<br><b>W:</b> Anh nói đúng, có rất nhiều loại thật. Hmm, tôi cũng phải chú ý đến cân nặng của mình. Bác sĩ cũng cảnh báo tôi không nên ăn quá nhiều đồ chiên và đồ ngọt. Loại này có hơn 5 gam đường.<br><b>M:</b> Vậy thì tôi khuyên bạn nên dùng sữa không béo, bạn cũng có thể thêm các loại hạt hoặc ngũ cốc để bổ sung thêm vitamin và khoáng chất.<br><b>W:</b> Cảm ơn bạn, bạn đã giúp tôi rất nhiều.</div>",
+      "questions": [
+        {
+          "num": 29,
+          "stem": "Why is the woman looking for a certain product?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She wants to open up a grocery store."
+            },
+            {
+              "choice": "B",
+              "text": "She’s allergic to a particular ingredient."
+            },
+            {
+              "choice": "C",
+              "text": "She wants to change her diet to a healthier one."
+            },
+            {
+              "choice": "D",
+              "text": "She’s looking for a specific brand of food."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div>Đáp án đúng là (C) Cô ấy muốn thay đổi chế độ ăn uống của mình để lành mạnh hơn.<br><br>Theo nội dung bài nghe, người phụ nữ nói: \"My doctor recommended I change my diet to include more protein in it. I am a vegetarian. I don’t eat meat but I think I can drink milk.\" Cô ấy cũng nói thêm: \"My doctor also warned me about having too much of fried and sugary food.\" Điều này cho thấy cô ấy đang tìm kiếm sản phẩm vì muốn làm theo lời khuyên của bác sĩ để cải thiện chế độ ăn uống, bổ sung thêm protein và tránh các thực phẩm không tốt cho sức khỏe.</div>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 30,
+          "stem": "Look at the graphic. Which of the ingredients does the woman express concern about?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Protein"
+            },
+            {
+              "choice": "B",
+              "text": "Fat"
+            },
+            {
+              "choice": "C",
+              "text": "Sugar"
+            },
+            {
+              "choice": "D",
+              "text": "Sodium"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><b>Giải th&iacute;ch:</b><br />\nNgười phụ nữ b&agrave;y tỏ sự lo lắng về cả chất b&eacute;o v&agrave; đường trong đoạn hội thoại. C&ocirc; ấy n&oacute;i: &quot;B&aacute;c sĩ cũng cảnh b&aacute;o t&ocirc;i về việc ăn qu&aacute; nhiều đồ chi&ecirc;n v&agrave; đồ ngọt. Loại n&agrave;y c&oacute; hơn 5 gam.&quot; Ở đ&acirc;y, c&ocirc; ấy đặc biệt ch&uacute; &yacute; đến lượng chất b&eacute;o v&agrave; đường trong c&aacute;c lựa chọn sữa. Tuy nhi&ecirc;n, v&igrave; c&ocirc; ấy n&oacute;i &quot;Loại n&agrave;y c&oacute; hơn 5 gam&quot; ngay sau khi nhắc đến đồ ngọt, n&ecirc;n mối quan t&acirc;m ch&iacute;nh của c&ocirc; ấy l&agrave; về h&agrave;m lượng chất b&eacute;o. Do đ&oacute;, th&agrave;nh phần m&agrave; c&ocirc; ấy lo lắng l&agrave; <b>chất b&eacute;o</b>.</div>",
+          "tags": [
+            "[Part 3] Kết hợp bảng biểu / hình ảnh",
+            "[Part 3] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 31,
+          "stem": "What does the man suggest that the woman do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Try one of new products"
+            },
+            {
+              "choice": "B",
+              "text": "Consult her doctor first"
+            },
+            {
+              "choice": "C",
+              "text": "Go to another store"
+            },
+            {
+              "choice": "D",
+              "text": "Purchase a different one"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div>Người đàn ông gợi ý rằng người phụ nữ nên chọn sữa không béo và có thể thêm các loại hạt hoặc ngũ cốc để bổ sung thêm vitamin và khoáng chất. Điều này được thể hiện trong đoạn transcript khi anh ấy nói: \"In that case, I would suggest non-fat milk and you can add nuts or grains for more vitamins and minerals.\" Vì vậy, đáp án đúng là anh ấy khuyên cô ấy nên mua loại khác (sữa không béo) và kết hợp thêm hạt hoặc ngũ cốc, thay vì chọn loại có hơn 5 gam chất béo hoặc đường.</div>",
+          "tags": [
+            "[Part 3] Câu hỏi hàm ý (Intent)"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "32-34",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/76509784.mp3",
+      "images": [
+        "https://storage.googleapis.com/estudyme/prod/2023/04/07/91927419.png"
+      ],
+      "passageHtml": "",
+      "transcriptHtml": "<br><b>Transcript</b> <br>   W: I’d like to look at some rental spaces that you have listed on your website. Is the one on 1200 Mason Boulevard still available? <br> M: Well, I’m afraid that one is taken this morning. But I could show you more properties near that building. They’re not as cheap as the one you saw, but some of them are quite affordable. <br>W: Well, I’m planning to open up my boutique shop on May First and I need at least one month to prepare everything. <br>M: We should hurry then. Why don’t you stop by my office tomorrow and I’ll show you around the one you might be interested in? <br>W: As long as it’s close to the Mason Boulevard, I’m fine with it. My biggest concern is the rent. I don’t want to pay any more than I really have to. <br>M: I’m going to send you a link to show available properties on and close to Mason Boulevard. I would recommend the one near the Longwood Station. It has the lowest rent for now.",
+      "explanationHtml": "<div><b>Giải thích nội dung đoạn hội thoại (Tiếng Việt):</b><br><br><b>Người phụ nữ</b> muốn xem một số mặt bằng cho thuê mà cô ấy thấy trên trang web. Cô hỏi về mặt bằng ở 1200 Mason Boulevard, nhưng <b>người đàn ông</b> thông báo rằng mặt bằng đó đã được thuê sáng nay. Tuy nhiên, anh ấy đề nghị giới thiệu thêm các mặt bằng khác gần đó, dù giá có thể cao hơn một chút nhưng vẫn hợp lý.<br><br>Người phụ nữ cho biết cô dự định mở cửa hàng thời trang vào ngày 1 tháng 5 và cần ít nhất một tháng để chuẩn bị. Người đàn ông đề nghị cô đến văn phòng vào ngày mai để xem các mặt bằng phù hợp.<br><br>Người phụ nữ nhấn mạnh rằng cô muốn mặt bằng gần Mason Boulevard và quan tâm nhất đến giá thuê, không muốn trả quá nhiều. Người đàn ông nói sẽ gửi cho cô một đường link các mặt bằng còn trống ở khu vực này, đồng thời gợi ý một mặt bằng gần ga Longwood vì giá thuê hiện tại là thấp nhất.</div>",
+      "questions": [
+        {
+          "num": 32,
+          "stem": "What does the woman want to rent?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A storage space"
+            },
+            {
+              "choice": "B",
+              "text": "An office unit"
+            },
+            {
+              "choice": "C",
+              "text": "Some furniture"
+            },
+            {
+              "choice": "D",
+              "text": "A direction to a place"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div>Người phụ nữ muốn thuê một không gian để mở cửa hàng thời trang của mình. Trong đoạn hội thoại, cô ấy nói: \"I’m planning to open up my boutique shop on May First and I need at least one month to prepare everything.\" Điều này cho thấy cô ấy đang tìm kiếm một mặt bằng kinh doanh, không phải kho chứa, đồ nội thất hay chỉ đường. Người môi giới cũng đề cập đến việc dẫn cô ấy đi xem các bất động sản và nói về tiền thuê, càng khẳng định rằng cô ấy muốn thuê một mặt bằng cho việc kinh doanh.</div>",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 33,
+          "stem": "What can be inferred about her business?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She’s opening a new store."
+            },
+            {
+              "choice": "B",
+              "text": "She’s borrowing money from a bank."
+            },
+            {
+              "choice": "C",
+              "text": "She’s moving into a new location."
+            },
+            {
+              "choice": "D",
+              "text": "She’s importing products from overseas."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div>Có thể suy ra rằng cô ấy đang mở một cửa hàng mới. Điều này được thể hiện qua câu nói của cô ấy: \"Well, I’m planning to open up my boutique shop on May First and I need at least one month to prepare everything.\" Điều này cho thấy cô ấy đang bắt đầu một doanh nghiệp mới chứ không phải chuyển địa điểm, vay tiền hay nhập khẩu hàng hóa. Cuộc hội thoại tập trung vào việc tìm kiếm mặt bằng phù hợp để mở cửa hàng mới của cô ấy.</div>",
+          "tags": [
+            "[Part 3] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 34,
+          "stem": "Look at the graphic. Which unit will the woman likely see today?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Unit 1"
+            },
+            {
+              "choice": "B",
+              "text": "Unit 2"
+            },
+            {
+              "choice": "C",
+              "text": "Unit 3"
+            },
+            {
+              "choice": "D",
+              "text": "Unit 4"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><b>Giải th&iacute;ch:</b><br />\nNgười phụ nữ muốn thu&ecirc; một kh&ocirc;ng gian gần Mason Boulevard v&agrave; quan t&acirc;m đến gi&aacute; thu&ecirc;. Người đ&agrave;n &ocirc;ng n&oacute;i: &quot;I would recommend the one near the Longwood Station. It has the lowest rent for now.&quot; (T&ocirc;i khuy&ecirc;n bạn n&ecirc;n chọn căn gần ga Longwood. Hiện tại n&oacute; c&oacute; gi&aacute; thu&ecirc; thấp nhất.) Do đ&oacute;, căn m&agrave; người phụ nữ c&oacute; khả năng xem h&ocirc;m nay l&agrave; căn&nbsp;Unit 4 gần ga Longwood, cũng l&agrave; lựa chọn rẻ nhất gần Mason Boulevard.&nbsp;</div>",
+          "tags": [
+            "[Part 3] Kết hợp bảng biểu / hình ảnh",
+            "[Part 3] Hành động tiếp theo"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "35-37",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/89321636.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<b>Transcript</b> <br> Ladies and gentlemen, it is my great pleasure to present this year’s Harbor City’s Awards for Civic Leadership to Melanie Tang. As the vice president of the Ferguson Accounting Associates, Ms Tang has been playing a key role in revitalizing our historic downtown city. 20 years ago, the downtown area was deteriorated by reckless development and many historical buildings were disappeared. Since then, Ms. Tang worked closely with the city planning committee and local historical societies to restore the beauty of the downtown area. She initiated many projects and some of these projects were well- known to city residents including the restoration of Buswell Mansions, and the cleaning of West-river Park. Let’s give a big hand to Ms. Tang who has worked tirelessly to revitalize our city.",
+      "explanationHtml": "<div><b>Bản giải thích tiếng Việt</b><br>Quý vị và các bạn thân mến, tôi rất vinh dự được trao Giải thưởng Lãnh đạo Công dân của Thành phố Harbor năm nay cho cô Melanie Tang. Là phó chủ tịch của Công ty Kế toán Ferguson, cô Tang đã đóng vai trò then chốt trong việc hồi sinh khu trung tâm lịch sử của thành phố chúng ta. Cách đây 20 năm, khu vực trung tâm đã bị xuống cấp nghiêm trọng do phát triển thiếu kiểm soát và nhiều tòa nhà lịch sử đã biến mất. Kể từ đó, cô Tang đã làm việc chặt chẽ với ủy ban quy hoạch thành phố và các hội lịch sử địa phương để khôi phục vẻ đẹp cho khu trung tâm. Cô đã khởi xướng nhiều dự án, trong đó có một số dự án rất nổi tiếng với cư dân thành phố như phục hồi dinh thự Buswell và làm sạch công viên West-river. Hãy dành một tràng pháo tay lớn cho cô Tang, người đã làm việc không mệt mỏi để hồi sinh thành phố của chúng ta.</div>",
+      "questions": [
+        {
+          "num": 35,
+          "stem": "What is the purpose of the speech?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To explain a new policy"
+            },
+            {
+              "choice": "B",
+              "text": "To introduce a new employee"
+            },
+            {
+              "choice": "C",
+              "text": "To give an award"
+            },
+            {
+              "choice": "D",
+              "text": "To select a committee member"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Mục đích của bài phát biểu là để trao giải thưởng. Người nói cho biết: \"it is my great pleasure to present this year’s Harbor City’s Awards for Civic Leadership to Melanie Tang.\" Điều này cho thấy mục tiêu chính của bài phát biểu là trao giải thưởng cho cô Tang vì những đóng góp của cô trong việc hồi sinh khu trung tâm thành phố.</p>",
+          "tags": [
+            "[Part 4] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 36,
+          "stem": "Who is Ms. Tang?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "An executive at an accounting firm"
+            },
+            {
+              "choice": "B",
+              "text": "A property manager in a building"
+            },
+            {
+              "choice": "C",
+              "text": "A government official"
+            },
+            {
+              "choice": "D",
+              "text": "An award winning architect"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div><b>Giải thích:</b><br>Theo nội dung bài nghe, bà Tang được giới thiệu là \"phó chủ tịch của Ferguson Accounting Associates.\" Điều này cho thấy bà giữ vị trí lãnh đạo tại một công ty kế toán. Không có thông tin nào nói bà là quản lý tòa nhà, cán bộ chính phủ hay kiến trúc sư. Vì vậy, đáp án đúng là (A) Một giám đốc điều hành tại một công ty kế toán.</div>",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 37,
+          "stem": "What does the speaker say about the downtown area?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It was completely demolished 20 years ago."
+            },
+            {
+              "choice": "B",
+              "text": "Historical sites have been restored."
+            },
+            {
+              "choice": "C",
+              "text": "It needs further investment from the citizens."
+            },
+            {
+              "choice": "D",
+              "text": "It will accept new immigrants and settlers."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Đáp án đúng là (B) Các di tích lịch sử đã được phục hồi. Theo nội dung bài nghe, người nói cho biết: \"Ms. Tang worked closely with the city planning committee and local historical societies to restore the beauty of the downtown area.\" Người nói cũng đề cập đến các dự án phục hồi cụ thể như \"the restoration of Buswell Mansions, and the cleaning of West-river Park.\" Điều này cho thấy các di tích lịch sử ở khu vực trung tâm thành phố đã được phục hồi, chứ không phải bị phá hủy hoàn toàn hay cần thêm đầu tư từ người dân.</p>",
+          "tags": [
+            "[Part 4] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "38-40",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/30615411.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<b>Transcript</b> <br> Before we end today’s meeting, I would like to give you an update on our employee health campaign. We have just completed the first month of our new “Making Your Way to Fitness” competition. All the participating departments did a great job of discouraging smoking habits and encouraging exercising regimens in their departments. Each point you make for not smoking one day, or walking one mile a day will be added to your department’s Health Scores and the winning team will receive gift certificates for local stores, and also, one MVP member will receive one week vacation time. So, keep up the good work. Remember, you can still participate in this competition by registering online at the employee’s competition corner.",
+      "explanationHtml": "<div><b>Bản giải thích tiếng Việt</b><br>Trước khi kết thúc cuộc họp hôm nay, tôi muốn cập nhật cho các bạn về chiến dịch sức khỏe nhân viên của chúng ta. Chúng ta vừa hoàn thành tháng đầu tiên của cuộc thi mới mang tên “Hành Trình Đến Với Sức Khỏe”. Tất cả các phòng ban tham gia đều đã làm rất tốt trong việc khuyến khích bỏ thuốc lá và thúc đẩy các thói quen tập thể dục trong phòng ban của mình. Mỗi điểm bạn đạt được khi không hút thuốc trong một ngày, hoặc đi bộ một dặm mỗi ngày sẽ được cộng vào điểm Sức Khỏe của phòng ban, và đội chiến thắng sẽ nhận được phiếu quà tặng tại các cửa hàng địa phương. Ngoài ra, một thành viên xuất sắc nhất sẽ nhận được một tuần nghỉ phép. Vì vậy, hãy tiếp tục phát huy nhé. Hãy nhớ rằng bạn vẫn có thể tham gia cuộc thi này bằng cách đăng ký trực tuyến tại góc thi đua của nhân viên.</div>",
+      "questions": [
+        {
+          "num": 38,
+          "stem": "What is the subject of the talk?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A fitness program"
+            },
+            {
+              "choice": "B",
+              "text": "Sports equipment"
+            },
+            {
+              "choice": "C",
+              "text": "A technical workshop"
+            },
+            {
+              "choice": "D",
+              "text": "A sales competition"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div>Chủ đề của bài nói là một chương trình thể dục. Người nói cập nhật về chiến dịch sức khỏe cho nhân viên của công ty, đặc biệt là cuộc thi \"Making Your Way to Fitness\". Bài nói đề cập đến việc các phòng ban được khuyến khích bỏ thuốc lá và tăng cường tập thể dục, đồng thời mô tả các phần thưởng cho người tham gia. Trích dẫn trực tiếp từ bài nghe: \"We have just completed the first month of our new 'Making Your Way to Fitness' competition.\" Điều này cho thấy chủ đề chính là một chương trình thể dục.</div>",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 39,
+          "stem": "How can you add points?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "By working overtime"
+            },
+            {
+              "choice": "B",
+              "text": "By smoking less"
+            },
+            {
+              "choice": "C",
+              "text": "By walking as a group"
+            },
+            {
+              "choice": "D",
+              "text": "By keeping a good record"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><b>Giải thích:</b><br>Theo nội dung bài nghe, bạn có thể cộng điểm bằng hai cách: \"Each point you make for not smoking one day, or walking one mile a day will be added to your department’s Health Scores.\" Điều này có nghĩa là nếu bạn không hút thuốc trong một ngày hoặc đi bộ một dặm mỗi ngày, bạn sẽ đóng góp điểm cho đội của mình. Vì vậy, cách cộng điểm là không hút thuốc (liên quan đến đáp án B) và đi bộ (không nhất thiết phải đi theo nhóm, chỉ cần đi bộ một dặm mỗi ngày).</div>",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 40,
+          "stem": "What will the winning team receive?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Cash prizes"
+            },
+            {
+              "choice": "B",
+              "text": "Gift certificates"
+            },
+            {
+              "choice": "C",
+              "text": "Free airline tickets"
+            },
+            {
+              "choice": "D",
+              "text": "A medal of honor"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><b>Giải thích:</b><br>Trong bài nghe có nói: \"the winning team will receive gift certificates for local stores.\" Điều này có nghĩa là đáp án đúng là (B) Phiếu quà tặng. Không có thông tin nào về giải thưởng tiền mặt, vé máy bay miễn phí hoặc huy chương danh dự trong bài nghe. Như vậy, đội chiến thắng sẽ nhận được phiếu quà tặng như phần thưởng cho nỗ lực của họ trong chiến dịch sức khỏe.</div>",
+          "tags": [
+            "[Part 4] Hành động tiếp theo"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "41-43",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/34652342.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<b>Transcript</b> <br> Hi, Mr. Gerald. This is Donald Welch from the Sydney Office. I’m calling to confirm your attendance at the board meeting here in March. The meeting is set for March 2nd to avoid holidays of different international offices. Last week, your assistant said you weren’t sure if you could attend. Has your schedule been finalized? We could plan a conference call with you if you cannot make it to the scheduled date. As you know, this annual meeting among different international branch managers provides an opportunity to unify our management policy for the future business expansion. I will send you an e-mail message with the meeting agenda. I will also send the possible meeting times for the conference call just in case. I hope to hear back from you soon.",
+      "explanationHtml": "<div><b>Bản giải thích tiếng Việt</b><br>Xin chào ông Gerald. Tôi là Donald Welch từ văn phòng Sydney. Tôi gọi để xác nhận sự tham dự của ông tại cuộc họp hội đồng ở đây vào tháng Ba. Cuộc họp được lên lịch vào ngày 2 tháng 3 để tránh trùng với các ngày nghỉ lễ của các văn phòng quốc tế khác nhau. Tuần trước, trợ lý của ông nói rằng ông chưa chắc có thể tham dự. Lịch trình của ông đã được xác định chưa? Nếu ông không thể tham dự vào ngày đã định, chúng tôi có thể sắp xếp một cuộc gọi hội nghị với ông. Như ông đã biết, cuộc họp thường niên này giữa các giám đốc chi nhánh quốc tế là cơ hội để thống nhất chính sách quản lý cho việc mở rộng kinh doanh trong tương lai. Tôi sẽ gửi cho ông một email với chương trình cuộc họp. Tôi cũng sẽ gửi các khung giờ có thể cho cuộc gọi hội nghị để phòng trường hợp ông không thể tham dự trực tiếp. Mong sớm nhận được phản hồi từ ông.</div>",
+      "questions": [
+        {
+          "num": 41,
+          "stem": "What is the purpose of this message?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To report the international growth"
+            },
+            {
+              "choice": "B",
+              "text": "To reschedule a telephone conference"
+            },
+            {
+              "choice": "C",
+              "text": "To confirm the attendance of a meeting"
+            },
+            {
+              "choice": "D",
+              "text": "To discuss the details of an e-mail message"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Mục đích của tin nhắn này là xác nhận liệu ông Gerald có tham dự cuộc họp hội đồng vào tháng Ba hay không. Người nói cho biết: \"I’m calling to confirm your attendance at the board meeting here in March.\" Tin nhắn cũng đề cập đến các phương án thay thế như cuộc gọi hội nghị nếu ông Gerald không thể tham dự trực tiếp. Do đó, mục đích chính là xác nhận sự tham dự cuộc họp.</p>",
+          "tags": [
+            "[Part 4] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 42,
+          "stem": "What did Mr. Gerald’s assistant tell Mr. Welch?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Mr. Gerald’s plans are uncertain."
+            },
+            {
+              "choice": "B",
+              "text": "Mr. Gerald is away on a business trip."
+            },
+            {
+              "choice": "C",
+              "text": "Mr. Gerald will not participate in the meeting."
+            },
+            {
+              "choice": "D",
+              "text": "Mr. Gerald has already reserved a seat."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Theo nội dung bài nghe, ông Welch nói: <i>\"Last week, your assistant said you weren’t sure if you could attend.\"</i> Điều này có nghĩa là trợ lý của ông Gerald đã thông báo với ông Welch rằng kế hoạch của ông Gerald vẫn chưa chắc chắn vào thời điểm đó. Vì vậy, đáp án đúng là kế hoạch của ông Gerald chưa chắc chắn.</p>",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 43,
+          "stem": "What does the man mean when he says, “just in case”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He just talked with the secretary."
+            },
+            {
+              "choice": "B",
+              "text": "He will contact Mr. Gerald in person."
+            },
+            {
+              "choice": "C",
+              "text": "He will send extra information for Mr. Gerald."
+            },
+            {
+              "choice": "D",
+              "text": "He wants to purchase new suitcases for this trip."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Khi người đàn ông nói \"just in case\" (phòng khi), ý ông ấy là sẽ gửi cho ông Gerald thêm thông tin về các khung giờ có thể tổ chức cuộc gọi hội nghị, trong trường hợp ông Gerald không thể tham dự cuộc họp trực tiếp. Điều này được thể hiện qua câu: \"I will also send the possible meeting times for the conference call just in case.\" Như vậy, người đàn ông đang chuẩn bị cho khả năng ông Gerald không thể tham dự và muốn đảm bảo ông ấy có đầy đủ thông tin cần thiết.</p>",
+          "tags": [
+            "[Part 4] Câu hỏi hàm ý (Intent)"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "44-46",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/47530261.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<b>Transcript</b> <br> Welcome to our 10th annual international banking convention. This year, we have more than 800 participants from over 40 counties to share their secrets of managing corporates and private clients. Over the next three days, we will have lectures, demonstrations, and interviews conducted by renowned experts in banking industry. And this year, we have something new. All programs and schedules of the conference can be checked electronically in any place of the conference location. You can use your own computer by using wireless Internet, or you can use the computers set up in the main hall. Now, I would like to introduce our first guest speaker, Bernardo Luna, the president of Douche Bank.",
+      "explanationHtml": "<div><b>Bản giải thích tiếng Việt</b><br>Chào mừng bạn đến với hội nghị ngân hàng quốc tế thường niên lần thứ 10 của chúng tôi. Năm nay, chúng tôi có hơn 800 người tham dự đến từ hơn 40 quốc gia, cùng nhau chia sẻ bí quyết quản lý khách hàng doanh nghiệp và cá nhân. Trong ba ngày tới, sẽ có các bài giảng, trình diễn và phỏng vấn do các chuyên gia nổi tiếng trong ngành ngân hàng thực hiện. Đặc biệt, năm nay có một điểm mới: tất cả chương trình và lịch trình hội nghị đều có thể được kiểm tra điện tử ở bất kỳ đâu trong khu vực hội nghị. Bạn có thể sử dụng máy tính cá nhân với Internet không dây, hoặc sử dụng các máy tính được bố trí tại sảnh chính. Bây giờ, tôi xin giới thiệu diễn giả đầu tiên của chúng ta, ông Bernardo Luna, chủ tịch ngân hàng Douche Bank.</div>",
+      "questions": [
+        {
+          "num": 44,
+          "stem": "What kind of event are the listeners attending?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A new employee orientation"
+            },
+            {
+              "choice": "B",
+              "text": "An international job fair"
+            },
+            {
+              "choice": "C",
+              "text": "A corporate board meeting"
+            },
+            {
+              "choice": "D",
+              "text": "A banking conference"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div>Đáp án đúng là (D) Một hội nghị ngân hàng.<br><br>Trong bài nghe có đoạn: \"Welcome to our 10th annual international banking convention. This year, we have more than 800 participants from over 40 counties to share their secrets of managing corporates and private clients.\" Việc sử dụng cụm từ \"banking convention\" (hội nghị ngân hàng) cùng với các hoạt động như bài giảng, trình diễn và phỏng vấn bởi các chuyên gia trong ngành ngân hàng cho thấy đây là một hội nghị ngân hàng. Không có thông tin nào về buổi định hướng nhân viên mới, hội chợ việc làm hay cuộc họp hội đồng quản trị trong bài nghe.</div>",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 45,
+          "stem": "According to the speaker, what will be different from last year?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Some programs are available for free."
+            },
+            {
+              "choice": "B",
+              "text": "Pre-registration is needed."
+            },
+            {
+              "choice": "C",
+              "text": "Internet access is available."
+            },
+            {
+              "choice": "D",
+              "text": "Interpretation service can be provided."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Dựa vào nội dung bài nghe, người nói cho biết: \"All programs and schedules of the conference can be checked electronically in any place of the conference location. You can use your own computer by using wireless Internet, or you can use the computers set up in the main hall.\" Điều này cho thấy năm nay, người tham dự có thể truy cập Internet không dây tại mọi nơi trong khu vực hội nghị, đây là điểm mới so với năm trước. Vì vậy, đáp án đúng là (C) Có thể truy cập Internet.</p>",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 46,
+          "stem": "What will the listeners probably do next?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Hear from an industry expert"
+            },
+            {
+              "choice": "B",
+              "text": "Sign up for an event"
+            },
+            {
+              "choice": "C",
+              "text": "Receive a registration form"
+            },
+            {
+              "choice": "D",
+              "text": "Attend the welcoming reception"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div>Đáp án đúng là (A) Nghe một chuyên gia trong ngành phát biểu.<br><br>Theo nội dung bài nghe, sau khi chào mừng các đại biểu và giới thiệu về hội nghị, người dẫn chương trình nói: \"Now, I would like to introduce our first guest speaker, Bernardo Luna, the president of Douche Bank.\" Điều này cho thấy việc tiếp theo mà người nghe sẽ làm là lắng nghe bài phát biểu hoặc trình bày của một chuyên gia trong ngành, cụ thể là diễn giả khách mời. Không có thông tin nào về việc đăng ký sự kiện, nhận phiếu đăng ký hay tham dự tiệc chào mừng ở thời điểm này trong bài nghe.</div>",
+          "tags": [
+            "[Part 4] Hành động tiếp theo"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "range": "47-49",
+      "audio": "https://storage.googleapis.com/estudyme/prod/2023/01/06/83320651.mp3",
+      "images": [
+        "https://storage.googleapis.com/estudyme/legacy-data/kslearning/images/127310745-1620289498274-part4-1.png"
+      ],
+      "passageHtml": "",
+      "transcriptHtml": "<b>Transcript</b> <br> Ladies and gentlemen, we are now approaching the Museum of Fine Art. We will be here for about 3 hours. During your time here, I strongly suggest everyone visit the Greek Pottery Floor and recently acquired pictures of 19th century impressionism. Cassette players for self-guided tours may be rented at the information desk. For your convenience, there is a gift shop to the left of the lobby and a cafeteria on the lower level. Don’t forget to gather at the main entrance for our 3:00 departure. Now you can enjoy your time at this great museum. Please watch your step when you get off the bus.",
+      "explanationHtml": "<div><b>Bản giải thích tiếng Việt</b><br>Quý ông và quý bà, chúng ta hiện đang đến gần Bảo tàng Mỹ thuật. Chúng ta sẽ dừng lại ở đây khoảng 3 tiếng. Trong thời gian tham quan, tôi đặc biệt khuyến khích mọi người ghé thăm tầng trưng bày Gốm Hy Lạp và bộ sưu tập tranh trường phái ấn tượng thế kỷ 19 mới được bổ sung gần đây. Máy nghe băng hướng dẫn tự động có thể thuê tại quầy thông tin. Để thuận tiện cho quý khách, có một cửa hàng quà tặng bên trái sảnh chính và một quán cà phê ở tầng dưới. Xin đừng quên tập trung tại lối vào chính vào lúc 3 giờ chiều để khởi hành. Bây giờ, quý khách có thể tận hưởng thời gian tại bảo tàng tuyệt vời này. Khi xuống xe, xin hãy chú ý bước chân.</div>",
+      "questions": [
+        {
+          "num": 47,
+          "stem": "Who probably is the speaker?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A museum administration"
+            },
+            {
+              "choice": "B",
+              "text": "A tour leader"
+            },
+            {
+              "choice": "C",
+              "text": "A painter"
+            },
+            {
+              "choice": "D",
+              "text": "A sale person"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div>Người nói có khả năng cao là một hướng dẫn viên du lịch. Trong đoạn hội thoại, người nói xưng hô với một nhóm người là \"Ladies and gentlemen\" và cung cấp các chỉ dẫn chi tiết về chuyến tham quan Bảo tàng Mỹ thuật, như thời gian lưu lại (\"We will be here for about 3 hours\"), gợi ý những nơi nên tham quan (\"I strongly suggest everyone visit the Greek Pottery Floor and recently acquired pictures of 19th century impressionism\"), cũng như thông tin tiện ích và thời gian tập trung rời đi (\"Don’t forget to gather at the main entrance for our 3:00 departure\"). Đây là những nhiệm vụ điển hình của một hướng dẫn viên du lịch, người chịu trách nhiệm hướng dẫn và quản lý đoàn khách trong suốt chuyến đi. Người nói không phải là nhân viên quản lý bảo tàng, họa sĩ hay nhân viên bán hàng, vì vai trò của họ tập trung vào việc hướng dẫn và đảm bảo mọi người nắm rõ lịch trình cũng như các lựa chọn trong chuyến tham quan.</div>",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 48,
+          "stem": "What are the listeners encouraged to see?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Greek pottery"
+            },
+            {
+              "choice": "B",
+              "text": "The collection of cassette players"
+            },
+            {
+              "choice": "C",
+              "text": "Paintings at the gift shop"
+            },
+            {
+              "choice": "D",
+              "text": "Floor maps at the information desk"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div><b>Giải thích:</b><br>Theo nội dung bài nghe, người nghe được khuyến khích mạnh mẽ nên tham quan hai khu vực cụ thể: \"the Greek Pottery Floor and recently acquired pictures of 19th century impressionism.\" Điều này có nghĩa đáp án đúng là đồ gốm Hy Lạp. Các lựa chọn khác như máy cassette, tranh ở cửa hàng quà tặng hay bản đồ tầng chỉ được nhắc đến trong các ngữ cảnh khác (ví dụ: thuê máy cassette để tự hướng dẫn, vị trí cửa hàng quà tặng), chứ không phải là những thứ được khuyến khích xem. Vì vậy, người nghe được khuyến khích xem đồ gốm Hy Lạp.</div>",
+          "tags": [
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 49,
+          "stem": "Look at the graphic. Where should listeners meet at 3:00?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "1"
+            },
+            {
+              "choice": "B",
+              "text": "2"
+            },
+            {
+              "choice": "C",
+              "text": "3"
+            },
+            {
+              "choice": "D",
+              "text": "4"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div><b>Giải th&iacute;ch:</b><br />\nB&agrave;i nghe n&oacute;i: &quot;Don&rsquo;t forget to gather at the main entrance for our 3:00 departure.&quot; (Đừng qu&ecirc;n tập trung tại lối v&agrave;o ch&iacute;nh cho chuyến khởi h&agrave;nh l&uacute;c 3 giờ.) Điều n&agrave;y c&oacute; nghĩa l&agrave; mọi người n&ecirc;n tập trung tại lối v&agrave;o ch&iacute;nh l&uacute;c 3 giờ. V&igrave; vậy, đ&aacute;p &aacute;n đ&uacute;ng l&agrave;&nbsp;(C) 3</div>",
+          "tags": [
+            "[Part 4] Kết hợp bảng biểu / hình ảnh",
+            "[Part 4] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "50",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 50,
+          "stem": "Ram Builders’ supervisor _____ the client that the supplies needed for construction would arrive on time.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "bargained"
+            },
+            {
+              "choice": "B",
+              "text": "concerned"
+            },
+            {
+              "choice": "C",
+              "text": "predicted"
+            },
+            {
+              "choice": "D",
+              "text": "assured"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div style=' line-height: 1.6;'><p><b>bargain:</b> cố gắng thuyết phục ai đó đồng ý cho bạn điều gì đó tốt hơn, chẳng hạn như giá tốt hơn hoặc điều kiện làm việc tốt hơn.</p><p><b>concern:</b> khiến ai đó lo lắng.</p><p><b>predict:</b> nói rằng một sự kiện hoặc hành động sẽ xảy ra trong tương lai, đặc biệt dựa trên kiến thức hoặc kinh nghiệm.</p><p><b>assure:</b> nói với ai đó một cách tự tin rằng điều gì đó là đúng, đặc biệt để họ không lo lắng.</p><p><b>Kết luận:</b> \"assure\" là từ có nghĩa phù hợp nhất trong các lựa chọn trên.</p></div>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "51",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 51,
+          "stem": "Schilling Investors Group has not _____ found a suitable candidate to replace Mr. Macmillan, who resigned two weeks ago.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "almost"
+            },
+            {
+              "choice": "B",
+              "text": "yet"
+            },
+            {
+              "choice": "C",
+              "text": "far"
+            },
+            {
+              "choice": "D",
+              "text": "only"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>&quot;Yet&quot;</strong> được sử dụng trong câu phủ định của thì hiện tại hoàn thành. Ví dụ: <em>I haven't finished my homework yet.</em></p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "52",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 52,
+          "stem": "The athlete recently beat the world record for the marathon _____ less than a minute.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "beneath"
+            },
+            {
+              "choice": "B",
+              "text": "above"
+            },
+            {
+              "choice": "C",
+              "text": "at"
+            },
+            {
+              "choice": "D",
+              "text": "by"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><p><b>beneath:</b> ở vị trí thấp hơn hoặc dưới ai đó hoặc vật gì đó</p><p><b>above:</b> ở vị trí cao hơn so với vật khác</p><p><b>at:</b> dùng để chỉ vị trí chính xác hoặc một nơi cụ thể</p><p><b>by:</b> không muộn hơn (chỉ thời hạn)</p><p>=&gt; \"by\" là đáp án phù hợp nhất trong trường hợp này.</p></div>",
+          "tags": [
+            "[Part 5] Giới từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "53",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 53,
+          "stem": "First Canadian National Bank charges a commission when cash _____ from its machines by non-customers.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "to withdraw"
+            },
+            {
+              "choice": "B",
+              "text": "is withdrawn"
+            },
+            {
+              "choice": "C",
+              "text": "withdraws"
+            },
+            {
+              "choice": "D",
+              "text": "is withdrawing"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Câu này mô tả một hành động ở thể bị động, nghĩa là chủ ngữ (tiền mặt) là đối tượng chịu tác động chứ không phải là người thực hiện hành động.</p><p>Cấu trúc của câu bị động ở thì hiện tại đơn: S + be + V_past participle (withdrawn)</p><p>=&gt; Đáp án B là đúng</p>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "54",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 54,
+          "stem": "The city of Myerstown plans to turn an 80-acre _____ of land near Weller River into a public park next year.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "period"
+            },
+            {
+              "choice": "B",
+              "text": "stretch"
+            },
+            {
+              "choice": "C",
+              "text": "degree"
+            },
+            {
+              "choice": "D",
+              "text": "collection"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p><b>period:</b> một khoảng thời gian nhất định</p><p><b>stretch:</b> một khu vực liên tục của đất liền hoặc mặt nước</p><p><b>degree:</b> mức độ hoặc cấp độ của một điều gì đó</p><p><b>collection:</b> một nhóm các vật cùng loại được sưu tầm bởi một người hoặc tập hợp tại một nơi</p><p>=&gt; <b>\"stretch\"</b> là đáp án phù hợp nhất trong ngữ cảnh này.</p></div>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "55",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 55,
+          "stem": "The woman sitting _____ Mr. Heath at the meeting was kind enough to lend him a pen at his request.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "apart"
+            },
+            {
+              "choice": "B",
+              "text": "opposite"
+            },
+            {
+              "choice": "C",
+              "text": "from"
+            },
+            {
+              "choice": "D",
+              "text": "closely"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p><b>apart:</b> cách nhau bởi một khoảng cách hoặc thời gian</p><p><b>opposite:</b> ở vị trí đối diện; đối mặt</p><p><b>from:</b> dùng để chỉ vị trí của một vật so với các vật khác, hoặc quan điểm của ai đó khi xem xét một vấn đề</p><p><b>closely:</b> một cách trực tiếp hoặc có mối quan hệ chặt chẽ</p><p>⇒ <b>\"opposite\"</b> là đáp án phù hợp nhất trong trường hợp này.</p></div>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "56",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 56,
+          "stem": "Once the vendor _____ his payment, Smith & Cooper Wholesalers will ship his order out.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "substitutes"
+            },
+            {
+              "choice": "B",
+              "text": "leases"
+            },
+            {
+              "choice": "C",
+              "text": "transfers"
+            },
+            {
+              "choice": "D",
+              "text": "enforces"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div><p><b>substitute:</b> sử dụng một vật hoặc người thay cho một vật hoặc người khác.</p><p><b>lease:</b> lập một thỏa thuận pháp lý để trả tiền nhằm sử dụng đất đai, tòa nhà, phương tiện hoặc thiết bị trong một khoảng thời gian nhất định.</p><p><b>transfer:</b> chuyển tiền từ một tài khoản sang tài khoản khác.</p><p><b>enforce:</b> buộc mọi người tuân theo luật pháp, hoặc làm cho một tình huống cụ thể xảy ra hoặc được chấp nhận.</p><p><i>=> “transfer” là đáp án phù hợp nhất với ý nghĩa được yêu cầu.</i></p></div>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "57",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 57,
+          "stem": "The board of directors _____ agreed to change Two-Tone Media’s logo as all the members considered it outdated.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "inseparably"
+            },
+            {
+              "choice": "B",
+              "text": "unanimously"
+            },
+            {
+              "choice": "C",
+              "text": "elaborately"
+            },
+            {
+              "choice": "D",
+              "text": "intimately"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p><b>inseparably:</b> theo cách không thể tách rời</p><p><b>unanimously:</b> theo cách mà tất cả mọi người trong nhóm đều đồng ý hoặc ủng hộ</p><p><b>elaborately:</b> theo cách có nhiều chi tiết tỉ mỉ hoặc nhiều phần chi tiết</p><p><b>intimately:</b> theo cách gần gũi và cá nhân</p><p>=&gt; <b>\"unanimously\"</b> là từ có nghĩa phù hợp nhất</p></div>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "58",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 58,
+          "stem": "Airport officials have announced that more _____ security checks will be adopted to eliminate any potential threats.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "reluctant"
+            },
+            {
+              "choice": "B",
+              "text": "mundane"
+            },
+            {
+              "choice": "C",
+              "text": "obtainable"
+            },
+            {
+              "choice": "D",
+              "text": "rigorous"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><p><b>reluctant:</b> không sẵn lòng làm điều gì đó và do đó làm một cách chậm chạp</p><p><b>mundane:</b> rất bình thường, do đó không thú vị</p><p><b>obtainable:</b> có thể đạt được, có thể lấy được</p><p><b>rigorous:</b> cẩn thận xem xét hoặc cân nhắc mọi phần của một việc để đảm bảo nó đúng hoặc an toàn</p><p>=&gt; \"rigorous\" có ý nghĩa phù hợp nhất</p></div>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "59",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 59,
+          "stem": "The organizers of the Brock County Fair have decided to _____ the event due to the poor weather conditions.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "back down"
+            },
+            {
+              "choice": "B",
+              "text": "give away"
+            },
+            {
+              "choice": "C",
+              "text": "keep out"
+            },
+            {
+              "choice": "D",
+              "text": "put off"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><p><b>back down:</b> thừa nhận rằng bạn đã sai hoặc đã bị đánh bại</p><p><b>give away:</b> tặng miễn phí một thứ gì đó như một món quà hoặc quyên góp</p><p><b>keep out:</b> khiến ai đó hoặc thứ gì đó ở bên ngoài</p><p><b>put off:</b> hoãn lại một việc gì đó</p><p>=&gt; \"put off\" có nghĩa phù hợp nhất trong trường hợp này</p></div>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "60",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 60,
+          "stem": "Customers who subscribe to Travelog’s online magazine will receive discounts _____ their subscriptions are for six months or a year.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "rather"
+            },
+            {
+              "choice": "B",
+              "text": "either"
+            },
+            {
+              "choice": "C",
+              "text": "even"
+            },
+            {
+              "choice": "D",
+              "text": "whether"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><p><b>rather:</b> khá; ở mức độ nhẹ</p><p><b>either:</b> dùng khi nói về sự lựa chọn giữa hai khả năng</p><p><b>even:</b> dùng để nhấn mạnh điều gì đó gây ngạc nhiên, bất thường, không mong đợi hoặc cực đoan</p><p><b>whether:</b> không quan trọng nếu (dùng để nói rằng điều gì đó xảy ra hoặc không xảy ra đều không ảnh hưởng)</p><p>=&gt; \"whether\" có ý nghĩa phù hợp nhất</p></div>",
+          "tags": [
+            "[Part 5] Liên từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "61",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 61,
+          "stem": "Barton Electronics will have to boost production to meet the _____ demand for its newest dishwasher model.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "bulky"
+            },
+            {
+              "choice": "B",
+              "text": "proficient"
+            },
+            {
+              "choice": "C",
+              "text": "sizable"
+            },
+            {
+              "choice": "D",
+              "text": "wealthy"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div><p><b>bulky:</b> quá to và chiếm quá nhiều không gian</p><p><b>proficient:</b> thành thạo và có kinh nghiệm</p><p><b>sizable:</b> lớn</p><p><b>wealthy:</b> giàu có</p><p>=&gt; <b>\"sizable\"</b> là từ có nghĩa phù hợp nhất</p></div>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "62",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 62,
+          "stem": "Mr. Sampson must renew his gym membership by December 31, _____ he will be unable to access the facility.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "but"
+            },
+            {
+              "choice": "B",
+              "text": "or"
+            },
+            {
+              "choice": "C",
+              "text": "so"
+            },
+            {
+              "choice": "D",
+              "text": "not"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p><b>but:</b> được dùng để giới thiệu một ý bổ sung, thường là điều gì đó khác với những gì bạn đã nói trước đó.</p><p><b>or:</b> nếu không.</p><p><b>so:</b> và vì lý do đó; do đó.</p><p><b>not:</b> được dùng với động từ phụ trợ hoặc \"be\" để tạo thành câu phủ định.</p><p>=&gt; <b>\"or\"</b> có nghĩa phù hợp nhất trong trường hợp này.</p></div>",
+          "tags": [
+            "[Part 5] Liên từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "63",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 63,
+          "stem": "ReliaCorp’s sale of some surplus property is _____ with saving the company from bankruptcy.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "agreed"
+            },
+            {
+              "choice": "B",
+              "text": "motivated"
+            },
+            {
+              "choice": "C",
+              "text": "reminded"
+            },
+            {
+              "choice": "D",
+              "text": "credited"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><p><strong>agree:</strong> có cùng quan điểm, đồng ý với ai đó.</p><p><strong>motivate:</strong> thúc đẩy ai đó muốn làm điều gì đó tốt hơn.</p><p><strong>remind:</strong> làm cho ai đó nhớ lại điều gì mà họ đã quên hoặc có thể quên.</p><p><strong>credit:</strong> tin vào điều gì đó dù điều đó có vẻ khó tin là sự thật.</p><p><em>=> \"credit\" là từ có nghĩa phù hợp nhất trong ngữ cảnh này.</em></p></div>",
+          "tags": [
+            "[Part 5] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "range": "64",
+      "audio": null,
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 64,
+          "stem": "_____ otherwise stated, all course materials will be available at the campus bookstore two weeks before the first day of class.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "While"
+            },
+            {
+              "choice": "B",
+              "text": "Still"
+            },
+            {
+              "choice": "C",
+              "text": "Unless"
+            },
+            {
+              "choice": "D",
+              "text": "Whereas"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div><p><b>While:</b> trong khi, trong suốt thời gian mà hoặc cùng lúc với.</p><p><b>Still:</b> vẫn tiếp tục xảy ra hoặc vẫn tiếp tục được thực hiện.</p><p><b>Unless:</b> trừ khi, ngoại trừ nếu.</p><p><b>Whereas:</b> so với thực tế là; nhưng.</p><p>=&gt; <b>\"Unless\"</b> là đáp án phù hợp nhất với ý nghĩa được yêu cầu.</p></div>",
+          "tags": [
+            "[Part 5] Liên từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "65-68",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>ALPHA AIRLINES, INC.<br />\nGeneral Offices<br />\nStagfield Atlanta International Airport<br />\nAtlanta, Georgia 30320 U.S.A<br />\nJanuary 12<br />\n<br />\nMr. Jack Cooper<br />\n112 Station Road<br />\nBristol, U.K.<br />\n<br />\nDear Mr. Cooper,<br />\nWe are holding a suitcase which we believe to be your property. If you have lost such an article, please provide us with a complete <strong>(65)</strong> _____ of the property, including color and contents of the property. Also, please advise us of your complete itinerary, including the airline flown to your destination.<br />\nTo assist us in <strong>(66)</strong> _____ its return to you, please give us your telephone number.<br />\n<strong>(67)</strong> _____.&nbsp;<br />\nUnderstandably, the property will be disposed of <strong>(68)</strong> _____ we hear from you within ninety days from the date of this letter.<br />\n<br />\nSincerely,<br />\n<br />\nSystem Baggage Service<br />\nAlpha Air Lines, Inc.<br />\nIn reply, please refer to our file OL 9991.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 65,
+          "stem": "If you have lost such an article, please provide us with a complete (65) _____ of the property, including color and contents of the property.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "impression"
+            },
+            {
+              "choice": "B",
+              "text": "projection"
+            },
+            {
+              "choice": "C",
+              "text": "description"
+            },
+            {
+              "choice": "D",
+              "text": "intuition"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div style=' line-height: 1.6;'><p><b>impression:</b> một ý tưởng hoặc ý kiến về việc ai đó hoặc điều gì đó như thế nào</p><p><b>projection:</b> một phép tính hoặc dự đoán về tương lai dựa trên thông tin mà bạn có</p><p><b>description:</b> điều gì đó giúp bạn biết ai đó hoặc điều gì đó như thế nào</p><p><b>intuition:</b> (kiến thức từ) khả năng hiểu hoặc biết điều gì đó ngay lập tức dựa trên cảm xúc thay vì sự thật</p><p><i>=> \"description\" có nghĩa phù hợp nhất trong ngữ cảnh này.</i></p></div>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 66,
+          "stem": "To assist us in (66) _____ its return to you, please give us your telephone number.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "expanding"
+            },
+            {
+              "choice": "B",
+              "text": "expediting"
+            },
+            {
+              "choice": "C",
+              "text": "expressing"
+            },
+            {
+              "choice": "D",
+              "text": "exiling"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p><b>expand:</b> tăng về kích thước, số lượng hoặc tầm quan trọng, hoặc làm cho điều gì đó tăng lên theo cách này.</p><p><b>expedite:</b> làm cho điều gì đó diễn ra nhanh hơn.</p><p><b>express:</b> thể hiện một cảm xúc, ý kiến hoặc sự thật.</p><p><b>exile:</b> đày ai đó ra khỏi đất nước, làng quê của họ, đặc biệt là vì lý do chính trị.</p><p><i>=> “expedite” là từ có nghĩa phù hợp nhất trong ngữ cảnh này.</i></p></div>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 67,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (67).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Contact John Stanley at ALPHA @AIRLINES.org if you would like to apply or get additional information."
+            },
+            {
+              "choice": "B",
+              "text": "Upon receipt of the requested information, we will advise you of the routing promptly."
+            },
+            {
+              "choice": "C",
+              "text": "I am delighted with the fact that nothing was damaged during the shipment."
+            },
+            {
+              "choice": "D",
+              "text": "They are available at a ten percent discount and are shipped to you as they become available."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p>B là đáp án đúng vì nó có thể liên kết với câu <em>\"Để hỗ trợ chúng tôi trong việc đẩy nhanh quá trình gửi lại cho bạn, vui lòng cung cấp số điện thoại của bạn.\"</em></p><p>Ở đây, <em>\"receipt of the requested information\"</em> (việc nhận được thông tin được yêu cầu) ám chỉ việc <em>\"cung cấp số điện thoại của bạn\"</em>.</p></div>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 68,
+          "stem": "Understandably, the property will be disposed of (68) _____ we hear from you within ninety days from the date of this letter.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "if"
+            },
+            {
+              "choice": "B",
+              "text": "unless"
+            },
+            {
+              "choice": "C",
+              "text": "even though"
+            },
+            {
+              "choice": "D",
+              "text": "until"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p><b>if:</b> dùng để nói rằng một điều gì đó chỉ có thể hoặc sẽ xảy ra sau khi một điều khác xảy ra hoặc trở thành sự thật.</p><p><b>unless:</b> dùng để nói điều gì sẽ hoặc sẽ không xảy ra nếu một điều khác không xảy ra hoặc không đúng; ngoại trừ khi.</p><p><b>even though:</b> mặc dù.</p><p><b>until:</b> cho đến (thời điểm mà).</p><p>=&gt; <b>\"unless\"</b> là từ có ý nghĩa phù hợp nhất trong trường hợp này.</p></div>",
+          "tags": [
+            "[Part 6] Liên từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "69-72",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>Dear James,<br />\n<br />\nThank you for your recent interest in the accounting position you <strong>(69)</strong> _____ for with the Accounting Division of Gary Armstrong Corporation.<br />\nWe have reviewed your qualifications. And it is with regret that I must inform you that we have <strong>(70)</strong> _____ applicants whose qualifications are better suited for this particular position.<br />\nWe have also reviewed your background for other possible positions, and we do not currently have one that would effectively use your qualifications and experience. We do not anticipate more openings in the <strong>(71)</strong> _____ future.<br />\n<strong>(72)</strong> _____.<br />\n<br />\nSincerely,<br />\n<br />\nSharon Sala<br />\nHuman Resources Department</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 69,
+          "stem": "Thank you for your recent interest in the accounting position you (69) _____ for with the Accounting Division of Gary Armstrong Corporation.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "applied"
+            },
+            {
+              "choice": "B",
+              "text": "applying"
+            },
+            {
+              "choice": "C",
+              "text": "applicant"
+            },
+            {
+              "choice": "D",
+              "text": "application"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Chỗ trống nằm sau chủ ngữ (you) =&gt; Cần một động từ =&gt; Đáp án A là đúng.</p><p>Trong tiếng Anh, sau chủ ngữ thường là động từ để tạo thành một câu hoàn chỉnh. Vì vậy, ở vị trí này, ta cần điền một động từ để câu có nghĩa đầy đủ.</p>",
+          "tags": [
+            "[Part 6] Thì & Dạng động từ"
+          ]
+        },
+        {
+          "num": 70,
+          "stem": "And it is with regret that I must inform you that we have (70) _____ applicants whose qualifications are better suited for this particular position.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "another"
+            },
+            {
+              "choice": "B",
+              "text": "the other"
+            },
+            {
+              "choice": "C",
+              "text": "other"
+            },
+            {
+              "choice": "D",
+              "text": "others"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div><p>Sau chỗ trống là một danh từ =&gt; Loại (D) 'others' vì không đứng trước danh từ.</p><p>Loại 'another' vì không phù hợp về nghĩa trong ngữ cảnh này.</p><p>Loại 'the other' vì 'applicants' chưa được xác định cụ thể trước đó.</p><p>Vì vậy, đáp án đúng là C.</p></div>",
+          "tags": [
+            "[Part 6] Đại từ & Mệnh đề quan hệ"
+          ]
+        },
+        {
+          "num": 71,
+          "stem": "We do not anticipate more openings in the (71) _____ future.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "nearby"
+            },
+            {
+              "choice": "B",
+              "text": "nearness"
+            },
+            {
+              "choice": "C",
+              "text": "nearly"
+            },
+            {
+              "choice": "D",
+              "text": "near"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Một tính từ là cần thiết để bổ nghĩa cho danh từ \"future\".</p><p>=&gt; D là đáp án đúng.</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ loại"
+          ]
+        },
+        {
+          "num": 72,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (72).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Therefore, we have decided to hire Mr. James for the accounting position."
+            },
+            {
+              "choice": "B",
+              "text": "As you will notice, I have sent the contract along with this fax."
+            },
+            {
+              "choice": "C",
+              "text": "If possible, we would like you to begin working for us as early as May 23rd."
+            },
+            {
+              "choice": "D",
+              "text": "We will however keep your application on file and contact you should a suitable position become available."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>D là đáp án đúng vì nó có thể liên kết với các câu sau: <em>\"Chúng tôi cũng đã xem xét hồ sơ của bạn cho các vị trí khác có thể, và hiện tại chúng tôi không có vị trí nào phù hợp để tận dụng trình độ và kinh nghiệm của bạn. Chúng tôi cũng không dự kiến sẽ có thêm vị trí tuyển dụng nào trong tương lai gần.\"</em></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "73-74",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><strong>Marge Bledsoe</strong> [11:05 A.M.]<br />\nI just remembered I have a client who&#39;d like to see the house that we&#39;ve listed on 78 Crescent Lane. Unfortunately, I&#39;m fully booked today. Is anyone free this afternoon?<br />\n<strong>Evan Clark </strong>[11:08 A.M.]<br />\nI can bring the client to the house at 2:30. I have another showing nearby and can go there afterward.<br />\n<strong>Julia Anderson</strong> [11:14 A.M.]<br />\nMarge, are you referring to Eva Teal? She called a short while ago and said she was looking for a two-bedroom place downtown.<br />\n<strong>Marge Bledsoe </strong>[11:15 A.M.]<br />\nYes, that&#39;s her. I think Evan can handle it. I need your help with another client, Julia.<br />\n<strong>Julia Anderson </strong>[11:15 A.M.]<br />\nSure, just let me know later.<br />\n<strong>Evan Clark</strong> [11:17 A.M.]<br />\nOK. Why don&#39;t I show her the other home nearby as well? It&#39;s just a few blocks away from there and also has two bedrooms.<br />\n<strong>Marge Bledsoe</strong> [11:18 A.M.]<br />\nGood call. Will find out if she&#39;s interested in seeing it. I&rsquo;ll give her your mobile number in case there&#39;s a problem. She can probably meet you there first before seeing the Crescent Lane house.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 73,
+          "stem": "Who most likely is Ms. Anderson?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A building administrator"
+            },
+            {
+              "choice": "B",
+              "text": "A real estate agent"
+            },
+            {
+              "choice": "C",
+              "text": "A housing inspector"
+            },
+            {
+              "choice": "D",
+              "text": "An office receptionist"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p>Dựa trên đoạn hội thoại tiếng Anh, một người nhớ ra rằng họ có một khách hàng muốn xem căn nhà đã được niêm yết ở 78 Crescent Lane, nhưng hôm nay họ đã kín lịch và hỏi xem có ai rảnh vào buổi chiều không. Người khác hỏi lại rằng Marge có phải đang nói về Eva Teal không, vì Eva vừa gọi điện và nói rằng cô ấy đang tìm một căn hộ hai phòng ngủ ở trung tâm thành phố.</p><p>Như vậy, thông tin này cho thấy khách hàng muốn xem nhà là Eva Teal, người đang tìm kiếm một căn hộ hai phòng ngủ ở khu vực trung tâm. Do đó, lựa chọn B là đáp án phù hợp nhất với nội dung đoạn hội thoại.</p></div>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 74,
+          "stem": "At 11:18 A.M., what does Ms. Bledsoe mean when she writes, “Good call”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She can confirm that Mr. Clark has the right information."
+            },
+            {
+              "choice": "B",
+              "text": "She is relieved to find out that someone can replace her."
+            },
+            {
+              "choice": "C",
+              "text": "She is pleased with the results of a phone conversation."
+            },
+            {
+              "choice": "D",
+              "text": "She likes the proposal that Mr. Clark has made."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div>Dựa trên thông tin: <em>\"Tại sao tôi không cho cô ấy xem căn nhà khác gần đó nữa nhỉ? Nó chỉ cách đó vài dãy nhà và cũng có hai phòng ngủ.\"</em><br><br>=> Đáp án D là lựa chọn phù hợp vì người nói đề xuất cho khách xem thêm một căn nhà khác gần đó, có cùng số phòng ngủ. Điều này cho thấy họ đang cân nhắc thêm lựa chọn cho khách hàng.</div>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "75-77",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><b>NOTICE: Fashion-lt Employment Opportunities</b><br />\nFashion-lt is now accepting applications for positions at our new headquarters. We manage one of the most popular clothing chains in the country. Applicants will find that our wages and benefits are <strong>comparable</strong> to or even better than our competitors&#39;. Our work environment is second-to-none, with quality facilities and a caring, supportive staff. Our thousands of employees can testify that Fashion-lt is one of the best companies to work for.<br />\nCurrently, we are seeking:<br />\n5 Building Maintenance Technicians<br />\n1 Inventory Analyst<br />\n6 Receiving, Shipping, and Warehouse Associates<br />\n1 Product Manager<br />\n2 Security Officers<br />\nApplicants should log in to our Web site at www.fashionit.com/jobs. Choose one or more jobs of interest and fill out the application(s). After you submit the form, you will receive a confirmation via e-mail. If we are interested in interviewing you, we will contact you within 14 days. All applications will be kept on file for 12 months.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 75,
+          "stem": "What is NOT indicated about Fashion-lt?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It offers its employees excellent working conditions."
+            },
+            {
+              "choice": "B",
+              "text": "It stores job applications for one year."
+            },
+            {
+              "choice": "C",
+              "text": "It is recruiting employees for several branches."
+            },
+            {
+              "choice": "D",
+              "text": "It operates an online recruitment page."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div><p><strong>Giải thích tiếng Việt:</strong></p><ul><li><em>“Môi trường làm việc của chúng tôi là hàng đầu, với cơ sở vật chất chất lượng và sự quan tâm”</em> &rarr; Loại đáp án A vì thông tin này không liên quan đến câu hỏi cần tìm.</li><li><em>“Tất cả hồ sơ ứng tuyển sẽ được lưu giữ trong 12 tháng.”</em> &rarr; Loại đáp án B vì thông tin này không phải là đáp án đúng cho câu hỏi.</li><li><em>“Ứng viên nên đăng nhập vào trang web của chúng tôi tại www.fashionit.com/jobs.”</em> &rarr; Loại đáp án D vì đây chỉ là hướng dẫn nộp hồ sơ, không phải đáp án đúng.</li></ul></div>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 76,
+          "stem": "The word \"comparable” in paragraph 1 is closest in meaning to",
+          "options": [
+            {
+              "choice": "A",
+              "text": "affiliated"
+            },
+            {
+              "choice": "B",
+              "text": "similar"
+            },
+            {
+              "choice": "C",
+              "text": "significant"
+            },
+            {
+              "choice": "D",
+              "text": "balanced"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><b>affiliated:</b> liên kết với hoặc chịu sự kiểm soát bởi một nhóm hoặc tổ chức</div><div><b>similar:</b> trông giống hoặc gần như giống nhau, nhưng không hoàn toàn giống</div><div><b>significant:</b> quan trọng hoặc dễ nhận thấy</div><div><b>balanced:</b> xem xét tất cả các khía cạnh hoặc ý kiến một cách công bằng</div><div>=&gt; <b>\"similar\"</b> là từ có nghĩa phù hợp nhất</div>",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        },
+        {
+          "num": 77,
+          "stem": "According to the notice, what will happen within two weeks of an application being submitted?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "More job openings will be posted."
+            },
+            {
+              "choice": "B",
+              "text": "Fashion-lt will begin training new members of staff."
+            },
+            {
+              "choice": "C",
+              "text": "The new store will officially open to the public."
+            },
+            {
+              "choice": "D",
+              "text": "Applicants who have been selected will be notified."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Thông tin được nêu như sau: <em>\"Nếu chúng tôi quan tâm đến việc phỏng vấn bạn, chúng tôi sẽ liên hệ với bạn trong vòng 14 ngày.\"</em> Điều này có nghĩa là nếu hồ sơ của bạn phù hợp, nhà tuyển dụng sẽ chủ động liên hệ với bạn trong thời gian 14 ngày kể từ khi bạn nộp đơn. Nếu sau 14 ngày bạn không nhận được phản hồi, có thể bạn chưa được chọn cho vòng phỏng vấn.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "78-81",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><b>Satisfy your Craving for Sweets at Katie&rsquo;s Cupcakes!</b><br />\nFor the most delicious cupcakes you&rsquo;ll ever taste, head to Katie&rsquo;s Cupcakes at 637 Elm Street in downtown Lavington! &mdash; [1] &mdash;. We can make over 50 flavor combinations of cake, filling, and frosting. Whether you like more traditional cupcake flavors or more exotic kinds, like mint and pumpkin, Katie&rsquo;s Cupcakes can fulfill your craving without ruining your diet. Nearly half of our items are low in both sugar and fat, making them great for those limiting then- caloric intake. &mdash; [2] &mdash;. We promise that, upon your request, any of our delicious treats can be baked free of sugar, gluten, lactose, or nuts or can be made specially for diabetics.<br />\nThese days, many people use cupcake arrangements instead of traditional cakes for weddings, birthdays, and other celebrations. &mdash; [3] &mdash;. Katie&rsquo;s Cupcakes can customize an arrangement in any color and flavor, for any occasion. Stop by anytime to check out examples of our work. Those placing an order for a cupcake arrangement in June will receive a 10 percent discount!<br />\nKatie&rsquo;s Cupcakes is open Monday through Saturday from 8 A.M. to 4 P.M. Samples are always available, so drop by soon and satisfy your taste buds. &mdash; [4] &mdash;.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 78,
+          "stem": "What is NOT indicated about Katie’s Cupcakes’ products?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "They were promoted in a magazine article."
+            },
+            {
+              "choice": "B",
+              "text": "Some of them come in low calorie varieties."
+            },
+            {
+              "choice": "C",
+              "text": "They can be tailored to customers’ preferences."
+            },
+            {
+              "choice": "D",
+              "text": "Some of them are appropriate for diabetics."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div><p><strong>Giải thích:</strong></p><ul><li><em>\"Gần một nửa sản phẩm của chúng tôi đều ít đường và ít chất béo, rất phù hợp cho những ai muốn hạn chế lượng calo.\"</em> &rarr; Loại đáp án B vì đáp án này không phù hợp với thông tin trên.</li><li><em>\"Katie’s Cupcakes có thể tùy chỉnh bánh với bất kỳ màu sắc và hương vị nào, cho bất kỳ dịp nào.\"</em> &rarr; Loại đáp án C vì đáp án này không đúng với nội dung đề cập.</li><li><em>\"hoặc không có hạt hoặc có thể làm riêng cho người tiểu đường.\"</em> &rarr; Loại đáp án D vì đáp án này không phù hợp với thông tin đã cho.</li></ul></div>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 79,
+          "stem": "According to the advertisement, what does Katie’s Cupcakes do for its customers?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Provides delivery to them for a small fee"
+            },
+            {
+              "choice": "B",
+              "text": "Allows them to taste products for free"
+            },
+            {
+              "choice": "C",
+              "text": "Prints ingredients on packaging materials"
+            },
+            {
+              "choice": "D",
+              "text": "Transports special arrangements to event venues"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Thông tin: <em>&quot;Mẫu thử luôn có sẵn, hãy ghé qua sớm để thoả mãn vị giác của bạn.&quot;</em></p><p>Điều này có nghĩa là bạn có thể đến cửa hàng bất cứ lúc nào để thử sản phẩm miễn phí và trải nghiệm hương vị trước khi quyết định mua.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 80,
+          "stem": "How can customers get a discount on cupcake arrangements?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "By attending a sampling session"
+            },
+            {
+              "choice": "B",
+              "text": "By ordering during a specific period"
+            },
+            {
+              "choice": "C",
+              "text": "By submitting a coupon at an establishment"
+            },
+            {
+              "choice": "D",
+              "text": "By answering a customer questionnaire"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div>Thông tin: <em>Những khách hàng đặt mua một bộ bánh cupcake trong tháng 6 sẽ được giảm giá 10%!</em></div>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 81,
+          "stem": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? “And for those with dietary restrictions, we offer an array of options.”",
+          "options": [
+            {
+              "choice": "A",
+              "text": "[1]"
+            },
+            {
+              "choice": "B",
+              "text": "[2]"
+            },
+            {
+              "choice": "C",
+              "text": "[3]"
+            },
+            {
+              "choice": "D",
+              "text": "[4]"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>B là đáp án đúng vì nó có thể liên kết với câu <em>\"Chúng tôi cam kết rằng, theo yêu cầu của bạn, bất kỳ món ăn ngon nào của chúng tôi đều có thể được làm mà không có đường, gluten, lactose hoặc các loại hạt, hoặc có thể được chế biến đặc biệt cho người tiểu đường.\"</em> Điều này cho thấy cửa hàng sẵn sàng đáp ứng các nhu cầu ăn kiêng khác nhau của khách hàng.</p>",
+          "tags": [
+            "[Part 7] Điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "82-85",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><b>Everything Video Opens Store</b><br />\nBy Kelly Warren<br />\nEverything Video, a pioneer in the used electronics marketplace, recently opened its fourth store, this time in San Diego. With popular branches in Anaheim, Los Angeles, and San Bernardino, the chain&rsquo;s new store, located in the Seaside Mall, is its largest location yet. The space boasts an incredible variety of thousands of games for multiple platforms that date back to the 1980s. There is also a smaller section of game consoles, handheld players, and an assortment of other vintage video game devices. Used movies on videotape or DVD are also available.<br />\nKendra Brown, founder of Everything Video, says, &ldquo;A lot of people miss owning physical objects.&rdquo; She explained that the <strong>shift </strong>in recent years to playing games and watching movies online has indirectly created a demand for physical products. &ldquo;Often, our customers buy these items for sentimental reasons.&rdquo;<br />\nNot only can customers do some shopping, but Everything Video buys stock as well. If you have games, movies, or devices they&rsquo;re interested in, staff offer cash payments or store credit to use at any of their locations in exchange for them.<br />\nAccording to branch manager Dane Cruz, as an introductory special, shoppers who buy three games or more will receive a 20 percent discount off their total purchase amount. The offer is valid until August 1 and is only available at the San Diego branch.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 82,
+          "stem": "What is the article mainly about?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The launch of a software development firm"
+            },
+            {
+              "choice": "B",
+              "text": "A sale on new video games"
+            },
+            {
+              "choice": "C",
+              "text": "An expansion of a retail chain"
+            },
+            {
+              "choice": "D",
+              "text": "The release of a gaming device"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div><b>Giải thích tiếng Việt:</b><br>Thông tin trong đoạn văn cho biết: <em>Everything Video, một công ty tiên phong trong lĩnh vực mua bán thiết bị điện tử đã qua sử dụng, vừa mới khai trương cửa hàng thứ tư, lần này tại San Diego.</em> Điều này cho thấy Everything Video đã có ba cửa hàng trước đó và hiện tại mở thêm một cửa hàng mới ở San Diego. Vì vậy, đáp án đúng là C.</div>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 83,
+          "stem": "What is NOT mentioned as a product type that will be sold at the new store?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Secondhand movie DVDs"
+            },
+            {
+              "choice": "B",
+              "text": "Videotaped television series"
+            },
+            {
+              "choice": "C",
+              "text": "Classic video games"
+            },
+            {
+              "choice": "D",
+              "text": "Handheld game consoles"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Đoạn văn tiếng Anh nói về một khu vực nhỏ trưng bày các máy chơi game, thiết bị cầm tay và nhiều thiết bị trò chơi điện tử cổ điển khác. Ngoài ra, còn có các bộ phim đã qua sử dụng dưới dạng băng video hoặc DVD. Dựa vào nội dung này, các lựa chọn A, C và D không phù hợp với thông tin được đề cập, vì vậy chúng ta loại bỏ chúng.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 84,
+          "stem": "What is NOT indicated about Everything Video?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It has a Web site where customers can rent games and videos."
+            },
+            {
+              "choice": "B",
+              "text": "It purchases some items from its customers."
+            },
+            {
+              "choice": "C",
+              "text": "It is offering a special promotion at its San Diego store."
+            },
+            {
+              "choice": "D",
+              "text": "It provides store credit for use at various branches."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div><p><strong>Loại bỏ đáp án B:</strong> Đoạn văn cho biết Everything Video cũng mua lại các sản phẩm như trò chơi, phim hoặc thiết bị mà họ quan tâm. Nhân viên sẽ trả tiền mặt hoặc tín dụng cửa hàng để khách hàng sử dụng tại bất kỳ chi nhánh nào. Điều này không liên quan đến đáp án B nên có thể loại bỏ.</p><p><strong>Loại bỏ đáp án C:</strong> Theo quản lý chi nhánh Dane Cruz, khách hàng mua từ ba trò chơi trở lên sẽ được giảm giá 20% tổng hóa đơn. Ưu đãi này chỉ áp dụng tại chi nhánh San Diego đến hết ngày 1 tháng 8. Thông tin này không liên quan đến đáp án C nên có thể loại bỏ.</p><p><strong>Loại bỏ đáp án D:</strong> Đoạn văn nhấn mạnh rằng khách hàng có thể nhận tiền mặt hoặc tín dụng cửa hàng khi bán lại trò chơi, phim hoặc thiết bị cho Everything Video. Điều này không liên quan đến đáp án D nên có thể loại bỏ.</p></div>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 85,
+          "stem": "The word “shift” in paragraph 2 is closest in meaning to",
+          "options": [
+            {
+              "choice": "A",
+              "text": "period"
+            },
+            {
+              "choice": "B",
+              "text": "relocation"
+            },
+            {
+              "choice": "C",
+              "text": "swipe"
+            },
+            {
+              "choice": "D",
+              "text": "change"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><p><b>period:</b> một khoảng thời gian nhất định</p><p><b>relocation:</b> hành động di chuyển hoặc chuyển ai đó, cái gì đó từ nơi này sang nơi khác, hoặc một ví dụ về việc này</p><p><b>swipe:</b> lời chỉ trích ai đó hoặc điều gì đó, hoặc một nỗ lực nhằm làm phiền hoặc gây tổn hại</p><p><b>change:</b> hành động trở nên khác đi, hoặc kết quả của việc một điều gì đó thay đổi</p><p>⇒ \"change\" là từ có nghĩa phù hợp nhất</p></div>",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "86-90",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><b>Cyprus Software</b><br />\nIf you experience any difficulty with our products, let us know. Simply fill in your contact details below, write us a short message, and then click &quot;send.&quot; One of our staff will send you an answer as soon as possible. You may also go to www.cyprussoftware.com/help to get live online assistance or to check out our troubleshooting forum to find answers for your questions from our staff or other users.<br />\nNAME: Amos Polson.<br />\nPHONE : (509)555-3984.<br />\nE-MAIL: ampol@digimail.com<br />\nI recently purchased and downloaded a photo-editing program from your site called Picto-Master. I have tried installing the software, but at the end of the process, a window popped up informing me of an error. I was not notified this might happen when I purchased the software, so I am unsure how to proceed with the installation.<br />\nI checked the online forum to find a possible solution, but I was unable to find any post in regard to this specific issue.<br />\nPlease contact me about this issue as soon as possible, as I need the program for a photography project I&#39;m working on.<br />\nThank you.<br />\n=================================<br />\nTO: Amos Polson <ampol@digimail.com><br />\nFROM : Client services <clientserv@cyprussoftware.com><br />\nSUBJECT: Your inquiry<br />\nDATE: September 17<br />\nDear Mr. Polson,<br />\nThank you for your message and for purchasing one of Cyprus Software&rsquo;s products. First, I would like to apologize for any inconvenience.<br />\nGenerally, the problem you described only occurs when the user&rsquo;s operating system is incompatible with our software. Please check the list of supported operating systems on our Web site. If your operating system isn&rsquo;t listed, you will need to run a separate repair program in order to install Picto-Master. After you have run the program, you may downloading Picto-Master again. The repair program may be downloaded from our Web site as well. If you experience die same problem, make sure that you have downloaded the correct file from our site, and not the business or trial versions of the photo-editing software.<br />\nShould you require further assistance, please don&rsquo;t hesitate to respond to this e-mail or call our 24-hour hotline at 1-800-555-3300.</clientserv@cyprussoftware.com></ampol@digimail.com></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 86,
+          "stem": "Why did Mr. Polson fill in the online contact form?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To purchase a computer program"
+            },
+            {
+              "choice": "B",
+              "text": "To request installation assistance"
+            },
+            {
+              "choice": "C",
+              "text": "To put in a work order for photography"
+            },
+            {
+              "choice": "D",
+              "text": "To ask about a home security system"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div>Thông tin được đề cập trong đoạn đầu tiên: <em>\"Tôi đã cố gắng cài đặt phần mềm, nhưng vào cuối quá trình, một cửa sổ bật lên thông báo cho tôi về một lỗi. Tôi đã không được thông báo rằng điều này có thể xảy ra khi mua phần mềm, vì vậy tôi không chắc nên tiếp tục cài đặt như thế nào.\"</em></div>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 87,
+          "stem": "What is NOT mentioned as a way clients can get assistance from Cyprus Software?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Browsing an online forum"
+            },
+            {
+              "choice": "B",
+              "text": "Submitting an online form"
+            },
+            {
+              "choice": "C",
+              "text": "Visiting a branch office"
+            },
+            {
+              "choice": "D",
+              "text": "Using a chat service"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div>\n  <p><strong>Giải thích:</strong></p>\n  <ul>\n    <li><em>\"You may also go to www.cyprussoftware.com/help\"</em>: Thông tin này xuất hiện ở đoạn đầu tiên, do đó đáp án A bị loại.</li>\n    <li><em>\"Simply fill in your contact details below\"</em>: Câu này cũng nằm trong đoạn đầu, nên đáp án B bị loại.</li>\n    <li><em>\"write us a short message\"</em>: Thông tin này cũng có trong đoạn đầu, vì vậy đáp án D bị loại.</li>\n  </ul>\n  <p>Như vậy, chỉ còn lại đáp án đúng là đáp án chưa bị loại.</p>\n</div>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 88,
+          "stem": "What is mentioned about Cyprus Software’s Web site?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A repair program to assist with installation is available there."
+            },
+            {
+              "choice": "B",
+              "text": "It includes instructional manuals for its products."
+            },
+            {
+              "choice": "C",
+              "text": "It promotes a number of items currently being offered at a discount."
+            },
+            {
+              "choice": "D",
+              "text": "Some of Cyprus Software’s older products can be found there."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div>Đoạn văn thứ hai cung cấp thông tin rằng: <em>\"Chương trình sửa chữa cũng có thể được tải xuống từ trang web của chúng tôi.\"</em> Điều này có nghĩa là người dùng có thể truy cập trang web để tải về chương trình sửa chữa một cách thuận tiện.</div>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 89,
+          "stem": "Why did the pop-up window probably appear on Mr. Polson’s computer?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "His payment was not accepted by the vendor."
+            },
+            {
+              "choice": "B",
+              "text": "His operating system is not compatible with the software."
+            },
+            {
+              "choice": "C",
+              "text": "He typed in a required access code incorrectly."
+            },
+            {
+              "choice": "D",
+              "text": "He is using an unauthorized version of a program."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Thông tin nằm ở đoạn thứ hai: <em>&quot;Nói chung, vấn đề bạn mô tả chỉ xảy ra khi hệ điều hành của người dùng không tương thích với phần mềm của chúng tôi.&quot;</em></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 90,
+          "stem": "What is NOT indicated about Cyprus Software?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Its programs can be downloaded multiple times."
+            },
+            {
+              "choice": "B",
+              "text": "It offers on-site service visits via online request."
+            },
+            {
+              "choice": "C",
+              "text": "Its photo-editing program comes in different versions."
+            },
+            {
+              "choice": "D",
+              "text": "It can be contacted for assistance 24 hours a day."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p><strong>Giải thích:</strong></p><ul><li><em>\"After you have run the program, you may downloading Picto-Master again.\"</em> &rarr; Loại đáp án A vì câu này nói về việc tải lại Picto-Master sau khi đã chạy chương trình.</li><li><em>\"make sure that you have downloaded the correct file from our site, and not the business or trial versions of the photo-editing software\"</em> &rarr; Loại đáp án C vì câu này nhấn mạnh việc tải đúng tệp từ trang web, không phải các phiên bản dùng thử hay doanh nghiệp.</li><li><em>\"Should you require further assistance, please don’t hesitate to respond to this e-mail or call our 24-hour hotline at 1-800-555-3300.\"</em> &rarr; Loại đáp án D vì câu này hướng dẫn liên hệ hỗ trợ thêm qua email hoặc đường dây nóng 24/7.</li></ul></div>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "91-95",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\">You are cordially invited to the opening night of<br />\n<b>Dance of the Daffodils</b><br />\nAn original ballet written by Michelle Adams<br />\nChoreographed by Lucas Pasdar, Music by Amy Lin<br />\nPerformed by the Fraulein Danza Company, New York City</p>\n\n<p>The Gladstone Theater on 473 Broadway Avenue will open its doors for the event on Friday, May 9 at 7:30 P.M. The choreographer will say a few words about the performance before the curtains rise at 8 o&rsquo;clock. Following the performance, lead female dancer Sofia Pinsky and lead male dancer Igor Petrovich will greet guests and sign autographs at a special reception with cocktails and appetizers. Formal clothing is recommended and confirmation of attendance is required (e-mail events@frauleindanza.com). This invitation is for the holder and a guest and must be presented upon entering the theater.<br />\n====================================<br />\nTO: Lena Reid <lenareid@genericamail.com><br />\nFROM: Shonda Dixon <shodi@minepost.com><br />\nSUBJECT Re; Ballet<br />\nDATE: May 2<br />\nHi Lena,<br />\nThanks so much for the invitation! I would love to go with you to the ballet premiere. Fraulein Danza Company has done amazing work at the shows I&#39;ve seen before, so I&#39;m sure this performance will be fantastic as well. Besides, I&#39;m a really big fan of Sofia Pinsky. You must have had a lot of fun interviewing her and Igor Petrovich at their studio yesterday.<br />\nI can meet you at the theater at 7:30 on May 9 if you want, or maybe we can get together earlier for dinner. There is a nice place right next to the Gladstone Theater called Carlotta&#39;s Bistro. Let me know if you&#39;d like to do that.<br />\nThanks again. I am really looking forward to it!<br />\nShonda<br />\n=================================<br />\n<b>Prima Ballerina: Sofia Pinsky</b><br />\nThe main dancer of this evening&rsquo;s premiere performance, Dance of the Daffodils, is prima ballerina Sofia Pinsky from Ukraine. Ms. Pinsky plays the title character of Princess Daffodil, leading a troupe of 30 professional I dancers. She trained at the prestigious Kiev Classical Dance Academy and went on to study under famed dancer Alexi Petrov in Moscow. Under his instruction, she entered the European National Ballet Competition in St. Petersburg and won second place, which was the first trophy of her career. She has been the lead dancer in performances in cities around the world, including London, New York, and Tokyo. Ms. Pinsky joined the Fraulein.<br />\nDanza Company two years ago and has been performing for them ever since.</shodi@minepost.com></lenareid@genericamail.com></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 91,
+          "stem": "What is NOT indicated about the event on May 9?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It will start 30 minutes before a performance begins."
+            },
+            {
+              "choice": "B",
+              "text": "It has a suggested dress code for guests."
+            },
+            {
+              "choice": "C",
+              "text": "It requires attendees to present invitations."
+            },
+            {
+              "choice": "D",
+              "text": "It includes a reception with dancers at 8:00 P.M."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><p><strong>Giải thích:</strong></p><ul><li><em>\"The Gladstone Theater on 473 Broadway Avenue will open its doors for the event on Friday, May 9 at 7:30 P.M. The choreographer will say a few words about the performance before the curtains rise at 8 o’clock.\"</em> <br>=> Thông tin này giúp loại đáp án A.</li><li><em>\"Formal clothing is recommended\"</em> <br>=> Thông tin này giúp loại đáp án B.</li><li><em>\"confirmation of attendance is required (e-mail events@frauleindanza.com)\"</em> <br>=> Thông tin này giúp loại đáp án C.</li></ul></div>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 92,
+          "stem": "What is true about Carlotta’s Bistro?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It stays open 24 hours a day."
+            },
+            {
+              "choice": "B",
+              "text": "It is situated near a performance venue."
+            },
+            {
+              "choice": "C",
+              "text": "It will be catering a reception."
+            },
+            {
+              "choice": "D",
+              "text": "It provides discounts to theater patrons."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Thông tin nằm ở đoạn văn thứ hai: <em>\"Có một nơi rất đẹp ngay cạnh Nhà hát Gladstone tên là Carlotta's Bistro.\"</em></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 93,
+          "stem": "What did Ms. Reid do on May 1?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Attended a premier performance"
+            },
+            {
+              "choice": "B",
+              "text": "Met with two lead dancers from a show"
+            },
+            {
+              "choice": "C",
+              "text": "Wrote a review of Dance of the Daffodils"
+            },
+            {
+              "choice": "D",
+              "text": "Confirmed her attendance for an event"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div><p>Trong đoạn văn thứ hai, có thông tin: <em>\"Bạn hẳn đã rất vui khi phỏng vấn cô ấy và Igor Petrovich tại studio của họ ngày hôm qua.\"</em> Trong câu này, <em>\"cô ấy\"</em> ám chỉ Sofia Pinsky (<em>Bên cạnh đó, tôi là một người hâm mộ lớn của Sofia Pinsky.</em>). <em>\"Ngày hôm qua\"</em> là ngày 1 tháng 5 vì email được gửi vào ngày 2 tháng 5 (<em>NGÀY: 2 tháng 5</em>).</p><p>Xem lại đoạn văn đầu tiên, chúng ta thấy Sofia Pinsky và Igor Petrovich là hai vũ công chính (<em>Sau buổi biểu diễn, <strong>vũ công nữ chính Sofia Pinsky và vũ công nam chính Igor Petrovich</strong></em>).</p></div>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 94,
+          "stem": "What is suggested about Shonda Dixon?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She will see Ms. Pinsky perform the role of Princess Daffodil."
+            },
+            {
+              "choice": "B",
+              "text": "She will contact Fraulein Danza Company about a ticket."
+            },
+            {
+              "choice": "C",
+              "text": "She does not plan on attending a reception."
+            },
+            {
+              "choice": "D",
+              "text": "She read a positive review of Dance of the Daffodils."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<div><p>Trong đoạn văn thứ hai, có thông tin: <em>\"Cảm ơn rất nhiều vì lời mời! Mình rất muốn đi cùng bạn đến buổi công diễn ballet. Đoàn Fraulein Danza đã làm rất tốt ở những buổi diễn trước mà mình từng xem, nên mình chắc chắn buổi biểu diễn này cũng sẽ tuyệt vời. Hơn nữa, mình là một người hâm mộ lớn của <strong>Sofia Pinsky</strong>.\"</em></p><p>Trong khi đó, đoạn văn thứ ba cho biết: <em>\"Vũ công chính của buổi công diễn tối nay, Vũ điệu của những bông thủy tiên, là nữ diễn viên ballet chính Sofia Pinsky đến từ Ukraine. Cô Pinsky <strong>đóng vai nhân vật chính Công chúa Daffodil</strong>.\"</em></p><p>=> Như vậy, thông tin ở hai đoạn văn đều xác nhận rằng Sofia Pinsky là vũ công chính và đóng vai Công chúa Daffodil trong buổi diễn, đồng thời cô cũng là người được nhắc đến là thần tượng của người viết ở đoạn hai. Do đó, đáp án A là chính xác.</p></div>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 95,
+          "stem": "Where did Ms. Pinsky win her first dance award?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "In Kiev"
+            },
+            {
+              "choice": "B",
+              "text": "In St. Petersburg"
+            },
+            {
+              "choice": "C",
+              "text": "In Moscow"
+            },
+            {
+              "choice": "D",
+              "text": "In London"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<div>Thông tin nằm ở đoạn văn thứ ba: <em>Dưới sự hướng dẫn của thầy, cô đã tham gia Cuộc thi Ballet Quốc gia Châu Âu tại <strong>St. Petersburg</strong> và giành giải nhì, đây cũng là <strong>chiếc cúp đầu tiên trong sự nghiệp của cô</strong>.</em></div>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "96-100",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><b>Dynamic Performance</b><br />\nImprove your acting skills at the region&#39;s top acting school by enrolling in one of our spring or summer courses! We have programs for both our regular acting students and for anyone with an interest in learning the craft.<br />\n<strong>Spring Intensive</strong><br />\nA comprehensive course designed to teach the fundamentals of acting. Learn to read scripts, use vocal techniques, and move dynamically. Runs from May 1 to July 1. Available at all campuses.<br />\nTuition: $2,250<br />\n<strong>Summer Intensive</strong><br />\nSimilar to the Spring Intensive, with the addition of classes in improvisational techniques. Students will learn to respond to other actors without a script. Runs from July 5 to August 13. Available at all campuses.<br />\nTuition: $3,495<br />\n<strong>Summer Youth Ensemble</strong><br />\nExplore the world of dramatic acting through a fun approach. Open only to students aged 15 to 18.<br />\nRuns from July 11 to August 5. Stamford and Brookline campus only.<br />\nTuition: $2,500<br />\n<strong>Summer Bridge Program</strong><br />\nDesigned exclusively for advanced students enrolled in our full-time acting program, this three-week course will deepen your understanding of acting. Available at Charleston campus only. Runs from July 10 to July 31.<br />\nTuition: $1,800.<br />\nTo apply, e-mail your registration form to admissions director Floyd Mink at f.mink@dynamicperform.com.</p>\n\n<p>=======================================</p>\n\n<p>Category: Short Programs &gt; Acting &gt; Dynamic Performance<br />\nAwesome program! ★ ★ ★ ★ ★<br />\nby Cody Norris<br />\nBest three weeks of my life! Got the classes as a birthday present and couldn&#39;t have been happier learned a lot about acting and made a ton of new friends. Looking forward to enrolling full-time... <i>More</i><br />\nNot a bad experience ★ ★ ★ ☆ ☆<br />\nby Liz Hershowitz<br />\nMy expectations were high for the Spring Intensive given the overwhelming number of positive comments about it on this Site. Overall, It was a good experience, but I wasn&rsquo;t fully satisfied with the instructor.. <i>More</i><br />\nMostly good ★★ ★ ★ ☆ by Mandy Berger<br />\nI generally enjoyed myself quite a bit and am glad I enrolled. I think I benefited from some of the course work and liked everyone in the class, but I felt that the improvisation classes were a little outdated... <i>More</i></p>\n\n<p>=======================================</p>\n\n<p style=\"text-align: center;\"><span style=\"font-size:16px;\"><strong>Dynamic Performance Registration Form</strong></span></p>\n\n<p style=\"text-align: right;\">Date: July 4</p>\n\n<p>Name: Hannah Boyle</p>\n\n<p>Telephone: 555-2092</p>\n\n<p>Address: 410 Fayette St, Savannah, GA 31405</p>\n\n<p>Email: hannabee@mailhaul.com</p>\n\n<p>Which program are you interested in?</p>\n\n<p>[&nbsp; ] Spring Intensive&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [&nbsp; ]&nbsp;Summer Intensive</p>\n\n<p>[&nbsp; ] Summer Youth Ensemble&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ x ] Summer Bridge Program</p>\n\n<p>How did you first hear about us?</p>\n\n<p>[&nbsp; ] Online&nbsp; &nbsp; &nbsp; &nbsp; [&nbsp; ] Print&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[ x ] Mail&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[&nbsp; ] Referral</p>\n\n<p>What do you hope to achieve by participating in a program?</p>\n\n<p><u>I want to receive professional acting advice.</u></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 96,
+          "stem": "For whom is the announcement most likely intended?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Parents of young children"
+            },
+            {
+              "choice": "B",
+              "text": "Fans of a theater production"
+            },
+            {
+              "choice": "C",
+              "text": "New and experienced actors"
+            },
+            {
+              "choice": "D",
+              "text": "Staff at a production studio"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div><p>Dựa vào thông tin trong đoạn văn đầu tiên: <em>\"Cải thiện kỹ năng diễn xuất của bạn tại trường đào tạo diễn xuất hàng đầu khu vực bằng cách đăng ký một trong các khóa học mùa xuân hoặc mùa hè của chúng tôi! Chúng tôi có các chương trình dành cho cả học viên diễn xuất thường xuyên và bất kỳ ai quan tâm đến việc học nghệ thuật này.\"</em></p><p>=> Đáp án C là lựa chọn đúng vì đoạn văn nhấn mạnh rằng các khóa học phù hợp cho cả học viên thường xuyên lẫn những người mới muốn tìm hiểu về diễn xuất.</p></div>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 97,
+          "stem": "What is mentioned about classes at Dynamic Performance?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "They were designed by a well-known acting coach."
+            },
+            {
+              "choice": "B",
+              "text": "Only those who pass an audition can take part in them."
+            },
+            {
+              "choice": "C",
+              "text": "Floyd Mink receives the applications to register for them."
+            },
+            {
+              "choice": "D",
+              "text": "They are being offered in the summer for the first time."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Thông tin được đề cập trong đoạn đầu tiên: <em>\"Để đăng ký, hãy gửi mẫu đơn đăng ký của bạn qua email cho giám đốc tuyển sinh Floyd Mink tại địa chỉ f.mink@dynamicperform.com.\"</em></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 98,
+          "stem": "How much was the class Ms. Berger took?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "$1,800"
+            },
+            {
+              "choice": "B",
+              "text": "$2,250"
+            },
+            {
+              "choice": "C",
+              "text": "$2,500"
+            },
+            {
+              "choice": "D",
+              "text": "$3,495"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<div><p>Trong đoạn trích thứ hai, Mandy Berger nhận xét rằng cô ấy nhìn chung hài lòng với khóa học nhưng cảm thấy các lớp <strong>improvisation</strong> (ứng tác) hơi lỗi thời. Điều này cho thấy có một số điểm chưa hài lòng về nội dung lớp học ứng tác.</p><p>Trong đoạn trích thứ nhất, chương trình <strong>Summer Intensive</strong> được mô tả là có bổ sung các lớp về <strong>improvisational techniques</strong> (kỹ thuật ứng tác), nơi học viên sẽ học cách phản ứng với bạn diễn mà không cần kịch bản. Điều này xác nhận rằng các lớp ứng tác là một phần của chương trình.</p><p>Như vậy, thông tin ở hai đoạn trích liên quan đến các lớp ứng tác, và đáp án D là chính xác vì nó phản ánh đúng nội dung được đề cập trong cả hai đoạn.</p></div>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 99,
+          "stem": "What is indicated about Mr. Norris?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He gave Dynamic Performance the highest possible rating."
+            },
+            {
+              "choice": "B",
+              "text": "He joined a program with a group of his friends."
+            },
+            {
+              "choice": "C",
+              "text": "He took the Spring Intensive class a second time."
+            },
+            {
+              "choice": "D",
+              "text": "He selected a program based on its positive reviews."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Nhìn vào đoạn văn thứ hai, chúng ta có thể thấy rằng Cody Norris đã đánh giá Dynamic Performance 5 sao, đây là mức cao nhất trong ba người. (Liz Hershowitz đánh giá 3 sao và Mandy Berger đánh giá 4 sao)</p><p>Vì vậy, đáp án A là chính xác.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 100,
+          "stem": "What is suggested about Ms. Boyle?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She has been in several theatrical productions."
+            },
+            {
+              "choice": "B",
+              "text": "She paid her tuition fee for a class online."
+            },
+            {
+              "choice": "C",
+              "text": "She will be taking a course in Charleston."
+            },
+            {
+              "choice": "D",
+              "text": "She is ineligible for Summer Youth Ensemble."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<div><p>Trong đoạn thứ ba, ở mục \"Bạn quan tâm đến chương trình nào?\", cô Boyle đã chọn \"<strong>Summer Bridge Program</strong>\".</p><p>Trong khi đó, ở đoạn đầu tiên, chúng ta thấy rằng \"Summer Bridge Program<br />Chỉ dành riêng cho các học viên nâng cao đã đăng ký chương trình diễn xuất toàn thời gian của trường, khóa học kéo dài ba tuần này sẽ giúp bạn hiểu sâu hơn về diễn xuất. Chỉ có tại cơ sở <strong>Charleston</strong>.\"</p><p>Như vậy, đáp án C là chính xác vì phù hợp với thông tin đã cho.</p></div>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        }
+      ]
+    }
+  ]
+}

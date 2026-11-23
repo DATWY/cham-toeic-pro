@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="officeWall" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#e2e8f0"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#officeWall)"/>
+  <!-- Office carpet floor -->
+  <rect x="0" y="270" width="600" height="130" fill="#64748b"/>
+  <!-- Office Desk -->
+  <rect x="50" y="200" width="220" height="100" rx="4" fill="#38bdf8" stroke="#0284c7" stroke-width="3"/>
+  <rect x="80" y="160" width="60" height="40" rx="3" fill="#1e293b"/>
+  <rect x="100" y="200" width="20" height="10" fill="#475569"/>
+  <!-- Man bending over adjusting office chair -->
+  <!-- Chair -->
+  <rect x="350" y="210" width="70" height="50" rx="8" fill="#1e293b"/>
+  <rect x="365" y="150" width="55" height="65" rx="6" fill="#334155"/>
+  <line x1="385" y1="260" x2="385" y2="310" stroke="#0f172a" stroke-width="6"/>
+  <line x1="350" y1="310" x2="420" y2="310" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Man -->
+  <circle cx="280" cy="140" r="16" fill="#fcd34d"/>
+  <path d="M 275,156 L 260,210 L 310,210 Z" fill="#3b82f6"/>
+  <!-- Arms reaching to adjust chair lever -->
+  <line x1="285" y1="180" x2="365" y2="240" stroke="#fcd34d" stroke-width="6" stroke-linecap="round"/>
+  <!-- Legs bending -->
+  <line x1="265" y1="210" x2="250" y2="270" stroke="#1e293b" stroke-width="7" stroke-linecap="round"/>
+  <line x1="250" y1="270" x2="270" y2="320" stroke="#1e293b" stroke-width="7" stroke-linecap="round"/>
+  <!-- Action arrow indicator -->
+  <path d="M 370,265 L 360,250 L 375,252 Z" fill="#ef4444"/>
+  <!-- Watermark -->
+  <rect x="15" y="15" width="260" height="32" rx="6" fill="rgba(15,23,42,0.75)"/>
+  <text x="25" y="36" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">TOEIC PART 1 · PHOTO #3</text>
+</svg>

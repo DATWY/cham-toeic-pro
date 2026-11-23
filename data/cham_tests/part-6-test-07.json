@@ -1,0 +1,494 @@
+{
+  "id": "cham_part_6_test_07",
+  "sourceId": "6140004365d71f3a51f62a98",
+  "slug": "part-6-test-07",
+  "title": "Đề lẻ Part 6 · Test 7",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 10,
+  "totalQuestions": 16,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_6": 16
+  },
+  "groups": [
+    {
+      "part": 6,
+      "range": "131-134",
+      "audio": null,
+      "images": [],
+      "passageHtml": "From: Vice President Donna Johnson <br>To: Helio Tech Employees<br>Date: July 5th<br>Subject: Lobby Renovation<br><br> Receiving the federal grant money last month <b> <strong>(131)</strong> </b> _____  us to invest in upgrading a few areas of our building.<b> <strong>(132)</strong> </b> _____ . We will be remodeling the lobby starting July 12th. It should take approximately two weeks. <b> <strong>(133)</strong> </b> _____  that time, if you have a meeting with anyone from outside of the company, please schedule to have it at the Rose street Café on the corner. We have set up a special account that anyone from the company can use over those two weeks. <br> Please, just sign and date your check and return it to your server. We are <b> <strong>(134)</strong> </b> _____  that this is a bit of an inconvenience, and we thank you for your cooperation.",
+      "transcriptHtml": "",
+      "explanationHtml": "<p style=\"text-align: justify\">Ph&oacute; Tổng thống Donna Johnson<br />\nK&iacute;nh gửi: Nh&acirc;n vi&ecirc;n Helio Tech<br />\nNg&agrave;y: ng&agrave;y 5 th&aacute;ng 7<br />\nChủ đề: Cải tạo sảnh<br />\n<br />\nNhận được tiền trợ cấp từ li&ecirc;n bang v&agrave;o th&aacute;ng trước đ&atilde; cho ph&eacute;p ch&uacute;ng t&ocirc;i c&oacute; thể đầu tư để n&acirc;ng cấp một v&agrave;i khu vực trong t&ograve;a nh&agrave; của ch&uacute;ng t&ocirc;i. Khu vực đầu ti&ecirc;n sẽ được hưởng lợi từ việc n&agrave;y l&agrave; tiền sảnh. Ch&uacute;ng t&ocirc;i sẽ tu sửa sảnh bắt đầu từ ng&agrave;y 12 th&aacute;ng 7. Dự kiến việc n&agrave;y sẽ mất khoảng hai tuần. Trong thời gian đ&oacute;, nếu bạn c&oacute; cuộc gặp gỡ với ai ngo&agrave;i c&ocirc;ng ty, vui l&ograve;ng hẹn gặp tại qu&aacute;n Rose street Caf&eacute; ở g&oacute;c đường. Ch&uacute;ng t&ocirc;i đ&atilde; thiết lập một t&agrave;i khoản đặc biệt m&agrave; bất kỳ ai trong c&ocirc;ng ty đều c&oacute; thể sử dụng trong hai tuần đ&oacute;.<br />\n<br />\nVui l&ograve;ng chỉ cần k&yacute; t&ecirc;n v&agrave; ghi ng&agrave;y th&aacute;ng h&oacute;a đơn của bạn v&agrave; gửi lại. Ch&uacute;ng t&ocirc;i biết rằng điều n&agrave;y hơi bất tiện v&agrave; ch&uacute;ng t&ocirc;i cảm ơn sự hợp t&aacute;c của bạn.</p>",
+      "questions": [
+        {
+          "num": 131,
+          "stem": "Receiving the federal grant money last month (131) _____ us to invest in upgrading a few areas of our building.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "did allow"
+            },
+            {
+              "choice": "B",
+              "text": "has allowed"
+            },
+            {
+              "choice": "C",
+              "text": "allows"
+            },
+            {
+              "choice": "D",
+              "text": "are allowing"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Trong ngữ cảnh của câu, việc nhận được tiền trợ cấp từ chính phủ là một hành động đã xảy ra ở quá khứ (trong tháng trước). Tuy nhiên, hành động này ảnh hưởng đến thời điểm hiện tại, khi chúng ta có khả năng đầu tư vào việc nâng cấp một số khu vực của tòa nhà. Do đó, chúng ta sử dụng thì hiện tại hoàn thành \"has allowed\" để diễn đạt hành động đã hoàn thành ở quá khứ và ảnh hưởng đến thời điểm hiện tại.<br><b>Tạm dịch:</b> Nhận được tiền trợ cấp từ liên bang vào tháng trước đã cho phép chúng tôi có thể đầu tư để nâng cấp một vài khu vực trong tòa nhà của chúng tôi.",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 132,
+          "stem": "(132) _____. We will be remodeling the lobby starting July 12th. It should take approximately two weeks.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Construction will begin when the building permits are received."
+            },
+            {
+              "choice": "B",
+              "text": "This celebration will last for most of the month of July."
+            },
+            {
+              "choice": "C",
+              "text": "Considering the cost, the renovation might be postponed."
+            },
+            {
+              "choice": "D",
+              "text": "The first area that will benefit from this is the lobby."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<b>Tạm dịch:</b><br> (A) Việc xây dựng sẽ bắt đầu khi nhận được giấy phép xây dựng. <br> (B) Lễ kỷ niệm này sẽ kéo dài hầu hết tháng Bảy. <br> (C) Xem xét chi phí, việc cải tạo có thể bị trì hoãn. <br>(D) Khu vực đầu tiên sẽ được hưởng lợi từ việc này là tiền sảnh. <br>Trong câu này, người viết đang mô tả kế hoạch cụ thể cho việc nâng cấp tòa nhà. <b>đáp án D</b> , \"The first area that will benefit from this is the lobby,\" là một cách diễn đạt rõ ràng nhất cho ý nghĩa của câu.",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 133,
+          "stem": "(133) _____ that time, if you have a meeting with anyone from outside of the company, please schedule to have it at the Rose street Café on the corner.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Upon"
+            },
+            {
+              "choice": "B",
+              "text": "During"
+            },
+            {
+              "choice": "C",
+              "text": "Until"
+            },
+            {
+              "choice": "D",
+              "text": "(c) Around"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>During + thời gian: trong suốt thời gian<br />\n<b>Tạm dịch:</b> Trong thời gian đ&oacute;, nếu bạn c&oacute; cuộc gặp gỡ với ai ngo&agrave;i c&ocirc;ng ty, vui l&ograve;ng hẹn gặp tại qu&aacute;n Rose street Caf&eacute; ở g&oacute;c đường.</p>\n\n<p><strong>=&gt; Choose B</strong></p>",
+          "tags": [
+            "[Part 6] Giới từ"
+          ]
+        },
+        {
+          "num": 134,
+          "stem": "We are (134) _____ that this is a bit of an inconvenience, and we thank you for your cooperation.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "aware"
+            },
+            {
+              "choice": "B",
+              "text": "disciplined"
+            },
+            {
+              "choice": "C",
+              "text": "reluctant"
+            },
+            {
+              "choice": "D",
+              "text": "content"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<b>Kiến thức từ vựng:</b><br>aware: nhận thức<br>disciplined: có kỷ luật<br>reluctant: miễn cưỡng<br>content: hài lòng<br>Dựa vào ngữ cảnh câu, chọn <b>đáp án A</b> . <br><b>Tạm dịch:</b> Chúng tôi biết rằng điều này hơi bất tiện và chúng tôi cảm ơn sự hợp tác của bạn.",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "135-138",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><strong>Part-time Cook Needed</strong></p> <p>Paradise Café is looking<b> <strong>(135)</strong> </b> _____ a part-time line cook. Applicants must be able to work in a fast-paced environment and be familiar with all standard breakfast fare . <b> <strong>(136)</strong> </b> _____ . This weekend schedule could change in the future. Ideally we are looking for an applicant that has <b> <strong>(137)</strong> </b> _____ one year of experience working as a short-order cook. Paradise Café is located right next to the post office in downtown Millstown. Please apply in person with a resume and be prepared to cook an egg dish to order. We <b> <strong>(138)</strong> </b> _____ forward to welcoming you to our team!</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "<b>Cần tuyển đầu bếp bán thời gian</b><br><br>Paradise Café đang cần tuyển một đầu bếp bán thời gian. Ứng viên phải có khả năng làm việc trong môi trường nhịp độ nhanh và quen thuộc với tất cả các món ăn sáng tiêu chuẩn. Hiện tại, chúng tôi chỉ có thể cung cấp ca làm việc trong tuần nhưng ứng viên phải sẵn sàng làm việc vào cuối tuần nếu được yêu cầu. Lịch làm việc cuối tuần có thể thay đổi trong tương lai. Lý tưởng nhất là chúng tôi đang tìm kiếm một ứng viên có ít nhất một năm kinh nghiệm làm đầu bếp phục vụ món ăn nhanh. Paradise Café nằm ngay cạnh bưu điện ở trung tâm thành phố Millstown. Vui lòng nộp hồ sơ trực tiếp và chuẩn bị nấu món trứng theo yêu cầu. Chúng tôi mong được chào đón bạn đến với đội ngũ của chúng tôi!",
+      "questions": [
+        {
+          "num": 135,
+          "stem": "Paradise Café is looking (135) _____ a part-time line cook.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "hiring"
+            },
+            {
+              "choice": "B",
+              "text": "hire"
+            },
+            {
+              "choice": "C",
+              "text": "to hire"
+            },
+            {
+              "choice": "D",
+              "text": "to hiring"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Cấu trúc “look to V”: mong đợi, hy vọng, có dự định làm gì<br><b>Tạm dịch:</b> Paradise Café đang cần tuyển một đầu bếp bán thời gian.",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 136,
+          "stem": "Applicants must be able to work in a fast-paced environment and be familiar with all standard breakfast fare. (136) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Applicants should know how to make scrambled eggs."
+            },
+            {
+              "choice": "B",
+              "text": "People applying should know how to wash dishes."
+            },
+            {
+              "choice": "C",
+              "text": "Anyone applying should be able to work nights."
+            },
+            {
+              "choice": "D",
+              "text": "Currently, we can only offer weekday shifts but the applicant must be willing to work weekends if required."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<b>Tạm dịch:</b> <br> (A) Ứng viên nên biết cách làm món trứng bác. <br> (B) Những người nộp đơn nên biết cách rửa bát đĩa. <br> (C) Bất cứ ai nộp đơn đều có thể làm việc ban đêm. <br> (D) Hiện tại, chúng tôi chỉ có thể cung cấp ca làm việc vào các ngày trong tuần nhưng ứng viên phải sẵn sàng làm việc vào cuối tuần nếu được yêu cầu. <br>Câu này cung cấp thông tin cụ thể về yêu cầu công việc. <b>đáp án D</b>  phản ánh yêu cầu cụ thể của công việc và là lựa chọn chính xác nhất.",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 137,
+          "stem": "This weekend schedule could change in the future. Ideally we are looking for an applicant that has (137) _____ one year of experience working as a short-order cook.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "at most"
+            },
+            {
+              "choice": "B",
+              "text": "below"
+            },
+            {
+              "choice": "C",
+              "text": "at least"
+            },
+            {
+              "choice": "D",
+              "text": "the least"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>at most: tối đa<br />\nbelow: thấp hơn<br />\nat least: &iacute;t nhất<br />\nthe least: &iacute;t nhất (so s&aacute;nh nhất của little) =&gt; kh&ocirc;ng ph&ugrave; hợp với cấu tr&uacute;c ngữ ph&aacute;p của c&acirc;u<br />\nV&igrave; vậy, <strong>lựa chọn C</strong>, &quot;at least&quot;, l&agrave; lựa chọn ph&ugrave; hợp nhất với ngữ cảnh của c&acirc;u, diễn đạt &yacute; muốn t&igrave;m kiếm ứng vi&ecirc;n c&oacute; &iacute;t nhất một năm kinh nghiệm.<br />\n<b>Tạm dịch:</b> L&yacute; tưởng nhất l&agrave; ch&uacute;ng t&ocirc;i đang t&igrave;m kiếm một ứng vi&ecirc;n c&oacute; &iacute;t nhất một năm kinh nghiệm l&agrave;m đầu bếp phục vụ m&oacute;n ăn nhanh.</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 138,
+          "stem": "We (138) _____ forward to welcoming you to our team!",
+          "options": [
+            {
+              "choice": "A",
+              "text": "look"
+            },
+            {
+              "choice": "B",
+              "text": "looking"
+            },
+            {
+              "choice": "C",
+              "text": "looked"
+            },
+            {
+              "choice": "D",
+              "text": "looks"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Vị trí cần điền là một động từ chia thì hiện tại đơn với chủ ngữ số nhiều “we”, nên chọn <b>đáp án A</b> . <br><b>Tạm dịch:</b> Chúng tôi mong được chào đón bạn đến với đội ngũ của chúng tôi!",
+          "tags": [
+            "[Part 6] Thì & Dạng động từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "139-142",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><strong>City Realty</strong></p> <p>City Realty is Washington’s number one real estate company, serving the state for over 50 years. We <b> <strong>(139)</strong> </b> _____ recognized as the state’s leading experts in the industry and many of our agents have been awarded for their excellence in service by Forbes Property Magazine. Our agents are <b> <strong>(140)</strong> </b> _____ to bringing their best knowledge and expertise to the table, and they have extensive know-how about the housing market dos and don’ts. Our agents specialize in different areas of the industry including corporate real estate, residential real estate, and rental properties. <b> <strong>(141)</strong> </b> _____.<br> Our headquarters is located in the central downtown area where you can meet with one of our agents <b> <strong>(142)</strong> </b> _____ a free consultation. You can also visit our website www.cityrealty.com for property listings and further information.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "<b>City Realty</b><br><br>City Realty là công ty bất động sản số một của Washington, đã phục vụ tiểu bang trong hơn 50 năm. Chúng tôi đã được công nhận là chuyên gia hàng đầu của bang trong ngành và nhiều đại lý của chúng tôi đã được Tạp chí Forbes Property trao tặng giải thưởng vì dịch vụ xuất sắc. Các đại lý của chúng tôi cam kết mang đến những kiến thức và chuyên môn tốt nhất, đồng thời có kiến thức sâu rộng về những điều nên và không nên làm trên thị trường nhà ở. Các đại lý của chúng tôi chuyên về các lĩnh vực khác nhau của ngành bao gồm bất động sản doanh nghiệp, bất động sản nhà ở và bất động sản cho thuê. Bạn có thể tự tin rằng họ phục vụ nhu cầu cụ thể của bạn. <br><br>Trụ sở chính của chúng tôi nằm ở khu vực trung tâm thành phố, nơi bạn có thể một trong những đại lý của chúng tôi để được tư vấn miễn phí. Bạn cũng có thể truy cập trang web của chúng tôi www.cityrealty.com để xem danh sách bất động sản và biết thêm thông tin.",
+      "questions": [
+        {
+          "num": 139,
+          "stem": "We (139) _____ recognized as the state’s leading experts in the industry and many of our agents have been awarded for their excellence in service by Forbes Property Magazine.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "been"
+            },
+            {
+              "choice": "B",
+              "text": "had been"
+            },
+            {
+              "choice": "C",
+              "text": "are being"
+            },
+            {
+              "choice": "D",
+              "text": "have been"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Câu trước có cụm từ “for over 50 years” – dấu hiệu nhận biết thì hiện tại hoàn thành nên câu này sử dụng thì hiện tại hoàn thành \"have been\" để diễn đạt hành động đã xảy ra trong quá khứ và vẫn tiếp tục đến hiện tại, và điều này phản ánh rằng City Realty đã được công nhận là các chuyên gia hàng đầu của ngành công nghiệp bất động sản ở Washington. <br><b>Tạm dịch:</b> Chúng tôi đã được công nhận là chuyên gia hàng đầu của bang trong ngành và nhiều đại lý của chúng tôi đã được Tạp chí Forbes Property trao tặng giải thưởng vì dịch vụ xuất sắc.",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 140,
+          "stem": "Our agents are (140) _____ to bringing their best knowledge and expertise to the table, and they have extensive know-how about the housing market dos and don’ts.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "attached"
+            },
+            {
+              "choice": "B",
+              "text": "faithful"
+            },
+            {
+              "choice": "C",
+              "text": "committed"
+            },
+            {
+              "choice": "D",
+              "text": "loyal"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<b>Kiến thức từ vựng:</b><br>- attach: gắn, dán, trói buộc<br>- faithful: trung thành<br>- commit: cam kết<br>- loyal: trung thành<br>Dựa vào ngữ cảnh câu, chọn <b>đáp án C</b> . <br><b>Tạm dịch:</b> Các đại lý của chúng tôi cam kết mang đến những kiến thức và chuyên môn tốt nhất, đồng thời có kiến thức sâu rộng về những điều nên và không nên làm trên thị trường nhà ở.",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 141,
+          "stem": "Our agents specialize in different areas of the industry including corporate real estate, residential real estate, and rental properties. (141) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "You can be confident that they serve your specific needs."
+            },
+            {
+              "choice": "B",
+              "text": "You can rent hundreds of properties from our listings."
+            },
+            {
+              "choice": "C",
+              "text": "The agents in corporate real estate make the most earnings."
+            },
+            {
+              "choice": "D",
+              "text": "The residential agents are very busy with the rising housing market."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<b>Tạm dịch:</b><br> (A) Bạn có thể tin tưởng rằng chúng phục vụ các nhu cầu cụ thể của bạn. <br> (B) Bạn có thể thuê hàng trăm bất động sản từ danh sách của chúng tôi. <br> (C) Các đại lý bất động sản của công ty kiếm được nhiều thu nhập nhất. <br> (D) Các đại lý dân cư đang rất bận rộn với thị trường nhà ở đang phát triển. <br>Câu này mô tả dịch vụ mà các nhà môi giới của City Realty cung cấp và khẳng định rằng họ có chuyên môn trong các lĩnh vực khác nhau của ngành bất động sản và sẽ phục vụ các nhu cầu cụ thể của bạn, nên chọn <b>đáp án A</b> .",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 142,
+          "stem": "Our headquarters is located in the central downtown area where you can meet with one of our agents (142) _____ a free consultation.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "with"
+            },
+            {
+              "choice": "B",
+              "text": "for"
+            },
+            {
+              "choice": "C",
+              "text": "to"
+            },
+            {
+              "choice": "D",
+              "text": "from"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Trong ngữ cảnh này, \"for\" được sử dụng để diễn đạt mục đích của việc gặp gỡ, nghĩa là để có một cuộc tư vấn miễn phí với một trong những đại lý của họ. <br><b>Tạm dịch:</b> Trụ sở chính của chúng tôi nằm ở khu vực trung tâm thành phố, nơi bạn có thể một trong những đại lý của chúng tôi để được tư vấn miễn phí.",
+          "tags": [
+            "[Part 6] Giới từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "143-146",
+      "audio": null,
+      "images": [],
+      "passageHtml": "Employee Message Board<br>Holiday Office Party’s Success and Appreciation<br>Posted by Julie Norton<br> <br> I want to thank everyone who <b> <strong>(143)</strong> </b> _____  make this party a success. <b> <strong>(144)</strong> </b> _____.  We had some ups and downs as we started preparing for this but the final result has been extraordinary. In fact, the <b> <strong>(145)</strong> </b> _____  consensus seems to be that this year’s party was the best yet. We had the highest turnout ever and many seem to agree that this year’s activities contributed to the party’s success. It was a joy to see everyone get along so well and participate in all the events. We even <b> <strong>(146)</strong> </b> _____  our children’s charity fundraising goals by over $1000. Once again, I would like to thank everyone.",
+      "transcriptHtml": "",
+      "explanationHtml": "Bảng tin nhân viên<br>Sự thành công và lời cảm ơn cho bữa tiệc của công ty<br>Được đăng bởi Julie Norton<br><br>Tôi muốn cảm ơn tất cả những người đã giúp bữa tiệc này thành công. Đặc biệt cảm ơn Keith, Grant, Vanessa và Melissa, những người đã dành nhiều thời gian làm việc ngoài giờ để giúp lên kế hoạch cho bữa tiệc. Chúng tôi đã có một số khó khăn khi bắt đầu chuẩn bị nhưng kết quả cuối cùng thật tuyệt vời. Trên thực tế, có vẻ như mọi người đều cho rằng bữa tiệc năm nay là tuyệt vời nhất. Chúng ta đã có số người tham gia cao nhất từ trước đến nay và nhiều người dường như đồng ý rằng các hoạt động năm nay đã góp phần vào sự thành công của bữa tiệc. Thật vui khi thấy mọi người hòa hợp và tham gia vào tất cả các sự kiện. Chúng ta thậm chí còn vượt mục tiêu gây quỹ từ thiện cho trẻ em hơn 1000 đô la. Một lần nữa tôi xin gửi lời cảm ơn tới tất cả mọi người.",
+      "questions": [
+        {
+          "num": 143,
+          "stem": "I want to thank everyone who (143) _____ make this party a success.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "helps"
+            },
+            {
+              "choice": "B",
+              "text": "helped"
+            },
+            {
+              "choice": "C",
+              "text": "helping"
+            },
+            {
+              "choice": "D",
+              "text": "had help"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Vị trí cần điền là một động từ chia thì quá khứ đơn do ngữ cảnh ở quá khứ, nên chọn <b>đáp án B</b> . <br><b>Tạm dịch:</b> Tôi muốn cảm ơn tất cả những người đã giúp bữa tiệc này thành công.",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 144,
+          "stem": "(144) _____. We had some ups and downs as we started preparing for this but the final result has been extraordinary.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "I really enjoyed all the food and chatting with everyone."
+            },
+            {
+              "choice": "B",
+              "text": "I worked really hard to plan this event."
+            },
+            {
+              "choice": "C",
+              "text": "Special thanks to Keith, Grant, Vanessa, and Melissa, who spent many hours outside of work to help plan everything."
+            },
+            {
+              "choice": "D",
+              "text": "I’m glad to see that everyone made it to work today."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<b>Tạm dịch:</b><br> (A) Tôi thực sự rất thích đồ ăn và trò chuyện với mọi người. <br> (B) Tôi đã làm việc rất chăm chỉ để lên kế hoạch cho sự kiện này. <br> (C) Đặc biệt cảm ơn Keith, Grant, Vanessa và Melissa, những người đã dành nhiều giờ ngoài giờ làm việc để giúp lên kế hoạch cho mọi việc. <br> (D) Tôi rất vui khi thấy hôm nay mọi người đều đi làm. <br>Dựa theo ngữ cảnh bài, chọn <b>đáp án C</b> .",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 145,
+          "stem": "In fact, the (145) _____ consensus seems to be that this year’s party was the best yet.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "regular"
+            },
+            {
+              "choice": "B",
+              "text": "familiar"
+            },
+            {
+              "choice": "C",
+              "text": "different"
+            },
+            {
+              "choice": "D",
+              "text": "general"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<b>Kiến thức từ vựng:</b><br>- regular: thường xuyên<br>- familiar: giống<br>- different: khác biệt<br>- general: nhìn chung<br>Dựa vào ngữ cảnh câu, chọn <b>đáp án D</b> . <br><b>Tạm dịch:</b> Trên thực tế, có vẻ như mọi người đều cho rằng bữa tiệc năm nay là tuyệt vời nhất.",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 146,
+          "stem": "We even (146) _____ our children’s charity fundraising goals by over $1000.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "overstepped"
+            },
+            {
+              "choice": "B",
+              "text": "surrendered"
+            },
+            {
+              "choice": "C",
+              "text": "exceeded"
+            },
+            {
+              "choice": "D",
+              "text": "overwhelmed"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<b>Kiến thức từ vựng:</b><br>- overstep: vượt qua<br>- surrender: đầu hàng<br>- exceed: vượt quá<br>- overwhelm: áp đảo<br>Dựa vào ngữ cảnh câu, chọn <b>đáp án C</b> . <br><b>Tạm dịch:</b> Chúng ta thậm chí còn vượt mục tiêu gây quỹ từ thiện cho trẻ em hơn 1000 đô la.",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 6
+}

@@ -1,0 +1,311 @@
+{
+  "id": "cham_part_7_double_test_20",
+  "sourceId": "6319a094f2fe240a4043ae84",
+  "slug": "part-7-double-test-20",
+  "title": "Đề lẻ Part 7 Kép · Test 20",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 12,
+  "totalQuestions": 10,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_7": 10
+  },
+  "groups": [
+    {
+      "part": 7,
+      "range": "176-180",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">From: Susan Lockporksuzy@davidsonoffice.com&gt;</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">To: Frank Roland&lt;frank@davidsonoffice.com&gt;</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Date: Wednesday, October, 2 17:32:44</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Please accept my thanks for attending the meeting this afternoon. This e-mail is intended to remind everyone of the details that were covered in today's meeting, which will appear in the Davidson Office press release at 9 a.m. tomorrow morning. The press release will provide details about the appointment of our new vice president. Any questions should be directed to Jennifer Wordsworth in the human resources department.</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Warm Regards,</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Susan Lockport</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Director</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Davidson Office Co.</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">_____________________________________________</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\"><b>New Direction for Davidson Office</b></span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">October 3, 09:00</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Davidson Office Co. is pleased to announce the promotion of Hal Park. Since joining the company seven years ago, Mr. Park has advanced quickly, working at the company's head office in Seoul, as well as with their overseas division in Florence, Italy for two years. Susan Lockport, the director of personnel at Davidson Office speaks very highly of Mr. Park and stated today that \"we see a bright future ahead for Mr. Park and Davidson Office.\"</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Mr. Park has accepted a five-year contract from Davidson Office and he will assume the position left vacant by Richard Kyscinski. Mr. Kyscinski left company in September to pursue business interests in the Philippines. Mr. Park is responsible for increasing Davidson Office's revenue over the past three years by over 15%, making him the perfect candidate to replace Mr. Kyscinski. A resume and brief biography of Mr. Park will be posted on the company website.</span></span></span></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 176,
+          "stem": "What is the main purpose of Susan Lockport’s e-mail?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To announce the resignation of the vice president"
+            },
+            {
+              "choice": "B",
+              "text": "To confirm details of an appointment"
+            },
+            {
+              "choice": "C",
+              "text": "To request a public speaker for tomorrow’s press conference"
+            },
+            {
+              "choice": "D",
+              "text": "To plan a merger with another company"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Mục đích chính của e-mail của Susan Lockport là gì?</p>\n<p>(A) Thông báo về việc từ chức của phó chủ tịch</p>\n<p>(B) Để xác nhận chi tiết của cuộc hẹn</p>\n<p>(C) Để yêu cầu một diễn giả trước công chúng cho cuộc họp báo ngày mai</p>\n<p>(D) Lên kế hoạch sáp nhập với một công ty khác</p>\n<p><strong>Thông tin:</strong>&nbsp;<em>This e-mail is intended to remind everyone of the details that were covered in today's meeting (</em><em>Email này nhằm mục đích nhắc nhở mọi người về những chi tiết được đề cập trong cuộc họp ngày hôm nay)</em></p>\n<p><strong>=&gt; Chọn B</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 177,
+          "stem": "Who is Ms. Wordsworth?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A director of Davidson Office"
+            },
+            {
+              "choice": "B",
+              "text": "An employee in the personnel department"
+            },
+            {
+              "choice": "C",
+              "text": "A vice president"
+            },
+            {
+              "choice": "D",
+              "text": "A customer service representative"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Cô Wordsworth là ai?</p>\n<p>(A) Giám đốc Văn phòng Davidson</p>\n<p>(B) Một nhân viên trong bộ phận nhân sự</p>\n<p>(C) Một phó chủ tịch</p>\n<p>(D) Một đại diện dịch vụ khách hàng</p>\n<p>Thông tin:&nbsp;<em>Any questions should be directed to&nbsp;<strong>Jennifer Wordsworth in the human resources department</strong>. (</em><em>Mọi thắc mắc xin vui lòng chuyển đến Jennifer Wordsworth ở bộ phận nhân sự.)</em></p>\n<p><strong>=&gt; Chọn B</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 178,
+          "stem": "What is NOT mentioned about Mr. Kyscinski?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He used to work for Davidson Office."
+            },
+            {
+              "choice": "B",
+              "text": "He will pursue business interests in Southeast Asia."
+            },
+            {
+              "choice": "C",
+              "text": "Davidson Office had a higher income thanks to him."
+            },
+            {
+              "choice": "D",
+              "text": "Someone else will replace him at Davidson Office."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Điều gì KHÔNG được đề cập về ông Kyscinski?</p>\n<p>(A) Anh ấy từng làm việc cho Văn phòng Davidson.</p>\n<p>(B) Anh ấy sẽ theo đuổi công việc kinh doanh ở Đông Nam Á.</p>\n<p>(C) Văn phòng Davidson có thu nhập cao hơn nhờ anh ấy.</p>\n<p>(D) Người khác sẽ thay thế anh ấy tại Văn phòng Davidson.</p>\n<p>Thông tin:&nbsp;</p>\n<p>(A) và (D): <em><strong>Mr. Park</strong>&nbsp;has accepted a five-year contract from&nbsp;<strong>Davidson Office</strong>&nbsp;and he will&nbsp;<strong>assume the position left vacant by Richard Kyscinski </strong></em></p>\n<p><em>(</em><em>Ông Park đã nhận lời ký hợp đồng 5 năm với Văn phòng Davidson và ông sẽ đảm nhận vị trí mà Richard Kyscinski còn trống)</em></p>\n<p>(B):&nbsp;<em>Mr. Kyscinski left company in September to&nbsp;<strong>pursue business interests in the Philippines</strong></em></p>\n<p><em>(</em><em>Ông Kyscinski rời công ty vào tháng 9 để theo đuổi công việc kinh doanh tại Philippines</em><em>)</em></p>\n<p><strong>=&gt; Chọn C</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 179,
+          "stem": "In the press release, the word “assume” in paragraph 2, line 1, is closest in meaning to",
+          "options": [
+            {
+              "choice": "A",
+              "text": "take on"
+            },
+            {
+              "choice": "B",
+              "text": "except"
+            },
+            {
+              "choice": "C",
+              "text": "apply for"
+            },
+            {
+              "choice": "D",
+              "text": "understand"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>assume (v): đảm đương, gánh vác</p>\n<p>(A) take on (v): tiếp quản, tiếp nhận</p>\n<p>(B) except (v): trừ ra</p>\n<p>(C) apply for (v): ứng tuyển</p>\n<p>(D) understand (v): hiểu</p>\n<p><strong>=&gt; Chọn A</strong></p>",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        },
+        {
+          "num": 180,
+          "stem": "Who is the new vice president?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Susan Lockport"
+            },
+            {
+              "choice": "B",
+              "text": "Richard Kyscinski"
+            },
+            {
+              "choice": "C",
+              "text": "Hal Park"
+            },
+            {
+              "choice": "D",
+              "text": "Jennifer Wordsworth"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Phó chủ tịch mới là ai?</p>\n<p>(A) Susan Lockport</p>\n<p>(B) Richard Kyscinski</p>\n<p>(C) Hal Park</p>\n<p>(D) Jennifer Wordsworth</p>\n<p>Thông tin trong email đầu tiên:&nbsp;<em>The press release will provide details about the&nbsp;<strong>appointment of our new vice president</strong>.</em></p>\n<p><em>(Thông cáo báo chí sẽ cung cấp thông tin chi tiết về việc bổ nhiệm phó chủ tịch mới của chúng tôi.)</em></p>\n<p>Thông tin trên bài báo:<em>&nbsp;</em><em>Davidson Office Co. is pleased to announce the&nbsp;<strong>promotion of Hal Park</strong></em></p>\n<p><em>(Công ty Davidson Office vui mừng thông báo về việc thăng chức của Hal Park)</em></p>\n<p><strong>=&gt; Chọn C</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "181-185",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">TO: Rosalin Hopes&lt;hope@bolddesign.com&gt;</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">FROM: Addington Symonds&lt;symonds@ceproducts.com&gt;</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">DATE: October 7</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">SUBJECT: Design meeting</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Thank you very much for sending me an e-mail yesterday with an attachment containing several designs for our built-in air-conditioner project. I would like to say that our maintenance team admired the shape, size, and overall stylish design of the air-conditioners. However, we hope that you can make some changes to the appearance to reflect some of the current trends in home appliances. Our President, Sam Fimen, suggested that you might select some more subtle patterns, like flowers or drawings, for the surface. We think these luxurious patterns may make the products more desirable.</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">I would like to meet you to further discuss the designs and patterns. I will be on a business trip from Oct. 15 to 18. After that I'll be back in my office, so please contact my secretary, Sera Jones, to schedule our meeting at your earliest convenience.</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Best regards,</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Addington Symonds</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">_____________________________________________</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">TO: Addington Symonds&lt;symonds@ceproducts.com&gt;</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">FROM: Rosalin Hopes&lt;hope@bolddesign.com&gt;</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">DATE: October 10</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">SUBJECT: RE: Design meeting</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Thank you for your quick reply. Upon reading your message, I would like to say that I am so grateful to know that you like my work. As for your suggestions, I just created a second file which contains some more designs and patterns that we can discuss when we meet. I have attached this file to this e-mail. You can take a look at them after you come back from your business trip.</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">I contacted Ms. Sera Jones to tell her that I would be available on Oct. 20. According to Ms. Jones, you are available that morning. I will see you in your office at 10:00 a.m. If you would like to change the time, please call me back.</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Sincerely,</span></span></span></p> <p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">Rosalin Hopes</span></span></span></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 181,
+          "stem": "When did Rosalin Hopes attach the first file?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "October 6"
+            },
+            {
+              "choice": "B",
+              "text": "October 15"
+            },
+            {
+              "choice": "C",
+              "text": "October 18"
+            },
+            {
+              "choice": "D",
+              "text": "October 20"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Rosalin Hopes đính kèm tập tin đầu tiên khi nào?</p>\n<p>(A) Ngày 6 tháng 10</p>\n<p>(B) Ngày 15 tháng 10</p>\n<p>(C) Ngày 18 tháng 10</p>\n<p>(D) Ngày 20 tháng 10</p>\n<p>Thông tin trong email đầu tiên:&nbsp;<em>Thank you very much for sending me an&nbsp;<strong>e-mail yesterday</strong>&nbsp;with an&nbsp;<strong>attachment&nbsp;</strong>containing several designs for our built-in air-conditioner project.</em></p>\n<p><em>(Cảm ơn bạn rất nhiều vì đã gửi email cho tôi ngày hôm qua kèm theo tệp đính kèm chứa một số thiết kế cho dự án máy điều hòa không khí tích hợp của chúng tôi)</em></p>\n<p>Email này được gửi vào ngày 7 tháng 10 =&gt; Rosalin Hopes đính kèm tập tin đầu tiên vào ngày 6 tháng 10</p>\n<p><strong>=&gt; Chọn A</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 182,
+          "stem": "What is Rosalin Hopes’ occupation?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Secretary"
+            },
+            {
+              "choice": "B",
+              "text": "Designer"
+            },
+            {
+              "choice": "C",
+              "text": "Janitor"
+            },
+            {
+              "choice": "D",
+              "text": "Mechanic"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Nghề nghiệp của Rosalin Hopes là gì?</p>\n<p>(A) Thư ký</p>\n<p>(B) Nhà thiết kế</p>\n<p>(C) Người gác cổng</p>\n<p>(D) Thợ cơ khí</p>\n<p>Thông tin:&nbsp;<em>Thank you very much for sending me an e-mail yesterday with an attachment containing several&nbsp;<strong>designs&nbsp;</strong>for our built-in air-conditioner project. I would like to say that our maintenance team&nbsp;<strong>admired the shape, size, and overall stylish design of the air-conditioners</strong>.</em></p>\n<p><em>(C</em><em>ảm ơn bạn rất nhiều vì đã gửi email cho tôi ngày hôm qua kèm theo tệp đính kèm chứa một số thiết kế cho dự án máy điều hòa không khí tích hợp của chúng tôi. Tôi muốn nói rằng đội bảo trì của chúng tôi rất ngưỡng mộ hình dáng, kích thước và thiết kế tổng thể đầy phong cách của những chiếc máy điều hòa không khí.)</em></p>\n<p><strong>=&gt; Chọn B</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 183,
+          "stem": "What is suggested as a point to be improved?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The exterior of the item"
+            },
+            {
+              "choice": "B",
+              "text": "The manufacturer of the product"
+            },
+            {
+              "choice": "C",
+              "text": "The number of the patterns"
+            },
+            {
+              "choice": "D",
+              "text": "The size of the air-conditioner"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Điều gì được đề xuất như là một điểm cần được cải thiện?</p>\n<p>(A) Bề ngoài của vật phẩm</p>\n<p>(B) Nhà sản xuất sản phẩm</p>\n<p>(C) Số lượng mẫu</p>\n<p>(D) Kích thước của máy điều hòa không khí</p>\n<p>Thông tin:&nbsp;<em>we hope that&nbsp;<strong>you can make some changes to the appearance</strong>&nbsp;to reflect some of the current trends in home appliances</em></p>\n<p><em>(</em><em>chúng tôi hy vọng rằng bạn có thể thực hiện một số thay đổi về hình thức bên ngoài để phản ánh một số xu hướng hiện nay về thiết bị gia dụng)</em></p>\n<p><strong>=&gt; Chọn A</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 184,
+          "stem": "What did Ms. Hopes offer Mr. Symonds in her e-mail?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "An estimate for the proposed changes"
+            },
+            {
+              "choice": "B",
+              "text": "A sample of the air-conditioner parts"
+            },
+            {
+              "choice": "C",
+              "text": "A tentative plan for discussion"
+            },
+            {
+              "choice": "D",
+              "text": "A plan for a business trip"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Cô Hopes đã đề nghị gì với ông Symonds trong email của cô ấy?</p>\n<p>(A) Ước tính cho những thay đổi được đề xuất</p>\n<p>(B) Một mẫu các bộ phận của máy điều hòa không khí</p>\n<p>(C) Một kế hoạch dự kiến ​​để thảo luận</p>\n<p>(D) Kế hoạch cho chuyến công tác</p>\n<p><strong>Thông tin:</strong>&nbsp;<em>As for your suggestions, I just created a second file which contains some more designs and patterns that we can discuss when we meet</em></p>\n<p><em>(</em><em>Đối với những gợi ý của bạn, tôi vừa tạo một tệp thứ hai chứa thêm một số thiết kế và mẫu mà chúng ta có thể thảo luận khi gặp nhau)</em></p>\n<p><strong>=&gt; Chọn C</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 185,
+          "stem": "When will Mr. Symonds and Ms. Hopes most likely meet?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "As soon as Mr. Symonds returns from his trip"
+            },
+            {
+              "choice": "B",
+              "text": "Two days after Mr. Symonds comes back"
+            },
+            {
+              "choice": "C",
+              "text": "Between Oct. 21 and Oct. 22"
+            },
+            {
+              "choice": "D",
+              "text": "On the afternoon of Oct. 20"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Khi nào ông Symonds và bà Hopes có nhiều khả năng gặp nhau nhất?</p>\n<p>(A) Ngay sau khi ông Symonds trở về sau chuyến đi</p>\n<p>(B) Hai ngày sau khi ông Symonds quay lại</p>\n<p>(C) Từ ngày 21 tháng 10 đến ngày 22 tháng 10</p>\n<p>(D) Vào chiều ngày 20 tháng 10</p>\n<p>Thông tin trong email đầu tiên:&nbsp;<em>Mr. Symonds will be on a&nbsp;<strong>business trip from Oct. 15 to 18</strong>.</em></p>\n<p><em>(Ông Symonds sẽ đi công tác từ ngày 15 đến 18/10.)</em></p>\n<p>Thông tin trong email thứ hai:&nbsp;<em>Ms. Hopes&nbsp;would be available on&nbsp;<strong>Oct. 20.</strong>&nbsp;and&nbsp;will see Mr. Symonds at 10:00 a.m</em></p>\n<p><em>(Cô Hopes sẽ có mặt vào ngày 20 tháng 10 và sẽ gặp ông Symonds lúc 10 giờ sáng)</em></p>\n<p><strong>=&gt; Chọn B</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 7,
+  "subLabel": "Đoạn kép"
+}

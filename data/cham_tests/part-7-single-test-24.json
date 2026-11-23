@@ -1,0 +1,912 @@
+{
+  "id": "cham_part_7_single_test_24",
+  "sourceId": "6a32509060281800269d77bd",
+  "slug": "part-7-single-test-24",
+  "title": "Đề lẻ Part 7 Đơn · Test 24",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 30,
+  "totalQuestions": 29,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_7": 29
+  },
+  "groups": [
+    {
+      "part": 7,
+      "range": "147-148",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\">Dear Alice,<br>\nI trust that your meetings have been going well this week. This is just a short note to confirm the plans for Thursday evening. As I mentioned when we met to discuss the color scheme for your book, I have reserved two tickets for this Thursday's <em>Swan Lake</em> at the Sydney Arts Center.</p>\n\n<p style=\"text-align: justify;\">The performance begins at 7:30. As I suggested before, let's meet at the theater between 6:30 and 7:00. I will be sending the company's driver to meet you at your hotel at six o'clock. Afterwards, I hope you will be able to join me and our chief editor, Hank Rearden, for supper at La Mirage. Don't hesitate to contact me if there are any problems. This should be a nice relaxing evening before your departure on Friday morning.</p>\n\n<p style=\"text-align: justify;\">Yours truly,<br>\nMartina Hayes<br>\nSales Director</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 147,
+          "stem": "What is the purpose of the note?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To extend an invitation"
+            },
+            {
+              "choice": "B",
+              "text": "To confirm plans"
+            },
+            {
+              "choice": "C",
+              "text": "To reply to an invitation"
+            },
+            {
+              "choice": "D",
+              "text": "To cancel plans"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Bức thư ghi: <em>\"This is just a short note to confirm the plans for Thursday evening.\"</em> Điều này trực tiếp thể hiện mục đích là để xác nhận những kế hoạch đã sắp xếp trước đó.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 148,
+          "stem": "Why did Martina Hayes write this letter?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To ensure Alice knows when and where to meet"
+            },
+            {
+              "choice": "B",
+              "text": "To check that Alice knows where the theater is"
+            },
+            {
+              "choice": "C",
+              "text": "To notify Alice of a change of plans"
+            },
+            {
+              "choice": "D",
+              "text": "To confirm Alice's flight time"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Martina cung cấp thông tin chi tiết về:</p><p>Thời gian biểu diễn (7h30 tối)</p><p>Thời gian họp (từ 6h30 đến 7h tối)</p><p>Giờ đón tài xế (6h tối tại khách sạn)</p><p>Kế hoạch ăn tối sau đó</p><p>Những chi tiết này giúp Alice biết chính xác thời gian và địa điểm gặp nhau.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "149-150",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\">Without a doubt, the most important part of any job application is the resume. Along with a cover letter, it is the first impression a prospective employee makes on a potential employer. Therefore, it is important that a resume provide as much relevant information as possible while remaining brief. A resume should be no more than one full side of a sheet of paper. All too many candidates make the mistake of submitting several pages which, more often than not, don't even get a second glance.</p>\n\n<p style=\"text-align: justify;\">A resume must be neatly printed, with at least three-quarter inch margins on all four sides. Use underlining, capital letters and asterisks to highlight important information. A resume should be single-spaced with an extra line between blocks of information.</p>\n\n<p style=\"text-align: justify;\">Begin a resume with your name, address, and contact information (e.g., telephone or fax numbers, email address). Do not include age, marital status, or other personal facts. Next, many resumes state the position sought or career goal. Then comes perhaps the most important part: a chronological outline of work experience-starting with the most recent job and working backwards-including for each position a brief description of relevant duties and skills used or acquired. Finally, include an outline of your educational background from the most recent backwards. Make sure to list dates of completion, full names and locations (if not common knowledge) of schools, and diplomas or certificates awarded.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 149,
+          "stem": "Which of the following should NOT be on your resume?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The year you received your bachelor's degree"
+            },
+            {
+              "choice": "B",
+              "text": "Your nationality and the fact that you are single"
+            },
+            {
+              "choice": "C",
+              "text": "A description of tasks performed in your last job"
+            },
+            {
+              "choice": "D",
+              "text": "Your name and telephone and fax numbers"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Đoạn văn nói rõ ràng là không bao gồm tuổi tác, tình trạng hôn nhân hoặc các thông tin cá nhân khác, bao gồm cả quốc tịch và tình trạng hôn nhân.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 150,
+          "stem": "What is true about a resume?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "An outline of educational background should end with the most recent information."
+            },
+            {
+              "choice": "B",
+              "text": "Important information should be italicized."
+            },
+            {
+              "choice": "C",
+              "text": "A resume should have three-quarter inch margins on both sides."
+            },
+            {
+              "choice": "D",
+              "text": "Resumes should be brief but very informative."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Văn bản nêu rõ rằng sơ yếu lý lịch nên cung cấp càng nhiều thông tin liên quan càng tốt nhưng vẫn ngắn gọn.</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "151-152",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><span style=\"font-size:16px;\"><strong>Fax</strong></span></p>\n\n<p style=\"text-align: justify;\">To: Peter Cooke, Headly Electronics<br>\nFrom: Darren Simpson, Customs and Excise Bureau<br>\nRe: Shipment<br>\nDate: April 2nd</p>\n\n<p style=\"text-align: justify;\">A shipment of 48 refrigerators has now been cleared for collection by the Dover Port Authority Customs and Excise Bureau. This shipment arrived on March 27 th.&nbsp;An import tariff of £13 is payable on each item in the shipment. At £13 x 48 that comes to a total of £634. This is payable before the shipment will be released for collection. Payment should be made to Westman Bank, account #223003, account holder: Custom and Excise. please fax us once payment has been made.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 151,
+          "stem": "What is the purpose of this fax?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To inform Darren Simpson of the cost of a refrigerator"
+            },
+            {
+              "choice": "B",
+              "text": "To inform Darren Simpson that he should pay a fee"
+            },
+            {
+              "choice": "C",
+              "text": "To inform Peter Cooke that his shipment has been rejected"
+            },
+            {
+              "choice": "D",
+              "text": "To inform Peter Cooke that his shipment is ready for collection"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Bản fax có nội dung: <em>“A shipment of 48 refrigerators has now been cleared for collection…”</em>, trong đó nêu rõ mục đích là thông báo cho Peter Cooke về việc giải phóng lô hàng của anh ấy.</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 152,
+          "stem": "What should Peter Cooke send after paying the import tariff?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A letter"
+            },
+            {
+              "choice": "B",
+              "text": "£634"
+            },
+            {
+              "choice": "C",
+              "text": "A fax"
+            },
+            {
+              "choice": "D",
+              "text": "An email"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Bản fax kết thúc bằng: <em>“please fax us once payment has been made.”</em> Điều này cho biết rõ ràng yêu cầu theo dõi.</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "153-154",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\"><strong>Personnel Departntent News</strong>&nbsp;- It gives us great pleasure to announce the appointment of our new vice presidents. As of tomorrow, Marshall and Young, Inc. will have two new vice presidents: Research and Development's Gary Shepherd and Constance Hayes from the Product Design Department, who were informed of their promotions last Tuesday. Mr. Shepherd, who has been with this firm for ten years, will remain in R&amp;D and will be working with Jordan Jones, Senior VPin that department. Ms. Hayes, who has been a Project Manager in Product Design since joining Marshall and Young five years ago, will be heading up the Consumer Products Department along with Eugene Park, who is transferring from his position as vice president in R&amp;D. We are expecting an exciting year and looking forward to the continued success of Mr. Shepherd and Ms. Hayes.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 153,
+          "stem": "When were the new vice-presidents told about the promotion?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Over a month ago"
+            },
+            {
+              "choice": "B",
+              "text": "Tomorrow"
+            },
+            {
+              "choice": "C",
+              "text": "Last Tuesday"
+            },
+            {
+              "choice": "D",
+              "text": "The day after the vote"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Đoạn văn nói rằng họ <em>“were informed of their promotions last Tuesday.”</em></p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 154,
+          "stem": "Who will be leading the Consumer Products Department along with Eugene?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Jordan Jones"
+            },
+            {
+              "choice": "B",
+              "text": "Gary Shepherd"
+            },
+            {
+              "choice": "C",
+              "text": "Constance Hayes"
+            },
+            {
+              "choice": "D",
+              "text": "The Senior VP"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Văn bản ghi bà Hayes <em>“will be heading up the Consumer Products Department along with Eugene Park.”</em></p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "155-157",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><span style=\"font-size:16px;\"><strong>WHILE YOU WERE OUT</strong></span></p>\n\n<p style=\"text-align: justify;\"><strong>To</strong>:&nbsp; &nbsp; &nbsp;<em>William Maxwell</em></p>\n\n<p style=\"text-align: justify;\"><strong>From</strong>: <em>Katherine Potter, Blade Travel</em></p>\n\n<p style=\"text-align: justify;\"><strong>Date</strong>: <em>Wed., February 2nd</em></p>\n\n<p style=\"text-align: justify;\"><strong>Time</strong>: <em>7:30 p.m.</em></p>\n\n<p style=\"text-align: justify;\">RETURNED YOUR CALL / IMPORTANT/ <u>WILL CALL AGAIN</u>/ PLEASE CALL</p>\n\n<p style=\"text-align: justify;\">MESSAGE:&nbsp;The air portion of your trip has not yet been confirmed. Confirmation will probably come early tomorrow. However, all ground and hotel reservations have been confirmed for you and Joseph Hill. All confirmation numbers, tickets, etc. will be sent by messenger to Mr. Hill once everything is finalized.</p>\n\n<p style=\"text-align: justify;\">TAKEN BY: <em>David Sales</em></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 155,
+          "stem": "Why did Katherine Potter call?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To ask William Maxwell to call Mr. Hill"
+            },
+            {
+              "choice": "B",
+              "text": "To make a booking"
+            },
+            {
+              "choice": "C",
+              "text": "To confirm William Maxwell's flight reservation"
+            },
+            {
+              "choice": "D",
+              "text": "To inform William Maxwell that his flight is not confirmed"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Cô ấy gọi điện để thông báo cho William Maxwell rằng chuyến bay của anh ấy vẫn chưa được xác nhận: <em>“The air portion of your trip has not yet been confirmed.”</em></p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 156,
+          "stem": "Who will be traveling?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Joseph Hill and Katherine Potter"
+            },
+            {
+              "choice": "B",
+              "text": "William Maxwell and Joseph Hill"
+            },
+            {
+              "choice": "C",
+              "text": "Only David Sales"
+            },
+            {
+              "choice": "D",
+              "text": "David Sales and William Maxwell"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Tin nhắn cho biết chuyến đi đã được xác nhận cho <em>“you and Joseph Hill”</em>, vì vậy khách du lịch là William Maxwell và Joseph Hill.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 157,
+          "stem": "Where does Katherine Potter probably work?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "An airline"
+            },
+            {
+              "choice": "B",
+              "text": "A travel agency"
+            },
+            {
+              "choice": "C",
+              "text": "A hotel"
+            },
+            {
+              "choice": "D",
+              "text": "A messenger service"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Cô ấy làm việc tại Blade Travel và xử lý việc đặt chỗ cũng như xác nhận, vì vậy cô ấy có thể làm việc tại một công ty du lịch.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "158-160",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><span style=\"font-size:16px;\"><strong>Darnley's Dairy</strong></span></p>\n\n<p style=\"text-align: justify;\">We would like to thank all our loyal customers for choosing Darnley's Dairy for all their dairy needs. In order to streamline our delivery service, and to ensure you continue to receive our products in tip-top condition, we are asking all customers to fill out the order form below. Your details will be entered into our new customer database, and we will use this information to serve you better. As always, there will be no charge for home delivery. Thank you.</p>\n\n<p style=\"text-align: justify;\"><strong>Name</strong>: ------------------------------</p>\n\n<p style=\"text-align: justify;\"><strong>Street Address</strong>: ---------------------------</p>\n\n<p style=\"text-align: justify;\"><strong>City</strong>: ------------------------------</p>\n\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 655px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 216px;\"><strong>Order&nbsp;</strong></td>\n\t\t\t<td style=\"width: 136px; text-align: center;\"><strong>Quantity</strong></td>\n\t\t\t<td style=\"width: 138px; text-align: center;\"><strong>How often&nbsp;</strong></td>\n\t\t\t<td style=\"width: 136px; text-align: center;\"><strong>Day&nbsp;</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 216px;\">Fat-free milk</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">1 carton</td>\n\t\t\t<td style=\"width: 138px; text-align: center;\">3 times a week</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">Mon, Wed &amp; Fri</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 216px;\">Low-fat milk</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 138px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 216px;\">Whole milk</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 138px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 216px;\">Organic milk</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 138px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"4\" style=\"width: 216px;\">Flavored milk:</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 216px;\">Chocolate</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 138px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 216px;\">Strawberry</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">1 carton</td>\n\t\t\t<td style=\"width: 138px; text-align: center;\">2 times a week</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">Sat and Sun&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"4\" style=\"width: 216px;\">Payment method:</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 216px;\">Cash</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">XX</td>\n\t\t\t<td style=\"width: 138px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 216px;\">Credit card</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 138px; text-align: center;\">&nbsp;</td>\n\t\t\t<td style=\"width: 136px; text-align: center;\">&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Please return this to your Darnley's Dairy milk deliverer.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 158,
+          "stem": "What is the purpose of this form?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To reduce delivery times"
+            },
+            {
+              "choice": "B",
+              "text": "To catch customers who haven't paid their bills"
+            },
+            {
+              "choice": "C",
+              "text": "To improve their delivery service"
+            },
+            {
+              "choice": "D",
+              "text": "To thank customers"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><em>“In order to streamline our delivery service… we are asking all customers to fill out the order form”</em> → Vậy mục đích là cải thiện/tinh giản dịch vụ giao hàng chứ không phải để tính phí hay cảm ơn khách hàng.</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 159,
+          "stem": "How much does Darnley's charge for home delivery?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It doesn't say"
+            },
+            {
+              "choice": "B",
+              "text": "Free"
+            },
+            {
+              "choice": "C",
+              "text": "$1 per item"
+            },
+            {
+              "choice": "D",
+              "text": "It depends on the item."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><em>“there will be no charge for home delivery.”</em> → Vì vậy, giao hàng miễn phí.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 160,
+          "stem": "How many varieties of milk can be ordered using this form?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Four"
+            },
+            {
+              "choice": "B",
+              "text": "Two"
+            },
+            {
+              "choice": "C",
+              "text": "Three"
+            },
+            {
+              "choice": "D",
+              "text": "Five"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Các loại sữa được liệt kê:</p><p>Sữa không béo</p><p>Sữa ít béo</p><p>Sữa nguyên chất</p><p>Sữa hữu cơ</p><p>Sữa có hương vị (sôcôla, dâu tính cùng loại)</p><p>Vì vậy, có tổng cộng 5 loại.</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "161-164",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><span style=\"font-size:16px;\"><strong>MEMORANDUM</strong></span></p>\n\n<p>To:&nbsp; &nbsp; &nbsp;All Employees</p>\n\n<p>From: Sidney Flanders, Office Manager</p>\n\n<p>Date: September 4</p>\n\n<p>Re:&nbsp; &nbsp; Vacation Days</p>\n\n<p style=\"text-align: justify;\">Since it is never too early to be prepared, I am requesting that all employees promptly submit to their departmental managers any requests for vacation days for the remainder of the year. As you know, the end of the year is our busiest time, and there is always the problem of having to schedule vacations and personal time off around the end-of-year holidays. This is the most popular time for vacations, apart from the summer months, and it takes a lot of time to coordinate. I will work with all departmental managers to see that all vacation requests are honored where possible, except in caseswhere it is anticipated that the temporary staff will not be able to cover the projected workload. Unfortunately, we will have to request that some employees (generally employees with little seniority) postpone their vacation plans until a more convenient time. Those of you who do not get your first choice of vacation this time round will be given priority next time. However, please note that this is still not a flat guarantee that you will get your choice, even then. I would like to ask that all requests be made to the appropriate offices before the end of the week. Thank you for your cooperation in this matter. Rest assured that I will do my very best to accommodate all wishes.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 161,
+          "stem": "Who will be receiving vacation requests?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The office manager"
+            },
+            {
+              "choice": "B",
+              "text": "Temporary employees"
+            },
+            {
+              "choice": "C",
+              "text": "The personnel secretary"
+            },
+            {
+              "choice": "D",
+              "text": "All employees"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Bản ghi nhớ nói rằng nhân viên nên gửi yêu cầu đến người quản lý bộ phận của họ và người quản lý văn phòng (Sidney Flanders) đang điều phối và làm việc với họ. Vì vậy, các yêu cầu cuối cùng được xử lý thuộc trách nhiệm của người quản lý văn phòng.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 162,
+          "stem": "What is true for employees with more seniority?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "They will probably have their vacation requests honored."
+            },
+            {
+              "choice": "B",
+              "text": "They will not receive this memorandum."
+            },
+            {
+              "choice": "C",
+              "text": "They may be asked to postpone their vacations."
+            },
+            {
+              "choice": "D",
+              "text": "They will not need to make vacation requests."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Bản ghi nhớ cho biết các yêu cầu sẽ được thực hiện <em>“where possible”</em> và những nhân viên có ít thâm niên có nhiều khả năng bị yêu cầu trì hoãn hơn, điều này ngụ ý rằng những nhân viên cấp cao có mức độ ưu tiên cao hơn.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 163,
+          "stem": "According to the memo, when should requests for vacation time be made?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "By the end of the month"
+            },
+            {
+              "choice": "B",
+              "text": "By the end of the day"
+            },
+            {
+              "choice": "C",
+              "text": "By the end of the year"
+            },
+            {
+              "choice": "D",
+              "text": "By the end of the week"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Bản ghi nhớ nêu rõ: <em>“before the end of the week”</em></p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 164,
+          "stem": "According to the memo, what problem often occurs?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Employees do not schedule enough vacation time."
+            },
+            {
+              "choice": "B",
+              "text": "Departmental managers often reject requests for time off."
+            },
+            {
+              "choice": "C",
+              "text": "There is difficulty scheduling vacations at year's end."
+            },
+            {
+              "choice": "D",
+              "text": "Vacation time is used too early in the year."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Bản ghi nhớ giải thích cuối năm bận rộn và khó có thể sắp xếp lịch nghỉ phép.</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "165-167",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: right;\">Taylor and Bryce, Attorneys-at-Law</p>\n\n<p style=\"text-align: right;\">13 Woodlawn Avenue</p>\n\n<p style=\"text-align: right;\">Albany, NY 11208</p>\n\n<p style=\"text-align: justify;\">Polar Airlines, Inc.</p>\n\n<p style=\"text-align: justify;\">P.O. Box 1660-100</p>\n\n<p style=\"text-align: justify;\">Minneapolis, MN 55440</p>\n\n<p style=\"text-align: justify;\">Dear Sir / Madam,</p>\n\n<p style=\"text-align: justify;\">I received this free mileage coupon (attached) from your airline when I took a flight to San Francisco in March. Though I am currently not enrolled in the Polar Miles Program, having read about the various benefits on offer, I am interested in becoming a member and receiving the 10,000 bonus Polar Miles offered with the coupon. In addition, I would like to have the mileage of my recent flights on your airline (ticket copies attached) credited to my new Polar Miles account, if possible.</p>\n\n<p style=\"text-align: justify;\">I'd also like to take this opportunity to let you know that I appreciate all you did for me last December when I traveled on your airline from Boston to Finland. It was the first time I had used your airline, and to be honest, I had my doubts about what kind of service to expect. However, I am happy to say that I was proven wrong. The plane was six hours late taking off (due to a terrible Christmas Eve blizzard-over which I know you had little control!), but your staff did all they could to ameliorate the situation. I plan to continue to fly your airline because of the courteous assistance and service I received from Polar Airlines employees during that long delay and subsequent flight.</p>\n\n<p style=\"text-align: justify;\">Yours sincerely,</p>\n\n<p style=\"text-align: justify;\">Anthony Taylor</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 165,
+          "stem": "What was Mr. Taylor's reason for writing to Polar Airlines?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He wanted to make a reservation."
+            },
+            {
+              "choice": "B",
+              "text": "He wanted to apply for a job."
+            },
+            {
+              "choice": "C",
+              "text": "He wanted to enroll in an air miles program."
+            },
+            {
+              "choice": "D",
+              "text": "He wanted to make a complaint."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Ông Taylor viết: <em>“I am interested in becoming a member and receiving the 10,000 bonus Polar Miles...”</em> → Điều này cho thấy ông muốn tham gia Chương trình Polar Miles.</p><p><strong>→ Đáp án đúng là (C).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 166,
+          "stem": "What did Mr. Taylor receive from Polar Airlines in March?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A coupon"
+            },
+            {
+              "choice": "B",
+              "text": "10,000 Polar Miles"
+            },
+            {
+              "choice": "C",
+              "text": "Courteous service"
+            },
+            {
+              "choice": "D",
+              "text": "His Polar Miles membership"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Anh ấy nói: <em>“I received this free mileage coupon... when I took a flight to San Francisco in March.”</em> → Vậy món hàng anh ấy nhận được là phiếu giảm giá.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 167,
+          "stem": "What caused Mr. Taylor's plane to be delayed?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Mechanical problems"
+            },
+            {
+              "choice": "B",
+              "text": "Weather conditions"
+            },
+            {
+              "choice": "C",
+              "text": "Lack of assistance"
+            },
+            {
+              "choice": "D",
+              "text": "Poor control by Polar Airlines"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Anh ấy viết: <em>“The plane was six hours late... due to a terrible Christmas Eve blizzard.”</em> → Bão tuyết là một trận bão tuyết nghiêm trọng nên sự chậm trễ là do điều kiện thời tiết.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "168-171",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\">Dear Alberta Bank Customer,</p>\n\n<p style=\"text-align: justify;\">The following contains important information about your new Alberta BankATM/Debit card. Please read it carefully. This information could help protect you against fraudulent use of your card by others.</p>\n\n<p style=\"text-align: justify;\">Instructions regarding the enclosed item(s):</p>\n\n<ul>\n\t<li style=\"text-align: justify;\">If the enclosed Alberta Bank Card replaces a valid card that is about to expire, simply sign the back of the new card and begin using it as you would ordinarily. Your confidential Personal Identification Number (PIN) is the same one you have been using.</li>\n\t<li style=\"text-align: justify;\">In all other cases, please take it to the Alberta Bank branch which is most convenient for you to sign and validate your new BankCard, and choose a new PIN. The Alberta Bankrecommends that customers do not use dates of birth as their PIN. Please remember to bring two forms of identification with you, such as a passport, student ID card, driver's license, or credit card issued by the Alberta Bank.</li>\n</ul>\n\n<p style=\"text-align: justify;\">If your Bank Card is lost, stolen or damaged, please call the Alberta Bank Card Helpline, in operation 24 hours a day. The telephone number for this helpline can be found on the back of your card. We advise you to make a note of this and keep it in a safe place. Remember, please destroy your old bank card properly.</p>\n\n<p style=\"text-align: justify;\">Do not hesitate to visit any of our branches any time you have any questions about the Alberta Bank and our wide range of services.</p>\n\n<p style=\"text-align: justify;\">Sincerely,</p>\n\n<p style=\"text-align: justify;\">Alberta Bank</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 168,
+          "stem": "What was enclosed with this letter?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A bank statement"
+            },
+            {
+              "choice": "B",
+              "text": "A Personal Identification Number"
+            },
+            {
+              "choice": "C",
+              "text": "An expiration notice"
+            },
+            {
+              "choice": "D",
+              "text": "A new Bank Card"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Bức thư có nội dung: <em>“If the enclosed Alberta Bank Card replaces a valid card...”</em> → Điều này cho thấy rằng Thẻ Ngân hàng mới đã được đính kèm với bức thư.</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 169,
+          "stem": "Who is the letter from?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A customer"
+            },
+            {
+              "choice": "B",
+              "text": "A bank"
+            },
+            {
+              "choice": "C",
+              "text": "Friends"
+            },
+            {
+              "choice": "D",
+              "text": "An advertising agency"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Bức thư bắt đầu bằng: <em>“Dear Alberta Bank Customer”</em> và kết thúc bằng: <em>“Sincerely, Alberta Bank”</em> → Vậy người gửi là ngân hàng.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 170,
+          "stem": "If this card is a replacement for a lost card, what must the customer do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Visit an Alberta Bank branch"
+            },
+            {
+              "choice": "B",
+              "text": "Begin using the card as usual"
+            },
+            {
+              "choice": "C",
+              "text": "Pick up a new card"
+            },
+            {
+              "choice": "D",
+              "text": "Call Alberta Bank"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Trong thư có nội dung: <em>“In all other cases, please take it to the Alberta Bank branch... to sign and validate your new Bank Card, and choose a new PIN.”</em> → Việc thay thế thẻ bị mất là một trong những trường hợp khác nên khách hàng phải đến chi nhánh.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 171,
+          "stem": "Which of the following is NOT recommended as a PIN?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Customer's date of birth"
+            },
+            {
+              "choice": "B",
+              "text": "Binary numbers"
+            },
+            {
+              "choice": "C",
+              "text": "Customer's favorite numbers"
+            },
+            {
+              "choice": "D",
+              "text": "Dates from US history"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Trong thư có nội dung: <em>“The Alberta Bank recommends that customers do not use dates of birth as their PIN.”</em> → Do đó, ngày sinh của khách hàng không được khuyến khích.</p><p><strong>→ Đáp án đúng là (A).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "172-175",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\">To:&nbsp; &nbsp; &nbsp;Celia Kelly</p>\n\n<p style=\"text-align: justify;\">From: Andrew Mathers</p>\n\n<p style=\"text-align: justify;\">Date: Saturday, March 21</p>\n\n<p style=\"text-align: justify;\">Re:&nbsp; &nbsp; Arrival in Tokyo</p>\n\n<p style=\"text-align: justify;\">I have been unexpectedly called to an emergency meeting in Seoul this weekend, and thus will not be able to meet Mr. Robert Bayerat Narita Airport in Tokyo tomorrow morning (Sunday, March 22) as planned. I'm sorry not to have contacted you earlier about this, but the call came through just as I was about to board my flight to Japan from NewYork.</p>\n\n<p style=\"text-align: justify;\">I was fortunate enough to get a seat right away on a plane for Seoul, so instead of being on my way to Tokyo right now, I am currently waiting in San Francisco to embark on the final leg of my flight to Korea.</p>\n\n<p style=\"text-align: justify;\">This whole thing was quite unforeseen, and I apologize for any inconvenience it may have caused; however, my presence in Seoul this weekend is urgently needed. I will contact you again upon my arrival there. My business in Korea will be concluded by Monday afternoon, so I expect no difficulty in being present for the start of the Tokyo conference on Tuesday morning. My assistant, Ms. Alice Lang, will be arriving there as planned, and will act as my agent until my arrival. I have asked her to contact Mr. Bayer as soon as possible to explain the situation and then to meet with him on my behalf according to our original schedule. I have no doubt Ms. Lang will handle the situation professionally and diplomatically.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 172,
+          "stem": "Who will be meeting in Tokyo on Sunday?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Andrew Mathers and Alice Lang"
+            },
+            {
+              "choice": "B",
+              "text": "Alice Lang and Robert Bayer"
+            },
+            {
+              "choice": "C",
+              "text": "Celia Kelly and Andrew Mathers"
+            },
+            {
+              "choice": "D",
+              "text": "Celia Kelly and Robert Bayer"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Andrew nói: <em>“My assistant, Ms. Alice Lang, will be arriving there as planned... I have asked her... to meet with him on my behalf.”</em> → Ở đây, anh ấy ám chỉ Robert Bayer.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 173,
+          "stem": "Who will be the last person informed of the change of plans?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Celia Kelly"
+            },
+            {
+              "choice": "B",
+              "text": "Robert Bayer"
+            },
+            {
+              "choice": "C",
+              "text": "Andrew Mathers"
+            },
+            {
+              "choice": "D",
+              "text": "Alice Lang"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Andrew đã nhận thức được sự thay đổi.</p><p>Celia Kelly nhận được bản ghi nhớ này.</p><p>Alice Lang được thông báo vì Andrew yêu cầu cô thay mặt anh ta hành động.</p><p>Andrew nói Alice sẽ liên lạc với Robert Bayer sớm nhất có thể, nghĩa là Robert vẫn chưa được thông báo.</p><p>→ Vậy có thể Robert Bayer sẽ là người cuối cùng được thông báo.</p><p><strong>→ Đáp án đúng là (B).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 174,
+          "stem": "Where will Andrew Mathers most likely be on Tuesday morning?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "San Francisco"
+            },
+            {
+              "choice": "B",
+              "text": "Seoul"
+            },
+            {
+              "choice": "C",
+              "text": "New York"
+            },
+            {
+              "choice": "D",
+              "text": "Tokyo"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Andrew viết: <em>“I expect no difficulty in being present for the start of the Tokyo conference on Tuesday morning.”</em> → Vì vậy, anh ấy dự định sẽ có mặt ở Tokyo vào sáng thứ Ba.</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 175,
+          "stem": "Due to which of the following reasons is Andrew Mathers changing his plans?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He didn't want to meet Robert Bayer."
+            },
+            {
+              "choice": "B",
+              "text": "He thinks Alice Lang can do a better job."
+            },
+            {
+              "choice": "C",
+              "text": "He decided to take a last minute vacation."
+            },
+            {
+              "choice": "D",
+              "text": "He has to attend an emergency meeting."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Bản ghi nhớ bắt đầu: <em>“I have been unexpectedly called to an emergency meeting in Seoul this weekend...”</em> → Đây là lý do anh ấy không thể tuân theo lịch trình ban đầu của mình.</p><p><strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 7,
+  "subLabel": "Đoạn đơn"
+}

@@ -1,0 +1,494 @@
+{
+  "id": "cham_part_6_test_23",
+  "sourceId": "6a166741716fea002570ad45",
+  "slug": "part-6-test-23",
+  "title": "Đề lẻ Part 6 · Test 23",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 10,
+  "totalQuestions": 16,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_6": 16
+  },
+  "groups": [
+    {
+      "part": 6,
+      "range": "131-134",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\"><strong>Look to Riessler Landscaping for all your garden requirements</strong></p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">Riessler Landscaping offers everything needed to build your ideal garden. We will carefully consider your ideas and provide recommendations that suit your gardening goals. <b><strong>(131)</strong></b>_____.The nursery at Riessler Landscaping features a wide selection of plants in various types and sizes, showcasing vibrant colors throughout the year. You are sure to find something that will add&nbsp;<b><strong>(132)</strong></b>_____ to your garden. We are <b><strong>(133)</strong></b>_____ equipped to build small ponds or other water features. As our name indicates, we also handle larger landscaping projects - whatever you require. With over 40 years of experience in landscape design, <b><strong>(134)</strong></b>_____ expertise is unmatched.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 131,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (131).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Employees have contributed written pieces to the community newspaper."
+            },
+            {
+              "choice": "B",
+              "text": "Adding lighting can improve the appearance of a carefully planned garden."
+            },
+            {
+              "choice": "C",
+              "text": "Nearby competitors are unable to offer lower prices than ours."
+            },
+            {
+              "choice": "D",
+              "text": "Riessler Landscaping aims to turn your ideas into reality."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Trước chỗ trống: n&oacute;i về lắng nghe &amp; đưa ra gợi &yacute;. Sau chỗ trống: chuyển sang giới thiệu dịch vụ cụ thể.<br />\n&rarr; Cần 1 c&acirc;u kết nối, n&oacute;i r&otilde; mục ti&ecirc;u của c&ocirc;ng ty&nbsp;<br />\n-&gt; Chọn D: Tổng kết &yacute; trước, dẫn sang phần giới thiệu dịch vụ</p>\n\n<p>(A) Employees have contributed written pieces to the community newspaper. -&gt; Lạc đề, kh&ocirc;ng li&ecirc;n quan l&agrave;m vườn<br />\n(B) Adding lighting can improve the appearance of a carefully planned garden. -&gt; Qu&aacute; chi tiết, chưa được dẫn dắt<br />\n(C) Nearby competitors are unable to offer lower prices than ours. -&gt; Quảng c&aacute;o gi&aacute; &ndash; kh&ocirc;ng ph&ugrave; hợp mạch<br />\n(D) Riessler Landscaping aims to turn your ideas into reality. &rarr; Tổng kết &yacute; trước, dẫn sang phần giới thiệu dịch vụ</p>\n\n<p><strong>Dịch</strong>:... Ch&uacute;ng t&ocirc;i sẽ lắng nghe &yacute; tưởng của bạn v&agrave; đưa ra những gợi &yacute; ph&ugrave; hợp với mong muốn l&agrave;m vườn của bạn. Mục ti&ecirc;u của Riessler Landscaping l&agrave; biến tầm nh&igrave;n của bạn th&agrave;nh hiện thực....</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 132,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (132).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "years"
+            },
+            {
+              "choice": "B",
+              "text": "area"
+            },
+            {
+              "choice": "C",
+              "text": "beauty"
+            },
+            {
+              "choice": "D",
+              "text": "humidity"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Cấu tr&uacute;c: <strong>add + NOUN + to</strong><br />\nNgữ cảnh ở trước c&oacute; những từ như &ldquo;eye-catching colors&rdquo; m&agrave;u sắc bắt mắt, &ldquo;plants&rdquo;c&acirc;y cối, &ldquo;year-round&rdquo; đẹp quanh năm<br />\n-&gt; chọn C l&agrave; ph&ugrave; hợp ngữ nghĩa nhất.<br />\n(A) years (n) năm<br />\n(B) area (n) khu vực&nbsp;<br />\n(C) beauty (n) vẻ đẹp<br />\n(D) humidity (n) độ ẩm<br />\n<strong>Dịch</strong>:<br />\nBạn chắc chắn sẽ t&igrave;m được thứ g&igrave; đ&oacute; c&oacute; thể tăng th&ecirc;m vẻ đẹp cho khu vườn của m&igrave;nh.</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 133,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (133).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "also"
+            },
+            {
+              "choice": "B",
+              "text": "however"
+            },
+            {
+              "choice": "C",
+              "text": "seldom"
+            },
+            {
+              "choice": "D",
+              "text": "somehow"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Cần một trạng từ bổ nghĩa cho equipped với nghĩa l&agrave; &ldquo;ngo&agrave;i ra / th&ecirc;m nữa&rdquo; để tiếp nối n&oacute;i về những lợi &iacute;ch m&agrave; dịch vụ cung cấp.</p>\n\n<p>also (adv): cũng&nbsp;</p>\n\n<p>however (adv): tuy nhi&ecirc;n&nbsp;</p>\n\n<p>seldom (adv): hiếm khi&nbsp;</p>\n\n<p>somehow (adv): bằng c&aacute;ch n&agrave;o đ&oacute;&nbsp;</p>\n\n<p><strong>=&gt; Chọn A&nbsp;</strong></p>\n\n<p><strong>Useful Structures</strong>: also equipped to + V</p>\n\n<p><strong>Dịch</strong>: Ch&uacute;ng t&ocirc;i cũng được trang bị đầy đủ để x&acirc;y dựng c&aacute;c hồ nước nhỏ hoặc c&aacute;c hạng mục cảnh quan li&ecirc;n quan đến nước kh&aacute;c.</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 134,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (134).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "they"
+            },
+            {
+              "choice": "B",
+              "text": "our"
+            },
+            {
+              "choice": "C",
+              "text": "its"
+            },
+            {
+              "choice": "D",
+              "text": "others"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Ph&iacute;a sau chỗ trống l&agrave; Danh từ expertise, do vậy cần 1 t&iacute;nh từ đứng ở chỗ &ocirc; trống. -&gt; chọn &quot;our&quot;.</p>\n\n<p><strong>Dịch</strong>: Với hơn 40 năm hoạt động trong lĩnh vực thiết kế cảnh quan, chuy&ecirc;n m&ocirc;n của ch&uacute;ng t&ocirc;i l&agrave; v&ocirc; song.</p>",
+          "tags": [
+            "[Part 6] Đại từ & Mệnh đề quan hệ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "135-138",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\">10 January</p>\n\n<p style=\"text-align: justify;\">Kay Berman</p>\n\n<p style=\"text-align: justify;\">70 Manchester Road, HARROGATE<br>\nHG22 3MJ</p>\n\n<p style=\"text-align: justify;\">Dear Ms. Berman,</p>\n\n<p style=\"text-align: justify;\">We are delighted to recognize your 30-year work anniversary with Brandrix Distribution Centre.&nbsp;<b><strong>(135)</strong></b>_____. Your dedication, loyalty, and hard work have played a major role in our success over the years, and we deeply value your commitment to high standards. Over the years, you&nbsp;<b><strong>(136)</strong></b>_____&nbsp;strong initiative, creativity, and leadership.</p>\n\n<p style=\"text-align: justify;\">A commemorative plaque will&nbsp;<b><strong>(137)</strong></b>_____&nbsp;be sent to you by post. We hope this small gift expresses our appreciation and serves as a reminder of how highly you are valued.</p>\n\n<p style=\"text-align: justify;\">Congratulations on reaching this&nbsp;<b><strong>(138)</strong></b>_____&nbsp;Thank you for being an important member of the Brandrix family.</p>\n\n<p style=\"text-align: justify;\">Sincerely,</p>\n\n<p style=\"text-align: justify;\">Lance Powar, Vice President of Human</p>\n\n<p style=\"text-align: justify;\">Resources Brandrix Distribution Centre</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 135,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (135).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "We highly appreciate our loyal long-term customers."
+            },
+            {
+              "choice": "B",
+              "text": "We would like to invite you to our holiday celebration."
+            },
+            {
+              "choice": "C",
+              "text": "Our yearly report is expected to be published soon."
+            },
+            {
+              "choice": "D",
+              "text": "You have been an important part of our team."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Cần một c&acirc;u thể hiện sự tr&acirc;n trọng đối với những đ&oacute;ng g&oacute;p l&acirc;u d&agrave;i của nh&acirc;n vi&ecirc;n để tiếp tục duy tr&igrave; giọng văn ch&uacute;c mừng của bức thư.</p>\n\n<p>(A) <em>We highly appreciate our loyal long-term customers</em>: n&oacute;i về kh&aacute;ch h&agrave;ng, kh&ocirc;ng phải nh&acirc;n vi&ecirc;n.</p>\n\n<p>(B) <em>We would like to invite you to our holiday celebration</em>: chuyển chủ đề đột ngột.</p>\n\n<p>(C) <em>Our yearly report is expected to be published soon</em>: kh&ocirc;ng li&ecirc;n quan đến dịp kỷ niệm.</p>\n\n<p>(D) <em>You have been an important part of our team</em>: thể hiện sự ghi nhận v&agrave; tr&acirc;n trọng đối với đ&oacute;ng g&oacute;p của nh&acirc;n vi&ecirc;n.</p>\n\n<p><strong>=&gt; Chọn </strong><b>D</b></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">Cấu tr&uacute;c hữu &iacute;ch:<br />\n&ldquo;be an important part of + danh từ/đại từ&rdquo;<br />\n= &ldquo;l&agrave; một phần quan trọng của + danh từ/đại từ&rdquo;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 136,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (136).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "should show"
+            },
+            {
+              "choice": "B",
+              "text": "is showing"
+            },
+            {
+              "choice": "C",
+              "text": "have shown"
+            },
+            {
+              "choice": "D",
+              "text": "have to show"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Cụm từ &ldquo;Over the years&rdquo; cho thấy cần d&ugrave;ng th&igrave; hiện tại ho&agrave;n th&agrave;nh (present perfect tense), d&ugrave;ng để diễn tả h&agrave;nh động hoặc phẩm chất k&eacute;o d&agrave;i từ qu&aacute; khứ đến hiện tại.</p>\n\n<p>(B) <em>is showing</em>: th&igrave; hiện tại tiếp diễn.</p>\n\n<p>(A) <em>should show</em>: diễn tả lời khuy&ecirc;n hoặc sự kỳ vọng.</p>\n\n<p>(C) <em>have shown</em>: dạng đ&uacute;ng của th&igrave; hiện tại ho&agrave;n th&agrave;nh.</p>\n\n<p>(D) <em>have to show</em>: diễn tả sự bắt buộc.</p>\n\n<p><strong>=&gt; Chọn C</strong></p>\n\n<p><strong>Cấu tr&uacute;c hữu &iacute;ch:</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">&ldquo;have/has + past participle&rdquo;<br />\n= &ldquo;have/has + qu&aacute; khứ ph&acirc;n từ&rdquo;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 137,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (137).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "after"
+            },
+            {
+              "choice": "B",
+              "text": "soon"
+            },
+            {
+              "choice": "C",
+              "text": "likewise"
+            },
+            {
+              "choice": "D",
+              "text": "despite"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Cần một trạng từ chỉ thời gian để bổ nghĩa cho cụm động từ &ldquo;will be sent&rdquo;.</p>\n\n<p>(A) <em>after</em> (giới từ/li&ecirc;n từ): cần một mệnh đề hoặc t&acirc;n ngữ đi k&egrave;m.</p>\n\n<p>(B) <em>soon</em> (trạng từ): trong thời gian ngắn, sắp xảy ra.</p>\n\n<p>(C) <em>likewise</em> (trạng từ): tương tự, cũng vậy.</p>\n\n<p>(D) <em>despite</em> (giới từ): thể hiện sự tương phản.</p>\n\n<p><strong>=&gt; Chọn B</strong></p>\n\n<p><strong>Cấu tr&uacute;c hữu &iacute;ch:</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">&ldquo;will soon be + past participle&rdquo;<br />\n= &ldquo;sẽ sớm được + qu&aacute; khứ ph&acirc;n từ&rdquo;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 138,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (138).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "milestone"
+            },
+            {
+              "choice": "B",
+              "text": "agreement"
+            },
+            {
+              "choice": "C",
+              "text": "comprehension"
+            },
+            {
+              "choice": "D",
+              "text": "destination"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Cần một danh từ mang nghĩa một th&agrave;nh tựu hoặc giai đoạn quan trọng v&igrave; bức thư đang ch&uacute;c mừng kỷ niệm 30 năm.</p>\n\n<p>(A) <em>milestone</em> (danh từ): một sự kiện hoặc th&agrave;nh tựu quan trọng.</p>\n\n<p>(B) <em>agreement</em> (danh từ): một thỏa thuận giữa c&aacute;c b&ecirc;n.</p>\n\n<p>(C) <em>comprehension</em> (danh từ): sự hiểu biết.</p>\n\n<p>(D) <em>destination</em> (danh từ): điểm đến, nơi ai đ&oacute; đi tới.</p>\n\n<p><strong>=&gt; Chọn A</strong></p>\n\n<p><strong>Cấu tr&uacute;c hữu &iacute;ch:</strong></p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">&ldquo;reach a milestone&rdquo;<br />\n= &ldquo;đạt được một cột mốc quan trọng&rdquo;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "139-142",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\">To: Cindy Mulligan &lt;cmulligan@xmail.com&gt;</p>\n\n<p style=\"text-align: justify;\">From: Ali Chaleby &lt;achaleby@ralenciadesign.com&gt;</p>\n\n<p style=\"text-align: justify;\">Date: August 15</p>\n\n<p style=\"text-align: justify;\">Subject: Plans for living room</p>\n\n<p style=\"text-align: justify;\">Attachment: Samples</p>\n\n<p style=\"text-align: justify;\">Dear Ms. Mulligan,</p>\n\n<p style=\"text-align: justify;\">My design team is currently in the process of&nbsp;<b><strong>(139)</strong></b>_____&nbsp;the plans for your living room. Based on our previous discussion, I have selected various paint options for the walls and borders. Please review the attached file and let us know whether you are satisfied with those new&nbsp;<b><strong>(140)</strong></b>_____. If not, it is still possible to make adjustments.&nbsp;<b><strong>(141)</strong></b>_____. Your feedback will help us improve the design before we begin implementation.</p>\n\n<p style=\"text-align: justify;\">Please let&nbsp;<b><strong>(142)</strong></b>_____&nbsp;know if you have any questions. I look forward to your response.</p>\n\n<p style=\"text-align: justify;\">Kind regards,</p>\n\n<p style=\"text-align: justify;\">Ali Chaleby, Ralencia Design</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 139,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (139).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "finalizing"
+            },
+            {
+              "choice": "B",
+              "text": "finalizes"
+            },
+            {
+              "choice": "C",
+              "text": "finalized"
+            },
+            {
+              "choice": "D",
+              "text": "finalize"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Cụm từ &ldquo;in the process of&rdquo; phải được theo sau bởi danh động từ (dạng V-ing).</p>\n\n<p>(A) finalizing: dạng danh động từ (V-ing)</p>\n\n<p>(B) finalizes: th&igrave; hiện tại đơn</p>\n\n<p>(C) finalized: qu&aacute; khứ ph&acirc;n từ / qu&aacute; khứ đơn</p>\n\n<p>(D) finalize: động từ nguy&ecirc;n mẫu</p>\n\n<p><strong>=&gt; Chọn A</strong></p>\n\n<p><strong>Cấu tr&uacute;c:</strong> &ldquo;be in the process of + V-ing&rdquo;</p>",
+          "tags": [
+            "[Part 6] Thì & Dạng động từ"
+          ]
+        },
+        {
+          "num": 140,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (140).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "schedules"
+            },
+            {
+              "choice": "B",
+              "text": "institutions"
+            },
+            {
+              "choice": "C",
+              "text": "colors"
+            },
+            {
+              "choice": "D",
+              "text": "periods"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Email n&agrave;y thảo luận về c&aacute;c lựa chọn sơn cho tường v&agrave; đường viền, v&igrave; vậy cần một danh từ li&ecirc;n quan đến sơn.</p>\n\n<p>(A) schedules: lịch tr&igrave;nh</p>\n\n<p>(B) institutions: tổ chức</p>\n\n<p>(C) colors: m&agrave;u sắc hoặc t&ocirc;ng m&agrave;u sơn</p>\n\n<p>(D) periods: khoảng thời gian</p>\n\n<p><strong>=&gt; Chọn C</strong></p>\n\n<p>Cấu tr&uacute;c: &ldquo;paint options for + danh từ&rdquo;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 141,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (141).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "I have already started preparing plans for your kitchen."
+            },
+            {
+              "choice": "B",
+              "text": "We do not intend to start the work for another two weeks."
+            },
+            {
+              "choice": "C",
+              "text": "Your living room is especially large and well-ventilated."
+            },
+            {
+              "choice": "D",
+              "text": "We still have not received your latest payment."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Cần một c&acirc;u giải th&iacute;ch rằng việc thay đổi vẫn c&ograve;n c&oacute; thể để ph&ugrave; hợp với c&acirc;u trước đ&oacute;.</p>\n\n<p>(A) I have already started preparing plans for your kitchen: chủ đề kh&ocirc;ng li&ecirc;n quan</p>\n\n<p>(B) We do not intend to start the work for another two weeks: giải th&iacute;ch rằng vẫn c&ograve;n thời gian để điều chỉnh</p>\n\n<p>(C) Your living room is especially large and well-ventilated: chi tiết kh&ocirc;ng li&ecirc;n quan</p>\n\n<p>(D) We still have not received your latest payment: kh&ocirc;ng ph&ugrave; hợp v&agrave; kh&ocirc;ng li&ecirc;n quan</p>\n\n<p><strong>=&gt; Chọn B</strong></p>\n\n<p>Cấu tr&uacute;c: &ldquo;intend to + động từ&rdquo;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 142,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (142).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "her"
+            },
+            {
+              "choice": "B",
+              "text": "them"
+            },
+            {
+              "choice": "C",
+              "text": "they"
+            },
+            {
+              "choice": "D",
+              "text": "me"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>(A) her (t&iacute;nh từ đại từ sở hữu / đại từ sở hữu)</p>\n\n<p>(B) them (đại từ t&acirc;n ngữ số nhiều)</p>\n\n<p>(C) they (đại từ chủ ngữ)</p>\n\n<p>(D) me (đại từ t&acirc;n ngữ số &iacute;t)</p>\n\n<p><strong>=&gt; Chọn D</strong></p>\n\n<p>Việc chọn &ldquo;me&rdquo; l&agrave; lựa chọn ph&ugrave; hợp nhất về mặt ngữ ph&aacute;p v&agrave; ngữ nghĩa.</p>\n\n<p>Cấu tr&uacute;c &ldquo;Please let me know&rdquo; l&agrave; một c&aacute;ch kết th&uacute;c email cực kỳ phổ biến. Người viết đang y&ecirc;u cầu kh&aacute;ch h&agrave;ng phản hồi trực tiếp cho m&igrave;nh.</p>",
+          "tags": [
+            "[Part 6] Đại từ & Mệnh đề quan hệ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "143-146",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\">To: Marsha Laura mlaura@mansfield.com</p>\n\n<p style=\"text-align: justify;\">From: Kaymar PCP info@kaymarpcp.com</p>\n\n<p style=\"text-align: justify;\">Date: September 8</p>\n\n<p style=\"text-align: justify;\">Subject: Your recent office visit</p>\n\n<p style=\"text-align: justify;\">Dear Ms. Laura,</p>\n\n<p style=\"text-align: justify;\">Thank you for visiting Kaymar Primary Care Practice recently. We hope you found our services <b><strong>(143)</strong></b>_____, and we appreciate any feedback you may have for further improvement.</p>\n\n<p style=\"text-align: justify;\">A&nbsp;<b><strong>(144)</strong></b>_____ of your consultation has been uploaded to our portal. Please review it at your convenience and contact us if you have any questions.</p>\n\n<p style=\"text-align: justify;\">As a reminder, the portal allows you to perform a variety of tasks. <b><strong>(145)</strong></b>_____, you may schedule appointments, make payments, access your medical records, check lab results, and request prescription refills.&nbsp;<b><strong>(146)</strong></b>_____. Your personal information will remain protected and confidential.</p>\n\n<p style=\"text-align: justify;\">We thank you for your business. We look forward to serving you again in the future.</p>\n\n<p style=\"text-align: justify;\">Kaymar Primary Care Practice</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 143,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (143).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "satisfactorily"
+            },
+            {
+              "choice": "B",
+              "text": "satisfied"
+            },
+            {
+              "choice": "C",
+              "text": "satisfactory"
+            },
+            {
+              "choice": "D",
+              "text": "satisfaction"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>C&acirc;u n&agrave;y cần một t&iacute;nh từ để m&ocirc; tả &ldquo;services&rdquo; sau cấu tr&uacute;c &ldquo;found + object + adjective&rdquo;.</p>\n\n<p>(A) satisfactorily: trạng từ, nghĩa l&agrave; &ldquo;một c&aacute;ch đạt y&ecirc;u cầu&rdquo;</p>\n\n<p>(B) satisfied: t&iacute;nh từ, thường d&ugrave;ng để m&ocirc; tả cảm x&uacute;c của con người</p>\n\n<p>(C) satisfactory: t&iacute;nh từ, nghĩa l&agrave; &ldquo;đủ tốt&rdquo; hoặc &ldquo;đạt y&ecirc;u cầu&rdquo;</p>\n\n<p>(D) satisfaction: danh từ, nghĩa l&agrave; &ldquo;sự h&agrave;i l&ograve;ng&rdquo;</p>\n\n<p><strong>=&gt; Chọn C</strong></p>\n\n<p><strong>Cấu tr&uacute;c:</strong> &ldquo;find + object + adjective&rdquo;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ loại"
+          ]
+        },
+        {
+          "num": 144,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (144).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "picture"
+            },
+            {
+              "choice": "B",
+              "text": "lesson"
+            },
+            {
+              "choice": "C",
+              "text": "summary"
+            },
+            {
+              "choice": "D",
+              "text": "trip"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>C&acirc;u n&agrave;y n&oacute;i về th&ocirc;ng tin từ buổi tư vấn được tải l&ecirc;n cổng th&ocirc;ng tin, v&igrave; vậy cần một danh từ li&ecirc;n quan đến b&aacute;o c&aacute;o hoặc bản t&oacute;m tắt.</p>\n\n<p>(A) picture: h&igrave;nh ảnh</p>\n\n<p>(B) lesson: b&agrave;i học hoặc buổi học</p>\n\n<p>(C) summary: bản t&oacute;m tắt ngắn c&aacute;c &yacute; ch&iacute;nh</p>\n\n<p>(D) trip: chuyến đi</p>\n\n<p><strong>=&gt; Chọn C</strong></p>\n\n<p><strong>Cấu tr&uacute;c:</strong> &ldquo;a summary of + noun&rdquo;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 145,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (145).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "However"
+            },
+            {
+              "choice": "B",
+              "text": "For instance"
+            },
+            {
+              "choice": "C",
+              "text": "To repeat"
+            },
+            {
+              "choice": "D",
+              "text": "Consequently"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>C&acirc;u thứ hai đưa ra v&iacute; dụ về c&aacute;c hoạt động tr&ecirc;n cổng th&ocirc;ng tin, v&igrave; vậy cần một cụm từ d&ugrave;ng để giới thiệu v&iacute; dụ.</p>\n\n<p>(A) However: thể hiện sự tương phản</p>\n\n<p>(B) For instance: v&iacute; dụ như</p>\n\n<p>(C) To repeat: n&oacute;i lại điều g&igrave; đ&oacute;</p>\n\n<p>(D) Consequently: kết quả l&agrave;</p>\n\n<p><strong>=&gt; Chọn B</strong></p>\n\n<p><strong>Cấu tr&uacute;c:</strong> &ldquo;For instance, + example&rdquo;</p>",
+          "tags": [
+            "[Part 6] Giới từ"
+          ]
+        },
+        {
+          "num": 146,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (146).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "We encourage you to use this resource to take care of your health-care needs."
+            },
+            {
+              "choice": "B",
+              "text": "The office staff will finish work earlier on Friday afternoons."
+            },
+            {
+              "choice": "C",
+              "text": "Kindly arrive at our office fifteen minutes before your scheduled time."
+            },
+            {
+              "choice": "D",
+              "text": "We are sorry for any misunderstanding regarding your appointment schedule."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Đoạn văn n&oacute;i về c&aacute;c lợi &iacute;ch v&agrave; chức năng của cổng th&ocirc;ng tin, v&igrave; vậy cần một c&acirc;u khuyến kh&iacute;ch bệnh nh&acirc;n sử dụng t&agrave;i nguy&ecirc;n n&agrave;y.</p>\n\n<p>(A) Ch&uacute;ng t&ocirc;i khuyến kh&iacute;ch bạn sử dụng t&agrave;i nguy&ecirc;n n&agrave;y để chăm s&oacute;c nhu cầu y tế của m&igrave;nh.</p>\n\n<p>(B) Nh&acirc;n vi&ecirc;n văn ph&ograve;ng sẽ kết th&uacute;c c&ocirc;ng việc sớm hơn v&agrave;o c&aacute;c buổi chiều thứ S&aacute;u.</p>\n\n<p>(C) Vui l&ograve;ng đến văn ph&ograve;ng của ch&uacute;ng t&ocirc;i sớm 15 ph&uacute;t trước giờ hẹn.</p>\n\n<p>(D) Ch&uacute;ng t&ocirc;i xin lỗi v&igrave; bất kỳ sự hiểu lầm n&agrave;o li&ecirc;n quan đến lịch hẹn của bạn.</p>\n\n<p><strong>=&gt; Chọn A</strong></p>\n\n<p><strong>Cấu tr&uacute;c:</strong> &ldquo;encourage someone to + động từ&rdquo;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 6
+}

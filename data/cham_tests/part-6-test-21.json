@@ -1,0 +1,494 @@
+{
+  "id": "cham_part_6_test_21",
+  "sourceId": "64c786cf42f5200632c82367",
+  "slug": "part-6-test-21",
+  "title": "Đề lẻ Part 6 · Test 21",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 10,
+  "totalQuestions": 16,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_6": 16
+  },
+  "groups": [
+    {
+      "part": 6,
+      "range": "131-134",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>November 16<br>Dear Ms. Charron,<br>It was a pleasure meeting you in person this morning to learn more about your desire to outsource Eastway Shipping's bookkeeping. <strong>(131)_____</strong> I understand that you no longer wish to handle these types of tasks. I am confident that our dependable certified accountants can take on the <strong>(132)______</strong>. I hope that your questions and concerns <strong>(133)______</strong> during our meeting. If not, please feel free to contact me at 555-7966 with further inquiries. In addition, I have enclosed a brochure of our services for you to <strong>(134)______</strong>.<br>Warmest regards,<br>William Satterfield</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 131,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (131).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "I will delete the error from the October invoice right away."
+            },
+            {
+              "choice": "B",
+              "text": "Please call my office if the items do not arrive on time."
+            },
+            {
+              "choice": "C",
+              "text": "Your accounting needs can easily be handled by our experienced team."
+            },
+            {
+              "choice": "D",
+              "text": "The business transports goods to distribution centers all over the world."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>C đ&uacute;ng</strong> v&igrave; n&oacute; c&oacute; thể nối với c&acirc;u <em>&quot;It was a pleasure meeting you in person this morning to learn more about your desire to outsource Eastway Shipping&#39;s bookkeeping.&quot;</em></p>\n\n<p>accounting = bookkeeping: kế to&aacute;n</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 132,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (132).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "incident"
+            },
+            {
+              "choice": "B",
+              "text": "role"
+            },
+            {
+              "choice": "C",
+              "text": "outcome"
+            },
+            {
+              "choice": "D",
+              "text": "progress"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>incident: sự cố</p>\n<p>role: vai trò</p>\n<p>outcome: kết quả</p>\n<p>progress: quá trình</p>\n<p>take on the role: đảm nhận vai trò</p>\n<p><strong>Tạm dịch:</strong> Tôi tin tưởng rằng các kế toán viên được chứng nhận đáng tin cậy của chúng tôi có thể đảm nhận vai trò này.</p>\n<p><strong>=&gt; Chọn B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 133,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (133).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "addresses"
+            },
+            {
+              "choice": "B",
+              "text": "addressing"
+            },
+            {
+              "choice": "C",
+              "text": "were addressed"
+            },
+            {
+              "choice": "D",
+              "text": "had addressed"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Câu cần chia ở thể bị động vì các câu hỏi và mối quan tâm không thể tự mình giải quyết được.</p>\n<p><strong>Tạm dịch:</strong> Tôi hy vọng rằng các câu hỏi và mối quan tâm của bạn đã được giải quyết trong cuộc họp của chúng ta.</p>\n<p><strong>=&gt; Chọn C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 134,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (134).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "translate"
+            },
+            {
+              "choice": "B",
+              "text": "review"
+            },
+            {
+              "choice": "C",
+              "text": "recommend"
+            },
+            {
+              "choice": "D",
+              "text": "oversee"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>translate: dịch</p>\n\n<p>review: xem x&eacute;t lại</p>\n\n<p>recommend: giới thiệu</p>\n\n<p>oversee: gi&aacute;m s&aacute;t</p>\n\n<p><strong>Tạm dịch:</strong> Ngo&agrave;i ra, t&ocirc;i c&ograve;n đ&iacute;nh k&egrave;m một tập t&agrave;i liệu về c&aacute;c dịch vụ của ch&uacute;ng t&ocirc;i để bạn xem x&eacute;t.</p>\n\n<p><strong>=&gt; Choose B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "135-138",
+      "audio": null,
+      "images": [],
+      "passageHtml": "Mercury Fashions Fall Line<br>Mercury Fashions offers luxurious apparel that fits your lifestyle. On September 1, we <strong>(135)_____</strong> our new line of fall fashions at a runway show at Sapphire Plaza. We closely follow the latest fashion trends, so we plan to have clothes dominated by the hottest colors to help you show your style. These cutting-edge designs are flattering to a wide range of body types. <strong>(136)______</strong>, we have new accessories like scarves, handbags, and hats that you can mix and match. <strong>(137)_______.</strong> Visit www.mercuryfashions.com for a sneak peek. These beautiful items will be in <strong>(138)______</strong> high-end department stores on the same day as the runway show.",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 135,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (135).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "have revealed"
+            },
+            {
+              "choice": "B",
+              "text": "have been revealing"
+            },
+            {
+              "choice": "C",
+              "text": "are going to reveal"
+            },
+            {
+              "choice": "D",
+              "text": "revealed"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Dấu hiệu: we&nbsp;<strong>plan to</strong>&nbsp;have clothes dominated by the hottest colors to help you show your style.&nbsp;</p>\n<p>=&gt; Hành động sẽ xảy ra ở tương lai. Chia động từ thì tương lai gần</p>\n<p><strong>Tạm dịch: </strong>Vào ngày 1 tháng 9, chúng tôi sẽ ra mắt dòng thời trang mùa thu mới tại buổi trình diễn thời trang ở Sapphire Plaza.</p>\n<p><strong>=&gt; Chọn C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 136,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (136).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Even"
+            },
+            {
+              "choice": "B",
+              "text": "Also"
+            },
+            {
+              "choice": "C",
+              "text": "Rather"
+            },
+            {
+              "choice": "D",
+              "text": "Merely"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Even: thậm chí, ngay cả</p>\n<p>Also: ngoài ra</p>\n<p>Rather: khá là</p>\n<p>Merely: chỉ</p>\n<p><strong>Tạm dịch:</strong> Ngoài ra, chúng tôi còn có các phụ kiện mới như khăn quàng cổ, túi xách và mũ mà bạn có thể kết hợp.</p>\n<p><strong>=&gt; Chọn B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 137,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (137).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Our design team is always standing by you to meet your custom requests."
+            },
+            {
+              "choice": "B",
+              "text": "The tags should be removed before wearing them."
+            },
+            {
+              "choice": "C",
+              "text": "Create dozens of your own looks as you want."
+            },
+            {
+              "choice": "D",
+              "text": "Our headquarters will relocate in the city of New York."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>C đ&uacute;ng</strong> v&igrave; n&oacute; c&oacute; thể kết nối với c&acirc;u <em>&quot;we have new accessories like scarves, handbags, and hats that&nbsp;<strong>you can mix and match</strong>.&quot;</em></p>\n\n<p><em>you can mix and match = Create dozens of your own looks&nbsp;</em></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 138,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (138).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "most"
+            },
+            {
+              "choice": "B",
+              "text": "which"
+            },
+            {
+              "choice": "C",
+              "text": "their"
+            },
+            {
+              "choice": "D",
+              "text": "soon"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>most: hầu hết</p>\n\n<p>which: c&aacute;i m&agrave;</p>\n\n<p>their: của họ</p>\n\n<p>soon: sớm</p>\n\n<p><strong>Tạm dịch:</strong> Những m&oacute;n đồ đẹp mắt n&agrave;y sẽ c&oacute; mặt ở hầu hết c&aacute;c cửa h&agrave;ng b&aacute;ch h&oacute;a cao cấp v&agrave;o c&ugrave;ng ng&agrave;y diễn ra buổi tr&igrave;nh diễn.</p>\n\n<p><strong>=&gt; Chọn A</strong></p>",
+          "tags": [
+            "[Part 6] Đại từ & Mệnh đề quan hệ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "139-142",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>October 9<br>Ralph Benton<br>874 Everette Way<br>Coral Springs, FL 33065<br>Dear Mr. Benton,<br>Thanks to the collaborative <strong>(139)______</strong> of you and your team, Otis Rentals has become the number one car rental agency in Florida. Our market share has grown from 15% to 41% in just three years under your leadership. <strong>(140)______.</strong><br>On behalf of Otis Rentals, I would like to invite you to transfer to our Texas branch, where you would take on the role of regional manager. This region <strong>(141) ______ </strong>the most competitive one in the country, but I believe that you are up to the challenge. The preferred start date is November 15. <strong>(142) _______</strong>, we can be somewhat flexible if more time to make arrangements is needed.<br>Sincerely,<br>Lucille Walsh, Chief Operations Officer<br>Otis Rentals</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 139,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (139).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "efforts"
+            },
+            {
+              "choice": "B",
+              "text": "reports"
+            },
+            {
+              "choice": "C",
+              "text": "panels"
+            },
+            {
+              "choice": "D",
+              "text": "visits"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>effort: nỗ lực<br>report: báo cáo<br>panel: nhóm hội thảo<br>visit: thăm</p>\n<p><strong>Tạm dịch:</strong> Nhờ những nỗ lực hợp tác của bạn và nhóm của bạn, Otis Rentals đã trở thành đại lý cho thuê ô tô số một ở Florida.</p>\n<p><strong>=&gt; Chọn A</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 140,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (140).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "I will take a trip to Florida for the first time."
+            },
+            {
+              "choice": "B",
+              "text": "Such an accomplishment is rarely seen in our field."
+            },
+            {
+              "choice": "C",
+              "text": "Please confirm which job candidate you prefer."
+            },
+            {
+              "choice": "D",
+              "text": "It had four doors and a spacious trunk in the back."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>B đ&uacute;ng</strong> v&igrave; n&oacute; c&oacute; thể kết nối với c&acirc;u&nbsp;<em>&quot;Our market share has grown from 15% to 41% in just three years under your leadership.&quot;</em></p>\n\n<p><em>&quot;Such an accomplishment&quot;&nbsp;</em> =<em>&nbsp;&quot;market share has grown from 15% to 41% in just three years&quot;</em></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 141,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (141).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "considers"
+            },
+            {
+              "choice": "B",
+              "text": "was considered"
+            },
+            {
+              "choice": "C",
+              "text": "is considered"
+            },
+            {
+              "choice": "D",
+              "text": "considering"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Chỗ trống cần chia ở thể bị động -&gt; Loại A, D.</p>\n<p>Ngoài ra, hành động xảy ra ở hiện tại -&gt;&nbsp;<strong>Chọn C</strong></p>\n<p><strong>Tạm dịch: </strong>Khu vực này được coi là khu vực cạnh tranh nhất trong cả nước, nhưng tôi tin rằng bạn có thể vượt qua thử thách.</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 142,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (142).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Consequently"
+            },
+            {
+              "choice": "B",
+              "text": "Besides"
+            },
+            {
+              "choice": "C",
+              "text": "For example"
+            },
+            {
+              "choice": "D",
+              "text": "However"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Consequently: kết quả là</p>\n<p>Besides: bên cạnh đó</p>\n<p>For example: ví dụ</p>\n<p>However: tuy nhiên</p>\n<p>Tạm dịch: Ngày bắt đầu ưu tiên là ngày 15 tháng 11. <em><strong>Tuy nhiên, chúng tôi có thể linh hoạt phần nào nếu cần thêm thời gian để sắp xếp.</strong></em></p>\n<p><strong>=&gt; Chọn D</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "143-146",
+      "audio": null,
+      "images": [],
+      "passageHtml": "(October 12) - Rapid Insurance, one of the nation's largest providers of homeowners insurance, has announced a change at the executive level. Lillian Howes has been selected by the Rapid Insurance board as the company's new CEO. She <strong>(143) ______</strong> James Loftin, who held the position for thirteen years.<br>\"Mr. Loftin will leave the company to work in the charity sector, and we wish him all the best in his <strong>(144)______</strong> endeavors,\" said Rapid Insurance spokesperson Anna Gilley. Investors are pleased with the change, as Ms. Howes is no stranger to Rapid Insurance's operations. \"Ms. Howes <strong>(145)______</strong> worked as the managing director of the company before becoming the chief operating officer three years ago,\" commented Ms. Gilley.”<strong>(146)______</strong>”",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 143,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (143).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "has been succeeded"
+            },
+            {
+              "choice": "B",
+              "text": "succeeds"
+            },
+            {
+              "choice": "C",
+              "text": "would have succeeded"
+            },
+            {
+              "choice": "D",
+              "text": "was succeeding"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Các hành động diễn ra ở hiện tại, diển tả sự việc thực tế =&gt;&nbsp; chia thì hiện tại đơn</p>\n<p><strong>=&gt; Chọn B</strong></p>\n<p><strong>Tạm dịch:</strong> Cô kế nhiệm James Loftin, người đã giữ chức vụ này trong mười ba năm.</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 144,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (144).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "constant"
+            },
+            {
+              "choice": "B",
+              "text": "accurate"
+            },
+            {
+              "choice": "C",
+              "text": "future"
+            },
+            {
+              "choice": "D",
+              "text": "distant"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>constant (adj): liên tục</p>\n<p>accurate&nbsp;(adj): chính xác</p>\n<p>future&nbsp;(adj): trong tương lai</p>\n<p>distant&nbsp;(adj): xa</p>\n<p><strong>Tạm dịch:</strong> Người phát ngôn của Rapid Insurance, Anna Gilley, cho biết: “Ông Loftin sẽ rời công ty để làm việc trong lĩnh vực từ thiện và chúng tôi chúc ông mọi điều tốt đẹp nhất trong những nỗ lực trong tương lai”.</p>\n<p><strong>=&gt; Chọn C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 145,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (145).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "authentically"
+            },
+            {
+              "choice": "B",
+              "text": "suddenly"
+            },
+            {
+              "choice": "C",
+              "text": "regrettably"
+            },
+            {
+              "choice": "D",
+              "text": "previously"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>authentically (adv): đáng tin</p>\n<p>suddenly (adv): đột nhiên</p>\n<p>regrettably (adv): đáng tiếc</p>\n<p>previously (adv): trước đây</p>\n<p>Dựa vào nghĩa của các từ&nbsp;<strong>=&gt; Chọn D</strong></p>\n<p><strong>Tạm dịch:&nbsp;</strong>Bà Gilley nhận xét: “Bà Howes trước đây từng giữ chức vụ giám đốc điều hành của công ty trước khi trở thành giám đốc điều hành ba năm trước”</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 146,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (146).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "We plan to look into the matter carefully."
+            },
+            {
+              "choice": "B",
+              "text": "We believe the transition will be a smooth one."
+            },
+            {
+              "choice": "C",
+              "text": "The new insurance package has become popular."
+            },
+            {
+              "choice": "D",
+              "text": "The board will make the final decision so"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>B đ&uacute;ng</strong> v&igrave; n&oacute; ph&ugrave; hợp với bối cảnh n&oacute;i về sự kiện b&agrave; Howes trở th&agrave;nh CEO mới của c&ocirc;ng ty.</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 6
+}

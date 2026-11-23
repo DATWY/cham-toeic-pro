@@ -1,0 +1,4058 @@
+/* ============================================================
+   CHAM TOEIC Pro — Unified Standard Exam Hub, Split Runner & Review CSS
+   Design Standard: Calm Light Blue & Slate (100% Unified with Studio)
+   100% WCAG AA Compliant across Light Blue & Dark Themes
+   ============================================================ */
+
+:root {
+  --cham-primary: var(--accent);
+  --cham-primary-bg: var(--btn-primary-bg);
+  --cham-primary-hover: var(--btn-primary-hover);
+  --cham-primary-soft: var(--accent-soft);
+  --cham-primary-border: var(--accent-border);
+  /* Unified aliases so zero crimson/royal clash ever occurs */
+  --cham-crimson: var(--accent);
+  --cham-crimson-hover: var(--accent-hover);
+  --cham-crimson-soft: var(--accent-soft);
+  --cham-crimson-border: var(--accent-border);
+  --cham-royal: var(--accent);
+  --cham-royal-hover: var(--accent-hover);
+  --cham-royal-soft: var(--accent-soft);
+  --cham-royal-border: var(--accent-border);
+  --cham-amber-bg: #fffbeb;
+  --cham-amber-border: #fcd34d;
+  --cham-amber-text: #78350f;
+  --cham-purple: #6d28d9;
+}
+
+[data-theme="dark"] {
+  --cham-amber-bg: rgba(245, 158, 11, 0.14);
+  --cham-amber-border: rgba(251, 191, 36, 0.42);
+  --cham-amber-text: #fde68a;
+  --cham-purple: #c084fc;
+}
+
+.cham-hl-ok {
+  background: var(--ok-soft);
+  color: var(--ok);
+  border: 1px solid var(--ok-border);
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+/* --- Studio Pro Part 1 & Part 2 Blind Option Polish --- */
+.opt-blind-placeholder {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.92rem;
+}
+
+.p12-peek-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 11px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.p12-peek-btn:hover,
+.p12-peek-btn.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.cbt-intermission-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border-radius: var(--radius-md);
+  background: var(--ok-soft);
+  border: 1.5px solid var(--ok-border);
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+}
+
+/* --- Unified Topbar & Sidebar Launch Controls (Zero Red Clash) --- */
+#open-cham-hub-btn {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+#open-cham-hub-btn:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.sidebar-cham-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 11px 12px;
+  margin-bottom: 12px;
+  border-radius: var(--radius-md);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-family: inherit;
+  color: var(--text);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.sidebar-cham-banner:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--accent);
+}
+
+.sidebar-cham-banner-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.sidebar-cham-banner-title {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cham-sidebar-ets-badge {
+  font-size: 11.4px;
+  line-height: 1.15;
+  background: var(--surface);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.sidebar-cham-banner-sub {
+  font-size: 12.4px;
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.38;
+}
+
+/* --- Active Hub Body Mode (v21: Unified Global Header Stays Visible Except Inside CBT Runner/Review) --- */
+body.is-cham-runner-active > header.topbar {
+  display: none !important;
+}
+
+body.is-cham-hub-active > main.workspace,
+body.is-cham-hub-active > #v21-home-root,
+body.is-cham-hub-active > #v21-practice-root,
+body.is-cham-hub-active > #studio-lobby-root,
+body.is-cham-hub-active > #materials-hub-root,
+body.is-cham-hub-active > #focus-theater-bar,
+body.is-cham-hub-active > #focus-dock,
+body.is-materials-hub-active > main.workspace,
+body.is-materials-hub-active > #v21-home-root,
+body.is-materials-hub-active > #v21-practice-root,
+body.is-materials-hub-active > #studio-lobby-root,
+body.is-materials-hub-active > #cham-hub-root,
+body.is-materials-hub-active > #focus-theater-bar,
+body.is-materials-hub-active > #focus-dock {
+  display: none !important;
+}
+
+#v21-home-root,
+#v21-practice-root,
+#studio-lobby-root {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+#v21-home-root[hidden],
+#v21-practice-root[hidden],
+#studio-lobby-root[hidden] {
+  display: none !important;
+}
+
+#cham-hub-root,
+#materials-hub-root {
+  min-height: calc(100dvh - 56px);
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+}
+
+body.is-cham-runner-active #cham-hub-root {
+  min-height: 100dvh;
+}
+
+:root[data-theme="light"] #v21-home-root,
+:root[data-theme="light"] #v21-practice-root,
+:root[data-theme="light"] #studio-lobby-root,
+:root[data-theme="light"] #cham-hub-root,
+:root[data-theme="light"] #materials-hub-root {
+  background-image: none;
+}
+
+#cham-hub-root[hidden],
+#materials-hub-root[hidden] {
+  display: none !important;
+}
+
+/* ============================================================
+   1. UNIFIED GLOBAL HEADER (.cham-header — Web Standard)
+   ============================================================ */
+.cham-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: var(--header-bg);
+  backdrop-filter: var(--header-blur);
+  -webkit-backdrop-filter: var(--header-blur);
+  border-bottom: 1px solid var(--header-border);
+  box-shadow: var(--shadow-xs);
+}
+
+.cham-header-inner {
+  max-width: 1540px;
+  margin-inline: auto;
+  padding: 7px 20px;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.cham-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
+.cham-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--text);
+  font-family: inherit;
+  text-align: left;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.cham-brand:hover .cham-brand-badge {
+  background: var(--btn-primary-hover);
+}
+
+.cham-brand > span:last-child {
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cham-brand-badge {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  font-weight: 600;
+  font-size: 12.2px;
+  letter-spacing: 0.03em;
+  padding: 7px 11px;
+  border-radius: var(--radius-sm);
+  line-height: 1;
+  box-shadow: var(--btn-primary-shadow);
+  white-space: nowrap;
+  flex: none;
+  transition: background var(--transition-fast);
+}
+
+.cham-brand-title {
+  font-weight: 600;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  color: var(--text);
+  display: block;
+  line-height: 1.22;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cham-brand-sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
+  display: block;
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Primary Suite Switcher (Kho 35 Đề <-> Phòng Luyện Sâu) */
+.cham-suite-switch {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 3px;
+  gap: 2px;
+  flex: none;
+}
+
+.cham-suite-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 13.4px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.cham-suite-tab:hover {
+  color: var(--text);
+}
+
+.cham-suite-tab.is-active {
+  background: var(--surface);
+  color: var(--accent);
+  font-weight: 600;
+  box-shadow: inset 0 -2.5px 0 var(--warm-bright), var(--shadow-xs);
+}
+
+.cham-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+#cham-resume-draft-btn {
+  max-width: 215px;
+  padding: 7px 11px;
+  font-size: 12.8px;
+  min-width: 0;
+}
+
+#cham-resume-draft-btn span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.cham-utility-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.cham-icon-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 12.8px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.cham-icon-tool:hover {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-xs);
+}
+
+.cham-icon-tool.is-icon-only {
+  width: 32px;
+  padding: 0;
+}
+
+/* Unified Button System */
+.cham-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.86rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.cham-btn svg {
+  flex-shrink: 0;
+}
+
+.cham-btn:hover:not(:disabled) {
+  background: var(--surface-2);
+  border-color: var(--text-dim);
+}
+
+.cham-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Unified Solid Primary Button (replaces both royal & crimson solid buttons) */
+.cham-btn-primary,
+.cham-btn-royal,
+.cham-btn-crimson {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+  font-weight: 500;
+  box-shadow: var(--btn-primary-shadow);
+}
+
+.cham-btn-primary:hover:not(:disabled),
+.cham-btn-royal:hover:not(:disabled),
+.cham-btn-crimson:hover:not(:disabled) {
+  background: var(--btn-primary-hover);
+  border-color: var(--btn-primary-hover);
+  color: var(--btn-primary-text);
+  transform: translateY(-1px);
+}
+
+/* Sleek Soft-Outline Card Action Button */
+.cham-btn-outline-crimson,
+.cham-btn-soft-primary {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  font-weight: 500;
+}
+
+.cham-btn-outline-crimson:hover:not(:disabled),
+.cham-btn-soft-primary:hover:not(:disabled) {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+  box-shadow: var(--btn-primary-shadow);
+}
+
+/* Secondary Subtle Action (e.g. Retake Mistakes) */
+.cham-btn-accent-outline {
+  background: var(--surface);
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+  font-weight: 500;
+}
+
+.cham-btn-accent-outline:hover:not(:disabled) {
+  background: var(--accent-soft);
+  border-color: var(--accent-hover);
+  color: var(--accent-hover);
+}
+
+/* Warm Sunset Accent Buttons (Primary CTAs, Priority Actions & Draft Resume) */
+.cham-btn-warm {
+  background: var(--warm-btn-bg);
+  color: var(--warm-contrast);
+  border-color: var(--warm-btn-bg);
+  font-weight: 500;
+  box-shadow: var(--warm-shadow);
+}
+
+.cham-btn-warm:hover:not(:disabled) {
+  background: var(--warm-btn-hover);
+  border-color: var(--warm-btn-hover);
+  color: var(--warm-contrast);
+  transform: translateY(-1px);
+}
+
+.cham-btn-warm-soft {
+  background: var(--warm-soft);
+  color: var(--warm);
+  border-color: var(--warm-border);
+  font-weight: 500;
+}
+
+.cham-btn-warm-soft:hover:not(:disabled) {
+  background: var(--warm-soft-hover);
+  border-color: var(--warm-bright);
+  color: var(--warm-hover);
+}
+
+/* ============================================================
+   2. LIBRARY SCREEN: COMPACT OVERVIEW BAR, FILTER BAR & 3-COLUMN CARDS
+   ============================================================ */
+.cham-container {
+  max-width: 1260px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 18px 20px 48px;
+  flex: 1;
+}
+
+/* Unified Compact Overview Bar */
+.cham-overview-bar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--warm-bright);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cham-overview-bar .cham-kpi-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  margin-bottom: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.cham-overview-bar .cham-kpi-card {
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 4px 18px 4px 0;
+  margin-right: 18px;
+  gap: 10px;
+  flex: 0 1 auto;
+}
+
+.cham-overview-bar .cham-kpi-card:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 4px;
+}
+
+.cham-overview-bar .cham-kpi-icon,
+.cham-kpi-strip.is-compact .cham-kpi-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+}
+
+.cham-overview-bar .cham-kpi-val,
+.cham-kpi-strip.is-compact .cham-kpi-val {
+  font-size: 1.08rem;
+}
+
+.cham-overview-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.cham-kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.cham-kpi-strip.is-compact {
+  gap: 10px;
+}
+
+.cham-kpi-strip.is-compact .cham-kpi-card {
+  padding: 10px 13px;
+  gap: 10px;
+  background: var(--surface-2);
+}
+
+.cham-kpi-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cham-kpi-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cham-kpi-icon.is-warm {
+  background: var(--warm-soft);
+  color: var(--warm);
+  border-color: var(--warm-border);
+}
+
+.cham-kpi-icon.is-ok {
+  background: var(--ok-soft);
+  color: var(--ok);
+  border-color: var(--ok-border);
+}
+
+.cham-kpi-icon.is-amber {
+  background: var(--warn-soft);
+  color: var(--warn);
+  border-color: var(--warn-border);
+}
+
+.cham-kpi-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.cham-kpi-label {
+  font-size: 0.76rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+}
+
+.cham-kpi-val {
+  font-size: 1.38rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.25;
+}
+
+/* Deep-Study AI Bridge Strip inside Library Hub */
+.cham-studio-bridge {
+  background: var(--surface);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.cham-studio-bridge-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.cham-studio-bridge-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cham-studio-bridge-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cham-filter-bar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 11px 14px;
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.cham-search-wrap {
+  position: relative;
+  flex: 1 1 200px;
+  max-width: 264px;
+}
+
+.cham-search-input {
+  width: 100%;
+  padding: 8px 12px 8px 34px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-2);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.cham-search-input:focus {
+  background: var(--surface);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.cham-search-icon {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+  display: flex;
+}
+
+.cham-collection-pills {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.cham-col-pill {
+  padding: 6px 11px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.cham-col-pill:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.cham-col-pill.is-active {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+  font-weight: 600;
+  box-shadow: var(--btn-primary-shadow);
+}
+
+/* Spacious 3-Column Test Cards Grid */
+.cham-tests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.cham-test-card {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.cham-test-card > div:first-child {
+  min-width: 0;
+}
+
+.cham-test-card[data-cefr="A1"],
+.cham-test-card[data-cefr="A2"] {
+  border-top-color: #10b981;
+}
+
+.cham-test-card[data-cefr="B1"],
+.cham-test-card[data-cefr="B2"] {
+  border-top-color: #0284c7;
+}
+
+.cham-test-card[data-cefr="C1"] {
+  border-top-color: #f97316;
+}
+
+.cham-test-card[data-cefr="C2"] {
+  border-top-color: #e11d48;
+}
+
+.cham-test-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(194, 65, 12, 0.09), var(--shadow-md);
+  border-color: var(--warm-border);
+}
+
+.cham-test-card[data-cefr="A1"] .cham-diff-bar > span,
+.cham-test-card[data-cefr="A2"] .cham-diff-bar > span {
+  background: linear-gradient(90deg, #34d399, #059669);
+}
+
+.cham-test-card[data-cefr="B1"] .cham-diff-bar > span,
+.cham-test-card[data-cefr="B2"] .cham-diff-bar > span {
+  background: linear-gradient(90deg, #38bdf8, #0369a1);
+}
+
+.cham-test-card[data-cefr="C1"] .cham-diff-bar > span {
+  background: linear-gradient(90deg, #fb923c, #ea580c);
+}
+
+.cham-test-card[data-cefr="C2"] .cham-diff-bar > span {
+  background: linear-gradient(90deg, #fb7185, #e11d48);
+}
+
+.cham-card-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cham-card-title {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+.cham-best-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  background: var(--ok-soft);
+  color: var(--ok);
+  border: 1px solid var(--ok-border);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cham-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.cham-meta-sep {
+  opacity: 0.45;
+}
+
+.cham-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cham-meta-time {
+  color: var(--accent);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cham-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: auto;
+}
+
+.cham-card-subinfo {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.cham-subinfo-ok {
+  color: var(--ok);
+  font-weight: 500;
+}
+
+.cham-card-cta {
+  padding: 7px 13px;
+  font-size: 0.82rem;
+  border-color: var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.cham-test-card:hover .cham-card-cta {
+  border-color: var(--warm-border);
+  background: var(--warm-soft);
+  color: var(--warm);
+}
+
+.cham-card-cta:hover:not(:disabled),
+.cham-test-card .cham-card-cta:hover:not(:disabled) {
+  background: var(--warm-btn-bg);
+  border-color: var(--warm-btn-bg);
+  color: var(--warm-contrast);
+  box-shadow: var(--warm-shadow);
+}
+
+.cham-card-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cham-tag {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cham-tag-toeic {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+  font-weight: 500;
+}
+
+.cham-pagination-row {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cham-page-btns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 100%;
+}
+
+.cham-page-btn {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.84rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.cham-page-btn:hover:not(:disabled) {
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+.cham-page-btn.is-active {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+}
+
+/* ============================================================
+   3. TEST DETAIL & CONFIGURATION VIEW
+   ============================================================ */
+.cham-container.is-detail-container {
+  padding: 14px 20px 32px;
+}
+
+.cham-detail-header-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  box-shadow: var(--shadow-xs);
+  margin-bottom: 14px;
+}
+
+.cham-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.85fr) minmax(300px, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.cham-card-panel {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-xs);
+}
+
+.is-detail-container .cham-card-panel {
+  padding: 15px 18px;
+}
+
+.cham-mode-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 18px;
+}
+
+.is-detail-container .cham-mode-tabs {
+  margin-bottom: 12px;
+}
+
+.cham-mode-tab {
+  padding: 10px 4px 12px;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.94rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.cham-mode-tab:hover {
+  color: var(--text);
+}
+
+.is-detail-container .cham-mode-tab {
+  padding: 7px 4px 9px;
+}
+
+.cham-mode-tab.is-active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+.cham-parts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin: 10px 0 14px;
+}
+
+.cham-part-check-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background: var(--surface-2);
+  cursor: pointer;
+  user-select: none;
+  transition: all var(--transition-fast);
+}
+
+.cham-part-check-card:hover {
+  border-color: var(--accent-border);
+  background: var(--surface);
+}
+
+.cham-part-check-card.is-checked {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.cham-part-check-card input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+  accent-color: var(--btn-primary-bg);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.cham-exam-notice {
+  background: var(--cham-amber-bg);
+  border: 1px solid var(--cham-amber-border);
+  color: var(--cham-amber-text);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  line-height: 1.65;
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   4. SPLIT-SCREEN CBT RUNNER & DETAILED REVIEW
+   ============================================================ */
+.cham-runner-shell {
+  height: 100dvh;
+  max-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.cham-runner-topbar {
+  min-height: 56px;
+  padding: 6px 16px;
+  background: var(--header-bg);
+  backdrop-filter: var(--header-blur);
+  -webkit-backdrop-filter: var(--header-blur);
+  border-bottom: 1px solid var(--header-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-shrink: 0;
+  z-index: 30;
+}
+
+.cham-runner-timer {
+  font-family: var(--font-sans);
+  font-size: 1.06rem;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  padding: 4px 11px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  letter-spacing: 0.01em;
+}
+
+.cham-runner-timer.is-urgent {
+  color: var(--bad);
+  background: var(--bad-soft);
+  border-color: var(--bad-border);
+}
+
+.cham-runner-part-pills {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  max-width: 100%;
+}
+
+.cham-runner-part-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.cham-part-pill {
+  padding: 6px 13px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cham-part-pill:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.cham-part-pill.is-active {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+  font-weight: 600;
+  box-shadow: var(--btn-primary-shadow);
+}
+
+.cham-runner-body {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  overflow: hidden;
+  position: relative;
+}
+
+.cham-runner-stage {
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.cham-runner-stage.is-single-col {
+  overflow-y: auto;
+  justify-content: center;
+  padding: 22px 20px;
+}
+
+.cham-single-col-inner {
+  width: 100%;
+  max-width: 840px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: max-content;
+  padding-bottom: 36px;
+}
+
+/* Clearly Separated Left Reading/Stimulus Column */
+.cham-stimulus-pane {
+  flex: 0 0 52%;
+  min-width: 280px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 18px 36px;
+  background: var(--bg-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  scrollbar-gutter: stable;
+}
+
+/* Column Header Strip inside Split Panes */
+.cham-pane-header {
+  position: sticky;
+  top: -16px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 8px 13px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-xs);
+}
+
+.cham-pane-header-title {
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cham-pane-header-sub {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* Interactive Split Resizer with Handle Pill */
+.cham-stage-resizer {
+  width: 14px;
+  flex-shrink: 0;
+  cursor: col-resize;
+  background: var(--bg);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: background var(--transition-fast);
+}
+
+.cham-stage-resizer::after {
+  content: "";
+  width: 4px;
+  height: 42px;
+  border-radius: 99px;
+  background: var(--border-strong);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.cham-stage-resizer:hover {
+  background: var(--accent-soft);
+}
+
+.cham-stage-resizer:hover::after {
+  background: var(--accent);
+  transform: scaleY(1.12);
+}
+
+/* Clearly Separated Right Questions Column */
+.cham-questions-pane {
+  flex: 1 1 48%;
+  min-width: 280px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 18px 40px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  scrollbar-gutter: stable;
+}
+
+/* Sticky Audio Player Bar inside Runner */
+.cham-audio-bar {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cham-audio-play-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: var(--btn-primary-shadow);
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.cham-audio-play-btn:hover {
+  background: var(--btn-primary-hover);
+  transform: scale(1.05);
+}
+
+.cham-audio-scrubber {
+  flex: 1 1 140px;
+  accent-color: var(--btn-primary-bg);
+  cursor: pointer;
+  height: 6px;
+}
+
+.cham-stimulus-images {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+.cham-stimulus-img-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+  text-align: center;
+}
+
+[data-theme="dark"] .cham-stimulus-img-card {
+  background: #f8fafc;
+}
+
+.cham-stimulus-img-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+  border-radius: 6px;
+  cursor: zoom-in;
+  transform-origin: top center;
+}
+
+.cham-stimulus-images.is-part1-photo img {
+  max-height: calc(100dvh - 190px);
+  width: auto;
+  object-fit: contain;
+}
+
+.cham-runner-logo-pill {
+  flex-shrink: 0;
+}
+
+.cham-runner-exit-btn {
+  padding: 6px 11px;
+  font-size: 0.83rem;
+  font-weight: 500;
+  gap: 5px;
+  border-color: var(--border-strong);
+}
+
+@media (max-width: 1120px) {
+  .cham-runner-logo-pill {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .cham-stimulus-images.is-part1-photo img {
+    max-height: 300px;
+  }
+}
+
+/* ============================================================
+   5. QUESTION CARDS & UNIFIED CIRCULAR [A][B][C][D] OPTIONS
+   ============================================================ */
+.cham-q-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-xs);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.cham-q-card.is-jump-highlight {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft-hover);
+}
+
+.cham-q-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.cham-q-num-badge {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  border-radius: var(--radius-full);
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  font-size: 0.84rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cham-q-stem {
+  margin: 0;
+  font-size: 1.04rem;
+  font-weight: 500;
+  line-height: 1.54;
+  letter-spacing: -0.005em;
+  color: var(--text);
+  flex: 1;
+}
+
+.cham-flag-btn {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: 5px 9px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.cham-flag-btn:hover {
+  border-color: var(--warn-border);
+  color: var(--warn);
+}
+
+.cham-flag-btn.is-flagged {
+  background: var(--warn-soft);
+  color: var(--warn);
+  border-color: var(--warn-border);
+}
+
+.cham-opt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.cham-opt-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+  user-select: none;
+}
+
+.cham-opt-row:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.cham-opt-row input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
+.cham-opt-letter {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cham-opt-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.99rem;
+  line-height: 1.54;
+  color: var(--text);
+}
+
+/* Selected State */
+.cham-opt-row.is-selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.cham-opt-row.is-selected .cham-opt-letter {
+  background: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+.cham-opt-row.is-selected .cham-opt-text {
+  font-weight: 500;
+}
+
+/* Graded Correct & Wrong States */
+.cham-opt-row.is-correct {
+  border-color: var(--ok-border) !important;
+  background: var(--ok-soft) !important;
+}
+
+.cham-opt-row.is-correct .cham-opt-letter {
+  background: var(--ok);
+  border-color: var(--ok);
+  color: var(--ok-contrast);
+}
+
+.cham-opt-row.is-correct .cham-opt-text {
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.cham-opt-row.is-wrong {
+  border-color: var(--bad-border) !important;
+  background: var(--bad-soft) !important;
+}
+
+.cham-opt-row.is-wrong .cham-opt-letter {
+  background: var(--bad);
+  border-color: var(--bad);
+  color: var(--bad-contrast);
+}
+
+.cham-opt-row.is-wrong .cham-opt-text {
+  color: var(--bad);
+}
+
+/* Eliminated State (Right-Click / ⊘) */
+.cham-opt-row.is-eliminated {
+  background: var(--surface-2);
+  border-color: var(--border);
+  border-style: dashed;
+}
+
+.cham-opt-row.is-eliminated .cham-opt-letter {
+  text-decoration: line-through;
+  opacity: 0.55;
+  border-style: dashed;
+}
+
+.cham-opt-row.is-eliminated .cham-opt-text {
+  text-decoration: line-through;
+  text-decoration-thickness: 1.75px;
+  text-decoration-color: var(--bad);
+  color: var(--text-muted);
+  opacity: 0.58;
+}
+
+.cham-elim-btn {
+  flex: none;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 26px;
+  min-height: 26px;
+  padding: 3px 6px;
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.42;
+  transition: all var(--transition-fast);
+}
+
+.cham-opt-row:hover .cham-elim-btn,
+.cham-elim-btn:hover,
+.cham-elim-btn:focus-visible {
+  opacity: 1;
+  color: var(--bad);
+  background: var(--bad-soft);
+  border-color: var(--bad-border);
+}
+
+.cham-opt-row.is-eliminated .cham-elim-btn {
+  opacity: 1;
+  padding: 2px 8px;
+  color: var(--bad);
+  background: var(--bad-soft);
+  border-color: var(--bad-border);
+}
+
+.cham-opt-row.is-eliminated .cham-elim-btn::after {
+  content: "Đã loại";
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Reading Passage, Transcript & Explanation Paper Cards */
+.cham-transcript-box,
+.cham-explanation-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: var(--line-height-base, 1.68);
+  color: var(--text);
+  box-shadow: var(--shadow-xs);
+  overflow-wrap: break-word;
+}
+
+.cham-explanation-box {
+  margin-top: 14px;
+  background: var(--surface-2);
+  border-left: 4px solid var(--accent);
+  padding: 14px 18px;
+  font-size: 0.96rem;
+}
+
+.cham-transcript-box p,
+.cham-explanation-box p {
+  margin: 0 0 10px 0;
+}
+
+.cham-transcript-box p:last-child,
+.cham-explanation-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   6. RIGHT QUESTION PALETTE ASIDE (.cham-palette-aside)
+   ============================================================ */
+.cham-palette-aside {
+  height: 100%;
+  overflow-y: auto;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  padding: 14px 13px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cham-palette-progress-track {
+  width: 100%;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--surface-3);
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.cham-palette-progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--btn-primary-bg);
+  transition: width var(--transition-normal);
+}
+
+.cham-palette-part-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  margin: 0 0 6px 0;
+}
+
+.cham-palette-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.cham-q-pill {
+  position: relative;
+  height: 30px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.cham-q-pill:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.cham-q-pill.is-answered {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+}
+
+.cham-q-pill.is-current {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+}
+
+.cham-q-pill.is-answered.is-current {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  box-shadow: 0 0 0 2.5px var(--accent-soft-hover);
+}
+
+.cham-q-pill.is-correct {
+  background: var(--ok-soft);
+  color: var(--ok);
+  border-color: var(--ok-border);
+}
+
+.cham-q-pill.is-wrong {
+  background: var(--bad-soft);
+  color: var(--bad);
+  border-color: var(--bad-border);
+}
+
+.cham-q-pill.is-flagged::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f59e0b;
+}
+
+/* ============================================================
+   7. RESULT DASHBOARD & SKILL TAG BREAKDOWN TABLE
+   ============================================================ */
+.cham-result-score-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.cham-stat-box {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 15px 12px;
+  text-align: center;
+}
+
+.cham-stat-num {
+  font-family: var(--font-sans);
+  font-size: 1.55rem;
+  font-weight: 600;
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cham-review-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  margin: 18px 0;
+}
+
+.cham-tag-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.cham-tag-table th,
+.cham-tag-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.cham-tag-table th {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  font-weight: 600;
+  background: var(--surface-2);
+}
+
+.cham-mini-q-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* Mobile Palette Drawer Toggle */
+.cham-mobile-palette-btn {
+  display: none;
+}
+
+.cham-mobile-palette-backdrop {
+  display: none;
+}
+
+.cham-runner-top-left,
+.cham-runner-top-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+/* ============================================================
+   8. RESPONSIVE BREAKPOINTS & PRINT
+   ============================================================ */
+@media (max-width: 1560px) {
+  .cham-brand-sub {
+    display: none;
+  }
+}
+
+@media (max-width: 1350px) {
+  .cham-icon-tool span {
+    display: none;
+  }
+  .cham-icon-tool {
+    width: 32px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1040px) {
+  .cham-header-inner,
+  .cham-header-left,
+  .cham-nav-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1040px) {
+  .cham-tests-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cham-detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .cham-overview-bar .cham-kpi-strip {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 14px;
+  }
+  .cham-overview-bar .cham-kpi-card {
+    border-right: none;
+    margin-right: 0;
+    padding: 4px 0;
+  }
+  .cham-overview-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .cham-kpi-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cham-tests-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cham-parts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cham-result-score-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cham-runner-topbar {
+    flex-wrap: wrap;
+    padding: 6px 10px;
+    gap: 6px 8px;
+  }
+  .cham-runner-top-left {
+    order: 1;
+    flex: 1 1 auto;
+  }
+  .cham-runner-top-right {
+    order: 2;
+    flex: 0 0 auto;
+    gap: 6px;
+  }
+  .cham-runner-part-pills {
+    order: 3;
+    flex: 1 0 100%;
+    width: 100%;
+    padding-top: 6px;
+    border-top: 1px solid var(--border-subtle);
+  }
+  .cham-runner-timer {
+    font-size: 0.98rem;
+    padding: 3px 8px;
+  }
+  .cham-runner-body {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .cham-mobile-palette-backdrop.is-mobile-open {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    z-index: 40;
+  }
+  .cham-palette-aside {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(300px, 88vw);
+    z-index: 45;
+    box-shadow: var(--shadow-xl);
+  }
+  .cham-palette-aside.is-mobile-open {
+    display: flex;
+  }
+  .cham-mobile-palette-btn {
+    display: inline-flex;
+    padding: 6px 9px;
+    font-size: 0.78rem;
+  }
+  .cham-runner-stage:not(.is-single-col) {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .cham-stimulus-pane,
+  .cham-questions-pane {
+    flex: none !important;
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+    border-right: none;
+  }
+  .cham-stage-resizer {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .cham-mode-tabs {
+    gap: 10px;
+  }
+  .cham-mode-tab {
+    font-size: 0.86rem;
+  }
+  .cham-overview-bar {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+  .cham-overview-actions {
+    width: 100%;
+  }
+  .cham-overview-actions .cham-btn {
+    width: 100%;
+  }
+  .cham-kpi-strip,
+  .cham-tests-grid,
+  .cham-parts-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .cham-overview-bar .cham-kpi-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .cham-kpi-strip.is-compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cham-container {
+    padding: 16px 12px 36px;
+  }
+  .cham-header-inner {
+    padding: 8px 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .cham-header-left {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .cham-brand {
+    max-width: 100%;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+  .cham-brand-title {
+    font-size: 14.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cham-brand-sub {
+    display: none;
+  }
+  .cham-suite-switch {
+    width: 100%;
+  }
+  .cham-suite-tab {
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: center;
+    padding: 6px 7px;
+    font-size: 11.8px;
+    gap: 4px;
+  }
+  .cham-search-wrap,
+  .cham-filter-bar-enhanced .cham-search-wrap {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .cham-filter-selects {
+    width: 100%;
+    margin-left: 0;
+  }
+  .cham-filter-selects .mat-select {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  .cham-nav-actions {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px;
+  }
+  #cham-resume-draft-btn {
+    max-width: 100%;
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+  .cham-utility-capsule {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .cham-runner-top-right .cham-btn,
+  .cham-runner-top-left .cham-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  .cham-brand-badge {
+    padding: 5px 8px;
+    font-size: 11.4px;
+  }
+  .cham-review-tag-title {
+    max-width: 112px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media print {
+  .cham-header,
+  .cham-runner-topbar,
+  .cham-palette-aside,
+  .cham-stage-resizer,
+  .cham-audio-bar,
+  .cham-mobile-palette-backdrop {
+    display: none !important;
+  }
+  .cham-runner-shell {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .cham-runner-body,
+  .cham-runner-stage {
+    display: block !important;
+    overflow: visible !important;
+  }
+  .cham-stimulus-pane,
+  .cham-questions-pane {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    border: none !important;
+  }
+}
+
+/* ============================================================
+   7. STUDIO OUTER LOBBY & OVERVIEW EXTENSIONS
+   ============================================================ */
+.studio-card-desc {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.studio-detail-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.studio-detail-mode-desc {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 13px 15px;
+  margin-bottom: 14px;
+}
+
+.studio-detail-mode-desc h4 {
+  margin: 0 0 4px;
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.studio-detail-mode-desc p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.studio-detail-checklist {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.studio-detail-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.studio-detail-checklist svg {
+  color: var(--ok);
+  flex-shrink: 0;
+}
+
+.studio-detail-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.studio-talks-panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.studio-talks-panel-head h3 {
+  margin: 0;
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.studio-detail-talk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.studio-detail-talk-row {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.studio-detail-talk-row:hover,
+.studio-detail-talk-row.is-current {
+  border-color: var(--accent-border);
+  background: var(--accent-soft);
+}
+
+.studio-detail-talk-main {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.studio-talk-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--surface);
+  border: 1px solid var(--accent-border);
+  padding: 2px 7px;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.studio-talk-name {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.studio-talk-progress {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.studio-talk-progress.is-complete {
+  color: var(--ok);
+}
+
+@media print {
+  #studio-lobby-root {
+    display: none !important;
+  }
+}
+
+
+/* ============================================================
+   v19.0 — CEFR A1-C2 BADGES, OFFICIAL IIG CBT UI & MATERIALS HUB
+   100% WCAG AA Contrast across Light Blue & Dark Themes
+   ============================================================ */
+
+.cefr-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cefr-badge.cefr-sm {
+  padding: 1px 6px;
+  font-size: 0.7rem;
+}
+
+.cefr-a12 {
+  background: #ecfdf5;
+  color: #065f46;
+  border-color: #6ee7b7;
+}
+.cefr-b1 {
+  background: #e0f2fe;
+  color: #0369a1;
+  border-color: #7dd3fc;
+}
+.cefr-b2 {
+  background: #dbeafe;
+  color: #1e40af;
+  border-color: #93c5fd;
+}
+.cefr-c1 {
+  background: #fff4ea;
+  color: #9a3412;
+  border-color: #fdba74;
+}
+.cefr-c2 {
+  background: #fff1f2;
+  color: #be123c;
+  border-color: #fda4af;
+}
+
+[data-theme="dark"] .cefr-a12 {
+  background: rgba(16, 185, 129, 0.16);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.36);
+}
+[data-theme="dark"] .cefr-b1 {
+  background: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+  border-color: rgba(59, 130, 246, 0.38);
+}
+[data-theme="dark"] .cefr-b2 {
+  background: rgba(99, 102, 241, 0.22);
+  color: #a5b4fc;
+  border-color: rgba(99, 102, 241, 0.42);
+}
+[data-theme="dark"] .cefr-c1 {
+  background: rgba(245, 158, 11, 0.18);
+  color: #fcd34d;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+[data-theme="dark"] .cefr-c2 {
+  background: rgba(239, 68, 68, 0.18);
+  color: #fca5a5;
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+/* --- CEFR Ladder Quick Bar (#/studio & #/tests) --- */
+.toeic-cefr-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-xs);
+}
+
+.toeic-cefr-strip-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toeic-cefr-strip-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.toeic-cefr-ladder {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cefr-ladder-pill {
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), outline var(--transition-fast);
+}
+
+.cefr-ladder-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-xs);
+}
+
+.cefr-ladder-pill.is-active {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.toeic-cefr-strip-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cham-filter-bar-enhanced,
+.studio-filter-bar-enhanced {
+  flex-wrap: wrap;
+}
+
+.cham-filter-top-row {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cham-filter-bar-enhanced .cham-search-wrap {
+  flex: 1 1 200px;
+  max-width: 280px;
+}
+
+.cham-filter-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.studio-cefr-filter-row {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.cham-cefr-filter-row {
+  justify-content: space-between;
+  gap: 8px 12px;
+}
+
+.cham-cefr-pills-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+
+.cham-filter-selects {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.cham-cefr-pills-group .cham-col-pill.is-active,
+[data-cham-cefr].is-active,
+[data-studio-cefr].is-active {
+  background: var(--warm-btn-bg);
+  color: var(--warm-contrast);
+  border-color: var(--warm-btn-bg);
+  box-shadow: var(--warm-shadow);
+}
+
+.cham-cefr-pills-group .cham-col-pill:hover:not(.is-active),
+[data-cham-cefr]:hover:not(.is-active),
+[data-studio-cefr]:hover:not(.is-active) {
+  border-color: var(--warm-border);
+  background: var(--warm-soft);
+  color: var(--warm);
+}
+
+.studio-cefr-filter-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+
+/* --- Card Difficulty Meter (Clean Borderless Scannable Bar) --- */
+.cham-card-badges-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.cham-diff-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.cham-diff-label {
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.cham-diff-bar {
+  flex: 1;
+  min-width: 48px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.cham-diff-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, #38bdf8, var(--accent));
+}
+
+.cham-diff-band {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* --- Detail & Studio CEFR Insight Card --- */
+.studio-cefr-insight-panel {
+  margin-bottom: 16px;
+}
+
+.studio-cefr-insight-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.studio-cefr-insight-head p {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.cham-detail-cefr-card {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cham-detail-cefr-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cham-detail-cefr-score-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-size: 0.84rem;
+}
+
+.cham-detail-cefr-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 8px;
+}
+
+.cham-metric-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 7px 11px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+
+.cham-metric-chip span {
+  color: var(--text-muted);
+}
+
+.cham-part-cefr-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cham-part-cefr-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 9px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.cham-detail-materials-bar {
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cham-exam-config-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cham-strict-toggle-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.cham-strict-toggle-row input {
+  margin-top: 3px;
+  accent-color: var(--accent);
+}
+
+.cham-strict-toggle-row span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.85rem;
+}
+
+.cham-strict-toggle-row small {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* --- Official Score Milestone Bar --- */
+.cham-score-milestone-bar {
+  margin-top: 12px;
+}
+
+.cham-score-milestone-track {
+  height: 9px;
+  border-radius: var(--radius-full);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.cham-score-milestone-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--accent), var(--ok));
+  transition: width 320ms ease;
+}
+
+.cham-score-milestone-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* --- Official ETS/IIG CBT Runner UI --- */
+body.is-cham-hub-active #toast-container,
+body.is-materials-hub-active #toast-container {
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+}
+
+body.is-cham-hub-active:has(.cham-runner-shell) #toast-container {
+  top: auto;
+  bottom: 66px;
+  right: 20px;
+}
+
+.cham-palette-part-locked {
+  opacity: 0.62;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border);
+}
+
+.cham-suite-tab svg,
+.studio-suite-tab svg {
+  flex-shrink: 0;
+}
+
+.cham-runner-part-pills .cham-part-pill {
+  padding: 5px 9px;
+  font-size: 0.78rem;
+}
+
+.cham-runner-section-tag {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 3px 8px;
+}
+
+.cham-timer-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cham-timer-eye-btn {
+  padding: 5px 7px !important;
+}
+
+.cham-volume-wrap {
+  position: relative;
+}
+
+.cham-volume-popover {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 210px;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-lg);
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+.cham-volume-popover input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.cham-part-pill.is-locked-part {
+  opacity: 0.48;
+  border-style: dashed;
+}
+
+.cham-directions-banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  font-size: 0.83rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.cham-directions-banner strong {
+  display: block;
+  font-size: 0.77rem;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+.cham-palette-status-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.cham-pal-tab {
+  padding: 4px 5px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cham-pal-tab.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.cham-runner-footer-bar {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  background: var(--surface);
+  border-top: 1px solid var(--border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 30;
+}
+
+.cham-footer-left,
+.cham-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cham-footer-group-info {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.cham-btn.is-flagged-btn {
+  border-color: var(--warn-border);
+  background: var(--warn-soft);
+  color: var(--warn);
+}
+
+.cham-user-hl {
+  background: #fef08a;
+  color: #1f2937;
+  padding: 0 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+[data-theme="dark"] .cham-user-hl {
+  background: rgba(250, 204, 21, 0.34);
+  color: #fef9c3;
+}
+
+/* --- Modals (Review Screen, Directions, Section Gate) --- */
+.cham-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  background: rgba(15, 23, 42, 0.56);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.cham-modal-card {
+  width: min(620px, 100%);
+  max-height: 88dvh;
+  overflow-y: auto;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cham-review-modal-card {
+  width: min(860px, 100%);
+}
+
+.cham-modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cham-modal-foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.cham-review-legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.cham-legend-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cham-legend-dot i {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid var(--border-strong);
+}
+
+.cham-legend-dot.is-answered i { background: var(--accent); border-color: var(--accent); }
+.cham-legend-dot.is-todo i { background: var(--surface-2); }
+.cham-legend-dot.is-flagged i { background: var(--warn-soft); border-color: var(--warn); }
+
+.cham-review-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+  gap: 7px;
+  max-height: 52dvh;
+  overflow-y: auto;
+  padding: 4px 2px;
+}
+
+.cham-review-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 7px 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.cham-review-cell strong { font-size: 0.75rem; }
+.cham-review-cell span { font-size: 0.85rem; font-weight: 600; color: var(--accent); }
+.cham-review-cell small { font-size: 0.68rem; color: var(--text-muted); }
+
+.cham-review-cell.is-answered {
+  border-color: var(--accent-border);
+  background: var(--accent-soft);
+}
+.cham-review-cell.is-flagged {
+  border-color: var(--warn);
+}
+.cham-review-cell.is-current {
+  outline: 2px solid var(--accent);
+}
+.cham-review-cell.is-locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.cham-help-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.88rem;
+}
+
+.cham-help-box {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.cham-help-box p {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.cham-help-shortcuts {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.cham-shortcut-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 10px;
+  border-radius: var(--radius-xs);
+  background: var(--surface-2);
+  font-size: 0.82rem;
+}
+
+.cham-shortcut-row kbd {
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   STUDY MATERIALS HUB (#/materials — Hackers TOEIC, Grammar & CEFR Matrix)
+   ============================================================ */
+.cham-hero {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 16px;
+}
+
+:root[data-theme="light"] .cham-hero {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--warm-bright);
+}
+
+.cham-hero-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cham-hero-top h1 {
+  margin: 0 0 6px;
+  font-size: 1.38rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.cham-hero-sub {
+  margin: 0;
+  max-width: 780px;
+  font-size: 0.89rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.mat-hero-quick {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cham-chips {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cham-chip {
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cham-chip:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.cham-chip.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.mat-tabs-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.mat-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 15px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.mat-tab-btn:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.mat-tab-btn.is-active {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+  box-shadow: var(--btn-primary-shadow);
+}
+
+.mat-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mat-section-h2 {
+  margin: 0 0 4px;
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+.mat-section-desc {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.mat-filter-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.mat-search-wrap {
+  flex: 1 1 280px;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 11px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.mat-search-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.86rem;
+  outline: none;
+}
+
+.mat-select {
+  padding: 7px 11px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.mat-cefr-pills-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* Books */
+.mat-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+  gap: 16px;
+}
+
+.mat-book-card {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mat-book-card[data-book-tone="a12"] { border-top-color: #10b981; }
+.mat-book-card[data-book-tone="b12"] { border-top-color: #0284c7; }
+.mat-book-card[data-book-tone="c12"] { border-top-color: #f97316; }
+.mat-book-card[data-book-tone="warm"] { border-top-color: #f59e0b; }
+
+.mat-book-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.mat-series-tag {
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.mat-target-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.mat-book-title {
+  margin: 0 0 3px;
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+.mat-book-subtitle {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.mat-book-desc {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.mat-chapters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.mat-chapter-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.mat-chapter-toggle {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mat-chapter-toggle-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.mat-chapter-item.is-open .mat-chapter-chevron {
+  transform: rotate(180deg);
+}
+
+.mat-chapter-body {
+  padding: 0 12px 12px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.mat-chapter-summary {
+  margin: 10px 0 8px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.mat-key-points {
+  margin: 0 0 10px;
+  padding-left: 18px;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mat-trap-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: var(--radius-xs);
+  background: var(--warm-soft);
+  border: 1px solid var(--warm-border);
+  border-left: 3px solid var(--warm-bright);
+  color: var(--warm-hover);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.mat-book-footer {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.mat-rec-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.mat-rec-actions {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+/* Grammar & Quiz */
+.mat-grammar-summary-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.mat-quiz-score-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 7px 12px;
+  border-radius: var(--radius-md);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  font-size: 0.84rem;
+}
+
+.mat-quiz-score-pill strong {
+  color: var(--accent);
+}
+
+.mat-grammar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr));
+  gap: 16px;
+}
+
+.mat-grammar-card {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.mat-grammar-head h3 {
+  margin: 0;
+  font-size: 1.04rem;
+  font-weight: 600;
+}
+
+.mat-formula-box {
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mat-formula-label {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.mat-formula-box code {
+  font-family: var(--font-mono);
+  font-size: 0.81rem;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.mat-quick-rule {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.mat-examples-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mat-ex-row {
+  padding: 8px 10px;
+  border-left: 3px solid var(--accent);
+  background: var(--surface-2);
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+}
+
+.mat-ex-en { font-size: 0.84rem; font-weight: 500; }
+.mat-ex-vi { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+
+.mat-quiz-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.mat-quiz-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mat-quiz-stem {
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.mat-quiz-badge {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 7px;
+  border-radius: var(--radius-xs);
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  font-size: 0.72rem;
+}
+
+.mat-quiz-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.mat-quiz-opt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.83rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mat-quiz-opt:hover {
+  border-color: var(--accent);
+}
+
+.mat-quiz-opt.is-correct {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+
+.mat-quiz-opt.is-wrong {
+  border-color: var(--bad);
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+.mat-opt-badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.mat-quiz-feedback {
+  padding: 9px 11px;
+  border-radius: var(--radius-xs);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mat-quiz-feedback.is-ok {
+  background: var(--ok-soft);
+  border: 1px solid var(--ok-border);
+  color: var(--ok);
+}
+
+.mat-quiz-feedback.is-bad {
+  background: var(--bad-soft);
+  border: 1px solid var(--bad-border);
+  color: var(--bad);
+}
+
+/* Paraphrase & Matrix Tables */
+.mat-para-table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.mat-para-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.mat-para-table th {
+  text-align: left;
+  padding: 11px 14px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+}
+
+.mat-para-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.mat-para-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.mat-part-pill {
+  padding: 2px 7px;
+  border-radius: var(--radius-xs);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.mat-para-src { font-weight: 500; color: var(--text); }
+.mat-para-dst { font-weight: 600; color: var(--accent); }
+.mat-para-note { color: var(--text-muted); font-size: 0.82rem; }
+.mat-empty-row { text-align: center; color: var(--text-muted); padding: 28px !important; }
+
+/* Vocab Modules */
+.mat-vocab-modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(430px, 100%), 1fr));
+  gap: 16px;
+}
+
+.mat-vocab-module-card {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mat-vocab-module-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.mat-vocab-module-head h3 {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mat-vocab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.mat-vocab-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.mat-vocab-title-line {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.mat-vocab-word { font-size: 0.96rem; color: var(--accent); }
+.mat-vocab-pos { font-size: 0.74rem; color: var(--text-muted); font-style: italic; }
+.mat-vocab-ipa { font-family: var(--font-ipa, var(--font-mono)); font-size: 0.78rem; color: var(--text-muted); }
+.mat-vocab-vi { font-size: 0.85rem; font-weight: 500; margin-top: 2px; }
+.mat-vocab-ex { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+
+.mat-vocab-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.cham-btn.is-pinned-sm2 {
+  border-color: var(--ok-border);
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+
+/* Pathways & 43-Test CEFR Matrix */
+.mat-pathway-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mat-pathway-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mat-pathway-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.mat-pathway-goal {
+  font-size: 0.92rem;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.mat-pathway-profile {
+  margin: 0 0 10px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.mat-pathway-steps {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.84rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mat-pathway-test-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+[data-theme="dark"] .cham-btn-primary .cefr-badge {
+  background: var(--surface);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.mat-matrix-title { font-weight: 600; }
+.mat-matrix-sub { font-size: 0.76rem; color: var(--text-muted); margin-top: 2px; }
+.mat-band-label { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; }
+
+.mat-diff-meter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.mat-diff-bar {
+  flex: 1;
+  height: 7px;
+  border-radius: var(--radius-full);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.mat-diff-bar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, var(--accent));
+}
+
+.mat-lcrc-cell,
+.mat-metrics-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .mat-pathway-body {
+    grid-template-columns: 1fr;
+  }
+  .mat-books-grid,
+  .mat-grammar-grid,
+  .mat-vocab-modules-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .cham-runner-section-tag,
+  #cham-open-review-screen-btn,
+  .cham-footer-group-info,
+  #cham-bottom-flag-btn span {
+    display: none;
+  }
+  .cham-q-head {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .cham-q-head > div:first-child {
+    flex: 1 1 100% !important;
+  }
+  .cham-q-head > div:last-child {
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+  .cham-runner-footer-bar {
+    padding: 6px 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+  .cham-footer-left,
+  .cham-footer-right {
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  .cham-footer-right {
+    margin-left: auto;
+  }
+  .cham-runner-footer-bar .cham-btn {
+    padding: 6px 8px;
+    font-size: 0.74rem;
+    white-space: nowrap;
+  }
+  .mat-quiz-options {
+    grid-template-columns: 1fr;
+  }
+  .mat-vocab-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .mat-vocab-actions {
+    justify-content: flex-end;
+  }
+  .mat-rec-btn {
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
+  }
+}

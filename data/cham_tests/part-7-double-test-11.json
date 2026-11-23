@@ -1,0 +1,311 @@
+{
+  "id": "cham_part_7_double_test_11",
+  "sourceId": "631969a0f2fe240a4043ae41",
+  "slug": "part-7-double-test-11",
+  "title": "Đề lẻ Part 7 Kép · Test 11",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 12,
+  "totalQuestions": 10,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_7": 10
+  },
+  "groups": [
+    {
+      "part": 7,
+      "range": "176-180",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\"><strong>Outdoorsman</strong></span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\"><strong>384 E. Atlantic street, Bangor, Maine</strong></span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\"><strong>(804) 434-8594</strong></span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Order Date: September 30</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Order Number: 505954&nbsp;</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Customer Name: Thomas Heckbert</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Delivery Address: 34 Lansing Avenue, Trenton, New Jersey</span></span></span></p>\n\n<table align=\"center\" class=\"MsoTableGrid\" style=\"border-collapse: collapse; border: none;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 156px; padding: 0in 7px 0in 7px; border: 1px solid black;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\"><strong>Item Number </strong></span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: 1px solid black; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\"><strong>Item Description</strong></span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: 1px solid black; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\"><strong>Quantity </strong></span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: 1px solid black; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\"><strong>Price </strong></span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: 1px solid black;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">606-544</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">Men’s Black Cashmere Sweater (L)</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">1</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p>$<span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">125.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: 1px solid black;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">204-994</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">Men’s Blue Jeans (L)</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">2</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p>$<span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">45.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: 1px solid black;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">766-121</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">Women’s Green Blouse (S)</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">1</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p>$<span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">80.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: 1px solid black;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">653-476</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">Men’s Red Windbreaker (L)</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">1</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 156px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p>$<span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">22.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\">&nbsp;</p>\n\n<table align=\"center\" class=\"MsoTableGrid\" style=\"border-collapse: collapse; border: none;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 228px; padding: 0in 7px 0in 7px; border: 1px solid black;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">Subtotal</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 138px; padding: 0in 7px 0in 7px; border-top: 1px solid black; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\">$<span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">272</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 228px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: 1px solid black;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">Outdoorsman Silver Club Discount</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 138px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">- </span></span></span>$<span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">27.20</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 228px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: 1px solid black;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">Tax</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 138px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\">$<span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">14.69</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 228px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: 1px solid black;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">Delivery Fee*</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 138px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\">$<span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">15.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 228px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: 1px solid black;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">Total</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom: 1px solid black; width: 138px; padding: 0in 7px 0in 7px; border-top: none; border-right: 1px solid black; border-left: none;\" valign=\"top\">\n\t\t\t<p style=\"text-align: justify;\">$<span style=\"font-size: 14px;\"><span><span style=\"line-height: normal;\">274.49</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\">&nbsp;</p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">* You selected express shipping. Your order will arrive within 2 business days.</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Thank you for shopping at Outdoorsman. If you have any questions, please call us or e-mail us at customerservice@outdoorsman.com.</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">____________________________________________________</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">To: customerservice@outdoorsman.com</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">From: theckbert@marketmail.com</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Subject: Order Number 505954</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Date: October 21</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Attachment: Pic </span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">To Whom It May Concern,</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">My name is Thomas Heckbert. I am a long-time shopper at Outdoorsman. My Silver Club membership number is 4OA0433. I’m writing to you with regard to an order I made last month. As always, the items arrived in perfect condition, and my wife and I are both pleased with how they fit. The quality of the items sold by Outdoorsman is the main reason I buy something from your website practically once a month.</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">The problem, however, concerns the amount of money I was charged for the items I bought, while the invoice I received with the items noted that I was given a 10% discount, when I received my credit card bill, I noticed that the discount had actually not been applied. I was therefore charged too much for my purchase. I have attached a picture of the invoice so that you can see how much of a discount I should have received. Would you be kind enough to refund the money, please? You can simply give me store credit as I am planning to make another order this Thursday or Friday. If there are any questions, please feel free to write me back.</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">I look forward to hearing a positive response soon.</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Regards,</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Thomas Heckbert</span></span></span></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 176,
+          "stem": "What is NOT mentioned on the invoice?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The method of payment"
+            },
+            {
+              "choice": "B",
+              "text": "The receiver’s address"
+            },
+            {
+              "choice": "C",
+              "text": "The number of each item bought"
+            },
+            {
+              "choice": "D",
+              "text": "The phone number of the company"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:&nbsp;</strong>Điều gì KHÔNG được đề cập trên hóa đơn?</p>\n<p>(A) Phương thức thanh toán</p>\n<p>(B) Địa chỉ của người nhận</p>\n<p>(C) Số lượng mỗi mặt hàng đã mua</p>\n<p>(D) Số điện thoại của công ty</p>\n<p><strong>Thông tin:</strong></p>\n<p>+ Trong bài có đề cập đến:&nbsp;<em>\"Delivery Address: 34 Lansing Avenue, Trenton, New Jersey\" =&gt;&nbsp;</em>Loại đáp án B</p>\n<p>+ Trong bài có đề cập đến <em>\"Item Number&nbsp;606-544, 204-994, 766-121, 653-476\"&nbsp;</em>=&gt; Loại đáp án C</p>\n<p>+ Trong bài có đề cập đến&nbsp;<em>\"(804) 434-8594\"&nbsp;</em>=&gt; Loại đáp án D</p>\n<p><strong>→ Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 177,
+          "stem": "Which item did Mr. Heckbert pay the most money for?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "204-994"
+            },
+            {
+              "choice": "B",
+              "text": "606-544"
+            },
+            {
+              "choice": "C",
+              "text": "653-476"
+            },
+            {
+              "choice": "D",
+              "text": "766-121"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Nh&igrave;n v&agrave;o h&oacute;a đơn, ch&uacute;ng ta c&oacute; thể thấy mặt h&agrave;ng m&agrave; &ocirc;ng Heckbert trả nhiều tiền nhất l&agrave; Men&rsquo;s Black Cashmere Sweater (L) với m&atilde; số 606-544</p>\n\n<div align=\"center\">\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"MsoNormalTable\" style=\"border: none\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-width: 1pt; border- border-image: initial; padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto; text-align: center\"><strong>M&atilde; sản phẩm</strong><o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-top- border-right- border-bottom- border-image: initial; border-left: none; padding: 0in 5.25pt\">\n\t\t\t<p class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto\"><strong>M&ocirc; tả sản phẩm</strong><o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-top- border-right- border-bottom- border-image: initial; border-left: none; padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto; text-align: center\"><strong>Số lượng</strong><o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-top- border-right- border-bottom- border-image: initial; border-left: none; padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto; text-align: center\"><strong>Gi&aacute;</strong><o:p></o:p></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-right- border-bottom- border-left- border-image: initial; border-top: none; padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto; text-align: center\"><span>606-544<o:p></o:p></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt\">\n\t\t\t<p class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto\"><span>Men&rsquo;s Black Cashmere Sweater (L)<o:p></o:p></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto; text-align: center\"><span>1<o:p></o:p></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto; text-align: center\"><span>$125.00<o:p></o:p></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"mso-yfti-irow: 2; height: 19.95pt\">\n\t\t\t<td style=\"border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-right- border-bottom- border-left- border-image: initial; border-top: none; padding: 0in 5.25pt; height: 19.95pt\">\n\t\t\t<p align=\"center\" style=\"margin-top: 0in; text-align: center\">204-994<o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt; height: 19.95pt\">\n\t\t\t<p class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto\">Men&rsquo;s Blue Jeans (L)<o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt; height: 19.95pt\">\n\t\t\t<p align=\"center\" style=\"margin-top: 0in; text-align: center\">2<o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt; height: 19.95pt\">\n\t\t\t<p align=\"center\" style=\"margin-top: 0in; text-align: center\"><spanArial',sans-serif;\">$</span><span style=\"box-sizing: border-box\"><span style=\"box-sizing: border-box\"><span><span style=\"box-sizing: border-box\">45.00</span></span></span><o:p></o:p></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-right- border-bottom- border-left- border-image: initial; border-top: none; padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" style=\"margin-top: 0in; text-align: center\">766-121<o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt\">\n\t\t\t<p class=\"MsoNormal\" style=\"mso-margin-bottom-alt: auto\">Women&rsquo;s Green Blouse (S)<o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" style=\"margin-top: 0in; text-align: center\">1<o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" style=\"margin-top: 0in; text-align: center\"><spanArial',sans-serif;\">$</span><span style=\"box-sizing: border-box\"><span style=\"box-sizing: border-box\"><span><span style=\"box-sizing: border-box\">80.00</span></span></span><o:p></o:p></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-right- border-bottom- border-left- border-image: initial; border-top: none; padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" style=\"margin-top: 0in; text-align: center\">653-476<o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt\">\n\t\t\t<p style=\"margin-top: 0in\">Men&rsquo;s Red Windbreaker (L)<o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" style=\"margin-top: 0in; text-align: center\">1<o:p></o:p></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom-width: 1pt; border-bottom- border-right-width: 1pt; border-right- padding: 0in 5.25pt\">\n\t\t\t<p align=\"center\" style=\"margin-top: 0in; text-align: center\"><spanArial',sans-serif;\">$</span><span style=\"box-sizing: border-box\"><span style=\"box-sizing: border-box\"><span><span style=\"box-sizing: border-box\">22.00</span></span></span><o:p></o:p></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<div align=\"center\">&nbsp;</div>\n\n<p><strong>&rarr; Chọn đ&aacute;p &aacute;n B</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 178,
+          "stem": "What does Mr. Heckbert suggest about one of the items he ordered?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He was overcharged for it."
+            },
+            {
+              "choice": "B",
+              "text": "He cannot fit in it."
+            },
+            {
+              "choice": "C",
+              "text": "He bought it on sale."
+            },
+            {
+              "choice": "D",
+              "text": "He purchased it for his wife."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Nh&igrave;n v&agrave;o <strong>h&oacute;a đơn</strong>, ch&uacute;ng ta c&oacute; thể thấy mặt h&agrave;ng quần &aacute;o d&agrave;nh cho nữ l&agrave; <strong>&ldquo;Women&rsquo;s Green Blouse (S)&rdquo;</strong>. Trong khi đ&oacute;, ở <strong>đoạn văn thứ hai</strong>, c&oacute; th&ocirc;ng tin: <em>&ldquo;my wife and I are both pleased with how they fit.&rdquo;</em>&nbsp;</p>\n\n<p data-is-last-node=\"\" data-is-only-node=\"\">&rArr; Từ đ&oacute; c&oacute; thể <strong>suy ra rằng &ocirc;ng Heckbert đ&atilde; mua m&oacute;n đồ n&agrave;y cho vợ của m&igrave;nh</strong>.<br />\n&rArr; <strong data-is-last-node=\"\">Đ&aacute;p &aacute;n D l&agrave; đ&uacute;ng.</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 179,
+          "stem": "How much money would Mr. Heckbert like back?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "$15.00"
+            },
+            {
+              "choice": "B",
+              "text": "$14.69"
+            },
+            {
+              "choice": "C",
+              "text": "$22.00"
+            },
+            {
+              "choice": "D",
+              "text": "$27.20"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Trong đoạn thứ hai, nó nói rằng \"<em>\"The problem, however, concerns the amount of money I was charged for the items I bought, while the invoice I received with the items noted that I was given a 10% discount, when I received my credit card bill, I noticed that the discount had actually not been applied.\"</em></p>\n<p><strong>Tạm dịch:</strong> \"Tuy nhiên, vấn đề liên quan đến số tiền tôi phải trả cho những món hàng tôi đã mua, trong khi hóa đơn tôi nhận được kèm theo những món hàng đó ghi rằng tôi đã được giảm giá 10% khi tôi nhận được hàng.\" hóa đơn thẻ tín dụng, tôi nhận thấy rằng khoản giảm giá thực tế chưa được áp dụng.\" Nhìn vào hóa đơn, chúng ta có thể thấy mức giảm giá là 27,20 USD. =&gt; Ông Heckbert muốn nhận lại $27,20. <strong>=&gt; D đúng</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 180,
+          "stem": "What does Mr. Heckbert send with his e-mail?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A new clothing order"
+            },
+            {
+              "choice": "B",
+              "text": "A copy of his bill"
+            },
+            {
+              "choice": "C",
+              "text": "A picture of the faulty merchandise"
+            },
+            {
+              "choice": "D",
+              "text": "A file containing his credit card bill"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Trong bài có đề cập: \"<em>I have attached a picture of the invoice.\" nghĩa là \"Tôi đã đính kèm ảnh hóa đơn\" <strong>=&gt; Đáp án B đúng</strong></em></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "181-185",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\"><strong>Templeton Manufacturing</strong></span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Will be holding its annual end-of-the-year dinner on</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Friday, December 29 </span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">from 6:30 P.M. to 10:00 P.M </span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">in the Rose Ballroom </span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">at the Garden Hotel</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">The following events will take place:</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">6:30 P.M. - the year in review by CEO James Lambert</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">7:00 P.M. - five-course dinner</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">8:30 P.M. - awards ceremony</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">9:00 P.M. - live entertainment</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">All Templeton Manufacturing employees and their spouses or significant others are welcome.</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Please contact Ms. Virginia Snyder at vsnyder@templetonmanu.com to confirm your attendance.</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: center;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">____________________________________________________</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">To: Elisa Standish</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">From: Percy Wilson</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Re: December 29 Event</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">Date: December 20</span></span></span></p>\n\n<p style=\"margin-bottom: 11px; text-align: justify;\"><span style=\"font-size: 14px;\"><span><span style=\"line-height: 107%;\">It looks like everything is about ready for the big event next week. I spoke with Kevin Crawford at the Garden Hotel, and he has assured me that all of the food we requested for the event will be available. He invited me to drop by the hotel to sample the dishes this Friday, December 22. If you'd like to accompany me, let me know. I'll be leaving here around 2:30 so that I can make it back to the office for a 5:00 meeting. There's one change in the schedule though. Connie Parker wants to present the awards right after Mr. Lambert gives his talk. So we need to contact the printer to make sure the schedules that get printed have the correct order of events. You're the contact person for the printer, so would you mind doing that? Let me know as soon as you're done so that I can inform Connie. This is the first awards ceremony she's responsible for, and she's really eager to avoid any mistakes. You remember how things went last year with Todd Seager in charge, don't you? We don't want a repeat of that.</span></span></span></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 181,
+          "stem": "What is the purpose of the notice?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To mention a change in a schedule"
+            },
+            {
+              "choice": "B",
+              "text": "To invite company employees to an event"
+            },
+            {
+              "choice": "C",
+              "text": "To provide the contact information of some employees"
+            },
+            {
+              "choice": "D",
+              "text": "To announce the winners of some awards"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Dựa trên thông tin: \"All Templeton Manufacturing employees and their spouses or significant others are welcome.\"&nbsp;</p>\n<p><strong>Tạm dịch:</strong> \"Tất cả nhân viên của Templeton Manufacturing và vợ/chồng của họ hoặc những người quan trọng khác đều được chào đón.\"&nbsp;</p>\n<p><strong>=&gt; Chọn B</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 182,
+          "stem": "The word “confirm” in line 15 of the notice is closest in meaning to:",
+          "options": [
+            {
+              "choice": "A",
+              "text": "certify"
+            },
+            {
+              "choice": "B",
+              "text": "refute"
+            },
+            {
+              "choice": "C",
+              "text": "purchase"
+            },
+            {
+              "choice": "D",
+              "text": "admit"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Từ “confirm” ở dòng 15 của thông báo gần nghĩa nhất với:&nbsp;</p>\n<p>(A) certify: chứng nhận</p>\n<p>(B) refute: bác bỏ</p>\n<p>(C) purchase: mua hàng</p>\n<p>(D) admit: thừa nhận</p>\n<p>confirm: xác nhận = certify: chứng nhận</p>\n<p><strong>=&gt; Chọn A</strong></p>",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        },
+        {
+          "num": 183,
+          "stem": "According to the memo, when will the awards be given?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "At 6:30"
+            },
+            {
+              "choice": "B",
+              "text": "At 7:00"
+            },
+            {
+              "choice": "C",
+              "text": "At 8:30"
+            },
+            {
+              "choice": "D",
+              "text": "At 9:00"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Trong đoạn văn thứ hai có viết: \"There's one change in the schedule though. Connie Parker wants to present the awards right after Mr. Lambert gives his talk. So we need to contact the printer to make sure the schedules that get printed have the correct order of events.\"</p>\n<p><strong>Tạm dịch:</strong> \"Tuy nhiên, có một sự thay đổi trong lịch trình. Connie Parker muốn trao giải thưởng ngay sau khi ông Lambert phát biểu. Vì vậy chúng ta cần liên hệ với nhà in để đảm bảo lịch trình được in là chính xác.\" thứ tự các sự kiện.\"</p>\n<p>Nhìn vào đoạn văn đầu tiên, chúng ta có thể thấy ngay sau bài nói chuyện của ông Lambert là bữa tối 5 món lúc 7 giờ tối.</p>\n<p><strong>=&gt; B đúng</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 184,
+          "stem": "What does Mr. Wilson ask Ms. Standish to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Go to the Garden Hotel in his place"
+            },
+            {
+              "choice": "B",
+              "text": "Send an e-mail to Ms. Snyder"
+            },
+            {
+              "choice": "C",
+              "text": "Arrange for a schedule to be changed"
+            },
+            {
+              "choice": "D",
+              "text": "Coordinate with Ms. Parker"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Trong bài có đề cập là: \"So we need to contact the printer to make sure the schedules that get printed have the correct order of events. <strong>You're the contact person for the printer, so would you mind doing that?\"&nbsp;</strong></p>\n<p><strong>Tạm dịch: </strong>\"Vì vậy, chúng tôi cần liên hệ với máy in để đảm bảo lịch trình được in có đúng thứ tự các sự kiện.<strong> Bạn là người liên hệ của máy in, vậy bạn có phiền khi làm điều đó không?\"</strong></p>\n<p><strong>=&gt; Chọn C</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 185,
+          "stem": "What is suggested about Todd Seager?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He performed his duties poorly last year."
+            },
+            {
+              "choice": "B",
+              "text": "He is one of this year’s award winners."
+            },
+            {
+              "choice": "C",
+              "text": "He is employed at the Garden Hotel."
+            },
+            {
+              "choice": "D",
+              "text": "He works closely with Ms. Parker."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Thông tin nằm ở:&nbsp;<em>\"This is the first awards ceremony she's responsible for, and she's really eager to avoid any mistakes. You remember&nbsp;<strong>how things went last year with Todd Seager in charge, don't you? We don't want a repeat of that</strong>.\"&nbsp;</em></p>\n<p><strong>Tạm dịch:</strong> \"Đây là lễ trao giải đầu tiên mà cô ấy chịu trách nhiệm và cô ấy thực sự mong muốn tránh mọi sai sót. <strong>Bạn có nhớ mọi thứ diễn ra như thế nào vào năm ngoái với sự phụ trách của Todd Seager không? Chúng tôi không muốn điều đó lặp lại.\"</strong></p>\n<p><strong>=&gt; Chọn A</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 7,
+  "subLabel": "Đoạn kép"
+}

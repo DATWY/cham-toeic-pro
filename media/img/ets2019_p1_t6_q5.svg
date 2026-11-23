@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tunnelCeil" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#334155"/></linearGradient>
+    <linearGradient id="road5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#1e293b"/></linearGradient>
+  </defs>
+  <!-- Tunnel ceiling -->
+  <rect width="600" height="150" fill="url(#tunnelCeil)"/>
+  <!-- Tunnel Roadway -->
+  <polygon points="0,150 600,150 600,400 0,400" fill="url(#road5)"/>
+  <!-- Road lanes -->
+  <line x1="200" y1="150" x2="100" y2="400" stroke="#facc15" stroke-width="4" stroke-dasharray="16,12"/>
+  <line x1="400" y1="150" x2="500" y2="400" stroke="#facc15" stroke-width="4" stroke-dasharray="16,12"/>
+  <!-- Overhead road signs hanging from ceiling -->
+  <!-- Metal hanging poles -->
+  <line x1="140" y1="0" x2="140" y2="90" stroke="#94a3b8" stroke-width="5"/>
+  <line x1="260" y1="0" x2="260" y2="90" stroke="#94a3b8" stroke-width="5"/>
+  <line x1="380" y1="0" x2="380" y2="90" stroke="#94a3b8" stroke-width="5"/>
+  <line x1="500" y1="0" x2="500" y2="90" stroke="#94a3b8" stroke-width="5"/>
+  <!-- Sign 1: Green highway sign -->
+  <rect x="120" y="80" width="160" height="65" rx="6" fill="#15803d" stroke="#ffffff" stroke-width="3"/>
+  <text x="145" y="110" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">DOWNTOWN ↑</text>
+  <text x="155" y="130" fill="#bbf7d0" font-family="sans-serif" font-size="10">EXIT 24A · 1 MILE</text>
+  <!-- Sign 2: Blue expressway sign -->
+  <rect x="360" y="80" width="160" height="65" rx="6" fill="#1d4ed8" stroke="#ffffff" stroke-width="3"/>
+  <text x="390" y="110" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">AIRPORT ↗</text>
+  <text x="395" y="130" fill="#bfdbfe" font-family="sans-serif" font-size="10">ALL TERMINALS</text>
+  <!-- Cars driving on roadway -->
+  <rect x="170" y="240" width="90" height="55" rx="10" fill="#ef4444"/>
+  <rect x="185" y="225" width="60" height="25" rx="5" fill="#fca5a5"/>
+  <circle cx="190" cy="295" r="10" fill="#0f172a"/>
+  <circle cx="240" cy="295" r="10" fill="#0f172a"/>
+  <!-- Watermark -->
+  <rect x="15" y="15" width="260" height="32" rx="6" fill="rgba(15,23,42,0.75)"/>
+  <text x="25" y="36" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">TOEIC PART 1 · PHOTO #5</text>
+</svg>

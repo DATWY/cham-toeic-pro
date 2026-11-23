@@ -1,0 +1,912 @@
+{
+  "id": "cham_part_7_single_test_23",
+  "sourceId": "6a1ce826716fea002570c9f7",
+  "slug": "part-7-single-test-23",
+  "title": "Đề lẻ Part 7 Đơn · Test 23",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 30,
+  "totalQuestions": 29,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_7": 29
+  },
+  "groups": [
+    {
+      "part": 7,
+      "range": "147-148",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\">Dear High View Apartments Residents,</p>\n\n<p style=\"text-align: justify;\">Please be advised that Riverside Paving Company will be at High View Apartments on May 3 and 4 to repave the parking lot. To allow the work to begin on schedule, all vehicles must be removed from the parking area by 8:00 A.M. on May 3. Residents will be able to use the parking lot again starting at 8:00 A.M. on May 5.</p>\n\n<p style=\"text-align: justify;\">We understand that finding alternative parking may be inconvenient. However, removing all vehicles is essential to ensure the project can be completed within the planned two-day period.</p>\n\n<p style=\"text-align: justify;\">Please note that all parking spaces will be expanded in width, and some spaces may be relocated as part of the resurfacing work. If your assigned parking space is moved more than 20 meters from its current location, you will be notified by email.</p>\n\n<p style=\"text-align: justify;\">Thank you for your understanding and cooperation.</p>\n\n<p style=\"text-align: justify;\">Judith Alvarez<br>\nProperty Manager</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 147,
+          "stem": "Why was this notice sent to residents?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To encourage residents to participate in a meeting on May 3"
+            },
+            {
+              "choice": "B",
+              "text": "To gather residents' comments regarding parking facilities"
+            },
+            {
+              "choice": "C",
+              "text": "To update residents about an upcoming construction project"
+            },
+            {
+              "choice": "D",
+              "text": "To announce that parking fees will be increased"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Th&ocirc;ng b&aacute;o n&agrave;y cho cư d&acirc;n biết rằng b&atilde;i đỗ xe sẽ được trải nhựa lại v&agrave;o ng&agrave;y 3 v&agrave; 4 th&aacute;ng 5, đồng thời giải th&iacute;ch c&aacute;c hạn chế về đỗ xe trong thời gian thi c&ocirc;ng.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 148,
+          "stem": "What can be inferred about High View Apartments?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Residents pay a monthly fee for maintenance services."
+            },
+            {
+              "choice": "B",
+              "text": "A new property manager was recently appointed."
+            },
+            {
+              "choice": "C",
+              "text": "The parking area is repaved every year."
+            },
+            {
+              "choice": "D",
+              "text": "Each resident is assigned a specific parking space."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>&quot;If your assigned parking space is moved more than 20 meters from its current location, you will be notified by email.&quot;</p>\n\n<p>=&gt;&nbsp;Điều n&agrave;y cho thấy cư d&acirc;n c&oacute; c&aacute;c chỗ đỗ xe được chỉ định ri&ecirc;ng.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "149-150",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: justify;\"><strong>Carol Barger (10:45 A.M.)</strong>: Hello, Ms. Seang.</p>\n\n<p style=\"text-align: justify;\"><strong>Leakhena Seang (10:55 A.M.)</strong>: Good morning!</p>\n\n<p style=\"text-align: justify;\"><strong>Carol Barger (11:15 A.M.)</strong>: Fifteen people have signed up for your mosaic workshop tomorrow, which is five more participants than attended last summer. Your workshops seem to become more popular each year! Do you have sufficient supplies for a group of that size?</p>\n\n<p style=\"text-align: justify;\"><strong>Leakhena Seang (11:23 A.M.)</strong>: Yes, I have more than enough materials. For this workshop, we'll make mosaic artwork using pieces of sea glass that I gathered during my vacation last summer. The glass comes from brown, green, and blue bottles that washed ashore. The sand has worn down the sharp edges, making the pieces completely safe for participants to handle.</p>\n\n<p style=\"text-align: justify;\"><strong>Carol Barger (11:30 A.M.)</strong>: Great. I'll see you at breakfast tomorrow.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 149,
+          "stem": "What is Ms. Seang most likely employed as?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A glass artisan"
+            },
+            {
+              "choice": "B",
+              "text": "An art instructor"
+            },
+            {
+              "choice": "C",
+              "text": "A lifeguard at a beach"
+            },
+            {
+              "choice": "D",
+              "text": "Program administrator"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p style=\"text-align: justify\">C&ocirc; Seang đang hướng dẫn một buổi workshop về tranh gh&eacute;p mosaic v&agrave; thảo luận về việc chuẩn bị đủ vật liệu để người tham gia c&oacute; thể s&aacute;ng tạo t&aacute;c phẩm nghệ thuật. Điều n&agrave;y cho thấy rất r&otilde; rằng c&ocirc; ấy giảng dạy hoặc tổ chức c&aacute;c workshop nghệ thuật.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 150,
+          "stem": "What is Ms. Seang implying when she says, \"I have plenty to go around\" at 11:23 A.M.?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She is preparing to create an oversized mosaic."
+            },
+            {
+              "choice": "B",
+              "text": "She has been collecting sea glass for many years."
+            },
+            {
+              "choice": "C",
+              "text": "There is sufficient sea glass available for all workshop attendees."
+            },
+            {
+              "choice": "D",
+              "text": "She believes only a small portion of her sea glass will be needed."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p style=\"text-align: justify\">Carol hỏi liệu c&oacute; đủ vật liệu cho 15 người tham gia hay kh&ocirc;ng.</p>\n\n<p style=\"text-align: justify\">=&gt; C&ocirc; Seang trả lời rằng c&ocirc; c&oacute; dư vật liệu, nghĩa l&agrave; tất cả những người tham gia workshop sẽ c&oacute; đủ thủy tinh biển để sử dụng.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "151-152",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">To: Sales Department</p>\n\n<p style=\"text-align: justify;\">From: Laura Correa</p>\n\n<p style=\"text-align: justify;\">Date: October 5</p>\n\n<p style=\"text-align: justify;\">Subject: Company News and Announcements</p>\n\n<p style=\"text-align: justify;\">Dear Team,</p>\n\n<p style=\"text-align: justify;\">As mentioned in the September edition of the Brighter Sails newsletter, our team has maintained excellent performance throughout the year. This is an accomplishment we can all be proud of. Please take a moment to congratulate each other. We look forward to developing even more innovative and exciting ideas in the future.</p>\n\n<p style=\"text-align: justify;\">Additionally, Jasen Norton will be relocating to our Kingston head office next month. Although we are sorry to see him leave our team, we sincerely appreciate his outstanding contributions and wish him every success in his new position.</p>\n\n<p style=\"text-align: justify;\">To celebrate Mr. Norton and say goodbye, a farewell lunch will be held on October 28 at 1:00 P.M. in the conference room on the second floor. Please come prepared to share your good wishes and perhaps a memorable story. Lunch, cake, and decorations will be provided by the company.</p>\n\n<p style=\"text-align: justify;\">Kindly inform me by October 12 if you plan to attend.</p>\n\n<p style=\"text-align: justify;\">Best regards,</p>\n\n<p style=\"text-align: justify;\">Laura Correa</p>\n\n<p style=\"text-align: justify;\">Sales Manager</p>\n\n<p style=\"text-align: justify;\">Brighter Sails Ltd.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 151,
+          "stem": "What is stated about Mr. Norton?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He will participate in an upcoming sales conference."
+            },
+            {
+              "choice": "B",
+              "text": "He submitted a request for office supplies to Ms. Correa."
+            },
+            {
+              "choice": "C",
+              "text": "He authored an article in the September newsletter."
+            },
+            {
+              "choice": "D",
+              "text": "He will be moving to another branch of the company."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p style=\"text-align: justify\">&quot;Jasen Norton will be relocating to our Kingston head office next month.&quot; =&gt; Điều n&agrave;y c&oacute; nghĩa l&agrave; anh ấy sẽ chuyển sang một địa điểm kh&aacute;c trong c&ugrave;ng một c&ocirc;ng ty.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 152,
+          "stem": "What is Ms. Correa asking the sales team to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Submit personal stories for a newsletter"
+            },
+            {
+              "choice": "B",
+              "text": "Provide suggestions for possible new hires"
+            },
+            {
+              "choice": "C",
+              "text": "Let her know if they will attend an event"
+            },
+            {
+              "choice": "D",
+              "text": "Assist in decorating the office"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p style=\"text-align: justify\">&quot;Kindly inform me by October 12 if you plan to attend.&quot; =&gt; C&ocirc; ấy đang y&ecirc;u cầu nh&acirc;n vi&ecirc;n cho biết họ c&oacute; tham dự bữa tiệc chia tay hay kh&ocirc;ng.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "153-154",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><strong>Refurbished Theater Gives Town a Boost</strong></p>\n\n<p style=\"text-align: justify;\">BEACHVILLE (February 24) - Residents of Beachville and visiting tourists have something exciting to look forward to. The Crown Coastal Theater, which has been a part of the community for 40 years, is expected to reopen in June.</p>\n\n<p style=\"text-align: justify;\">Many people were disappointed when the theater's previous owners shut it down more than a year ago because the building required costly renovations. Thankfully, new owners have taken over and spent the past year improving both the interior facilities and the projection equipment.</p>\n\n<p style=\"text-align: justify;\">According to Christine Lafferty, she and her longtime friend Morgan Flanagan spent much of their childhood at the theater. “Watching movies was a favorite activity on rainy days in a coastal town like ours. We were very disappointed when it closed,” she said.</p>\n\n<p style=\"text-align: justify;\">Lafferty and Flanagan, who are also the owners of the well-known Blue Bay Bistro, purchased the theater and carried out the repairs needed to ensure it remains a successful and vibrant business.</p>\n\n<p style=\"text-align: justify;\">For additional details about the theater and upcoming events, visit&nbsp;www.crowncoastaltheater.com.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 153,
+          "stem": "What is the main purpose of this article?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To provide information about conditions at the beach"
+            },
+            {
+              "choice": "B",
+              "text": "To announce the reopening of a business"
+            },
+            {
+              "choice": "C",
+              "text": "To promote the premiere of a movie"
+            },
+            {
+              "choice": "D",
+              "text": "To publicize a newly opened restaurant"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;The Crown Coastal Theater, which has been a part of the community for 40 years, is expected to reopen in June.&rdquo; =&gt; Điều n&agrave;y cho thấy mục đ&iacute;ch ch&iacute;nh của b&agrave;i viết l&agrave; th&ocirc;ng b&aacute;o cho độc giả rằng rạp h&aacute;t sẽ mở cửa trở lại.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 154,
+          "stem": "Who is Ms. Flanagan?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A member of the town council"
+            },
+            {
+              "choice": "B",
+              "text": "An organizer of events"
+            },
+            {
+              "choice": "C",
+              "text": "Ms. Lafferty's business partner"
+            },
+            {
+              "choice": "D",
+              "text": "The author of the article"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;Lafferty and Flanagan, who are also the owners of the well-known Blue Bay Bistro, purchased the theater&hellip;&rdquo; =&gt; Điều n&agrave;y cho thấy b&agrave; Flanagan l&agrave;m việc c&ugrave;ng với b&agrave; Lafferty với tư c&aacute;ch l&agrave; đồng chủ sở hữu/đối t&aacute;c kinh doanh.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "155-157",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">To: Randi Longfellow &lt;rlongfellow@sapphiremail.com.au&gt;</p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">From: Deon Welman &lt;deonwelman@skyviewscopes.com.au&gt;</p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">Date: 27 March</p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">Subject: Makatasi model METX-33948</p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">Dear Ms. Longfellow,</p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">Thank you for purchasing the Makatasi ETX-Triple Refracting Telescope (Model METX-33948). We regret to inform you that this item is currently out of stock and on back order. <strong>[1] </strong>.</p>\n\n<p style=\"text-align: justify;\">If you would rather not wait for it to become available, we can offer a comparable telescope from a different manufacturer, Belter Telescopes. The Belter BTR-1483 features the same 120 mm aperture and retractable lens hood as the Makatasi telescope you selected.<strong>[2]</strong>. Additionally, every Belter telescope comes with a padded carrying case. The Belter BTR-1483 is also priced $200 lower than the Makatasi METX-33948.</p>\n\n<p style=\"text-align: justify;\">Should you decide to modify your order, please reply to this email within 48 hours or visit our website to chat with one of our representatives at http://www.skyviewscopes.com.au. We will update your order accordingly, issue a $200 refund to your credit card, and arrange overnight shipping for the replacement telescope at no additional cost.<strong> [3]</strong>.</p>\n\n<p style=\"text-align: justify;\">If we do not hear from you, we will contact you once the Makatasi METX-33948 is available again and provide details regarding its delivery.<strong> [4] </strong>.</p>\n\n<p style=\"text-align: justify;\">Kind regards,</p>\n\n<p style=\"text-align: justify;\">Deon Welman</p>\n\n<p style=\"text-align: justify;\">Sales Representative</p>\n\n<p style=\"text-align: justify;\">Skyview Scopes</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 155,
+          "stem": "What is the main purpose of this e-mail?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To ask for payment"
+            },
+            {
+              "choice": "B",
+              "text": "To explain how to operate a product"
+            },
+            {
+              "choice": "C",
+              "text": "To market a new product"
+            },
+            {
+              "choice": "D",
+              "text": "To suggest an alternative item"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;If you would rather not wait for it to become available, we can offer a comparable telescope from a different manufacturer, Belter Telescopes.&rdquo; =&gt; Điều n&agrave;y cho thấy mục đ&iacute;ch ch&iacute;nh l&agrave; đưa ra một lựa chọn thay thế v&igrave; sản phẩm ban đầu đ&atilde; hết h&agrave;ng.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 156,
+          "stem": "What information is provided about the Belter BTR-1483 telescope?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It is available for purchase only through the Internet."
+            },
+            {
+              "choice": "B",
+              "text": "It will be shipped directly by the manufacturer."
+            },
+            {
+              "choice": "C",
+              "text": "A protective carrying case is included with it."
+            },
+            {
+              "choice": "D",
+              "text": "It is the highest-priced telescope in its category."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>&ldquo;Additionally, every Belter telescope comes with a padded carrying case.&rdquo; =&gt;&nbsp;Đ&acirc;y l&agrave; một vật phẩm đi k&egrave;m với sản phẩm.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 157,
+          "stem": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"You can see a full list of specifications on our Web site.\"",
+          "options": [
+            {
+              "choice": "A",
+              "text": "[1]"
+            },
+            {
+              "choice": "B",
+              "text": "[2]"
+            },
+            {
+              "choice": "C",
+              "text": "[3]"
+            },
+            {
+              "choice": "D",
+              "text": "[4]"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Vị tr&iacute; [2] xuất hiện ngay sau khi m&ocirc; tả c&aacute;c t&iacute;nh năng của k&iacute;nh thi&ecirc;n văn: &ldquo;The Belter BTR-1483 features the same 120 mm aperture and retractable lens hood&hellip;&rdquo;. C&acirc;u được th&ecirc;m v&agrave;o n&agrave;y ph&ugrave; hợp một c&aacute;ch tự nhi&ecirc;n ở đ&acirc;y v&igrave; n&oacute; tiếp tục cung cấp th&ocirc;ng tin về sản phẩm v&agrave; hướng người đọc đến c&aacute;c th&ocirc;ng số kỹ thuật chi tiết hơn.</p>",
+          "tags": [
+            "[Part 7] Điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "158-160",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">To: Sun-Hi Myo &lt;shmyo@sunmail.co.nz&gt;</p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">From: Jan Delpit &lt;jdelpit@hamerkoptech.co.nz&gt;</p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">Date: 8 March</p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">Subject: RE: Inquiry about job opening</p>\n\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">Hello,</p>\n\n<p style=\"text-align: justify;\">Thank you for your message. I am currently away on vacation and will be back in the office on March 15. I will reply to your e-mail as soon as I can after returning.</p>\n\n<p style=\"text-align: justify;\">If you need general support while I am away or have inquiries about the available position in our sales division, please reach out to my assistant, Sita Viswan, at 04 555 0193 or via e-mail at sviswan@hamerkoptech.co.nz. If your questions concern particular Hamerkoptech software products, please contact our customer support team at customerservice@hamerkoptech.co.nz.</p>\n\n<p style=\"text-align: justify;\">I am also pleased to share that our newest graphic design software application is scheduled for release on April 2. Additional information about this program can be found on Hamerkoptech’s recently updated website, www.hamerkoptech.co.nz. You can also subscribe to our weekly newsletter there by following the directions provided on the homepage.</p>\n\n<p style=\"text-align: justify;\">Kind regards,</p>\n\n<p style=\"text-align: justify;\">Jan Delpit</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 158,
+          "stem": "Which of the following is a purpose of the e-mail?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To explain the operation of a software program"
+            },
+            {
+              "choice": "B",
+              "text": "To seek Ms. Myo’s assistance on a project"
+            },
+            {
+              "choice": "C",
+              "text": "To introduce a new employee"
+            },
+            {
+              "choice": "D",
+              "text": "To indicate that Mr. Delpit is out of the office"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;I am currently away on vacation and will be back in the office on March 15.&rdquo; =&gt; Điều n&agrave;y cho thấy r&otilde; rằng email đang th&ocirc;ng b&aacute;o cho người nhận biết &ocirc;ng Delpit hiện kh&ocirc;ng c&oacute; mặt/ kh&ocirc;ng thể li&ecirc;n lạc.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 159,
+          "stem": "What is scheduled to occur on April 2?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A vacant position will be filled."
+            },
+            {
+              "choice": "B",
+              "text": "A new product will be released."
+            },
+            {
+              "choice": "C",
+              "text": "A meeting with a client will be held."
+            },
+            {
+              "choice": "D",
+              "text": "A website redesign project will start."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;our newest graphic design software application is scheduled for release on April 2.&rdquo; =&gt; V&igrave; vậy, sự kiện được l&ecirc;n kế hoạch v&agrave;o ng&agrave;y 2 th&aacute;ng 4 l&agrave; việc ra mắt một sản phẩm phần mềm mới.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 160,
+          "stem": "How can individuals sign up for the newsletter?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "By contacting Ms. Viswan by phone"
+            },
+            {
+              "choice": "B",
+              "text": "By responding to Mr. Delpit’s e-mail"
+            },
+            {
+              "choice": "C",
+              "text": "By visiting the Hamerkoptech website"
+            },
+            {
+              "choice": "D",
+              "text": "By getting in touch with the customer service team"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p style=\"text-align: justify\">Th&ocirc;ng tin bổ sung về chương tr&igrave;nh n&agrave;y c&oacute; thể được t&igrave;m thấy tr&ecirc;n trang web vừa được cập nhật của Hamerkoptech tại www.hamerkoptech.co.nz. =&gt; Bạn cũng c&oacute; thể đăng k&yacute; nhận bản tin hằng tuần của ch&uacute;ng t&ocirc;i tại đ&oacute; bằng c&aacute;ch l&agrave;m theo c&aacute;c hướng dẫn được cung cấp tr&ecirc;n trang chủ.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "161-163",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">Vimalo Brands Enters a New Era</p>\n\n<p style=\"text-align: justify;\">By Yvette Maurer</p>\n\n<p style=\"text-align: justify;\">VANCOUVER (2 August) - Vimalo Brands, a major consumer goods company known for its nutritional supplements and personal-care products such as Powerburst breakfast beverages and Honeysoft soaps and lotions, is preparing to introduce a new product category: frozen foods. \"Our new Nutridinna line is not <strong>just </strong>about convenience,\" CEO Danitza Martens said during a press conference earlier today. She explained that while frozen foods are not a new idea, the company’s flash-freezing technique preserves the natural texture, flavour, vitamins, and minerals of fresh meat and produce. This allows customers to enjoy the ease of frozen meals without compromising quality.</p>\n\n<p style=\"text-align: justify;\">The company has also formed partnerships with farms in the Vancouver region to source ingredients for the Nutridinna range. According to Martens, sourcing locally reduces transportation delays and enables vegetables to be flash-frozen immediately after harvest, when they are at peak freshness. She added that this approach also benefits consumers, as the products can be stored in freezers for up to six months. Nutridinna frozen foods are scheduled to arrive in supermarkets in November, with frozen seafood products expected to be introduced in early next year.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 161,
+          "stem": "What is the main purpose of the article?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To explain a food preparation method"
+            },
+            {
+              "choice": "B",
+              "text": "To describe a company merger"
+            },
+            {
+              "choice": "C",
+              "text": "To announce a new product line"
+            },
+            {
+              "choice": "D",
+              "text": "To profile a newly appointed executive"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;Vimalo Brands ... is preparing to introduce a new product category: frozen foods.&rdquo;, &ldquo;Nutridinna frozen foods are scheduled to arrive in supermarkets in November.&rdquo; =&gt; Những ph&aacute;t biểu n&agrave;y cho thấy b&agrave;i b&aacute;o đang th&ocirc;ng b&aacute;o về d&ograve;ng sản phẩm thực phẩm đ&ocirc;ng lạnh mới của c&ocirc;ng ty.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 162,
+          "stem": "The word \" just \" in paragraph 1 (\"Our new Nutridinna line is not just about convenience,\") is closest in meaning to",
+          "options": [
+            {
+              "choice": "A",
+              "text": "slightly"
+            },
+            {
+              "choice": "B",
+              "text": "exactly"
+            },
+            {
+              "choice": "C",
+              "text": "only"
+            },
+            {
+              "choice": "D",
+              "text": "recently"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>&ldquo;not just&rdquo; c&oacute; nghĩa l&agrave; &ldquo;kh&ocirc;ng chỉ&rdquo;, cho thấy sản phẩm mang lại nhiều lợi &iacute;ch hơn l&agrave; chỉ sự tiện lợi.</p>",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        },
+        {
+          "num": 163,
+          "stem": "What does Ms. Martens imply about flash-frozen foods?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "They cost less than fresh foods."
+            },
+            {
+              "choice": "B",
+              "text": "They retain the same nutritional value as fresh foods."
+            },
+            {
+              "choice": "C",
+              "text": "They are just as simple to transport as fresh foods."
+            },
+            {
+              "choice": "D",
+              "text": "They have less taste compared to fresh foods."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>&ldquo;the company&rsquo;s flash-freezing technique preserves the natural texture, flavour, vitamins, and minerals of fresh meat and produce.&rdquo; =&gt; Điều n&agrave;y ngụ &yacute; rằng những thực phẩm n&agrave;y vẫn giữ được c&aacute;c gi&aacute; trị dinh dưỡng, tương tự như thực phẩm tươi.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "164-167",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<section data-scroll-anchor=\"false\" data-testid=\"conversation-turn-20\" data-turn=\"assistant\" data-turn-id=\"request-WEB:0a1fbce5-feab-412f-ae44-afbc4e5f66ba-9\" data-turn-id-container=\"request-WEB:0a1fbce5-feab-412f-ae44-afbc4e5f66ba-9\" dir=\"auto\">\n<p data-end=\"324\" data-start=\"26\" style=\"text-align: justify;\">Are you prepared to put in effort as part of a team of similarly motivated individuals? Are you ready to apply your education, experience, and creativity effectively? If yes, this position may be right for you. Karning Creative Designs is growing, and our success creates new opportunities for you.</p>\n\n<p data-end=\"813\" data-start=\"326\" style=\"text-align: justify;\">Karning Creative Designs started ten years ago as a small two-person business operating from the home of its founder and current CEO, Shirin Navani. Today, the company is based in a stylish loft in downtown Hollinson and employs 25 full-time staff. The company specializes in creating printed materials such as brochures, catalogs, advertisements, and posters for clients. It is now looking for skilled designers and artists who can perform well in a fast-paced, team-oriented workplace.</p>\n\n<p data-end=\"848\" data-start=\"815\" style=\"text-align: justify;\"><strong data-end=\"848\" data-start=\"815\">Ideal candidate requirements:</strong></p>\n\n<ul data-end=\"1200\" data-start=\"849\">\n\t<li data-end=\"971\" data-start=\"849\" style=\"text-align: justify;\">Holds a degree in design, advertising, or graphic arts, although relevant work experience may replace formal education</li>\n\t<li data-end=\"1004\" data-start=\"972\" style=\"text-align: justify;\">Shows strong teamwork skills</li>\n\t<li data-end=\"1052\" data-start=\"1005\" style=\"text-align: justify;\">Has a keen attention to detail and accuracy</li>\n\t<li data-end=\"1118\" data-start=\"1053\" style=\"text-align: justify;\">Consistently meets deadlines and performs well under pressure</li>\n\t<li data-end=\"1200\" data-start=\"1119\" style=\"text-align: justify;\">Experience in graphic design or related fields is beneficial but not required</li>\n</ul>\n\n<p data-end=\"1386\" data-is-last-node=\"\" data-is-only-node=\"\" data-start=\"1202\" style=\"text-align: justify;\">If you are interested in joining the team, they would like to hear from you. Contact Salvador Tomassin at 608-555-0144 for more information. Applications must be submitted by March 31.</p>\n</section>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 164,
+          "stem": "Based on the advertisement, what role is Ms. Navani most likely to have?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A client of Karning Creative Designs"
+            },
+            {
+              "choice": "B",
+              "text": "A business owner"
+            },
+            {
+              "choice": "C",
+              "text": "A photographer"
+            },
+            {
+              "choice": "D",
+              "text": "A real estate professional"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;Karning Creative Designs started ten years ago as a small two-person business operating from the home of its founder and current CEO, Shirin Navani.&rdquo; =&gt; V&igrave; b&agrave; l&agrave; người s&aacute;ng lập v&agrave; CEO hiện tại, n&ecirc;n b&agrave; Navani rất c&oacute; khả năng l&agrave; chủ sở hữu doanh nghiệp.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 165,
+          "stem": "What is suggested about Karning Creative Designs?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Its main specialization is web design."
+            },
+            {
+              "choice": "B",
+              "text": "It originally had only two employees."
+            },
+            {
+              "choice": "C",
+              "text": "It was established by Mr. Tomassin."
+            },
+            {
+              "choice": "D",
+              "text": "Employees are allowed to work remotely."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;Karning Creative Designs started ten years ago as a small two-person business&hellip;&rdquo; =&gt; Điều n&agrave;y cho thấy c&ocirc;ng ty đ&atilde; khởi đầu chỉ với hai người.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 166,
+          "stem": "What is expected of candidates applying for the job?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Skill in working with others"
+            },
+            {
+              "choice": "B",
+              "text": "Prior experience in design work"
+            },
+            {
+              "choice": "C",
+              "text": "Availability to work on weekends"
+            },
+            {
+              "choice": "D",
+              "text": "Proficiency in specific software tools"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;Shows strong teamwork skills&rdquo; and&nbsp;&ldquo;perform well in a fast-paced, team-oriented workplace.&rdquo; =&gt; Những ph&aacute;t biểu n&agrave;y cho thấy c&ocirc;ng ty mong đợi ứng vi&ecirc;n c&oacute; thể l&agrave;m việc hiệu quả với người kh&aacute;c.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 167,
+          "stem": "What will happen on March 31?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "An application form will become accessible."
+            },
+            {
+              "choice": "B",
+              "text": "A graphic designer will move to a new location."
+            },
+            {
+              "choice": "C",
+              "text": "A project will start."
+            },
+            {
+              "choice": "D",
+              "text": "A deadline will occur."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>&ldquo;Applications must be submitted by March 31.&rdquo; =&gt; Điều n&agrave;y c&oacute; nghĩa l&agrave; ng&agrave;y 31 th&aacute;ng 3 l&agrave; hạn ch&oacute;t nộp hồ sơ.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "168-171",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p data-end=\"363\" data-start=\"0\" style=\"text-align: justify;\">NEW HAVEN (June 1) - Marco’s Italian Restaurant on Frontage Road is scheduled to reopen in late June. It was shut down three months earlier following a water leak that severely damaged the kitchen. The incident required extensive repairs in both the kitchen and dining areas. <strong>[1].</strong> When it reopens, the restaurant will be able to host larger groups of customers.</p>\n\n<p data-end=\"798\" data-start=\"365\" style=\"text-align: justify;\">Over the past three months, many staff members were able to continue working at Marco’s Italian Market, located across the street. <strong>[2]</strong>. “The leak occurred just before the market’s busy season began,” said Tom Marco, who owns both businesses. “We had to temporarily increase staff there, and I was glad to keep my restaurant employees working.” Most of these workers have now returned to their positions at the restaurant.&nbsp; <strong>[3]</strong>.&nbsp;</p>\n\n<p data-end=\"1126\" data-is-last-node=\"\" data-is-only-node=\"\" data-start=\"800\" style=\"text-align: justify;\">Mr. Marco has organized a grand reopening event for June 25. The occasion will feature live music and a new tasting menu. <strong>[4].</strong> Customers must make reservations for the celebration in advance by calling 203-555-0124. “We are excited to resume preparing our traditional dishes and to welcome the community back,” Mr. Marco said.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 168,
+          "stem": "What information does the article provide about Marco’s Italian Restaurant?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It is the longest-running restaurant in New Haven."
+            },
+            {
+              "choice": "B",
+              "text": "It is hiring a chef specialized in traditional cuisine."
+            },
+            {
+              "choice": "C",
+              "text": "It required extensive renovation work."
+            },
+            {
+              "choice": "D",
+              "text": "It has relocated to a different site."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;The incident required extensive repairs in both the kitchen and dining areas.&rdquo; =&gt; Điều n&agrave;y cho thấy nh&agrave; h&agrave;ng cần được cải tạo đ&aacute;ng kể sau sự cố r&ograve; rỉ nước.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 169,
+          "stem": "What is suggested about Marco’s Italian Market?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It provides ingredients for Marco’s Italian Restaurant."
+            },
+            {
+              "choice": "B",
+              "text": "It sometimes employs temporary staff."
+            },
+            {
+              "choice": "C",
+              "text": "It will shut down in three months."
+            },
+            {
+              "choice": "D",
+              "text": "It is situated next to Marco’s Italian Restaurant."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;We had to temporarily increase staff there...&rdquo; =&gt; Điều n&agrave;y cho thấy khu chợ c&oacute; thể tuyển dụng hoặc bố tr&iacute; th&ecirc;m nh&acirc;n vi&ecirc;n khi cần thiết.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 170,
+          "stem": "What will happen during the event on June 25?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The restaurant will lower its food prices."
+            },
+            {
+              "choice": "B",
+              "text": "The restaurant will serve special dishes."
+            },
+            {
+              "choice": "C",
+              "text": "Mr. Marco will mark his retirement."
+            },
+            {
+              "choice": "D",
+              "text": "Local business leaders in New Haven will recognize Mr. Marco."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>&ldquo;The occasion will feature live music and a new tasting menu.&rdquo; =&gt; Thực đơn nếm thử bao gồm c&aacute;c m&oacute;n ăn đặc biệt được chuẩn bị để kh&aacute;ch h&agrave;ng thưởng thức v&agrave; trải nghiệm.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 171,
+          "stem": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"During repairs, some additional dining space was added.\"",
+          "options": [
+            {
+              "choice": "A",
+              "text": "[1]"
+            },
+            {
+              "choice": "B",
+              "text": "[2]"
+            },
+            {
+              "choice": "C",
+              "text": "[3]"
+            },
+            {
+              "choice": "D",
+              "text": "[4]"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p style=\"text-align: justify\">C&acirc;u n&agrave;y ph&ugrave; hợp nhất khi được đặt sau c&acirc;u: &ldquo;The incident required extensive repairs in both the kitchen and dining areas.&rdquo; v&agrave; trước c&acirc;u: &ldquo;When it reopens, the restaurant will be able to host larger groups of customers.&rdquo; =&gt; Kh&ocirc;ng gian ăn uống được mở rộng giải th&iacute;ch l&yacute; do v&igrave; sao nh&agrave; h&agrave;ng c&oacute; thể phục vụ c&aacute;c nh&oacute;m kh&aacute;ch lớn hơn sau khi mở cửa trở lại.</p>",
+          "tags": [
+            "[Part 7] Điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "172-175",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p data-end=\"282\" data-start=\"26\" style=\"text-align: justify;\"><strong>Marlys Barry (10:17 A.M.)</strong><br data-end=\"54\" data-start=\"51\">\nThis is Ms. Barry from the data analysis department. I have copied my colleague, Ms. Choi, on this message. We are reaching out regarding your request for a list of email addresses of all account holders, organized by age group.</p>\n\n<p data-end=\"372\" data-start=\"284\" style=\"text-align: justify;\"><strong>Alexander Kubelski (10:17 A.M.)</strong><br data-end=\"318\" data-start=\"315\">\nYes, how soon will you be able to finish this request?</p>\n\n<p data-end=\"623\" data-start=\"374\" style=\"text-align: justify;\"><strong>Marlys Barry (10:18 A.M.)</strong><br data-end=\"402\" data-start=\"399\">\nBefore we proceed, I have a question. Do you actually need the email addresses of every account holder? That would result in a very large dataset. Or are you only interested in account holders within a specific age range?</p>\n\n<p data-end=\"833\" data-start=\"625\" style=\"text-align: justify;\"><strong>Alexander Kubelski (10:19 A.M.)</strong><br data-end=\"659\" data-start=\"656\">\nI understand. I need to email account holders between the ages of 55 and 65 to invite them to speak with a retirement planning specialist. Should I submit a new request form?</p>\n\n<p data-end=\"1004\" data-start=\"835\" style=\"text-align: justify;\"><strong>Bora Choi (10:21 A.M.)</strong><br data-end=\"860\" data-start=\"857\">\nThat won’t be necessary, Mr. Kubelski. We can modify your existing request form for you so you don’t lose your position in the processing queue.</p>\n\n<p data-end=\"1112\" data-start=\"1006\" style=\"text-align: justify;\"><strong>Alexander Kubelski (10:21 A.M.)</strong><br data-end=\"1040\" data-start=\"1037\">\nThat’s great, thank you. Is it possible to receive the list immediately?</p>\n\n<p data-end=\"1203\" data-start=\"1114\" style=\"text-align: justify;\"><strong>Marlys Barry (10:22 A.M.)</strong><br data-end=\"1142\" data-start=\"1139\">\nThere are still several requests ahead of yours in the queue.</p>\n\n<p data-end=\"1295\" data-start=\"1205\" style=\"text-align: justify;\"><strong>Alexander Kubelski (10:23 A.M.)</strong><br data-end=\"1239\" data-start=\"1236\">\nI was hoping to send the email invitations out tomorrow.</p>\n\n<p data-end=\"1370\" data-is-last-node=\"\" data-is-only-node=\"\" data-start=\"1297\" style=\"text-align: justify;\"><strong>Marlys Barry (10:24 A.M.)</strong><br data-end=\"1325\" data-start=\"1322\">\nWe will process it as soon as we are able to.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 172,
+          "stem": "Why did Ms. Barry begin an online conversation with Mr. Kubelski?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To direct him to another department"
+            },
+            {
+              "choice": "B",
+              "text": "To turn down an invitation"
+            },
+            {
+              "choice": "C",
+              "text": "To offer an apology"
+            },
+            {
+              "choice": "D",
+              "text": "To seek clarification regarding a request"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;Before we proceed, I have a question. Do you actually need the email addresses of every account holder?&rdquo; =&gt; B&agrave; Barry đ&atilde; li&ecirc;n hệ với anh ấy để l&agrave;m r&otilde; ch&iacute;nh x&aacute;c những th&ocirc;ng tin m&agrave; anh ấy cần.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 173,
+          "stem": "Who will receive an e-mail from Mr. Kubelski?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Members of the data analysis department"
+            },
+            {
+              "choice": "B",
+              "text": "Account holders belonging to a specific age range"
+            },
+            {
+              "choice": "C",
+              "text": "Retirement planning professionals"
+            },
+            {
+              "choice": "D",
+              "text": "All of Mr. Kubelski’s clients"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;I need to email account holders between the ages of 55 and 65 to invite them to speak with a retirement planning specialist.&rdquo; =&gt; Anh ấy muốn gửi email cho c&aacute;c chủ t&agrave;i khoản từ 55 đến 65 tuổi về kế hoạch nghỉ hưu.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 174,
+          "stem": "What does Ms. Choi propose to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Make a change to a form"
+            },
+            {
+              "choice": "B",
+              "text": "Create an account"
+            },
+            {
+              "choice": "C",
+              "text": "Compose an email"
+            },
+            {
+              "choice": "D",
+              "text": "Update a policy document"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>&ldquo;We can modify your existing request form for you&hellip;&rdquo; =&gt; Điều n&agrave;y c&oacute; nghĩa l&agrave; c&ocirc; ấy đề nghị thay đổi mẫu đơn đ&atilde; được nộp trước đ&oacute;.</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 175,
+          "stem": "At 10:22 A.M., what is Ms. Barry most likely implying when she says, “There are several projects ahead of yours”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Ms. Barry intends to place Mr. Kubelski’s request at the back of the queue."
+            },
+            {
+              "choice": "B",
+              "text": "Mr. Kubelski's request will not be the first job Ms. Barry completes."
+            },
+            {
+              "choice": "C",
+              "text": "Ms. Barry will be unable to distribute the invitations on Mr. Kubelski’s behalf."
+            },
+            {
+              "choice": "D",
+              "text": "Mr. Kubelski must help complete other projects before his request can be processed."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p style=\"text-align: justify\">&ldquo;There are still several requests ahead of yours in the queue.&rdquo; =&gt; Điều n&agrave;y cho thấy c&aacute;c y&ecirc;u cầu kh&aacute;c phải được xử l&yacute; trước y&ecirc;u cầu của &ocirc;ng Kubelski.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 7,
+  "subLabel": "Đoạn đơn"
+}

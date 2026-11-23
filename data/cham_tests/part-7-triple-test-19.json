@@ -1,0 +1,457 @@
+{
+  "id": "cham_part_7_triple_test_19",
+  "sourceId": "631b1a1bf2fe240a4043b02f",
+  "slug": "part-7-triple-test-19",
+  "title": "Đề lẻ Part 7 Ba · Test 19",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 18,
+  "totalQuestions": 15,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_7": 15
+  },
+  "groups": [
+    {
+      "part": 7,
+      "range": "186-190",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>To: Adam Johansson [damj@helpinghouses.com]<br>\nFrom: Kristina Hausmann [kristinah@helpinghouses.com]<br>\nDate: February 17<br>\nSubject: Urgent event update<br>\nDear Mr. Johansson,<br>\nThere are some changes to the schedule for tonight's fundraising event.<br>\nProfessor Trevelyan's flight from San Francisco has been delayed. He will not be able to arrive at the venue in time to speak during his original time slot. So, we will serve dinner 20 minutes early, and Mr. Trevelyan can speak immediately after. Now, the schedule has already been sent out, and we have no time to reprint it anyway. Consequently, it would be good if you could briefly mention these changes when you give your talk.<br>\nI'll be at the venue in about 15 minutes to make sure preparations are going smoothly and to meet with the caterers and help them set up. If you have any questions, call me at 555-7246.<br>\nBest wishes,<br>\nKristina Hausmann</p>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p>Helping Houses<br>\nHomeless Shelter<br>\nFundraising Event<br>\nFebruary 17<br>\n7:15 P.M. ----- Opening remarks will be given by Adam Johansson, director of Helping Houses.<br>\n7:30 P.M. ----- Performance: The Denver Public Schools Choir will sing several songs, including pop, classical, and gospel numbers.<br>\n8:00 P.M. ----- Talk: Professor John Trevelyan of Bay Area University will discuss the impacts of homelessness on society and why social and financial support is so urgently needed.<br>\n8:20 P.M. ----- Dinner and dessert will be served.<br>\n9:30 P.M. ----- Charity auction: Some of our lots this year include a two-night stay at the Carruthers Hotel, brand-new tablet computers donated by the Delft Corporation, and a signed jersey from the Colorado Coyotes baseball team.<br>\n10:15 P.M. ----- Performance: Comedian Darren Benedict will do a stand-up routine for guests.<br>\n10:40 P.M. ----- Performance: Singer-songwriter Kate Barton will treat us to some music from her new album, A Murmur in Time.<br>\n11:00 P.M. ----- Denver mayor Tania Groot will deliver brief closing remarks</p>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p style=\"text-align: center;\"><b>Event Raises Funds for a Good Cause</b></p>\n\n<p>During a fundraiser held at the Carruthers Hotel over the weekend, invited guests donated close to <span style=\"font-size:14px;\"><span><span style=\"line-height:107%\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">$</span></span></span></span></span></span>25,000 for the continued operation of Helping Houses. Established 24 years ago, the organization has assisted homeless around the region in finding food, accommodation, counseling, and employment. Guests were presented with short talks, a selection of performances, and a banquet dinner. Mayor Tania Groot, who was in attendance, said, \"It is our <strong>duty</strong> as a community to care for those less fortunate.\" She also presented the director of Helping Houses with a check from the city for an additional donation of <span style=\"font-size:14px;\"><span><span style=\"line-height:107%\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">$</span></span></span></span></span></span>15,000. Corporate and private donations are still being accepted and can be made by visiting www.helpinghousesshelter.org/donate.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 186,
+          "stem": "According to the e-mail, what will Ms. Hausmann do next?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Print some documents"
+            },
+            {
+              "choice": "B",
+              "text": "Visit an event venue"
+            },
+            {
+              "choice": "C",
+              "text": "Speak with a colleague"
+            },
+            {
+              "choice": "D",
+              "text": "Call a performer"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Trong email, Ms. Hausmann nói rằng cô ấy sẽ đến địa điểm tổ chức sự kiện để đảm bảo mọi thứ diễn ra suôn sẻ và gặp gỡ nhà cung cấp dịch vụ ăn uống. Cụ thể, cô ấy viết: \"I'll be at the venue in about 15 minutes to make sure preparations are going smoothly and to meet with the caterers and help them set up.\" Do đó, đáp án đúng là (B) Visit an event venue.",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 187,
+          "stem": "What most likely happened during the fundraising event?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A university professor welcomed guests before dinner."
+            },
+            {
+              "choice": "B",
+              "text": "A director announced program changes during opening remarks."
+            },
+            {
+              "choice": "C",
+              "text": "Some tickets to a baseball game were auctioned."
+            },
+            {
+              "choice": "D",
+              "text": "Some officials presented a certificate to a non-profit organization."
+            }
+          ],
+          "answer": "B",
+          "explanation": "Theo email, Adam Johansson, giám đốc của Helping Houses, sẽ thông báo những thay đổi trong chương trình khi ông ấy phát biểu. Ms. Hausmann viết: \"it would be good if you could briefly mention these changes when you give your talk.\" Do đó, đáp án đúng là (B) A director announced program changes during opening remarks.",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 188,
+          "stem": "In the article, the word \"duty\" in paragraph 1, is closest in meaning to",
+          "options": [
+            {
+              "choice": "A",
+              "text": "motivation"
+            },
+            {
+              "choice": "B",
+              "text": "tendency"
+            },
+            {
+              "choice": "C",
+              "text": "labor"
+            },
+            {
+              "choice": "D",
+              "text": "responsibility"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<b>Tạm dịch:</b> <br> Trong bài viết, từ “duty” (nghĩa vụ, trách nhiệm) ở đoạn 1 có nghĩa gần nhất với:<br>motivation: động lực<br>tendency: xu hướng<br>labor: lao động<br>responsibility: trách nhiệm <br>=> duty = responsibility",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        },
+        {
+          "num": 189,
+          "stem": "What was included in an auction?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Two tickets for admission to an amusement park"
+            },
+            {
+              "choice": "B",
+              "text": "Autographed memorabilia from actors"
+            },
+            {
+              "choice": "C",
+              "text": "A stay at the same venue as the fundraiser"
+            },
+            {
+              "choice": "D",
+              "text": "A set of brand new desktop computers"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Theo thông tin trong email, một trong những món được đấu giá là một kỳ nghỉ hai đêm tại Carruthers Hotel, nơi tổ chức sự kiện gây quỹ. Cụ thể: \"Some of our lots this year include a two-night stay at the Carruthers Hotel...\" Do đó, đáp án đúng là (C) A stay at the same venue as the fundraiser.",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 190,
+          "stem": "What is indicated about Helping Houses?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It earned more cash during the fundraiser than last year."
+            },
+            {
+              "choice": "B",
+              "text": "It received funding from the city government."
+            },
+            {
+              "choice": "C",
+              "text": "It plans to raise money to expand its current facilities."
+            },
+            {
+              "choice": "D",
+              "text": "It primarily operates with funds from corporate sponsors."
+            }
+          ],
+          "answer": "B",
+          "explanation": "Bài báo chỉ ra rằng tổ chức Helping Houses đã nhận được một tấm séc từ thị trưởng thành phố với một khoản đóng góp bổ sung là 15.000 đô la. Cụ thể: \"She also presented the director of Helping Houses with a check from the city for an additional donation of $15,000.\" Do đó, đáp án đúng là (B) It received funding from the city government.",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "191-195",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><b>Aurora’s First Job Fair</b></p>\n\n<p>By: Taylor Bridges<br>\nThe Aurora Chamber of Commerce will conduct the first Aurora Job Fair on March 29, from 7:00 a.m. to 7:00 p.m. at the Aurora City Arena. Coordinator Alex McDade explained that the fair was organized in response to calls from Mayor Owen Brownstein, who has asked the business community to help the city address issues with unemployment. Fifty companies are expected to participate.<br>\nEmployers wishing to secure a regular-sized table at the event will be charged <span style=\"font-size:14px;\"><span><span style=\"line-height:107%\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">$</span></span></span></span></span></span>150, while double-sized tables cost <span style=\"font-size:14px;\"><span><span style=\"line-height:107%\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">$</span></span></span></span></span></span>250. However, those who register before February 28 may reserve a regular table for just <span style=\"font-size:14px;\"><span><span style=\"line-height:107%\"><span style=\"font-size:14px;\"><span><span style=\"line-height:107%\">$</span></span></span></span></span></span>130. For registration or payment, contact Liz Perry at lizperry@lightlife.com. Job seekers do not need to register in advance and will be admitted for free.</p>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p>To Liz Perry [lizperry@lightlife.com]<br>\nFrom: Kenneth Collins [ken_collins@starmortgage.com]<br>\nDate: January 29<br>\nSubject: Aurora Job Fair<br>\nDear Ms. Perry,<br>\nI read an article about the upcoming job fair, and my company, Star Mortgage, would like to be involved. We work closely with another company, Bingham Title, which is also interested in participating. We are actually subsidiaries of the company Moore Investments. Is it possible for us to have booths located next to each other? This would allow us to coordinate closely during the event.<br>\nIf this is acceptable, I will go ahead and register, pay for our table, and notify my colleague at Bingham Title to do the same. Thank you for your consideration.<br>\nSincerely,<br>\nKenneth Collins</p>\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<div style=\"text-align: center;\">\n<div style=\"text-align: left;\"><strong>FIRST AURORA JOB FAIR</strong>: <em>Corporate Participant Confirmation Form</em><br>\nThank you for registering, and we hope you find the fair beneficial. This form serves as confirmation of your registration, so please bring it to the venue.</div>\n\n<table align=\"center\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 319px; text-align: left;\"><strong>Company</strong>: Bingham Title</td>\n\t\t\t<td style=\"width: 319px; text-align: left;\"><strong>Representative(s)</strong>: Cora Jacobs</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 319px; text-align: left;\"><strong>Phone</strong>: 555-4033</td>\n\t\t\t<td style=\"width: 319px; text-align: left;\"><strong>E-mail</strong>: c.jacobs@binghamtitle.com</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 319px; text-align: left;\">T<strong>otal number of passes needed</strong>: Three</td>\n\t\t\t<td style=\"width: 319px; text-align: left;\"><strong>Table(s)</strong>: One / Regular</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"width: 638px; text-align: left;\">Payment Method: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cash O&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check O<br>\n\t\t\t&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Credit Card •&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bank Transfer O</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<div style=\"text-align: left;\">Your table number is C-14, located near the venue's main entrance. Set-up will be permitted beginning at 6 a.m. on the day of the event.<br>\n<u>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; Cora Jacobs&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u><br>\nPlease sign your name here<br>\n<u>February 16</u><br>\n&nbsp; &nbsp; &nbsp; &nbsp;Date</div>\n</div>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 191,
+          "stem": "What is true about the Aurora Job Fair?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It will be focused on jobs in a particular industry."
+            },
+            {
+              "choice": "B",
+              "text": "It was initially proposed by the mayor of the city."
+            },
+            {
+              "choice": "C",
+              "text": "It will not charge some participants for attending."
+            },
+            {
+              "choice": "D",
+              "text": "It is the first of a series of events planned for the year."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Trong b&agrave;i viết, c&oacute; đề cập rằng: Hội chợ việc l&agrave;m được tổ chức để đ&aacute;p lại lời k&ecirc;u gọi từ Thị trưởng Owen Brownstein, người đ&atilde; đề nghị cộng đồng doanh nghiệp gi&uacute;p th&agrave;nh phố giải quyết vấn đề thất nghiệp.</p>\n\n<p>(C) It will not charge some participants for attending.</p>\n\n<p>&rarr; Một số người tham dự sẽ kh&ocirc;ng phải trả ph&iacute;.</p>\n\n<p>=&gt; Gần đ&uacute;ng, nhưng cần xem kỹ:</p>\n\n<p>Trong b&agrave;i n&oacute;i rằng:</p>\n\n<p>&ldquo;Job seekers do not need to register in advance and will be admitted for free.&rdquo;</p>\n\n<p>&rarr; Những người t&igrave;m việc kh&ocirc;ng cần đăng k&yacute; trước v&agrave; được v&agrave;o cửa miễn ph&iacute;.</p>\n\n<p>Tuy nhi&ecirc;n, c&acirc;u hỏi n&oacute;i đến &ldquo;participants&rdquo; (người tham gia) &mdash; trong bối cảnh hội chợ việc l&agrave;m, &ldquo;participants&rdquo; thường chỉ c&aacute;c c&ocirc;ng ty/doanh nghiệp trưng b&agrave;y (corporate participants), chứ kh&ocirc;ng phải &ldquo;job seekers.&rdquo;</p>\n\n<p>&rarr; Do đ&oacute;, c&acirc;u n&agrave;y g&acirc;y hiểu nhầm v&agrave; kh&ocirc;ng ch&iacute;nh x&aacute;c ho&agrave;n to&agrave;n.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 192,
+          "stem": "Why did Mr. Collins write the e-mail?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To make a special request for an upcoming event"
+            },
+            {
+              "choice": "B",
+              "text": "To find out which companies have joined the job fair"
+            },
+            {
+              "choice": "C",
+              "text": "To ask about prices for corporate participants"
+            },
+            {
+              "choice": "D",
+              "text": "To recruit volunteers to work at a career fair"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Trong email của Mr. Collins, ông ấy hỏi liệu có thể đặt các gian hàng của công ty ông ấy và công ty đối tác Bingham Title gần nhau không: \"Is it possible for us to have booths located next to each other?\" Do đó, đáp án đúng là (A) To make a special request for an upcoming event.",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 193,
+          "stem": "What is mentioned about Bingham Title?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It operates several branches in Aurora."
+            },
+            {
+              "choice": "B",
+              "text": "It is owned by Moore Investments."
+            },
+            {
+              "choice": "C",
+              "text": "It is currently expanding its operations."
+            },
+            {
+              "choice": "D",
+              "text": "Its manager contacted Mr. Collins."
+            }
+          ],
+          "answer": "B",
+          "explanation": "Trong email của Mr. Collins, ông ấy đề cập rằng cả công ty của ông ấy và Bingham Title đều là công ty con của Moore Investments: \"We are actually subsidiaries of the company Moore Investments.\" Do đó, đáp án đúng là (B) It is owned by Moore Investments.",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 194,
+          "stem": "What is suggested about Mr. Collins?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "His company will pick up a promotional banner on the day of the fair."
+            },
+            {
+              "choice": "B",
+              "text": "He sent a bill to Ms. Perry for fair participation."
+            },
+            {
+              "choice": "C",
+              "text": "His company will set up a booth near Aurora City Arena's entrance."
+            },
+            {
+              "choice": "D",
+              "text": "He wrote an article about the upcoming Aurora Job Fair."
+            }
+          ],
+          "answer": "C",
+          "explanation": "Trong email của Mr. Collins không nói cụ thể về vị trí gian hàng của công ty ông ấy, thông tin này có thể được suy ra từ việc Bingham Title (công ty đối tác) có gian hàng tại vị trí gần cửa vào chính của địa điểm tổ chức: \"Your table number is C-14, located near the venue's main entrance.\" Do đó, có thể suy ra rằng công ty của Mr. Collins cũng sẽ ở gần đó. Do đó, đáp án đúng là (C) His company will set up a booth near Aurora City Arena's entrance.",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 195,
+          "stem": "What is indicated about Ms. Jacobs?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She has asked three other staff to help her at the fair."
+            },
+            {
+              "choice": "B",
+              "text": "She will be reimbursed by Star Mortgage soon."
+            },
+            {
+              "choice": "C",
+              "text": "She paid a reduced rate for a table."
+            },
+            {
+              "choice": "D",
+              "text": "She needs to bring proof of identity to the event."
+            }
+          ],
+          "answer": "C",
+          "explanation": "Trên mẫu xác nhận đăng ký của Bingham Title, có thể thấy ngày xác nhận là 16 tháng 2, trước ngày 28 tháng 2. Theo bài viết, nếu đăng ký trước ngày 28 tháng 2, giá bàn thông thường sẽ giảm từ 150 đô la xuống còn 130 đô la: \"Employers wishing to secure a regular-sized table at the event will be charged $150, while double-sized tables cost $250. However, those who register before February 28 may reserve a regular table for just $130.\" Do đó, đáp án đúng là (C) She paid a reduced rate for a table.",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "196-200",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>TO: Joel Steinbrenner [j_stein@webbwork.com]<br>\nFROM: Maria Longoria [mlong@mgcottages.com]<br>\nSUBJECT: Re: Update on Web site progress<br>\nDATE: March 20<br>\nATTACHMENT: images<br>\nHi Joel,<br>\nThanks for the update on our Web site. I'm pleased with the layout. I like the photographs of our rooms and facilities, and I think the online slideshow is a good idea. However, I'd like to add pictures to the slideshow that feature our natural surroundings. I was thinking that we can post images of activities like canoeing from the boat dock on Grand Lake and hiking the trails around Lake Granby. I've attached some images that you can use for that. Also, my colleague Alfredo Cantone would like to add a tab on the Web site where he can post weekly menus and list the items available for room service. Once these things have been added, we can probably launch the site, and I will then send you the balance of your payment.<br>\nThanks!<br>\nMaria</p>\n\n<p style=\"text-align: center;\">______________________________________________<br>\n&nbsp;</p>\n\n<table align=\"center\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width:565px;\">\n\t\t\t<div style=\"text-align: center;\"><strong>Morning Glory Guest Cottages</strong></div>\n\t\t\t&nbsp; &nbsp; &nbsp; Home | Slideshow I Facilities | Rates I <strong>Dining</strong> I Contact Us I Reservations<br>\n\t\t\t<br>\n\t\t\tOpen from 8:30 a.m. to 9:00 p.m. and located next to our compound's reception building is the Lucky Lucy Restaurant run by Chef Alfredo Cantone.<br>\n\t\t\tTo see the weekly menus for breakfast, lunch, and dinner, click here. Meal service times are listed, and updates are posted every Sunday at 7:30 a.m.<br>\n\t\t\tLucky Lucy Restaurant is also pleased to offer a limited menu of items that can be delivered to your cottage. Click here to find out what is available. Room service is offered from 7:00 a.m. through 10:00 p.m. on weekdays, and 8:00 a.m. through 11:00 p.m. on weekends.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n\n\n<p style=\"text-align: center;\">______________________________________________</p>\n\n<p>Morning Glory Guest Cottages, Colorado<br>\nGuest review<br>\nby: Jamie Wilder [jwilder@nwpostal.com]<br>\n★ ★ ★ ★ ☆<br>\nMorning Glory Guest Cottages is perfect for those wishing to escape into nature. It's just two hours from Denver by car and is located next to a beautiful mountain lake. My husband Keith and I stayed for three nights and hiked every day at nearby lakes and along the Colorado River. We were most impressed by a walk along Shadow Mountain Lake. The cottages themselves are rustic but comfortable.<br>\nKeith liked paddling around in a canoe, and I enjoyed mingling with other guests at the weekly bonfire party. I would also like to compliment the Lucky Lucy Restaurant for their incredible meals, most notably the Greek dishes that are the chef's specialty. My one complaint is that the room service menu offered only simple sandwiches, snacks, and beverages.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 196,
+          "stem": "What has Mr. Steinbrenner been requested to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Find a photographer to take pictures of nearby lakes"
+            },
+            {
+              "choice": "B",
+              "text": "Put together a slideshow of rooms and facilities"
+            },
+            {
+              "choice": "C",
+              "text": "Change a room service menu"
+            },
+            {
+              "choice": "D",
+              "text": "Post more images of scenic local areas"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Trong email, Ms. Longoria yêu cầu Mr. Steinbrenner thêm các hình ảnh về cảnh quan tự nhiên xung quanh vào slideshow: \"I'd like to add pictures to the slideshow that feature our natural surroundings... I've attached some images that you can use for that.\" Do đó, đáp án đúng là (D) Post more images of scenic local areas.",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 197,
+          "stem": "What can be inferred about Ms. Longoria?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She has not fully paid Mr. Steinbrenner for his services."
+            },
+            {
+              "choice": "B",
+              "text": "She would like Mr. Steinbrenner to give a presentation at her office."
+            },
+            {
+              "choice": "C",
+              "text": "She wants restaurant menus to be updated on a daily basis."
+            },
+            {
+              "choice": "D",
+              "text": "She requested that a payment option be added to an online page."
+            }
+          ],
+          "answer": "A",
+          "explanation": "Trong email, Ms. Longoria nói rằng sau khi các yêu cầu đã được thêm vào trang web, cô ấy sẽ gửi phần còn lại của khoản thanh toán: \"Once these things have been added, we can probably launch the site, and I will then send you the balance of your payment.\" Do đó, đáp án đúng là (A) She has not fully paid Mr. Steinbrenner for his services.",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 198,
+          "stem": "What does Ms. Wilder indicate about Morning Glory Guest Cottages?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It offers spacious accommodations."
+            },
+            {
+              "choice": "B",
+              "text": "It is situated on the banks of a river."
+            },
+            {
+              "choice": "C",
+              "text": "It holds a weekly social event."
+            },
+            {
+              "choice": "D",
+              "text": "It is easily accessible by bus."
+            }
+          ],
+          "answer": "C",
+          "explanation": "Trong bài đánh giá của Ms. Wilder, cô ấy đề cập rằng cô ấy thích giao lưu với những khách khác tại bữa tiệc lửa trại hàng tuần: \"I enjoyed mingling with other guests at the weekly bonfire party.\" Do đó, đáp án đúng là (C) It holds a weekly social event.",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 199,
+          "stem": "What is true about Alfredo Cantone?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He accepts online dining reservations."
+            },
+            {
+              "choice": "B",
+              "text": "He recently used room service from a restaurant."
+            },
+            {
+              "choice": "C",
+              "text": "He is a chef specializing in the preparation of Greek cuisine."
+            },
+            {
+              "choice": "D",
+              "text": "He posts reviews from diners on a m resort's Web site"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Trong bài đánh giá của Ms. Wilder, cô ấy khen ngợi các món ăn Hy Lạp tại nhà hàng Lucky Lucy, là chuyên môn của đầu bếp: \"I would also like to compliment the Lucky Lucy Restaurant for their incredible meals, most notably the Greek dishes that are the chef's specialty.\" Do đó, đáp án đúng là (C) He is a chef specializing in the preparation of Greek cuisine.",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 200,
+          "stem": "What did Ms. Wilder's husband do during his stay?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Went canoeing on Grand Lake"
+            },
+            {
+              "choice": "B",
+              "text": "Wrote a review about a restaurant lunch"
+            },
+            {
+              "choice": "C",
+              "text": "Attended several parties with friends"
+            },
+            {
+              "choice": "D",
+              "text": "Took fishing trip to Lake Granby"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Trong bài đánh giá, Ms. Wilder đề cập rằng chồng cô ấy thích chèo thuyền quanh hồ: \"Keith liked paddling around in a canoe.\" Do đó, đáp án đúng là (A) Went canoeing on Grand Lake.",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 7,
+  "subLabel": "Đoạn ba"
+}

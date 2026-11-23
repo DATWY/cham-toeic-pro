@@ -1,0 +1,494 @@
+{
+  "id": "cham_part_6_test_15",
+  "sourceId": "615c195865d71f3a51f67428",
+  "slug": "part-6-test-15",
+  "title": "Đề lẻ Part 6 · Test 15",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 10,
+  "totalQuestions": 16,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_6": 16
+  },
+  "groups": [
+    {
+      "part": 6,
+      "range": "131-134",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<b>ATTENTION ALL TENANTS</b><br> Wimberley Group will <strong><strong>(131)</strong></strong> _____ its rent collection system to electronic one. This change will apply to all apartments effective February 1. <strong><strong>(132)</strong></strong> _____. Cash and personal checks will no longer be accepted.<br>Every tenant needs to create a user profile at www.wimberlygroup.com. After logging in, tenants will be able to <strong><strong>(133)</strong></strong> _____ a payment. You can do this by selecting the unpaid bill and then clicking on the button at the bottom of the screen. <strong><strong>(134)</strong></strong> _____ you hit “Pay”, the amount you designate will be deducted from your registered credit card or bank account. If you wish to arrange automatic payments, please click the button labeled “Pay this amount every month.”<br>Thank you for your cooperation. If you have any questions, e-mail US at help@wimberlygroup.com",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 131,
+          "stem": "Wimberley Group will (131) _____ its rent collection system to electronic one.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "induce"
+            },
+            {
+              "choice": "B",
+              "text": "fluctuate"
+            },
+            {
+              "choice": "C",
+              "text": "convert"
+            },
+            {
+              "choice": "D",
+              "text": "recover"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:&nbsp;</strong></p>\n<p>Tập đoàn Wimberley sẽ (131) _____ hệ thống thu tiền thuê sang hệ thống điện tử.</p>\n<p>(A) induce (v) xui khiến, xúi giục</p>\n<p>(B) fluctuate (v) biến động</p>\n<p>(C) convert (v) chuyển đổi</p>\n<p>(D) recover (v) hồi phục, phục hồi</p>\n<p><strong>=&gt; chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 132,
+          "stem": "This change will apply to all apartments effective February 1. (132) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Tenants had found the new system easy to use."
+            },
+            {
+              "choice": "B",
+              "text": "From that day on, tenants must pay their rental fees online."
+            },
+            {
+              "choice": "C",
+              "text": "The new system allowed for a greater variety of payment options."
+            },
+            {
+              "choice": "D",
+              "text": "Only certain Wimberley Group occupants will be affected."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Tạm dịch:&nbsp;</strong></p>\n<p>Thay đổi này sẽ áp dụng cho tất cả các căn hộ có hiệu lực từ ngày 1 tháng 2. (132) _____.</p>\n<p>(A) Người thuê nhà nhận thấy hệ thống mới dễ sử dụng.</p>\n<p>(B) Kể từ ngày đó, người thuê nhà phải thanh toán phí thuê trực tuyến.</p>\n<p>(C) Hệ thống mới cho phép có nhiều lựa chọn thanh toán đa dạng hơn.</p>\n<p>(D) Chỉ một số cư dân của Wimberley Group sẽ bị ảnh hưởng.</p>\n<p>Ở câu trước có đề cập đến thời gian sẽ áp dụng sự thay đổi cho toàn bộ các căn hộ</p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 133,
+          "stem": "After logging in, tenants will be able to (133) _____ a payment. You can do this by selecting the unpaid bill and then clicking on the button at the bottom of the screen.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "postpone"
+            },
+            {
+              "choice": "B",
+              "text": "cancel"
+            },
+            {
+              "choice": "C",
+              "text": "oppose"
+            },
+            {
+              "choice": "D",
+              "text": "make"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:</strong> Sau khi đăng nhập, người thuê nhà sẽ có thể (133) _____ thanh toán. Bạn có thể thực hiện việc này bằng cách chọn hóa đơn chưa thanh toán và sau đó nhấp vào nút ở cuối màn hình.</p>\n<p>(A) postpone (v) hoãn lại</p>\n<p>(B) cancel (v) huỷ bỏ</p>\n<p>(C) oppose (v) phản đối</p>\n<p>(D) make (v) làm</p>\n<p>- make a payment: Thanh toán</p>\n<p><strong>=&gt; Chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 134,
+          "stem": "(134) _____ you hit “Pay”, the amount you designate will be deducted from your registered credit card or bank account.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Even though"
+            },
+            {
+              "choice": "B",
+              "text": "During"
+            },
+            {
+              "choice": "C",
+              "text": "Since"
+            },
+            {
+              "choice": "D",
+              "text": "As soon as"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:</strong> (134) _____ bạn nhấn “Thanh toán”, số tiền bạn chỉ định sẽ được trừ vào thẻ tín dụng hoặc tài khoản ngân hàng đã đăng ký của bạn.</p>\n<p>(A) Even though: Mặc dù</p>\n<p>(B) During: Trong khi</p>\n<p>(C) Since: Từ khi</p>\n<p>(D) As soon as: Ngay sau khi</p>\n<p><strong>=&gt; Chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 6] Liên từ & Giới từ"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "135-138",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>To: Angela Thornberry [athornberry@fastmail.com]<br>\nFrom: Vincent Nakamura [vnakamura@traxcomputers.com]<br>\nSubject: Your laptop<br>\nDate: June 18<br>\nDear Ms. Thornberry,<br>\nI am writing about the Trax 2700 laptop you dropped off at our store on June 15 because of problems with its screen. After sending it to our <strong><strong>(135)</strong></strong> _____for examination, we discovered that it contained a faulty component. At present, your laptop is being <strong><strong>(136)</strong></strong> _____. As requested, we are also thoroughly testing the device to see if there are any other issues.<br>\nAs this problem appears to have been entirely our fault, we will provide you with a $50 voucher to use at our retail store. <strong><strong>(137)</strong></strong> _____, e-coupons for our Web site are also available. Just let us know which you'd prefer.<br>\n<strong><strong>(138)</strong></strong> _____. If you have not received it by then, please call customer service.<br>\nBest wishes,<br>\nVincent Nakamura<br>\nCustomer Satisfaction Department</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 135,
+          "stem": "After sending it to our (135) _____ for examination, we discovered that it contained a faulty component.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "technicality"
+            },
+            {
+              "choice": "B",
+              "text": "technical"
+            },
+            {
+              "choice": "C",
+              "text": "technicians"
+            },
+            {
+              "choice": "D",
+              "text": "technology"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:</strong> Sau khi gửi nó cho (135) _____ để kiểm tra, chúng tôi phát hiện ra rằng nó có chứa một thành phần bị lỗi.</p>\n<p>(A) technicality (n) chi tiết kỹ thuật</p>\n<p>(B) technical (adj) thuộc về kỹ thuật</p>\n<p>(C) technicians (n) chuyên viên kỹ thuật</p>\n<p>(D) technology (n) công nghệ</p>\n<p>- send something to somebody</p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ loại"
+          ]
+        },
+        {
+          "num": 136,
+          "stem": "At present, your laptop is being (136) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "replaced"
+            },
+            {
+              "choice": "B",
+              "text": "repaired"
+            },
+            {
+              "choice": "C",
+              "text": "shipped"
+            },
+            {
+              "choice": "D",
+              "text": "recalled"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Tạm dịch: </strong>Hiện tại, laptop của bạn đang được (136) _____.</p>\n\n<p>(A) replace (v) thay thế</p>\n\n<p>(B) repaired (v) sửa chữa</p>\n\n<p>(C) ship (v) vận chuyển</p>\n\n<p>(D) recall (v) thu hồi</p>\n\n<p>=&gt; Dựa v&agrave;o nghĩa của c&aacute;c từ, <strong>chọn đ&aacute;p &aacute;n B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 137,
+          "stem": "As this problem appears to have been entirely our fault, we will provide you with a $50 voucher to use at our retail store. (137) _____, e-coupons for our Web site are also available.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Regrettably"
+            },
+            {
+              "choice": "B",
+              "text": "Subsequently"
+            },
+            {
+              "choice": "C",
+              "text": "Approximately"
+            },
+            {
+              "choice": "D",
+              "text": "Alternatively"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch: </strong>Vì vấn đề này dường như hoàn toàn là lỗi của chúng tôi nên chúng tôi sẽ cung cấp cho bạn phiếu mua hàng trị giá $50 để sử dụng tại cửa hàng bán lẻ của chúng tôi. (137) _____, phiếu giảm giá điện tử cho trang web của chúng tôi cũng có sẵn.</p>\n<p>(A) Regrettably (adv) Đáng tiếc</p>\n<p>(B) Subsequently (adv) Theo, Hệ quả là</p>\n<p>(C) Approximately (adv) Khoảng chừng</p>\n<p>(D) Alternatively (adv) Cách khác. Được sử dụng để đề xuất một lựa chọn hoặc một phương pháp khác</p>\n<p>=&gt; Dựa vào nghĩa của các từ, <strong>chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 138,
+          "stem": "(138) _____. If you have not received it by then, please call customer service.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The model you inquired about is no longer available at this location."
+            },
+            {
+              "choice": "B",
+              "text": "We will send the computer back to you within three days."
+            },
+            {
+              "choice": "C",
+              "text": "You are not covered under the warranty as it has expired."
+            },
+            {
+              "choice": "D",
+              "text": "We have been receiving a number of complaints about our service."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Tạm dịch:</strong> (138) _____. Nếu đến thời điểm đó mà bạn vẫn chưa nhận được, vui lòng gọi cho bộ phận dịch vụ khách hàng.</p>\n<p>(A) Model bạn hỏi không còn có tại điểm này nữa.</p>\n<p>(B) Chúng tôi sẽ gửi lại máy tính cho bạn trong vòng ba ngày.</p>\n<p>(C) Bạn không được bảo hành vì nó đã hết hạn.</p>\n<p>(D) Chúng tôi đã nhận được một số khiếu nại về dịch vụ của chúng tôi.</p>\n<p>Câu tiếp theo đề cập \"If you have not received it by then\" (Nếu khi đó bạn chưa nhận được)</p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "139-142",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><br>\n<b>Notice for All Staff</b><br>\nThe shopping mall our store is located in will be closed from December 24 to 26. <strong><strong>(139)</strong></strong> _____, some of you will be coming in on December 24 to set up for our post-holiday sale. The guard who usually opens the mall doors in the morning is off duty during this time. <strong><strong>(140)</strong></strong> _____. Daniel Monahan is the most senior staff member, so I will give it to him, and he will let everyone inside.<br>\nIt is vital that you <strong><strong>(141)</strong></strong> _____ Daniel at the entrance at exactly 10 a.m. We don't want to waste time making him go back and forth to open the doors, so please be considerate and arrive as <strong><strong>(142)</strong></strong> _____</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 139,
+          "stem": "The shopping mall our store is located in will be closed from December 24 to 26. (139) _____, some of you will be coming in on December 24 to set up for our post-holiday sale.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Besides"
+            },
+            {
+              "choice": "B",
+              "text": "Otherwise"
+            },
+            {
+              "choice": "C",
+              "text": "Accordingly"
+            },
+            {
+              "choice": "D",
+              "text": "However"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:</strong> Trung tâm mua sắm mà cửa hàng của chúng tôi tọa lạc sẽ đóng cửa từ ngày 24 đến ngày 26 tháng 12. (139) _____, một số bạn sẽ đến vào ngày 24 tháng 12 để chuẩn bị cho đợt giảm giá sau kỳ nghỉ lễ của chúng tôi.</p>\n<p>(A) Bên cạnh đó</p>\n<p>(B) Nếu không</p>\n<p>(C) Vì thế</p>\n<p>(D) Tuy nhiên</p>\n<p>Ở câu trước có biểu đạt rằng trung tâm mua sắm mà có cửa hàng của chúng ta sẽ đóng cửa từ 24-26/12. Trong khi đó, câu này nói rằng một số bạn sẽ đến vào 24/12 để chuẩn bị cho buổi giảm giá sau lễ =&gt; \"However\" là đáp án phù hợp</p>\n<p><strong>=&gt; Chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 6] Liên từ"
+          ]
+        },
+        {
+          "num": 140,
+          "stem": "The guard who usually opens the mall doors in the morning is off duty during this time. (140) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Making sure we answer customer inquiries in a timely manner is our priority."
+            },
+            {
+              "choice": "B",
+              "text": "You should be able to use your employee pass to access the mall."
+            },
+            {
+              "choice": "C",
+              "text": "A security code will therefore be required to enter the building."
+            },
+            {
+              "choice": "D",
+              "text": "You will need to handle backorders caused by his absence."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch: </strong>Người bảo vệ thường mở cửa trung tâm thương mại vào buổi sáng sẽ nghỉ làm trong thời gian này. (140) _____.</p>\n<p>(A) Đảm bảo rằng chúng tôi trả lời các câu hỏi của khách hàng một cách kịp thời là ưu tiên hàng đầu của chúng tôi.</p>\n<p>(B) Bạn có thể sử dụng thẻ nhân viên của mình để vào trung tâm mua sắm.</p>\n<p>(C) Do đó, cần phải có mã bảo mật để vào tòa nhà.</p>\n<p>(D) Bạn sẽ cần phải xử lý các đơn hàng đặt trước do sự vắng mặt của anh ấy.</p>\n<p>Đề bài đề cập rằng người bảo vệ thường mở cửa trung tâm thương mại vào buổi sáng đã nghỉ làm nên cần phải có mã an ninh để vào tòa nhà.</p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 141,
+          "stem": "It is vital that you (141) _____ Daniel at the entrance at exactly 10 a.m.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "are meeting"
+            },
+            {
+              "choice": "B",
+              "text": "meet"
+            },
+            {
+              "choice": "C",
+              "text": "had met"
+            },
+            {
+              "choice": "D",
+              "text": "met"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Cấu trúc:</strong> It is + tính từ + Chủ ngữ + Động từ nguyên mẫu</p>\n<p><strong>Tạm dịch:</strong> Điều quan trọng là bạn phải gặp Daniel ở lối vào vào đúng 10 giờ sáng.</p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 142,
+          "stem": "We don't want to waste time making him go back and forth to open the doors, so please be considerate and arrive as (142) _____",
+          "options": [
+            {
+              "choice": "A",
+              "text": "punctually"
+            },
+            {
+              "choice": "B",
+              "text": "regularly"
+            },
+            {
+              "choice": "C",
+              "text": "politely"
+            },
+            {
+              "choice": "D",
+              "text": "impressively"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch: </strong>Chúng tôi không muốn lãng phí thời gian bắt anh ấy đi tới đi lui để mở cửa, vì vậy hãy ân cần và đến với tư cách (142) _____</p>\n<p>(A) punctually (adv) đúng giờ</p>\n<p>(B) regularly (adv) thường xuyên</p>\n<p>(C) politely (adv) một cách lịch sự</p>\n<p>(D) impressively (adv) một cách ấn tượng</p>\n<p>=&gt; Dựa vào nghĩa của các từ,<strong> chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "143-146",
+      "audio": null,
+      "images": [],
+      "passageHtml": "To: Rajesh Singh [rajesh.singh@indiaclothing.in]<br>\nFrom: Faria Deveraj [f.deveraj@mumbai.gov.in]<br>\nSubject:Scheduled Inspection<br>\nDate: October 12<br>\nDear Mr. Singh,<br>\nOn October 17, your clothing factory will face its yearly government inspection. This annual <strong><strong>(143)</strong></strong> _____ will verify that all labor laws are being followed. Your factory passed the <strong><strong>(144)</strong></strong> _____ evaluation with no major problems, so our inspectors hope to see a similar level of compliance this time around.<br>\nYou are <strong><strong>(145)</strong></strong> _____ obliged to provide access to any part of the factory that the inspectors may wish to see. Failure to comply in this regard may result in fines and further investigation. Also, the inspectors need to confirm that workers are being properly compensated. <strong><strong>(146)</strong></strong> _____.<br>\nThank you for your attention to this matter.<br>\nFaria Deveraj<br>\nInspection Team Leader<br>\nCity Government of Mumbai",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 143,
+          "stem": "This annual (143) _____ will verify that all labor laws are being followed.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "meeting"
+            },
+            {
+              "choice": "B",
+              "text": "investment"
+            },
+            {
+              "choice": "C",
+              "text": "commemoration"
+            },
+            {
+              "choice": "D",
+              "text": "assessment"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:</strong> (143) _____ thường niên này sẽ xác minh rằng tất cả các luật lao động đều được tuân thủ.</p>\n<p>(A) meeting (n) cuộc họp</p>\n<p>(B) investment (n) sự đầu tư</p>\n<p>(C) commemoration (n) lễ kỉ niệm</p>\n<p>(D) assessment (n) bản đánh giá</p>\n<p>=&gt; Dựa vào nghĩa của các từ,<strong> chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 144,
+          "stem": "Your factory passed the (144) _____ evaluation with no major problems, so our inspectors hope to see a similar level of compliance this time around.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "decided"
+            },
+            {
+              "choice": "B",
+              "text": "forthcoming"
+            },
+            {
+              "choice": "C",
+              "text": "previous"
+            },
+            {
+              "choice": "D",
+              "text": "ultimate"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:</strong> Nhà máy của bạn đã vượt qua cuộc đánh giá (144) _____ mà không gặp vấn đề gì lớn, vì vậy, các thanh tra viên của chúng tôi hy vọng lần này sẽ thấy mức độ tuân thủ tương tự.</p>\n<p>(A) decided: đã được quyết định</p>\n<p>(B) forthcoming: sắp tới</p>\n<p>(C) previous: trước đó</p>\n<p>(D) ultimate: cuối cùng</p>\n<p>=&gt; Dựa vào nghĩa của các từ, <strong>chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 145,
+          "stem": "You are (145) _____ obliged to provide access to any part of the factory that the inspectors may wish to see. Failure to comply in this regard may result in fines and further investigation.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "legally"
+            },
+            {
+              "choice": "B",
+              "text": "legality"
+            },
+            {
+              "choice": "C",
+              "text": "legal"
+            },
+            {
+              "choice": "D",
+              "text": "legitimate"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch: </strong>Về mặt pháp lý, bạn có nghĩa vụ phải cho phép tiếp cận bất kỳ khu vực nào của nhà máy mà thanh tra viên có thể muốn xem. Việc không tuân thủ về vấn đề này có thể bị phạt tiền và bị điều tra thêm.</p>\n<p>(A) legally (adv) một cách hợp pháp</p>\n<p>(B) legality (n) sự hợp pháp</p>\n<p>(C) legal (adj) tính hợp pháp</p>\n<p>(D) legitimate (v) hợp pháp</p>\n<p>Vị trí cần điền đứng giữa Tobe \"is\" và Động từ \"obliged\" =&gt; Cần một trạng từ</p>\n<p><strong>=&gt; Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ loại"
+          ]
+        },
+        {
+          "num": 146,
+          "stem": "Also, the inspectors need to confirm that workers are being properly compensated. (146) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A copy of the receipt for your recent payment has been sent to you in the mail"
+            },
+            {
+              "choice": "B",
+              "text": "The human resources department will need to prepare the relevant documents."
+            },
+            {
+              "choice": "C",
+              "text": "Consequently, the company wishes to avoid paying any such penalties."
+            },
+            {
+              "choice": "D",
+              "text": "We are interested in hearing about certain products that were recalled."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Tạm dịch:</strong> Ngoài ra, các thanh tra viên cần xác nhận rằng người lao động đang được đền bù thỏa đáng. (146) _____.</p>\n<p>(A) Một bản sao biên lai thanh toán gần đây của bạn đã được gửi cho bạn qua đường bưu điện</p>\n<p>(B) Bộ phận nhân sự sẽ cần chuẩn bị các tài liệu liên quan.</p>\n<p>(C) Do đó, công ty mong muốn tránh phải trả bất kỳ hình phạt nào như vậy.</p>\n<p>(D) Chúng tôi muốn biết về một số sản phẩm đã bị thu hồi.</p>\n<p>Các tài liệu liên quan đến việc đền bù =&gt; Dựa vào mặt nghĩa, <strong>chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 6
+}

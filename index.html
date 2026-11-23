@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHAM TOEIC Pro • Hệ Thống Luyện Thi TOEIC Chuẩn IIG &amp; Phòng Luyện Sâu</title>
+  <meta name="description" content="Hệ thống luyện thi TOEIC Online chuẩn IIG hơn 300 bộ đề Full Test, Mini Test &amp; Đề thi lẻ Part 1–7, ETS 2022–2026 &amp; Phòng luyện sâu AI" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/icon.svg" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+  
+  <link rel="stylesheet" href="styles/tokens.css?v=21.0" />
+  <link rel="stylesheet" href="styles/base.css?v=21.0" />
+  <link rel="stylesheet" href="styles/layout.css?v=21.0" />
+  <link rel="stylesheet" href="styles/components.css?v=19.5" />
+  <link rel="stylesheet" href="styles/cham-hub.css?v=21.0" />
+  <link rel="stylesheet" href="styles/v21-remake.css?v=22.2" />
+</head>
+<body data-studio-view="home">
+  <!-- Unified Global Navigation & Focused Studio Runner Header (v21.0) -->
+  <header class="topbar">
+    <!-- Row 1: Persistent Global Navigation Bar (4 Main Items + Avatar Menu) -->
+    <div class="topbar-global-bar">
+      <div class="topbar-global-inner">
+        <div class="topbar-global-left">
+          <button type="button" class="logo-brand" id="studio-brand-logo" title="Về Trang chủ Lộ trình TOEIC">
+            <span class="logo-mark" aria-hidden="true">CHAM TOEIC</span>
+            <span class="brand-text">
+              <span class="brand-title">Luyện Thi TOEIC</span>
+            </span>
+          </button>
+
+          <!-- Clean 4-Item Primary Navigation -->
+          <nav class="v21-nav" aria-label="Điều hướng chính">
+            <button type="button" id="nav-home-btn" class="v21-nav-item is-active" data-nav="home" aria-current="page">
+              <span>Trang chủ</span>
+            </button>
+            <button type="button" id="nav-practice-btn" class="v21-nav-item" data-nav="practice">
+              <span>Luyện tập</span>
+            </button>
+            <button type="button" id="nav-tests-btn" class="v21-nav-item" data-nav="tests">
+              <span>Thi thử</span>
+            </button>
+            <button type="button" id="nav-materials-btn" class="v21-nav-item" data-nav="materials">
+              <span>Tài liệu</span>
+            </button>
+          </nav>
+        </div>
+
+        <div class="topbar-global-actions">
+          <!-- Avatar Account & Utilities Dropdown Menu -->
+          <div class="v21-avatar-wrap" id="user-menu-wrap">
+            <button type="button" id="user-menu-trigger" class="v21-avatar-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="user-menu-popover" title="Tài khoản, Từ vựng, Thống kê &amp; Cài đặt">
+              <span class="v21-avatar-circle" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </span>
+              <span class="v21-avatar-label">Học viên</span>
+              <svg class="v21-avatar-chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+
+            <div id="user-menu-popover" class="v21-avatar-menu" role="menu" aria-label="Tiện ích học tập và giao diện" hidden>
+              <div class="v21-menu-head">
+                <span class="v21-menu-head-title">Tiện ích học viên</span>
+                <span class="v21-menu-goal-chip">Mục tiêu: <strong id="menu-target-score-val">750</strong>/990</span>
+              </div>
+
+              <div class="v21-menu-group">
+                <button type="button" id="open-vocab-btn" class="v21-menu-item" role="menuitem">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                  <span>Từ vựng &amp; Flashcard SM-2</span>
+                </button>
+
+                <button type="button" id="open-strategy-btn" class="v21-menu-item" role="menuitem">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                  <span>Chiến lược TOEIC 900+</span>
+                </button>
+
+                <button type="button" id="open-analytics-btn" class="v21-menu-item" role="menuitem">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                  <span>Thống kê &amp; Ma trận CEFR</span>
+                </button>
+              </div>
+
+              <div class="v21-menu-divider" role="separator"></div>
+
+              <div class="v21-menu-group">
+                <button type="button" id="theme-toggle" class="v21-menu-item" role="menuitem">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                  <span style="flex: 1;">Giao diện</span>
+                  <span class="v21-menu-badge" id="menu-theme-label">Sáng</span>
+                </button>
+
+                <div class="v21-menu-fontsize-row">
+                  <span class="v21-menu-fontsize-label">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+                    <span>Cỡ chữ</span>
+                  </span>
+                  <div class="v21-fontsize-pills" role="group" aria-label="Chọn nhanh cỡ chữ">
+                    <button type="button" class="v21-fs-pill" data-quick-fontsize="sm">Nhỏ</button>
+                    <button type="button" class="v21-fs-pill is-active" data-quick-fontsize="md">Chuẩn</button>
+                    <button type="button" class="v21-fs-pill" data-quick-fontsize="lg">Lớn</button>
+                  </div>
+                </div>
+
+                <button type="button" id="reader-settings-btn" class="v21-menu-item" role="menuitem">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                  <span>Cài đặt hiển thị &amp; Offline</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Dedicated Focused Studio Runner Bar (Sole Header visible in #/studio/<testId>/run) -->
+    <div class="topbar-subbar">
+      <div class="topbar-inner">
+        <div class="topbar-left">
+          <button type="button" id="studio-back-lobby-btn" class="tool-btn studio-back-btn" title="Quay về Luyện tập theo Part">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            <span>Luyện tập</span>
+          </button>
+          <span class="runner-divider" aria-hidden="true"></span>
+          <span id="studio-runner-pack-title" class="runner-pack-title">Part 4 · ETS 2019 Test 6</span>
+
+          <!-- Hidden accessible tablist preserved for instant deep-links & badge tracking -->
+          <div class="tablist" role="tablist" aria-label="Chọn bộ đề luyện thi" hidden aria-hidden="true">
+            <button type="button" role="tab" id="tab-ets2019_t6" aria-selected="true" data-test="ets2019_t6" title="Part 4: Short Talks · ETS 2019 Test 6 (30 câu)">
+              <span class="tab-label-full">Part 4 · ETS T6</span>
+              <span class="tab-label-short">P4 · ETS 6</span>
+              <span class="tab-pill" id="score-ets2019_t6">0/30</span>
+            </button>
+            <button type="button" role="tab" id="tab-hackers3_t4" aria-selected="false" data-test="hackers3_t4" title="Part 4: Short Talks · Hackers 3 Test 4 (30 câu)">
+              <span class="tab-label-full">Part 4 · Hackers T4</span>
+              <span class="tab-label-short">P4 · Hackers 4</span>
+              <span class="tab-pill" id="score-hackers3_t4">0/30</span>
+            </button>
+            <button type="button" role="tab" id="tab-ets2019_p2_t7" aria-selected="false" data-test="ets2019_p2_t7" title="Part 2: Question-Response · ETS 2019 Test 7 (25 câu)">
+              <span class="tab-label-full">Part 2 · ETS T7</span>
+              <span class="tab-label-short">P2 · ETS 7</span>
+              <span class="tab-pill" id="score-ets2019_p2_t7">0/25</span>
+            </button>
+            <button type="button" role="tab" id="tab-ets2019_p1_t6" aria-selected="false" data-test="ets2019_p1_t6" title="Part 1: Photographs · ETS 2019 Test 6 (6 câu)">
+              <span class="tab-label-full">Part 1 · ETS T6</span>
+              <span class="tab-label-short">P1 · ETS 6</span>
+              <span class="tab-pill" id="score-ets2019_p1_t6">0/6</span>
+            </button>
+            <button type="button" role="tab" id="tab-ets2019_p1_t7" aria-selected="false" data-test="ets2019_p1_t7" title="Part 1: Photographs · ETS 2019 Test 7 (6 câu)">
+              <span class="tab-label-full">Part 1 · ETS T7</span>
+              <span class="tab-label-short">P1 · ETS 7</span>
+              <span class="tab-pill" id="score-ets2019_p1_t7">0/6</span>
+            </button>
+            <button type="button" role="tab" id="tab-part7_t1" aria-selected="false" data-test="part7_t1" title="Part 7: Reading Comprehension · Đề đọc hiểu Đơn/Kép/Ba (54 câu)">
+              <span class="tab-label-full">Part 7 · Đọc hiểu</span>
+              <span class="tab-label-short">P7 · Đọc</span>
+              <span class="tab-pill" id="score-part7_t1">0/54</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <!-- Practice / Decode Mode Switch -->
+          <div class="segmented" role="group" aria-label="Chế độ học">
+            <button type="button" class="seg-btn is-active" data-mode="practice" title="Làm bài trắc nghiệm CBT">Làm bài</button>
+            <button type="button" class="seg-btn" data-mode="study" title="Xem giải thích &amp; bẫy">Giải mã</button>
+          </div>
+
+          <!-- Timer Chip -->
+          <div class="timer-chip" aria-label="Đồng hồ học tập">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span id="timer-display">00:00</span>
+            <button type="button" id="timer-toggle" class="chip-btn" title="Bắt đầu / Tạm dừng" aria-label="Bắt đầu / Tạm dừng">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.75"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </button>
+            <button type="button" id="timer-reset" class="chip-btn" title="Đặt lại" aria-label="Đặt lại">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            </button>
+          </div>
+
+          <!-- Studio Workspace View Toggles (Tapescript + Focus Theater) -->
+          <div class="studio-view-toggles">
+            <button type="button" id="topbar-transcript-toggle" class="tool-btn" title="Bật/Ẩn Tapescript &amp; Lời dịch (Cột phải)" aria-label="Bật/Ẩn Tapescript">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              <span id="topbar-transcript-label">Tapescript</span>
+            </button>
+
+            <button type="button" id="focus-toggle-btn" class="tool-btn" title="Focus Theater (Phím F)" aria-label="Focus Theater">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+              <span>Focus</span>
+              <span class="kbd-badge">F</span>
+            </button>
+
+            <button type="button" id="runner-grade-btn" class="tool-btn studio-grade-pill" title="Chấm điểm &amp; đối chiếu đáp án">
+              <span>Chấm đề</span>
+            </button>
+
+            <button type="button" id="reader-settings-btn-runner" class="tool-btn icon-only" title="Cài đặt hiển thị, In phiếu A4 &amp; Cache" aria-label="Cài đặt đọc">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+            </button>
+
+            <button type="button" id="theme-toggle-runner" class="tool-btn icon-only" title="Đổi giao diện (Light Blue / Tối)" aria-label="Đổi giao diện">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dedicated Focus Theater Topbar -->
+  <div class="focus-theater-bar" id="focus-theater-bar" style="display: none;">
+    <div class="focus-bar-left">
+      <button type="button" class="tool-btn focus-nav-prev" id="focus-nav-prev" title="Bài trước">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+        <span>Bài trước</span>
+      </button>
+      <span class="focus-talk-badge" id="focus-talk-badge">Bài 1/10 (Câu 71-73)</span>
+      <button type="button" class="tool-btn focus-nav-next" id="focus-nav-next" title="Bài sau">
+        <span>Bài sau</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+    </div>
+
+    <div class="focus-bar-right">
+      <button type="button" class="tool-btn" id="focus-toggle-intro-btn" title="Bật/Tắt đọc phần giới thiệu bài (Intro)">
+        <span id="focus-intro-label">Intro: BẬT</span>
+      </button>
+      <button type="button" class="tool-btn" id="focus-toggle-questions-btn" title="Bật/Tắt đọc phần câu hỏi sau bài nghe">
+        <span id="focus-questions-label">Đọc câu hỏi: BẬT</span>
+      </button>
+      <button type="button" class="tool-btn" id="focus-toggle-transcript-btn" title="Bật/Ẩn Tapescript &amp; Lời dịch (Bên phải)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span id="focus-transcript-label">Bật Tapescript (Bên phải)</span>
+      </button>
+      <button type="button" class="tool-btn" id="focus-reset-test-btn" title="Làm lại toàn bộ đề này">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        <span>Làm lại đề</span>
+      </button>
+      <button type="button" class="tool-btn" id="focus-fullscreen-btn" title="Toàn màn hình">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+        <span>Toàn màn hình</span>
+      </button>
+      <button type="button" class="tool-btn focus-exit-btn" id="focus-exit-btn" title="Thoát Focus (Esc)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        <span>Thoát Focus (Esc)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- v21 Home Dashboard (#/) & Practice by Part (#/practice) Roots -->
+  <section id="v21-home-root"></section>
+  <section id="v21-practice-root" hidden></section>
+
+  <!-- Studio Outer Lobby & Overview Root (Used for #/studio/<id> pack detail) -->
+  <section id="studio-lobby-root" hidden></section>
+
+  <!-- Main Workspace -->
+  <main class="workspace">
+    <div id="panel-ets2019_t6" role="tabpanel" aria-labelledby="tab-ets2019_t6" tabindex="0">
+      <div class="panel-inner" id="mount-ets2019_t6"></div>
+    </div>
+    <div id="panel-hackers3_t4" role="tabpanel" aria-labelledby="tab-hackers3_t4" hidden="until-found">
+      <div class="panel-inner" id="mount-hackers3_t4"></div>
+    </div>
+    <div id="panel-ets2019_p2_t7" role="tabpanel" aria-labelledby="tab-ets2019_p2_t7" hidden="until-found">
+      <div class="panel-inner" id="mount-ets2019_p2_t7"></div>
+    </div>
+    <div id="panel-ets2019_p1_t6" role="tabpanel" aria-labelledby="tab-ets2019_p1_t6" hidden="until-found">
+      <div class="panel-inner" id="mount-ets2019_p1_t6"></div>
+    </div>
+    <div id="panel-ets2019_p1_t7" role="tabpanel" aria-labelledby="tab-ets2019_p1_t7" hidden="until-found">
+      <div class="panel-inner" id="mount-ets2019_p1_t7"></div>
+    </div>
+    <div id="panel-part7_t1" role="tabpanel" aria-labelledby="tab-part7_t1" hidden="until-found">
+      <div class="panel-inner" id="mount-part7_t1"></div>
+    </div>
+  </main>
+
+  <!-- CHAM TOEIC 35-Test Online Hub Root -->
+  <section id="cham-hub-root" hidden></section>
+
+  <!-- TOEIC Study Materials & CEFR Matrix Hub Root -->
+  <section id="materials-hub-root" hidden></section>
+
+  <!-- Floating Focus Theater Dock -->
+  <div class="focus-dock" id="focus-dock" style="display: none;"></div>
+
+  <!-- Mobile Bottom Sheet Drawer -->
+  <div class="mobile-sheet-backdrop" id="mobile-sheet-backdrop"></div>
+  <div class="mobile-sheet-drawer" id="mobile-sheet-drawer"></div>
+
+  <!-- Native Modal Dialog: Cache & Backup -->
+  <dialog id="cache-dialog" aria-labelledby="cache-dialog-title">
+    <div class="dialog-box">
+      <div class="dialog-head">
+        <h2 id="cache-dialog-title">Bộ nhớ Cache Offline &amp; Sao lưu</h2>
+        <form method="dialog">
+          <button type="submit" class="tool-btn icon-only" aria-label="Đóng">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <section class="dialog-section">
+        <h3 id="cache-section-heading">1. Lưu Cache chạy Offline (Toàn bộ MP3 Audio &amp; Ảnh minh họa)</h3>
+        <p id="sw-status-text" class="muted-text">Đang kiểm tra trạng thái Cache...</p>
+        <div class="progress-track" id="cache-progress-wrap" hidden style="background: var(--surface-2); border-radius: 999px; height: 8px; overflow: hidden; margin-block: 6px;">
+          <div class="progress-fill" id="cache-progress-fill" style="width: 0%; height: 100%; background: var(--accent); transition: width 0.2s;"></div>
+        </div>
+        <div class="dialog-actions">
+          <button type="button" id="cache-all-btn" class="btn-primary">Tải &amp; Lưu Cache toàn bộ</button>
+          <button type="button" id="clear-cache-btn" class="tool-btn">Xóa Cache</button>
+        </div>
+      </section>
+
+      <section class="dialog-section">
+        <h3>2. Sao lưu &amp; Khôi phục tiến độ (.json)</h3>
+        <p class="muted-text">Lưu toàn bộ đáp án, bài đánh dấu và ghi chú cá nhân thành tệp dự phòng.</p>
+        <div class="dialog-actions">
+          <button type="button" id="export-state-btn" class="tool-btn">Xuất tiến độ (.json)</button>
+          <label class="tool-btn file-label" style="cursor: pointer;">
+            Nhập tiến độ
+            <input type="file" id="import-state-input" accept="application/json" hidden />
+          </label>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <!-- Native Modal Dialog: Flashcards SRS -->
+  <dialog id="vocab-dialog" aria-labelledby="vocab-dialog-title">
+    <div class="dialog-box dialog-wide">
+      <div class="dialog-head">
+        <h2 id="vocab-dialog-title">Kho Từ Vựng &amp; Flashcard SM-2</h2>
+        <form method="dialog">
+          <button type="submit" class="tool-btn icon-only" aria-label="Đóng">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </form>
+      </div>
+      <div id="vocab-dialog-mount"></div>
+    </div>
+  </dialog>
+
+  <!-- Native Modal Dialog: Reader & Display Customization Settings -->
+  <dialog id="reader-dialog" aria-labelledby="reader-dialog-title">
+    <div class="dialog-box">
+      <div class="dialog-head">
+        <h2 id="reader-dialog-title">Tùy Chọn Giao Diện &amp; Trải Nghiệm</h2>
+        <form method="dialog">
+          <button type="submit" class="tool-btn icon-only" aria-label="Đóng">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <section class="dialog-section">
+        <h3>1. Giao diện màu (Theme)</h3>
+        <div class="segmented" id="reader-theme-group">
+          <button type="button" class="seg-btn" data-theme-val="light">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            <span>Xanh Sáng (Light Blue)</span>
+          </button>
+          <button type="button" class="seg-btn" data-theme-val="dark">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            <span>Tối Slate</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="dialog-section" id="reader-studio-only-section">
+        <h3>2. Tùy chỉnh thành phần hiển thị (Phòng Luyện Sâu)</h3>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <label style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-size: 0.9rem; user-select: none;">
+            <span>Cột Tapescript &amp; Lời dịch (Phía bên phải)</span>
+            <input type="checkbox" id="toggle-transcript-setting" style="width: 18px; height: 18px; accent-color: var(--accent);" />
+          </label>
+          <label style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-size: 0.9rem; user-select: none;">
+            <span>Sóng âm Waveform (Tắt để dùng thanh tua nhỏ gọn)</span>
+            <input type="checkbox" id="toggle-waveform-setting" style="width: 18px; height: 18px; accent-color: var(--accent);" />
+          </label>
+          <label style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-size: 0.9rem; user-select: none;">
+            <span>Thanh chọn độ tự tin (Chắc chắn / Phân vân / Đoán)</span>
+            <input type="checkbox" id="toggle-confidence-setting" style="width: 18px; height: 18px; accent-color: var(--accent);" />
+          </label>
+          <label style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-size: 0.9rem; user-select: none;">
+            <span>Đọc phần giới thiệu bài nói (Intro: "Questions 71-73 refer to...")</span>
+            <input type="checkbox" id="toggle-intro-setting" style="width: 18px; height: 18px; accent-color: var(--accent);" checked />
+          </label>
+          <label style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-size: 0.9rem; user-select: none;">
+            <span>Đọc phần câu hỏi sau bài nghe (Questions: "Number 71... Number 72...")</span>
+            <input type="checkbox" id="toggle-questions-setting" style="width: 18px; height: 18px; accent-color: var(--accent);" checked />
+          </label>
+        </div>
+      </section>
+
+      <section class="dialog-section">
+        <h3>3. Cỡ chữ (Font Size)</h3>
+        <div class="segmented" id="reader-font-size-group">
+          <button type="button" class="seg-btn" data-size="sm">Nhỏ (15px)</button>
+          <button type="button" class="seg-btn is-active" data-size="md">Chuẩn (16px)</button>
+          <button type="button" class="seg-btn" data-size="lg">Lớn (17.5px)</button>
+          <button type="button" class="seg-btn" data-size="xl">Rất lớn (19px)</button>
+        </div>
+      </section>
+
+      <section class="dialog-section">
+        <h3>4. Độ giãn dòng (Line Height)</h3>
+        <div class="segmented" id="reader-line-height-group">
+          <button type="button" class="seg-btn" data-lh="compact">Gọn (1.45)</button>
+          <button type="button" class="seg-btn is-active" data-lh="normal">Chuẩn (1.6)</button>
+          <button type="button" class="seg-btn" data-lh="relaxed">Thoáng (1.8)</button>
+        </div>
+      </section>
+
+      <section class="dialog-section">
+        <h3>5. Hiệu ứng chuyển động</h3>
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.9rem; user-select: none;">
+          <input type="checkbox" id="reader-reduced-motion" style="width: 16px; height: 16px; accent-color: var(--accent);" />
+          <span>Giảm hiệu ứng động (Prefers-Reduced-Motion)</span>
+        </label>
+      </section>
+
+      <section class="dialog-section">
+        <h3>6. Phím tắt thao tác nhanh (Pro Navigation)</h3>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+          <span class="muted-text" style="font-size: 0.85rem;">Nhấn phím <span class="kbd-badge">?</span> bất kỳ lúc nào để mở nhanh bảng phím tắt.</span>
+          <button type="button" id="open-shortcuts-btn" class="tool-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10"/></svg>
+            <span>Xem bảng phím tắt</span>
+            <span class="kbd-badge">?</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="dialog-section" id="reader-utilities-section">
+        <h3>7. Tiện ích &amp; Dữ liệu Offline</h3>
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <button type="button" id="print-worksheet-btn" class="tool-btn" title="In phiếu học tập A4">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            <span>In phiếu học tập A4</span>
+          </button>
+
+          <button type="button" id="open-cache-btn" class="tool-btn" title="Lưu Cache Offline &amp; Sao lưu dữ liệu">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+            <span>Lưu Offline (<span id="cache-badge">Cache</span>)</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <!-- Native Modal Dialog: Keyboard Shortcuts Cheat-Sheet -->
+  <dialog id="shortcuts-dialog" aria-labelledby="shortcuts-dialog-title">
+    <div class="dialog-box dialog-wide" style="max-width: 720px;">
+      <div class="dialog-head">
+        <h2 id="shortcuts-dialog-title" style="display: inline-flex; align-items: center; gap: 8px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10"/></svg>
+          <span>Bảng Phím Tắt &amp; Thao Tác Nhanh</span>
+        </h2>
+        <form method="dialog">
+          <button type="submit" class="tool-btn icon-only" aria-label="Đóng">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </form>
+      </div>
+      <section class="dialog-section">
+        <div class="shortcuts-grid">
+          <div class="shortcut-group">
+            <h3>Điều hướng &amp; Không gian học</h3>
+            <div class="shortcut-row">
+              <span>Mở / Đóng bảng phím tắt</span>
+              <span class="shortcut-keys"><span class="kbd-badge">?</span></span>
+            </div>
+            <div class="shortcut-row">
+              <span>Tìm kiếm câu hỏi, từ vựng &amp; lệnh</span>
+              <span class="shortcut-keys"><span class="kbd-badge">Ctrl</span><span class="kbd-badge">K</span> / <span class="kbd-badge">/</span></span>
+            </div>
+            <div class="shortcut-row">
+              <span>Bật / Tắt chế độ Focus Theater</span>
+              <span class="shortcut-keys"><span class="kbd-badge">F</span></span>
+            </div>
+            <div class="shortcut-row">
+              <span>Chuyển về Bài trước / Bài sau</span>
+              <span class="shortcut-keys"><span class="kbd-badge">Alt</span><span class="kbd-badge">←</span> / <span class="kbd-badge">→</span></span>
+            </div>
+            <div class="shortcut-row">
+              <span>Thoát Focus / Đóng hộp thoại</span>
+              <span class="shortcut-keys"><span class="kbd-badge">Esc</span></span>
+            </div>
+          </div>
+
+          <div class="shortcut-group">
+            <h3>Luyện Nghe, Đọc hiểu &amp; CBT</h3>
+            <div class="shortcut-row">
+              <span>Phát / Tạm dừng Audio bài nghe</span>
+              <span class="shortcut-keys"><span class="kbd-badge">Space</span></span>
+            </div>
+            <div class="shortcut-row">
+              <span>Gạch loại trừ đáp án nhiễu (A/B/C/D)</span>
+              <span class="shortcut-keys"><span class="kbd-badge">Chuột phải</span> / <span class="kbd-badge">⊘</span></span>
+            </div>
+            <div class="shortcut-row">
+              <span>Tô vàng (Highlight) từ khóa</span>
+              <span class="shortcut-keys"><span class="kbd-badge">Kéo chuột</span></span>
+            </div>
+            <div class="shortcut-row">
+              <span>Xóa từ khóa đã bôi vàng</span>
+              <span class="shortcut-keys"><span class="kbd-badge">Nhấp đúp</span></span>
+            </div>
+            <div class="shortcut-row">
+              <span>Chấm nhanh ô Chép chính tả</span>
+              <span class="shortcut-keys"><span class="kbd-badge">Enter</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <!-- Native Modal Dialog: CBT Exam Setup & Report -->
+  <dialog id="cbt-exam-dialog" aria-labelledby="cbt-exam-dialog-title">
+    <div class="dialog-box">
+      <div class="dialog-head">
+        <h2 id="cbt-exam-dialog-title">Phòng Thi Mô Phỏng CBT</h2>
+        <form method="dialog">
+          <button type="submit" class="tool-btn icon-only" aria-label="Đóng">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <section class="dialog-section">
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin-top: 0;">
+          Chế độ thi mô phỏng tiêu chuẩn IIG: Khóa giải thích/bản dịch, ghi lại lịch sử thay đổi đáp án &amp; chấm điểm quy đổi ETS (với bài Nghe tự động chạy audio liên hoàn; với Part 7 Đọc hiểu điều hướng trực tiếp giữa 15 bài đọc).
+        </p>
+
+        <h3>Chọn phạm vi bài thi:</h3>
+        <div class="segmented" id="cbt-exam-scope-group" style="margin-bottom: 16px; flex-wrap: wrap;">
+          <button type="button" class="seg-btn is-active" data-scope="ets2019_t6">ETS 2019 · T6 (30 câu)</button>
+          <button type="button" class="seg-btn" data-scope="hackers3_t4">Hackers 3 · T4 (30 câu)</button>
+          <button type="button" class="seg-btn" data-scope="ets2019_p2_t7">ETS 2019 · Part 2 (25 câu)</button>
+          <button type="button" class="seg-btn" data-scope="ets2019_p1_t6">ETS 2019 · Part 1 T6 (6 câu)</button>
+          <button type="button" class="seg-btn" data-scope="ets2019_p1_t7">ETS 2019 · Part 1 T7 (6 câu)</button>
+          <button type="button" class="seg-btn" data-scope="part7_t1">Part 7 · Đọc hiểu (54 câu)</button>
+          <button type="button" class="seg-btn" data-scope="all">Full Liên Hoàn (151 câu)</button>
+        </div>
+
+        <div class="dialog-actions">
+          <button type="button" id="start-cbt-exam-btn" class="btn-primary">
+            Bắt đầu làm bài thi
+          </button>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <!-- Native Modal Dialog: TOEIC 900+ Strategy Guide -->
+  <dialog id="strategy-dialog" aria-labelledby="strategy-dialog-title">
+    <div class="dialog-box dialog-wide" style="max-width: 860px; max-height: 88vh; display: flex; flex-direction: column;">
+      <div class="dialog-head">
+        <h2 id="strategy-dialog-title" style="display: flex; align-items: center; gap: 8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>Chiến Lược Tổng Lực: Bứt Phá TOEIC 450 &rarr; 900+</span>
+        </h2>
+        <form method="dialog">
+          <button type="submit" class="tool-btn icon-only" aria-label="Đóng">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Strategy Topic Navigation Pills -->
+      <div class="segmented" id="strategy-nav-group" style="padding: 12px 18px 0; gap: 6px; flex-wrap: wrap; border-bottom: 1px solid var(--border);">
+        <button type="button" class="seg-btn is-active" data-strat-tab="roadmap">Lộ trình 90 ngày</button>
+        <button type="button" class="seg-btn" data-strat-tab="timestack">Time-Stacking (3h/ngày)</button>
+        <button type="button" class="seg-btn" data-strat-tab="part2">Giải mã bẫy Part 2</button>
+        <button type="button" class="seg-btn" data-strat-tab="part4">Đọc đón đầu Part 3 &amp; 4</button>
+        <button type="button" class="seg-btn" data-strat-tab="part7">Tốc độ đọc Part 7</button>
+      </div>
+
+      <div id="strategy-dialog-mount" style="padding: 20px; overflow-y: auto; flex: 1; font-size: 0.92rem; line-height: 1.65; color: var(--text);"></div>
+    </div>
+  </dialog>
+
+  <script src="data.js?v=19.0"></script>
+  <script src="js/part7Data.js?v=19.0"></script>
+  <script src="js/part56Data.js?v=19.0"></script>
+  <script src="js/chamCatalog.js?v=22.0"></script>
+  <script src="js/testDifficultyData.js?v=22.0"></script>
+  <script src="js/toeicMaterialsData.js?v=19.3"></script>
+  <script src="js/toeicVocabData.js?v=19.0"></script>
+  <script src="js/toeicStrategyData.js?v=19.4"></script>
+  <script type="module" src="js/main.js?v=22.2"></script>
+</body>
+</html>

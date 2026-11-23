@@ -1,0 +1,494 @@
+{
+  "id": "cham_part_6_test_14",
+  "sourceId": "6315a1525948b5402da8456b",
+  "slug": "part-6-test-14",
+  "title": "Đề lẻ Part 6 · Test 14",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 10,
+  "totalQuestions": 16,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_6": 16
+  },
+  "groups": [
+    {
+      "part": 6,
+      "range": "131-134",
+      "audio": null,
+      "images": [],
+      "passageHtml": "To: Samantha Wallace, Edward Kershaw<br>From: Ted Winters<br>Subject: Changes<br>Date: June 10<br>I’ve been giving some thought to an idea, and I’d like to find out what <strong><strong>(131)</strong></strong> _________ of you think about it. Since the Sales and Marketing departments collaborate so much, I’m considering putting the two offices in the same room. So Sales would no longer be on the first floor, <strong><strong>(132)</strong></strong> _________ would Marketing be on the third floor. Instead, they’ll be on the second floor in a large, open area. There will be no individual offices except for those of the director and assistant director of each department.<br>I believe this would foster a sense of teamwork between the members of both departments. By <strong><strong>(133)</strong></strong> _________ what the salespeople are doing, the marketing people could create better advertisements and devise more ways to induce shoppers to buy our products. And by learning how the marketers think, the sales staff could come up with more effective ways to pitch our products. What do you two think of this proposal? <strong><strong>(134)</strong></strong> _________",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 131,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (131).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "each"
+            },
+            {
+              "choice": "B",
+              "text": "some"
+            },
+            {
+              "choice": "C",
+              "text": "either"
+            },
+            {
+              "choice": "D",
+              "text": "both"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Ta c&oacute;: Both of + object pronoun<br />\n<strong>=&gt; Chọn đ&aacute;p &aacute;n D</strong></p>",
+          "tags": [
+            "[Part 6] Đại từ & Mệnh đề quan hệ"
+          ]
+        },
+        {
+          "num": 132,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (132).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "and"
+            },
+            {
+              "choice": "B",
+              "text": "nor"
+            },
+            {
+              "choice": "C",
+              "text": "thus"
+            },
+            {
+              "choice": "D",
+              "text": "which"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Khi <em>nor</em> được sử dụng sau một câu phủ định, ta đảo chủ ngữ và động từ đứng sau <em>nor</em></p>\n<p>So Sales <strong>would no longer </strong>be on the first floor, <strong>nor would </strong>Marketing be on the third floor.</p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 6] Liên từ"
+          ]
+        },
+        {
+          "num": 133,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (133).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "knowledge"
+            },
+            {
+              "choice": "B",
+              "text": "knowing"
+            },
+            {
+              "choice": "C",
+              "text": "knowable"
+            },
+            {
+              "choice": "D",
+              "text": "will know"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Sau 'by' ta cần một danh từ hoặc một danh động từ --&gt; Loại đáp án C và D</p>\n<p>Đáp án (A) <em>knowledge</em> không phù hợp về mặt nghĩa cũng như cấu trúc ngữ pháp</p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ loại"
+          ]
+        },
+        {
+          "num": 134,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (134).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Wouldn’t you agree that everything I did worked out well?"
+            },
+            {
+              "choice": "B",
+              "text": "Don’t you think that everyone approves of the changes we made?"
+            },
+            {
+              "choice": "C",
+              "text": "How about providing feedback on this idea when you have some time?"
+            },
+            {
+              "choice": "D",
+              "text": "When will you two have some time to start moving the desks around?"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Ted Winters muốn biết ý kiến của Samantha và Edward về bản đề xuất của anh ấy và muốn thảo luận thêm với họ về bản đề xuất đó</p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "135-138",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><strong>Electricity to Be Disconnected</strong><br>\n<strong>(135)</strong> _________ The area that is going to be covered by the blackout will be on Carter street between Eastern Avenue and Kenmore Road. Work crews from Alameda Power are going to be working on some high-powered lines on Carter street, so electricity there must be turned off to let them do their jobs <strong>(136)</strong> _________. Electricity will be disconnected at 9 A.M. and should be turned back on around 11:30 A.M. Residents who will be <strong>(137)</strong> _________ ought to take precautions so that they will be prepared during this time. If the work is not complete by 11:30, the electricity will remain off. City employees will make <strong>(138) </strong>_________ by loudspeaker in the area so that residents can be updated on the work crews’ progress. Please visit the Alameda Power website at www.alamedapower.com/carterstreet to learn more about which areas will be covered by the blackout. Questions or complaints can be e-mailed to info@alamedapower.com and will be responded to within 4 hours of being received.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 135,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (135).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Work crews are going to be repairing the street this Friday, October 10."
+            },
+            {
+              "choice": "B",
+              "text": "On Wednesday, July 25, a water pipe is going to be repaired on Carter street."
+            },
+            {
+              "choice": "C",
+              "text": "Some parts of the city will not have electricity on Thursday, September 14."
+            },
+            {
+              "choice": "D",
+              "text": "This Saturday, August 11, the gas will be shut off in the Freemont neighborhood."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n\n<p>(A) C&aacute;c đội c&ocirc;ng nh&acirc;n sẽ sửa chữa đường phố v&agrave;o thứ S&aacute;u tuần n&agrave;y, ng&agrave;y 10 th&aacute;ng 10.</p>\n\n<p>(B) V&agrave;o thứ Tư, ng&agrave;y 25 th&aacute;ng 7, một đường ống nước sẽ được sửa chữa tr&ecirc;n đường Carter.</p>\n\n<p>(C) Một số khu vực trong th&agrave;nh phố sẽ kh&ocirc;ng c&oacute; điện v&agrave;o thứ Năm, ng&agrave;y 14 th&aacute;ng 9.</p>\n\n<p>(D) Thứ Bảy tuần n&agrave;y, ng&agrave;y 11 th&aacute;ng 8, gas sẽ bị cắt ở khu vực Freemont.</p>\n\n<p>Dựa v&agrave;o ti&ecirc;u đề v&agrave; c&aacute;c c&acirc;u sau</p>\n\n<p>=&gt; <strong>Chọn đ&aacute;p &aacute;n C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 136,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (136).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "safer"
+            },
+            {
+              "choice": "B",
+              "text": "the safest"
+            },
+            {
+              "choice": "C",
+              "text": "safely"
+            },
+            {
+              "choice": "D",
+              "text": "safety"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Cần một trạng từ đứng trước để bổ sung nghĩa cho động từ 'do'</p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 137,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (137).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "affected"
+            },
+            {
+              "choice": "B",
+              "text": "upset"
+            },
+            {
+              "choice": "C",
+              "text": "absent"
+            },
+            {
+              "choice": "D",
+              "text": "reported"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Câu bị động</p>\n<p>be affected: bị ảnh hưởng bởi điều gì đó</p>\n<p><strong>=&gt; Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 138,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (138).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "decisions"
+            },
+            {
+              "choice": "B",
+              "text": "announcements"
+            },
+            {
+              "choice": "C",
+              "text": "repairs"
+            },
+            {
+              "choice": "D",
+              "text": "upgrades"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>decision (n):&nbsp; sự quyết định</p>\n<p>announcement (n):&nbsp; thông báo chính thức</p>\n<p>repair (n):&nbsp; sửa chữa</p>\n<p>upgrade (n):&nbsp; nâng cấp</p>\n<p>Dựa vào nghĩa của các từ =&gt; <strong>Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "139-142",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>TO: Mary Lewis&nbsp;<mjewis@dmmt.com><br>\nFROM: Eloise Purcell&nbsp;eloisep@dmmt.com&nbsp;<br>\nSUBJECT: Meeting<br>\nDATE: October 3<br>\nMary,<br>\nI know we are supposed to meet today right after lunch, but I’m afraid I’m not going to be able to get together with you then. Mr. Colter, my supervisor, requested that I give a presentation for the delegation from Spain <strong>(139)</strong> _________ arrived last night. I need to discuss the benefits of our latest line of software with them at 2:30 this afternoon. <strong>(140)</strong> _________ I therefore need to spend every minute until then working on what I intend to say.<br>\nHow does your schedule look tomorrow morning? I’ve got <strong>(141)</strong> _________ time between 9 and noon, so I can meet you then. If that doesn’t work for you, I’m also available between the hours of 4 and 6. Why don’t you let me know what the best time for you to meet is? I apologize for canceling our meeting on such <strong>(142)</strong> _________ notice, but this is a matter that is out of my control. I hope you understand.<br>\nRegards,<br>\nEloise</mjewis@dmmt.com></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 139,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (139).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "what"
+            },
+            {
+              "choice": "B",
+              "text": "when"
+            },
+            {
+              "choice": "C",
+              "text": "where"
+            },
+            {
+              "choice": "D",
+              "text": "that"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Mệnh đề quan hệ được sử dụng để đề cập đến một người hoặc một vật đã được nhắc đến trước đó</p>\n<p><strong>=&gt; Chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 140,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (140).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "However, I haven’t prepared any of my remarks yet."
+            },
+            {
+              "choice": "B",
+              "text": "In case you don’t know, I was the lead designer on the software."
+            },
+            {
+              "choice": "C",
+              "text": "Unfortunately, the software still has some big problems."
+            },
+            {
+              "choice": "D",
+              "text": "Consequently, I’ll be leaving for Spain as soon as possible."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>(A) Tuy nhiên, tôi vẫn chưa chuẩn bị bất kỳ nhận xét nào của mình.</p>\n<p>(B) Trong trường hợp bạn chưa biết, tôi là người thiết kế chính cho phần mềm.</p>\n<p>(C) Thật không may, phần mềm vẫn còn một số vấn đề lớn.</p>\n<p>(D) Do đó, tôi sẽ rời Tây Ban Nha càng sớm càng tốt.</p>\n<p>Dựa vào câu trước</p>\n<p><strong>=&gt; Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 141,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (141).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "a variety of"
+            },
+            {
+              "choice": "B",
+              "text": "very little"
+            },
+            {
+              "choice": "C",
+              "text": "no type of"
+            },
+            {
+              "choice": "D",
+              "text": "plenty of"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Sử dụng <em>plenty of</em> như định lượng từ, đứng trước cả danh từ đếm được và danh từ không đếm được, mang nghĩa là<em> 'một số lượng lớn'</em></p>\n<p><strong>=&gt; Chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 142,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (142).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "apparent"
+            },
+            {
+              "choice": "B",
+              "text": "short"
+            },
+            {
+              "choice": "C",
+              "text": "surprising"
+            },
+            {
+              "choice": "D",
+              "text": "tight"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>short notice: rất nhanh; một thời gian rất ngắn trước khi có điều gì đó xảy ra</p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "143-146",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><strong>Bixby Bank to Open New Branch Downtown</strong>Hampton City (January 17) - Yesterday, a spokeswoman for Bixby Bank announced that the bank <strong>(143)</strong> _________ a new branch in the downtown part of Hampton City. The office will be located on the second floor of the Silverwood Shopping Center. <strong>(144)</strong> _________ Headquartered in Montgomery, the bank has been opening branch offices at a swift pace during the past two years. This year, it plans to open more than 30 branch offices across the entire state. The office in the mall will be Hampton City’s fourth Bixby Bank. The bank has been growing so much thanks to its <strong>(145)</strong> _________ on customer relations and quality service. In a recent survey, Bixby Bank ranked much higher than all of its competitors regarding how well it <strong>(146)</strong> _________ its customers and which services it provides for them. Bixby Bank recorded more than $25 million in profits last year, and analysts believe it will more than double that number this year.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 143,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (143).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "opened"
+            },
+            {
+              "choice": "B",
+              "text": "has opened"
+            },
+            {
+              "choice": "C",
+              "text": "is opening"
+            },
+            {
+              "choice": "D",
+              "text": "to open"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Để diễn tả một kế hoạch sẽ xảy ra trong tương lai gần, ta dùng thì Hiện tại tiếp diễn</p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 144,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (144).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The shopping center recently closed due to poor sales."
+            },
+            {
+              "choice": "B",
+              "text": "Experts believe Bixby Bank must improve its services."
+            },
+            {
+              "choice": "C",
+              "text": "Bixby Bank is the state’s fastest growing bank."
+            },
+            {
+              "choice": "D",
+              "text": "This will be the first branch that the bank has opened."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>(A) Trung tâm mua sắm gần đây đã đóng cửa do doanh thu kém.</p>\n<p>(B) Các chuyên gia tin rằng Ngân hàng Bixby phải cải thiện dịch vụ của mình.</p>\n<p>(C) Ngân hàng Bixby là ngân hàng phát triển nhanh nhất bang.</p>\n<p>(D) Đây sẽ là chi nhánh đầu tiên mà ngân hàng mở ra.</p>\n<p>Dựa vào 2 câu tiếp theo <strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 145,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (145).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "emphasis"
+            },
+            {
+              "choice": "B",
+              "text": "impression"
+            },
+            {
+              "choice": "C",
+              "text": "consideration"
+            },
+            {
+              "choice": "D",
+              "text": "dedication"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>emphasis (n):&nbsp;tầm quan trọng</p>\n<p>impression (n):&nbsp;sự cảm nhận</p>\n<p>consideration (n):&nbsp; sự cân nhắc</p>\n<p>dedication (n):&nbsp;sự cống hiến</p>\n<p>=&gt; Dựa vào nghĩa của các từ, <strong>chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 146,
+          "stem": "Chọn đáp án đúng điền vào chỗ trống (146).",
+          "options": [
+            {
+              "choice": "A",
+              "text": "considers"
+            },
+            {
+              "choice": "B",
+              "text": "treats"
+            },
+            {
+              "choice": "C",
+              "text": "appoints"
+            },
+            {
+              "choice": "D",
+              "text": "behaves"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>consider (v):&nbsp;cân nhắc</p>\n<p>treat (v):&nbsp;đối xử</p>\n<p>appoint (v):&nbsp;chỉ định, bổ nhiệm</p>\n<p>behave (v):&nbsp;hành xử</p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 6
+}

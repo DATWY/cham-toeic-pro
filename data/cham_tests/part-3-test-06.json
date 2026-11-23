@@ -1,0 +1,1219 @@
+{
+  "id": "cham_part_3_test_06",
+  "sourceId": "6135c2a008e2737191f349b6",
+  "slug": "part-3-test-06",
+  "title": "Đề lẻ Part 3 · Test 6",
+  "collection": "ĐỀ LẺ LISTENING",
+  "testType": "part",
+  "duration": 20,
+  "totalQuestions": 39,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_3": 39
+  },
+  "groups": [
+    {
+      "part": 3,
+      "range": "32-34",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0301.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nW: Hi, Mr. Joyce. This is Sally Walker calling from Frohman Publishing. <b> Q1 My company has a three-page text that we need translated into Chinese. I know you sometimes do these kinds of short-term jobs for our company.</b><br />\nM: Yeah, I would be happy to. <b> Q2 However, you should know that it is my policy to be paid in advance. </b>Is that OK?<br />\nW: That&#39;s no problem. I&rsquo;ll transfer the money into your bank account immediately.<b> Q3 The deadline for this translation hasn&rsquo;t been decided yet. Once I know, I will inform you.</b><br />\nM: Thank you for your understanding. Please e-mail me the document. I&#39;ll do my best.</p>",
+      "explanationHtml": "<b> Transript:</b> <br> W: Chào anh Joyce. Đây là Sally Walker gọi từ Nhà xuất bản Frohman. <b> Q1 Công ty của tôi có một văn bản dài ba trang cần dịch sang tiếng Trung. Tôi biết thỉnh thoảng anh cũng nhận làm những công việc part-time ngắn hạn như thế này.</b><br>M: Vâng, tôi rất sẵn lòng. <b> Q2 Tuy nhiên, không biết liệu cô đã nắm được thông tin rằng tôi luôn nhận thù lao trước chưa. </b>Vậy ổn chứ? <br>W: Không thành vấn đề. Tôi sẽ chuyển tiền vào tài khoản ngân hàng của anh ngay lập tức.<b> Q3 Hạn chót cho bản dịch này vẫn chưa được ấn định. Tôi sẽ thông báo cho anh khi có them thông tin.</b><br>M: Cảm ơn cô đã thông cảm. Xin vui lòng gửi tài liệu cho tôi qua email. Tôi sẽ cố gắng hết sức để hoàn thành nó.",
+      "questions": [
+        {
+          "num": 32,
+          "stem": "Why is the woman calling?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To extend a rental period"
+            },
+            {
+              "choice": "B",
+              "text": "To confirm an appointment"
+            },
+            {
+              "choice": "C",
+              "text": "To offer a part-time job"
+            },
+            {
+              "choice": "D",
+              "text": "To accept a proposal"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 33,
+          "stem": "What does the man ask the woman to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Interpret for her supervisor"
+            },
+            {
+              "choice": "B",
+              "text": "Send an advance payment"
+            },
+            {
+              "choice": "C",
+              "text": "Submit an official request"
+            },
+            {
+              "choice": "D",
+              "text": "Provide a work space"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 34,
+          "stem": "What will the woman inform the man about?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A requirement"
+            },
+            {
+              "choice": "B",
+              "text": "A deadline"
+            },
+            {
+              "choice": "C",
+              "text": "A meeting time"
+            },
+            {
+              "choice": "D",
+              "text": "A company policy"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "35-37",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0302.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nW: Good morning, James. <b> Q1 Here is a copy of your expense report from last month&rsquo;s business trip to Tokyo.</b><br />\nM: Thanks, Mary. <b> Q2 Oh, while you&rsquo;re here, can you leave a message in this get-well-soon card for Bryce?</b> He had knee surgery yesterday and I was thinking this card might cheer him up.<br />\nW: Oh, did he? I didn&#39;t even know he was in the hospital. I was out of town yesterday. Is it serious?<br />\nM: Not that I know of. But he said he had to stay in the hospital for a few days. <b> Q3 I&rsquo;m planning on visiting him this evening after work.</b></p>",
+      "explanationHtml": "<b> Transript:</b> <br> W: Chào buổi sáng, James. <b> Q1 Đây là bản sao của báo cáo chi phí của anh trong chuyến công tác tới Tokyo vào tháng trước.</b><br>M: Cảm ơn, Mary. <b> Q2 À, nhân tiện có cô ở đây, cô có thể để lại lời nhắn trong tấm thiệp chúc sớm khỏe lại này cho Bryce được chứ?</b> Anh ấy đã phẫu thuật đầu gối ngày hôm qua và tôi nghĩ tấm thiệp này có thể khiến anh ấy vui lên. <br>W: Ồ, vậy sao? Tôi thậm chí còn không biết anh ấy đang ở bệnh viện. Hôm qua tôi có việc bận nên đã không có mặt ở thị trấn. Tình trạng của anh ấy có nghiêm trọng không? <br>M: Tôi không rõ. Nhưng anh ấy nói anh ấy phải ở lại bệnh viện vài ngày. <b> Q3 Tôi dự định tối nay sẽ đến thăm anh ấy sau giờ làm việc.",
+      "questions": [
+        {
+          "num": 35,
+          "stem": "What did the woman make a copy of?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A receipt"
+            },
+            {
+              "choice": "B",
+              "text": "A meeting schedule"
+            },
+            {
+              "choice": "C",
+              "text": "An expense report"
+            },
+            {
+              "choice": "D",
+              "text": "A prescription"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 36,
+          "stem": "What does the man ask the woman to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Sign a contract"
+            },
+            {
+              "choice": "B",
+              "text": "Write a message"
+            },
+            {
+              "choice": "C",
+              "text": "Contact a receptionist"
+            },
+            {
+              "choice": "D",
+              "text": "Go on a business trip to Tokyo"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 37,
+          "stem": "What does the man plan to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Visit his co-worker"
+            },
+            {
+              "choice": "B",
+              "text": "Submit a report"
+            },
+            {
+              "choice": "C",
+              "text": "Make a new reservation"
+            },
+            {
+              "choice": "D",
+              "text": "Work overtime"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "38-40",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0303.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nW: <b> Q1 I need to talk to you about the interior decorations we are carrying out at the Carleton&rsquo;s property</b>. They are a major client, so we need to make sure that they are completely satisfied. Have you consulted with them about the furniture for the master bedroom?<br />\nM: I have. They agreed on all of our plans except for the choice for the master bed. <b> Q2 They&rsquo;re worried it is too big and will occupy too much space, so I&rsquo;m looking for something smaller that still fits the color scheme of the room.</b><br />\nW: OK. <b> Q3 I was planning on ordering all the furniture today, but I think we&rsquo;ll have to wait until we get their permission.</b></p>",
+      "explanationHtml": "<b> Transript:</b> <br> W: <b> Q1 Tôi cần nói chuyện với anh về việc trang trí nội thất mà chúng ta đang thực hiện tại nhà của ông bà Carleton</b>. Họ là khách hàng quan trọng nên chúng ta cần đảm bảo rằng họ hoàn toàn hài lòng. Anh đã tham khảo ý kiến của họ về nội thất cho phòng ngủ chính chưa? <br>M: Tôi đã tham khảo rồi. Họ đồng ý với tất cả các đề xuất của chúng ta ngoại trừ lựa chọn về giường ngủ master. <b> Q2 Họ lo rằng chiếc giường quá lớn sẽ chiếm quá nhiều không gian, vì vậy tôi đang tìm lựa chọn thay thế với kích cỡ nhỏ hơn nhưng vẫn phù hợp với tông màu của căn phòng.</b><br>W: OK. <b> Q3 Tôi định đặt mua tất cả đồ nội thất vào hôm nay, nhưng tôi nghĩ chúng ta sẽ phải đợi cho đến khi nhận được sự đồng thuận của họ.</b>",
+      "questions": [
+        {
+          "num": 38,
+          "stem": "What field do the speakers work in?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Education"
+            },
+            {
+              "choice": "B",
+              "text": "Manufacturing"
+            },
+            {
+              "choice": "C",
+              "text": "Product development"
+            },
+            {
+              "choice": "D",
+              "text": "Interior design"
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 39,
+          "stem": "What does the man plan to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Choose different furniture"
+            },
+            {
+              "choice": "B",
+              "text": "Share a building plan"
+            },
+            {
+              "choice": "C",
+              "text": "Change a color scheme"
+            },
+            {
+              "choice": "D",
+              "text": "Place an order for wallpaper"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 40,
+          "stem": "According to the woman, why will the speakers have to wait?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A shipment has been delayed."
+            },
+            {
+              "choice": "B",
+              "text": "A contract has not been signed yet."
+            },
+            {
+              "choice": "C",
+              "text": "Authorization must first be obtained."
+            },
+            {
+              "choice": "D",
+              "text": "Some equipment is out of order."
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Hành động tiếp theo"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "41-43",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0304.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nW: <b> Q1 Hi, I&rsquo;d like to adopt a pet that doesn&rsquo;t have a home</b>. I live alone and feel that a dog would be great company.<br />\nM You came to the right place. <b> Q1 We have many cute dogs here who were rescued from the street and don&rsquo;t have a home</b>. What kind of dog are you looking for specifically?<br />\nW: <b> Q2 Well, my house is not that big, so I was hoping for a dog small enough to hold in my lap.</b><br />\nM: All right. <b> Q3 Before we can allow you to adopt a dog, we need you to complete some official paperwork</b>. If you have a seat in the lobby, I&rsquo;ll bring you the documents immediately.</p>",
+      "explanationHtml": "<b> Transript:</b> <br> W: <b> Q1 Xin chào, tôi muốn nhận nuôi một con thú cưng không có chủ</b>. Tôi sống một mình và cảm thấy rằng một chú chó sẽ là người bạn đồng hành tuyệt vời. <br>M: Cô đã đến đúng nơi rồi đó. <b> Q1 Ở đây chúng tôi có rất nhiều chú chó dễ thương được giải cứu trên đường phố và không có chủ đến nhận</b>. Cô có đang tìm kiếm một giống chó cụ thể nào không? <br>W: <b> Q2 Nhà tôi không lớn lắm nên tôi hy vọng có một con chó nhỏ thôi để tôi có thể ôm vào lòng.</b><br>M: Được rồi. <b> Q3 Trước cô có thể nhận nuôi một chú chó, cô cần hoàn thành một số thủ tục giấy tờ chính thức</b>. Cô có thể ngồi nghỉ chân ở ngoài sảnh, tôi sẽ mang hồ sơ đến cho cô ngay.",
+      "questions": [
+        {
+          "num": 41,
+          "stem": "Where most likely are the speakers?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "At a pet shop"
+            },
+            {
+              "choice": "B",
+              "text": "At a catering company"
+            },
+            {
+              "choice": "C",
+              "text": "At a fire station"
+            },
+            {
+              "choice": "D",
+              "text": "At an animal shelter"
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 42,
+          "stem": "What aspect of the woman’s needs is mentioned?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The price"
+            },
+            {
+              "choice": "B",
+              "text": "The size"
+            },
+            {
+              "choice": "C",
+              "text": "The age"
+            },
+            {
+              "choice": "D",
+              "text": "The color"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 43,
+          "stem": "According to the man, what does the woman have to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Make an advance payment"
+            },
+            {
+              "choice": "B",
+              "text": "Bring her identification"
+            },
+            {
+              "choice": "C",
+              "text": "Fill out some documents"
+            },
+            {
+              "choice": "D",
+              "text": "Submit a letter of reference"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "44-46",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0305.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nM: Hello, this is David Wright. <b> Q1 I represent the guitar player Joe Jackson, who will be performing at your venue this weekend. Q2 I wanted to remind you that Mr. Jackson requests that no cameras be allowed during the duration of his performance.</b><br />\nW: Yes, I remember. We have posted flyers at the entrance prohibiting cameras and have asked our staff to remind guests that photography is not allowed.<br />\nM: Thank you for your cooperation. As you know, Mr. Jackson is very sensitive when he plays.<br />\nW: <b> Q3 I&rsquo;ll make an announcement onstage before the show to inform the audience one more time about this restriction.</b></p>",
+      "explanationHtml": "<b> Transript:</b> <br> M: Xin chào, đây là David Wright. <b> Q1 Tôi là người đại diện của nghệ sĩ guitar Joe Jackson, người sẽ biểu diễn tại hội trường của bạn vào cuối tuần này. Q2 Tôi muốn lưu ý rằng ông Jackson yêu cầu không được phép sử dụng máy ảnh trong suốt thời gian ông ấy biểu diễn.</b><br>W: Vâng, tôi nhớ điều đó. Chúng tôi đã dán tờ rơi cấm chụp ảnh ở lối vào và yêu cầu nhân viên nhắc nhở khách rằng không được phép chụp ảnh. <br>M: Cảm ơn sự hợp tác của cô. Như cô đã biết, ông Jackson rất nhạy cảm khi biểu diễn. <br>W: <b> Q3 Tôi sẽ thông báo điều này một lần nữa trước khi bắt đầu buổi biểu diễn để khán giả nắm được quy định.</b>",
+      "questions": [
+        {
+          "num": 44,
+          "stem": "Who most likely is the man?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A photographer"
+            },
+            {
+              "choice": "B",
+              "text": "A talent agent"
+            },
+            {
+              "choice": "C",
+              "text": "A performer"
+            },
+            {
+              "choice": "D",
+              "text": "A receptionist"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 45,
+          "stem": "Why is the man calling?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To buy a ticket in advance"
+            },
+            {
+              "choice": "B",
+              "text": "To confirm a reservation"
+            },
+            {
+              "choice": "C",
+              "text": "To provide a reminder"
+            },
+            {
+              "choice": "D",
+              "text": "To inquire about an advertisement"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 46,
+          "stem": "What does the woman offer to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Restrict backstage access"
+            },
+            {
+              "choice": "B",
+              "text": "Take pictures of Mr. Jackson"
+            },
+            {
+              "choice": "C",
+              "text": "Show the man a list of guests"
+            },
+            {
+              "choice": "D",
+              "text": "Make an official announcement"
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "47-49",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0306.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nM: Hi, Kelly. Did you see our advertisement in this month&rsquo;s issue of Fishing Fanatic? <b> Q1 The accompanying graphic shows how our fishing rods are stronger than any other product on the market.</b><br />\nW: Yeah, I saw it this morning. <b> Q2 I&rsquo;m hoping the advertisement will help convince customers to purchase our newest line of fishing rods.</b><br />\nM: <b> Q3 I&rsquo;m sure it will. I&rsquo;ll get in touch with the advertising agency and request that the ad be placed in other magazines as well.</b></p>",
+      "explanationHtml": "<b> Transript:</b> <br> M: Xin chào, Kelly. Cô đã thấy quảng cáo của chúng ta trên ấn bản Fishing Fanatic tháng này chưa? <b> Q1 Áp phích đi kèm thể hiện sức mạnh vượt trội sủa cần câu của chúng ta so với bất kỳ sản phẩm nào khác trên thị trường.</b><br> W: Vâng, tôi đã thấy sáng nay. <b> Q2 Tôi hy vọng rằng quảng cáo sẽ thuyết phục khách hàng mua dòng cần câu mới nhất của chúng ta.</b><br> M: <b> Q3 Chắc chắn là như vậy rồi. Tôi sẽ liên hệ với công ty quảng cáo và yêu cầu đăng quảng cáo trên các tạp chí khác nữa.</b>",
+      "questions": [
+        {
+          "num": 47,
+          "stem": "What is mentioned about the product?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It is affordable."
+            },
+            {
+              "choice": "B",
+              "text": "It is superior to competitors’."
+            },
+            {
+              "choice": "C",
+              "text": "It is safe for children to use."
+            },
+            {
+              "choice": "D",
+              "text": "It is simple to install."
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 48,
+          "stem": "According to the man, what will the advertisement help to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Promote new products"
+            },
+            {
+              "choice": "B",
+              "text": "Increase stock value"
+            },
+            {
+              "choice": "C",
+              "text": "Encourage new innovations"
+            },
+            {
+              "choice": "D",
+              "text": "Reduce customer complaints"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Hành động tiếp theo"
+          ]
+        },
+        {
+          "num": 49,
+          "stem": "What will the man do next?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Create a website"
+            },
+            {
+              "choice": "B",
+              "text": "Buy a magazine"
+            },
+            {
+              "choice": "C",
+              "text": "Revise an article"
+            },
+            {
+              "choice": "D",
+              "text": "Contact an agency"
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Hành động tiếp theo"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "50-52",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0307.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nM1: Heights Department store, Michael speaking, how can I help you?<br />\nW: Hi, this is Sarah. <b> Q1 I purchased a Regan cashmere coat from you two weeks ago, but I still haven&rsquo;t received it yet. I was told that I&rsquo;d get it in 2-3 days.</b><br />\nM1: Hold on a second, <b> Q2 you&rsquo;ll need to speak with a representative from the Regan boutique. I&rsquo;ll transfer your call.</b><br />\nW: No problem.<br />\nM2: Hello, this is Regan Luxury Boutique, Brian speaking, what can I help you with?<br />\nW: Yes, Brian, this is Sarah. I bought a coat from you two weeks ago and I&rsquo;m wondering what happened to the shipment.<br />\nM2: Oh, hello Sarah, I&rsquo;m sorry to hear that you haven&rsquo;t received it yet. Let me check the computer here. <b> Q3 Can you give me your full name?</b><br />\nW: Sure, it&rsquo;s Sarah Jane Park.</p>",
+      "explanationHtml": "<b> Transript:</b> <br> M1: Cửa hàng bách hóa Heights xin nghe, tôi là Michael, tôi có thể giúp gì cho quý khách? <br>W: Xin chào, tôi là Sarah. <b> Q1 Tôi đã đặt mua một chiếc áo khoác cashmere Regan từ cửa hàng của anh cách đây hai tuần, nhưng đến nay tôi vẫn chưa nhận được hàng. Đáng lẽ theo như thông báo thì tôi sẽ nhận được trong vòng 2-3 ngày.</b><br>M1: Xin đợi một chút, <b> Q2 quý khách vui lòng nói chuyện với nhân viên cửa hàng Regan. Tôi sẽ chuyển tiếp cuộc gọi.</b><br>W: Được thôi. <br>M2: Xin chào, đây là cửa hàng là Regan Luxury Boutique, Brian đang nghe, tôi có thể giúp gì cho quý khách? <br>W: Chào Brian, tôi là Sarah. Tôi đã mua một chiếc áo khoác từ cửa hàng cách đây hai tuần và tôi muốn hỏi về việc giao hàng. <br>M2: Ồ, chào Sarah, tôi rất tiếc khi biết rằng cô vẫn chưa nhận được hàng. Tôi sẽ kiểm tra trên hệ thống. <b> Q3 Cô có thể cho tôi biết họ tên đầy đủ của cô không?</b><br> W: Chắc chắn rồi, tôi là Sarah Jane Park.",
+      "questions": [
+        {
+          "num": 50,
+          "stem": "Why is the woman calling?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She hasn’t received her product."
+            },
+            {
+              "choice": "B",
+              "text": "She was overcharged for the item."
+            },
+            {
+              "choice": "C",
+              "text": "She wants a product exchanged."
+            },
+            {
+              "choice": "D",
+              "text": "She wants to return a product."
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 51,
+          "stem": "Why does Michael transfer the call?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He is busy with another customer."
+            },
+            {
+              "choice": "B",
+              "text": "She requests another representative."
+            },
+            {
+              "choice": "C",
+              "text": "She called the wrong department."
+            },
+            {
+              "choice": "D",
+              "text": "The manager is unavailable."
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 52,
+          "stem": "What does Brian ask the woman for?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The tracking number"
+            },
+            {
+              "choice": "B",
+              "text": "Her receipt"
+            },
+            {
+              "choice": "C",
+              "text": "Her full name"
+            },
+            {
+              "choice": "D",
+              "text": "The product name"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "53-55",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0308.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nM: Hi, Mrs. West. <b> Q1 Everything is setup for your anniversary party tonight</b>. If you can arrive at about 6:00 P.M., that would be great.<br />\nW: 6:00 P.M.? I have meetings until 8:00 P.M. tonight. You know we are merging with another company at the moment; it&rsquo;s a very important time for our company.<br />\nM: Oh no... I&rsquo;ve scheduled the band to play from six to ten o&rsquo;clock. And dinner will be served at seven o&rsquo;clock.<br />\nW: Well, I wish you would have told me about this earlier.<br />\nM: <b> Q2 But it&rsquo;s your fifth year anniversary party...</b><br />\nW: OK. <b> Q3 I will cancel my last meeting tonight and arrive around six thirty</b>. So don&rsquo;t worry; everything will be fine. I will just be a little late.</p>",
+      "explanationHtml": "<b> Transript:</b> <br> M: Chào bà West. <b> Q1 Mọi thứ đã được chuẩn bị sẵn sàng cho bữa tiệc kỷ niệm ngày cưới của bà vào tối nay</b>. Nếu bà có thể đến vào khoảng 6:00 chiều thì thật tuyệt. <br> W: 6:00 chiều? Tôi có một cuộc họp kéo dài đến 8:00 tối nay. Anh biết đấy, chúng tôi đang sáp nhập với một công ty khác; đây là thời điểm rất quan trọng đối với công ty chúng tôi. <br> M: Ồ không... Tôi đã lên lịch cho ban nhạc biểu diễn từ sáu đến mười giờ. Và bữa tối sẽ được phục vụ lúc bảy giờ. <br> W: Chà, tôi ước gì anh đã nói với tôi về điều này sớm hơn. <br> M: <b> Q2 Nhưng đây là bữa tiệc kỷ niệm năm thứ năm của bà...</b><br> W: Được rồi. <b> Q3 Tôi sẽ hủy cuộc họp tối nay và đến vào khoảng sáu giờ ba mươi</b>. Vì vậy, đừng lo lắng; mọi thứ sẽ ổn thôi. Tôi sẽ chỉ đến muộn một chút.",
+      "questions": [
+        {
+          "num": 53,
+          "stem": "What are the speakers mainly discussing?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Merging with another company"
+            },
+            {
+              "choice": "B",
+              "text": "Last month’s sales reports"
+            },
+            {
+              "choice": "C",
+              "text": "The woman’s anniversary party"
+            },
+            {
+              "choice": "D",
+              "text": "When the band will arrive"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 54,
+          "stem": "What does the man mean when he says “But it’s your fifth year anniversary party”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He wants her to change her schedule."
+            },
+            {
+              "choice": "B",
+              "text": "He thinks it’s not important."
+            },
+            {
+              "choice": "C",
+              "text": "He will tell the band not to come."
+            },
+            {
+              "choice": "D",
+              "text": "He wants her to go to the meetings."
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi hàm ý (Intent)"
+          ]
+        },
+        {
+          "num": 55,
+          "stem": "What solution does the woman provide?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "She will cancel the band."
+            },
+            {
+              "choice": "B",
+              "text": "She will cancel the dinner service."
+            },
+            {
+              "choice": "C",
+              "text": "She will cancel her meetings."
+            },
+            {
+              "choice": "D",
+              "text": "She will fire the man."
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "56-58",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0309.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nM: Hi, Susan. This is Rob. <b> Q1 Did you get the flowers I sent you?</b><br />\nW: Yes, I did, but unfortunately, I&rsquo;m allergic to sunflowers. I had to go to the hospital because they were in my office for several hours.<br />\nM: <b> Q2 Oh, I thought you would like them.</b><br />\nW: You know I&rsquo;m allergic to pollen Rob. How could you forget? <b> Q3 You should take me to dinner tomorrow night to apologize.</b><br />\nM: OK. I will! I&rsquo;ll take you somewhere nice. Sorry about the flowers!</p>",
+      "explanationHtml": "<b> Transript:</b> <br> M: Chào Susan. Tôi là Rob. <b> Q1 Cô đã nhận được hoa tôi gửi chưa?</b><br> W: Vâng, tôi đã nhận được, nhưng thật không may, tôi bị dị ứng với hoa hướng dương. Tôi đã phải đến bệnh viện vì tiếp xúc với loại hoa này trong văn phòng nhiều giờ. <br> M: <b> Q2 Ồ, tôi nghĩ cô sẽ thích chúng.</b><br> W: Anh biết tôi bị dị ứng với phấn hoa mà Rob. Làm sao anh có thể quên được? <b> Q3 Anh có thể đưa tôi đi ăn tối vào tối mai để xin lỗi.</b><br> M: Được rồi. Tôi sẽ làm như thế! Tôi sẽ đưa cô đến một nơi nào đó thật đẹp. Xin lỗi về những bông hoa nhé!",
+      "questions": [
+        {
+          "num": 56,
+          "stem": "Why is the man calling the woman?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To check the sales figures"
+            },
+            {
+              "choice": "B",
+              "text": "To check if she received the flowers"
+            },
+            {
+              "choice": "C",
+              "text": "To check if she wanted to go to dinner"
+            },
+            {
+              "choice": "D",
+              "text": "To check if the documents were ready"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 57,
+          "stem": "What does the woman say he should do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Take her to the hospital"
+            },
+            {
+              "choice": "B",
+              "text": "Pay her hospital bills"
+            },
+            {
+              "choice": "C",
+              "text": "Take her out for dinner"
+            },
+            {
+              "choice": "D",
+              "text": "Buy her more flowers"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 58,
+          "stem": "Why does the man say “I thought you would like them”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To express disappointment"
+            },
+            {
+              "choice": "B",
+              "text": "To show appreciation"
+            },
+            {
+              "choice": "C",
+              "text": "To show respect"
+            },
+            {
+              "choice": "D",
+              "text": "To show he thinks it’s funny"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "59-61",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0310.mp3",
+      "images": [],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nM1: Hi Bob, hi Karen. The reason I called you in is to talk about the budget for the last two months. <b> Q1 This biggest issue is that our entertainment expenses are way too high. </b> I think we need to reduce the amount we are spending on company lunches and dinners.<br />\nW: <b> Q2 Yes, I agree. I think we need to start paying for our own lunches.</b><br />\nM2: I agree with both of you, but I think we need to keep entertaining clients. I think if we pay for our own lunches, then that will leave money to take clients out for dinner.<br />\nM1: That&rsquo;s a pretty good idea Bob. Karen, does that sound OK with you?<br />\nW: I think that&rsquo;s a great compromise Bob. <b> Q3 I will make a monthly budget plan and e-mail it to you this afternoon.</b></p>",
+      "explanationHtml": "<b> Transript:</b> <br> M1: Chào Bob, chào Karen. Lý do tôi gọi hai người vào là để nói về ngân sách trong hai tháng qua. <b> Q1 Vấn đề lớn nhất là chi phí dành cho giải trí của chúng ta quá cao. </b> Tôi nghĩ chúng ta cần giảm số tiền chi cho bữa trưa và bữa tối của công ty. <br> W: <b> Q2 Vâng, tôi đồng ý. Tôi nghĩ chúng ta cần bắt đầu tự trả tiền cho bữa trưa của mình.</b> <br> M2: Tôi đồng ý với cả hai người, nhưng tôi nghĩ chúng ta cần tiếp tục chiêu đãi khách hàng. Tôi nghĩ nếu chúng ta tự trả tiền cho bữa trưa của mình, thì sẽ còn ngân sách để đưa khách hàng đi ăn tối. <br> M1: Ý kiến đó khá hay đấy Bob. Karen, cô thấy ổn chứ? <br> W: Tôi nghĩ thu xếp như vậy là rất hợp lý đó Bob. <b> Q3 Tôi sẽ lập kế hoạch ngân sách hàng tháng và gửi email cho các anh vào chiều nay.</b>",
+      "questions": [
+        {
+          "num": 59,
+          "stem": "What is the main problem the speakers are discussing?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "What they should eat for lunch"
+            },
+            {
+              "choice": "B",
+              "text": "Going out for dinner"
+            },
+            {
+              "choice": "C",
+              "text": "High entertainment expenses"
+            },
+            {
+              "choice": "D",
+              "text": "Getting more customers"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi ý chính / Ngữ cảnh"
+          ]
+        },
+        {
+          "num": 60,
+          "stem": "What does the woman suggest they do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Stop going out for dinner"
+            },
+            {
+              "choice": "B",
+              "text": "Reduce client numbers"
+            },
+            {
+              "choice": "C",
+              "text": "Stop having lunches"
+            },
+            {
+              "choice": "D",
+              "text": "Pay for their own lunches"
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi hàm ý (Intent)"
+          ]
+        },
+        {
+          "num": 61,
+          "stem": "What does the woman say she will send the man?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A monthly budget plan"
+            },
+            {
+              "choice": "B",
+              "text": "This month’s sales report"
+            },
+            {
+              "choice": "C",
+              "text": "The old budget plan"
+            },
+            {
+              "choice": "D",
+              "text": "Last month’s marketing materials"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "62-64",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0311.mp3",
+      "images": [],
+      "passageHtml": "<table align =\"center\" width=\"90%\" width=\"90%\" border=1 cellspacing=0 cellpadding=0  style=border-collapse:collapse ><tr> <td align =\"center\" colspan =\"2\"> <b> Lifts will be out of order</td></tr> <tr> <td align =\"center\"> North Wing</td> <td align =\"center\"> 8:00 – 9:00 A.M  </td> </tr><tr> <td align =\"center\"> East Wing</td> <td align =\"center\"> 11:00 – 12:00 A.M  </td> </tr><tr> <td align =\"center\"> South Wing</td> <td align =\"center\"> 1:30 – 2:30 P.M  </td> </tr><tr> <td align =\"center\"> West Wing</td> <td align =\"center\"> 3:00 – 4:00 A.M  </td> </tr></table>",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nW: Do you know why the lifts will be out of order next week?<br />\nM: <b> Q1 Last week, Harriet saw that there were some inspectors in the building next door</b>. Our maintenance checks aren&rsquo;t up to date so if we get inspected, the building manager might be in trouble.<br />\nW: Oh, OK. But did you see the time schedule? <b> Q2 The busiest wing in the hospital will be closed from 8-9 A.M.</b> So many people will be arriving to work at that time. I don&rsquo;t understand why they would schedule the North Wing repair at that time.<br />\nM: Hmm... Yes, you&rsquo;re right. <b> Q3 I think we should talk to Dr. Franklin about this</b>. I&rsquo;m sure he can get the schedule changed.<br />\nW: I better do it now so the technicians have time to reschedule.</p>",
+      "explanationHtml": "<b> Transript:</b> <br> W: Anh có biết tại sao thang máy sẽ dừng hoạt động vào tuần tới không? <br>M: <b> Q1 Tuần trước, Harriet thấy có một số thanh tra viên ở tòa nhà bên cạnh</b>. Các cuộc kiểm tra bảo trì của chúng ta không được diễn ra thường xuyên nên nếu chúng ta bị kiểm tra thì quản lý tòa nhà có thể gặp rắc rối. <br>W: Ồ, ra vậy. Nhưng anh có thấy lịch trình không? <b> Q2 Khu vực đông đúc nhất trong bệnh viện sẽ bị đóng cửa từ 8-9 giờ sáng.</b> Rất nhiều người sẽ đi làm vào thời điểm đó. Tôi không hiểu tại sao họ lại lên lịch sửa chữa Khu Bắc vào cùng thời điểm. <br>M: Ừm... Vâng, cô nói đúng. <b> Q3 Tôi nghĩ chúng ta nên nói chuyện với Bác sĩ Franklin về việc này</b>. Tôi chắc chắn là ông ấy có thể thay đổi lịch trình. <br>W: Tốt hơn là tôi nên làm ngay bây giờ để các kỹ thuật viên có thời gian sắp xếp lại lịch.",
+      "questions": [
+        {
+          "num": 62,
+          "stem": "What did Harriet see last week?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Technicians in the building next door"
+            },
+            {
+              "choice": "B",
+              "text": "Technicians posting about lift repairs"
+            },
+            {
+              "choice": "C",
+              "text": "Some technicians installing lighting"
+            },
+            {
+              "choice": "D",
+              "text": "Her boss having a meeting with some technicians"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 63,
+          "stem": "Look at the graphic. Which is the busiest wing in the hospital?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "West"
+            },
+            {
+              "choice": "B",
+              "text": "East"
+            },
+            {
+              "choice": "C",
+              "text": "North"
+            },
+            {
+              "choice": "D",
+              "text": "South"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết",
+            "[Part 3] Câu hỏi kết hợp bảng biểu"
+          ]
+        },
+        {
+          "num": 64,
+          "stem": "What does the man suggest the woman do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Cancel the repairs immediately"
+            },
+            {
+              "choice": "B",
+              "text": "Talk to Dr. Franklin"
+            },
+            {
+              "choice": "C",
+              "text": "Ask Dr. Franklin to lunch"
+            },
+            {
+              "choice": "D",
+              "text": "Close the north wing"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi hàm ý (Intent)"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "65-67",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0312.mp3",
+      "images": [
+        "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/images/3768637_1564544455406.png"
+      ],
+      "passageHtml": "",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nW: Good morning, this is Hardy&rsquo;s All Purpose. How can I help you?<br />\nM: <b> Q1 Hello. I picked up a camping pack this morning but it&rsquo;s missing some of the items.</b><br />\nW: Do you know which items aren&rsquo;t there?<br />\nM: <b> Q2 I have the mats, sleeping bags and the carry bag. I thought there was supposed to be one more item in there.</b><br />\nW: Ah yes, I know what it is. Are you able to drop in the store today? <b> Q3 I will give you a 15% refund because of the mistake.</b><br />\nM Oh, really? That&rsquo;s very kind of you. I&rsquo;ll come this afternoon and pick it up.</p>",
+      "explanationHtml": "<b> Transript:</b> <br> W: Chào buổi sáng, đây là Hardy’s All Purpose. Tôi có thể giúp gì cho quý khách? <br>M: <b> Q1 Xin chào. Tôi đã mua một bộ dụng cụ cắm trại vào sáng nay, nhưng nó lại thiếu một số món.</b><br>W: Bạn có biết món nào bị thiếu không có ở đó không? <br>M: <b> Q2 Chỉ có thảm, túi ngủ và túi đựng. Tôi nghĩ là còn thiếu một món nữa.</b><br>W: À vâng, tôi biết đó là gì rồi. Quý khách có thể ghé cửa hàng trong ngày hôm nay không? <b> Q3 Tôi sẽ hoàn lại cho anh 15% hoá đơn vì lỗi này.</b><br>M Ồ, thật sao? Cô thật tốt bụng. Tôi sẽ đến vào chiều nay và lấy món đồ đó.",
+      "questions": [
+        {
+          "num": 65,
+          "stem": "Where does the woman likely work?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A camping store"
+            },
+            {
+              "choice": "B",
+              "text": "A hardware store"
+            },
+            {
+              "choice": "C",
+              "text": "A medical clinic"
+            },
+            {
+              "choice": "D",
+              "text": "A shipping company"
+            }
+          ],
+          "answer": "A",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 66,
+          "stem": "Look at the graphic. What is the man missing?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Carry bag"
+            },
+            {
+              "choice": "B",
+              "text": "Portable gas stove"
+            },
+            {
+              "choice": "C",
+              "text": "Camping mats"
+            },
+            {
+              "choice": "D",
+              "text": "Sleeping bags"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết",
+            "[Part 3] Câu hỏi kết hợp bảng biểu"
+          ]
+        },
+        {
+          "num": 67,
+          "stem": "What does the woman offer to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Give him a full refund"
+            },
+            {
+              "choice": "B",
+              "text": "Give him a 15% discount voucher"
+            },
+            {
+              "choice": "C",
+              "text": "Give him a 15% refund"
+            },
+            {
+              "choice": "D",
+              "text": "Give him a free tent"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "range": "68-70",
+      "audio": "https://storage.googleapis.com/estudyme/legacy-data/kstoeic/sound/eco2018_Test06_0313.mp3",
+      "images": [],
+      "passageHtml": "<table align =\"center\" width=\"90%\" width=\"90%\" border=1 cellspacing=0 cellpadding=0  style=border-collapse:collapse ><tr> <td align =\"center\" colspan =\"2\"> <b> Henson's Corporate Cleaners <br>Carpet Cleaning</td></tr> <tr> <td align =\"center\"> Frieze</td> <td align =\"center\"> $100 per room  </td> </tr><tr> <td align =\"center\"> Shag Pile</td> <td align =\"center\"> $150 per room </td> </tr><tr> <td align =\"center\"> Velvet</td> <td align =\"center\"> $250 per room </td> </tr><tr> <td align =\"center\"> Woven Carpet</td> <td align =\"center\"> $400 per room </td> </tr></table>",
+      "transcriptHtml": "<p><b>Transript:</b><br />\nM: Hi, I have a carpet that Is identical to this one here. <b> Q1 I need it cleaned as I&rsquo;m going to be selling my office soon</b>. There are 3 rooms.<br />\nW: <b> Q2 Three rooms of that carpet would cost seven-hundred and fifty.</b><br />\nM: Oh really? I thought you were advertising a 15% discount on all your carpets?<br />\nW: That discount only covers our frieze and shag pile carpets.<br />\nM: Hmm... <b> Q3 I see. OK. I will need some time to think about it and I will come back.</b></p>",
+      "explanationHtml": "<b> Transript:</b> <br> M: Xin chào, tôi có một tấm thảm giống hệt như tấm này ở đây. <b> Q1 Tôi cần giặt thảm vì tôi sắp bán văn phòng của mình</b>. Có tổng cộng 3 phòng. <br> W: <b> Q2 Ba phòng với tấm thảm như thế sẽ tốn bảy trăm năm mươi đô la.</b><br> M: Thật sao? Tôi tưởng cô đang quảng cáo giảm giá 15% cho tất cả các loại thảm của cô? <br> W: Giảm giá đó chỉ áp dụng cho dòng thảm frieze và shag pile của chúng tôi. <br> M: Ừm... <b> Q3 Tôi hiểu rồi. Được thôi. Tôi sẽ cần thời gian để suy nghĩ về giá đó và tôi sẽ quay lại sau.</b>",
+      "questions": [
+        {
+          "num": 68,
+          "stem": "What does the man say he is planning on doing with his office?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Renovate it"
+            },
+            {
+              "choice": "B",
+              "text": "Sell it"
+            },
+            {
+              "choice": "C",
+              "text": "Clean it"
+            },
+            {
+              "choice": "D",
+              "text": "Repaint it"
+            }
+          ],
+          "answer": "B",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        },
+        {
+          "num": 69,
+          "stem": "Look at the graphic. What is the carpet made of?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Frieze"
+            },
+            {
+              "choice": "B",
+              "text": "Shag Pile"
+            },
+            {
+              "choice": "C",
+              "text": "Velvet"
+            },
+            {
+              "choice": "D",
+              "text": "Woven Carpet"
+            }
+          ],
+          "answer": "C",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết",
+            "[Part 3] Câu hỏi kết hợp bảng biểu"
+          ]
+        },
+        {
+          "num": 70,
+          "stem": "What does the man say he will do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Buy the carpet today"
+            },
+            {
+              "choice": "B",
+              "text": "Ask his wife about it"
+            },
+            {
+              "choice": "C",
+              "text": "Tell his manager"
+            },
+            {
+              "choice": "D",
+              "text": "Think about it and come back"
+            }
+          ],
+          "answer": "D",
+          "explanation": "",
+          "tags": [
+            "[Part 3] Câu hỏi chi tiết"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 3
+}

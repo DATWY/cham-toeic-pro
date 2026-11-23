@@ -1,0 +1,585 @@
+/* ============================================================
+   Neuro-TOEIC Part 4 Studio Pro — Base & Typography Styles
+   Includes Offline Fonts, Reader Scale, Focus States & Print
+   ============================================================ */
+
+/* --- Local Offline Multi-Subset Fonts (Inter Static WOFF2 — Crisp & Balanced Readability) --- */
+/* Inter — 400 Regular */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/inter-400-vn.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/inter-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/inter-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter — 400 Italic */
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/inter-400i-vn.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/inter-400i-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/inter-400i-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter — 500 Medium */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/inter-500-vn.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/inter-500-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/inter-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter — 600 SemiBold */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../assets/fonts/inter-600-vn.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../assets/fonts/inter-600-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../assets/fonts/inter-600-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter — 700 Bold (also caps 800-900 cleanly without faux distortion or heavy slabbing) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  src: url('../assets/fonts/inter-700-vn.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  src: url('../assets/fonts/inter-700-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  src: url('../assets/fonts/inter-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono — 500 Medium */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/jetbrains-mono-500-vn.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/jetbrains-mono-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono — 700 Bold */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url('../assets/fonts/jetbrains-mono-700-vn.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url('../assets/fonts/jetbrains-mono-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Noto Sans IPA — Dedicated Offline Phonetic Font (Zero Ransom-Note IPA Mismatch) */
+@font-face {
+  font-family: 'Noto Sans IPA';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/noto-sans-ipa-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans IPA';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('../assets/fonts/noto-sans-ipa-500.woff2') format('woff2');
+}
+
+/* Inline IPA Unicode-Range Fallback for Inter (covers ŋ, IPA Extensions, Stress Marks & θ) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/noto-sans-ipa-400.woff2') format('woff2');
+  unicode-range: U+014A-014B, U+0250-02FF, U+0391-03C9, U+1D00-1D7F;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500 900;
+  font-display: swap;
+  src: url('../assets/fonts/noto-sans-ipa-500.woff2') format('woff2');
+  unicode-range: U+014A-014B, U+0250-02FF, U+0391-03C9, U+1D00-1D7F;
+}
+
+/* --- Global Reset & Box Sizing --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: var(--line-height-base);
+  font-synthesis-weight: none;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+:root[data-theme="light"] body {
+  background-image: radial-gradient(ellipse 110% 45% at 50% 0%, rgba(125, 211, 252, 0.28), transparent 65%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Tabular Numbers for precise alignment — Unified Inter sans-serif */
+.tabular-nums, .time-label, .timer-chip, .stat-value, .lt-time {
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+}
+
+code, kbd, .key-hint {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Focus Visible Rings for Accessibility (WCAG 2.4.7) */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+select,
+select option,
+select optgroup {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+/* Selection Styling */
+::selection {
+  background-color: var(--accent-soft-hover);
+  color: var(--accent);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+  border: 2px solid var(--bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-dim);
+}
+
+/* --- Reader Preferences Modifiers --- */
+:root.font-size-sm, body.font-size-sm { --font-size-base: 14px; }
+:root.font-size-md, body.font-size-md { --font-size-base: 15px; }
+:root.font-size-lg, body.font-size-lg { --font-size-base: 17px; }
+:root.font-size-xl, body.font-size-xl { --font-size-base: 19px; }
+
+:root.line-height-compact, body.line-height-compact { --line-height-base: 1.45; --reader-line-height: 1.45; }
+:root.line-height-normal, body.line-height-normal { --line-height-base: 1.62; --reader-line-height: 1.62; }
+:root.line-height-relaxed, body.line-height-relaxed { --line-height-base: 1.82; --reader-line-height: 1.82; }
+
+.ipa-text {
+  font-family: var(--font-ipa);
+  letter-spacing: 0.01em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body.reduced-motion *, body.reduced-motion *::before, body.reduced-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* --- Common Keyframe Animations --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.85; }
+}
+
+@keyframes recordingPulse {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.anim-fade-in {
+  animation: fadeIn var(--transition-normal) forwards;
+}
+
+/* Screen hidden for print-only worksheet */
+#print-worksheet-section {
+  display: none !important;
+}
+
+/* --- @media print A4 Worksheet Optimization --- */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 14mm 12mm 14mm 12mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.45 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  /* Expand all split-pane & Part 7 scroll containers so zero scrolled content is ever clipped */
+  .workspace,
+  .panel-inner,
+  .talk-main-area,
+  .talk-card,
+  .talk-split-container,
+  .talk-left-pane,
+  .talk-right-pane,
+  .p7-reader-shell,
+  .p7-reader-grid,
+  .p7-passages-pane,
+  .p7-questions-pane,
+  .p7-doc-card,
+  .p7-doc-body,
+  .p7-table-wrap,
+  .inspector-card,
+  .tab-panel-body {
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    position: static !important;
+    box-shadow: none !important;
+  }
+
+  .p7-reader-grid {
+    display: block !important;
+  }
+
+  .p7-passages-pane,
+  .p7-questions-pane {
+    margin-bottom: 12pt !important;
+    border: 1pt solid #cccccc !important;
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  /* Hide app chrome, audio players, and modals */
+  .topbar,
+  .focus-theater-bar,
+  .sidebar,
+  .cbt-exam-banner,
+  .cbt-palette-drawer,
+  .player-shell,
+  .split-resizer,
+  .focus-dock,
+  .mobile-sheet-backdrop,
+  .mobile-sheet-drawer,
+  .mobile-sheet-trigger-wrap,
+  .talk-nav-footer,
+  .check-talk-wrap,
+  dialog,
+  #toast-container,
+  .lightbox-modal,
+  .command-palette-backdrop {
+    display: none !important;
+  }
+
+  /* When dedicated A4 print worksheet is populated, hide interactive workspace and show crisp A4 worksheet */
+  body:has(#print-worksheet-section:not(:empty)) .workspace {
+    display: none !important;
+  }
+
+  #print-worksheet-section:not(:empty) {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .print-worksheet-wrapper {
+    font-family: var(--font-sans);
+    color: #111111;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .print-header {
+    border-bottom: 2pt solid #111111;
+    padding-bottom: 8pt;
+    margin-bottom: 14pt;
+  }
+
+  .print-header h1 {
+    font-size: 14pt;
+    font-weight: 700;
+    margin: 0 0 4pt;
+    letter-spacing: 0.01em;
+  }
+
+  .print-meta {
+    font-size: 8.5pt;
+    color: #555555;
+  }
+
+  .print-section {
+    margin-bottom: 16pt;
+    break-inside: auto;
+  }
+
+  .print-section-title {
+    font-size: 10pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1pt solid #333333;
+    padding-bottom: 3pt;
+    margin: 0 0 8pt;
+    letter-spacing: 0.03em;
+    break-after: avoid;
+  }
+
+  .print-q-block {
+    margin-bottom: 10pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .print-q-stem {
+    margin: 0 0 4pt;
+    font-size: 9.5pt;
+  }
+
+  .print-q-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4pt 12pt;
+    padding-left: 8pt;
+  }
+
+  .print-opt {
+    font-size: 9pt;
+    display: flex;
+    align-items: baseline;
+    gap: 4pt;
+  }
+
+  .print-opt-box {
+    font-family: var(--font-mono);
+    color: #777777;
+  }
+
+  .print-transcript-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12pt;
+    font-size: 9pt;
+    line-height: 1.5;
+  }
+
+  .print-transcript-box.is-single-col {
+    grid-template-columns: 1fr;
+  }
+
+  .print-script-en h4, .print-script-vi h4 {
+    margin: 0 0 4pt;
+    font-size: 9pt;
+    font-weight: 700;
+    color: #333333;
+  }
+
+  .print-script-en p, .print-script-vi p {
+    margin: 0 0 6pt;
+    color: #222222;
+  }
+
+  .print-doc-card {
+    border: 1pt solid #cccccc;
+    padding: 8pt 10pt;
+    margin-bottom: 10pt;
+    border-radius: 4pt;
+    break-inside: auto;
+  }
+
+  .print-doc-table,
+  .print-vocab-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    margin: 6pt 0;
+  }
+
+  .print-doc-table th, .print-doc-table td,
+  .print-vocab-table th, .print-vocab-table td {
+    border: 1pt solid #cccccc;
+    padding: 4pt 6pt;
+    text-align: left;
+  }
+
+  .print-doc-table th,
+  .print-vocab-table th {
+    background: #f0f0f0 !important;
+    font-weight: 700;
+  }
+
+  .print-notes-box {
+    border: 1pt dashed #888888;
+    padding: 6pt 8pt;
+    font-size: 8.5pt;
+    min-height: 30pt;
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "id": "cham_part_7_double_test_23",
+  "sourceId": "6a20fa5d60281800269d30e9",
+  "slug": "part-7-double-test-23",
+  "title": "Đề lẻ Part 7 Kép · Test 23",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 12,
+  "totalQuestions": 10,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_7": 10
+  },
+  "groups": [
+    {
+      "part": 7,
+      "range": "176-180",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p data-pm-slice=\"0 0 []\" style=\"text-align: center;\"><strong>Tips for designing a website for a food-truck business</strong></p>\n\n<p data-end=\"795\" data-start=\"81\" style=\"text-align: justify;\">Food trucks typically operate by traveling between different locations within or across cities, which means they often depend on word-of-mouth recommendations or social media platforms to attract customers. For this reason, many food truck owners may not prioritize creating their own website. However, given the nature of the business, it is actually very important to have a dedicated online space where customers can easily find information, place orders, or get in touch. In addition, market studies indicate that having a website can significantly help in building a loyal customer base. With that in mind, the following are some useful suggestions for creating an effective website for a food truck business.</p>\n\n<p data-end=\"1260\" data-start=\"797\" style=\"text-align: justify;\">The Home page should feature eye-catching visuals along with the food truck’s name displayed prominently. Essential details such as operating hours and current locations should be clearly highlighted in the main text. It is best to avoid placing too much information upfront, so features like online forms (for example, reservation requests for private events or services) should be provided through links or pop-up windows rather than shown directly on the page.</p>\n\n<p data-end=\"1549\" data-start=\"1262\" style=\"text-align: justify;\">The Food Menu page should present high-quality, appealing images accompanied by clear and descriptive text that explains each dish in detail. It is also important to ensure that images are large enough to remain visually attractive when viewed on bigger screens such as desktop monitors.</p>\n\n<p data-end=\"1740\" data-start=\"1551\" style=\"text-align: justify;\">The About Us page should describe the food truck’s concept and overall theme, along with background information about the owners or team, particularly their experience in the food industry.</p>\n\n<p data-end=\"1873\" data-is-last-node=\"\" data-is-only-node=\"\" data-start=\"1742\" style=\"text-align: justify;\">The News page may be used to update visitors about seasonal menu items, upcoming promotions, or special events like food festivals.</p>\n\n<hr>\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">To: Doug Abruzzo dabruzzo@dzacreative.com</p>\n\n<p style=\"text-align: justify;\">From: Ed Vale evale@saffronmail.com</p>\n\n<p style=\"text-align: justify;\">Date: March 29</p>\n\n<p style=\"text-align: justify;\">Subject: Feedback</p>\n\n<p style=\"text-align: justify;\">Dear Mr. Abruzzo,</p>\n\n<p style=\"text-align: justify;\">Thank you once again for developing the prototype website for my food truck business. I would like to emphasize that it has received favorable responses from the customers who have tested it. I am very pleased that we took into account the recommendations from the article you shared regarding website design for food trucks.</p>\n\n<p style=\"text-align: justify;\">Following up on our phone conversation yesterday, we will proceed with the prototype and officially launch the website on April 5. However, I have noticed that the details I previously provided about our upcoming mid-April promotion - offering a free dessert with every sandwich purchase - have not yet been included. Please ensure this key information is added before the site goes live.</p>\n\n<p style=\"text-align: justify;\">Kind regards,</p>\n\n<p style=\"text-align: justify;\">Ed</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 176,
+          "stem": "According to the article, which of the following methods has traditionally been used by food truck owners to attract customers?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "By word of mouth"
+            },
+            {
+              "choice": "B",
+              "text": "By using billboards along highways"
+            },
+            {
+              "choice": "C",
+              "text": "Through advertisements in newspapers"
+            },
+            {
+              "choice": "D",
+              "text": "By displaying signs at food festivals"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>B&agrave;i viết cho biết rằng c&aacute;c xe b&aacute;n đồ ăn &quot;often rely on word-of-mouth recommendations or social media platforms to attract customers.&quot;</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 177,
+          "stem": "According to the article, which of the following details is not required to be displayed on the Home page?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The truck’s locations"
+            },
+            {
+              "choice": "B",
+              "text": "Operating hours"
+            },
+            {
+              "choice": "C",
+              "text": "The business name"
+            },
+            {
+              "choice": "D",
+              "text": "Seasonal food items"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Trang Home cần bao gồm t&ecirc;n doanh nghiệp, giờ hoạt động v&agrave; c&aacute;c địa điểm. C&aacute;c m&oacute;n ăn theo m&ugrave;a thuộc về trang News.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 178,
+          "stem": "What profession is Mr. Abruzzo most likely involved in?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Web design"
+            },
+            {
+              "choice": "B",
+              "text": "Marketing research"
+            },
+            {
+              "choice": "C",
+              "text": "Catering services"
+            },
+            {
+              "choice": "D",
+              "text": "Package delivery"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Ed cảm ơn &ocirc;ng Abruzzo v&igrave; đ&atilde; &quot;developing the prototype website&quot; v&agrave; thảo luận về nội dung trang web với &ocirc;ng.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 179,
+          "stem": "In which part of the website will the information most likely be added?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The Home page"
+            },
+            {
+              "choice": "B",
+              "text": "The Food Menu page"
+            },
+            {
+              "choice": "C",
+              "text": "The News page"
+            },
+            {
+              "choice": "D",
+              "text": "The About Us page"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p style=\"text-align: justify\">Th&ocirc;ng tin bị thiếu li&ecirc;n quan đến một chương tr&igrave;nh khuyến m&atilde;i sắp tới (&quot;free dessert with every sandwich purchase&quot;), v&agrave; b&agrave;i viết cho biết c&aacute;c chương tr&igrave;nh khuyến m&atilde;i n&ecirc;n được đăng tr&ecirc;n trang News.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 180,
+          "stem": "According to the e-mail, when will the Web site launch?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "April 15"
+            },
+            {
+              "choice": "B",
+              "text": "April 5"
+            },
+            {
+              "choice": "C",
+              "text": "March 25"
+            },
+            {
+              "choice": "D",
+              "text": "March 15"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Ed viết rằng: &quot;we will proceed with the prototype and officially launch the website on April 5.&quot;</p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "181-185",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\">To: Manny Green mgreen@rhba.com</p>\n\n<p style=\"text-align: justify;\">From: John LaRose jlarose@rilamore.edu</p>\n\n<p style=\"text-align: justify;\">Date: May 18</p>\n\n<p style=\"text-align: justify;\">Subject: Drilling Notice</p>\n\n<p style=\"text-align: justify;\">Dear Mr. Green,</p>\n\n<p style=\"text-align: justify;\">I am contacting you on behalf of Rilamore University and would appreciate your assistance in informing members of the Red Hills Business Association. As reported in last month’s Daily Gazette, the university is proceeding with its Net Zero Initiative. Our goal is to have a fully operational geothermal heating and cooling system serving the entire campus within the next three years. Reducing dependence on fossil fuels has been a long-standing objective of the university, and this project represents a major milestone toward that objective.</p>\n\n<p style=\"text-align: justify;\">During the coming month, we will <strong>conduct </strong>test drilling in several campus locations. Provided everything remains on schedule, drilling operations near the Red Hills Business District and Oak Street Apartments are expected to begin on Wednesday, June 5. We would like nearby business owners and residents to be aware that noise levels may be higher than normal during the approximately two-week period required to complete the work. The drilling team will operate from 10:00 a.m. to 3:00 p.m., Monday through Friday.</p>\n\n<p style=\"text-align: justify;\">We sincerely regret any disruption this project may cause to those living and working nearby. Anyone with questions or concerns is encouraged to contact me directly at 813-555-0123.</p>\n\n<p style=\"text-align: justify;\">Sincerely,</p>\n\n<p style=\"text-align: justify;\">John LaRose</p>\n\n<p style=\"text-align: justify;\">Community Liaison, Rilamore University Office of Communications</p>\n\n<hr>\n<p data-pm-slice=\"0 0 []\" style=\"text-align: justify;\"><strong>FOR IMMEDIATE RELEASE</strong></p>\n\n<p style=\"text-align: justify;\"><strong>Contact</strong>: Manny Green, mgreen@rhba.com</p>\n\n<p style=\"text-align: justify;\">RED HILLS (May 25) - The Red Hills Business Association has announced a change to the schedule of its popular Lunch Hour Concert Series. Rather than being held on Thursdays throughout June, the four complimentary concerts will now be presented on Thursdays in July. The performance lineup remains the same: the series will begin with the Jaystone Jazz Trio on July 4, followed by Joss and the Jaybirds, Ray Starform, and finally the Barklay Bass Quintet on the following Thursdays.</p>\n\n<p style=\"text-align: justify;\">As in previous years, all three blocks of Oak Street will be closed to vehicle traffic. Local restaurants will offer outdoor lunch service, and arts-and-crafts vendors from the community will showcase their products on the Cultural Center lawn. This event continues to be a wonderful community celebration in one of Red Hills’ most vibrant neighborhoods, and we look forward to welcoming everyone there.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 181,
+          "stem": "What is indicated about the Net Zero Initiative?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The project is receiving financial support from the Red Hills Business Association."
+            },
+            {
+              "choice": "B",
+              "text": "The idea was modeled after comparable programs in other cities."
+            },
+            {
+              "choice": "C",
+              "text": "Geothermal energy will be used to supply power to an entire city."
+            },
+            {
+              "choice": "D",
+              "text": "The initiative will alter the method an institution uses to heat its buildings."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Email cho biết rằng trường đại học dự định lắp đặt hệ thống sưởi ấm v&agrave; l&agrave;m m&aacute;t địa nhiệt cho to&agrave;n bộ khu&ocirc;n vi&ecirc;n, qua đ&oacute; thay đổi c&aacute;ch c&aacute;c t&ograve;a nh&agrave; trong khu&ocirc;n vi&ecirc;n được sưởi ấm v&agrave; l&agrave;m m&aacute;t.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 182,
+          "stem": "In paragraph 2, line 1 of the e-mail, the word \"conduct\" is closest in meaning to:",
+          "options": [
+            {
+              "choice": "A",
+              "text": "act"
+            },
+            {
+              "choice": "B",
+              "text": "accompany"
+            },
+            {
+              "choice": "C",
+              "text": "carry out"
+            },
+            {
+              "choice": "D",
+              "text": "transmit"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>&ldquo;Conduct test drilling&rdquo; c&oacute; nghĩa l&agrave; thực hiện hoặc tiến h&agrave;nh c&aacute;c hoạt động khoan thử nghiệm.</p>",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        },
+        {
+          "num": 183,
+          "stem": "What can be concluded about the Red Hills Business District?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It is situated close to a university campus."
+            },
+            {
+              "choice": "B",
+              "text": "It serves as the venue for an annual arts festival in July."
+            },
+            {
+              "choice": "C",
+              "text": "The Oak Street Apartments are part of the district."
+            },
+            {
+              "choice": "D",
+              "text": "The headquarters of the Daily Gazette are located there."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Email cho biết rằng c&aacute;c hoạt động khoan gần Khu thương mại Red Hills sẽ diễn ra tại c&aacute;c khu vực trong khu&ocirc;n vi&ecirc;n trường, điều n&agrave;y cho thấy khu vực n&agrave;y nằm gần trường đại học.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 184,
+          "stem": "What is the most likely reason the Red Hills Business Association rescheduled its concert series?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To benefit from the availability of a new energy source"
+            },
+            {
+              "choice": "B",
+              "text": "To align with students’ academic schedules"
+            },
+            {
+              "choice": "C",
+              "text": "To avoid noise from nearby construction"
+            },
+            {
+              "choice": "D",
+              "text": "To avoid overlapping with another similar event"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p style=\"text-align: justify\">C&aacute;c buổi h&ograve;a nhạc ban đầu được l&ecirc;n kế hoạch v&agrave;o th&aacute;ng 6, nhưng việc khoan của trường đại học gần Oak Street được dự kiến bắt đầu từ ng&agrave;y 5 th&aacute;ng 6 trong khoảng hai tuần v&agrave; sẽ g&acirc;y ra tiếng ồn đ&aacute;ng kể. Việc chuyển c&aacute;c buổi h&ograve;a nhạc sang th&aacute;ng 7 gi&uacute;p tr&aacute;nh sự gi&aacute;n đoạn n&agrave;y.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 185,
+          "stem": "What detail about the Cultural Center is included in the press release?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It will have artwork for sale on its property."
+            },
+            {
+              "choice": "B",
+              "text": "It will host hands-on arts-and-crafts classes."
+            },
+            {
+              "choice": "C",
+              "text": "It will serve as the performance venue for artists."
+            },
+            {
+              "choice": "D",
+              "text": "It will supply meals for the musicians."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p style=\"text-align: justify\">Th&ocirc;ng c&aacute;o b&aacute;o ch&iacute; cho biết rằng &quot;arts-and-crafts vendors from the community will showcase their products on the Cultural Center lawn&quot;, nghĩa l&agrave; c&aacute;c sản phẩm sẽ được trưng b&agrave;y v&agrave; c&oacute; khả năng được b&aacute;n tại đ&oacute;.</p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 7,
+  "subLabel": "Đoạn kép"
+}

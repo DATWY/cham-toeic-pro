@@ -1,0 +1,494 @@
+{
+  "id": "cham_part_6_test_17",
+  "sourceId": "615c197a65d71f3a51f6742a",
+  "slug": "part-6-test-17",
+  "title": "Đề lẻ Part 6 · Test 17",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 10,
+  "totalQuestions": 16,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_6": 16
+  },
+  "groups": [
+    {
+      "part": 6,
+      "range": "131-134",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<br><b><u>Parking Notice</u></b><br>Parking along the streets in the Frederickton downtown area is prohibited every second and fourth Tuesday of the month between 8 a.m. and 12 p.m. for cleaning. <strong><strong>(131)</strong></strong> _____. Anyone who violates this rule will be ticketed and charged a $15 penalty for the first three offenses. This must be paid within 30 days of <strong><strong>(132)</strong></strong> _____.<br>City statutes permit vehicle owners to challenge a ticket's validity within the same 30-day period, and owners may make an appeal if they disagree with the outcome. On <strong><strong>(133)</strong></strong> _____ violations, vehicles will be towed at the owner's expense. Repeated negligence could also <strong><strong>(134)</strong></strong> _____ to the suspension of a driver's license.",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 131,
+          "stem": "Parking along the streets in the Frederickton downtown area is prohibited every second and fourth Tuesday of the month between 8 a.m. and 12 p.m. for cleaning. (131) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The city had to adjust parking rates every two months."
+            },
+            {
+              "choice": "B",
+              "text": "The city's sanitation vehicles and crews will be working on roadways during this time."
+            },
+            {
+              "choice": "C",
+              "text": "This regulation has been implemented to reduce weekend traffic."
+            },
+            {
+              "choice": "D",
+              "text": "There are several ways you can pay the fees for parking"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Đ&aacute;p &aacute;n B đ&uacute;ng</strong> v&igrave; n&oacute; giải th&iacute;ch l&yacute; do tại sao việc đậu xe bị cấm v&agrave;o mỗi thứ Ba thứ hai v&agrave; thứ tư h&agrave;ng th&aacute;ng, từ 8 giờ s&aacute;ng đến 12 giờ trưa để l&agrave;m sạch đường phố.&nbsp;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 132,
+          "stem": "This must be paid within 30 days of (132) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "receipt"
+            },
+            {
+              "choice": "B",
+              "text": "receive"
+            },
+            {
+              "choice": "C",
+              "text": "receivable"
+            },
+            {
+              "choice": "D",
+              "text": "receives"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p>Trước chỗ trống l&agrave; giới từ &quot;of&quot;</p>\n\n<p>=&gt; Chỗ trống cần 1 danh từ&nbsp;</p>\n\n<p><strong>=&gt; Chọn đ&aacute;p &aacute;n A</strong></p>\n\n<p>&nbsp;receipt: h&oacute;a đơn</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ loại"
+          ]
+        },
+        {
+          "num": 133,
+          "stem": "On (133) _____ violations, vehicles will be towed at the owner's expense.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "flexible"
+            },
+            {
+              "choice": "B",
+              "text": "technical"
+            },
+            {
+              "choice": "C",
+              "text": "exemplary"
+            },
+            {
+              "choice": "D",
+              "text": "subsequent"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>flexible: linh hoạt</p>\n\n<p>technical: thuộc về kỹ thuật&nbsp;</p>\n\n<p>exemplary: mẫu mực</p>\n\n<p>subsequent: tiếp theo, xảy ra sau</p>\n\n<p><strong>=&gt; D c&oacute; nghĩa ph&ugrave; hợp nhất</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 134,
+          "stem": "Repeated negligence could also (134) _____ to the suspension of a driver's license.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "lead"
+            },
+            {
+              "choice": "B",
+              "text": "leads"
+            },
+            {
+              "choice": "C",
+              "text": "led"
+            },
+            {
+              "choice": "D",
+              "text": "leading"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Giải thích chi tiết:</strong> Sau động từ khuyết thiếu <em>\"could\"</em> cần một <strong>động từ nguyên thể không \"to\"</strong> (<em>could also lead to...</em> — cũng có thể dẫn đến việc đình chỉ). <strong>→ Đáp án đúng là (A) lead.</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "135-138",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><br>To: Denise Barton [dbarton@officetime.com]<br>From: Elmer Wittson [elm_witt@wittsons.com]<br>Date: July 8<br>Subject: Inquiry<br>Dear Ms. Barton,<br>I am writing in regard to one of the <strong><strong>(135)</strong></strong> _____ advertised in your sales flyer last week. The Cambridge XD multi-function printer was listed at a discounted price of only $449. As I have never seen it offered at such a large markdown, I am <strong><strong>(136)</strong></strong> _____ to buy one.<br>However, I noticed the listing says that supplies may be limited. This is not surprising given that it is a very <strong><strong>(137)</strong></strong> _____ model. <strong><strong>(138)</strong></strong> _____ . I am looking forward to hearing back from you.<br>Thank you,<br>Elmer Wittson</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 135,
+          "stem": "I am writing in regard to one of the (135) _____ advertised in your sales flyer last week.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "positions"
+            },
+            {
+              "choice": "B",
+              "text": "stores"
+            },
+            {
+              "choice": "C",
+              "text": "products"
+            },
+            {
+              "choice": "D",
+              "text": "venues"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>position: vị trí</p>\n<p>store: cửa hàng</p>\n<p>product: sản phẩm</p>\n<p>venue: địa điểm</p>\n<p>=&gt; C có nghĩa phù hợp nhất</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 136,
+          "stem": "As I have never seen it offered at such a large markdown, I am (136) _____ to buy one.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "acceptable"
+            },
+            {
+              "choice": "B",
+              "text": "intense"
+            },
+            {
+              "choice": "C",
+              "text": "eager"
+            },
+            {
+              "choice": "D",
+              "text": "strong"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>acceptable: chấp nhận được</p>\n<p>intense: dữ dội</p>\n<p>eager: háo hức</p>\n<p>strong: mạnh mẽ</p>\n<p>=&gt; C có nghĩa phù hợp nhất</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 137,
+          "stem": "This is not surprising given that it is a very (137) _____ model.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "popularize"
+            },
+            {
+              "choice": "B",
+              "text": "popular"
+            },
+            {
+              "choice": "C",
+              "text": "popularly"
+            },
+            {
+              "choice": "D",
+              "text": "popularity"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Trước chỗ trống là 1 trạng từ (very)</p>\n<p>=&gt; Chỗ trống cần 1 tính từ&nbsp;</p>\n<p>=&gt; Chọn đáp án B</p>\n<p>popular: phổ biến</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ loại"
+          ]
+        },
+        {
+          "num": 138,
+          "stem": "(138) _____. I am looking forward to hearing back from you.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "I sincerely appreciate your business as a first-time client."
+            },
+            {
+              "choice": "B",
+              "text": "Don't forget to correct any errors before sending the next invoice."
+            },
+            {
+              "choice": "C",
+              "text": "It is fortunate that I was able to buy it last week."
+            },
+            {
+              "choice": "D",
+              "text": "Please let me know if there are any left as soon as possible."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Đáp án D đúng vì phản ánh sự quan tâm của người nói về sự hạn chế về cung cấp và mong muốn được thông báo ngay lập tức nếu vẫn còn hàng. (However, I noticed the listing says that supplies may be limited.&nbsp;&nbsp;I am looking forward to hearing back from you.)</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "139-142",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<br>The Tulsa Airport is getting a major facelift this year, as announced by officials from the Department of Aviation. At a press conference held earlier, spokesperson Oliver Conway shared some details about the project. \"In response to <strong><strong>(139)</strong></strong> _____ growth in regional aviation, city authorities and airport management have decided that now is the time to make renovations. In addition to an extra runway and gate facilities, the airport's interior <strong><strong>(140)</strong></strong> _____ a significant transformation designed to enhance security and ease passenger flow,\" he said. The airport was first constructed over four decades ago at a cost of $11 million, but the cost of the current work is expected to exceed $1 billion. <strong><strong>(141)</strong></strong> _____. If all goes according to plan, the new Tulsa Airport will be completed next year. It will <strong><strong>(142)</strong></strong> _____ state-of-the-art equipment and facilities.",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 139,
+          "stem": "In response to (139) _____ growth in regional aviation, city authorities and airport management have decided that now is the time to make renovations.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "continue"
+            },
+            {
+              "choice": "B",
+              "text": "continued"
+            },
+            {
+              "choice": "C",
+              "text": "continuation"
+            },
+            {
+              "choice": "D",
+              "text": "continually"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Chỗ trống cần 1 tính từ để bổ nghĩa cho danh từ \"growth\"</p>\n<p>=&gt; Chọn đáp án B</p>\n<p>continued: tiếp tục</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ loại"
+          ]
+        },
+        {
+          "num": 140,
+          "stem": "In addition to an extra runway and gate facilities, the airport's interior (140) _____ a significant transformation designed to enhance security and ease passenger flow,\" he said.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "to undergo"
+            },
+            {
+              "choice": "B",
+              "text": "underwent"
+            },
+            {
+              "choice": "C",
+              "text": "has undergone"
+            },
+            {
+              "choice": "D",
+              "text": "will undergo"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Đoạn văn nói về hành động sẽ xảy ra trong tương lai (Dấu hiệu: this year: năm nay)</p>\n<p>=&gt; Dùng thì tương lai đơn</p>\n<p>=&gt; Chọn đáp án D</p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 141,
+          "stem": "The airport was first constructed over four decades ago at a cost of $11 million, but the cost of the current work is expected to exceed $1 billion. (141) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The amount needed has forced officials to cancel the renovation."
+            },
+            {
+              "choice": "B",
+              "text": "This figure is reasonable given the project's significant size."
+            },
+            {
+              "choice": "C",
+              "text": "This is due to a decrease in the number of transit passengers."
+            },
+            {
+              "choice": "D",
+              "text": "Anticipated tourist arrivals could bring added revenues on top of that."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>Câu trước \"<em>The airport was first constructed over four decades ago at a cost of $11 million, but the cost of the current work is expected to exceed $1 billion.</em>\" (Sân bay được xây dựng lần đầu tiên cách đây hơn bốn thập kỷ với chi phí 11 triệu USD, nhưng chi phí cho công trình hiện tại dự kiến sẽ vượt quá 1 tỷ USD.)</p>\n<p>=&gt; Đáp án B đúng vì nó phản ánh ý rằng chi phí dự án hiện tại là đáng kể và phù hợp với quy mô của công việc cần thực hiện.</p>\n<p>=&gt; \"This figure\" chỉ \"$1 billion\"&nbsp;</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        },
+        {
+          "num": 142,
+          "stem": "It will (142) _____ state-of-the-art equipment and facilities.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "disclose"
+            },
+            {
+              "choice": "B",
+              "text": "process"
+            },
+            {
+              "choice": "C",
+              "text": "feature"
+            },
+            {
+              "choice": "D",
+              "text": "distract"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>disclose: tiết lộ</p>\n\n<p>process: xử l&yacute;, chế biến</p>\n\n<p>feature: bao gồm</p>\n\n<p>distract: l&agrave;m xao nh&atilde;ng</p>\n\n<p><strong>=&gt; C c&oacute; nghĩa ph&ugrave; hợp nhất</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "range": "143-146",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<br> Claire Lewis<br>Coapow Industries<br>5411 Superior Avenue<br>Cleveland, OH 44103<br>Dear Ms. Lewis,<br>I am writing in reference to a conversation we had at last year's Food Expo in Beijing. You asked me to contact you if an opportunity <strong><strong>(143)</strong></strong> _____ business together ever arose.<br>As it happens, I have since established a cocoa farm and processing plant called Ecuacao near Quito, Ecuador. I recall you mentioning your interest in products <strong><strong>(144)</strong></strong> _____ from Forastero cocoa beans. It was difficult to grow at first, but I have successfully produced a good quantity of beans, as you can see from the catalog I sent you. Enclosed in the package that came with this letter are some <strong><strong>(145)</strong></strong> _____  of my products. After trying them, please let me know what you think of the quality. <strong><strong>(146)</strong></strong> _____. I'm certain our product will add to your revenues.<br>Thank you, and I look forward to hearing from you.<br>Sincerely,<br>Daniel Gerber",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 143,
+          "stem": "You asked me to contact you if an opportunity (143) _____ business together ever arose.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "conduct"
+            },
+            {
+              "choice": "B",
+              "text": "will conduct"
+            },
+            {
+              "choice": "C",
+              "text": "conducting"
+            },
+            {
+              "choice": "D",
+              "text": "to conduct"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Giải thích chi tiết:</strong> Cấu trúc danh từ <em>\"an opportunity\"</em> kết hợp động từ phù hợp ngữ cảnh <em>\"arises\"</em> / <em>\"to V\"</em> theo đúng mạch câu điều kiện (hãy liên hệ nếu có cơ hội phát sinh). <strong>→ Đáp án đúng là (D).</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 144,
+          "stem": "I recall you mentioning your interest in products (144) _____ from Forastero cocoa beans.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "enjoyed"
+            },
+            {
+              "choice": "B",
+              "text": "derived"
+            },
+            {
+              "choice": "C",
+              "text": "implemented"
+            },
+            {
+              "choice": "D",
+              "text": "prevented"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>derived from: c&oacute; nguồn gốc từ</p>\n\n<p><strong>=&gt; Chọn đ&aacute;p &aacute;n B</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 145,
+          "stem": "Enclosed in the package that came with this letter are some (145) _____ of my products.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "descriptions"
+            },
+            {
+              "choice": "B",
+              "text": "samples"
+            },
+            {
+              "choice": "C",
+              "text": "surveys"
+            },
+            {
+              "choice": "D",
+              "text": "formulas"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p>description: m&ocirc; tả</p>\n\n<p>sample: mẫu, h&agrave;ng mẫu</p>\n\n<p>survey: khảo s&aacute;t</p>\n\n<p>formula: c&ocirc;ng thức&nbsp;</p>\n\n<p><strong>=&gt; B c&oacute; nghĩa ph&ugrave; hợp nhất</strong></p>",
+          "tags": [
+            "[Part 6] Câu hỏi từ vựng"
+          ]
+        },
+        {
+          "num": 146,
+          "stem": "After trying them, please let me know what you think of the quality. (146) _____.",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Your suggestions for improving the quality of the beans were very useful to me."
+            },
+            {
+              "choice": "B",
+              "text": "We produced a smaller quantity than was originally projected."
+            },
+            {
+              "choice": "C",
+              "text": "I hope you will consider ordering a supply for your company."
+            },
+            {
+              "choice": "D",
+              "text": "I plan to set up my first factory facilities with the money."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Dựa vào câu trước đó (After trying them, please let me know what you think of the quality) - Sau khi dùng thử, vui lòng cho tôi biết cảm nhận của bạn về chất lượng.</p>\n<p>=&gt; Chọn đáp án C</p>\n<p>Câu này thể hiện một lời mời hoặc gợi ý đối với người nhận hàng để họ xem xét việc đặt hàng cho công ty của họ.</p>",
+          "tags": [
+            "[Part 6] Câu hỏi điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 6
+}

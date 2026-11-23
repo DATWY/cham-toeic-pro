@@ -1,0 +1,912 @@
+{
+  "id": "cham_part_7_single_test_14",
+  "sourceId": "6316cf135948b5402da84a20",
+  "slug": "part-7-single-test-14",
+  "title": "Đề lẻ Part 7 Đơn · Test 14",
+  "collection": "ĐỀ LẺ READING",
+  "testType": "part",
+  "duration": 30,
+  "totalQuestions": 29,
+  "attemptCount": 0,
+  "commentCount": 0,
+  "partCounts": {
+    "PART_7": 29
+  },
+  "groups": [
+    {
+      "part": 7,
+      "range": "147-148",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><strong>Petunia stationery</strong></p>\n\n<p>We have everything your office could possibly need.<br>\n999 Main street, Des Moines, Iowa<br>\nTel: 293-2394&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fax: 293-2395<br>\nCustomer: Harold Marley<br>\nAddress: 41 Brighton st., Des Moines, IO<br>\nTelephone: 954-4502<br>\nOrder Placed: Tuesday, March 23<br>\nOrder Sent: Tuesday, March 23<br>\nOrder Number: 454-5055</p>\n\n<table align=\"center\" class=\"MsoTableGrid\" style=\"border-collapse:collapse; border:none\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid black; width:168px; padding:0in 7px 0in 7px; border-top:1px solid black; border-right:1px solid black; border-left:1px solid black\" valign=\"top\">\n\t\t\t<p style=\"text-align: center;\"><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span><b>Item Description </b></span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:108px; padding:0in 7px 0in 7px; border-top:1px solid black; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p style=\"text-align: center;\"><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span><b>Item Number </b></span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:120px; padding:0in 7px 0in 7px; border-top:1px solid black; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p style=\"text-align: center;\"><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span><b>Amount Ordered </b></span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:103px; padding:0in 7px 0in 7px; border-top:1px solid black; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p style=\"text-align: center;\"><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span><b>Cost/Unit </b></span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:125px; padding:0in 7px 0in 7px; border-top:1px solid black; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p style=\"text-align: center;\"><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span><b>Total Cost </b></span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid black; width:168px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>Staples (Box of 1,000) </span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:108px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>565595 </span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:120px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>3</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:103px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$2.00</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:125px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$6.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid black; width:168px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>Copy Paper (Box of 5,000) </span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:108px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>965686 </span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:120px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>2</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:103px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$22.00</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:125px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$44.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid black; width:168px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>Number 2 Pencils (Box of 10)</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:108px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>103434 </span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:120px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>10</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:103px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$5.50</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:125px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$55.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid black; width:168px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>Black Ballpoint Pens (Box of 20) </span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:108px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>249558 </span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:120px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>4</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:103px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$9.00</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:125px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$36.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid black; width:168px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:1px solid black\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>Blue Ballpoint Pens (Box of 20) </span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:108px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>249560 </span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:120px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>3</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:103px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$9.00</span></span></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid black; width:125px; padding:0in 7px 0in 7px; border-top:none; border-right:1px solid black; border-left:none\" valign=\"top\">\n\t\t\t<p><span style=\"font-size:11pt\"><span style=\"line-height:normal\"><span>$27.00</span></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Subtotal: $168.00<br>\nShipping Fee: $12.00<br>\nTotal: $180.00<br>\nThank you for your order. Your order has been billed to the credit card ending in 5205. For questions regarding this shipment, please contact Matt stone at matt@petuniastationery.com.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 147,
+          "stem": "How many pencils were ordered?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "10"
+            },
+            {
+              "choice": "B",
+              "text": "60"
+            },
+            {
+              "choice": "C",
+              "text": "80"
+            },
+            {
+              "choice": "D",
+              "text": "100"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p>Nhìn vào bảng, chúng ta ta có thể thấy thông tin <em>\"Number 2 Pencils (Box of 10)\" </em> với số lượng được đặt hàng là 10&nbsp;</p>\n<p><strong>=&gt; Chọn đáp án D&nbsp;</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 148,
+          "stem": "What is the order number of the least expensive item?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "103434"
+            },
+            {
+              "choice": "B",
+              "text": "249558"
+            },
+            {
+              "choice": "C",
+              "text": "565595"
+            },
+            {
+              "choice": "D",
+              "text": "249560"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p>Nhìn vào bảng, chúng ta có thể thấy mặt hàng rẻ nhất là Staples với mã đơn hàng là 565595</p>\n<p><strong>=&gt; Chọn đáp án C&nbsp;</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "149-150",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><strong>Walker, Harriet&nbsp; &nbsp;</strong> &nbsp; &nbsp; &nbsp; &nbsp;9:12 A.M.</p>\n\n<p>Good morning, Mr. Davis. My name is Harriet Walker. I'm with Sandpiper Logistics. We have a package we'd like to deliver to you today.</p>\n\n<p><strong>Davis, Sam&nbsp; &nbsp; </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;9:15 A.M.</p>\n\n<p>That's great. When are you planning to come here?</p>\n\n<p><strong>Walker, Harriet&nbsp;</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9:17 A.M.</p>\n\n<p>The deliveryman is scheduled to arrive at your home between 10:00 and 10:30. Will you be home then?</p>\n\n<p><strong>Davis, Sam&nbsp; &nbsp; </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;9:18 A.M.</p>\n\n<p>I'm afraid not. What about noon?</p>\n\n<p><strong>Walker, Harriet&nbsp;</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9:21 A.M.</p>\n\n<p>Our delivery personnel have a mandatory lunch break between 12:00 and 1:00. Is there some time during the afternoon you'll be at your residence?</p>\n\n<p><strong>Davis, Sam&nbsp;</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9:22 A.M.</p>\n\n<p>2:30 would be fine with me. Just have the deliveryman call me before he arrives, please.</p>\n\n<p><strong>Walker, Harriet&nbsp; &nbsp;</strong> &nbsp; &nbsp; &nbsp; &nbsp; 9:25 A.M.</p>\n\n<p>He can make it there then. I'll inform him to call you 10 minutes before he visits your house. Thank you.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 149,
+          "stem": "At 9:18 A.M., what does Mr. Davis mean when he writes, “I’m afraid not”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He will not be home at a certain time."
+            },
+            {
+              "choice": "B",
+              "text": "He does not recall receiving a package."
+            },
+            {
+              "choice": "C",
+              "text": "He cannot wait for the deliveryman to arrive."
+            },
+            {
+              "choice": "D",
+              "text": "He is unable to visit Sandpiper Logistics."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:&nbsp;</strong></p>\n<p>Vào lúc 9:18 sáng, ông Davis có ý gì khi viết “Tôi e là không”?</p>\n<p>(A) Anh ấy sẽ không có mặt ở nhà vào một thời điểm nhất định.</p>\n<p>(B) Anh ấy không nhớ đã nhận được một gói hàng.</p>\n<p>(C) Anh ấy không thể đợi người giao hàng đến.</p>\n<p>(D) Anh ấy không thể đến Sandpiper Logistics.</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>Người giao hàng dự kiến tới nhà bạn vào khoảng&nbsp;</em><em>10:00 đến 10:30. Bạn có ở nhà vào lúc đó không?</em></p>\n<p><strong>=&gt; Chọn đáp án A&nbsp;</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 150,
+          "stem": "What time will the deliveryman call Mr.Davis?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "At 2:00 PM."
+            },
+            {
+              "choice": "B",
+              "text": "At 2:10 P.M."
+            },
+            {
+              "choice": "C",
+              "text": "At 2:20 P.M."
+            },
+            {
+              "choice": "D",
+              "text": "At 2:30 P.M."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Mấy giờ người giao hàng sẽ gọi cho Mr. Davis?</p>\n<p>(A) Lúc 2 giờ chiều.</p>\n<p>(B) Lúc 2 giờ 10 chiều.</p>\n<p>(C) Lúc 2 giờ 20 chiều.</p>\n<p>(D) Lúc 2 giờ 30 chiều.</p>\n<p><strong>Thông tin:</strong></p>\n<p>\"<strong>2:30</strong> sẽ ổn với tôi. Làm ơn bảo người giao hàng gọi cho tôi trước khi anh ấy đến.\", \"Tôi sẽ bảo anh ấy gọi cho bạn <strong>10 phút trước khi anh ấy đến nhà bạn</strong>.\"</p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "151-152",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><strong>MEMO</strong></p>\n\n<p>To: All Dayton City Employees<br>\nFrom: Frieda Thompson, City Hall<br>\nDate: May 26<br>\nSubject: Volunteering<br>\nSummer is just around the corner, and that's the busiest time of the year for our city's parks and recreation facilities. Due to budget cuts, we had to lay off a few groundskeepers. There are only 6 full-time employees to work at the city's 7 parks, some of which are quite extensive, — [1] —. We are therefore going to have a cleanup day this Saturday, May 29. This is purely a volunteer event, but we hope as many of you as possible will contribute to the effort. —[2]— We're going to do all kinds of cleanup work at our parks, including painting, picking up trash, cutting grass, and making minor repairs. You won't get paid, but anyone who works a full day will receive a paid day of vacation in either June or July. —[3]— If you're interested in helping out, contact Debby Reynolds at extension 4032. We're going to meet in the city hall parking lot at 8:30 in the morning on May 29. —[4]— You'll then be driven to your work assignment. A free T-shirt and lunch will be provided to everyone who volunteers.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 151,
+          "stem": "According to the memo, why are volunteers needed?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The city’s parks are in poor condition."
+            },
+            {
+              "choice": "B",
+              "text": "The winter weather caused a lot of damage."
+            },
+            {
+              "choice": "C",
+              "text": "There are not enough paid employees to do all the work."
+            },
+            {
+              "choice": "D",
+              "text": "The city hopes to save money to use on other projects."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:&nbsp;</strong></p>\n<p>Theo bản ghi nhớ, tại sao lại cần tình nguyện viên?</p>\n<p>(A) Các công viên của thành phố đang trong tình trạng tồi tàn.</p>\n<p>(B) Thời tiết mùa đông gây ra nhiều thiệt hại.</p>\n<p>(C) Không có đủ nhân viên được trả lương thực hiện tất cả công việc.</p>\n<p>(D) Thành phố hy vọng sẽ tiết kiệm được tiền để sử dụng cho các dự án khác.</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>Chỉ có 6 nhân viên toàn thời gian làm việc tại 7 công viên của thành phố</em><em>, một số công viên khá rộng rãi\"</em></p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 152,
+          "stem": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? “So we need all of the helping hands that we can possibly get.”",
+          "options": [
+            {
+              "choice": "A",
+              "text": "[1]"
+            },
+            {
+              "choice": "B",
+              "text": "[2]"
+            },
+            {
+              "choice": "C",
+              "text": "[3]"
+            },
+            {
+              "choice": "D",
+              "text": "[4]"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Câu sau đây thuộc về vị trí nào được đánh dấu [1], [2], [3] và [4]?</p>\n<p>“Vì vậy, chúng tôi cần tất cả những bàn tay giúp đỡ mà chúng tôi có thể nhận được.”</p>\n<p>(A) [1]</p>\n<p>(B) [2]</p>\n<p>(C) [3]</p>\n<p>(D) [4]</p>\n<p><strong>=&gt; Đáp án A</strong> đúng vì nó có thể kết nối với câu&nbsp;<em>\"There are only 6 full-time employees to work at the city's 7 parks, some of which are quite extensive\"&nbsp;</em></p>",
+          "tags": [
+            "[Part 7] Điền câu vào đoạn văn"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "153-155",
+      "audio": null,
+      "images": [],
+      "passageHtml": "September 18<br>Dear Mr. Hansen,<br>This letter is being written with regard to your cable television bill, which is presently overdue by two months. At the current time, the amount you owe is $134.65. This must be paid in full no later than September 29. You may pay the bill in cash at any local bank or send us a check made out to Ace Cable Systems. If you opt to pay by check, please be sure to post it early enough so that it will reach our office by the due date. Failure to pay the bill in full by the required date will result in the immediate termination of your cable television service. Your service can then be reestablished once you have paid the bill in full. There will also be an additional charge of $50 to reconnect the service. Should you fail to make this month’s payment, your bill will be turned over to a collection agency, which may have a harmful effect on your credit rating.<br>Sincerely,<br>Silvia Patterson<br>Ace Cable Systems",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 153,
+          "stem": "What will happen on September 29?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "A service may be ended."
+            },
+            {
+              "choice": "B",
+              "text": "A check will be cashed."
+            },
+            {
+              "choice": "C",
+              "text": "A bill will be mailed."
+            },
+            {
+              "choice": "D",
+              "text": "A customer may be contacted."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Cái gì sẽ xảy ra vào ngày 29 tháng 9?</p>\n<p>(A) Một dịch vụ có thể bị kết thúc.</p>\n<p>(B) Một tấm séc sẽ được đổi thành tiền mặt.</p>\n<p>(C) Một hóa đơn sẽ được gửi qua đường bưu điện.</p>\n<p>(D) Một khách hàng có thể được liên lạc.</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Hoá đơn cần phải được thanh toán đầy đủ <strong>chậm nhất vào ngày 29 tháng 9\"</strong>, \"</em><em>Việc không thanh toán đầy đủ hóa đơn trước ngày yêu cầu sẽ dẫn đến việc <strong>chấm dứt dịch vụ truyền hình cáp của bạn</strong> ngay lập tức.</em><em>\"</em></p>\n<p><strong>=&gt; Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 154,
+          "stem": "What is Mr.Hansen instructed to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Open an account at a bank"
+            },
+            {
+              "choice": "B",
+              "text": "Send a check after September 29"
+            },
+            {
+              "choice": "C",
+              "text": "Make a payment immediately"
+            },
+            {
+              "choice": "D",
+              "text": "Contact a collection agency"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Ông Hansen được hướng dẫn phải làm gì?</p>\n<p>(A) Mở tài khoản tại ngân hàng</p>\n<p>(B) Gửi séc sau ngày 29 tháng 9</p>\n<p>(C) Thanh toán ngay lập tức</p>\n<p>(D) Liên hệ với cơ quan thu nợ</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>Ở thời điểm hiện tại, số tiền bạn nợ là</em><em> $134.65.&nbsp;</em><em>Hoá đơn cần phải được thanh toán đầy đủ chậm nhất vào ngày 29 tháng 9. Bạn có thể trả tiền mặt tại bất kỳ ngân hàng địa phương nào hoặc </em><em>gửi cho chúng tôi một tấm séc gửi tới Ace Cable Systems</em></p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 155,
+          "stem": "What is suggested about Ace Cable Systems?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It will stop communicating with Mr. Hansen after September 29."
+            },
+            {
+              "choice": "B",
+              "text": "It will send a person to Mr. Hansen’s home soon."
+            },
+            {
+              "choice": "C",
+              "text": "It will provide Mr. Hansen with an upgrade for $50."
+            },
+            {
+              "choice": "D",
+              "text": "It will sue Mr. Hansen for the money that he currently owes."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Điều gì được đề xuất về Hệ thống cáp Ace?</p>\n<p>(A) Nó sẽ dừng liên lạc với ông Hansen sau ngày 29 tháng 9.</p>\n<p>(B) Nó sẽ sớm cử một người đến nhà ông Hansen.</p>\n<p>(C) Nó sẽ cung cấp cho ông Hansen một bản nâng cấp với giá 50 USD.</p>\n<p>(D) Nó sẽ kiện ông Hansen về số tiền mà ông hiện đang nợ.</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Failure to pay the bill in full by the required date will result in the immediate termination of your cable television service.\"&nbsp;</em></p>\n<p><em>(</em><em>Việc không thanh toán đầy đủ hóa đơn trước ngày yêu cầu sẽ dẫn đến việc chấm dứt dịch vụ truyền hình cáp của bạn ngay lập tức.)</em></p>\n<p><strong>=&gt; Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "156-158",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><strong>Welcome to the Sunrise Campground</strong></p>\n\n<p>Thank you for staying at the Sunrise Campground at Mount Rainier. Please remember to be courteous to your fellow campers and to do your best not to disturb them. During your stay here, you must obey all three of the following rules:<br>\n1) Do not waste water in the bathrooms, which are located in the northeast and southeast corners of the campground. Take short showers and do not let the water in the faucet run continually.<br>\n2) Make sure that all fires are extinguished and that burning fires are never left unattended. Remember to pour, stir, and pour. First, pour water on the fire, and then stir the coal and ashes. After that, pour more water on the fire. Firewood can be acquired in lot for a minimal fee.<br>\n3) Do not leave any garbage at the campground. Keep the site clean both to prevent pollution and to keep wild animals away from the site. Anyone who is caught littering will be fined $100.<br>\nRemember the Golden Rule of camping: The only thing you should leave at your campground is your footprints.<br>\nCall 805-4395 to speak with the manager of the campground or dial 595-4943 to get in touch with a park ranger.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 156,
+          "stem": "Who are the instructions for?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Park rangers"
+            },
+            {
+              "choice": "B",
+              "text": "Day visitors"
+            },
+            {
+              "choice": "C",
+              "text": "Hikers"
+            },
+            {
+              "choice": "D",
+              "text": "People staying overnight"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:&nbsp;</strong></p>\n<p>Hướng dẫn dành cho ai?</p>\n<p>(A) Kiểm lâm viên</p>\n<p>(B) Du khách trong ngày</p>\n<p>(C) Người đi bộ đường dài</p>\n<p>(D) Những người ở lại qua đêm</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>Cảm ơn vì</em><em>&nbsp;</em><em>lưu trú tại Khu cắm trại Sunrise ở Mount Rainier. Hãy nhớ lịch sự với những người cắm trại của bạn và cố gắng hết sức để không làm phiền họ.</em></p>\n<p><strong>=&gt; Chọn đáp án D&nbsp;</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 157,
+          "stem": "What can be purchased at the campground?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Bottled water"
+            },
+            {
+              "choice": "B",
+              "text": "Wood"
+            },
+            {
+              "choice": "C",
+              "text": "Snacks"
+            },
+            {
+              "choice": "D",
+              "text": "Tents"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Tạm dịch:&nbsp;</strong></p>\n<p>Những gì có thể được mua tại khu cắm trại?</p>\n<p>(A) Nước đóng chai</p>\n<p>(B) Gỗ</p>\n<p>(C) Đồ ăn nhẹ</p>\n<p>(D) Lều</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>Củi có thể mua theo bó với một khoản phí tối thiểu</em></p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 158,
+          "stem": "What action can cause a person to pay a fine?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Littering"
+            },
+            {
+              "choice": "B",
+              "text": "Making noise"
+            },
+            {
+              "choice": "C",
+              "text": "Feeding wild animals"
+            },
+            {
+              "choice": "D",
+              "text": "Wasting water"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Hành động nào có thể khiến một người phải trả tiền phạt?</p>\n<p>(A) Xả rác</p>\n<p>(B) Gây ồn ào</p>\n<p>(C) Cho động vật hoang dã ăn</p>\n<p>(D) Lãng phí nước</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>Bất cứ ai bị bắt gặp xả rác sẽ bị phạt </em><em>$100.</em></p>\n<p><strong>=&gt; Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "159-161",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><strong>A New Shop Downtown</strong></p>\n<p>New Haven (June 15) - Visitors downtown can easily get lost on account of the plethora of small businesses and the vibrant atmosphere they create. Those who find themselves at the corner of Third Street and Eli Road should be sure to have a look inside Watson's Arts and Crafts. While it's a new store, it's also home to a small bit of history and passion in New Haven.<br>Owner Rachel Watson opened the store this May. \"My father loved art and believed that art is the heart of every society. I decided to honor him by opening a store to provide supplies for artists while simultaneously displaying some of the artwork he created throughout the store,\" she said. All of the numerous paintings and drawings adorning the walls of the store were made by her late father, Marcus Watson. Mr. Watson was a well-known artist in the local community, who passed away last year.<br>Customers at Watson's Arts and Crafts therefore get not only great service but also the opportunity to admire outstanding works of art. Tony Brown, a frequent customer at the store, commented, \"Ms. Watson understands art and sells her wares for low prices, but she's also doing the community a service by opening what's essentially a gallery. There are times that I come here just to admire the works instead of to buy something.\" Customers don't need to worry that the artwork will disappear anytime soon. Despite some hefty offers, Ms. Watson is thus far refusing to sell any of her father's works.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 159,
+          "stem": "Where is artwork by Mr. Watson displayed?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "At Ms. Watson’s home"
+            },
+            {
+              "choice": "B",
+              "text": "In a local gallery"
+            },
+            {
+              "choice": "C",
+              "text": "At Watson’s Arts and Crafts"
+            },
+            {
+              "choice": "D",
+              "text": "Alongside Eli Road"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Tác phẩm nghệ thuật của ông Watson được trưng bày ở đâu?</p>\n<p>(A) Tại nhà cô Watson</p>\n<p>(B) Trong một phòng trưng bày địa phương</p>\n<p>(C) Tại Watson's Arts and Crafts</p>\n<p>(D) Bên cạnh đường Eli</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>Những ai đang ở góc Phố Thứ ba và Đường Eli chắc chắn nên ghé qua Watson's Arts and Crafts. Mặc dù đây là một cửa hàng mới nhưng nó cũng là nơi lưu giữ một chút lịch sử và niềm đam mê ở New Haven.”</em></p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 160,
+          "stem": "What is suggested about Mr. Brown?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He creates art."
+            },
+            {
+              "choice": "B",
+              "text": "He knew Mr. Watson."
+            },
+            {
+              "choice": "C",
+              "text": "He is friends with Ms. Watson."
+            },
+            {
+              "choice": "D",
+              "text": "He works at Watson’s Arts and Crafts."
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Điều gì được gợi ý về ông Brown?</p>\n<p>(A) Anh ấy sáng tạo nghệ thuật.</p>\n<p>(B) Anh ấy biết ông Watson.</p>\n<p>(C) Anh ấy là bạn của cô Watson.</p>\n<p>(D) Anh ấy làm việc tại Watson's Arts and Crafts.</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>Ms. Watson hiểu biết về nghệ thuật và bán đồ của mình với mức giá thấp, nhưng cô ấy cũng đang</em><em> làm một dịch vụ cho cộng đồng bằng cách mở một nơi mà về cơ bản là một phòng trưng bày. Có những lúc tôi đến đây chỉ để chiêm ngưỡng các tác phẩm thay vì mua thứ gì đó.</em></p>\n<p><strong>=&gt; Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 161,
+          "stem": "The word “hefty” in paragraph 3, line 14 is closest in meaning to:",
+          "options": [
+            {
+              "choice": "A",
+              "text": "persistent"
+            },
+            {
+              "choice": "B",
+              "text": "heavy"
+            },
+            {
+              "choice": "C",
+              "text": "considerable"
+            },
+            {
+              "choice": "D",
+              "text": "unique"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Từ <em><strong>“hefty”</strong></em> ở đoạn 3, dòng 14 gần nghĩa nhất với:</p>\n<p>(A) kiên trì, kiên nhẫn</p>\n<p>(B) nặng nề</p>\n<p>(C) đáng kể</p>\n<p>(D) duy nhất, độc quyền</p>\n<p>hefty (adj) lớn</p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 7] Từ vựng đồng nghĩa"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "162-164",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p style=\"text-align: center;\"><strong>Denton Merchants Association to Hold Annual Meeting</strong></p>\n\n<p>The Denton Merchants Association will hold its annual meeting three months from now from Friday, June 20, to Sunday, June 22. The event will take place in the Carlyle Convention Center. All members of the association are eligible to take part in the event, and guests are also permitted to attend. Registration for the meeting is currently open. Online applications may be submitted at www.dentonmerchants.org/ annualmeeting, or places may be reserved by calling 509-2395. Registration closes after June 10, and tickets may not be purchased at the door either. The cost of attending all three days of the meeting is $75 for members and $100 for guests. This fee provides access to every event except for the banquet held on the last night of the meeting. Attending it costs $50 for members and nonmembers alike. A list of the activities and speakers at the meeting may be accessed on the associations website. There will be several lectures by guest speakers, including talks on legal issues facing merchants, recent changes in tax laws, and how to advertise effectively on the Internet.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 162,
+          "stem": "For whom is the announcement most likely intended?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Store owners"
+            },
+            {
+              "choice": "B",
+              "text": "Tax attorneys"
+            },
+            {
+              "choice": "C",
+              "text": "Local residents"
+            },
+            {
+              "choice": "D",
+              "text": "Caterers"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Thông báo này có thể dành cho ai nhất?</p>\n<p>(A) Chủ cửa hàng</p>\n<p>(B) Luật sư thuế</p>\n<p>(C) Cư dân địa phương</p>\n<p>(D) Người cung cấp thực phẩm</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Hiệp hội <strong>Thương gia</strong> Denton sẽ tổ chức cuộc họp thường niên trong ba tháng kể từ bây giờ, từ Thứ Sáu, ngày 20 tháng 6 đến Chủ nhật, ngày 22 tháng 6. Sự kiện sẽ diễn ra tại Trung tâm Hội nghị Carlyle. Tất cả các thành viên của hiệp hội đều đủ điều kiện tham gia sự kiện.\"</em></p>\n<p><strong>=&gt; Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 163,
+          "stem": "According to the announcement, what is NOT true?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Members pay less to attend the event than guests."
+            },
+            {
+              "choice": "B",
+              "text": "The meeting is scheduled to last for three days."
+            },
+            {
+              "choice": "C",
+              "text": "Registration for the meeting can only be done online."
+            },
+            {
+              "choice": "D",
+              "text": "Tickets will not be sold on the days the meeting is held."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Theo thông báo, điều gì KHÔNG đúng?</p>\n<p>(A) Các thành viên trả ít tiền hơn để tham dự sự kiện so với khách.</p>\n<p>(B) Cuộc họp dự kiến kéo dài trong ba ngày.</p>\n<p>(C) Việc đăng ký cuộc họp chỉ có thể được thực hiện trực tuyến.</p>\n<p>(D) Vé sẽ không được bán vào những ngày cuộc họp được tổ chức.</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Chi phí tham dự cả ba ngày họp là <strong>75 USD cho thành viên và 100 USD cho khách.</strong>\"</em>&nbsp;=&gt; Loại đáp án A&nbsp;</p>\n<p><em>\"Hiệp hội Thương gia Denton sẽ tổ chức cuộc họp thường niên ba tháng kể từ bây giờ,<strong> từ Thứ Sáu, ngày 20 tháng Sáu đến Chủ Nhật, ngày 22 tháng Sáu.</strong>\"</em>&nbsp;=&gt; Loại đáp án B&nbsp;</p>\n<p><em>\"Vé cũng không thể mua ở cửa.\"&nbsp;</em>=&gt; Loại đáp án D&nbsp;</p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi NOT / TRUE"
+          ]
+        },
+        {
+          "num": 164,
+          "stem": "How much a nonmember pay to attend the meeting and the banquet?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "$75"
+            },
+            {
+              "choice": "B",
+              "text": "$100"
+            },
+            {
+              "choice": "C",
+              "text": "$125"
+            },
+            {
+              "choice": "D",
+              "text": "$150"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Một người không phải là thành viên phải trả bao nhiêu để tham dự cuộc họp và bữa tiệc?</p>\n<p>(A) $75</p>\n<p>(B) $100</p>\n<p>(C) $125</p>\n<p>(D) $150</p>\n<p><strong>Thông tin:</strong></p>\n<p>Chi phí tham gia buổi họp cho thành viên không thuộc hiệp hội là ngoại trừ tiệc là $100. Để tham gia vào buổi tiệc, một thành viên không thuộc hiệp hội cần trả thêm&nbsp; $50. Tổng cộng là $150.</p>\n<p><strong>=&gt; Chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "165-167",
+      "audio": null,
+      "images": [],
+      "passageHtml": "TO: All Employees<br>FROM: Ernest Jenson, Tech Support Department<br>RE: This Friday<br>DATE: Tuesday, April 9<br>All employees are hereby notified that the company’s main computer servers will be shut down on Friday, April 12, from 3 P.M. to 9 P.M. This shutdown is necessary because the system needs to be upgraded, which will enable the computer system to operate at a higher speed and with greater effectiveness. At the same time, several new timesaving programs, which will improve overall employee output, will be installed. The new programs will be thoroughly explained by the Tech Support Department on an interoffice video that will be uploaded onto the company’s website at 8 A.M. on Monday, April 15.<br>During the six-hour period starting at 3, employees will be unable to use the computer system. Therefore, before the shutdown period begins, employees should save anything currently being worked on. We strongly advise saving the work both on the company’s computer system and on a personal flash drive. Furthermore, the Tech Support Department will not be responsible for any files lost during the upgrade. So it is highly advisable that individuals with sensitive or valuable files copy them to an external source. We appreciate your support and hope the shutdown does not cause too much inconvenience.",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 165,
+          "stem": "Why is the computer system being shut down?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To upgrade the company’s accounting software"
+            },
+            {
+              "choice": "B",
+              "text": "To remove some viruses from the system"
+            },
+            {
+              "choice": "C",
+              "text": "To install some newly purchased computers"
+            },
+            {
+              "choice": "D",
+              "text": "To make the computers more efficient"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Tại sao hệ thống máy tính bị tắt?</p>\n<p>(A) Để nâng cấp phần mềm kế toán của công ty</p>\n<p>(B) Để loại bỏ một số virus khỏi hệ thống</p>\n<p>(C) Để cài đặt một số máy tính mới mua</p>\n<p>(D) Để làm cho máy tính hoạt động hiệu quả hơn</p>\n<p><strong>Thông tin: </strong></p>\n<p><em>\"Việc tắt máy này là cần thiết vì hệ thống cần được nâng cấp, điều này sẽ giúp hệ thống máy tính có thể <strong>hoạt động ở tốc độ cao hơn và hiệu quả cao hơn.</strong>\"&nbsp;</em></p>\n<p><strong>=&gt; Chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 166,
+          "stem": "What will happen on April 15?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The upgrade will be complete."
+            },
+            {
+              "choice": "B",
+              "text": "A video will be available for viewing."
+            },
+            {
+              "choice": "C",
+              "text": "Lost files will be recovered."
+            },
+            {
+              "choice": "D",
+              "text": "The computer system will shut down."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Điều gì sẽ xảy ra vào ngày 15 tháng 4?</p>\n<p>(A) Quá trình nâng cấp sẽ hoàn tất.</p>\n<p>(B) Sẽ có một đoạn video để xem.</p>\n<p>(C) Các tập tin bị mất sẽ được phục hồi.</p>\n<p>(D) Hệ thống máy tính sẽ tắt.</p>\n<p><strong>Thông tin:</strong></p>\n<p><em><span style=\"vertical-align: inherit\"><span style=\"vertical-align: inherit\">Các chương trình mới sẽ được Bộ phận Hỗ trợ Kỹ thuật giải thích cặn kẽ trên </span></span><strong><span style=\"vertical-align: inherit\"><span style=\"vertical-align: inherit\">video nội bộ</span></span></strong><span style=\"vertical-align: inherit\"><span style=\"vertical-align: inherit\"> sẽ được tải lên website của công ty vào lúc 8h sáng thứ Hai,&nbsp;</span></span><strong><span style=\"vertical-align: inherit\"><span style=\"vertical-align: inherit\">ngày 15/4</span></span></strong><span style=\"vertical-align: inherit\"><span style=\"vertical-align: inherit\">&nbsp;</span></span></em></p>\n<p><strong><span style=\"vertical-align: inherit\"><span style=\"vertical-align: inherit\">=&gt; Chọn đáp án B</span></span></strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 167,
+          "stem": "What are employees advised to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Turn off their computers before the shutdown"
+            },
+            {
+              "choice": "B",
+              "text": "Bring their laptops from home on Friday"
+            },
+            {
+              "choice": "C",
+              "text": "Transfer important files to keep them safe"
+            },
+            {
+              "choice": "D",
+              "text": "Contact the Tech Support Department with questions"
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Người lao động được khuyên nên làm gì?</p>\n<p>(A) Tắt máy tính của họ trước khi tắt máy</p>\n<p>(B) Mang máy tính xách tay từ nhà vào thứ Sáu</p>\n<p>(C) Chuyển các tập tin quan trọng để giữ chúng an toàn</p>\n<p>(D) Liên hệ với Phòng Hỗ trợ Kỹ thuật nếu có thắc mắc</p>\n<p><strong>Thông tin:</strong></p>\n<p><span><span style=\"vertical-align: inherit\">&nbsp;</span><em>\"Rất khuyến khích những cá nhân có tệp nhạy cảm hoặc có giá trị nên sao chép chúng sang nguồn bên ngoài</em><em>.\"</em></span></p>\n<p><strong>=&gt; Chọn đáp án C</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "168-171",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p><strong>Wright, Bruce&nbsp;</strong> &nbsp;[3:34 Р.М.]</p>\n\n<p>I just received the list of people HR wants us to interview for the open position.</p>\n\n<p><strong>Bannister, William</strong>&nbsp; &nbsp;[3:35 P.M.]</p>\n\n<p>Who are they?</p>\n\n<p><strong>Wright, Bruce&nbsp;</strong> &nbsp; [3:36 P.M.]</p>\n\n<p>There are four people on the list: Melissa Abercrombie, Shen Wu, Patrick Kennedy, and Molly Toole.</p>\n\n<p><strong>Houston, Jennifer</strong>&nbsp; &nbsp; &nbsp;[3:38 P.M.]</p>\n\n<p>If I remember correctly, the second one on the list is the most qualified. I can't recall much about the other three though.</p>\n\n<p><strong>Bannister, William</strong>&nbsp; &nbsp; &nbsp;[3:40 P.M.]</p>\n\n<p>I went to school with Patrick Kennedy six years ago. I remember him as a hardworking person, but I haven't kept up with him at all.</p>\n\n<p><strong>Wright, Bruce&nbsp; &nbsp; &nbsp;</strong> [3:43 Р.М.]</p>\n\n<p>Well, we need to contact everybody today and inform them that we need to interview them for the position. Uh, if they're still interested in it, of course.</p>\n\n<p><strong>Houston, Jennifer&nbsp; &nbsp; &nbsp;</strong> [3:45 P.M.]</p>\n\n<p>I'll do that if you want. I just finished a report and have some free time. What should I tell them if they have a problem with the interview date?</p>\n\n<p><strong>Wright, Bruce</strong>&nbsp; &nbsp; &nbsp; &nbsp;[3:47 Р.М.]</p>\n\n<p>That's a good question. We're supposed to interview them on either January 10 or 11. I'll contact HR and ask them if any other dates are acceptable.</p>\n\n<p><strong>Houston, Jennifer</strong>&nbsp; &nbsp; &nbsp; &nbsp;[3:50 P.M.]</p>\n\n<p>While you're doing that, find out if we'll pay for their travel expenses if they're going to be coming from out of town, too, please.</p>\n\n<p><strong>Wright, Bruce&nbsp;</strong> &nbsp; &nbsp; &nbsp; &nbsp;[3:52 P.M.]</p>\n\n<p>Sure. I'll get back to you in a bit. But check your e-mail now. I just sent the contact information for each person.</p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 168,
+          "stem": "What is mainly being discussed?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "The need to interview candidates at once"
+            },
+            {
+              "choice": "B",
+              "text": "A job that is going to be filled"
+            },
+            {
+              "choice": "C",
+              "text": "Questions to ask the HR Department"
+            },
+            {
+              "choice": "D",
+              "text": "Some applicants to be interviewed"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Điều gì chủ yếu được thảo luận?</p>\n<p>(A) Sự cần thiết phải phỏng vấn ứng viên ngay lập tức</p>\n<p>(B) Một công việc sắp được tuyển dụng</p>\n<p>(C) Các câu hỏi để hỏi Phòng Nhân sự</p>\n<p>(D) Một số ứng viên sẽ được phỏng vấn</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Tôi vừa nhận được danh sách ứng viên mà bộ phận nhân sự (HR) muốn chúng ta phỏng vấn cho vị trí đang mở.\", \"Tốt, chúng ta cần liên hệ và thông báo với mọi người trong ngày hôm nay rằng chúng ta muốn phỏng vấn họ.\", \"Chúng tôi dự định phỏng vấn họ vào ngày 10 hoặc 11 tháng 1. Tôi sẽ liên hệ với bộ phận nhân sự và hỏi rằng</em><em>&nbsp;liệu có ngày nào khác được chấp nhận hay không</em><em>.\"&nbsp;&nbsp;</em></p>\n<p><strong>=&gt; Chọn đáp án D&nbsp;</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 169,
+          "stem": "What does Ms. Houston indicate about the applicants?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "They all submitted excellent resumes."
+            },
+            {
+              "choice": "B",
+              "text": "She has already interviewed a couple of them."
+            },
+            {
+              "choice": "C",
+              "text": "None of them is very qualified for the job."
+            },
+            {
+              "choice": "D",
+              "text": "One person has better credentials than the others."
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Cô Houston nói gì về người nộp đơn?</p>\n<p>(A) Tất cả họ đều gửi hồ sơ xuất sắc.</p>\n<p>(B) Cô ấy đã phỏng vấn một vài người trong số họ rồi.</p>\n<p>(C) Không ai trong số họ đủ tiêu chuẩn cho công việc.</p>\n<p>(D) Một người có bằng cấp tốt hơn những người khác.</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Nếu tôi nhớ không lầm thì <strong>người thứ hai trong danh sách là người có trình độ cao nhất. </strong>Tuy nhiên, tôi không thể nhớ nhiều về ba người còn lại.\"</em></p>\n<p><strong>=&gt; Chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 7] Câu hỏi ý chính / Mục đích"
+          ]
+        },
+        {
+          "num": 170,
+          "stem": "At 3:40 P.M., what does Mr. Bannister mean when he writes, “I haven’t kept up with him at all”?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "He does not remember Mr. Kennedy well."
+            },
+            {
+              "choice": "B",
+              "text": "He believes Mr. Kennedy is not qualified."
+            },
+            {
+              "choice": "C",
+              "text": "He has not spoken with Mr. Kennedy since school."
+            },
+            {
+              "choice": "D",
+              "text": "He never worked well with Mr. Kennedy."
+            }
+          ],
+          "answer": "C",
+          "explanation": "<p><strong><span style=\"vertical-align: inherit\">Tạm dịch:</span></strong></p>\n<p><span style=\"vertical-align: inherit\">Vào lúc 3:40 chiều, ông Bannister có ý gì khi viết: “Tôi chẳng theo kịp anh ấy chút nào”?</span></p>\n<p><span style=\"vertical-align: inherit\">(A) Anh ấy không nhớ rõ về ông Kennedy.</span></p>\n<p><span style=\"vertical-align: inherit\">(B) Ông ấy tin rằng ông Kennedy không đủ tiêu chuẩn.</span></p>\n<p><span style=\"vertical-align: inherit\">(C) Anh ấy đã không nói chuyện với ông Kennedy kể từ khi đi học.</span></p>\n<p><span style=\"vertical-align: inherit\">(D) Anh ấy chưa bao giờ làm việc tốt với ông Kennedy.</span></p>\n<p><span style=\"vertical-align: inherit\">=&gt; Dựa vào nghĩa <strong>=&gt; Chọn đáp án C</strong></span></p>",
+          "tags": [
+            "[Part 7] Câu hỏi suy luận"
+          ]
+        },
+        {
+          "num": 171,
+          "stem": "What does Mr. Wright tell Ms. Houston to do?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Contact the HR Department"
+            },
+            {
+              "choice": "B",
+              "text": "Read her e-mail"
+            },
+            {
+              "choice": "C",
+              "text": "Make some phone calls"
+            },
+            {
+              "choice": "D",
+              "text": "Look at some resumes"
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Ông Wright bảo cô Houston làm gì?</p>\n<p>(A) Liên hệ với Phòng Nhân sự</p>\n<p>(B) Đọc e-mail của cô ấy</p>\n<p>(C) Thực hiện một số cuộc gọi điện thoại</p>\n<p>(D) Nhìn vào một số hồ sơ</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Nhưng bây giờ hãy kiểm tra hộp thư điện tử của bạn\"</em></p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "range": "172-175",
+      "audio": null,
+      "images": [],
+      "passageHtml": "<p>FROM: Fred Stallings&nbsp;<span style=\"font-size:11.0pt\"><span style=\"line-height:107%\"><span style=\"Calibri&quot;,sans-serif\">&lt;fred_stallings@wprinters.com&gt;</span></span></span><fred_stallings@wprinters.com><br>\nTO: Wanda Lancaster &lt;wandal@familymail.com&gt;<wandal@familymail.com><br>\nSUBJECT: Order 5AR-5594<br>\nDATE: November 12<br>\nDear Ms. Lancaster,<br>\nWe received the order you placed for a Wellington All-in-One 460 Printer this morning. Unfortunately, we no longer have that printer in stock, and my company has ceased the manufacture of them. I apologize for this inconvenience.<br>\nIf you wish to cancel your order, please let me know, and I can process a refund on your credit card. But if you still wish to purchase a printer from my company, let me recommend the Wellington All-in-One 470 Printer. It belongs to the same line of printers you attempted to order. In fact, it is the same as the 460 except for the fact that it comes with a few extras. It is a printer, scanner, fax machine, and photocopier just like the 460. But it also has the ability to send scanned documents as e-mail attachments straight from the printer. On top of that, the ink cartridges used for it last longer since they are slightly larger than those used in the 460.<br>\nI have attached a file to this e-mail. It contains a brochure describing the specifications of the 470 model. While the 470 costs slightly more than the 460, I have been authorized to sell one to you for the same price you paid for the 460. So simply respond to me that you would like the 470, and I can have it sent to you at once.<br>\nSincerely,<br>\nFred Stallings<br>\nCustomer Service Representative<br>\nWellington Printers</wandal@familymail.com></fred_stallings@wprinters.com></p>",
+      "transcriptHtml": "",
+      "explanationHtml": "",
+      "questions": [
+        {
+          "num": 172,
+          "stem": "Why was the e-mail written?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "To suggest an alternative item"
+            },
+            {
+              "choice": "B",
+              "text": "To apologize for a mistake"
+            },
+            {
+              "choice": "C",
+              "text": "To promote a company’s new product"
+            },
+            {
+              "choice": "D",
+              "text": "To deal with a customer’s complaint"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Tại sao email được viết?</p>\n<p>(A) Để đề xuất một mục thay thế</p>\n<p>(B) Để xin lỗi vì một sai lầm</p>\n<p>(C) Để quảng bá sản phẩm mới của công ty</p>\n<p>(D) Để giải quyết khiếu nại của khách hàng</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Nhưng nếu bạn vẫn muốn mua máy in từ công ty của tôi, hãy để tôi giới thiệu Máy in Wellington All-in-One 470.\"&nbsp; </em></p>\n<p><strong><span style=\"vertical-align: inherit\">=&gt; Chọn đáp án A&nbsp;</span></strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 173,
+          "stem": "According to the e-mail, how is the 470 model different from the 460 model?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "It uses less electricity."
+            },
+            {
+              "choice": "B",
+              "text": "It can e-mail documents directly."
+            },
+            {
+              "choice": "C",
+              "text": "It prints pictures at high speeds."
+            },
+            {
+              "choice": "D",
+              "text": "It includes a fax machine."
+            }
+          ],
+          "answer": "B",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Theo email, mẫu 470 khác với mẫu 460 như thế nào?</p>\n<p>(A) Nó sử dụng ít điện hơn.</p>\n<p>(B) Nó có thể gửi tài liệu qua e-mail trực tiếp.</p>\n<p>(C) Nó in ảnh ở tốc độ cao.</p>\n<p>(D) Nó bao gồm một máy fax.</p>\n<p><strong>Thông tin:</strong></p>\n<p><span style=\"vertical-align: inherit\">&nbsp;</span><em>\"Nhưng nó cũng có khả năng gửi tài liệu được quét dưới dạng tệp đính kèm e-mail trực tiếp từ máy in.\"&nbsp;</em></p>\n<p><strong>=&gt; Chọn đáp án B</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 174,
+          "stem": "What does Mr. Stallings send to Ms. Lancaster with the e-mail?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Some information"
+            },
+            {
+              "choice": "B",
+              "text": "An invoice"
+            },
+            {
+              "choice": "C",
+              "text": "An order form"
+            },
+            {
+              "choice": "D",
+              "text": "A picture"
+            }
+          ],
+          "answer": "A",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Ông Stallings gửi email gì cho bà Lancaster?</p>\n<p>(A) Một số thông tin</p>\n<p>(B) Hóa đơn</p>\n<p>(C) Một mẫu đơn đặt hàng</p>\n<p>(D) Một bức tranh</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Tôi đã đính kèm một tệp vào e-mail này. Nó chứa một tập tài liệu mô tả các thông số kỹ thuật của mẫu 470.\"&nbsp;</em></p>\n<p><strong>=&gt; Chọn đáp án A</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        },
+        {
+          "num": 175,
+          "stem": "What does Ms. Lancaster need to do to get the 470 model?",
+          "options": [
+            {
+              "choice": "A",
+              "text": "Pay some more money"
+            },
+            {
+              "choice": "B",
+              "text": "Fill out an order form"
+            },
+            {
+              "choice": "C",
+              "text": "Put her name on a waiting list"
+            },
+            {
+              "choice": "D",
+              "text": "Send a response e-mail"
+            }
+          ],
+          "answer": "D",
+          "explanation": "<p><strong>Tạm dịch:</strong></p>\n<p>Bà Lancaster cần làm gì để có được mẫu 470?</p>\n<p>(A) Trả thêm tiền</p>\n<p>(B) Điền vào mẫu đơn đặt hàng</p>\n<p>(C) Ghi tên cô ấy vào danh sách chờ</p>\n<p>(D) Gửi email phản hồi</p>\n<p><strong>Thông tin:</strong></p>\n<p><em>\"Vì vậy, chỉ cần trả lời cho tôi rằng bạn muốn chiếc 470\"&nbsp;</em></p>\n<p><strong>=&gt; Chọn đáp án D</strong></p>",
+          "tags": [
+            "[Part 7] Tìm thông tin chi tiết"
+          ]
+        }
+      ]
+    }
+  ],
+  "focusPart": 7,
+  "subLabel": "Đoạn đơn"
+}
