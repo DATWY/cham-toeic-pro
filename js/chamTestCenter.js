@@ -318,10 +318,11 @@ class ChamTestCenter {
     this.detailState = {
       slug: null,
       modeTab: "practice", // 'practice' | 'exam'
+      examScope: "full", // 'full' | 'listening' | 'reading' (for dual-section tests)
       selectedParts: new Set([1, 2, 3, 4, 5, 6, 7]),
       timeLimitMin: 0, // 0 = unlimited stopwatch
       examPauseSec: 5, // 5s IIG pause after audio in exam mode
-      strictIigMode: false // true = Official Two-Phase 45m Listening Lock + 75m Reading Transition
+      strictIigMode: false // true = Official Two-Phase 45m Listening Lock + 75m Reading Transition (or Locked Audio in LC-only)
     };
 
     // Runner / Review Active Session
@@ -1004,6 +1005,7 @@ class ChamTestCenter {
     this.view = "detail";
     if (this.detailState.slug !== slug) {
       this.detailState.modeTab = "practice";
+      this.detailState.examScope = "full";
       this.detailState.strictIigMode = false;
     }
     this.detailState.slug = slug;
@@ -1222,7 +1224,7 @@ class ChamTestCenter {
                 <span>${partsList.length === 1 ? `Luyện tập Part ${partsList[0]}` : "Luyện Part đã chọn"}</span>
               </button>
               <button type="button" class="cham-mode-tab ${this.detailState.modeTab === "exam" ? "is-active" : ""}" data-detail-mode="exam">
-                <span>${partsList.length === 1 ? `Thi tính giờ (${meta.duration} phút)` : `Thi Full (chuẩn IIG · ${meta.duration} phút)`}</span>
+                <span>${partsList.length === 1 ? `Thi tính giờ (${meta.duration} phút)` : (partsList.some((p) => p <= 4) && partsList.some((p) => p >= 5) ? "Thi chuẩn IIG (Full / Nghe / Đọc)" : `Thi chuẩn IIG (${meta.duration} phút)`)}</span>
               </button>
             </div>
 
@@ -1293,53 +1295,100 @@ class ChamTestCenter {
               const isSectionTest = meta.testType === "section";
               const hasDetailLC = partsList.some((p) => p <= 4);
               const hasDetailRC = partsList.some((p) => p >= 5);
+              const canSplitScope = hasDetailLC && hasDetailRC;
+              const activeScope = canSplitScope ? (this.detailState.examScope || "full") : "full";
               const dur = Number(meta.duration || 120);
               const lcMin = dur === 120 ? 45 : Math.max(5, Math.round((dur * 45) / 120));
               const rcMin = dur === 120 ? 75 : Math.max(5, dur - lcMin);
-              const examHeading = isSinglePart
-                ? `Thi tính giờ Part ${partsList[0]} (${meta.totalQuestions} câu · ${meta.duration} phút)`
-                : isMiniTest
-                  ? `Thi Mini Test chuẩn IIG (${meta.totalQuestions} câu · ${meta.duration} phút)`
-                  : isSectionTest
-                    ? `Thi ${meta.focusSection === "reading" ? "Reading" : "Listening"} chuẩn IIG (${meta.totalQuestions} câu · ${meta.duration} phút)`
-                    : `Thi Full chuẩn phòng thi IIG (${meta.totalQuestions} câu · ${meta.duration} phút)`;
-              const scaleText = hasDetailLC && hasDetailRC
+              const lcParts = partsList.filter((p) => p <= 4);
+              const rcParts = partsList.filter((p) => p >= 5);
+              const lcQCount = lcParts.reduce((acc, p) => acc + Number(meta.partCounts?.[`PART_${p}`] || 0), 0);
+              const rcQCount = rcParts.reduce((acc, p) => acc + Number(meta.partCounts?.[`PART_${p}`] || 0), 0);
+
+              const effectiveHasLC = activeScope === "reading" ? false : hasDetailLC;
+              const effectiveHasRC = activeScope === "listening" ? false : hasDetailRC;
+              const effectiveQCount = activeScope === "listening" ? lcQCount : (activeScope === "reading" ? rcQCount : meta.totalQuestions);
+              const effectiveDur = activeScope === "listening" ? lcMin : (activeScope === "reading" ? rcMin : dur);
+              const effectivePartLabel = activeScope === "listening"
+                ? `Part ${lcParts[0]}–${lcParts[lcParts.length - 1]}`
+                : activeScope === "reading"
+                  ? `Part ${rcParts[0]}–${rcParts[rcParts.length - 1]}`
+                  : (isSinglePart ? `Part ${partsList[0]}` : `${partsList.length} phần`);
+
+              const examHeading = activeScope === "listening"
+                ? `Thi lẻ Phần Nghe chuẩn IIG (${effectivePartLabel} · ${effectiveQCount} câu · ${effectiveDur} phút)`
+                : activeScope === "reading"
+                  ? `Thi lẻ Phần Đọc chuẩn IIG (${effectivePartLabel} · ${effectiveQCount} câu · ${effectiveDur} phút)`
+                  : isSinglePart
+                    ? `Thi tính giờ Part ${partsList[0]} (${meta.totalQuestions} câu · ${meta.duration} phút)`
+                    : isMiniTest
+                      ? `Thi Mini Test chuẩn IIG (${meta.totalQuestions} câu · ${meta.duration} phút)`
+                      : isSectionTest
+                        ? `Thi ${meta.focusSection === "reading" ? "Reading" : "Listening"} chuẩn IIG (${meta.totalQuestions} câu · ${meta.duration} phút)`
+                        : `Thi Full chuẩn phòng thi IIG (${meta.totalQuestions} câu · ${meta.duration} phút)`;
+              const scaleText = effectiveHasLC && effectiveHasRC
                 ? "quy đổi thang điểm ETS /990"
-                : (isSectionTest ? "quy đổi thang điểm ETS /495" : "chấm điểm chính xác & ước lượng thang điểm ETS");
-              const startBtnText = isSinglePart
-                ? `Bắt đầu Thi Part ${partsList[0]}`
-                : isMiniTest
-                  ? "Bắt đầu Mini Test"
-                  : isSectionTest
-                    ? "Bắt đầu Thi Section"
-                    : "Bắt đầu Thi Full";
+                : (effectiveQCount >= 90 || isSectionTest ? "quy đổi thang điểm ETS /495" : "chấm điểm chính xác & ước lượng thang điểm ETS /495");
+              const startBtnText = activeScope === "listening"
+                ? `Bắt đầu Thi Nghe (${lcMin}p)`
+                : activeScope === "reading"
+                  ? `Bắt đầu Thi Đọc (${rcMin}p)`
+                  : isSinglePart
+                    ? `Bắt đầu Thi Part ${partsList[0]}`
+                    : isMiniTest
+                      ? "Bắt đầu Mini Test"
+                      : isSectionTest
+                        ? "Bắt đầu Thi Section"
+                        : "Bắt đầu Thi Full";
               return `
+              ${canSplitScope ? `
+                <div class="v21-iig-scope-wrap">
+                  <div class="v21-iig-scope-label">Chọn phạm vi thi chuẩn IIG:</div>
+                  <div class="v21-iig-scope-grid" role="radiogroup" aria-label="Phạm vi thi chuẩn IIG">
+                    <button type="button" role="radio" aria-checked="${activeScope === "full" ? "true" : "false"}" class="v21-iig-scope-card ${activeScope === "full" ? "is-active" : ""}" data-exam-scope="full">
+                      <span class="v21-iig-scope-title">${getIcon("award", 15)} <span>Full Test</span></span>
+                      <span class="v21-iig-scope-meta tabular-nums">${meta.totalQuestions} câu · ${dur} phút · /990</span>
+                    </button>
+                    <button type="button" role="radio" aria-checked="${activeScope === "listening" ? "true" : "false"}" class="v21-iig-scope-card ${activeScope === "listening" ? "is-active" : ""}" data-exam-scope="listening">
+                      <span class="v21-iig-scope-title">${getIcon("headphones", 15)} <span>Chỉ phần Nghe</span></span>
+                      <span class="v21-iig-scope-meta tabular-nums">P1–4 · ${lcQCount} câu · ${lcMin} phút · /495</span>
+                    </button>
+                    <button type="button" role="radio" aria-checked="${activeScope === "reading" ? "true" : "false"}" class="v21-iig-scope-card ${activeScope === "reading" ? "is-active" : ""}" data-exam-scope="reading">
+                      <span class="v21-iig-scope-title">${getIcon("bookOpen", 15)} <span>Chỉ phần Đọc</span></span>
+                      <span class="v21-iig-scope-meta tabular-nums">P5–7 · ${rcQCount} câu · ${rcMin} phút · /495</span>
+                    </button>
+                  </div>
+                </div>
+              ` : ""}
+
               <div class="cham-exam-notice">
                 <div style="font-weight: 600; font-size: 15px; margin-bottom: 6px;">
                   ${examHeading}
                 </div>
                 <ul style="margin: 0; padding-left: 18px; font-size: 14px;">
-                  <li>Làm trọn bộ <strong>${isSinglePart ? `Part ${partsList[0]}` : `${partsList.length} phần`} (${meta.totalQuestions} câu)</strong>, tự động nộp bài và ${scaleText} khi hết giờ.</li>
-                  <li>${hasDetailLC
+                  <li>Làm trọn bộ <strong>${effectivePartLabel} (${effectiveQCount} câu)</strong> trong <strong>${effectiveDur} phút</strong>, tự động nộp bài và ${scaleText} khi hết giờ.</li>
+                  <li>${effectiveHasLC
                     ? "Có khoảng nghỉ chọn đáp án chuẩn IIG giữa các câu Listening (mặc định 5 giây) và hỗ trợ gạch loại trừ ⊘."
                     : "Hỗ trợ tô vàng từ khóa trong bài đọc, gắn cờ rà soát (Review Screen) và gạch loại trừ đáp án nhiễu ⊘."}</li>
                 </ul>
               </div>
 
               <div class="cham-exam-config-stack">
-                ${hasDetailLC && hasDetailRC ? `
+                ${effectiveHasLC ? `
                   <label class="cham-strict-toggle-row">
                     <input type="checkbox" id="cham-strict-iig-toggle" ${this.detailState.strictIigMode ? "checked" : ""} />
                     <span>
-                      <strong>Chế độ Thi Chuẩn IIG Nghiêm Ngặt</strong>
-                      <small>Tách ${lcMin} phút Listening (khóa tua audio) → Màn hình chuyển Phần II: Reading (${rcMin} phút &amp; Review Screen)</small>
+                      <strong>${effectiveHasRC ? "Chế độ Thi Chuẩn IIG Nghiêm Ngặt" : "Khóa tua Audio chuẩn IIG Nghiêm Ngặt"}</strong>
+                      <small>${effectiveHasRC
+                        ? `Tách ${lcMin} phút Listening (khóa tua audio) → Màn hình chuyển Phần II: Reading (${rcMin} phút &amp; Review Screen)`
+                        : `Phát băng 1 lượt duy nhất trong ${lcMin} phút (khóa tua thanh audio giống phòng thi IIG thật)`}</small>
                     </span>
                   </label>
                 ` : ""}
 
                 <div class="v21-detail-action-row">
                   <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    ${hasDetailLC ? `
+                    ${effectiveHasLC ? `
                       <label class="v21-inline-label">
                         <span>Nghỉ sau audio:</span>
                         <select id="cham-exam-pause-select" class="v21-select v21-select-inline">
@@ -1354,7 +1403,7 @@ class ChamTestCenter {
                         ${CHAM_SVG.volume}
                         <span>Kiểm tra loa</span>
                       </button>
-                    ` : `<span class="v21-neutral-pill">Phần Đọc hiểu · Không yêu cầu âm thanh</span>`}
+                    ` : `<span class="v21-neutral-pill">Phần Đọc hiểu · ${effectiveDur} phút chuẩn IIG · Không yêu cầu âm thanh</span>`}
                   </div>
 
                   <button type="button" class="cham-btn cham-btn-warm" id="cham-start-exam-btn" style="padding: 10px 22px;">
@@ -1515,13 +1564,15 @@ class ChamTestCenter {
     const hasListeningSection = activeParts.some((p) => p <= 4);
     const hasReadingSection = activeParts.some((p) => p >= 5);
     const isStrictDualSection = Boolean(mode === "exam" && strictIigMode && hasListeningSection && hasReadingSection);
+    const isStrictListeningOnly = Boolean(mode === "exam" && strictIigMode && hasListeningSection && !hasReadingSection);
     const totalQ = groups.reduce((acc, g) => acc + (g.questions?.length || 0), 0);
     const totalDurMin = Math.max(10, Number(testData.duration || 120));
     const strictLcMin = totalDurMin === 120 ? 45 : Math.max(5, Math.round((totalDurMin * 45) / 120));
     const strictRcMin = totalDurMin === 120 ? 75 : Math.max(5, totalDurMin - strictLcMin);
     const strictLcSec = strictLcMin * 60;
     const strictRcSec = strictRcMin * 60;
-    const totalSecLimit = mode === "exam" ? (testData.duration || 120) * 60 : (timeLimitMin > 0 ? timeLimitMin * 60 : 0);
+    const examDurMin = timeLimitMin > 0 ? timeLimitMin : (testData.duration || 120);
+    const totalSecLimit = mode === "exam" ? examDurMin * 60 : (timeLimitMin > 0 ? timeLimitMin * 60 : 0);
     const clampedGroupIdx = Math.max(0, Math.min(groups.length - 1, Number(resumeDraft?.groupIdx || 0)));
 
     this.showHelpModal = false;
@@ -1536,6 +1587,7 @@ class ChamTestCenter {
       collection: testData.collection,
       mode, // 'practice' | 'exam'
       strictIigMode: isStrictDualSection,
+      strictListeningOnly: isStrictListeningOnly,
       strictLcSec,
       strictRcSec,
       hasListeningSection,
@@ -1772,7 +1824,10 @@ class ChamTestCenter {
     }
     if (s.totalSecLimit > 0) {
       const rem = Math.max(0, s.totalSecLimit - s.elapsedSec);
-      return { text: fmtHMS(rem), urgent: rem <= 300, label: s.mode === "exam" ? "IIG Exam" : "Hẹn giờ" };
+      const examLabel = s.mode === "exam"
+        ? (s.hasListeningSection && !s.hasReadingSection ? "IIG Listening" : (!s.hasListeningSection && s.hasReadingSection ? "IIG Reading" : "IIG Exam"))
+        : "Hẹn giờ";
+      return { text: fmtHMS(rem), urgent: rem <= 300, label: examLabel };
     }
     return { text: fmtHMS(s.elapsedSec), urgent: false, label: "Luyện tập" };
   }
@@ -1783,7 +1838,7 @@ class ChamTestCenter {
       slug: this.session.slug,
       title: this.session.title,
       mode: this.session.mode,
-      strictIigMode: Boolean(this.session.strictIigMode),
+      strictIigMode: Boolean(this.session.strictIigMode || this.session.strictListeningOnly),
       listeningLocked: Boolean(this.session.listeningLocked),
       listeningElapsedSec: this.session.listeningElapsedSec || 0,
       readingElapsedSec: this.session.readingElapsedSec || 0,
@@ -2200,7 +2255,7 @@ class ChamTestCenter {
     const answeredCount = Object.keys(s.answers).length;
     const clockMeta = this.getActiveClockDisplay();
     const clockDisplay = clockMeta.text;
-    const isStrictLockedScrub = Boolean(!isReview && s.strictIigMode && !s.listeningLocked && curPart <= 4);
+    const isStrictLockedScrub = Boolean(!isReview && (s.strictIigMode || s.strictListeningOnly) && !s.listeningLocked && curPart <= 4);
 
     // Group questions by Part for right palette
     const byPart = new Map();
@@ -4089,14 +4144,46 @@ class ChamTestCenter {
         });
       });
 
+      root.querySelectorAll("[data-exam-scope]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const nextScope = btn.dataset.examScope || "full";
+          if (this.detailState.examScope !== nextScope) {
+            this.detailState.examScope = nextScope;
+            this.render();
+          }
+        });
+      });
+
       root.querySelector("#cham-start-exam-btn")?.addEventListener("click", () => {
+        const hasLC = availableParts.some((p) => p <= 4);
+        const hasRC = availableParts.some((p) => p >= 5);
+        const scope = hasLC && hasRC ? (this.detailState.examScope || "full") : "full";
+        const dur = Number(meta?.duration || 120);
+        const lcMin = dur === 120 ? 45 : Math.max(5, Math.round((dur * 45) / 120));
+        const rcMin = dur === 120 ? 75 : Math.max(5, dur - lcMin);
+
+        let examParts = availableParts;
+        let examTimeLimitMin = 0;
+        let examPause = this.detailState.examPauseSec;
+        let examStrict = this.detailState.strictIigMode;
+
+        if (scope === "listening") {
+          examParts = availableParts.filter((p) => p <= 4);
+          examTimeLimitMin = lcMin;
+        } else if (scope === "reading") {
+          examParts = availableParts.filter((p) => p >= 5);
+          examTimeLimitMin = rcMin;
+          examPause = 0;
+          examStrict = false;
+        }
+
         this.startSession({
           slug: this.detailState.slug,
           mode: "exam",
-          parts: availableParts,
-          timeLimitMin: 0,
-          examPauseSec: this.detailState.examPauseSec,
-          strictIigMode: this.detailState.strictIigMode
+          parts: examParts,
+          timeLimitMin: examTimeLimitMin,
+          examPauseSec: examPause,
+          strictIigMode: examStrict
         });
       });
 
