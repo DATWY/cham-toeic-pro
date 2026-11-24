@@ -17,6 +17,7 @@ import { getIcon } from "./uiIcons.js";
 import { state, saveState, recordActiveTime } from "./store.js";
 import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js";
 import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=19.4";
+import { analyzeQuestionTrapsAndTips } from "./toeicTrapEngine.js?v=23.0";
 
 const CHAM_SVG = {
   users: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
@@ -33,7 +34,7 @@ const CHAM_SVG = {
 const CHAM_STORAGE_KEY = "neuro_cham_toeic_history_v1";
 const CHAM_DRAFT_KEY = "neuro_cham_toeic_draft_v1";
 const CHAM_MEDIA_CACHE = "cham-toeic-offline-v1";
-const CHAM_JSON_CACHE = "cham-toeic-json-bank-v1";
+const CHAM_JSON_CACHE = "cham-toeic-json-bank-v4";
 
 const PART_META = {
   1: { label: "PART 1", short: "Part 1", desc: "Mô tả tranh", defaultCount: 6, directions: "Directions: For each question, you will see a picture and hear four short statements. Select the one statement that best describes what you see in the picture." },
@@ -2393,6 +2394,9 @@ class ChamTestCenter {
       </div>
     ` : "";
 
+    let foldedGroupExplIntoCard = false;
+    const isSinglePart5Group = curPart === 5 && (curGroup.questions || []).length === 1;
+
     const questionsListHTML = `
       ${directionsBannerHTML}
       ${(curGroup.questions || []).map((q) => {
@@ -2470,20 +2474,79 @@ class ChamTestCenter {
               }).join("")}
             </div>
 
-            ${isGroupRevealed && q.explanation ? (() => {
+            ${isGroupRevealed ? (() => {
               const ansOpt = (q.options || []).find((o) => o.choice === q.answer);
               const ansText = cleanChamOptionText(ansOpt?.text || "", q.answer) || parsedP12.options[q.answer] || "";
               const ansPreview = ansText.length > 56 ? `${ansText.slice(0, 55)}…` : ansText;
+              const trapInfo = analyzeQuestionTrapsAndTips({
+                part: curPart,
+                q,
+                group: curGroup,
+                parsedP12,
+                userChoice: uAns
+              });
+              const shouldFoldGroupExpl = isSinglePart5Group && !q.explanation && Boolean(curGroup.explanationHtml);
+              if (shouldFoldGroupExpl) foldedGroupExplIntoCard = true;
+              const bodyRichHtml = q.explanation
+                ? sanitizeChamRichHtml(q.explanation)
+                : (shouldFoldGroupExpl ? sanitizeChamRichHtml(curGroup.explanationHtml) : "");
+              const wrongChoicePill = (uAns && uAns !== q.answer)
+                ? `<span class="v21-expl-wrong-pill">Bạn chọn: (${escHtml(uAns)})</span>`
+                : "";
+              const evidenceBlock = (!bodyRichHtml && trapInfo.evidenceQuote)
+                ? `<div class="v21-expl-evidence"><strong>Dẫn chứng trong bài:</strong> “${escHtml(trapInfo.evidenceQuote)}”</div>`
+                : "";
+
               return `
               <div class="cham-explanation-box v21-expl-card">
                 <div class="v21-expl-head">
-                  <span class="v21-expl-title">
-                    ${getIcon("sparkles", 14)}
-                    <span>Giải thích câu ${q.num}</span>
-                  </span>
-                  <span class="v21-expl-ans-pill">Đáp án đúng: (${escHtml(q.answer)})${ansPreview ? ` · ${escHtml(ansPreview)}` : ""}</span>
+                  <div class="v21-expl-head-left">
+                    <span class="v21-expl-title">
+                      ${getIcon("sparkles", 14)}
+                      <span>Giải thích câu ${q.num}</span>
+                    </span>
+                    <span class="v21-qtype-badge">${escHtml(trapInfo.qTypeBadge)}</span>
+                  </div>
+                  <div class="v21-expl-head-right">
+                    ${wrongChoicePill}
+                    <span class="v21-expl-ans-pill">Đáp án đúng: (${escHtml(q.answer)})${ansPreview ? ` · ${escHtml(ansPreview)}` : ""}</span>
+                  </div>
                 </div>
-                <div class="v21-expl-body">${sanitizeChamRichHtml(q.explanation)}</div>
+                ${(bodyRichHtml || evidenceBlock) ? `
+                  <div class="v21-expl-body">
+                    ${bodyRichHtml}
+                    ${evidenceBlock}
+                  </div>
+                ` : ""}
+                <div class="v21-trap-coach">
+                  <div class="v21-trap-head">
+                    <span class="v21-trap-head-main">
+                      ${getIcon("alertTriangle", 14)}
+                      <span>Phân tích bẫy &amp; Mẹo giải nhanh</span>
+                    </span>
+                    ${trapInfo.isHardTrap ? `<span class="v21-hard-trap-pill">Bẫy ETS cao</span>` : ""}
+                  </div>
+                  ${trapInfo.userMistakeCallout ? `
+                    <div class="v21-mistake-callout">${escHtml(trapInfo.userMistakeCallout)}</div>
+                  ` : ""}
+                  ${trapInfo.distractorTraps && trapInfo.distractorTraps.length ? `
+                    <ul class="v21-trap-list">
+                      ${trapInfo.distractorTraps.map((t) => `
+                        <li>
+                          <span class="v21-trap-tag">${t.choice ? `Bẫy (${escHtml(t.choice)}) · ` : ""}${escHtml(t.tag)}</span>
+                          <span class="v21-trap-detail">${escHtml(t.detail)}</span>
+                        </li>
+                      `).join("")}
+                    </ul>
+                  ` : ""}
+                  <div class="v21-tip-row">
+                    ${getIcon("zap", 14)}
+                    <div>
+                      <strong>Mẹo giải nhanh:</strong> ${escHtml(trapInfo.quickTip)}
+                      ${trapInfo.strategyNote ? `<div class="v21-strategy-sub">${escHtml(trapInfo.strategyNote)}</div>` : ""}
+                    </div>
+                  </div>
+                </div>
               </div>
               `;
             })() : ""}
@@ -2502,7 +2565,7 @@ class ChamTestCenter {
         </div>
       ` : ""}
 
-      ${isGroupRevealed && curGroup.explanationHtml ? `
+      ${isGroupRevealed && curGroup.explanationHtml && !foldedGroupExplIntoCard ? `
         <div class="cham-explanation-box">
           <div style="font-weight: 500; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--accent); margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
             ${getIcon("bookOpen", 14)}
