@@ -17,7 +17,7 @@ import { getIcon } from "./uiIcons.js";
 import { state, saveState, recordActiveTime } from "./store.js";
 import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js";
 import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=19.4";
-import { analyzeQuestionTrapsAndTips } from "./toeicTrapEngine.js?v=23.0";
+import { analyzeQuestionTrapsAndTips, summarizeAttemptTraps, decodeRichEntities } from "./toeicTrapEngine.js?v=24.0";
 
 const CHAM_SVG = {
   users: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
@@ -98,31 +98,7 @@ function escHtml(s = "") {
 }
 
 function decodeHtmlEntities(str = "") {
-  if (!str) return "";
-  const named = {
-    amp: "&",
-    lt: "<",
-    gt: ">",
-    quot: '"',
-    apos: "'",
-    nbsp: " ",
-    rsquo: "’",
-    lsquo: "‘",
-    rdquo: "”",
-    ldquo: "“",
-    ndash: "–",
-    mdash: "—"
-  };
-  return String(str)
-    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => {
-      const code = parseInt(hex, 16);
-      return Number.isFinite(code) ? String.fromCodePoint(code) : _;
-    })
-    .replace(/&#(\d+);/g, (_, dec) => {
-      const code = parseInt(dec, 10);
-      return Number.isFinite(code) ? String.fromCodePoint(code) : _;
-    })
-    .replace(/&([a-z]+);/gi, (m, k) => named[k.toLowerCase()] ?? m);
+  return decodeRichEntities(str);
 }
 
 /**
@@ -2395,6 +2371,7 @@ class ChamTestCenter {
     ` : "";
 
     let foldedGroupExplIntoCard = false;
+    let extractedPerQCount = 0;
     const isSinglePart5Group = curPart === 5 && (curGroup.questions || []).length === 1;
 
     const questionsListHTML = `
@@ -2485,17 +2462,51 @@ class ChamTestCenter {
                 parsedP12,
                 userChoice: uAns
               });
-              const shouldFoldGroupExpl = isSinglePart5Group && !q.explanation && Boolean(curGroup.explanationHtml);
+              const shouldFoldGroupExpl = (isSinglePart5Group && !q.explanation && Boolean(curGroup.explanationHtml))
+                || (trapInfo.foldGroupExpl && !q.explanation);
               if (shouldFoldGroupExpl) foldedGroupExplIntoCard = true;
+              if (trapInfo.perQuestionHtml) extractedPerQCount++;
+
               const bodyRichHtml = q.explanation
                 ? sanitizeChamRichHtml(q.explanation)
-                : (shouldFoldGroupExpl ? sanitizeChamRichHtml(curGroup.explanationHtml) : "");
+                : (isSinglePart5Group && curGroup.explanationHtml
+                  ? sanitizeChamRichHtml(curGroup.explanationHtml)
+                  : (trapInfo.perQuestionHtml ? sanitizeChamRichHtml(trapInfo.perQuestionHtml) : ""));
+
               const wrongChoicePill = (uAns && uAns !== q.answer)
                 ? `<span class="v21-expl-wrong-pill">Bạn chọn: (${escHtml(uAns)})</span>`
                 : "";
-              const evidenceBlock = (!bodyRichHtml && trapInfo.evidenceQuote)
-                ? `<div class="v21-expl-evidence"><strong>Dẫn chứng trong bài:</strong> “${escHtml(trapInfo.evidenceQuote)}”</div>`
+              const viStemLine = trapInfo.viStem
+                ? `<div class="v21-vi-stem-line"><strong>Dịch câu hỏi:</strong> ${escHtml(trapInfo.viStem)}</div>`
                 : "";
+              const formulaBlock = trapInfo.formulaBox
+                ? `<div class="v21-formula-box">${getIcon("crosshair", 14)}<span>${escHtml(trapInfo.formulaBox)}</span></div>`
+                : "";
+              const hasEvidence = Boolean(trapInfo.evidenceQuote || trapInfo.evidenceVi);
+              const evidenceBlock = hasEvidence ? `
+                <div class="v21-expl-evidence">
+                  ${trapInfo.evidenceQuote ? `<div><strong>Dẫn chứng gốc:</strong> “${escHtml(trapInfo.evidenceQuote)}”</div>` : ""}
+                  ${trapInfo.evidenceVi ? `<div class="v21-expl-evidence-vi"><strong>Dịch dẫn chứng:</strong> “${escHtml(trapInfo.evidenceVi)}”</div>` : ""}
+                </div>
+              ` : "";
+
+              const optBreakdownHTML = (trapInfo.optionBreakdown && trapInfo.optionBreakdown.length) ? `
+                <div class="v21-opt-breakdown">
+                  ${trapInfo.optionBreakdown.map((ob) => `
+                    <div class="v21-opt-bk-row ${ob.isCorrect ? "is-ok" : (ob.isUserChoice ? "is-user-bad" : "is-trap")}">
+                      <span class="v21-opt-bk-letter">${ob.isCorrect ? "✓" : "✕"} ${escHtml(ob.choice)}</span>
+                      <div class="v21-opt-bk-main">
+                        <div class="v21-opt-bk-top">
+                          ${ob.text ? `<strong class="v21-opt-bk-en">${escHtml(ob.text)}</strong>` : ""}
+                          ${ob.viText ? `<span class="v21-opt-bk-vi">— ${escHtml(ob.viText)}</span>` : ""}
+                          <span class="v21-opt-role-badge ${ob.isCorrect ? "is-ok" : "is-trap"}">${escHtml(ob.roleBadge)}</span>
+                        </div>
+                        <div class="v21-opt-bk-reason">${escHtml(ob.reason)}</div>
+                      </div>
+                    </div>
+                  `).join("")}
+                </div>
+              ` : "";
 
               return `
               <div class="cham-explanation-box v21-expl-card">
@@ -2512,24 +2523,26 @@ class ChamTestCenter {
                     <span class="v21-expl-ans-pill">Đáp án đúng: (${escHtml(q.answer)})${ansPreview ? ` · ${escHtml(ansPreview)}` : ""}</span>
                   </div>
                 </div>
+                ${viStemLine}
+                ${formulaBlock}
                 ${(bodyRichHtml || evidenceBlock) ? `
                   <div class="v21-expl-body">
-                    ${bodyRichHtml}
                     ${evidenceBlock}
+                    ${bodyRichHtml}
                   </div>
                 ` : ""}
                 <div class="v21-trap-coach">
                   <div class="v21-trap-head">
                     <span class="v21-trap-head-main">
                       ${getIcon("alertTriangle", 14)}
-                      <span>Phân tích bẫy &amp; Mẹo giải nhanh</span>
+                      <span>${optBreakdownHTML ? "Phân tích Đúng/Sai &amp; Bẫy từng đáp án" : "Phân tích bẫy &amp; Mẹo giải nhanh"}</span>
                     </span>
                     ${trapInfo.isHardTrap ? `<span class="v21-hard-trap-pill">Bẫy ETS cao</span>` : ""}
                   </div>
                   ${trapInfo.userMistakeCallout ? `
                     <div class="v21-mistake-callout">${escHtml(trapInfo.userMistakeCallout)}</div>
                   ` : ""}
-                  ${trapInfo.distractorTraps && trapInfo.distractorTraps.length ? `
+                  ${optBreakdownHTML || (trapInfo.distractorTraps && trapInfo.distractorTraps.length ? `
                     <ul class="v21-trap-list">
                       ${trapInfo.distractorTraps.map((t) => `
                         <li>
@@ -2538,7 +2551,7 @@ class ChamTestCenter {
                         </li>
                       `).join("")}
                     </ul>
-                  ` : ""}
+                  ` : "")}
                   <div class="v21-tip-row">
                     ${getIcon("zap", 14)}
                     <div>
@@ -2565,15 +2578,30 @@ class ChamTestCenter {
         </div>
       ` : ""}
 
-      ${isGroupRevealed && curGroup.explanationHtml && !foldedGroupExplIntoCard ? `
-        <div class="cham-explanation-box">
-          <div style="font-weight: 500; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--accent); margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-            ${getIcon("bookOpen", 14)}
-            <span>Giải thích &amp; Bản dịch chi tiết (Câu ${escHtml(curGroup.range)})</span>
+      ${isGroupRevealed && curGroup.explanationHtml && !foldedGroupExplIntoCard ? (() => {
+        const allUnpackedP6 = curPart === 6 && extractedPerQCount >= (curGroup.questions || []).length && extractedPerQCount > 0;
+        const unpackedSome = extractedPerQCount > 0;
+        if (allUnpackedP6) {
+          return `
+            <details class="cham-explanation-box v21-group-trans-details">
+              <summary class="v21-group-trans-summary">
+                ${getIcon("bookOpen", 14)}
+                <span>Xem toàn bộ giải thích gộp (Câu ${escHtml(curGroup.range)})</span>
+              </summary>
+              <div style="margin-top: 10px;">${sanitizeChamRichHtml(curGroup.explanationHtml)}</div>
+            </details>
+          `;
+        }
+        return `
+          <div class="cham-explanation-box">
+            <div style="font-weight: 500; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--accent); margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+              ${getIcon("bookOpen", 14)}
+              <span>${unpackedSome ? `Bản dịch toàn bài &amp; Đối chiếu cụm (Câu ${escHtml(curGroup.range)})` : `Giải thích &amp; Bản dịch chi tiết (Câu ${escHtml(curGroup.range)})`}</span>
+            </div>
+            ${sanitizeChamRichHtml(curGroup.explanationHtml)}
           </div>
-          ${sanitizeChamRichHtml(curGroup.explanationHtml)}
-        </div>
-      ` : ""}
+        `;
+      })() : ""}
     `;
 
     const progressPct = s.totalQ > 0 ? Math.min(100, Math.round((answeredCount / s.totalQ) * 100)) : 0;
@@ -3281,6 +3309,7 @@ class ChamTestCenter {
     const cefrText = r.cefr || mapTotalScoreToCEFR(r.lcTotal > 0 && r.rcTotal > 0 ? r.scaledTotal : r.scaledTotal * 2);
     const cefrShort = cefrText.split(" ")[0] || "B1";
     const sortedPartStats = Object.values(r.partStats || {}).sort((a, b) => a.part - b.part);
+    const trapSummary = r.wrong > 0 ? summarizeAttemptTraps(s.groups, s.answers, parsePart12Transcript) : { totalWrong: 0, topTraps: [] };
 
     return `
       <div class="v21-container">
@@ -3408,6 +3437,40 @@ class ChamTestCenter {
             </div>
           ` : ""}
         </section>
+
+        ${trapSummary.topTraps.length > 0 ? `
+          <!-- 2b. Diagnostic Map of Recurring Traps in This Test -->
+          <section class="v21-card v21-trap-summary-card" style="margin-top: 16px;">
+            <div class="v21-card-head">
+              <div>
+                <h2 class="v21-section-title" style="display: inline-flex; align-items: center; gap: 7px;">
+                  ${getIcon("alertTriangle", 17)}
+                  <span>Bản đồ Bẫy hay mắc trong bài thi này</span>
+                </h2>
+                <p class="v21-section-sub">Tổng hợp tự động từ ${trapSummary.totalWrong} câu làm sai — bấm trực tiếp vào số câu để xem phân tích bẫy &amp; mẹo sửa lỗi.</p>
+              </div>
+            </div>
+            <div class="v21-trap-summary-grid">
+              ${trapSummary.topTraps.map((tb) => `
+                <div class="v21-trap-summary-item">
+                  <div class="v21-trap-summary-top">
+                    <strong class="v21-trap-summary-name">${escHtml(tb.category)}</strong>
+                    <span class="v21-trap-summary-cnt">${tb.count} câu sai</span>
+                  </div>
+                  <p class="v21-trap-summary-tip">${escHtml(tb.tip)}</p>
+                  <div class="cham-mini-q-pills">
+                    ${tb.items.map((it) => `
+                      <button type="button" class="cham-q-pill is-wrong" style="width: auto; min-width: 34px; padding: 0 7px; height: 26px;"
+                              data-review-gidx="${it.gIdx}" data-review-qnum="${it.num}" title="Câu ${it.num}: Bạn chọn (${it.userAns}) → Đúng (${it.correctAns})">
+                        #${it.num}
+                      </button>
+                    `).join("")}
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+          </section>
+        ` : ""}
 
         <!-- 3. Review & Answer Explanation Panel -->
         <section class="v21-card" style="margin-top: 16px;">
