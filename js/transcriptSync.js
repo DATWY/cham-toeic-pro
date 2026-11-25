@@ -4,7 +4,7 @@
  * with Web Speech TTS fallback, 2-way Evidence Linking & Interactive Cloze Dictation
  */
 
-import { updateMastery, state, saveState } from "./store.js";
+import { updateMastery, state, saveState } from "./store.js?v=26.1";
 import { saveFlashcard } from "./idb.js";
 import { getIcon } from "./uiIcons.js";
 

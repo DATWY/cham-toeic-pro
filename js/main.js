@@ -4,18 +4,18 @@
  */
 
 import { icons, getIcon } from "./uiIcons.js";
-import { state, saveState, subscribe, updateMastery, recordActiveTime, getMasteryScore, getAnswer, setAnswer, deleteAnswer, getConfidence, setConfidence, deleteConfidence, getEliminations, toggleElimination, deleteEliminations } from "./store.js";
+import { state, saveState, subscribe, updateMastery, recordActiveTime, getMasteryScore, getAnswer, setAnswer, deleteAnswer, getConfidence, setConfidence, deleteConfidence, getEliminations, toggleElimination, deleteEliminations } from "./store.js?v=26.1";
 import { getAllFlashcards, saveFlashcard } from "./idb.js";
-import { AudioEngine, ambientSoundscape } from "./audioEngine.js?v=19.5";
-import { VoiceStudio } from "./voiceStudio.js";
-import { TranscriptSync } from "./transcriptSync.js?v=19.4";
-import { ExamSimulator } from "./examSimulator.js";
+import { AudioEngine, ambientSoundscape } from "./audioEngine.js?v=26.1";
+import { VoiceStudio } from "./voiceStudio.js?v=26.1";
+import { TranscriptSync } from "./transcriptSync.js?v=26.1";
+import { ExamSimulator } from "./examSimulator.js?v=26.1";
 import { VocabSRS } from "./vocabSrs.js?v=19.4";
-import { AnalyticsEngine } from "./analytics.js?v=26.0";
-import { initChamTestCenter } from "./chamTestCenter.js?v=26.0";
-import { initMaterialsCenter } from "./materialsCenter.js?v=22.1";
-import { initDashboardAndPractice } from "./dashboardPractice.js?v=26.0";
-import { showToast, clearToasts, openGraphicLightbox, renderMasteryRing, applyHighlights, renderEvidenceAnalysis, renderVocabAndNotes, renderPart7Passages, renderReadingInspectorScript } from "./renderers.js?v=19.4";
+import { AnalyticsEngine } from "./analytics.js?v=26.1";
+import { initChamTestCenter } from "./chamTestCenter.js?v=26.1";
+import { initMaterialsCenter } from "./materialsCenter.js?v=26.1";
+import { initDashboardAndPractice } from "./dashboardPractice.js?v=26.1";
+import { showToast, clearToasts, openGraphicLightbox, renderMasteryRing, applyHighlights, renderEvidenceAnalysis, renderVocabAndNotes, renderPart7Passages, renderReadingInspectorScript } from "./renderers.js?v=26.1";
 
 const CORE_TESTS = window.TOEIC_TESTS || [];
 const EXTRA_PART56_TESTS = Array.isArray(window.TOEIC_PART56_TESTS)
@@ -1035,7 +1035,10 @@ document.addEventListener("DOMContentLoaded", () => {
     onOpenAnalytics: () => openAnalyticsModal("overview"),
     onOpenHistoricalAttempt: async (slug, attemptIdx) => {
       if (!slug || !chamCenter) return;
-      openChamHub(slug);
+      pauseActiveAudio();
+      clearToasts();
+      if (state.focusMode) toggleFocusMode();
+      if (examSimulator?.isActive) examSimulator.exitEarly();
       await chamCenter.openHistoricalAttempt(slug, attemptIdx);
     },
     onOpenStudioPack: (packId) => openStudioDetail(packId),
@@ -1656,15 +1659,37 @@ function initServiceWorker() {
           materialsCenter?.reloadQuizAnswers?.();
         }
         if (Array.isArray(__flashcards) && __flashcards.length > 0) {
-          for (const card of __flashcards) {
-            if (card && card.word) {
-              await saveFlashcard(card);
-              if (vocabSRS?.addCard) {
-                const idx = vocabSRS.cards.findIndex((c) => c.word?.trim().toLowerCase() === card.word.trim().toLowerCase());
-                if (idx >= 0) vocabSRS.cards[idx] = { ...vocabSRS.cards[idx], ...card };
-                else vocabSRS.cards.unshift(card);
+          for (const rawCard of __flashcards) {
+            if (!rawCard || typeof rawCard !== "object" || typeof rawCard.word !== "string") continue;
+            const cleanWord = rawCard.word.trim();
+            if (!cleanWord) continue;
+            const key = cleanWord.toLowerCase();
+            const existingIdx = Array.isArray(vocabSRS?.cards)
+              ? vocabSRS.cards.findIndex((c) => typeof c?.word === "string" && c.word.trim().toLowerCase() === key)
+              : -1;
+            const existing = existingIdx >= 0 ? vocabSRS.cards[existingIdx] : null;
+            const canonicalId = existing?.id
+              || (typeof rawCard.id === "string" && rawCard.id.trim() ? rawCard.id.trim() : `card_${key.replace(/\s+/g, "_")}`);
+            const normalizedCard = {
+              ...(existing || {}),
+              ...rawCard,
+              id: canonicalId,
+              word: cleanWord,
+              translation: typeof rawCard.translation === "string" ? rawCard.translation : (existing?.translation || ""),
+              context: typeof rawCard.context === "string" ? rawCard.context : (existing?.context || ""),
+              repetitions: Number.isFinite(Number(rawCard.repetitions)) ? Number(rawCard.repetitions) : (existing?.repetitions || 0),
+              interval: Number.isFinite(Number(rawCard.interval)) ? Number(rawCard.interval) : (existing?.interval || 1),
+              easeFactor: Number.isFinite(Number(rawCard.easeFactor)) ? Number(rawCard.easeFactor) : (existing?.easeFactor || 2.5),
+              dueDate: Number.isFinite(Number(rawCard.dueDate)) ? Number(rawCard.dueDate) : (existing?.dueDate || Date.now()),
+              updatedAt: Date.now()
+            };
+            try {
+              await saveFlashcard(normalizedCard);
+              if (Array.isArray(vocabSRS?.cards)) {
+                if (existingIdx >= 0) vocabSRS.cards[existingIdx] = normalizedCard;
+                else vocabSRS.cards.unshift(normalizedCard);
               }
-            }
+            } catch (_) {}
           }
         }
         document.documentElement.setAttribute("data-theme", state.theme || "light");
@@ -5305,7 +5330,7 @@ function openAnalyticsModal(activeTab = "overview") {
       `;
 
     dlg.innerHTML = `
-      <div class="dialog-box dialog-wide" style="max-width: 1020px; max-height: 88vh; display: flex; flex-direction: column;">
+      <div class="dialog-box dialog-wide" style="width: min(1020px, calc(100vw - 24px)); max-width: 100%; max-height: 88vh; display: flex; flex-direction: column;">
         <div class="dialog-head">
           <h2 style="display: inline-flex; align-items: center; gap: 8px;"><span style="color: var(--accent); display: inline-flex;">${getIcon("barChart3", 18)}</span> <span>Thống Kê Năng Lực &amp; Ma Trận CEFR (A1–C2)</span></h2>
           <form method="dialog"><button type="submit" class="tool-btn icon-only" aria-label="Đóng">${getIcon("x", 16)}</button></form>
@@ -5355,7 +5380,7 @@ function showExamReport(report) {
     : "";
 
   dlg.innerHTML = `
-    <div class="dialog-box dialog-wide" style="max-width: 880px; max-height: 88vh; display: flex; flex-direction: column;">
+    <div class="dialog-box dialog-wide" style="width: min(880px, calc(100vw - 24px)); max-width: 100%; max-height: 88vh; display: flex; flex-direction: column;">
       <div class="dialog-head">
         <h2>Kết Quả Thi CBT &amp; Báo Cáo Telemetry</h2>
         <form method="dialog"><button type="submit" class="tool-btn icon-only" aria-label="Đóng">${getIcon("x", 16)}</button></form>

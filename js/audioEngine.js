@@ -5,7 +5,7 @@
  */
 
 import { getCachedWaveform, setCachedWaveform } from "./idb.js";
-import { recordActiveTime } from "./store.js";
+import { recordActiveTime } from "./store.js?v=26.1";
 
 let sharedAudioCtx = null;
 function getAudioContext() {

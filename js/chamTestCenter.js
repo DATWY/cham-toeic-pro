@@ -14,9 +14,9 @@
  */
 
 import { getIcon } from "./uiIcons.js";
-import { state, saveState, recordActiveTime } from "./store.js";
-import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js";
-import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=19.4";
+import { state, saveState, recordActiveTime } from "./store.js?v=26.1";
+import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js?v=26.1";
+import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=26.1";
 import { analyzeQuestionTrapsAndTips, decodeRichEntities, stripPart12SpeakerTags } from "./toeicTrapEngine.js?v=25.4";
 
 const CHAM_SVG = {
@@ -484,10 +484,7 @@ class ChamTestCenter {
     } catch (_) {}
   }
 
-  open(initialSlug = null, subRoute = null, fromHashChange = false) {
-    if (this.session?.isCustomPartPractice && !(initialSlug && String(initialSlug).startsWith("practice-part-"))) {
-      this.session = null;
-    }
+  activateShell() {
     this.onOpen();
     this.isActive = true;
     document.body.classList.add("is-cham-hub-active");
@@ -502,6 +499,13 @@ class ChamTestCenter {
     window.addEventListener("contextmenu", this._boundContextMenu, true);
     window.removeEventListener("mouseup", this._boundRightMouseUp, true);
     window.addEventListener("mouseup", this._boundRightMouseUp, true);
+  }
+
+  open(initialSlug = null, subRoute = null, fromHashChange = false) {
+    if (this.session?.isCustomPartPractice && !(initialSlug && String(initialSlug).startsWith("practice-part-"))) {
+      this.session = null;
+    }
+    this.activateShell();
 
     if (initialSlug) {
       this.routeToSlugSubView(initialSlug, subRoute);
@@ -2130,6 +2134,7 @@ class ChamTestCenter {
 
   preloadNextGroupAudio() {
     try {
+      if (typeof navigator !== "undefined" && navigator.onLine === false) return;
       if (!this.session || !Array.isArray(this.session.groups)) return;
       const nextGrp = this.session.groups[this.session.groupIdx + 1];
       const nextAudioUrl = nextGrp?.audio;
@@ -2142,6 +2147,16 @@ class ChamTestCenter {
         this._preloadAudioEl.src = nextAudioUrl;
       }
     } catch (_) {}
+  }
+
+  lookupVocabBankEntry(word) {
+    const clean = String(word || "").replace(/\s+/g, " ").trim().toLowerCase();
+    if (!clean) return null;
+    const bank = (typeof window !== "undefined" && Array.isArray(window.TOEIC_VOCAB_BANK)) ? window.TOEIC_VOCAB_BANK : [];
+    if (!bank.length) return null;
+    return bank.find((e) => e?.word?.trim().toLowerCase() === clean)
+      || (clean.length >= 4 ? bank.find((e) => e?.word?.trim().toLowerCase().startsWith(clean)) : null)
+      || null;
   }
 
   getActiveQuestionInGroup() {
@@ -2187,17 +2202,12 @@ class ChamTestCenter {
     let ipa = "";
     let type = "";
     let translation = "";
-    const bank = (typeof window !== "undefined" && Array.isArray(window.TOEIC_VOCAB_BANK)) ? window.TOEIC_VOCAB_BANK : [];
-    if (word && bank.length) {
-      const lower = word.toLowerCase();
-      const hit = bank.find((e) => e?.word?.trim().toLowerCase() === lower)
-        || bank.find((e) => e?.word?.trim().toLowerCase().startsWith(lower) && lower.length >= 4);
-      if (hit) {
-        ipa = hit.ipa || "";
-        type = hit.type || "";
-        translation = hit.translation || "";
-        if (!context && hit.example) context = hit.example;
-      }
+    const hit = this.lookupVocabBankEntry(word);
+    if (hit) {
+      ipa = hit.ipa || "";
+      type = hit.type || "";
+      translation = hit.translation || "";
+      if (!context && hit.example) context = hit.example;
     }
 
     const curGroup = this.session?.groups?.[this.session.groupIdx];
@@ -3401,6 +3411,9 @@ class ChamTestCenter {
       this.onOpenPracticePart(pNum);
       return;
     }
+    if (!this.isActive) {
+      this.activateShell();
+    }
     const list = this.history.attemptsBySlug[slug] || [];
     const att = list[attemptIdx];
     if (!att) return;
@@ -4122,9 +4135,9 @@ class ChamTestCenter {
     this.persistCurrentDraft();
   }
 
-  render() {
+  render(preservedAudio = null) {
     const root = this.rootEl;
-    if (!root) return;
+    if (!root) return false;
 
     const inRunner = this.view === "runner" || this.view === "review";
     document.body.classList.toggle("is-cham-runner-active", inRunner);
@@ -4141,42 +4154,32 @@ class ChamTestCenter {
       root.innerHTML = this.renderLibraryHTML();
     }
 
+    let keptAudio = false;
+    if (preservedAudio && inRunner) {
+      const placeholder = root.querySelector("#cham-active-audio");
+      const prevSrc = preservedAudio.getAttribute("src") || "";
+      const nextSrc = placeholder?.getAttribute("src") || "";
+      if (placeholder && prevSrc && prevSrc === nextSrc) {
+        placeholder.replaceWith(preservedAudio);
+        keptAudio = true;
+      }
+    }
+
     this.bindDOMEvents(root);
+    return keptAudio;
   }
 
   rerenderPreservingAudio() {
     const prevAudio = this.activeAudioEl;
     const prevFallback = document.getElementById("cham-audio-fallback-bar");
-    const snap = prevAudio
-      ? {
-          src: prevAudio.getAttribute("src") || prevAudio.currentSrc || "",
-          time: Number.isFinite(prevAudio.currentTime) ? prevAudio.currentTime : 0,
-          rate: Number.isFinite(prevAudio.playbackRate) ? prevAudio.playbackRate : (this.audioSpeed || 1.0),
-          wasPlaying: !prevAudio.paused && !prevAudio.ended,
-          hadError: Boolean(prevAudio.error || (prevFallback && !prevFallback.hidden))
-        }
-      : null;
-    if (prevAudio) {
+    const hadError = Boolean(prevAudio && (prevAudio.error || (prevFallback && !prevFallback.hidden)));
+    const keptAudio = this.render(prevAudio);
+    if (prevAudio && !keptAudio) {
       try { prevAudio.pause(); } catch (_) {}
     }
-    this.render();
-    const nextAudio = this.activeAudioEl;
-    if (snap && nextAudio && (nextAudio.getAttribute("src") || "") === snap.src) {
-      nextAudio.playbackRate = snap.rate;
-      if (snap.hadError) {
-        const nextFb = document.getElementById("cham-audio-fallback-bar");
-        if (nextFb) nextFb.hidden = false;
-      }
-      const restoreSeek = () => {
-        if (snap.time > 0 && Number.isFinite(nextAudio.duration) && snap.time < nextAudio.duration) {
-          try { nextAudio.currentTime = snap.time; } catch (_) {}
-        }
-        if (snap.wasPlaying) {
-          nextAudio.play().catch(() => {});
-        }
-      };
-      if (nextAudio.readyState >= 1) restoreSeek();
-      else nextAudio.addEventListener("loadedmetadata", restoreSeek, { once: true });
+    if (keptAudio && hadError) {
+      const nextFb = document.getElementById("cham-audio-fallback-bar");
+      if (nextFb) nextFb.hidden = false;
     }
   }
 
@@ -4807,6 +4810,18 @@ class ChamTestCenter {
           window.speechSynthesis.speak(u);
         }
       });
+      root.querySelector("#cham-vocab-word-inp")?.addEventListener("input", (e) => {
+        const typed = String(e.target.value || "").trim();
+        const hit = this.lookupVocabBankEntry(typed);
+        const transInp = root.querySelector("#cham-vocab-trans-inp");
+        if (hit && transInp && (!transInp.value.trim() || transInp.dataset.autoFilled === "1")) {
+          transInp.value = hit.translation || "";
+          transInp.dataset.autoFilled = "1";
+        }
+      });
+      root.querySelector("#cham-vocab-trans-inp")?.addEventListener("input", (e) => {
+        e.target.dataset.autoFilled = "0";
+      });
       root.querySelector("#cham-vocab-save-form")?.addEventListener("submit", async (e) => {
         e.preventDefault();
         const word = String(root.querySelector("#cham-vocab-word-inp")?.value || "").trim();
@@ -4816,13 +4831,15 @@ class ChamTestCenter {
           showToast("Hãy nhập từ hoặc cụm từ tiếng Anh cần lưu!", "info");
           return;
         }
+        const samePrefill = word.toLowerCase() === String(this.vocabSaveDraft?.word || "").trim().toLowerCase();
+        const freshHit = samePrefill ? null : this.lookupVocabBankEntry(word);
         const curGrp = this.session?.groups?.[this.session.groupIdx];
         const cardData = {
           word,
-          translation: translation || "Từ vựng TOEIC đã lưu",
+          translation: translation || freshHit?.translation || "Từ vựng TOEIC đã lưu",
           context: context || `${this.session?.title || "TOEIC"} · Câu ${curGrp?.range || ""}`,
-          ipa: this.vocabSaveDraft?.ipa || "",
-          type: this.vocabSaveDraft?.type || "",
+          ipa: samePrefill ? (this.vocabSaveDraft?.ipa || "") : (freshHit?.ipa || ""),
+          type: samePrefill ? (this.vocabSaveDraft?.type || "") : (freshHit?.type || ""),
           talkRange: curGrp ? `Part ${curGrp.part} · Q${curGrp.range}` : "TOEIC",
           category: curGrp && curGrp.part >= 5 ? "Part 7 Business Reading" : "HR & Office Operations"
         };
@@ -5267,7 +5284,16 @@ class ChamTestCenter {
 
       // Wire Audio Player Bar
       const audioEl = root.querySelector("#cham-active-audio");
-      if (audioEl) {
+      if (!audioEl) {
+        this.activeAudioEl = null;
+      } else {
+        if (audioEl._chamAc) {
+          try { audioEl._chamAc.abort(); } catch (_) {}
+        }
+        const audioAc = new AbortController();
+        audioEl._chamAc = audioAc;
+        const audioSig = { signal: audioAc.signal };
+
         this.activeAudioEl = audioEl;
         const curGrpPart = this.session?.groups?.[this.session.groupIdx]?.part || 0;
         const strictNoScrub = Boolean(!isReview && (this.session?.strictIigMode || this.session?.strictListeningOnly) && !this.session?.listeningLocked && curGrpPart <= 4);
@@ -5318,6 +5344,10 @@ class ChamTestCenter {
           }
         };
 
+        // Immediately reflect live state if audioEl was preserved across rerenderPreservingAudio()
+        if (playBtn) playBtn.innerHTML = getIcon(audioEl.paused ? "play" : "pause", 16);
+        syncTimeUI();
+
         playBtn?.addEventListener("click", () => {
           this.clearAutoAdvance();
           if (this.autoPlayTimer) {
@@ -5336,27 +5366,27 @@ class ChamTestCenter {
         audioEl.addEventListener("play", () => {
           if (fallbackBar) fallbackBar.hidden = true;
           if (playBtn) playBtn.innerHTML = getIcon("pause", 16);
-        });
+        }, audioSig);
         audioEl.addEventListener("pause", () => {
           if (playBtn) playBtn.innerHTML = getIcon("play", 16);
-        });
+        }, audioSig);
         audioEl.addEventListener("loadedmetadata", () => {
           if (fallbackBar) fallbackBar.hidden = true;
           syncTimeUI();
-        });
+        }, audioSig);
         audioEl.addEventListener("error", () => {
           if (fallbackBar) fallbackBar.hidden = false;
-        });
+        }, audioSig);
         if (audioEl.error && fallbackBar) {
           fallbackBar.hidden = false;
         }
-        audioEl.addEventListener("timeupdate", syncTimeUI);
+        audioEl.addEventListener("timeupdate", syncTimeUI, audioSig);
         audioEl.addEventListener("ended", () => {
           if (playBtn) playBtn.innerHTML = getIcon("play", 16);
           if (!isReview && this.session.mode === "exam") {
             this.triggerExamAudioPauseCountdown();
           }
-        });
+        }, audioSig);
 
         scrubber?.addEventListener("input", () => {
           const dur = audioEl.duration || 0;

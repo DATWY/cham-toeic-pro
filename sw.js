@@ -1,4 +1,4 @@
-const CACHE_NAME = "neuro-toeic-pro-v26.0";
+const CACHE_NAME = "neuro-toeic-pro-v26.1";
 const CHAM_OFFLINE_CACHE = "cham-toeic-offline-v1";
 const CHAM_JSON_CACHE = "cham-toeic-json-bank-v7";
 const APP_SHELL = [
@@ -9,9 +9,9 @@ const APP_SHELL = [
   "./styles/tokens.css?v=21.0",
   "./styles/base.css?v=21.0",
   "./styles/layout.css?v=21.0",
-  "./styles/components.css?v=19.5",
+  "./styles/components.css?v=26.1",
   "./styles/cham-hub.css?v=21.0",
-  "./styles/v21-remake.css?v=26.0",
+  "./styles/v21-remake.css?v=26.1",
   "./data.js?v=19.0",
   "./js/part7Data.js?v=19.0",
   "./js/part56Data.js?v=19.0",
@@ -20,23 +20,23 @@ const APP_SHELL = [
   "./js/toeicMaterialsData.js?v=19.3",
   "./data/cham_tests/test-au-vao-01.json",
   "./manifest.json",
-  "./js/main.js?v=26.0",
-  "./js/dashboardPractice.js?v=26.0",
-  "./js/chamTestCenter.js?v=26.0",
+  "./js/main.js?v=26.1",
+  "./js/dashboardPractice.js?v=26.1",
+  "./js/chamTestCenter.js?v=26.1",
   "./js/toeicTrapEngine.js?v=25.4",
-  "./js/materialsCenter.js?v=22.1",
+  "./js/materialsCenter.js?v=26.1",
   "./js/toeicVocabData.js?v=19.0",
   "./js/toeicStrategyData.js?v=19.4",
-  "./js/store.js",
+  "./js/store.js?v=26.1",
   "./js/idb.js",
-  "./js/audioEngine.js?v=19.5",
-  "./js/voiceStudio.js",
-  "./js/transcriptSync.js?v=19.4",
-  "./js/examSimulator.js",
+  "./js/audioEngine.js?v=26.1",
+  "./js/voiceStudio.js?v=26.1",
+  "./js/transcriptSync.js?v=26.1",
+  "./js/examSimulator.js?v=26.1",
   "./js/vocabSrs.js?v=19.4",
-  "./js/analytics.js?v=26.0",
+  "./js/analytics.js?v=26.1",
   "./js/uiIcons.js",
-  "./js/renderers.js?v=19.4",
+  "./js/renderers.js?v=26.1",
   "./assets/icons/icon.svg",
   "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.png",
@@ -228,8 +228,14 @@ self.addEventListener("fetch", (event) => {
           }
           try {
             return await fetch(req);
-          } catch (_) {
-            return buildOfflineResponse(req, url);
+          } catch (err) {
+            if (req.signal?.aborted || err?.name === "AbortError") {
+              throw err;
+            }
+            if (typeof self.navigator !== "undefined" && self.navigator.onLine === false) {
+              return buildOfflineResponse(req, url);
+            }
+            throw err;
           }
         })
       );

@@ -211,8 +211,7 @@ export function getStudyStreakDays() {
   const log = state.activityLog || {};
   const hasActivity = (dateObj) => {
     const localKey = getLocalDateKey(dateObj);
-    const utcKey = dateObj.toISOString().slice(0, 10);
-    return (log[localKey]?.seconds || 0) > 0 || (log[utcKey]?.seconds || 0) > 0;
+    return (log[localKey]?.seconds || 0) > 0;
   };
   const cursor = new Date();
   cursor.setHours(12, 0, 0, 0);

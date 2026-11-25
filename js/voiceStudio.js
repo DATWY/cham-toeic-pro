@@ -4,7 +4,7 @@
  */
 
 import { saveShadowingRecording, getShadowingRecording } from "./idb.js";
-import { updateMastery } from "./store.js";
+import { updateMastery } from "./store.js?v=26.1";
 
 const liveStudiosByKey = new Map();
 

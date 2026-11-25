@@ -17,13 +17,13 @@ import {
   getTodayStudyMinutes,
   isDailyTaskDone,
   setDailyTaskDone
-} from "./store.js";
+} from "./store.js?v=26.1";
 import { getIcon } from "./uiIcons.js";
 import {
   estimateListeningScaledScore,
   estimateReadingScaledScore,
   mapTotalScoreToCEFR
-} from "./examSimulator.js";
+} from "./examSimulator.js?v=26.1";
 
 const CHAM_STORAGE_KEY = "neuro_cham_toeic_history_v1";
 const CHAM_DRAFT_KEY = "neuro_cham_toeic_draft_v1";
@@ -395,15 +395,15 @@ export function computeCombinedLearningSummary(studioTests = []) {
     .sort((a, b) => a.accuracyPct - b.accuracyPct);
   const weakestPart = weakParts[0] || attemptedParts.slice().sort((a, b) => (a.accuracyPct ?? 100) - (b.accuracyPct ?? 100))[0] || null;
 
-  // Count active days in last 30 days (local timezone + UTC backward compatibility)
+  // Count active days in last 30 days (local calendar dates anchored at noon — prevents UTC+7 double-counting)
   let activeDays = 0;
-  const now = new Date();
+  const baseNoon = new Date();
+  baseNoon.setHours(12, 0, 0, 0);
   for (let i = 0; i < 30; i++) {
-    const d = new Date(now);
-    d.setDate(now.getDate() - i);
+    const d = new Date(baseNoon);
+    d.setDate(baseNoon.getDate() - i);
     const localK = getLocalDateKey(d);
-    const utcK = d.toISOString().slice(0, 10);
-    if ((state.activityLog?.[localK]?.seconds || 0) > 0 || (state.activityLog?.[utcK]?.seconds || 0) > 0) {
+    if ((state.activityLog?.[localK]?.seconds || 0) > 0) {
       activeDays++;
     }
   }

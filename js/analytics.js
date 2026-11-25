@@ -5,13 +5,13 @@
  * 30-Day Deliberate Practice Heatmap & Smart Mix Drills Generator
  */
 
-import { state, getAnswer, getConfidence, getLocalDateKey, getStudyStreakDays } from "./store.js";
+import { state, getAnswer, getConfidence, getLocalDateKey, getStudyStreakDays } from "./store.js?v=26.1";
 import { getIcon } from "./uiIcons.js";
 import {
   estimateListeningScaledScore,
   estimateReadingScaledScore,
   mapTotalScoreToCEFR
-} from "./examSimulator.js";
+} from "./examSimulator.js?v=26.1";
 
 function detectQuestionPart(talk, testObj, qNum) {
   const explicitPart = Number(talk.part || testObj?.part || 0);
@@ -276,19 +276,16 @@ export class AnalyticsEngine {
     const projectedCEFR = totalAnswered > 0 ? mapTotalScoreToCEFR(projectedTotal990) : "Chưa đủ dữ liệu định vị CEFR";
     const gapTo900 = Math.max(0, 900 - projectedTotal990);
 
-    // 30-day study time summary (local timezone + UTC fallback)
+    // 30-day study time summary (local calendar dates anchored at noon — prevents UTC+7 midnight double-counting)
     let totalStudySeconds30d = 0;
     let activeDays30d = 0;
-    const now = new Date();
+    const baseNoon = new Date();
+    baseNoon.setHours(12, 0, 0, 0);
     for (let i = 0; i < 30; i++) {
-      const d = new Date(now);
-      d.setDate(now.getDate() - i);
+      const d = new Date(baseNoon);
+      d.setDate(baseNoon.getDate() - i);
       const localKey = getLocalDateKey(d);
-      const utcKey = d.toISOString().slice(0, 10);
-      const sec = Math.max(
-        state.activityLog?.[localKey]?.seconds || 0,
-        utcKey !== localKey ? (state.activityLog?.[utcKey]?.seconds || 0) : 0
-      );
+      const sec = Number(state.activityLog?.[localKey]?.seconds || 0);
       if (sec > 0) {
         totalStudySeconds30d += sec;
         activeDays30d++;
@@ -475,18 +472,15 @@ export class AnalyticsEngine {
     const days = 30;
     const cellSize = 15;
     const gap = 4;
-    const now = new Date();
+    const baseNoon = new Date();
+    baseNoon.setHours(12, 0, 0, 0);
     const cells = [];
 
     for (let i = days - 1; i >= 0; i--) {
-      const d = new Date(now);
-      d.setDate(now.getDate() - i);
+      const d = new Date(baseNoon);
+      d.setDate(baseNoon.getDate() - i);
       const dateStr = getLocalDateKey(d);
-      const utcStr = d.toISOString().slice(0, 10);
-      const sec = Math.max(
-        (state.activityLog?.[dateStr]?.seconds || 0),
-        utcStr !== dateStr ? (state.activityLog?.[utcStr]?.seconds || 0) : 0
-      );
+      const sec = Number(state.activityLog?.[dateStr]?.seconds || 0);
       const mins = Math.round(sec / 60);
 
       let opacity = 0;
@@ -890,21 +884,23 @@ export class AnalyticsEngine {
               </h4>
               <span style="font-size: 0.74rem; color: var(--text-muted);">Tỷ lệ chính xác (%) theo trình tự thời gian</span>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(${trendPoints.length}, minmax(36px, 1fr)); gap: 8px; align-items: end; height: 96px; padding-top: 14px;">
-              ${trendPoints.map((pt, i) => {
-                const pct = Math.max(4, Math.min(100, Math.round(pt.accuracy || 0)));
-                const col = pct >= 80 ? "var(--ok)" : (pct >= 65 ? "var(--accent)" : "var(--warm)");
-                const safeTitle = String(pt.title || "").replace(/"/g, "&quot;");
-                return `
-                  <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end;" title="${safeTitle}: ${pct}%${pt.isFull ? ` (${pt.scaledTotal}/990)` : ""}">
-                    <span class="tabular-nums" style="font-size: 0.7rem; font-weight: 600; color: ${col};">${pct}%</span>
-                    <div style="width: 100%; max-width: 28px; height: 58px; border-radius: 6px; background: var(--surface-3); display: flex; align-items: flex-end; overflow: hidden;">
-                      <div style="width: 100%; height: ${pct}%; background: ${col}; border-radius: 6px 6px 0 0;"></div>
+            <div style="overflow-x: auto; max-width: 100%;">
+              <div style="display: grid; grid-template-columns: repeat(${trendPoints.length}, minmax(26px, 1fr)); gap: 6px; align-items: end; height: 96px; padding-top: 14px;">
+                ${trendPoints.map((pt, i) => {
+                  const pct = Math.max(4, Math.min(100, Math.round(pt.accuracy || 0)));
+                  const col = pct >= 80 ? "var(--ok)" : (pct >= 65 ? "var(--accent)" : "var(--warm)");
+                  const safeTitle = String(pt.title || "").replace(/"/g, "&quot;");
+                  return `
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end; min-width: 0;" title="${safeTitle}: ${pct}%${pt.isFull ? ` (${pt.scaledTotal}/990)` : ""}">
+                      <span class="tabular-nums" style="font-size: 0.68rem; font-weight: 600; color: ${col};">${pct}%</span>
+                      <div style="width: 100%; max-width: 26px; height: 58px; border-radius: 6px; background: var(--surface-3); display: flex; align-items: flex-end; overflow: hidden;">
+                        <div style="width: 100%; height: ${pct}%; background: ${col}; border-radius: 6px 6px 0 0;"></div>
+                      </div>
+                      <span class="tabular-nums" style="font-size: 0.66rem; color: var(--text-muted);">#${i + 1}</span>
                     </div>
-                    <span class="tabular-nums" style="font-size: 0.68rem; color: var(--text-muted);">#${i + 1}</span>
-                  </div>
-                `;
-              }).join("")}
+                  `;
+                }).join("")}
+              </div>
             </div>
           </div>
         ` : ""}

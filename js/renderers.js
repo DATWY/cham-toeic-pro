@@ -4,7 +4,7 @@
  */
 
 import { icons, getIcon } from "./uiIcons.js";
-import { state, saveState, updateMastery, getMasteryScore } from "./store.js";
+import { state, saveState, updateMastery, getMasteryScore } from "./store.js?v=26.1";
 
 /** Toast Notifications */
 export function showToast(message, type = "info", duration = 2800) {
