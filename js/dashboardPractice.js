@@ -17,16 +17,17 @@ import {
   getTodayStudyMinutes,
   isDailyTaskDone,
   setDailyTaskDone
-} from "./store.js?v=26.1";
+} from "./store.js?v=27.0";
 import { getIcon } from "./uiIcons.js";
 import {
   estimateListeningScaledScore,
   estimateReadingScaledScore,
   mapTotalScoreToCEFR
-} from "./examSimulator.js?v=26.1";
+} from "./examSimulator.js?v=27.0";
 
 const CHAM_STORAGE_KEY = "neuro_cham_toeic_history_v1";
 const CHAM_DRAFT_KEY = "neuro_cham_toeic_draft_v1";
+const CHAM_MISTAKE_VAULT_KEY = "neuro_cham_toeic_mistakes_v1";
 
 export const PART_DEFINITIONS = [
   {
@@ -112,6 +113,27 @@ function readChamDraft() {
     return raw ? JSON.parse(raw) : null;
   } catch {
     return null;
+  }
+}
+
+function readMistakeVaultSummary() {
+  const byPart = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0 };
+  try {
+    const raw = localStorage.getItem(CHAM_MISTAKE_VAULT_KEY);
+    const parsed = raw ? JSON.parse(raw) : null;
+    const items = parsed && typeof parsed.items === "object" && !Array.isArray(parsed.items)
+      ? Object.values(parsed.items)
+      : [];
+    let total = 0;
+    items.forEach((it) => {
+      if (!it || !it.slug || !it.qNum) return;
+      total++;
+      const p = Number(it.part || 0);
+      if (p >= 1 && p <= 7) byPart[p]++;
+    });
+    return { total, byPart };
+  } catch {
+    return { total: 0, byPart };
   }
 }
 
@@ -236,7 +258,7 @@ export function computeCombinedLearningSummary(studioTests = []) {
 
   Object.entries(history.attemptsBySlug || {}).forEach(([slug, attempts]) => {
     if (!Array.isArray(attempts) || attempts.length === 0) return;
-    const isCustomPracticeSlug = String(slug).startsWith("practice-part-");
+    const isCustomPracticeSlug = String(slug).startsWith("practice-part-") || slug === "practice-mistakes";
     if (!isCustomPracticeSlug && (catalogSlugSet.size === 0 || catalogSlugSet.has(slug))) {
       completedTestCount++;
     }
@@ -250,8 +272,8 @@ export function computeCombinedLearningSummary(studioTests = []) {
         slug,
         attemptIdx: attIdx,
         isCustom: isCustomPracticeSlug,
-        partNum: isCustomPracticeSlug ? (Number(String(slug).replace("practice-part-", "")) || att.parts?.[0] || 5) : null,
-        title: att.title || catalogTitleBySlug.get(slug) || (isCustomPracticeSlug ? `Luyện tập Part ${att.parts?.[0] || 5}` : slug),
+        partNum: String(slug).startsWith("practice-part-") ? (Number(String(slug).replace("practice-part-", "")) || att.parts?.[0] || 5) : null,
+        title: att.title || catalogTitleBySlug.get(slug) || (slug === "practice-mistakes" ? "Ôn tập Kho câu sai" : (isCustomPracticeSlug ? `Luyện tập Part ${att.parts?.[0] || 5}` : slug)),
         dateStr: att.dateStr || "",
         ts,
         accuracy: Number(att.accuracy || 0),
@@ -432,7 +454,8 @@ export function computeCombinedLearningSummary(studioTests = []) {
     activeDays,
     streakDays: getStudyStreakDays(),
     todayMinutes: getTodayStudyMinutes(),
-    recentAttempts
+    recentAttempts,
+    mistakeVault: readMistakeVaultSummary()
   };
 }
 
@@ -454,7 +477,8 @@ export function initDashboardAndPractice(options = {}) {
     selectedPart: null, // null -> 7-Part grid; 1..7 -> part config view
     questionCount: 10, // 10 | 20 | 30
     practiceMode: "practice", // 'practice' | 'timed'
-    sourceSlug: "RANDOM"
+    sourceSlug: "RANDOM",
+    mistakePartFilter: "ALL" // 'ALL' | '1'..'7'
   };
 
   function getTests() {
@@ -694,6 +718,26 @@ export function initDashboardAndPractice(options = {}) {
           </button>
         </section>
 
+        ${summary.mistakeVault.total > 0 ? `
+          <section class="v21-card v27-mistake-banner" id="v27-home-mistake-banner" aria-label="Kho câu sai tích lũy">
+            <div class="v27-mistake-banner-main">
+              <div class="v27-mistake-banner-title-row">
+                <strong class="v27-mistake-banner-title">Kho câu sai tích lũy</strong>
+                <span class="v27-mistake-count-pill tabular-nums">${summary.mistakeVault.total} câu cần ôn</span>
+              </div>
+              <p class="v27-mistake-banner-sub">
+                Tự động gom câu sai từ mọi bài thi &amp; bài luyện. Trả lời đúng sẽ tự động xóa khỏi kho.
+              </p>
+            </div>
+            <div class="v27-mistake-banner-actions">
+              <button type="button" class="cham-btn cham-btn-warm" id="v27-home-review-mistakes-btn">
+                <span>Ôn ngay ${Math.min(30, summary.mistakeVault.total)} câu sai</span>
+                ${getIcon("arrowRight", 15)}
+              </button>
+            </div>
+          </section>
+        ` : ""}
+
         ${summary.recentAttempts.length > 0 ? `
           <!-- 4. Recent Attempts & Quick Review -->
           <section class="v21-card v21-recent-card" id="v21-recent-attempts" aria-label="Lịch sử làm bài gần đây">
@@ -779,6 +823,21 @@ export function initDashboardAndPractice(options = {}) {
     homeRoot.querySelector("#v21-quick-practice")?.addEventListener("click", () => options.onOpenPractice?.());
     homeRoot.querySelector("#v21-quick-materials")?.addEventListener("click", () => options.onOpenMaterials?.("books"));
     homeRoot.querySelector("#v21-recent-open-analytics")?.addEventListener("click", () => options.onOpenAnalytics?.());
+    homeRoot.querySelector("#v27-home-review-mistakes-btn")?.addEventListener("click", async (e) => {
+      const btn = e.currentTarget;
+      if (btn.disabled) return;
+      const origHtml = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = `<span>Đang tải câu sai...</span>`;
+      try {
+        await options.onStartGlobalMistakeReview?.({ partFilter: "ALL", maxCount: 30 });
+      } finally {
+        if (btn && btn.isConnected) {
+          btn.disabled = false;
+          btn.innerHTML = origHtml;
+        }
+      }
+    });
 
     homeRoot.querySelectorAll("[data-home-open-attempt-slug]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -786,7 +845,9 @@ export function initDashboardAndPractice(options = {}) {
         const idx = Number(btn.dataset.homeOpenAttemptIdx) || 0;
         const isCustom = btn.dataset.homeOpenAttemptCustom === "1";
         const pNum = Number(btn.dataset.homeOpenAttemptPart) || 5;
-        if (isCustom) {
+        if (slug === "practice-mistakes") {
+          options.onOpenPractice?.();
+        } else if (isCustom) {
           options.onOpenPracticePart?.(pNum);
         } else if (options.onOpenHistoricalAttempt) {
           options.onOpenHistoricalAttempt(slug, idx);
@@ -869,6 +930,13 @@ export function initDashboardAndPractice(options = {}) {
 
     const totalBankTests = (window.CHAM_TOEIC_CATALOG?.tests || []).length + (getTests() || []).length;
     const totalBankQs = summary.parts.reduce((acc, p) => acc + (p.totalInBank || 0), 0);
+    const mv = summary.mistakeVault || { total: 0, byPart: {} };
+    if (uiState.mistakePartFilter !== "ALL" && !mv.byPart?.[Number(uiState.mistakePartFilter)]) {
+      uiState.mistakePartFilter = "ALL";
+    }
+    const activeMistakeCount = uiState.mistakePartFilter === "ALL"
+      ? mv.total
+      : (mv.byPart?.[Number(uiState.mistakePartFilter)] || 0);
 
     practiceRoot.innerHTML = `
       <div class="v21-container">
@@ -878,6 +946,43 @@ export function initDashboardAndPractice(options = {}) {
             <p class="v21-page-sub">Chọn kỹ năng cần cải thiện từ tổng ngân hàng <strong>${totalBankTests} bộ đề</strong> (${totalBankQs.toLocaleString("vi-VN")} câu hỏi) gồm Full Test, Mini Test &amp; Đề thi lẻ từng Part.</p>
           </div>
         </div>
+
+        ${mv.total > 0 ? `
+          <section class="v21-card v27-mistake-vault-card" id="v27-practice-mistake-vault" aria-label="Kho câu sai tích lũy">
+            <div class="v27-mistake-vault-head">
+              <div>
+                <div class="v27-mistake-banner-title-row">
+                  <h2 class="v21-section-title" style="margin: 0;">Kho câu sai tích lũy</h2>
+                  <span class="v27-mistake-count-pill tabular-nums">${mv.total} câu chưa vượt qua</span>
+                </div>
+                <p class="v21-section-sub" style="margin: 4px 0 0;">
+                  Tự động tổng hợp câu bạn làm sai qua mọi đề thi &amp; phiên luyện. Khi trả lời đúng lại, câu sẽ tự động tốt nghiệp khỏi kho.
+                </p>
+              </div>
+              <div class="v27-mistake-vault-actions">
+                <button type="button" class="cham-btn cham-btn-warm" id="v27-start-mistake-review-btn">
+                  <span>Ôn lại ${Math.min(30, activeMistakeCount)} câu sai${uiState.mistakePartFilter !== "ALL" ? ` (Part ${uiState.mistakePartFilter})` : ""}</span>
+                  ${getIcon("arrowRight", 15)}
+                </button>
+                <button type="button" class="v21-text-btn" id="v27-clear-mistakes-btn" title="Xóa toàn bộ câu sai đang lưu">
+                  Xóa kho sai
+                </button>
+              </div>
+            </div>
+            <div class="v27-mistake-part-pills" role="group" aria-label="Lọc kho câu sai theo Part">
+              <button type="button" class="v21-filter-pill ${uiState.mistakePartFilter === "ALL" ? "is-active" : ""}" data-mistake-part="ALL">
+                Tất cả (${mv.total})
+              </button>
+              ${[1, 2, 3, 4, 5, 6, 7]
+                .filter((p) => (mv.byPart?.[p] || 0) > 0)
+                .map((p) => `
+                  <button type="button" class="v21-filter-pill ${uiState.mistakePartFilter === String(p) ? "is-active" : ""}" data-mistake-part="${p}">
+                    Part ${p} (${mv.byPart[p]})
+                  </button>
+                `).join("")}
+            </div>
+          </section>
+        ` : ""}
 
         <section class="v21-part-section" aria-label="Phần Nghe Listening Part 1 đến 4">
           <div class="v21-group-label">
@@ -900,6 +1005,42 @@ export function initDashboardAndPractice(options = {}) {
         </section>
       </div>
     `;
+
+    practiceRoot.querySelectorAll("[data-mistake-part]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        uiState.mistakePartFilter = btn.dataset.mistakePart || "ALL";
+        renderPractice(null);
+      });
+    });
+
+    practiceRoot.querySelector("#v27-start-mistake-review-btn")?.addEventListener("click", async (e) => {
+      const btn = e.currentTarget;
+      if (btn.disabled) return;
+      const origHtml = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = `<span>Đang tải câu sai...</span>`;
+      try {
+        await options.onStartGlobalMistakeReview?.({
+          partFilter: uiState.mistakePartFilter,
+          maxCount: 30
+        });
+      } finally {
+        if (btn && btn.isConnected) {
+          btn.disabled = false;
+          btn.innerHTML = origHtml;
+        }
+      }
+    });
+
+    practiceRoot.querySelector("#v27-clear-mistakes-btn")?.addEventListener("click", () => {
+      const label = uiState.mistakePartFilter === "ALL"
+        ? `toàn bộ ${mv.total} câu trong Kho câu sai`
+        : `${activeMistakeCount} câu sai thuộc Part ${uiState.mistakePartFilter}`;
+      if (!confirm(`Bạn có chắc muốn xóa ${label} không?`)) return;
+      options.onClearMistakeVault?.(uiState.mistakePartFilter);
+      uiState.mistakePartFilter = "ALL";
+      renderPractice(null);
+    });
 
     practiceRoot.querySelectorAll("[data-practice-part]").forEach((btn) => {
       btn.addEventListener("click", () => {

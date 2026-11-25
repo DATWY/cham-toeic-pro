@@ -5,13 +5,13 @@
  * 30-Day Deliberate Practice Heatmap & Smart Mix Drills Generator
  */
 
-import { state, getAnswer, getConfidence, getLocalDateKey, getStudyStreakDays } from "./store.js?v=26.1";
+import { state, getAnswer, getConfidence, getLocalDateKey, getStudyStreakDays } from "./store.js?v=27.0";
 import { getIcon } from "./uiIcons.js";
 import {
   estimateListeningScaledScore,
   estimateReadingScaledScore,
   mapTotalScoreToCEFR
-} from "./examSimulator.js?v=26.1";
+} from "./examSimulator.js?v=27.0";
 
 function detectQuestionPart(talk, testObj, qNum) {
   const explicitPart = Number(talk.part || testObj?.part || 0);

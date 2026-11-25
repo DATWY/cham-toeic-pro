@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="styles/tokens.css?v=21.0" />
   <link rel="stylesheet" href="styles/base.css?v=21.0" />
   <link rel="stylesheet" href="styles/layout.css?v=21.0" />
-  <link rel="stylesheet" href="styles/components.css?v=26.1" />
+  <link rel="stylesheet" href="styles/components.css?v=27.0" />
   <link rel="stylesheet" href="styles/cham-hub.css?v=21.0" />
-  <link rel="stylesheet" href="styles/v21-remake.css?v=26.1" />
+  <link rel="stylesheet" href="styles/v21-remake.css?v=27.0" />
 </head>
 <body data-studio-view="home">
   <!-- Unified Global Navigation & Focused Studio Runner Header (v21.0) -->
@@ -48,6 +48,12 @@
         </div>
 
         <div class="topbar-global-actions">
+          <button type="button" id="global-search-btn" class="v27-global-search-btn" title="Tìm kiếm nhanh đề thi, từ vựng &amp; lệnh (Ctrl+K)" aria-label="Tìm kiếm nhanh (Ctrl+K)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <span class="v27-search-btn-text">Tìm nhanh</span>
+            <span class="kbd-badge v27-search-kbd">Ctrl K</span>
+          </button>
+
           <!-- Avatar Account & Utilities Dropdown Menu -->
           <div class="v21-avatar-wrap" id="user-menu-wrap">
             <button type="button" id="user-menu-trigger" class="v21-avatar-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="user-menu-popover" title="Tài khoản, Từ vựng, Thống kê &amp; Cài đặt">
@@ -494,16 +500,16 @@
           <div class="shortcut-group">
             <h3>Luyện Nghe, Đọc hiểu &amp; CBT</h3>
             <div class="shortcut-row">
-              <span>Phát / Tạm dừng &amp; tua Audio ±5s</span>
-              <span class="shortcut-keys"><span class="kbd-badge">Space</span> · <span class="kbd-badge">J</span>/<span class="kbd-badge">L</span></span>
+              <span>Phát / Tạm dừng, tua ±5s &amp; lặp A-B</span>
+              <span class="shortcut-keys"><span class="kbd-badge">Space</span> · <span class="kbd-badge">J</span>/<span class="kbd-badge">L</span> · <span class="kbd-badge">R</span></span>
             </div>
             <div class="shortcut-row">
-              <span>Chọn nhanh đáp án mọi Part 1–7</span>
-              <span class="shortcut-keys"><span class="kbd-badge">A–D</span> / <span class="kbd-badge">1–4</span></span>
+              <span>Chọn nhanh đáp án &amp; đổi câu trong nhóm</span>
+              <span class="shortcut-keys"><span class="kbd-badge">A–D</span> / <span class="kbd-badge">1–4</span> · <span class="kbd-badge">↑</span>/<span class="kbd-badge">↓</span></span>
             </div>
             <div class="shortcut-row">
-              <span>Kiểm tra / Giải chi tiết / Lưu từ SM-2</span>
-              <span class="shortcut-keys"><span class="kbd-badge">K</span> · <span class="kbd-badge">G</span> · <span class="kbd-badge">V</span></span>
+              <span>Kiểm tra / Giải chi tiết / Lưu từ / Ghi chú</span>
+              <span class="shortcut-keys"><span class="kbd-badge">K</span> · <span class="kbd-badge">G</span> · <span class="kbd-badge">V</span> · <span class="kbd-badge">N</span></span>
             </div>
             <div class="shortcut-row">
               <span>Gạch loại trừ đáp án nhiễu (A/B/C/D)</span>
@@ -600,6 +606,6 @@
   <script src="js/toeicMaterialsData.js?v=19.3"></script>
   <script src="js/toeicVocabData.js?v=19.0"></script>
   <script src="js/toeicStrategyData.js?v=19.4"></script>
-  <script type="module" src="js/main.js?v=26.1"></script>
+  <script type="module" src="js/main.js?v=27.0"></script>
 </body>
 </html>

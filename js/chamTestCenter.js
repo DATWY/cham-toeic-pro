@@ -14,9 +14,9 @@
  */
 
 import { getIcon } from "./uiIcons.js";
-import { state, saveState, recordActiveTime } from "./store.js?v=26.1";
-import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js?v=26.1";
-import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=26.1";
+import { state, saveState, recordActiveTime } from "./store.js?v=27.0";
+import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js?v=27.0";
+import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=27.0";
 import { analyzeQuestionTrapsAndTips, decodeRichEntities, stripPart12SpeakerTags } from "./toeicTrapEngine.js?v=25.4";
 
 const CHAM_SVG = {
@@ -30,11 +30,14 @@ const CHAM_SVG = {
   help: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
   highlighter: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11-6 6v3h3l6-6"/><path d="m22 12-4.6 4.6a2.78 2.78 0 0 1-3.9 0L4.8 7.9a2.78 2.78 0 0 1 0-3.9L7 1.8a2.78 2.78 0 0 1 3.9 0L19.6 10.5c.5.5.9 1.2.9 1.9Z"/></svg>`,
   vocabAdd: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/><line x1="12" y1="7" x2="12" y2="13"/><line x1="9" y1="10" x2="15" y2="10"/></svg>`,
-  repeat: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg>`
+  repeat: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg>`,
+  note: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>`
 };
 
 const CHAM_STORAGE_KEY = "neuro_cham_toeic_history_v1";
 const CHAM_DRAFT_KEY = "neuro_cham_toeic_draft_v1";
+const CHAM_MISTAKE_VAULT_KEY = "neuro_cham_toeic_mistakes_v1";
+const CHAM_QNOTES_KEY = "neuro_cham_toeic_qnotes_v1";
 const CHAM_MEDIA_CACHE = "cham-toeic-offline-v1";
 const CHAM_JSON_CACHE = "cham-toeic-json-bank-v7";
 
@@ -268,6 +271,49 @@ function saveDraftStore(draft) {
   } catch (_) {}
 }
 
+function loadMistakeVault() {
+  try {
+    const raw = localStorage.getItem(CHAM_MISTAKE_VAULT_KEY);
+    const parsed = raw ? JSON.parse(raw) : null;
+    if (parsed && typeof parsed === "object" && parsed.items && typeof parsed.items === "object" && !Array.isArray(parsed.items)) {
+      return { items: parsed.items };
+    }
+    return { items: {} };
+  } catch (_) {
+    return { items: {} };
+  }
+}
+
+function saveMistakeVault(vault) {
+  try {
+    const items = vault?.items || {};
+    const keys = Object.keys(items);
+    if (keys.length > 500) {
+      keys
+        .sort((a, b) => Number(items[b]?.lastWrongAt || 0) - Number(items[a]?.lastWrongAt || 0))
+        .slice(500)
+        .forEach((k) => delete items[k]);
+    }
+    localStorage.setItem(CHAM_MISTAKE_VAULT_KEY, JSON.stringify({ items }));
+  } catch (_) {}
+}
+
+function loadQuestionNotes() {
+  try {
+    const raw = localStorage.getItem(CHAM_QNOTES_KEY);
+    const parsed = raw ? JSON.parse(raw) : null;
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  } catch (_) {
+    return {};
+  }
+}
+
+function saveQuestionNotes(notes) {
+  try {
+    localStorage.setItem(CHAM_QNOTES_KEY, JSON.stringify(notes || {}));
+  } catch (_) {}
+}
+
 class ChamTestCenter {
   constructor(options = {}) {
     this.onOpen = options.onOpen || (() => {});
@@ -280,6 +326,8 @@ class ChamTestCenter {
     this.testCache = new Map(); // slug -> full test json
     this.offlineDownloads = new Map(); // slug -> { running, statusText, cachedAll }
     this.history = loadHistoryStore();
+    this.mistakeVault = loadMistakeVault();
+    this.questionNotes = loadQuestionNotes();
 
     // Library Filter State
     this.libState = {
@@ -317,6 +365,11 @@ class ChamTestCenter {
     this.audioVolume = 1.0;
     this.audioSpeed = 1.0;
     this.audioLoop = false;
+    this.audioLoopA = null;
+    this.audioLoopB = null;
+    this.openNoteQNums = new Set();
+    this._activeStudySecBuf = 0;
+    this._noteSaveTimer = null;
     this.focusedQNum = null;
     this.vocabSaveDraft = null; // { word, ipa, type, translation, context }
     this._preloadAudioEl = null;
@@ -399,7 +452,7 @@ class ChamTestCenter {
   }
 
   async loadTestJson(slug) {
-    if (!slug || String(slug).startsWith("practice-part-")) {
+    if (!slug || String(slug).startsWith("practice-part-") || slug === "practice-mistakes") {
       throw new Error(`Bộ đề luyện tập tùy chỉnh (${slug}) không có tệp JSON tĩnh.`);
     }
     if (this.testCache.has(slug)) return this.testCache.get(slug);
@@ -457,7 +510,128 @@ class ChamTestCenter {
     return data;
   }
 
+  flushActiveStudyTime() {
+    if (this._activeStudySecBuf > 0) {
+      recordActiveTime(this._activeStudySecBuf);
+      if (this.session) {
+        this.session._recordedStudySec = (this.session._recordedStudySec || 0) + this._activeStudySecBuf;
+      }
+      this._activeStudySecBuf = 0;
+    }
+  }
+
+  reloadMistakeVault() {
+    this.mistakeVault = loadMistakeVault();
+  }
+
+  reloadQuestionNotes() {
+    this.questionNotes = loadQuestionNotes();
+  }
+
+  getCanonicalQKey(q, session = this.session) {
+    if (!q) return null;
+    const origSlug = q.origSlug || session?.slug || "";
+    const origNum = Number(q.origNum || q.num || 0);
+    if (!origSlug || !origNum) return null;
+    if (String(origSlug).startsWith("practice-part-") || origSlug === "practice-mistakes") return null;
+    return `${origSlug}:${origNum}`;
+  }
+
+  getQuestionNote(q, session = this.session) {
+    const key = this.getCanonicalQKey(q, session);
+    if (!key) return "";
+    return String(this.questionNotes?.[key] || "");
+  }
+
+  flushQuestionNotes() {
+    if (this._noteSaveTimer) {
+      clearTimeout(this._noteSaveTimer);
+      this._noteSaveTimer = null;
+      saveQuestionNotes(this.questionNotes);
+    }
+  }
+
+  setQuestionNote(q, text, session = this.session) {
+    const key = this.getCanonicalQKey(q, session);
+    if (!key) return;
+    const clean = String(text ?? "");
+    if (!clean.trim()) {
+      delete this.questionNotes[key];
+    } else {
+      this.questionNotes[key] = clean.slice(0, 1200);
+    }
+    clearTimeout(this._noteSaveTimer);
+    this._noteSaveTimer = setTimeout(() => {
+      this._noteSaveTimer = null;
+      saveQuestionNotes(this.questionNotes);
+    }, 200);
+  }
+
+  recordMistakeOrMastery(q, partNum, uAns, session = this.session, testTitle = "") {
+    const key = this.getCanonicalQKey(q, session);
+    if (!key || !uAns) return "none";
+    const items = this.mistakeVault.items || (this.mistakeVault.items = {});
+    if (uAns !== q.answer) {
+      const prev = items[key];
+      const slug = q.origSlug || session?.slug;
+      const origNum = Number(q.origNum || q.num);
+      const catalogMeta = (this.catalog?.tests || []).find((t) => t.slug === slug);
+      items[key] = {
+        slug,
+        qNum: origNum,
+        part: Number(partNum) || 5,
+        testTitle: testTitle || catalogMeta?.title || session?.title || slug,
+        lastWrongChoice: uAns,
+        correctAnswer: q.answer || "",
+        wrongCount: Number(prev?.wrongCount || 0) + 1,
+        lastWrongAt: Date.now()
+      };
+      return "recorded";
+    }
+    if (items[key]) {
+      delete items[key];
+      return "graduated";
+    }
+    return "none";
+  }
+
+  getMistakeVaultSummary() {
+    this.mistakeVault = loadMistakeVault();
+    const items = Object.values(this.mistakeVault.items || {});
+    const byPart = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0 };
+    items.forEach((it) => {
+      const p = Number(it?.part || 0);
+      if (p >= 1 && p <= 7) byPart[p]++;
+    });
+    items.sort((a, b) => Number(b.lastWrongAt || 0) - Number(a.lastWrongAt || 0));
+    return { total: items.length, byPart, items };
+  }
+
+  clearMistakeVault(partFilter = "ALL") {
+    this.mistakeVault = loadMistakeVault();
+    if (partFilter === "ALL") {
+      this.mistakeVault = { items: {} };
+    } else {
+      const targetPart = Number(partFilter);
+      Object.keys(this.mistakeVault.items || {}).forEach((k) => {
+        if (Number(this.mistakeVault.items[k]?.part) === targetPart) {
+          delete this.mistakeVault.items[k];
+        }
+      });
+    }
+    saveMistakeVault(this.mistakeVault);
+    this.onHistoryUpdated();
+  }
+
+  clearAudioABLoop() {
+    this.audioLoopA = null;
+    this.audioLoopB = null;
+  }
+
   stopTimersAndAudio() {
+    this.flushActiveStudyTime();
+    this.flushQuestionNotes();
+    this.clearAudioABLoop();
     if (this.clockInterval) {
       clearInterval(this.clockInterval);
       this.clockInterval = null;
@@ -502,7 +676,8 @@ class ChamTestCenter {
   }
 
   open(initialSlug = null, subRoute = null, fromHashChange = false) {
-    if (this.session?.isCustomPartPractice && !(initialSlug && String(initialSlug).startsWith("practice-part-"))) {
+    const isSyntheticSlug = Boolean(initialSlug && (String(initialSlug).startsWith("practice-part-") || initialSlug === "practice-mistakes"));
+    if (this.session?.isCustomPartPractice && !isSyntheticSlug) {
       this.session = null;
     }
     this.activateShell();
@@ -515,11 +690,16 @@ class ChamTestCenter {
   }
 
   async routeToSlugSubView(slug, subRoute = null) {
-    if (String(slug || "").startsWith("practice-part-")) {
+    if (String(slug || "").startsWith("practice-part-") || slug === "practice-mistakes") {
       if (this.session && this.session.slug === slug && this.session.submittedResult && (subRoute === "result" || subRoute === "review")) {
         this.stopTimersAndAudio();
         this.view = subRoute;
         this.render();
+        return;
+      }
+      if (slug === "practice-mistakes") {
+        this.close({ keepHash: true, skipExitCallback: true });
+        this.onOpenPractice();
         return;
       }
       const pNum = Number(String(slug).replace("practice-part-", "")) || 5;
@@ -1015,7 +1195,7 @@ class ChamTestCenter {
   async probeOfflineCacheForSlug(slug) {
     const curState = this.offlineDownloads.get(slug);
     if (curState?.running) return;
-    if (!slug || String(slug).startsWith("practice-part-")) return;
+    if (!slug || String(slug).startsWith("practice-part-") || slug === "practice-mistakes") return;
     const meta = (this.catalog.tests || []).find((t) => t.slug === slug);
     const jsonRelUrl = meta?.dataFile || `data/cham_tests/${slug}.json`;
     const jsonAbsUrl = new URL(jsonRelUrl, window.location.href).href;
@@ -1835,7 +2015,9 @@ class ChamTestCenter {
 
     this.session = {
       ...prev,
-      title: `Ôn lại ${totalQ} câu sai · Part ${pNum}`,
+      title: prev.isGlobalMistakeReview
+        ? `Ôn lại ${totalQ} câu sai · Kho câu sai`
+        : `Ôn lại ${totalQ} câu sai · Part ${pNum}`,
       mode: "practice",
       strictIigMode: false,
       strictListeningOnly: false,
@@ -1862,6 +2044,166 @@ class ChamTestCenter {
     this.render();
     this.preloadNextGroupAudio();
     showToast(`Bắt đầu làm lại ${totalQ} câu sai / bỏ qua!`, "info");
+  }
+
+  async startGlobalMistakeReview(options = {}) {
+    const partFilter = options.partFilter || "ALL";
+    const maxCount = Math.max(1, Math.min(50, Number(options.maxCount) || 30));
+    const seq = ++this._navSeq;
+    this.stopTimersAndAudio();
+
+    const summary = this.getMistakeVaultSummary();
+    let entries = summary.items;
+    if (partFilter !== "ALL") {
+      const targetPart = Number(partFilter);
+      entries = entries.filter((it) => Number(it.part) === targetPart);
+    }
+    if (!entries.length) {
+      showToast("Kho câu sai hiện đang trống — bạn đã chinh phục hết câu sai!", "info");
+      return false;
+    }
+
+    // Group requested mistake items by source test slug (most recent / highest wrongCount first)
+    entries = entries
+      .slice()
+      .sort((a, b) => (Number(b.wrongCount || 1) - Number(a.wrongCount || 1)) || (Number(b.lastWrongAt || 0) - Number(a.lastWrongAt || 0)))
+      .slice(0, maxCount);
+
+    const bySlug = new Map();
+    entries.forEach((it) => {
+      if (!it.slug || !it.qNum) return;
+      if (!bySlug.has(it.slug)) bySlug.set(it.slug, new Set());
+      bySlug.get(it.slug).add(Number(it.qNum));
+    });
+
+    const collectedGroups = [];
+    let collectedCount = 0;
+    let displayNum = 1;
+    let offlineSkipped = 0;
+
+    for (const [slug, qSet] of bySlug.entries()) {
+      let testData;
+      try {
+        testData = await this.loadTestJson(slug);
+      } catch (err) {
+        if (err?.isOffline) offlineSkipped++;
+        continue;
+      }
+      if (seq !== this._navSeq) return false;
+      for (const rawGroup of (testData.groups || [])) {
+        const matchedQs = (rawGroup.questions || []).filter((q) => qSet.has(Number(q.num)));
+        if (!matchedQs.length) continue;
+        const clonedQs = matchedQs.map((q) => {
+          const n = displayNum++;
+          return { ...q, origSlug: slug, origNum: Number(q.num), num: n };
+        });
+        const rng = clonedQs.length === 1
+          ? String(clonedQs[0].num)
+          : `${clonedQs[0].num}-${clonedQs[clonedQs.length - 1].num}`;
+        collectedGroups.push({
+          ...rawGroup,
+          sourceTitle: testData.title,
+          range: rng,
+          questions: clonedQs
+        });
+        collectedCount += clonedQs.length;
+      }
+    }
+
+    if (!collectedGroups.length) {
+      showToast(
+        offlineSkipped > 0
+          ? "Không thể tải câu sai khi ngoại tuyến (đề gốc chưa được lưu trong bộ nhớ đệm)."
+          : "Không tìm thấy dữ liệu câu hỏi trong kho câu sai.",
+        "bad"
+      );
+      return false;
+    }
+
+    // Sort groups by Part 1 -> 7 for smooth cognitive flow
+    collectedGroups.sort((a, b) => Number(a.part || 0) - Number(b.part || 0));
+    let seqNum = 1;
+    collectedGroups.forEach((g) => {
+      g.questions = (g.questions || []).map((q) => ({ ...q, num: seqNum++ }));
+      g.range = g.questions.length === 1
+        ? String(g.questions[0].num)
+        : `${g.questions[0].num}-${g.questions[g.questions.length - 1].num}`;
+    });
+
+    const activeParts = Array.from(new Set(collectedGroups.map((g) => Number(g.part) || 5))).sort((a, b) => a - b);
+    clearToasts();
+    this.showHelpModal = false;
+    this.showReviewModal = false;
+    this.showSectionGate = false;
+    this.volumeMenuOpen = false;
+    this.vocabSaveDraft = null;
+    this.focusedQNum = null;
+    this.openNoteQNums.clear();
+    this.clearAudioABLoop();
+    this.paletteFilter = "ALL";
+    this.listeningReviewTab = "transcript";
+    this.dictationState = {};
+
+    const partLabel = partFilter === "ALL" ? "Tất cả Part" : `Part ${partFilter}`;
+    this.session = {
+      slug: "practice-mistakes",
+      isCustomPartPractice: true,
+      isGlobalMistakeReview: true,
+      practicePartNum: partFilter === "ALL" ? (activeParts[0] || 5) : Number(partFilter),
+      title: `Kho câu sai · ${partLabel} (${collectedCount} câu)`,
+      collection: "Ôn tập câu sai",
+      mode: "practice",
+      strictIigMode: false,
+      strictListeningOnly: false,
+      strictLcSec: 0,
+      strictRcSec: 0,
+      hasListeningSection: activeParts.some((p) => p <= 4),
+      hasReadingSection: activeParts.some((p) => p >= 5),
+      listeningLocked: false,
+      listeningElapsedSec: 0,
+      readingElapsedSec: 0,
+      parts: activeParts,
+      filterQNums: null,
+      groups: collectedGroups,
+      groupIdx: 0,
+      totalQ: collectedCount,
+      totalSecLimit: 0,
+      elapsedSec: 0,
+      examPauseSec: 0,
+      answers: {},
+      eliminations: {},
+      flags: {},
+      highlights: {},
+      revealedGroups: {},
+      detailExplGroups: {},
+      peekGroups: {},
+      submittedResult: null
+    };
+
+    this.view = "runner";
+    this.mobilePaletteOpen = false;
+    this.onOpen();
+    if (!this.isActive) {
+      this.isActive = true;
+      document.body.classList.add("is-cham-hub-active");
+      const root = this.rootEl;
+      if (root) root.removeAttribute("hidden");
+      window.removeEventListener("keydown", this._boundKeyDown);
+      window.addEventListener("keydown", this._boundKeyDown);
+      window.removeEventListener("mousedown", this._boundRightMouseDown, true);
+      window.addEventListener("mousedown", this._boundRightMouseDown, true);
+      window.removeEventListener("contextmenu", this._boundContextMenu, true);
+      window.addEventListener("contextmenu", this._boundContextMenu, true);
+      window.removeEventListener("mouseup", this._boundRightMouseUp, true);
+      window.addEventListener("mouseup", this._boundRightMouseUp, true);
+    }
+
+    this.syncUrlHash("#/practice/mistakes/run");
+    this.startSessionClock();
+    this.render();
+    this.preloadNextGroupAudio();
+    showToast(`Bắt đầu ôn ${collectedCount} câu sai! Trả lời đúng sẽ tự động xóa khỏi Kho câu sai.`, "info");
+    return true;
   }
 
   getActiveClockDisplay() {
@@ -1916,6 +2258,12 @@ class ChamTestCenter {
     this.clockInterval = setInterval(() => {
       if (!this.session || this.view !== "runner") return;
       this.session.elapsedSec++;
+      if (typeof document === "undefined" || document.visibilityState === "visible") {
+        this._activeStudySecBuf++;
+        if (this._activeStudySecBuf >= 15) {
+          this.flushActiveStudyTime();
+        }
+      }
       if (this.session.strictIigMode) {
         const lcLimit = this.session.strictLcSec || 45 * 60;
         const rcLimit = this.session.strictRcSec || 75 * 60;
@@ -2109,6 +2457,8 @@ class ChamTestCenter {
     } catch (_) {}
     this.session.groupIdx = clamped;
     this.focusedQNum = scrollQNum || targetGroup?.questions?.[0]?.num || null;
+    this.clearAudioABLoop();
+    this.openNoteQNums.clear();
     this.mobilePaletteOpen = false;
     this.volumeMenuOpen = false;
     this.vocabSaveDraft = null;
@@ -2489,6 +2839,12 @@ class ChamTestCenter {
 
     const curSpeed = Number(this.audioSpeed || 1.0);
     const isLoopOn = Boolean(!isStrictLockedScrub && (this.audioLoop || (this.shadowingLoop && this.listeningReviewTab === "shadowing")));
+    const hasLoopA = Number.isFinite(this.audioLoopA);
+    const hasLoopB = Number.isFinite(this.audioLoopB);
+    const abLabel = hasLoopA && hasLoopB
+      ? `${fmtAudioClock(this.audioLoopA)}–${fmtAudioClock(this.audioLoopB)}`
+      : (hasLoopA ? `A ${fmtAudioClock(this.audioLoopA)}→B` : "A-B");
+    const abActive = !isStrictLockedScrub && (hasLoopA || hasLoopB);
     const audioBarHTML = curGroup.audio ? `
       <div class="cham-audio-bar-wrap">
         <div class="cham-audio-bar">
@@ -2504,6 +2860,9 @@ class ChamTestCenter {
           ${!isStrictLockedScrub ? `
             <button type="button" class="cham-btn cham-audio-loop-btn ${isLoopOn ? "is-active" : ""}" id="cham-audio-loop-btn" aria-pressed="${isLoopOn ? "true" : "false"}" title="Lặp lại đoạn băng nghe này">
               ${CHAM_SVG.repeat}
+            </button>
+            <button type="button" class="cham-btn cham-audio-ab-btn ${abActive ? "is-active" : ""}" id="cham-audio-ab-btn" aria-pressed="${abActive ? "true" : "false"}" title="Lặp đoạn A-B: bấm lần 1 đặt điểm A, lần 2 đặt điểm B, lần 3 xóa (Phím R)">
+              ${escHtml(abLabel)}
             </button>
             <select id="cham-audio-speed" class="cham-btn" style="padding: 5px 9px; font-size: 0.78rem;" aria-label="Tốc độ phát">
               ${[0.75, 0.9, 1, 1.1, 1.25, 1.5].map((sp) => `<option value="${sp}" ${Math.abs(curSpeed - sp) < 0.02 ? "selected" : ""}>${sp === 1 ? "1.0" : sp}×</option>`).join("")}
@@ -2620,6 +2979,10 @@ class ChamTestCenter {
         }
 
         const isKbFocused = !isReview && (curGroup.questions || []).length > 1 && this.focusedQNum === q.num;
+        const canEditNote = isReview || s.mode === "practice";
+        const savedNote = canEditNote ? this.getQuestionNote(q, s) : "";
+        const hasSavedNote = Boolean(savedNote.trim());
+        const isNoteOpen = canEditNote && this.openNoteQNums.has(q.num);
         return `
           <div class="cham-q-card ${isKbFocused ? "is-kb-focused" : ""}" data-qnum="${q.num}">
             <div class="cham-q-head">
@@ -2637,6 +3000,12 @@ class ChamTestCenter {
                   </button>
                 ` : ""}
                 ${statusBadge}
+                ${canEditNote && this.getCanonicalQKey(q, s) ? `
+                  <button type="button" class="cham-flag-btn cham-note-toggle-btn ${hasSavedNote || isNoteOpen ? "has-note" : ""}" data-note-toggle-q="${q.num}" aria-expanded="${isNoteOpen ? "true" : "false"}" title="Ghi chú cá nhân cho câu ${q.num} (Phím N)">
+                    ${CHAM_SVG.note}
+                    <span>${hasSavedNote ? "Có ghi chú" : "Ghi chú"}</span>
+                  </button>
+                ` : ""}
                 ${!isReview ? `
                   <button type="button" class="cham-flag-btn ${isFlagged ? "is-flagged" : ""}" data-flag-q="${q.num}" title="Đánh dấu xem lại câu ${q.num}">
                     ${isFlagged ? CHAM_SVG.flagFill : CHAM_SVG.flag}
@@ -2678,6 +3047,13 @@ class ChamTestCenter {
                 `;
               }).join("")}
             </div>
+
+            ${canEditNote && this.getCanonicalQKey(q, s) ? `
+              <div class="v27-qnote-wrap" data-qnote-wrap="${q.num}" ${isNoteOpen ? "" : "hidden"}>
+                <label class="v27-qnote-label" for="cham-qnote-ta-${q.num}">Ghi chú cá nhân (tự lưu offline · theo câu hỏi gốc)</label>
+                <textarea id="cham-qnote-ta-${q.num}" class="v21-input v27-qnote-ta" data-qnote-q="${q.num}" rows="2" placeholder="Ghi lại từ vựng mới, cấu trúc ngữ pháp hoặc lý do chọn nhầm...">${escHtml(savedNote)}</textarea>
+              </div>
+            ` : ""}
 
             ${isGroupRevealed && isDetailExplOpen ? (() => {
               const isSingleFoldableGroup = (curPart === 1 || curPart === 2 || curPart === 5)
@@ -2871,10 +3247,11 @@ class ChamTestCenter {
             </div>
             <div class="cham-help-shortcuts">
               <div class="cham-shortcut-row"><kbd>A / B / C / D</kbd><span>Hoặc phím <kbd>1–4</kbd>: Chọn nhanh đáp án mọi Part 1–7 (tự nhảy câu tiếp trong nhóm)</span></div>
+              <div class="cham-shortcut-row"><kbd>↑ / ↓</kbd><span>Di chuyển nhanh giữa các câu hỏi trong cùng một nhóm (Part 3, 4, 6, 7)</span></div>
               <div class="cham-shortcut-row"><kbd>Chuột phải / ⊘</kbd><span>Gạch loại trừ phương án nhiễu (Strike-through elimination)</span></div>
-              <div class="cham-shortcut-row"><kbd>Alt + ← / →</kbd><span>Chuyển sang cụm câu trước / câu tiếp theo</span></div>
-              <div class="cham-shortcut-row"><kbd>Space</kbd> / <kbd>J</kbd> <kbd>L</kbd><span>Phát/Tạm dừng &amp; tua lùi/tới 5 giây (Luyện tập &amp; Chữa bài)</span></div>
-              <div class="cham-shortcut-row"><kbd>K</kbd> / <kbd>G</kbd> / <kbd>F</kbd><span>Kiểm tra đáp án / Mở Giải chi tiết / Gắn cờ câu hiện tại</span></div>
+              <div class="cham-shortcut-row"><kbd>Alt + ← / →</kbd><span>Chuyển cụm câu trước / sau (phần Đọc Part 5–7 dùng thẳng <kbd>← / →</kbd>)</span></div>
+              <div class="cham-shortcut-row"><kbd>Space</kbd> · <kbd>J</kbd>/<kbd>L</kbd> · <kbd>R</kbd><span>Phát/Dừng · Tua ±5s · Lặp đoạn A-B (Luyện tập &amp; Chữa bài)</span></div>
+              <div class="cham-shortcut-row"><kbd>K</kbd> / <kbd>G</kbd> / <kbd>F</kbd> / <kbd>N</kbd><span>Kiểm tra đáp án / Giải chi tiết / Gắn cờ / Ghi chú câu hiện tại</span></div>
               <div class="cham-shortcut-row"><kbd>V</kbd> / <kbd>+ Lưu từ</kbd><span>Bôi đen từ vựng bất kỳ để lưu nhanh vào Flashcard SM-2</span></div>
             </div>
           </div>
@@ -3347,6 +3724,8 @@ class ChamTestCenter {
     }
     const partQNums = {};
     const skillTypeStats = {};
+    let mistakesGraduated = 0;
+    let mistakesRecorded = 0;
     (s.groups || []).forEach((g) => {
       const pNum = Number(g.part);
       if (!pNum) return;
@@ -3359,11 +3738,20 @@ class ChamTestCenter {
           if (!skillTypeStats[skType]) skillTypeStats[skType] = { c: 0, a: 0 };
           skillTypeStats[skType].a++;
           if (uAns === q.answer) skillTypeStats[skType].c++;
+          const mRes = this.recordMistakeOrMastery(q, pNum, uAns, s, g.sourceTitle || s.title);
+          if (mRes === "graduated") mistakesGraduated++;
+          else if (mRes === "recorded") mistakesRecorded++;
         }
       });
     });
+    if (mistakesGraduated > 0 || mistakesRecorded > 0) {
+      saveMistakeVault(this.mistakeVault);
+    }
 
-    recordActiveTime(Math.max(1, Number(resultObj.elapsedSec || 1)));
+    if (!s._recordedStudySec) {
+      recordActiveTime(Math.max(1, Number(resultObj.elapsedSec || 1)));
+      s._recordedStudySec = Math.max(1, Number(resultObj.elapsedSec || 1));
+    }
     this.history.attemptsBySlug[s.slug].push({
       id: resultObj.id,
       title: s.title,
@@ -3402,9 +3790,17 @@ class ChamTestCenter {
     this.syncUrlHash(`#/result/${s.slug}`);
     this.render();
     window.scrollTo({ top: 0, behavior: "instant" });
+    if (mistakesGraduated > 0) {
+      showToast(`Chúc mừng! Bạn đã chinh phục & xóa ${mistakesGraduated} câu khỏi Kho câu sai!`, "success");
+    }
   }
 
   async openHistoricalAttempt(slug, attemptIdx) {
+    if (slug === "practice-mistakes") {
+      this.close({ keepHash: true, skipExitCallback: true });
+      this.onOpenPractice();
+      return;
+    }
     if (String(slug || "").startsWith("practice-part-")) {
       const pNum = Number(String(slug).replace("practice-part-", "")) || 5;
       this.close({ keepHash: true, skipExitCallback: true });
@@ -3954,6 +4350,23 @@ class ChamTestCenter {
       } else if (e.altKey && e.key === "ArrowLeft") {
         e.preventDefault();
         this.stepGroup(-1);
+      } else if (!e.ctrlKey && !e.metaKey && !e.altKey && !this.activeAudioEl && e.key === "ArrowRight") {
+        e.preventDefault();
+        this.stepGroup(1);
+      } else if (!e.ctrlKey && !e.metaKey && !e.altKey && !this.activeAudioEl && e.key === "ArrowLeft") {
+        e.preventDefault();
+        this.stepGroup(-1);
+      } else if (!e.ctrlKey && !e.metaKey && !e.altKey && (e.key === "ArrowUp" || e.key === "ArrowDown") && (curGroup?.questions || []).length > 1) {
+        const qs = curGroup.questions || [];
+        const activeQ = this.getActiveQuestionInGroup();
+        const curIdx = activeQ ? qs.findIndex((x) => x.num === activeQ.num) : 0;
+        const nextIdx = (curIdx + (e.key === "ArrowDown" ? 1 : -1) + qs.length) % qs.length;
+        if (qs[nextIdx]) {
+          e.preventDefault();
+          this.setFocusedQuestionInPlace(qs[nextIdx].num);
+          const card = this.rootEl?.querySelector(`.cham-q-card[data-qnum="${qs[nextIdx].num}"]`);
+          card?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
       } else if (e.code === "Space" && this.activeAudioEl && !e.ctrlKey && !e.metaKey && !e.altKey) {
         e.preventDefault();
         this.clearAutoAdvance();
@@ -3970,9 +4383,24 @@ class ChamTestCenter {
         e.preventDefault();
         const dur = Number.isFinite(this.activeAudioEl.duration) ? this.activeAudioEl.duration : (this.activeAudioEl.currentTime + 5);
         this.activeAudioEl.currentTime = Math.min(dur, (this.activeAudioEl.currentTime || 0) + 5);
+      } else if (!e.ctrlKey && !e.metaKey && !e.altKey && this.activeAudioEl && !isStrictLockedScrub && lowerKey === "r") {
+        const abBtn = this.rootEl?.querySelector("#cham-audio-ab-btn");
+        if (abBtn) {
+          e.preventDefault();
+          abBtn.click();
+        }
       } else if (!e.ctrlKey && !e.metaKey && !e.altKey && lowerKey === "v" && (isReview || this.session?.mode === "practice")) {
         e.preventDefault();
         this.openQuickVocabModal();
+      } else if (!e.ctrlKey && !e.metaKey && !e.altKey && lowerKey === "n" && (isReview || this.session?.mode === "practice")) {
+        const activeQ = this.getActiveQuestionInGroup() || curGroup?.questions?.[0];
+        if (activeQ) {
+          const noteBtn = this.rootEl?.querySelector(`[data-note-toggle-q="${activeQ.num}"]`);
+          if (noteBtn) {
+            e.preventDefault();
+            noteBtn.click();
+          }
+        }
       } else if (!isReview && !e.ctrlKey && !e.metaKey && !e.altKey) {
         if (lowerKey === "k" && this.session?.mode === "practice") {
           const checkBtn = this.rootEl?.querySelector("#cham-instant-check-btn");
@@ -4574,7 +5002,10 @@ class ChamTestCenter {
 
     if (this.view === "result") {
       root.querySelector("#cham-res-back-detail")?.addEventListener("click", () => {
-        if (this.session?.isCustomPartPractice) {
+        if (this.session?.isGlobalMistakeReview) {
+          this.close({ keepHash: true, skipExitCallback: true });
+          this.onOpenPractice();
+        } else if (this.session?.isCustomPartPractice) {
           const pNum = this.session.practicePartNum || 5;
           this.close({ keepHash: true, skipExitCallback: true });
           this.onOpenPracticePart(pNum);
@@ -4667,7 +5098,10 @@ class ChamTestCenter {
           this.syncUrlHash(`#/result/${this.session.slug}`);
           this.render();
         } else if (confirm("Bạn muốn tạm thoát khỏi phòng làm bài? (Tiến độ nháp của bạn vẫn được lưu tự động!)")) {
-          if (this.session?.isCustomPartPractice) {
+          if (this.session?.isGlobalMistakeReview) {
+            this.close({ keepHash: true, skipExitCallback: true });
+            this.onOpenPractice();
+          } else if (this.session?.isCustomPartPractice) {
             const pNum = this.session.practicePartNum || 5;
             this.close({ keepHash: true, skipExitCallback: true });
             this.onOpenPracticePart(pNum);
@@ -5194,6 +5628,26 @@ class ChamTestCenter {
         if (!nextVal && this.session.detailExplGroups) {
           this.session.detailExplGroups[gIdx] = false;
         }
+        if (nextVal) {
+          const curGrp = this.session.groups?.[gIdx];
+          let changed = false;
+          let graduated = 0;
+          (curGrp?.questions || []).forEach((q) => {
+            const uAns = this.session.answers[q.num];
+            if (uAns) {
+              const res = this.recordMistakeOrMastery(q, curGrp.part, uAns, this.session, curGrp.sourceTitle || this.session.title);
+              if (res !== "none") changed = true;
+              if (res === "graduated") graduated++;
+            }
+          });
+          if (changed) {
+            saveMistakeVault(this.mistakeVault);
+            this.onHistoryUpdated();
+            if (graduated > 0) {
+              showToast(`Đã vượt qua ${graduated} câu sai cũ và xóa khỏi Kho câu sai!`, "success");
+            }
+          }
+        }
         this.rerenderPreservingAudio();
       };
       root.querySelector("#cham-instant-check-btn")?.addEventListener("click", toggleInstantReveal);
@@ -5205,6 +5659,53 @@ class ChamTestCenter {
         const gIdx = this.session.groupIdx;
         this.session.detailExplGroups[gIdx] = !this.session.detailExplGroups[gIdx];
         this.rerenderPreservingAudio();
+      });
+
+      // Personal Question Notes (in-place toggle & auto-save without interrupting audio)
+      root.querySelectorAll("[data-note-toggle-q]").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const qNum = Number(btn.dataset.noteToggleQ);
+          if (!qNum) return;
+          const wrap = root.querySelector(`[data-qnote-wrap="${qNum}"]`);
+          const isOpen = this.openNoteQNums.has(qNum);
+          if (isOpen) {
+            this.openNoteQNums.delete(qNum);
+            if (wrap) wrap.hidden = true;
+            btn.setAttribute("aria-expanded", "false");
+          } else {
+            this.openNoteQNums.add(qNum);
+            if (wrap) wrap.hidden = false;
+            btn.setAttribute("aria-expanded", "true");
+            const ta = wrap?.querySelector("textarea");
+            if (ta) {
+              ta.focus();
+              ta.setSelectionRange(ta.value.length, ta.value.length);
+            }
+          }
+          const taVal = wrap?.querySelector("textarea")?.value?.trim() || "";
+          btn.classList.toggle("has-note", Boolean(taVal || !isOpen));
+        });
+      });
+
+      root.querySelectorAll("[data-qnote-q]").forEach((ta) => {
+        ta.addEventListener("input", () => {
+          const qNum = Number(ta.dataset.qnoteQ);
+          const curGrp = this.session?.groups?.[this.session.groupIdx];
+          const qObj = (curGrp?.questions || []).find((x) => x.num === qNum);
+          if (!qObj) return;
+          this.setQuestionNote(qObj, ta.value, this.session);
+          const btn = root.querySelector(`[data-note-toggle-q="${qNum}"]`);
+          if (btn) {
+            const hasTxt = Boolean(ta.value.trim());
+            btn.classList.toggle("has-note", hasTxt || this.openNoteQNums.has(qNum));
+            const lbl = btn.querySelector("span");
+            if (lbl) lbl.textContent = hasTxt ? "Có ghi chú" : "Ghi chú";
+          }
+        });
+        ta.addEventListener("blur", () => {
+          this.flushQuestionNotes();
+        });
       });
 
       // Flag Question (in-place update keeps Listening audio uninterrupted)
@@ -5304,10 +5805,23 @@ class ChamTestCenter {
         const back5Btn = root.querySelector("#cham-audio-back5-btn");
         const fwd5Btn = root.querySelector("#cham-audio-fwd5-btn");
         const loopBtn = root.querySelector("#cham-audio-loop-btn");
+        const abBtn = root.querySelector("#cham-audio-ab-btn");
         const scrubber = root.querySelector("#cham-audio-scrubber");
         const timeEl = root.querySelector("#cham-audio-time");
         const speedSel = root.querySelector("#cham-audio-speed");
         const fallbackBar = root.querySelector("#cham-audio-fallback-bar");
+
+        const syncABBtnUI = () => {
+          if (!abBtn) return;
+          const hasA = Number.isFinite(this.audioLoopA);
+          const hasB = Number.isFinite(this.audioLoopB);
+          const active = !strictNoScrub && (hasA || hasB);
+          abBtn.classList.toggle("is-active", active);
+          abBtn.setAttribute("aria-pressed", String(active));
+          abBtn.textContent = hasA && hasB
+            ? `${fmtAudioClock(this.audioLoopA)}–${fmtAudioClock(this.audioLoopB)}`
+            : (hasA ? `A ${fmtAudioClock(this.audioLoopA)}→B` : "A-B");
+        };
 
         back5Btn?.addEventListener("click", () => {
           if (strictNoScrub) return;
@@ -5329,10 +5843,50 @@ class ChamTestCenter {
           if (shLoopCb) shLoopCb.checked = this.audioLoop;
           showToast(this.audioLoop ? "Đã bật lặp lại đoạn audio" : "Đã tắt lặp lại audio", "info");
         });
+        abBtn?.addEventListener("click", () => {
+          if (strictNoScrub) return;
+          const nowT = Math.max(0, Number(audioEl.currentTime || 0));
+          if (!Number.isFinite(this.audioLoopA)) {
+            this.audioLoopA = nowT;
+            this.audioLoopB = null;
+            syncABBtnUI();
+            showToast(`Đã đặt điểm A tại ${fmtAudioClock(this.audioLoopA)} — bấm A-B lần nữa (hoặc phím R) để đặt điểm B`, "info");
+          } else if (!Number.isFinite(this.audioLoopB)) {
+            let a = this.audioLoopA;
+            let b = nowT;
+            if (Math.abs(b - a) < 0.5) {
+              const dur = Number.isFinite(audioEl.duration) && audioEl.duration > 0 ? audioEl.duration : (a + 3);
+              b = Math.min(dur, a + 3);
+              if (b - a < 0.5) {
+                a = Math.max(0, b - 3);
+              }
+            }
+            if (b < a) {
+              const tmp = a;
+              a = b;
+              b = tmp;
+            }
+            this.audioLoopA = a;
+            this.audioLoopB = b;
+            audioEl.currentTime = a;
+            syncABBtnUI();
+            showToast(`Đang lặp đoạn A-B (${fmtAudioClock(a)} – ${fmtAudioClock(b)})`, "info");
+          } else {
+            this.clearAudioABLoop();
+            syncABBtnUI();
+            showToast("Đã tắt lặp đoạn A-B", "info");
+          }
+        });
 
         const syncTimeUI = () => {
-          const cur = audioEl.currentTime || 0;
+          let cur = audioEl.currentTime || 0;
           const dur = audioEl.duration || 0;
+          if (!strictNoScrub && Number.isFinite(this.audioLoopA) && Number.isFinite(this.audioLoopB) && this.audioLoopB > this.audioLoopA + 0.25) {
+            if (cur >= this.audioLoopB) {
+              audioEl.currentTime = this.audioLoopA;
+              cur = this.audioLoopA;
+            }
+          }
           if (timeEl) timeEl.textContent = `${fmtAudioClock(cur)} / ${fmtAudioClock(dur)}`;
           if (scrubber && dur > 0) scrubber.value = String((cur / dur) * 100);
           if (dur > 0 && this.listeningReviewTab === "karaoke") {
@@ -5487,7 +6041,7 @@ export function initChamTestCenter(options = {}) {
       }
     }
     if (
-      h.startsWith("#/practice/part/") &&
+      (h.startsWith("#/practice/part/") || h === "#/practice/mistakes/run") &&
       h.endsWith("/run") &&
       center.isActive &&
       center.session?.isCustomPartPractice &&
@@ -5513,6 +6067,10 @@ export function initChamTestCenter(options = {}) {
   };
 
   window.addEventListener("hashchange", checkHashRoute);
+  window.addEventListener("beforeunload", () => {
+    center.flushActiveStudyTime();
+    center.flushQuestionNotes();
+  });
   checkHashRoute();
 
   return center;

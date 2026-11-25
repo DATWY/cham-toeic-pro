@@ -5,7 +5,7 @@
  * Time-per-Question Pacing Telemetry & Answer-Change Analytics
  */
 
-import { state, saveState, notify, getAnswer } from "./store.js?v=26.1";
+import { state, saveState, notify, getAnswer } from "./store.js?v=27.0";
 import { getIcon } from "./uiIcons.js";
 
 const LISTENING_CURVE = [

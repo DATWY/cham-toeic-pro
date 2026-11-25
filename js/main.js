@@ -4,18 +4,18 @@
  */
 
 import { icons, getIcon } from "./uiIcons.js";
-import { state, saveState, subscribe, updateMastery, recordActiveTime, getMasteryScore, getAnswer, setAnswer, deleteAnswer, getConfidence, setConfidence, deleteConfidence, getEliminations, toggleElimination, deleteEliminations } from "./store.js?v=26.1";
+import { state, saveState, subscribe, updateMastery, recordActiveTime, getMasteryScore, getAnswer, setAnswer, deleteAnswer, getConfidence, setConfidence, deleteConfidence, getEliminations, toggleElimination, deleteEliminations } from "./store.js?v=27.0";
 import { getAllFlashcards, saveFlashcard } from "./idb.js";
-import { AudioEngine, ambientSoundscape } from "./audioEngine.js?v=26.1";
-import { VoiceStudio } from "./voiceStudio.js?v=26.1";
-import { TranscriptSync } from "./transcriptSync.js?v=26.1";
-import { ExamSimulator } from "./examSimulator.js?v=26.1";
+import { AudioEngine, ambientSoundscape } from "./audioEngine.js?v=27.0";
+import { VoiceStudio } from "./voiceStudio.js?v=27.0";
+import { TranscriptSync } from "./transcriptSync.js?v=27.0";
+import { ExamSimulator } from "./examSimulator.js?v=27.0";
 import { VocabSRS } from "./vocabSrs.js?v=19.4";
-import { AnalyticsEngine } from "./analytics.js?v=26.1";
-import { initChamTestCenter } from "./chamTestCenter.js?v=26.1";
-import { initMaterialsCenter } from "./materialsCenter.js?v=26.1";
-import { initDashboardAndPractice } from "./dashboardPractice.js?v=26.1";
-import { showToast, clearToasts, openGraphicLightbox, renderMasteryRing, applyHighlights, renderEvidenceAnalysis, renderVocabAndNotes, renderPart7Passages, renderReadingInspectorScript } from "./renderers.js?v=26.1";
+import { AnalyticsEngine } from "./analytics.js?v=27.0";
+import { initChamTestCenter } from "./chamTestCenter.js?v=27.0";
+import { initMaterialsCenter } from "./materialsCenter.js?v=27.0";
+import { initDashboardAndPractice } from "./dashboardPractice.js?v=27.0";
+import { showToast, clearToasts, openGraphicLightbox, renderMasteryRing, applyHighlights, renderEvidenceAnalysis, renderVocabAndNotes, renderPart7Passages, renderReadingInspectorScript } from "./renderers.js?v=27.0";
 
 const CORE_TESTS = window.TOEIC_TESTS || [];
 const EXTRA_PART56_TESTS = Array.isArray(window.TOEIC_PART56_TESTS)
@@ -430,6 +430,19 @@ function applyStudioHashRoute(fromHashChange = false) {
   }
   if (h === "#/practice" || h === "#practice") {
     openPracticeHub(null, { skipHash: true, scrollTop: !fromHashChange });
+    return;
+  }
+  if (h === "#/practice/mistakes/run" || h === "#/practice/mistakes/run/") {
+    if (
+      chamCenter?.isActive &&
+      chamCenter?.session?.isGlobalMistakeReview &&
+      chamCenter?.view === "runner" &&
+      !chamCenter?.session?.submittedResult
+    ) {
+      setStudioView("cham");
+      return;
+    }
+    openPracticeHub(null, { replaceHash: true, scrollTop: !fromHashChange });
     return;
   }
   const matchPracticeRun = h.match(/^#\/practice\/part\/([1-7])\/run(?:\/)?$/);
@@ -1048,6 +1061,13 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     onStartPartPractice: async (cfg) => {
       return Boolean(await chamCenter?.startCustomPartSession(cfg));
+    },
+    onStartGlobalMistakeReview: async (opts) => {
+      return Boolean(await chamCenter?.startGlobalMistakeReview(opts));
+    },
+    onClearMistakeVault: (partFilter) => {
+      chamCenter?.clearMistakeVault?.(partFilter);
+      showToast("Đã xóa danh sách câu sai đã chọn.", "info");
     }
   });
   materialsCenter = initMaterialsCenter({
@@ -1599,10 +1619,14 @@ function initServiceWorker() {
     let chamHistory = null;
     let chamDraft = null;
     let materialsGrammarQuiz = null;
+    let mistakeVault = null;
+    let questionNotes = null;
     let flashcards = [];
     try { chamHistory = JSON.parse(localStorage.getItem("neuro_cham_toeic_history_v1") || "null"); } catch {}
     try { chamDraft = JSON.parse(localStorage.getItem("neuro_cham_toeic_draft_v1") || "null"); } catch {}
     try { materialsGrammarQuiz = JSON.parse(localStorage.getItem("neuro_toeic_materials_quiz_v1") || "null"); } catch {}
+    try { mistakeVault = JSON.parse(localStorage.getItem("neuro_cham_toeic_mistakes_v1") || "null"); } catch {}
+    try { questionNotes = JSON.parse(localStorage.getItem("neuro_cham_toeic_qnotes_v1") || "null"); } catch {}
     try { flashcards = await getAllFlashcards(); } catch { flashcards = []; }
     const payload = {
       ...state,
@@ -1611,6 +1635,8 @@ function initServiceWorker() {
       __chamHistory: chamHistory,
       __chamDraft: chamDraft,
       __materialsGrammarQuiz: materialsGrammarQuiz,
+      __mistakeVault: mistakeVault,
+      __questionNotes: questionNotes,
       __flashcards: Array.isArray(flashcards) ? flashcards : []
     };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
@@ -1639,6 +1665,8 @@ function initServiceWorker() {
           __chamHistory,
           __chamDraft,
           __materialsGrammarQuiz,
+          __mistakeVault,
+          __questionNotes,
           __flashcards,
           ...studioState
         } = parsed;
@@ -1657,6 +1685,37 @@ function initServiceWorker() {
         if (__materialsGrammarQuiz && typeof __materialsGrammarQuiz === "object") {
           try { localStorage.setItem("neuro_toeic_materials_quiz_v1", JSON.stringify(__materialsGrammarQuiz)); } catch {}
           materialsCenter?.reloadQuizAnswers?.();
+        }
+        if (__mistakeVault && typeof __mistakeVault === "object" && typeof __mistakeVault.items === "object" && !Array.isArray(__mistakeVault.items)) {
+          const cleanItems = {};
+          Object.entries(__mistakeVault.items).forEach(([k, v]) => {
+            if (!v || typeof v !== "object" || typeof v.slug !== "string" || !v.slug.trim()) return;
+            const qNum = Number(v.qNum);
+            const part = Number(v.part);
+            if (!Number.isFinite(qNum) || qNum <= 0) return;
+            cleanItems[k] = {
+              slug: v.slug.trim(),
+              qNum,
+              part: Number.isFinite(part) && part >= 1 && part <= 7 ? part : 5,
+              testTitle: typeof v.testTitle === "string" ? v.testTitle : v.slug.trim(),
+              lastWrongChoice: typeof v.lastWrongChoice === "string" ? v.lastWrongChoice : "",
+              correctAnswer: typeof v.correctAnswer === "string" ? v.correctAnswer : "",
+              wrongCount: Math.max(1, Number(v.wrongCount) || 1),
+              lastWrongAt: Number(v.lastWrongAt) || Date.now()
+            };
+          });
+          try { localStorage.setItem("neuro_cham_toeic_mistakes_v1", JSON.stringify({ items: cleanItems })); } catch {}
+          chamCenter?.reloadMistakeVault?.();
+        }
+        if (__questionNotes && typeof __questionNotes === "object" && !Array.isArray(__questionNotes)) {
+          const cleanNotes = {};
+          Object.entries(__questionNotes).forEach(([k, v]) => {
+            if (typeof k === "string" && k.includes(":") && typeof v === "string" && v.trim()) {
+              cleanNotes[k] = v.slice(0, 1200);
+            }
+          });
+          try { localStorage.setItem("neuro_cham_toeic_qnotes_v1", JSON.stringify(cleanNotes)); } catch {}
+          chamCenter?.reloadQuestionNotes?.();
         }
         if (Array.isArray(__flashcards) && __flashcards.length > 0) {
           for (const rawCard of __flashcards) {
@@ -1815,6 +1874,10 @@ function initTopBarControls() {
   document.getElementById("studio-brand-logo")?.addEventListener("click", () => {
     closeAvatarMenu();
     openHomeDashboard();
+  });
+  document.getElementById("global-search-btn")?.addEventListener("click", () => {
+    closeAvatarMenu();
+    openCommandPalette();
   });
   document.getElementById("studio-back-lobby-btn")?.addEventListener("click", () => {
     openPracticeHub(null);
@@ -2455,8 +2518,8 @@ function initGlobalShortcuts() {
     const inChamRunner = Boolean(chamCenter?.isActive && (chamCenter?.view === "runner" || chamCenter?.view === "review"));
     const inMaterialsHub = Boolean(materialsCenter?.isActive?.() || document.body.classList.contains("is-materials-hub-active"));
 
-    // Allow Ctrl+K / Cmd+K globally outside Materials Hub, active CBT Exam Runner, and text inputs
-    if (!inTextField && !inChamRunner && !inMaterialsHub && (e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K")) {
+    // Allow Ctrl+K / Cmd+K globally outside active CBT Exam Runner and text inputs
+    if (!inTextField && !inChamRunner && (e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K")) {
       const openDialog = document.querySelector("dialog[open]");
       if (!openDialog) {
         e.preventDefault();
@@ -2578,7 +2641,12 @@ function openCommandPalette() {
     // Commands & Quick Navigation
     const chamList = window.CHAM_TOEIC_CATALOG?.tests || [];
     const totalAllBanks = chamList.length + TESTS.length;
+    const mistakeSummary = chamCenter?.getMistakeVaultSummary?.() || { total: 0 };
     const commands = [
+      ...(mistakeSummary.total > 0 ? [{
+        label: `Ôn tập Kho câu sai tích lũy (${mistakeSummary.total} câu chưa vượt qua)`,
+        action: () => chamCenter?.startGlobalMistakeReview?.({ partFilter: "ALL", maxCount: 30 })
+      }] : []),
       { label: "Trang chủ: Lộ trình & Mục tiêu điểm TOEIC", action: () => openHomeDashboard() },
       { label: `Luyện tập theo Part 1–7 (Ngân hàng ${totalAllBanks} bộ đề)`, action: () => openPracticeHub(null) },
       { label: `Thi thử TOEIC: Kho ${chamList.length} Đề Full Test, Mini Test & Đề lẻ`, action: () => openChamHub() },
@@ -2600,17 +2668,16 @@ function openCommandPalette() {
       { label: "Phòng thi mô phỏng CBT liên hoàn (Studio)", action: () => openCbtExamDialog() },
       { label: "In phiếu học tập A4", action: () => prepareWorksheetForPrint() },
       {
-        label: "Smart Mix: Ôn tập câu làm sai & câu đoán",
+        label: "Smart Mix: Ôn tập câu làm sai & câu đoán (Studio)",
         action: () => {
           const mix = analyticsEngine.getSmartMixTalks("mistakes");
           if (mix.length > 0) {
-            selectTab(mix[0].testId);
             state.currentIndex[mix[0].testId] = mix[0].talkIndex;
             saveState();
-            renderAll();
+            enterStudioWorkspace(mix[0].testId);
             showToast(`Smart Mix: Bắt đầu bài ${mix[0].range} (${mix.length} bài có câu sai/đoán)!`, "info");
           } else {
-            showToast("Chưa có câu sai hoặc câu đoán!");
+            showToast("Chưa có câu sai hoặc câu đoán trong Phòng luyện sâu!");
           }
         }
       }
@@ -2621,6 +2688,20 @@ function openCommandPalette() {
         results.push(c);
       }
     });
+
+    // Grammar Handbook Topics Search
+    const grammarTopics = window.TOEIC_MATERIALS_DATA?.grammarTopics || [];
+    if (q) {
+      grammarTopics.forEach((gt) => {
+        const hay = `${gt.title || ""} ${gt.category || ""} ${gt.summary || ""}`.toLowerCase();
+        if (hay.includes(q)) {
+          results.push({
+            label: `Ngữ pháp Part 5–6: ${gt.title}`,
+            action: () => openMaterialsHub("grammar")
+          });
+        }
+      });
+    }
 
     // Full / Mini / Part Online Tests Search
     let chamMatched = 0;
@@ -2639,7 +2720,7 @@ function openCommandPalette() {
       }
     }
 
-    // Talks & Questions
+    // Talks & Questions (Studio)
     TESTS.forEach((t) => {
       t.talks.forEach((talk, idx) => {
         const title = `${t.title.split(" (")[0]} · Bài ${idx + 1} (Câu ${talk.range})`;
@@ -2648,30 +2729,56 @@ function openCommandPalette() {
           results.push({
             label: `${title} - ${talk.type}`,
             action: () => {
-              selectTab(t.id);
               state.currentIndex[t.id] = idx;
               saveState();
-              renderAll();
+              enterStudioWorkspace(t.id);
             }
           });
         }
       });
     });
 
-    // Vocabulary Search
+    // Vocabulary Search (760+ ETS Vocab Bank + Studio Talk Vocab)
     if (q) {
+      const vocabBank = Array.isArray(window.TOEIC_VOCAB_BANK) ? window.TOEIC_VOCAB_BANK : [];
+      let bankHits = 0;
+      for (const entry of vocabBank) {
+        if (bankHits >= 16) break;
+        const w = String(entry?.word || "");
+        const tr = String(entry?.translation || "");
+        const cat = String(entry?.category || "");
+        if (w.toLowerCase().includes(q) || tr.toLowerCase().includes(q) || cat.toLowerCase().includes(q)) {
+          bankHits++;
+          results.push({
+            label: `Từ vựng ETS: ${w}${entry.ipa ? ` ${entry.ipa}` : ""} — ${tr}`,
+            action: () => {
+              speakWordTTS(w);
+              vocabSRS?.addCard?.({
+                word: w,
+                ipa: entry.ipa || "",
+                type: entry.type || "",
+                translation: tr,
+                context: entry.example || "",
+                category: entry.category || "ETS Vocabulary",
+                talkRange: "Library"
+              });
+              showToast(`Đã phát âm & lưu "${w}" vào Flashcard SM-2!`, "success");
+            }
+          });
+        }
+      }
+
       TESTS.forEach((t) => {
         t.talks.forEach((talk, idx) => {
           (talk.vocab || []).forEach((v) => {
             if (v.toLowerCase().includes(q)) {
               results.push({
-                label: `Từ vựng: ${v} · Câu ${talk.range}`,
+                label: `Từ vựng bài học: ${v} · Câu ${talk.range}`,
                 action: () => {
-                  selectTab(t.id);
                   state.currentIndex[t.id] = idx;
                   state.inspectorTabs[`${t.id}_${talk.range}`] = "vocab";
                   saveState();
-                  renderAll();
+                  enterStudioWorkspace(t.id);
                 }
               });
             }
