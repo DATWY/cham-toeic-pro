@@ -11,7 +11,7 @@ import { TranscriptSync } from "./transcriptSync.js?v=19.4";
 import { ExamSimulator } from "./examSimulator.js";
 import { VocabSRS } from "./vocabSrs.js?v=19.4";
 import { AnalyticsEngine } from "./analytics.js?v=22.1";
-import { initChamTestCenter } from "./chamTestCenter.js?v=25.3";
+import { initChamTestCenter } from "./chamTestCenter.js?v=25.4";
 import { initMaterialsCenter } from "./materialsCenter.js?v=22.1";
 import { initDashboardAndPractice } from "./dashboardPractice.js?v=22.1";
 import { showToast, clearToasts, openGraphicLightbox, renderMasteryRing, applyHighlights, renderEvidenceAnalysis, renderVocabAndNotes, renderPart7Passages, renderReadingInspectorScript } from "./renderers.js?v=19.4";
@@ -1463,8 +1463,8 @@ function initServiceWorker() {
   if ("serviceWorker" in navigator) {
     const hadController = Boolean(navigator.serviceWorker.controller);
     navigator.serviceWorker.addEventListener("controllerchange", () => {
-      if (hadController && sessionStorage.getItem("nt_sw_reloaded") !== "v25.3") {
-        sessionStorage.setItem("nt_sw_reloaded", "v25.3");
+      if (hadController && sessionStorage.getItem("nt_sw_reloaded") !== "v25.4") {
+        sessionStorage.setItem("nt_sw_reloaded", "v25.4");
         window.location.reload();
       }
     });
@@ -1489,7 +1489,7 @@ function initServiceWorker() {
         if (sw) sw.postMessage({ type: "CACHE_CHAM_JSON_BANK", urls: jsonUrls });
       }).catch(() => {});
     };
-    navigator.serviceWorker.register("sw.js?v=25.3", { updateViaCache: "none" }).then((reg) => {
+    navigator.serviceWorker.register("sw.js?v=25.4", { updateViaCache: "none" }).then((reg) => {
       if (reg.waiting) {
         reg.waiting.postMessage({ type: "SKIP_WAITING" });
       }

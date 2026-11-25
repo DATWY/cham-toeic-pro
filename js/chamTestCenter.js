@@ -17,7 +17,7 @@ import { getIcon } from "./uiIcons.js";
 import { state, saveState, recordActiveTime } from "./store.js";
 import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js";
 import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=19.4";
-import { analyzeQuestionTrapsAndTips, decodeRichEntities, stripPart12SpeakerTags } from "./toeicTrapEngine.js?v=25.3";
+import { analyzeQuestionTrapsAndTips, decodeRichEntities, stripPart12SpeakerTags } from "./toeicTrapEngine.js?v=25.4";
 
 const CHAM_SVG = {
   users: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
@@ -1588,6 +1588,7 @@ class ChamTestCenter {
       flags: resumeDraft?.flags ? { ...resumeDraft.flags } : {},
       highlights: resumeDraft?.highlights ? { ...resumeDraft.highlights } : {},
       revealedGroups: {}, // { [groupIdx]: true } for instant check in Practice
+      detailExplGroups: {}, // { [groupIdx]: true } for expanding detailed explanations in Practice
       peekGroups: {}, // { [groupIdx]: true } for Part 1/2 spoken text peek in Practice
       submittedResult: null
     };
@@ -1758,6 +1759,7 @@ class ChamTestCenter {
       flags: {},
       highlights: {},
       revealedGroups: {},
+      detailExplGroups: {},
       peekGroups: {},
       submittedResult: null
     };
@@ -2224,6 +2226,8 @@ class ChamTestCenter {
     const curGroup = s.groups[s.groupIdx] || s.groups[0];
     const curPart = curGroup.part;
     const isGroupRevealed = isReview || Boolean(s.revealedGroups[s.groupIdx]);
+    const isDetailExplOpen = isReview || Boolean(s.detailExplGroups?.[s.groupIdx]);
+    const hasAnyGroupExpl = Boolean(curGroup.explanationHtml || (curGroup.questions || []).some((x) => Boolean(x.explanation)));
     const isGroupPeeked = !isReview && s.mode === "practice" && Boolean(s.peekGroups?.[s.groupIdx]);
     const isBlindListening = (curPart === 1 || curPart === 2) && !isGroupRevealed && !isGroupPeeked;
 
@@ -2454,10 +2458,7 @@ class ChamTestCenter {
               }).join("")}
             </div>
 
-            ${isGroupRevealed ? (() => {
-              const ansOpt = (q.options || []).find((o) => o.choice === q.answer);
-              const ansText = cleanChamOptionText(ansOpt?.text || "", q.answer) || parsedP12.options[q.answer] || "";
-              const ansPreview = ansText.length > 56 ? `${ansText.slice(0, 55)}…` : ansText;
+            ${isGroupRevealed && isDetailExplOpen ? (() => {
               const isSingleFoldableGroup = (curPart === 1 || curPart === 2 || curPart === 5)
                 && (curGroup.questions || []).length === 1;
               const trapInfo = (!q.explanation && !isSingleFoldableGroup)
@@ -2490,23 +2491,13 @@ class ChamTestCenter {
 
               if (!bodyRichHtml && !evidenceBlock) return "";
 
-              const wrongChoicePill = (uAns && uAns !== q.answer)
-                ? `<span class="v21-expl-wrong-pill">Bạn chọn: (${escHtml(uAns)})</span>`
-                : "";
-
               return `
               <div class="cham-explanation-box v21-expl-card">
                 <div class="v21-expl-head">
-                  <div class="v21-expl-head-left">
-                    <span class="v21-expl-title">
-                      ${getIcon("sparkles", 14)}
-                      <span>Giải thích câu ${q.num}</span>
-                    </span>
-                  </div>
-                  <div class="v21-expl-head-right">
-                    ${wrongChoicePill}
-                    <span class="v21-expl-ans-pill">Đáp án đúng: (${escHtml(q.answer)})${ansPreview ? ` · ${escHtml(ansPreview)}` : ""}</span>
-                  </div>
+                  <span class="v21-expl-title">
+                    ${getIcon("sparkles", 14)}
+                    <span>Giải thích câu ${q.num}</span>
+                  </span>
                 </div>
                 <div class="v21-expl-body">
                   ${evidenceBlock}
@@ -2522,15 +2513,27 @@ class ChamTestCenter {
       ${!isReview && s.mode === "practice" ? `
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 13px 16px; border-radius: var(--radius-md); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow-xs);">
           <span style="font-size: 0.88rem; color: var(--text-muted); font-weight: 500;">
-            ${isGroupRevealed ? "Đã mở đáp án, transcript và lời giải chi tiết cho cụm câu này." : "Đang ở chế độ Luyện tập: bạn có thể kiểm tra đáp án ngay câu này hoặc nộp cả bài sau."}
+            ${!isGroupRevealed
+              ? "Đang ở chế độ Luyện tập: bấm kiểm tra để xem Đúng / Sai ngay."
+              : (isDetailExplOpen
+                ? "Đang hiển thị bản dịch và giải thích chi tiết."
+                : "Đã kiểm tra Đúng / Sai. Bấm Giải chi tiết nếu muốn xem bản dịch &amp; lời giải.")}
           </span>
-          <button type="button" class="cham-btn ${isGroupRevealed ? "" : "cham-btn-primary"}" id="cham-instant-check-btn">
-            ${isGroupRevealed ? "Ẩn lời giải" : "✓ Kiểm tra đáp án câu này"}
-          </button>
+          <div style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            ${isGroupRevealed && hasAnyGroupExpl ? `
+              <button type="button" class="cham-btn ${isDetailExplOpen ? "" : "cham-btn-primary"}" id="cham-toggle-detail-expl-btn">
+                ${getIcon("bookOpen", 14)}
+                <span>${isDetailExplOpen ? "Ẩn giải chi tiết" : "Giải chi tiết"}</span>
+              </button>
+            ` : ""}
+            <button type="button" class="cham-btn ${isGroupRevealed ? "" : "cham-btn-primary"}" id="cham-instant-check-btn">
+              ${isGroupRevealed ? "Ẩn đáp án" : "✓ Kiểm tra đáp án"}
+            </button>
+          </div>
         </div>
       ` : ""}
 
-      ${isGroupRevealed && curGroup.explanationHtml && !foldedGroupExplIntoCard ? (() => {
+      ${isGroupRevealed && isDetailExplOpen && curGroup.explanationHtml && !foldedGroupExplIntoCard ? (() => {
         const allUnpackedP6 = curPart === 6 && extractedPerQCount >= (curGroup.questions || []).length && extractedPerQCount > 0;
         const unpackedSome = extractedPerQCount > 0;
         if (allUnpackedP6) {
@@ -3200,6 +3203,7 @@ class ChamTestCenter {
       flags: { ...(att.flags || {}) },
       highlights: {},
       revealedGroups: {},
+      detailExplGroups: {},
       peekGroups: {},
       submittedResult: null
     };
@@ -4769,14 +4773,26 @@ class ChamTestCenter {
         });
       });
 
-      // Instant Check in Practice (preserves audio position/playback)
+      // Instant Check in Practice (shows Right/Wrong only; preserves audio position/playback)
       const toggleInstantReveal = () => {
         const gIdx = this.session.groupIdx;
-        this.session.revealedGroups[gIdx] = !this.session.revealedGroups[gIdx];
+        const nextVal = !this.session.revealedGroups[gIdx];
+        this.session.revealedGroups[gIdx] = nextVal;
+        if (!nextVal && this.session.detailExplGroups) {
+          this.session.detailExplGroups[gIdx] = false;
+        }
         this.rerenderPreservingAudio();
       };
       root.querySelector("#cham-instant-check-btn")?.addEventListener("click", toggleInstantReveal);
       root.querySelector(".cham-reveal-left-btn")?.addEventListener("click", toggleInstantReveal);
+
+      // Detailed Explanation Toggle in Practice (separate button after checking)
+      root.querySelector("#cham-toggle-detail-expl-btn")?.addEventListener("click", () => {
+        if (!this.session.detailExplGroups) this.session.detailExplGroups = {};
+        const gIdx = this.session.groupIdx;
+        this.session.detailExplGroups[gIdx] = !this.session.detailExplGroups[gIdx];
+        this.rerenderPreservingAudio();
+      });
 
       // Flag Question (in-place update keeps Listening audio uninterrupted)
       root.querySelectorAll("[data-flag-q]").forEach((btn) => {
