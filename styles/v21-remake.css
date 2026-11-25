@@ -3013,3 +3013,189 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* --- 15. v26.0 Pro Audio Controls, Quick Vocab Modal, Streak & Recent Attempts --- */
+.cham-audio-seek-btn {
+  padding: 5px 8px !important;
+  font-size: 0.76rem !important;
+  font-weight: 600 !important;
+  font-variant-numeric: tabular-nums;
+  min-width: 38px;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cham-audio-loop-btn {
+  padding: 6px 8px !important;
+  min-width: 34px;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cham-audio-loop-btn.is-active {
+  border-color: var(--accent) !important;
+  background: var(--accent-soft) !important;
+  color: var(--accent) !important;
+}
+
+.cham-q-card.is-kb-focused {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+
+.cham-vocab-modal-card {
+  max-width: 500px;
+  width: min(500px, calc(100vw - 24px));
+}
+
+.cham-vocab-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px 20px 18px;
+}
+
+.cham-vocab-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cham-vocab-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.v21-input {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.45;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.v21-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.cham-vocab-meta-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  color: var(--ok);
+  font-weight: 500;
+}
+
+.v21-streak-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--ok-soft);
+  color: var(--ok);
+  border: 1px solid var(--ok-border);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.v21-recent-card {
+  margin-top: 16px;
+}
+
+.v21-recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.v21-recent-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+}
+
+.v21-recent-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+}
+
+.v21-recent-title {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.v21-recent-meta {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.v21-recent-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.v21-recent-score {
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 58px;
+  text-align: right;
+}
+
+.v21-recent-score.is-good {
+  color: var(--ok);
+}
+
+.v21-recent-score.is-weak {
+  color: var(--warm);
+}
+
+@media (max-width: 640px) {
+  .v21-recent-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .v21-recent-title {
+    white-space: normal;
+  }
+
+  .v21-recent-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .v21-recent-score {
+    text-align: left;
+  }
+
+  .cham-audio-seek-btn {
+    padding: 4px 6px !important;
+    min-width: 32px;
+    font-size: 0.72rem !important;
+  }
+}

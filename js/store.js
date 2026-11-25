@@ -187,14 +187,53 @@ export function notify(event, payload) {
   });
 }
 
+/** Local YYYY-MM-DD date key (prevents UTC midnight offset bugs in UTC+7) */
+export function getLocalDateKey(date = new Date()) {
+  const d = date instanceof Date ? date : new Date(date);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
 /** Update Activity Heatmap Log */
 export function recordActiveTime(seconds = 1) {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = getLocalDateKey();
   if (!state.activityLog[today]) {
     state.activityLog[today] = { seconds: 0, talksCompleted: 0 };
   }
   state.activityLog[today].seconds = (state.activityLog[today].seconds || 0) + seconds;
   saveState();
+}
+
+/** Current consecutive study streak in days (counts today or continuing from yesterday) */
+export function getStudyStreakDays() {
+  const log = state.activityLog || {};
+  const hasActivity = (dateObj) => {
+    const localKey = getLocalDateKey(dateObj);
+    const utcKey = dateObj.toISOString().slice(0, 10);
+    return (log[localKey]?.seconds || 0) > 0 || (log[utcKey]?.seconds || 0) > 0;
+  };
+  const cursor = new Date();
+  cursor.setHours(12, 0, 0, 0);
+  if (!hasActivity(cursor)) {
+    cursor.setDate(cursor.getDate() - 1);
+    if (!hasActivity(cursor)) return 0;
+  }
+  let streak = 0;
+  for (let i = 0; i < 365; i++) {
+    if (!hasActivity(cursor)) break;
+    streak++;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return streak;
+}
+
+/** Minutes studied today (local date) */
+export function getTodayStudyMinutes() {
+  const todayKey = getLocalDateKey();
+  const sec = Number(state.activityLog?.[todayKey]?.seconds || 0);
+  return Math.round(sec / 60);
 }
 
 /** 4-Step Mastery Tracker */
@@ -309,7 +348,7 @@ export function deleteEliminations(testId, qNum) {
 }
 
 export function getTodayKey() {
-  return new Date().toISOString().slice(0, 10);
+  return getLocalDateKey();
 }
 
 export function getTargetScore() {

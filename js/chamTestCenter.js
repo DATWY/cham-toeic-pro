@@ -28,7 +28,9 @@ const CHAM_SVG = {
   books: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`,
   volume: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`,
   help: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
-  highlighter: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11-6 6v3h3l6-6"/><path d="m22 12-4.6 4.6a2.78 2.78 0 0 1-3.9 0L4.8 7.9a2.78 2.78 0 0 1 0-3.9L7 1.8a2.78 2.78 0 0 1 3.9 0L19.6 10.5c.5.5.9 1.2.9 1.9Z"/></svg>`
+  highlighter: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11-6 6v3h3l6-6"/><path d="m22 12-4.6 4.6a2.78 2.78 0 0 1-3.9 0L4.8 7.9a2.78 2.78 0 0 1 0-3.9L7 1.8a2.78 2.78 0 0 1 3.9 0L19.6 10.5c.5.5.9 1.2.9 1.9Z"/></svg>`,
+  vocabAdd: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/><line x1="12" y1="7" x2="12" y2="13"/><line x1="9" y1="10" x2="15" y2="10"/></svg>`,
+  repeat: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg>`
 };
 
 const CHAM_STORAGE_KEY = "neuro_cham_toeic_history_v1";
@@ -314,6 +316,10 @@ class ChamTestCenter {
     this.activeAudioEl = null;
     this.audioVolume = 1.0;
     this.audioSpeed = 1.0;
+    this.audioLoop = false;
+    this.focusedQNum = null;
+    this.vocabSaveDraft = null; // { word, ipa, type, translation, context }
+    this._preloadAudioEl = null;
     this.passageZoom = 100;
     this.splitLeftPct = 52;
     this.mobilePaletteOpen = false;
@@ -1559,6 +1565,8 @@ class ChamTestCenter {
     this.showReviewModal = false;
     this.showSectionGate = false;
     this.volumeMenuOpen = false;
+    this.vocabSaveDraft = null;
+    this.focusedQNum = null;
     this.paletteFilter = "ALL";
 
     this.session = {
@@ -1601,6 +1609,7 @@ class ChamTestCenter {
     this.persistCurrentDraft();
     this.startSessionClock();
     this.render();
+    this.preloadNextGroupAudio();
     this.autoPlayIfExam();
   }
 
@@ -1727,6 +1736,8 @@ class ChamTestCenter {
     this.showReviewModal = false;
     this.showSectionGate = false;
     this.volumeMenuOpen = false;
+    this.vocabSaveDraft = null;
+    this.focusedQNum = null;
     this.paletteFilter = "ALL";
     this.listeningReviewTab = "transcript";
     this.dictationState = {};
@@ -1787,8 +1798,66 @@ class ChamTestCenter {
     this.syncUrlHash(`#/practice/part/${partNum}/run`);
     this.startSessionClock();
     this.render();
+    this.preloadNextGroupAudio();
     if (isTimed) this.autoPlayIfExam();
     return true;
+  }
+
+  startRetakeCustomMistakes(mistakeNums = []) {
+    const prev = this.session;
+    if (!prev || !Array.isArray(prev.groups) || !mistakeNums.length) return;
+    this.stopTimersAndAudio();
+    const qSet = new Set(mistakeNums.map(Number).filter(Boolean));
+    const filteredGroups = [];
+    for (const g of prev.groups) {
+      const qs = (g.questions || []).filter((q) => qSet.has(q.num));
+      if (!qs.length) continue;
+      const rng = qs.length === 1 ? String(qs[0].num) : `${qs[0].num}-${qs[qs.length - 1].num}`;
+      filteredGroups.push({ ...g, range: rng, questions: qs });
+    }
+    if (!filteredGroups.length) return;
+
+    const totalQ = filteredGroups.reduce((acc, g) => acc + (g.questions?.length || 0), 0);
+    const pNum = prev.practicePartNum || prev.parts?.[0] || 5;
+    this.showHelpModal = false;
+    this.showReviewModal = false;
+    this.showSectionGate = false;
+    this.volumeMenuOpen = false;
+    this.vocabSaveDraft = null;
+    this.focusedQNum = null;
+    this.paletteFilter = "ALL";
+    this.listeningReviewTab = "transcript";
+    this.dictationState = {};
+
+    this.session = {
+      ...prev,
+      title: `Ôn lại ${totalQ} câu sai · Part ${pNum}`,
+      mode: "practice",
+      strictIigMode: false,
+      strictListeningOnly: false,
+      filterQNums: Array.from(qSet),
+      groups: filteredGroups,
+      groupIdx: 0,
+      totalQ,
+      totalSecLimit: 0,
+      elapsedSec: 0,
+      examPauseSec: 0,
+      answers: {},
+      eliminations: {},
+      flags: {},
+      highlights: {},
+      revealedGroups: {},
+      detailExplGroups: {},
+      peekGroups: {},
+      submittedResult: null
+    };
+    this.view = "runner";
+    this.mobilePaletteOpen = false;
+    this.syncUrlHash(`#/practice/part/${pNum}/run`);
+    this.startSessionClock();
+    this.render();
+    this.preloadNextGroupAudio();
+    showToast(`Bắt đầu làm lại ${totalQ} câu sai / bỏ qua!`, "info");
   }
 
   getActiveClockDisplay() {
@@ -2035,10 +2104,13 @@ class ChamTestCenter {
       }
     } catch (_) {}
     this.session.groupIdx = clamped;
+    this.focusedQNum = scrollQNum || targetGroup?.questions?.[0]?.num || null;
     this.mobilePaletteOpen = false;
     this.volumeMenuOpen = false;
+    this.vocabSaveDraft = null;
     this.persistCurrentDraft();
     this.render();
+    this.preloadNextGroupAudio();
 
     if (this.view === "runner") {
       this.autoPlayIfExam();
@@ -2054,6 +2126,136 @@ class ChamTestCenter {
         }
       });
     }
+  }
+
+  preloadNextGroupAudio() {
+    try {
+      if (!this.session || !Array.isArray(this.session.groups)) return;
+      const nextGrp = this.session.groups[this.session.groupIdx + 1];
+      const nextAudioUrl = nextGrp?.audio;
+      if (!nextAudioUrl) return;
+      if (!this._preloadAudioEl) {
+        this._preloadAudioEl = new Audio();
+        this._preloadAudioEl.preload = "metadata";
+      }
+      if (this._preloadAudioEl.src !== new URL(nextAudioUrl, window.location.href).href) {
+        this._preloadAudioEl.src = nextAudioUrl;
+      }
+    } catch (_) {}
+  }
+
+  getActiveQuestionInGroup() {
+    const curGroup = this.session?.groups?.[this.session.groupIdx];
+    const qs = curGroup?.questions || [];
+    if (!qs.length) return null;
+    if (this.focusedQNum && qs.some((q) => q.num === this.focusedQNum)) {
+      return qs.find((q) => q.num === this.focusedQNum);
+    }
+    const firstUnanswered = qs.find((q) => !this.session.answers[q.num]);
+    const picked = firstUnanswered || qs[0];
+    this.focusedQNum = picked.num;
+    return picked;
+  }
+
+  setFocusedQuestionInPlace(qNum, root = this.rootEl) {
+    if (!qNum) return;
+    this.focusedQNum = Number(qNum);
+    if (!root) return;
+    root.querySelectorAll(".cham-q-card").forEach((card) => {
+      card.classList.toggle("is-kb-focused", Number(card.dataset.qnum) === this.focusedQNum);
+    });
+  }
+
+  openQuickVocabModal(prefillWord = "", prefillContext = "") {
+    let word = String(prefillWord || "").replace(/\s+/g, " ").trim();
+    let context = String(prefillContext || "").replace(/\s+/g, " ").trim();
+
+    if (!word) {
+      const sel = window.getSelection?.();
+      const rawSel = String(sel?.toString() || "").replace(/\s+/g, " ").trim();
+      if (rawSel && rawSel.length <= 80) {
+        word = rawSel.replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9']+$/g, "").trim();
+        const anchor = sel?.rangeCount ? sel.getRangeAt(0).commonAncestorContainer : null;
+        const parentEl = anchor?.nodeType === 3 ? anchor.parentElement : anchor;
+        const block = parentEl?.closest?.("p, li, .v21-karaoke-line, .cham-q-stem, .cham-opt-text, .cham-transcript-box, .v21-expl-body");
+        if (block && !context) {
+          context = String(block.textContent || "").replace(/\s+/g, " ").trim().slice(0, 220);
+        }
+      }
+    }
+
+    let ipa = "";
+    let type = "";
+    let translation = "";
+    const bank = (typeof window !== "undefined" && Array.isArray(window.TOEIC_VOCAB_BANK)) ? window.TOEIC_VOCAB_BANK : [];
+    if (word && bank.length) {
+      const lower = word.toLowerCase();
+      const hit = bank.find((e) => e?.word?.trim().toLowerCase() === lower)
+        || bank.find((e) => e?.word?.trim().toLowerCase().startsWith(lower) && lower.length >= 4);
+      if (hit) {
+        ipa = hit.ipa || "";
+        type = hit.type || "";
+        translation = hit.translation || "";
+        if (!context && hit.example) context = hit.example;
+      }
+    }
+
+    const curGroup = this.session?.groups?.[this.session.groupIdx];
+    this.vocabSaveDraft = {
+      word,
+      ipa,
+      type,
+      translation,
+      context: context || (curGroup ? `${this.session?.title || "TOEIC"} · Câu ${curGroup.range}` : "")
+    };
+    this.volumeMenuOpen = false;
+    this.rerenderPreservingAudio();
+    requestAnimationFrame(() => {
+      const targetInp = document.getElementById(word ? "cham-vocab-trans-inp" : "cham-vocab-word-inp");
+      targetInp?.focus();
+    });
+  }
+
+  classifyChamSkillType(partNum, q = {}) {
+    const p = Number(partNum) || 0;
+    const tagStr = (q.tags || []).join(" ").toLowerCase();
+    const stemStr = String(q.stem || "").toLowerCase();
+    if (p === 5) return "Grammar & Vocabulary";
+    if (p === 6) {
+      if (tagStr.includes("điền câu") || tagStr.includes("chèn câu") || tagStr.includes("sentence")) {
+        return "Cross-Doc / Chèn câu";
+      }
+      return "Grammar & Vocabulary";
+    }
+    if (tagStr.includes("biểu đồ") || tagStr.includes("bảng biểu") || tagStr.includes("graphic") || stemStr.includes("look at the graphic")) {
+      return "Graphic Integration";
+    }
+    if (tagStr.includes("điền câu") || tagStr.includes("chèn câu") || tagStr.includes("liên kết") || stemStr.includes("in which of the positions")) {
+      return "Cross-Doc / Chèn câu";
+    }
+    if (
+      tagStr.includes("ý chính") ||
+      tagStr.includes("mục đích") ||
+      tagStr.includes("chủ đề") ||
+      stemStr.includes("mainly") ||
+      stemStr.includes("purpose") ||
+      stemStr.includes("who most likely") ||
+      stemStr.includes("where most likely")
+    ) {
+      return "Main Topic";
+    }
+    if (
+      tagStr.includes("suy luận") ||
+      tagStr.includes("ngụ ý") ||
+      tagStr.includes("từ đồng nghĩa") ||
+      stemStr.includes("implied") ||
+      stemStr.includes("suggested") ||
+      stemStr.includes("closest in meaning") ||
+      stemStr.includes("why does the")
+    ) {
+      return "Inference / Meaning";
+    }
+    return "Specific Detail";
   }
 
   extractPlainTranscriptLines(html = "") {
@@ -2276,15 +2478,23 @@ class ChamTestCenter {
       : { stem: "", options: {} };
 
     const curSpeed = Number(this.audioSpeed || 1.0);
+    const isLoopOn = Boolean(!isStrictLockedScrub && (this.audioLoop || (this.shadowingLoop && this.listeningReviewTab === "shadowing")));
     const audioBarHTML = curGroup.audio ? `
       <div class="cham-audio-bar-wrap">
         <div class="cham-audio-bar">
           <button type="button" class="cham-audio-play-btn" id="cham-audio-play-btn" aria-label="Phát hoặc Tạm dừng" title="Phát / Tạm dừng (Phím Space)">
             ${getIcon("play", 16)}
           </button>
-          <input type="range" class="cham-audio-scrubber" id="cham-audio-scrubber" min="0" max="100" step="0.1" value="0" ${isStrictLockedScrub ? "disabled" : ""} aria-label="Thanh tua âm thanh" title="${isStrictLockedScrub ? "Chuẩn thi IIG: không tua lại băng Listening" : "Kéo để tua băng nghe"}" />
-          <span id="cham-audio-time" style="font-family: var(--font-sans); font-variant-numeric: tabular-nums; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); min-width: 92px; text-align: center;">00:00 / 00:00</span>
           ${!isStrictLockedScrub ? `
+            <button type="button" class="cham-btn cham-audio-seek-btn" id="cham-audio-back5-btn" title="Tua lùi 5 giây (Phím J hoặc ←)" aria-label="Tua lùi 5 giây">-5s</button>
+            <button type="button" class="cham-btn cham-audio-seek-btn" id="cham-audio-fwd5-btn" title="Tua tới 5 giây (Phím L hoặc →)" aria-label="Tua tới 5 giây">+5s</button>
+          ` : ""}
+          <input type="range" class="cham-audio-scrubber" id="cham-audio-scrubber" min="0" max="100" step="0.1" value="0" ${isStrictLockedScrub ? "disabled" : ""} aria-label="Thanh tua âm thanh" title="${isStrictLockedScrub ? "Chuẩn thi IIG: không tua lại băng Listening" : "Kéo để tua băng nghe"}" />
+          <span id="cham-audio-time" style="font-family: var(--font-sans); font-variant-numeric: tabular-nums; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); min-width: 88px; text-align: center;">00:00 / 00:00</span>
+          ${!isStrictLockedScrub ? `
+            <button type="button" class="cham-btn cham-audio-loop-btn ${isLoopOn ? "is-active" : ""}" id="cham-audio-loop-btn" aria-pressed="${isLoopOn ? "true" : "false"}" title="Lặp lại đoạn băng nghe này">
+              ${CHAM_SVG.repeat}
+            </button>
             <select id="cham-audio-speed" class="cham-btn" style="padding: 5px 9px; font-size: 0.78rem;" aria-label="Tốc độ phát">
               ${[0.75, 0.9, 1, 1.1, 1.25, 1.5].map((sp) => `<option value="${sp}" ${Math.abs(curSpeed - sp) < 0.02 ? "selected" : ""}>${sp === 1 ? "1.0" : sp}×</option>`).join("")}
             </select>
@@ -2399,8 +2609,9 @@ class ChamTestCenter {
           else statusBadge = `<span class="cham-tag" style="background: var(--bad-soft); color: var(--bad); border-color: var(--bad-border);">✕ Sai (Chọn ${uAns} → Đúng: ${q.answer})</span>`;
         }
 
+        const isKbFocused = !isReview && (curGroup.questions || []).length > 1 && this.focusedQNum === q.num;
         return `
-          <div class="cham-q-card" data-qnum="${q.num}">
+          <div class="cham-q-card ${isKbFocused ? "is-kb-focused" : ""}" data-qnum="${q.num}">
             <div class="cham-q-head">
               <div style="display: flex; align-items: center; gap: 11px; flex: 1; min-width: 0;">
                 <span class="cham-q-num-badge">${q.num}</span>
@@ -2649,16 +2860,56 @@ class ChamTestCenter {
               <p>${escHtml(PART_META[curPart]?.directions || "")}</p>
             </div>
             <div class="cham-help-shortcuts">
-              <div class="cham-shortcut-row"><kbd>A / B / C / D</kbd><span>Hoặc phím <kbd>1–4</kbd>: Chọn nhanh đáp án câu hỏi đang xem</span></div>
+              <div class="cham-shortcut-row"><kbd>A / B / C / D</kbd><span>Hoặc phím <kbd>1–4</kbd>: Chọn nhanh đáp án mọi Part 1–7 (tự nhảy câu tiếp trong nhóm)</span></div>
               <div class="cham-shortcut-row"><kbd>Chuột phải / ⊘</kbd><span>Gạch loại trừ phương án nhiễu (Strike-through elimination)</span></div>
               <div class="cham-shortcut-row"><kbd>Alt + ← / →</kbd><span>Chuyển sang cụm câu trước / câu tiếp theo</span></div>
-              <div class="cham-shortcut-row"><kbd>Space</kbd><span>Phát / Tạm dừng Audio (khi đang bật băng nghe)</span></div>
-              <div class="cham-shortcut-row"><kbd>Tô vàng Part 6–7</kbd><span>Bôi đen cụm từ khóa trong bài đọc rồi bấm nút Tô vàng</span></div>
+              <div class="cham-shortcut-row"><kbd>Space</kbd> / <kbd>J</kbd> <kbd>L</kbd><span>Phát/Tạm dừng &amp; tua lùi/tới 5 giây (Luyện tập &amp; Chữa bài)</span></div>
+              <div class="cham-shortcut-row"><kbd>K</kbd> / <kbd>G</kbd> / <kbd>F</kbd><span>Kiểm tra đáp án / Mở Giải chi tiết / Gắn cờ câu hiện tại</span></div>
+              <div class="cham-shortcut-row"><kbd>V</kbd> / <kbd>+ Lưu từ</kbd><span>Bôi đen từ vựng bất kỳ để lưu nhanh vào Flashcard SM-2</span></div>
             </div>
           </div>
           <div class="cham-modal-foot">
             <button type="button" class="cham-btn cham-btn-primary" id="cham-help-ok-btn">Đã hiểu</button>
           </div>
+        </div>
+      </div>
+    ` : "";
+
+    const vocabModalHTML = this.vocabSaveDraft ? `
+      <div class="cham-modal-backdrop" id="cham-vocab-modal" role="dialog" aria-modal="true" aria-label="Lưu từ vựng vào Flashcard SM-2">
+        <div class="cham-modal-card cham-vocab-modal-card">
+          <div class="cham-modal-head">
+            <h2 style="margin: 0; font-size: 1.08rem;">Lưu từ vựng vào Flashcard SM-2</h2>
+            <button type="button" class="cham-btn" id="cham-close-vocab-modal-btn">Đóng ✕</button>
+          </div>
+          <form id="cham-vocab-save-form" class="cham-vocab-form">
+            <div class="cham-vocab-field">
+              <label for="cham-vocab-word-inp">Từ / Cụm từ tiếng Anh</label>
+              <div style="display: flex; gap: 8px; align-items: center;">
+                <input type="text" id="cham-vocab-word-inp" class="v21-input" value="${escHtml(this.vocabSaveDraft.word || "")}" placeholder="Ví dụ: reschedule, itinerary..." required autocomplete="off" />
+                <button type="button" class="cham-btn" id="cham-vocab-speak-btn" title="Nghe phát âm chuẩn Mỹ" aria-label="Nghe phát âm">${CHAM_SVG.volume}</button>
+              </div>
+              ${this.vocabSaveDraft.ipa || this.vocabSaveDraft.type ? `
+                <div class="cham-vocab-meta-hint">
+                  ${this.vocabSaveDraft.ipa ? `<span style="font-family: var(--font-ipa);">${escHtml(this.vocabSaveDraft.ipa)}</span>` : ""}
+                  ${this.vocabSaveDraft.type ? `<span class="cham-tag">${escHtml(this.vocabSaveDraft.type)}</span>` : ""}
+                  <span>✓ Tự nhận diện từ kho ETS</span>
+                </div>
+              ` : ""}
+            </div>
+            <div class="cham-vocab-field">
+              <label for="cham-vocab-trans-inp">Nghĩa tiếng Việt / Ghi chú nhớ nhanh</label>
+              <input type="text" id="cham-vocab-trans-inp" class="v21-input" value="${escHtml(this.vocabSaveDraft.translation || "")}" placeholder="Ví dụ: sắp xếp lại lịch, lịch trình..." required autocomplete="off" />
+            </div>
+            <div class="cham-vocab-field">
+              <label for="cham-vocab-ctx-inp">Câu ngữ cảnh (tự trích từ bài)</label>
+              <textarea id="cham-vocab-ctx-inp" class="v21-input" rows="2" placeholder="Câu ví dụ trong bài đọc / transcript...">${escHtml(this.vocabSaveDraft.context || "")}</textarea>
+            </div>
+            <div class="cham-modal-foot" style="padding: 10px 0 0; border-top: 1px solid var(--border);">
+              <button type="button" class="cham-btn" id="cham-vocab-cancel-btn">Hủy</button>
+              <button type="submit" class="cham-btn cham-btn-primary" id="cham-vocab-submit-btn">Lưu vào Flashcard SM-2</button>
+            </div>
+          </form>
         </div>
       </div>
     ` : "";
@@ -2784,6 +3035,11 @@ class ChamTestCenter {
                       </button>
                       <button type="button" class="cham-btn" id="cham-hl-clear-btn" style="padding: 4px 9px; font-size: 12px; ${activeHlList.length ? "" : "display: none;"}">Xóa tô</button>
                     ` : ""}
+                    ${(isReview || s.mode === "practice") ? `
+                      <button type="button" class="cham-btn" id="cham-save-vocab-btn" style="padding: 4px 10px; font-size: 12px;" title="Bôi đen từ vựng bất kỳ rồi bấm (hoặc nhấn phím V) để lưu vào Flashcard SM-2">
+                        ${CHAM_SVG.vocabAdd} <span>Lưu từ</span>
+                      </button>
+                    ` : ""}
                     <button type="button" class="cham-btn" id="cham-toggle-directions-btn" style="padding: 4px 10px; font-size: 12px;">
                       ${this.showDirectionsBanner ? "Ẩn Directions" : "Xem Directions"}
                     </button>
@@ -2802,6 +3058,11 @@ class ChamTestCenter {
                       ${CHAM_SVG.highlighter} <span>Tô vàng${activeHlList.length ? ` (${activeHlList.length})` : ""}</span>
                     </button>
                     <button type="button" class="cham-btn" id="cham-hl-clear-btn" style="padding: 4px 9px; font-size: 12px; ${activeHlList.length ? "" : "display: none;"}">Xóa tô</button>
+                  ` : ""}
+                  ${(isReview || s.mode === "practice") ? `
+                    <button type="button" class="cham-btn" id="cham-save-vocab-btn" style="padding: 4px 10px; font-size: 12px;" title="Bôi đen từ vựng bất kỳ rồi bấm (hoặc nhấn phím V) để lưu vào Flashcard SM-2">
+                      ${CHAM_SVG.vocabAdd} <span>Lưu từ</span>
+                    </button>
                   ` : ""}
                   <button type="button" class="cham-btn" id="cham-toggle-directions-btn" style="padding: 4px 10px; font-size: 12px;">
                     ${this.showDirectionsBanner ? "Ẩn Directions" : "Xem Directions Part " + curPart}
@@ -2917,6 +3178,7 @@ class ChamTestCenter {
 
         ${reviewModalHTML}
         ${helpModalHTML}
+        ${vocabModalHTML}
         ${sectionGateHTML}
       </div>
     `;
@@ -3074,13 +3336,19 @@ class ChamTestCenter {
       if (skSet.size > 0) sourceQKeys = Array.from(skSet);
     }
     const partQNums = {};
+    const skillTypeStats = {};
     (s.groups || []).forEach((g) => {
       const pNum = Number(g.part);
       if (!pNum) return;
       (g.questions || []).forEach((q) => {
-        if (s.answers[q.num]) {
+        const uAns = s.answers[q.num];
+        if (uAns) {
           if (!partQNums[pNum]) partQNums[pNum] = [];
           partQNums[pNum].push(q.num);
+          const skType = this.classifyChamSkillType(pNum, q);
+          if (!skillTypeStats[skType]) skillTypeStats[skType] = { c: 0, a: 0 };
+          skillTypeStats[skType].a++;
+          if (uAns === q.answer) skillTypeStats[skType].c++;
         }
       });
     });
@@ -3088,6 +3356,7 @@ class ChamTestCenter {
     recordActiveTime(Math.max(1, Number(resultObj.elapsedSec || 1)));
     this.history.attemptsBySlug[s.slug].push({
       id: resultObj.id,
+      title: s.title,
       timestamp: Date.now(),
       dateStr: resultObj.dateStr,
       mode: resultObj.mode,
@@ -3106,6 +3375,7 @@ class ChamTestCenter {
       isFull990: resultObj.isFull990,
       isFull495: resultObj.isFull495,
       partStats: compactPartStats,
+      ...(Object.keys(skillTypeStats).length ? { skillTypeStats } : {}),
       ...(Object.keys(partQNums).length ? { partQNums } : {}),
       ...(sourceQKeys ? { sourceQKeys } : {}),
       answers: resultObj.answers,
@@ -3292,7 +3562,7 @@ class ChamTestCenter {
                 <span>Chữa bài chi tiết</span>
                 ${getIcon("arrowRight", 15)}
               </button>
-              ${mistakeNums.length > 0 && !s.isCustomPartPractice ? `
+              ${mistakeNums.length > 0 ? `
                 <button type="button" class="cham-btn" id="cham-retake-mistakes-btn">
                   ${getIcon("rotateCcw", 14)}
                   <span>${r.wrong > 0 && r.skipped > 0
@@ -3613,17 +3883,18 @@ class ChamTestCenter {
      ============================================================ */
   handleKeyDown(e) {
     if (!this.isActive) return;
-    if (e.target && (["INPUT", "TEXTAREA", "SELECT"].includes(e.target.tagName) || e.target.isContentEditable)) return;
 
     if (e.key === "Escape") {
-      if (this.showHelpModal || this.showReviewModal || this.showSectionGate || this.volumeMenuOpen || this.mobilePaletteOpen) {
+      if (this.vocabSaveDraft || this.showHelpModal || this.showReviewModal || this.showSectionGate || this.volumeMenuOpen || this.mobilePaletteOpen) {
         e.preventDefault();
+        this.vocabSaveDraft = null;
         this.showHelpModal = false;
         this.showReviewModal = false;
         this.showSectionGate = false;
         this.volumeMenuOpen = false;
         this.mobilePaletteOpen = false;
-        this.render();
+        if (this.view === "runner" || this.view === "review") this.rerenderPreservingAudio();
+        else this.render();
         return;
       }
       const lightbox = document.getElementById("cham-graphic-lightbox");
@@ -3634,8 +3905,11 @@ class ChamTestCenter {
       }
     }
 
+    if (e.target && (["INPUT", "TEXTAREA", "SELECT"].includes(e.target.tagName) || e.target.isContentEditable)) return;
+
     const openDialog = document.querySelector("dialog[open]");
     const hasChamOverlay = Boolean(
+      this.vocabSaveDraft ||
       this.showHelpModal ||
       this.showReviewModal ||
       this.showSectionGate ||
@@ -3655,6 +3929,12 @@ class ChamTestCenter {
     if (openDialog || hasChamOverlay) return;
 
     if (this.view === "runner" || this.view === "review") {
+      const isReview = this.view === "review";
+      const curGroup = this.session?.groups?.[this.session.groupIdx];
+      const curPart = curGroup?.part || 0;
+      const isStrictLockedScrub = Boolean(!isReview && (this.session?.strictIigMode || this.session?.strictListeningOnly) && !this.session?.listeningLocked && curPart <= 4);
+      const lowerKey = String(e.key || "").toLowerCase();
+
       if (e.altKey && e.key === "ArrowRight") {
         e.preventDefault();
         this.stepGroup(1);
@@ -3670,17 +3950,64 @@ class ChamTestCenter {
         }
         if (this.activeAudioEl.paused) this.activeAudioEl.play().catch(() => {});
         else this.activeAudioEl.pause();
-      } else if (this.view === "runner" && !e.ctrlKey && !e.metaKey && !e.altKey) {
-        const curGroup = this.session?.groups?.[this.session.groupIdx];
-        if (curGroup && curGroup.questions?.length === 1) {
+      } else if (!e.ctrlKey && !e.metaKey && !e.altKey && this.activeAudioEl && !isStrictLockedScrub && (lowerKey === "j" || e.key === "ArrowLeft")) {
+        e.preventDefault();
+        this.activeAudioEl.currentTime = Math.max(0, (this.activeAudioEl.currentTime || 0) - 5);
+      } else if (!e.ctrlKey && !e.metaKey && !e.altKey && this.activeAudioEl && !isStrictLockedScrub && (lowerKey === "l" || e.key === "ArrowRight")) {
+        e.preventDefault();
+        const dur = Number.isFinite(this.activeAudioEl.duration) ? this.activeAudioEl.duration : (this.activeAudioEl.currentTime + 5);
+        this.activeAudioEl.currentTime = Math.min(dur, (this.activeAudioEl.currentTime || 0) + 5);
+      } else if (!e.ctrlKey && !e.metaKey && !e.altKey && lowerKey === "v" && (isReview || this.session?.mode === "practice")) {
+        e.preventDefault();
+        this.openQuickVocabModal();
+      } else if (!isReview && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        if (lowerKey === "k" && this.session?.mode === "practice") {
+          const checkBtn = this.rootEl?.querySelector("#cham-instant-check-btn");
+          if (checkBtn) {
+            e.preventDefault();
+            checkBtn.click();
+          }
+          return;
+        }
+        if (lowerKey === "g" && this.session?.mode === "practice") {
+          const detailBtn = this.rootEl?.querySelector("#cham-toggle-detail-expl-btn");
+          if (detailBtn) {
+            e.preventDefault();
+            detailBtn.click();
+          }
+          return;
+        }
+        if (lowerKey === "f") {
+          const activeQ = this.getActiveQuestionInGroup();
+          if (activeQ) {
+            const flagBtn = this.rootEl?.querySelector(`[data-flag-q="${activeQ.num}"]`);
+            if (flagBtn) {
+              e.preventDefault();
+              flagBtn.click();
+            }
+          }
+          return;
+        }
+        if (curGroup && (curGroup.questions || []).length >= 1) {
           const keyMap = { "1": "A", "2": "B", "3": "C", "4": "D", a: "A", b: "B", c: "C", d: "D" };
-          const ch = keyMap[String(e.key || "").toLowerCase()];
+          const ch = keyMap[lowerKey];
           if (ch) {
-            const qNum = curGroup.questions[0].num;
-            const row = this.rootEl?.querySelector(`.cham-opt-row[data-cham-q="${qNum}"][data-cham-choice="${ch}"]`);
+            const activeQ = this.getActiveQuestionInGroup();
+            if (!activeQ) return;
+            const row = this.rootEl?.querySelector(`.cham-opt-row[data-cham-q="${activeQ.num}"][data-cham-choice="${ch}"]`);
             if (row) {
               e.preventDefault();
               row.click();
+              // In multi-question groups (Parts 3, 4, 6, 7), smoothly advance keyboard focus to next question
+              const qs = curGroup.questions || [];
+              if (qs.length > 1) {
+                const curIdx = qs.findIndex((x) => x.num === activeQ.num);
+                const nextUnans = qs.slice(curIdx + 1).find((x) => !this.session.answers[x.num])
+                  || qs[(curIdx + 1) % qs.length];
+                if (nextUnans) {
+                  this.setFocusedQuestionInPlace(nextUnans.num);
+                }
+              }
             }
           }
         }
@@ -4276,13 +4603,17 @@ class ChamTestCenter {
           .filter((x) => x.status !== "ok")
           .map((x) => x.num);
         if (mistakeNums.length) {
-          this.startSession({
-            slug: this.session.slug,
-            mode: "practice",
-            parts: this.session.parts,
-            timeLimitMin: 0,
-            filterQNums: mistakeNums
-          });
+          if (this.session.isCustomPartPractice) {
+            this.startRetakeCustomMistakes(mistakeNums);
+          } else {
+            this.startSession({
+              slug: this.session.slug,
+              mode: "practice",
+              parts: this.session.parts,
+              timeLimitMin: 0,
+              filterQNums: mistakeNums
+            });
+          }
         }
       });
 
@@ -4413,31 +4744,31 @@ class ChamTestCenter {
       root.querySelector("#cham-help-btn")?.addEventListener("click", () => {
         this.showHelpModal = true;
         this.volumeMenuOpen = false;
-        this.render();
+        this.rerenderPreservingAudio();
       });
       root.querySelector("#cham-close-help-modal-btn")?.addEventListener("click", () => {
         this.showHelpModal = false;
-        this.render();
+        this.rerenderPreservingAudio();
       });
       root.querySelector("#cham-help-ok-btn")?.addEventListener("click", () => {
         this.showHelpModal = false;
-        this.render();
+        this.rerenderPreservingAudio();
       });
 
       const openReviewModal = () => {
         this.showReviewModal = true;
         this.volumeMenuOpen = false;
-        this.render();
+        this.rerenderPreservingAudio();
       };
       root.querySelector("#cham-open-review-screen-btn")?.addEventListener("click", openReviewModal);
       root.querySelector("#cham-footer-review-btn")?.addEventListener("click", openReviewModal);
       root.querySelector("#cham-close-review-modal-btn")?.addEventListener("click", () => {
         this.showReviewModal = false;
-        this.render();
+        this.rerenderPreservingAudio();
       });
       root.querySelector("#cham-review-continue-btn")?.addEventListener("click", () => {
         this.showReviewModal = false;
-        this.render();
+        this.rerenderPreservingAudio();
       });
       root.querySelector("#cham-review-submit-now-btn")?.addEventListener("click", () => {
         this.showReviewModal = false;
@@ -4448,6 +4779,65 @@ class ChamTestCenter {
           this.showReviewModal = false;
           this.goToGroup(Number(btn.dataset.reviewJumpGidx), Number(btn.dataset.reviewJumpQnum));
         });
+      });
+
+      // Quick Save Vocabulary to SM-2 Flashcard Modal (preserves active audio)
+      root.querySelector("#cham-save-vocab-btn")?.addEventListener("click", () => {
+        this.openQuickVocabModal();
+      });
+      const closeVocabModal = () => {
+        this.vocabSaveDraft = null;
+        this.rerenderPreservingAudio();
+      };
+      root.querySelector("#cham-close-vocab-modal-btn")?.addEventListener("click", closeVocabModal);
+      root.querySelector("#cham-vocab-cancel-btn")?.addEventListener("click", closeVocabModal);
+      root.querySelector("#cham-vocab-modal")?.addEventListener("click", (e) => {
+        if (e.target === e.currentTarget) closeVocabModal();
+      });
+      root.querySelector("#cham-vocab-speak-btn")?.addEventListener("click", () => {
+        const w = String(root.querySelector("#cham-vocab-word-inp")?.value || "").trim();
+        if (!w) return;
+        if (window.__app?.vocabSRS?.speakTTS) {
+          window.__app.vocabSRS.speakTTS(w, 0.94);
+        } else if ("speechSynthesis" in window && typeof SpeechSynthesisUtterance !== "undefined") {
+          window.speechSynthesis.cancel();
+          const u = new SpeechSynthesisUtterance(w);
+          u.lang = "en-US";
+          u.rate = 0.94;
+          window.speechSynthesis.speak(u);
+        }
+      });
+      root.querySelector("#cham-vocab-save-form")?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const word = String(root.querySelector("#cham-vocab-word-inp")?.value || "").trim();
+        const translation = String(root.querySelector("#cham-vocab-trans-inp")?.value || "").trim();
+        const context = String(root.querySelector("#cham-vocab-ctx-inp")?.value || "").trim();
+        if (!word) {
+          showToast("Hãy nhập từ hoặc cụm từ tiếng Anh cần lưu!", "info");
+          return;
+        }
+        const curGrp = this.session?.groups?.[this.session.groupIdx];
+        const cardData = {
+          word,
+          translation: translation || "Từ vựng TOEIC đã lưu",
+          context: context || `${this.session?.title || "TOEIC"} · Câu ${curGrp?.range || ""}`,
+          ipa: this.vocabSaveDraft?.ipa || "",
+          type: this.vocabSaveDraft?.type || "",
+          talkRange: curGrp ? `Part ${curGrp.part} · Q${curGrp.range}` : "TOEIC",
+          category: curGrp && curGrp.part >= 5 ? "Part 7 Business Reading" : "HR & Office Operations"
+        };
+        try {
+          if (window.__app?.vocabSRS?.addCard) {
+            await window.__app.vocabSRS.addCard(cardData);
+            showToast(`Đã lưu "${word}" vào kho Flashcard SM-2!`, "success");
+          } else {
+            showToast("Không tìm thấy mô-đun Flashcard SM-2.", "bad");
+          }
+        } catch (err) {
+          showToast(`Lỗi lưu từ vựng: ${err.message}`, "bad");
+        }
+        this.vocabSaveDraft = null;
+        this.rerenderPreservingAudio();
       });
 
       // Close volume popover when clicking anywhere outside volume wrap inside runner shell
@@ -4462,25 +4852,25 @@ class ChamTestCenter {
       root.querySelector("#cham-directions-modal")?.addEventListener("click", (e) => {
         if (e.target === e.currentTarget) {
           this.showHelpModal = false;
-          this.render();
+          this.rerenderPreservingAudio();
         }
       });
       root.querySelector("#cham-review-screen-modal")?.addEventListener("click", (e) => {
         if (e.target === e.currentTarget) {
           this.showReviewModal = false;
-          this.render();
+          this.rerenderPreservingAudio();
         }
       });
       root.querySelector("#cham-section-gate-overlay")?.addEventListener("click", (e) => {
         if (e.target === e.currentTarget) {
           this.showSectionGate = false;
-          this.render();
+          this.rerenderPreservingAudio();
         }
       });
 
       root.querySelector("#cham-gate-stay-listening-btn")?.addEventListener("click", () => {
         this.showSectionGate = false;
-        this.render();
+        this.rerenderPreservingAudio();
       });
       root.querySelector("#cham-gate-enter-reading-btn")?.addEventListener("click", () => {
         this.enterReadingSection(false);
@@ -4661,8 +5051,14 @@ class ChamTestCenter {
       });
       root.querySelector("#v21-shadow-loop-toggle")?.addEventListener("change", (e) => {
         this.shadowingLoop = Boolean(e.target.checked);
+        this.audioLoop = this.shadowingLoop;
         const audio = root.querySelector("#cham-active-audio");
         if (audio) audio.loop = this.shadowingLoop;
+        const loopBtn = root.querySelector("#cham-audio-loop-btn");
+        if (loopBtn) {
+          loopBtn.classList.toggle("is-active", this.audioLoop);
+          loopBtn.setAttribute("aria-pressed", String(this.audioLoop));
+        }
       });
       root.querySelector("#v21-shadow-rec-btn")?.addEventListener("click", async () => {
         if (this._shadowRecording && this._shadowRec) {
@@ -4802,6 +5198,14 @@ class ChamTestCenter {
         });
       });
 
+      // Question card click tracks active keyboard focus in multi-question groups
+      root.querySelectorAll(".cham-q-card[data-qnum]").forEach((card) => {
+        card.addEventListener("click", () => {
+          const qn = Number(card.dataset.qnum);
+          if (qn) this.setFocusedQuestionInPlace(qn, root);
+        });
+      });
+
       // Option Selection & Elimination
       if (!isReview) {
         root.querySelectorAll(".cham-opt-row").forEach((row) => {
@@ -4810,10 +5214,11 @@ class ChamTestCenter {
             const qNum = Number(row.dataset.chamQ);
             const choice = row.dataset.chamChoice;
             this.session.answers[qNum] = choice;
+            this.focusedQNum = qNum;
             this.persistCurrentDraft();
 
             if (this.session.revealedGroups[this.session.groupIdx]) {
-              this.render();
+              this.rerenderPreservingAudio();
               return;
             }
 
@@ -4864,14 +5269,40 @@ class ChamTestCenter {
       const audioEl = root.querySelector("#cham-active-audio");
       if (audioEl) {
         this.activeAudioEl = audioEl;
+        const curGrpPart = this.session?.groups?.[this.session.groupIdx]?.part || 0;
+        const strictNoScrub = Boolean(!isReview && (this.session?.strictIigMode || this.session?.strictListeningOnly) && !this.session?.listeningLocked && curGrpPart <= 4);
         audioEl.volume = typeof this.audioVolume === "number" ? this.audioVolume : 1.0;
-        audioEl.playbackRate = Number(this.audioSpeed || 1.0);
-        audioEl.loop = Boolean(this.shadowingLoop && this.listeningReviewTab === "shadowing");
+        audioEl.playbackRate = strictNoScrub ? 1.0 : Number(this.audioSpeed || 1.0);
+        audioEl.loop = Boolean(!strictNoScrub && (this.audioLoop || (this.shadowingLoop && this.listeningReviewTab === "shadowing")));
         const playBtn = root.querySelector("#cham-audio-play-btn");
+        const back5Btn = root.querySelector("#cham-audio-back5-btn");
+        const fwd5Btn = root.querySelector("#cham-audio-fwd5-btn");
+        const loopBtn = root.querySelector("#cham-audio-loop-btn");
         const scrubber = root.querySelector("#cham-audio-scrubber");
         const timeEl = root.querySelector("#cham-audio-time");
         const speedSel = root.querySelector("#cham-audio-speed");
         const fallbackBar = root.querySelector("#cham-audio-fallback-bar");
+
+        back5Btn?.addEventListener("click", () => {
+          if (strictNoScrub) return;
+          audioEl.currentTime = Math.max(0, (audioEl.currentTime || 0) - 5);
+        });
+        fwd5Btn?.addEventListener("click", () => {
+          if (strictNoScrub) return;
+          const dur = Number.isFinite(audioEl.duration) ? audioEl.duration : ((audioEl.currentTime || 0) + 5);
+          audioEl.currentTime = Math.min(dur, (audioEl.currentTime || 0) + 5);
+        });
+        loopBtn?.addEventListener("click", () => {
+          if (strictNoScrub) return;
+          this.audioLoop = !this.audioLoop;
+          this.shadowingLoop = this.audioLoop;
+          audioEl.loop = this.audioLoop;
+          loopBtn.classList.toggle("is-active", this.audioLoop);
+          loopBtn.setAttribute("aria-pressed", String(this.audioLoop));
+          const shLoopCb = root.querySelector("#v21-shadow-loop-toggle");
+          if (shLoopCb) shLoopCb.checked = this.audioLoop;
+          showToast(this.audioLoop ? "Đã bật lặp lại đoạn audio" : "Đã tắt lặp lại audio", "info");
+        });
 
         const syncTimeUI = () => {
           const cur = audioEl.currentTime || 0;

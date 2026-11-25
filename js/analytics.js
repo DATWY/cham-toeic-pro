@@ -5,7 +5,7 @@
  * 30-Day Deliberate Practice Heatmap & Smart Mix Drills Generator
  */
 
-import { state, getAnswer, getConfidence } from "./store.js";
+import { state, getAnswer, getConfidence, getLocalDateKey, getStudyStreakDays } from "./store.js";
 import { getIcon } from "./uiIcons.js";
 import {
   estimateListeningScaledScore,
@@ -276,15 +276,19 @@ export class AnalyticsEngine {
     const projectedCEFR = totalAnswered > 0 ? mapTotalScoreToCEFR(projectedTotal990) : "Chưa đủ dữ liệu định vị CEFR";
     const gapTo900 = Math.max(0, 900 - projectedTotal990);
 
-    // 30-day study time summary
+    // 30-day study time summary (local timezone + UTC fallback)
     let totalStudySeconds30d = 0;
     let activeDays30d = 0;
     const now = new Date();
     for (let i = 0; i < 30; i++) {
       const d = new Date(now);
       d.setDate(now.getDate() - i);
-      const key = d.toISOString().slice(0, 10);
-      const sec = state.activityLog?.[key]?.seconds || 0;
+      const localKey = getLocalDateKey(d);
+      const utcKey = d.toISOString().slice(0, 10);
+      const sec = Math.max(
+        state.activityLog?.[localKey]?.seconds || 0,
+        utcKey !== localKey ? (state.activityLog?.[utcKey]?.seconds || 0) : 0
+      );
       if (sec > 0) {
         totalStudySeconds30d += sec;
         activeDays30d++;
@@ -477,9 +481,13 @@ export class AnalyticsEngine {
     for (let i = days - 1; i >= 0; i--) {
       const d = new Date(now);
       d.setDate(now.getDate() - i);
-      const dateStr = d.toISOString().slice(0, 10);
-      const log = (state.activityLog && state.activityLog[dateStr]) || { seconds: 0 };
-      const mins = Math.round((log.seconds || 0) / 60);
+      const dateStr = getLocalDateKey(d);
+      const utcStr = d.toISOString().slice(0, 10);
+      const sec = Math.max(
+        (state.activityLog?.[dateStr]?.seconds || 0),
+        utcStr !== dateStr ? (state.activityLog?.[utcStr]?.seconds || 0) : 0
+      );
+      const mins = Math.round(sec / 60);
 
       let opacity = 0;
       if (mins > 0 && mins <= 10) opacity = 0.35;
@@ -543,6 +551,10 @@ export class AnalyticsEngine {
       7: { part: 7, label: "Part 7 · Đọc hiểu", section: "Reading", answered: 0, correct: 0 }
     };
 
+    const chamSkillAgg = {};
+    const chronologicalAttempts = [];
+    const catalogTitleMap = new Map(catalogTests.map((t) => [t.slug, t.title]));
+
     try {
       const rawCham = typeof localStorage !== "undefined" ? localStorage.getItem("neuro_cham_toeic_history_v1") : null;
       const parsedCham = rawCham ? JSON.parse(rawCham) : null;
@@ -556,9 +568,17 @@ export class AnalyticsEngine {
         chamTotalAttempts += arr.length;
         arr.forEach((a) => {
           seqIdx++;
+          const ts = getAttemptTs(a, seqIdx);
+          chronologicalAttempts.push({
+            title: a.title || catalogTitleMap.get(slug) || slug,
+            ts,
+            accuracy: Number(a.accuracy || 0),
+            scaledTotal: Number(a.scaledTotal || 0),
+            isFull: Boolean(a.isFull990 || a.isFull200),
+            dateStr: a.dateStr || ""
+          });
           if ((a.isFull990 || a.isFull200) && (a.scaledTotal || 0) > 0) {
             if (a.scaledTotal > chamBest990) chamBest990 = a.scaledTotal;
-            const ts = getAttemptTs(a, seqIdx);
             if (ts >= latestFullTs) {
               latestFullTs = ts;
               latestFullAttempt = a;
@@ -573,9 +593,54 @@ export class AnalyticsEngine {
             chamPartAgg[pNum].answered += Number(ps.correct || 0) + Number(ps.wrong || 0);
             chamPartAgg[pNum].correct += Number(ps.correct || 0);
           });
+          if (a.skillTypeStats && typeof a.skillTypeStats === "object") {
+            Object.entries(a.skillTypeStats).forEach(([sk, vals]) => {
+              if (!chamSkillAgg[sk]) chamSkillAgg[sk] = { correct: 0, answered: 0 };
+              chamSkillAgg[sk].correct += Number(vals?.c || 0);
+              chamSkillAgg[sk].answered += Number(vals?.a || 0);
+            });
+          } else {
+            // Fallback mapping for attempts recorded before v26.0
+            Object.values(a.partStats || {}).forEach((ps) => {
+              const pNum = Number(ps.part);
+              const attAns = Number(ps.correct || 0) + Number(ps.wrong || 0);
+              if (attAns <= 0) return;
+              const fallbackKey = (pNum === 5 || pNum === 6) ? "Grammar & Vocabulary" : "Specific Detail";
+              if (!chamSkillAgg[fallbackKey]) chamSkillAgg[fallbackKey] = { correct: 0, answered: 0 };
+              chamSkillAgg[fallbackKey].correct += Number(ps.correct || 0);
+              chamSkillAgg[fallbackKey].answered += attAns;
+            });
+          }
         });
       });
     } catch (_) {}
+
+    // Merge Studio + ChamTOEIC question-type stats for unified ETS Skill Matrix
+    const mergedByType = {};
+    Object.entries(stats.byType || {}).forEach(([k, v]) => {
+      mergedByType[k] = { ...v };
+    });
+    Object.entries(chamSkillAgg).forEach(([k, v]) => {
+      if (!mergedByType[k]) {
+        mergedByType[k] = {
+          label: k === "Grammar & Vocabulary" ? "Ngữ pháp & Từ loại (Part 5-6)" : k,
+          correct: 0,
+          answered: 0,
+          total: 0
+        };
+      }
+      mergedByType[k].correct = (mergedByType[k].correct || 0) + v.correct;
+      mergedByType[k].answered = (mergedByType[k].answered || 0) + v.answered;
+      mergedByType[k].total = Math.max(mergedByType[k].total || 0, mergedByType[k].answered);
+      mergedByType[k].accuracyPct = mergedByType[k].answered > 0
+        ? Math.round((mergedByType[k].correct / mergedByType[k].answered) * 100)
+        : 0;
+    });
+
+    const trendPoints = chronologicalAttempts
+      .sort((a, b) => a.ts - b.ts)
+      .slice(-10);
+    const streakDays = getStudyStreakDays();
 
     // Merge Studio + ChamTOEIC per-Part accuracy across all 7 Parts
     const studioPartByNum = new Map((stats.orderedParts || []).map((p) => [p.part, p]));
@@ -810,11 +875,39 @@ export class AnalyticsEngine {
           <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px 16px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; gap: 6px;">
               <h4 style="margin: 0; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--accent);">Ma trận theo Dạng câu hỏi</h4>
-              <span style="font-size: 0.72rem; color: var(--text-muted);">ETS Skill Matrix</span>
+              <span style="font-size: 0.72rem; color: var(--text-muted);">ETS Skill Matrix (310 bộ đề)</span>
             </div>
-            ${this.renderSkillMatrixSVG(stats)}
+            ${this.renderSkillMatrixSVG({ ...stats, byType: mergedByType })}
           </div>
         </div>
+
+        ${trendPoints.length > 0 ? `
+          <!-- 2b. Recent Score / Accuracy Progression -->
+          <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; gap: 8px; flex-wrap: wrap;">
+              <h4 style="margin: 0; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--accent);">
+                Tiến bộ qua ${trendPoints.length} lượt làm bài gần nhất
+              </h4>
+              <span style="font-size: 0.74rem; color: var(--text-muted);">Tỷ lệ chính xác (%) theo trình tự thời gian</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(${trendPoints.length}, minmax(36px, 1fr)); gap: 8px; align-items: end; height: 96px; padding-top: 14px;">
+              ${trendPoints.map((pt, i) => {
+                const pct = Math.max(4, Math.min(100, Math.round(pt.accuracy || 0)));
+                const col = pct >= 80 ? "var(--ok)" : (pct >= 65 ? "var(--accent)" : "var(--warm)");
+                const safeTitle = String(pt.title || "").replace(/"/g, "&quot;");
+                return `
+                  <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end;" title="${safeTitle}: ${pct}%${pt.isFull ? ` (${pt.scaledTotal}/990)` : ""}">
+                    <span class="tabular-nums" style="font-size: 0.7rem; font-weight: 600; color: ${col};">${pct}%</span>
+                    <div style="width: 100%; max-width: 28px; height: 58px; border-radius: 6px; background: var(--surface-3); display: flex; align-items: flex-end; overflow: hidden;">
+                      <div style="width: 100%; height: ${pct}%; background: ${col}; border-radius: 6px 6px 0 0;"></div>
+                    </div>
+                    <span class="tabular-nums" style="font-size: 0.68rem; color: var(--text-muted);">#${i + 1}</span>
+                  </div>
+                `;
+              }).join("")}
+            </div>
+          </div>
+        ` : ""}
 
         <!-- 3. Confidence Calibration Analysis (Sure vs Doubt vs Guess) -->
         <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px 16px;">
@@ -868,7 +961,7 @@ export class AnalyticsEngine {
               Nhịp độ Luyện tập 30 Ngày Gần Nhất
             </h4>
             <span style="font-size: 0.76rem; color: var(--text-muted);">
-              Tổng <strong>${stats.totalStudyMinutes30d} phút</strong> · Duy trì <strong>${stats.activeDays30d}/30 ngày</strong>
+              Tổng <strong>${stats.totalStudyMinutes30d} phút</strong> · Duy trì <strong>${stats.activeDays30d}/30 ngày</strong>${streakDays > 0 ? ` · Chuỗi <strong>${streakDays} ngày</strong>` : ""}
             </span>
           </div>
           ${this.renderActivityHeatmapSVG()}

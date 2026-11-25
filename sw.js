@@ -1,4 +1,4 @@
-const CACHE_NAME = "neuro-toeic-pro-v25.4";
+const CACHE_NAME = "neuro-toeic-pro-v26.0";
 const CHAM_OFFLINE_CACHE = "cham-toeic-offline-v1";
 const CHAM_JSON_CACHE = "cham-toeic-json-bank-v7";
 const APP_SHELL = [
@@ -11,7 +11,7 @@ const APP_SHELL = [
   "./styles/layout.css?v=21.0",
   "./styles/components.css?v=19.5",
   "./styles/cham-hub.css?v=21.0",
-  "./styles/v21-remake.css?v=24.0",
+  "./styles/v21-remake.css?v=26.0",
   "./data.js?v=19.0",
   "./js/part7Data.js?v=19.0",
   "./js/part56Data.js?v=19.0",
@@ -20,9 +20,9 @@ const APP_SHELL = [
   "./js/toeicMaterialsData.js?v=19.3",
   "./data/cham_tests/test-au-vao-01.json",
   "./manifest.json",
-  "./js/main.js?v=25.4",
-  "./js/dashboardPractice.js?v=22.1",
-  "./js/chamTestCenter.js?v=25.4",
+  "./js/main.js?v=26.0",
+  "./js/dashboardPractice.js?v=26.0",
+  "./js/chamTestCenter.js?v=26.0",
   "./js/toeicTrapEngine.js?v=25.4",
   "./js/materialsCenter.js?v=22.1",
   "./js/toeicVocabData.js?v=19.0",
@@ -34,7 +34,7 @@ const APP_SHELL = [
   "./js/transcriptSync.js?v=19.4",
   "./js/examSimulator.js",
   "./js/vocabSrs.js?v=19.4",
-  "./js/analytics.js?v=22.1",
+  "./js/analytics.js?v=26.0",
   "./js/uiIcons.js",
   "./js/renderers.js?v=19.4",
   "./assets/icons/icon.svg",

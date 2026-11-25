@@ -11,7 +11,10 @@ import {
   getAnswer,
   getTargetScore,
   setTargetScore,
+  getLocalDateKey,
   getTodayKey,
+  getStudyStreakDays,
+  getTodayStudyMinutes,
   isDailyTaskDone,
   setDailyTaskDone
 } from "./store.js";
@@ -228,6 +231,8 @@ export function computeCombinedLearningSummary(studioTests = []) {
   let latestFullTs = -1;
   let bestFullScore = 0;
   let seqIdx = 0;
+  const recentAttemptsAll = [];
+  const catalogTitleBySlug = new Map((catalog.tests || []).map((t) => [t.slug, t.title]));
 
   Object.entries(history.attemptsBySlug || {}).forEach(([slug, attempts]) => {
     if (!Array.isArray(attempts) || attempts.length === 0) return;
@@ -235,13 +240,32 @@ export function computeCombinedLearningSummary(studioTests = []) {
     if (!isCustomPracticeSlug && (catalogSlugSet.size === 0 || catalogSlugSet.has(slug))) {
       completedTestCount++;
     }
-    attempts.forEach((att) => {
+    attempts.forEach((att, attIdx) => {
       seqIdx++;
       totalAttempts++;
+      const ts = getAttemptTs(att, seqIdx);
       const isFull = Boolean(att.isFull990 || att.isFull200);
+      const isScaled = Boolean(att.isFull990 || att.isFull200 || att.isFull495);
+      recentAttemptsAll.push({
+        slug,
+        attemptIdx: attIdx,
+        isCustom: isCustomPracticeSlug,
+        partNum: isCustomPracticeSlug ? (Number(String(slug).replace("practice-part-", "")) || att.parts?.[0] || 5) : null,
+        title: att.title || catalogTitleBySlug.get(slug) || (isCustomPracticeSlug ? `Luyện tập Part ${att.parts?.[0] || 5}` : slug),
+        dateStr: att.dateStr || "",
+        ts,
+        accuracy: Number(att.accuracy || 0),
+        correct: Number(att.correct || 0),
+        wrong: Number(att.wrong || 0),
+        skipped: Number(att.skipped || 0),
+        total: Number(att.total || 0),
+        scaledTotal: Number(att.scaledTotal || 0),
+        isFull495: Boolean(att.isFull495),
+        isScaled,
+        mode: att.mode || "practice"
+      });
       if (isFull && (att.scaledTotal || 0) > 0) {
         if ((att.scaledTotal || 0) > bestFullScore) bestFullScore = att.scaledTotal;
-        const ts = getAttemptTs(att, seqIdx);
         if (ts >= latestFullTs) {
           latestFullTs = ts;
           latestFullAttempt = { slug, ...att };
@@ -371,15 +395,22 @@ export function computeCombinedLearningSummary(studioTests = []) {
     .sort((a, b) => a.accuracyPct - b.accuracyPct);
   const weakestPart = weakParts[0] || attemptedParts.slice().sort((a, b) => (a.accuracyPct ?? 100) - (b.accuracyPct ?? 100))[0] || null;
 
-  // Count active days in last 30 days
+  // Count active days in last 30 days (local timezone + UTC backward compatibility)
   let activeDays = 0;
   const now = new Date();
   for (let i = 0; i < 30; i++) {
     const d = new Date(now);
     d.setDate(now.getDate() - i);
-    const k = d.toISOString().slice(0, 10);
-    if ((state.activityLog?.[k]?.seconds || 0) > 0) activeDays++;
+    const localK = getLocalDateKey(d);
+    const utcK = d.toISOString().slice(0, 10);
+    if ((state.activityLog?.[localK]?.seconds || 0) > 0 || (state.activityLog?.[utcK]?.seconds || 0) > 0) {
+      activeDays++;
+    }
   }
+
+  const recentAttempts = recentAttemptsAll
+    .sort((a, b) => b.ts - a.ts)
+    .slice(0, 4);
 
   return {
     parts,
@@ -398,7 +429,10 @@ export function computeCombinedLearningSummary(studioTests = []) {
     weakParts,
     weakestPart,
     draft: draft && draft.slug ? draft : null,
-    activeDays
+    activeDays,
+    streakDays: getStudyStreakDays(),
+    todayMinutes: getTodayStudyMinutes(),
+    recentAttempts
   };
 }
 
@@ -504,6 +538,11 @@ export function initDashboardAndPractice(options = {}) {
               ${summary.cefrCode
                 ? `<span class="cefr-badge ${getCefrToneClass(summary.cefrCode)}">${esc(summary.cefrCode)}</span>`
                 : `<span class="v21-neutral-pill">Chưa định vị CEFR</span>`}
+              ${(summary.streakDays > 0 || summary.todayMinutes > 0) ? `
+                <span class="v21-streak-pill tabular-nums" title="Chuỗi ngày học liên tiếp và thời lượng luyện tập hôm nay">
+                  ${summary.streakDays > 0 ? `Chuỗi ${summary.streakDays} ngày` : "Học hôm nay"}${summary.todayMinutes > 0 ? ` · ${summary.todayMinutes} phút` : ""}
+                </span>
+              ` : ""}
             </div>
 
             <div class="v21-goal-score-row">
@@ -654,6 +693,42 @@ export function initDashboardAndPractice(options = {}) {
             <span class="v21-quick-val">6 giáo trình · 8 chuyên đề ngữ pháp</span>
           </button>
         </section>
+
+        ${summary.recentAttempts.length > 0 ? `
+          <!-- 4. Recent Attempts & Quick Review -->
+          <section class="v21-card v21-recent-card" id="v21-recent-attempts" aria-label="Lịch sử làm bài gần đây">
+            <div class="v21-card-head">
+              <div>
+                <h2 class="v21-section-title">Lịch sử làm bài gần đây</h2>
+                <p class="v21-section-sub">Mở lại kết quả hoặc vào thẳng màn hình chữa bài các đề bạn vừa làm.</p>
+              </div>
+              <button type="button" class="v21-text-btn" id="v21-recent-open-analytics">Xem thống kê đầy đủ →</button>
+            </div>
+            <div class="v21-recent-list">
+              ${summary.recentAttempts.map((att) => {
+                const denom = att.isFull495 ? "/495" : "/990";
+                const scoreText = att.isScaled ? `${att.scaledTotal}${denom}` : `${att.accuracy}%`;
+                const isWeakAcc = att.accuracy < 70;
+                return `
+                  <div class="v21-recent-row">
+                    <div class="v21-recent-main">
+                      <strong class="v21-recent-title">${esc(att.title)}</strong>
+                      <span class="v21-recent-meta tabular-nums">
+                        ${att.mode === "exam" ? "Thi chuẩn IIG" : "Luyện tập"} · Đúng ${att.correct}/${att.total}${att.wrong > 0 ? ` · Sai ${att.wrong}` : ""}${att.dateStr ? ` · ${esc(att.dateStr)}` : ""}
+                      </span>
+                    </div>
+                    <div class="v21-recent-right">
+                      <span class="v21-recent-score tabular-nums ${isWeakAcc ? "is-weak" : "is-good"}">${esc(scoreText)}</span>
+                      <button type="button" class="cham-btn v21-row-btn" data-home-open-attempt-slug="${esc(att.slug)}" data-home-open-attempt-idx="${att.attemptIdx}" data-home-open-attempt-custom="${att.isCustom ? "1" : "0"}" data-home-open-attempt-part="${att.partNum || 5}">
+                        ${att.isCustom ? "Luyện lại →" : "Xem & Chữa bài"}
+                      </button>
+                    </div>
+                  </div>
+                `;
+              }).join("")}
+            </div>
+          </section>
+        ` : ""}
       </div>
     `;
 
@@ -703,6 +778,23 @@ export function initDashboardAndPractice(options = {}) {
     homeRoot.querySelector("#v21-quick-tests")?.addEventListener("click", () => options.onOpenTests?.());
     homeRoot.querySelector("#v21-quick-practice")?.addEventListener("click", () => options.onOpenPractice?.());
     homeRoot.querySelector("#v21-quick-materials")?.addEventListener("click", () => options.onOpenMaterials?.("books"));
+    homeRoot.querySelector("#v21-recent-open-analytics")?.addEventListener("click", () => options.onOpenAnalytics?.());
+
+    homeRoot.querySelectorAll("[data-home-open-attempt-slug]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const slug = btn.dataset.homeOpenAttemptSlug;
+        const idx = Number(btn.dataset.homeOpenAttemptIdx) || 0;
+        const isCustom = btn.dataset.homeOpenAttemptCustom === "1";
+        const pNum = Number(btn.dataset.homeOpenAttemptPart) || 5;
+        if (isCustom) {
+          options.onOpenPracticePart?.(pNum);
+        } else if (options.onOpenHistoricalAttempt) {
+          options.onOpenHistoricalAttempt(slug, idx);
+        } else {
+          options.onOpenTestDetail?.(slug);
+        }
+      });
+    });
 
     homeRoot.querySelectorAll("[data-home-part]").forEach((btn) => {
       btn.addEventListener("click", () => {

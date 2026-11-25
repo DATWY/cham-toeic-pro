@@ -5,15 +5,16 @@
 
 import { icons, getIcon } from "./uiIcons.js";
 import { state, saveState, subscribe, updateMastery, recordActiveTime, getMasteryScore, getAnswer, setAnswer, deleteAnswer, getConfidence, setConfidence, deleteConfidence, getEliminations, toggleElimination, deleteEliminations } from "./store.js";
+import { getAllFlashcards, saveFlashcard } from "./idb.js";
 import { AudioEngine, ambientSoundscape } from "./audioEngine.js?v=19.5";
 import { VoiceStudio } from "./voiceStudio.js";
 import { TranscriptSync } from "./transcriptSync.js?v=19.4";
 import { ExamSimulator } from "./examSimulator.js";
 import { VocabSRS } from "./vocabSrs.js?v=19.4";
-import { AnalyticsEngine } from "./analytics.js?v=22.1";
-import { initChamTestCenter } from "./chamTestCenter.js?v=25.4";
+import { AnalyticsEngine } from "./analytics.js?v=26.0";
+import { initChamTestCenter } from "./chamTestCenter.js?v=26.0";
 import { initMaterialsCenter } from "./materialsCenter.js?v=22.1";
-import { initDashboardAndPractice } from "./dashboardPractice.js?v=22.1";
+import { initDashboardAndPractice } from "./dashboardPractice.js?v=26.0";
 import { showToast, clearToasts, openGraphicLightbox, renderMasteryRing, applyHighlights, renderEvidenceAnalysis, renderVocabAndNotes, renderPart7Passages, renderReadingInspectorScript } from "./renderers.js?v=19.4";
 
 const CORE_TESTS = window.TOEIC_TESTS || [];
@@ -1031,6 +1032,12 @@ document.addEventListener("DOMContentLoaded", () => {
     onOpenPracticePart: (partNum) => openPracticeHub(partNum),
     onOpenMaterials: (tab = "books") => openMaterialsHub(tab),
     onOpenVocab: () => openFlashcardModal(),
+    onOpenAnalytics: () => openAnalyticsModal("overview"),
+    onOpenHistoricalAttempt: async (slug, attemptIdx) => {
+      if (!slug || !chamCenter) return;
+      openChamHub(slug);
+      await chamCenter.openHistoricalAttempt(slug, attemptIdx);
+    },
     onOpenStudioPack: (packId) => openStudioDetail(packId),
     onResumeDraft: (draft) => {
       if (!draft?.slug) return;
@@ -1585,20 +1592,23 @@ function initServiceWorker() {
     });
   });
 
-  document.getElementById("export-state-btn")?.addEventListener("click", () => {
+  document.getElementById("export-state-btn")?.addEventListener("click", async () => {
     let chamHistory = null;
     let chamDraft = null;
     let materialsGrammarQuiz = null;
+    let flashcards = [];
     try { chamHistory = JSON.parse(localStorage.getItem("neuro_cham_toeic_history_v1") || "null"); } catch {}
     try { chamDraft = JSON.parse(localStorage.getItem("neuro_cham_toeic_draft_v1") || "null"); } catch {}
     try { materialsGrammarQuiz = JSON.parse(localStorage.getItem("neuro_toeic_materials_quiz_v1") || "null"); } catch {}
+    try { flashcards = await getAllFlashcards(); } catch { flashcards = []; }
     const payload = {
       ...state,
-      __backupVersion: 2,
+      __backupVersion: 3,
       __exportedAt: new Date().toISOString(),
       __chamHistory: chamHistory,
       __chamDraft: chamDraft,
-      __materialsGrammarQuiz: materialsGrammarQuiz
+      __materialsGrammarQuiz: materialsGrammarQuiz,
+      __flashcards: Array.isArray(flashcards) ? flashcards : []
     };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const a = document.createElement("a");
@@ -1607,14 +1617,14 @@ function initServiceWorker() {
     a.click();
     URL.revokeObjectURL(a.href);
     const totalBankForToast = (window.CHAM_TOEIC_CATALOG?.tests?.length || 302) + TESTS.length;
-    showToast(`Đã xuất tệp sao lưu toàn bộ tiến độ (${totalBankForToast} đề + mục tiêu)!`, "success");
+    showToast(`Đã xuất tệp sao lưu toàn bộ tiến độ (${totalBankForToast} đề + ${flashcards.length} thẻ SM-2)!`, "success");
   });
 
   document.getElementById("import-state-input")?.addEventListener("change", (e) => {
     const file = e.target.files && e.target.files[0];
     if (!file) return;
     const reader = new FileReader();
-    reader.onload = () => {
+    reader.onload = async () => {
       try {
         const parsed = JSON.parse(reader.result);
         if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
@@ -1626,6 +1636,7 @@ function initServiceWorker() {
           __chamHistory,
           __chamDraft,
           __materialsGrammarQuiz,
+          __flashcards,
           ...studioState
         } = parsed;
         if (!["light", "dark"].includes(studioState.theme)) {
@@ -1644,13 +1655,25 @@ function initServiceWorker() {
           try { localStorage.setItem("neuro_toeic_materials_quiz_v1", JSON.stringify(__materialsGrammarQuiz)); } catch {}
           materialsCenter?.reloadQuizAnswers?.();
         }
+        if (Array.isArray(__flashcards) && __flashcards.length > 0) {
+          for (const card of __flashcards) {
+            if (card && card.word) {
+              await saveFlashcard(card);
+              if (vocabSRS?.addCard) {
+                const idx = vocabSRS.cards.findIndex((c) => c.word?.trim().toLowerCase() === card.word.trim().toLowerCase());
+                if (idx >= 0) vocabSRS.cards[idx] = { ...vocabSRS.cards[idx], ...card };
+                else vocabSRS.cards.unshift(card);
+              }
+            }
+          }
+        }
         document.documentElement.setAttribute("data-theme", state.theme || "light");
         applyReaderSettings();
         syncAvatarMenuState();
         renderAll();
         if (studioLobbyState.view === "home") dashboardPractice?.renderHome();
         else if (studioLobbyState.view === "practice") dashboardPractice?.renderPractice();
-        showToast("Khôi phục toàn bộ tiến độ thành công!", "success");
+        showToast("Khôi phục toàn bộ tiến độ & Flashcard SM-2 thành công!", "success");
       } catch {
         showToast("Tệp JSON không hợp lệ.", "bad");
       }
