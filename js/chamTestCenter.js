@@ -17,7 +17,7 @@ import { getIcon } from "./uiIcons.js";
 import { state, saveState, recordActiveTime } from "./store.js";
 import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js";
 import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=19.4";
-import { analyzeQuestionTrapsAndTips, summarizeAttemptTraps, decodeRichEntities } from "./toeicTrapEngine.js?v=24.0";
+import { analyzeQuestionTrapsAndTips, summarizeAttemptTraps, decodeRichEntities, stripPart12SpeakerTags } from "./toeicTrapEngine.js?v=25.2";
 
 const CHAM_SVG = {
   users: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
@@ -34,7 +34,7 @@ const CHAM_SVG = {
 const CHAM_STORAGE_KEY = "neuro_cham_toeic_history_v1";
 const CHAM_DRAFT_KEY = "neuro_cham_toeic_draft_v1";
 const CHAM_MEDIA_CACHE = "cham-toeic-offline-v1";
-const CHAM_JSON_CACHE = "cham-toeic-json-bank-v4";
+const CHAM_JSON_CACHE = "cham-toeic-json-bank-v7";
 
 const PART_META = {
   1: { label: "PART 1", short: "Part 1", desc: "Mô tả tranh", defaultCount: 6, directions: "Directions: For each question, you will see a picture and hear four short statements. Select the one statement that best describes what you see in the picture." },
@@ -118,17 +118,19 @@ function parsePart12Transcript(transcriptHtml = "") {
     .join("\n");
   if (!fullText) return { stem: "", options: {} };
 
-  const pattern = /(?:(?<=^|\n|\s)[✓✔✅ \t]*\(([A-D])\)|(?<=^|\n)[✓✔✅ \t]*([A-D])[.)])[ \t]*/g;
+  const pattern = /(?:(?<=^|\n|\s)[✓✔✅ \t]*\(\s*([A-D])\s*\)|(?<=^|\n)[✓✔✅ \t]*([A-D])[.)])[ \t]*/g;
   const matches = Array.from(fullText.matchAll(pattern));
   if (!matches.length) return { stem: "", options: {} };
 
-  const stem = fullText
-    .slice(0, matches[0].index)
-    .replace(/^(?:Transcript|Tapescript)\s*[:.-]?\s*/i, "")
-    .replace(/^(?:Questions?\s*(?:\d+)?\s*[:.)]|Numbers?\s*\d+[:.)]?|\d+[.)])\s*/i, "")
-    .replace(/\s*[✓✔✅]+\s*$/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
+  const stem = stripPart12SpeakerTags(
+    fullText
+      .slice(0, matches[0].index)
+      .replace(/^(?:Transcript|Tapescript)\s*[:.-]?\s*/i, "")
+      .replace(/^(?:Questions?\s*(?:\d+)?\s*[:.)]|Numbers?\s*\d+[:.)]?|\d+[.)])\s*/i, "")
+      .replace(/\s*[✓✔✅]+\s*$/g, "")
+      .replace(/\s+/g, " ")
+      .trim()
+  );
 
   const options = {};
   for (let i = 0; i < matches.length; i++) {
@@ -166,6 +168,7 @@ function sanitizeChamRichHtml(rawHtml = "") {
   if (!rawHtml) return "";
   const cleaned = String(rawHtml)
     .replace(/<span[^>]*class=(["'])?ql-cursor\1[^>]*>[\s\S]*?<\/span>/gi, "")
+    .replace(/^(<p[^>]*>)?\s*style\s*=\s*(?:'[^']*'|"[^"]*")\s*>\s*/i, (_, p) => p || "<p>")
     .replace(/\ufeff/g, "");
   return cleaned.replace(/\sstyle=(["'])(.*?)\1/gi, (_full, _q, cssText) => {
     if (/background(?:-color)?\s*:\s*rgb\(\s*0\s*,\s*138\s*,\s*0\s*\)/i.test(cssText)) {

@@ -1,5 +1,5 @@
 /**
- * TOEIC Deep Solution, Per-Option Elimination & Trap Coaching Engine (v24.0)
+ * TOEIC Deep Solution, Per-Option Elimination & Trap Coaching Engine (v25.1)
  * Zero-dependency ES module analyzing Parts 1–7 questions, stems, options,
  * bilingual explanations, speaker-attributed transcripts, morpho-syntactic grammar,
  * and user selections to produce concrete, non-generic explanations & trap coaching.
@@ -135,12 +135,31 @@ const CONJ_PREP_META = {
   "now that": { kind: "Liên từ (+ S + V)", meaning: "bởi vì giờ đây" },
   "provided that": { kind: "Liên từ (+ S + V)", meaning: "miễn là" },
   "so that": { kind: "Liên từ (+ S + V)", meaning: "để mà" },
+  "even if": { kind: "Liên từ (+ S + V)", meaning: "ngay cả khi" },
+  "in case": { kind: "Liên từ (+ S + V)", meaning: "phòng khi" },
+  "as long as": { kind: "Liên từ (+ S + V)", meaning: "miễn là" },
+  "as soon as": { kind: "Liên từ (+ S + V)", meaning: "ngay khi" },
+  whenever: { kind: "Liên từ (+ S + V)", meaning: "bất cứ khi nào" },
+  wherever: { kind: "Liên từ (+ S + V)", meaning: "bất cứ nơi nào" },
   despite: { kind: "Giới từ (+ Cụm N / V-ing)", meaning: "mặc dù" },
   "in spite of": { kind: "Giới từ (+ Cụm N / V-ing)", meaning: "mặc dù" },
   during: { kind: "Giới từ (+ Cụm N)", meaning: "trong suốt (không + S+V)" },
   "because of": { kind: "Giới từ (+ Cụm N / V-ing)", meaning: "bởi vì" },
   "due to": { kind: "Giới từ (+ Cụm N)", meaning: "do / bởi vì" },
   "owing to": { kind: "Giới từ (+ Cụm N)", meaning: "nhờ vào / do" },
+  "in addition to": { kind: "Giới từ (+ Cụm N / V-ing)", meaning: "ngoài ra / bên cạnh" },
+  "prior to": { kind: "Giới từ (+ Cụm N / V-ing)", meaning: "trước khi" },
+  "as well as": { kind: "Giới từ / Liên kết", meaning: "cũng như là" },
+  "instead of": { kind: "Giới từ (+ Cụm N / V-ing)", meaning: "thay vì" },
+  "rather than": { kind: "Liên từ / Giới từ", meaning: "hơn là / thay vì" },
+  "regardless of": { kind: "Giới từ (+ Cụm N)", meaning: "bất kể" },
+  "according to": { kind: "Giới từ (+ Cụm N)", meaning: "theo như" },
+  "contrary to": { kind: "Giới từ (+ Cụm N)", meaning: "trái ngược với" },
+  "apart from": { kind: "Giới từ (+ Cụm N / V-ing)", meaning: "ngoại trừ / bên cạnh" },
+  "aside from": { kind: "Giới từ (+ Cụm N / V-ing)", meaning: "ngoài ra / bên cạnh" },
+  "thanks to": { kind: "Giới từ (+ Cụm N)", meaning: "nhờ có" },
+  "in order to": { kind: "Cụm chỉ mục đích (+ V0)", meaning: "để mà" },
+  "so as to": { kind: "Cụm chỉ mục đích (+ V0)", meaning: "để mà" },
   except: { kind: "Giới từ (+ Cụm N)", meaning: "ngoại trừ" },
   "except for": { kind: "Giới từ (+ Cụm N)", meaning: "ngoại trừ" },
   regarding: { kind: "Giới từ (+ Cụm N)", meaning: "liên quan đến" },
@@ -155,13 +174,121 @@ const CONJ_PREP_META = {
   across: { kind: "Giới từ (+ Cụm N)", meaning: "khắp / băng qua" },
   besides: { kind: "Giới từ / Trạng từ nối", meaning: "ngoài ra / bên cạnh" },
   however: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "tuy nhiên" },
+  nonetheless: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "tuy nhiên / dù vậy" },
+  nevertheless: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "tuy nhiên / dù vậy" },
   moreover: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "hơn nữa" },
+  furthermore: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "hơn nữa" },
   therefore: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "do đó" },
+  consequently: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "kết quả là" },
   otherwise: { kind: "Trạng từ nối", meaning: "nếu không thì" },
   meanwhile: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "trong lúc đó" },
   instead: { kind: "Trạng từ nối", meaning: "thay vào đó" },
   likewise: { kind: "Trạng từ nối", meaning: "tương tự như vậy" },
-  additionally: { kind: "Trạng từ nối", meaning: "thêm vào đó" }
+  additionally: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "thêm vào đó" },
+  yet: { kind: "Liên từ / Trạng từ", meaning: "tuy nhiên / chưa" },
+  so: { kind: "Liên từ kết quả", meaning: "vì vậy / do đó" },
+  as: { kind: "Liên từ / Giới từ", meaning: "khi / bởi vì / với tư cách là" },
+  and: { kind: "Liên từ đẳng lập", meaning: "và (nối 2 thành phần đồng đẳng)" },
+  or: { kind: "Liên từ đẳng lập", meaning: "hoặc (nối lựa chọn)" },
+  but: { kind: "Liên từ đẳng lập", meaning: "nhưng (tương phản)" },
+  nor: { kind: "Liên từ đẳng lập", meaning: "cũng không (đi với neither)" },
+  for: { kind: "Giới từ / Liên từ", meaning: "cho / trong khoảng / bởi vì" },
+  "but also": { kind: "Cặp liên từ (not only... but also)", meaning: "mà còn" },
+  "not only": { kind: "Cặp liên từ (not only... but also)", meaning: "không những" },
+  either: { kind: "Cặp liên từ (either... or)", meaning: "hoặc... hoặc" },
+  neither: { kind: "Cặp liên từ (neither... nor)", meaning: "không... cũng không" },
+  both: { kind: "Cặp liên từ (both... and)", meaning: "cả hai" },
+  "as if": { kind: "Liên từ (+ S + V)", meaning: "như thể là" },
+  "as though": { kind: "Liên từ (+ S + V)", meaning: "như thể là" },
+  "such as": { kind: "Giới từ liệt kê (+ Cụm N)", meaning: "chẳng hạn như" },
+  unlike: { kind: "Giới từ (+ Cụm N)", meaning: "không giống như" },
+  "in light of": { kind: "Giới từ (+ Cụm N)", meaning: "xét đến / vì lý do" },
+  "for instance": { kind: "Trạng từ nối (có dấu phẩy)", meaning: "ví dụ như" },
+  "for example": { kind: "Trạng từ nối (có dấu phẩy)", meaning: "ví dụ như" },
+  "in addition": { kind: "Trạng từ nối (có dấu phẩy)", meaning: "ngoài ra / thêm vào đó" },
+  "as a result": { kind: "Trạng từ nối (có dấu phẩy)", meaning: "kết quả là" },
+  "on the other hand": { kind: "Trạng từ nối (có dấu phẩy)", meaning: "mặt khác" },
+  "in contrast": { kind: "Trạng từ nối (có dấu phẩy)", meaning: "trái lại" },
+  "by contrast": { kind: "Trạng từ nối (có dấu phẩy)", meaning: "trái lại" },
+  "in fact": { kind: "Trạng từ nối", meaning: "trên thực tế" },
+  indeed: { kind: "Trạng từ nhấn mạnh", meaning: "thực sự / quả thật" },
+  still: { kind: "Trạng từ nối / Trạng từ", meaning: "tuy nhiên / vẫn còn" },
+  then: { kind: "Trạng từ trình tự", meaning: "sau đó / khi đó" },
+  even: { kind: "Trạng từ nhấn mạnh", meaning: "thậm chí" },
+  than: { kind: "Liên từ so sánh", meaning: "hơn là (đi với so sánh hơn)" },
+  accordingly: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "theo đó / do vậy" },
+  thus: { kind: "Trạng từ nối", meaning: "do đó / vì vậy" },
+  hence: { kind: "Trạng từ nối", meaning: "vì thế / do đó" },
+  subsequently: { kind: "Trạng từ trình tự", meaning: "sau đó / tiếp theo" },
+  similarly: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "tương tự như vậy" },
+  conversely: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "ngược lại" },
+  "next to": { kind: "Giới từ vị trí (+ Cụm N)", meaning: "bên cạnh" },
+  "up to": { kind: "Giới từ (+ Số / Cụm N)", meaning: "lên đến / tùy thuộc vào" },
+  upon: { kind: "Giới từ (+ Cụm N / V-ing)", meaning: "ngay khi" },
+  over: { kind: "Giới từ (+ Cụm N / Số)", meaning: "hơn / trong suốt / trên" },
+  with: { kind: "Giới từ (+ Cụm N)", meaning: "với / bằng" },
+  above: { kind: "Giới từ (+ Cụm N)", meaning: "phía trên / vượt quá" },
+  near: { kind: "Giới từ (+ Cụm N)", meaning: "gần" },
+  given: { kind: "Giới từ (+ Cụm N)", meaning: "xét đến / dựa trên" },
+  provided: { kind: "Liên từ điều kiện (+ S + V)", meaning: "miễn là" },
+  assuming: { kind: "Liên từ điều kiện (+ S + V)", meaning: "giả sử rằng" },
+  "even so": { kind: "Trạng từ nối (có dấu phẩy)", meaning: "dù vậy" },
+  "of course": { kind: "Trạng từ nối", meaning: "tất nhiên" },
+  specifically: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "cụ thể là" },
+  "in particular": { kind: "Trạng từ nối", meaning: "đặc biệt là" },
+  ultimately: { kind: "Trạng từ nối", meaning: "cuối cùng thì" },
+  eventually: { kind: "Trạng từ thời gian", meaning: "cuối cùng" },
+  soon: { kind: "Trạng từ thời gian", meaning: "sớm / chẳng bao lâu" },
+  now: { kind: "Trạng từ thời gian", meaning: "bây giờ / hiện tại" },
+  alternatively: { kind: "Trạng từ nối (có dấu phẩy)", meaning: "hoặc là / thay vào đó" },
+  including: { kind: "Giới từ (+ Cụm N)", meaning: "bao gồm cả" },
+  excluding: { kind: "Giới từ (+ Cụm N)", meaning: "không bao gồm / ngoại trừ" },
+  that: { kind: "Liên từ / Đại từ quan hệ", meaning: "rằng / mà" },
+  notwithstanding: { kind: "Giới từ (+ Cụm N)", meaning: "mặc dù / bất chấp" }
+};
+
+const PREP_CORE_META = {
+  in: { meaning: "trong / vào (tháng, năm, không gian kín, lĩnh vực)" },
+  on: { meaning: "trên bề mặt / vào (ngày, thứ, on a ... basis, on time)" },
+  at: { meaning: "tại (giờ chính xác, địa điểm cụ thể, mức giá/tốc độ)" },
+  by: { meaning: "trước hạn (by Friday) / bởi (bị động) / bằng phương tiện (by phone)" },
+  for: { meaning: "cho / dành cho / trong khoảng thời gian (for two weeks)" },
+  to: { meaning: "đến / tới / dành cho (cụm cố định: prior to, respond to)" },
+  with: { meaning: "với / cùng với (familiar with, comply with, assist with)" },
+  from: { meaning: "từ (nguồn gốc, khoảng thời gian from... to...)" },
+  of: { meaning: "của / về (sở hữu, tỷ lệ, aware of, consist of)" },
+  into: { meaning: "vào bên trong / chuyển đổi thành (look into, divide into)" },
+  onto: { meaning: "lên trên bề mặt" },
+  over: { meaning: "trên / hơn (con số) / trong suốt (over the past year)" },
+  under: { meaning: "dưới / đang trong quá trình (under construction / review)" },
+  through: { meaning: "xuyên qua / thông qua / cho đến hết (Monday through Friday)" },
+  around: { meaning: "xung quanh / khoảng chừng" },
+  near: { meaning: "gần" },
+  behind: { meaning: "phía sau / chậm trễ (behind schedule)" },
+  beside: { meaning: "bên cạnh (vị trí)" },
+  above: { meaning: "phía trên / cao hơn" },
+  below: { meaning: "phía dưới / thấp hơn" },
+  toward: { meaning: "hướng về phía / hướng tới" },
+  towards: { meaning: "hướng về phía / hướng tới" },
+  against: { meaning: "chống lại / dựa vào / đối chiếu với" },
+  upon: { meaning: "ngay khi (upon arrival / request)" },
+  about: { meaning: "về / khoảng chừng" },
+  off: { meaning: "ra khỏi / giảm giá (20% off)" },
+  out: { meaning: "ra ngoài" },
+  up: { meaning: "lên trên" },
+  down: { meaning: "xuống dưới" },
+  until: { meaning: "cho đến khi (hành động kéo dài liên tục tới mốc)" },
+  since: { meaning: "kể từ khi (thường đi với thì HTHT)" },
+  before: { meaning: "trước khi" },
+  after: { meaning: "sau khi" },
+  during: { meaning: "trong suốt (+ Danh từ sự kiện/khoảng thời gian)" },
+  within: { meaning: "trong vòng (+ khoảng thời gian/phạm vi)" },
+  without: { meaning: "mà không có" },
+  between: { meaning: "giữa (2 đối tượng)" },
+  among: { meaning: "giữa (từ 3 đối tượng trở lên)" },
+  across: { meaning: "khắp / băng qua" },
+  beyond: { meaning: "vượt quá / ngoài phạm vi" },
+  throughout: { meaning: "xuyên suốt (thời gian / không gian)" }
 };
 
 export function decodeRichEntities(str = "") {
@@ -182,11 +309,22 @@ function stripHtmlToLines(html = "") {
   if (!html) return [];
   const raw = String(html)
     .replace(/<(?:br\s*\/?|\/p|\/div|\/li|\/tr|\/h[1-6])\s*>/gi, "\n")
+    // Strip inline formatting tags WITHOUT inserting spaces (preserves (<span...>A) -> (A))
+    .replace(/<\/?(?:span|strong|b|i|em|u|sub|sup|a|mark|font|small|s|del|ins)\b[^>]*>/gi, "")
     .replace(/<[^>]+>/g, " ");
   return decodeRichEntities(raw)
     .split(/\r?\n/)
     .map((line) => line.replace(/\s+/g, " ").trim())
     .filter(Boolean);
+}
+
+export function stripPart12SpeakerTags(text = "") {
+  if (!text) return "";
+  return String(text)
+    .replace(/^(?:M-(?:Cn|Au|Am|Br)|W-(?:Cn|Au|Am|Br)|Man|Woman|Nam|Nữ|Speaker\s*\d*)\s*[:._-]?\s+/i, "")
+    .replace(/\s+(?:M-(?:Cn|Au|Am|Br)|W-(?:Cn|Au|Am|Br)|Man|Woman|Nam|Nữ|Speaker\s*\d*)\s*[:._-]?$/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function stripHtmlFlat(html = "") {
@@ -291,17 +429,19 @@ function parsePart12ViTranslation(explanationHtml = "") {
   const fullText = stripHtmlToLines(explanationHtml).join("\n");
   if (!fullText) return { viStem: "", viOptions: {}, isPureTranslation: false };
 
-  const pattern = /(?:(?<=^|\n|\s)[✓✔✅ \t]*\(([A-D])\)|(?<=^|\n)[✓✔✅ \t]*([A-D])[.)])[ \t]*/g;
+  const pattern = /(?:(?<=^|\n|\s)[✓✔✅ \t]*\(\s*([A-D])\s*\)|(?<=^|\n)[✓✔✅ \t]*([A-D])[.)])[ \t]*/g;
   const matches = Array.from(fullText.matchAll(pattern));
   if (matches.length < 3) return { viStem: "", viOptions: {}, isPureTranslation: false };
 
-  const viStem = fullText
-    .slice(0, matches[0].index)
-    .replace(/^(?:Bản dịch và giải thích|Bản dịch|Dịch nghĩa|Câu hỏi)\s*[:.-]?\s*/i, "")
-    .replace(/^(?:Câu hỏi)\s*[:.-]?\s*/i, "")
-    .replace(/\s*[✓✔✅]+\s*$/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
+  const viStem = stripPart12SpeakerTags(
+    fullText
+      .slice(0, matches[0].index)
+      .replace(/^(?:Bản dịch và giải thích|Bản dịch|Dịch nghĩa|Câu hỏi)\s*[:.-]?\s*/i, "")
+      .replace(/^(?:Câu hỏi)\s*[:.-]?\s*/i, "")
+      .replace(/\s*[✓✔✅]+\s*$/g, "")
+      .replace(/\s+/g, " ")
+      .trim()
+  );
 
   const viOptions = {};
   for (let i = 0; i < matches.length; i++) {
@@ -328,95 +468,231 @@ function parsePart12ViTranslation(explanationHtml = "") {
 }
 
 /**
- * Extracts per-question HTML block `[qNum] ...` from Part 6 / Part 7 / Part 3 / Part 4 group.explanationHtml
- * so ETS tests display each question's exact translation & reasoning right inside that question's own card!
+ * Extracts per-question HTML block (`[qNum]`, `(qNum)`, `qNum.`, `CÂU qNum:`,
+ * `qNum.<strong>Dịch đáp án:</strong>`, or relative `1:`..`5:` after `Phân tích:`/`giải thích:`)
+ * from Part 6 / Part 7 / Part 3 / Part 4 group.explanationHtml so every ETS test
+ * displays each question's exact translation & reasoning inside that question's own card!
+ * Carefully rejects inline passage/dialogue evidence tags (e.g. `[178] Đây là năm thứ hai...`)
+ * so those stay in `evidenceVi` instead of leaking adjacent passage paragraphs.
  */
 export function extractPerQuestionGroupHtml(explanationHtml = "", qNum = 0, allQNums = []) {
   if (!explanationHtml || !qNum) return { qHtml: "", hasSplit: false };
   const html = String(explanationHtml);
   const nums = (allQNums || []).map(Number).filter(Boolean).sort((a, b) => a - b);
   const qIdx = nums.indexOf(Number(qNum));
-  const nextNums = qIdx >= 0 ? nums.slice(qIdx + 1) : [Number(qNum) + 1];
+  const otherNums = nums.filter((n) => n !== Number(qNum));
+  const relIdx = qIdx >= 0 ? qIdx + 1 : 0;
+  const otherRelNums = nums.map((_, i) => i + 1).filter((r) => r !== relIdx);
 
-  // Match <p>[131]</p> or <p>[147] Điều gì...</p> or <p><strong>[131]</strong>...
-  const startRe = new RegExp(`<(?:p|div|h[3-6]|li)[^>]*>(?:\\s*<(?:strong|b|span)[^>]*>)*\\s*\\[${qNum}\\](?!\\s*[a-z])`, "i");
-  const startMatch = html.match(startRe);
-  if (!startMatch) return { qHtml: "", hasSplit: false };
+  // Match block headers across all ETS/Cham formats:
+  //   [131], (131), 147., CÂU 196:, Câu 196:, 139 <strong>Dịch đáp án:</strong>, 131.<strong>Dịch đáp án:</strong>, 134:<strong>Dịch đáp án:</strong>
+  // Reject range headers like (38)-(40) or inline double-tags like (33),(34)
+  const numTagPattern = (n) =>
+    `<(?:p|div|h[3-6]|li)[^>]*>(?:(?:\\s|&nbsp;)*<(?:strong|b|span)[^>]*>)*(?:\\s|&nbsp;)*(?:\\[${n}\\](?!\\s*[-–—,0-9])|\\(${n}\\)(?!\\s*[-–—,0-9])|(?:CÂU|Câu)\\s+${n}\\s*[:.\\-]|${n}\\.\\s+(?=[A-ZÀ-Ỹa-zà-ỹĐđ"(])|${n}\\s*[.:]?\\s*(?:<\\/(?:strong|b|span)>\\s*)*(?:<(?:strong|b|span)[^>]*>\\s*)*(?:Dịch\\s+đáp\\s+án|Giải\\s+thích))`;
 
-  const startPos = startMatch.index;
-  // Make sure this isn't an inline highlighted sentence inside a dialogue/passage (e.g. "Nam: ... [32] ...")
-  const beforeSnippet = html.slice(Math.max(0, startPos - 6), startPos + 45);
-  if (/^(?:<p[^>]*>)?\s*(?:Nam|Nữ|Người|M-|W-)/i.test(beforeSnippet)) {
-    return { qHtml: "", hasSplit: false };
-  }
+  // Relative 1: .. 5: headers inside `Phân tích:` / `giải thích:` sections (ETS 2024 Tests 6–7)
+  const relTagPattern = (r) =>
+    `<(?:p|div|h[3-6]|li)[^>]*>(?:(?:\\s|&nbsp;)*<(?:strong|b|span)[^>]*>)*(?:\\s|&nbsp;)*${r}\\s*:(?:\\s*<\\/(?:strong|b|span)>)*(?:\\s*<(?:strong|b|span)[^>]*>)*\\s*(?:Dịch\\s+đáp\\s+án|Giải\\s+thích|\\(A\\)|[A-ZÀ-ỸĐ])`;
 
-  const tail = html.slice(startPos + startMatch[0].length);
-  let endOffset = tail.length;
+  const explSecMatch = html.match(/<(?:p|div|h[3-6])[^>]*>(?:(?:\s|&nbsp;)*<(?:strong|b|span)[^>]*>)*(?:\s|&nbsp;)*(?:Phân\s*tích|Giải\s*thích)\s*:?(?:\s*<\/(?:strong|b|span)>)*\s*<\/(?:p|div|h[3-6])>/i);
+  const explSecStart = explSecMatch ? explSecMatch.index + explSecMatch[0].length : -1;
 
-  // End at the next question block [nextNum]
-  for (const nn of nextNums) {
-    const nextRe = new RegExp(`<(?:p|div|h[3-6]|li)[^>]*>(?:\\s*<(?:strong|b|span)[^>]*>)*\\s*\\[${nn}\\]`, "i");
-    const nm = tail.match(nextRe);
-    if (nm && nm.index < endOffset) {
-      endOffset = nm.index;
+  let candidates = Array.from(html.matchAll(new RegExp(numTagPattern(qNum), "gi"))).map((m) => ({
+    match: m,
+    isRelative: false
+  }));
+
+  if (relIdx > 0 && explSecStart >= 0) {
+    const subHtml = html.slice(explSecStart);
+    const relHits = Array.from(subHtml.matchAll(new RegExp(relTagPattern(relIdx), "gi")));
+    for (const m of relHits) {
+      m.index = explSecStart + m.index;
+      candidates.push({ match: m, isRelative: true });
     }
   }
 
-  // On the last question in Part 7, stop before full Vietnamese passage translation if present
+  if (!candidates.length) return { qHtml: "", hasSplit: false };
+
   const passageMarkers = [
-    /<p[^>]*>\s*<strong>\s*(?:PHIẾU|EMAIL|THƯ|THÔNG BÁO|BÀI BÁO|QUẢNG CÁO|TIN NHẮN|LỊCH TRÌNH|HÓA ĐƠN|DỊCH ĐOẠN|BẢN DỊCH|ĐOẠN VĂN|TẠM DỊCH)/i,
-    /<p[^>]*>\s*(?:Bản dịch bài đọc|Dịch bài đọc|Dịch đoạn văn)\s*[:.-]?/i,
+    /<p[^>]*>(?:\s|&nbsp;)*(?:<(?:strong|b)[^>]*>(?:\s|&nbsp;)*)?(?:PHIẾU|EMAIL|THƯ|THÔNG BÁO|BÀI BÁO|QUẢNG CÁO|TIN NHẮN|LỊCH TRÌNH|HÓA ĐƠN|DỊCH ĐOẠN|DỊCH NGHĨA|BẢN DỊCH|ĐOẠN VĂN|TẠM DỊCH)\b/i,
+    /<p[^>]*>(?:\s|&nbsp;)*(?:<(?:strong|b)[^>]*>(?:\s|&nbsp;)*)?(?:Bản dịch bài đọc|Dịch bài đọc|Dịch đoạn văn|Dịch đoạn hội thoại|Dịch nghĩa|Dịch bài)\s*[:.-]?/i,
     /<hr\s*\/?>/i
   ];
-  for (const pm of passageMarkers) {
-    const m = tail.match(pm);
-    if (m && m.index > 30 && m.index < endOffset) {
-      endOffset = m.index;
-    }
-  }
 
-  // Also check if after </ul> there is a brand-new bold ALL-CAPS document title (Part 7 ETS 2026 pattern: </ul><p><strong>PHIẾU GIẢM GIÁ</strong>...)
-  const ulEnd = tail.indexOf("</ul>");
-  if (ulEnd > 0 && ulEnd + 5 < endOffset) {
-    const afterUl = tail.slice(ulEnd + 5);
-    const docStart = afterUl.match(/^\s*<p[^>]*>\s*<strong>[^<]{4,90}<\/strong>/i);
-    if (docStart) {
-      // Check it's not an explanation note like "Giải thích:" / "Đáp án:" / "Lưu ý:"
-      const titleTxt = stripHtmlFlat(docStart[0]);
-      if (!/^(?:Giải thích|Đáp án|Lưu ý|Từ vựng|Dịch|Phân tích|Chọn)/i.test(titleTxt)) {
-        endOffset = ulEnd + 5;
+  const explContinueRe = /^(?:Giải thích|Đáp án|Lưu ý|Từ vựng|Phân tích|Chọn|Chỗ trống|Khoảng trống|Ta dựa|Ta có|Ta sẽ|Câu trước|Câu sau|Trước |Sau |Phía |Vì |Do |Theo |Cấu trúc|Ở đây|Dựa vào|Trong câu|Cần (?:một|điền|chọn|đại từ|tính từ|danh từ|động từ|trạng từ|liên từ|giới từ)|=>|→)/i;
+
+  // Iterate candidates (in Part 3/4 ETS 2026, [32] can appear first inline, then later as a real question block!)
+  for (let cIdx = candidates.length - 1; cIdx >= 0; cIdx--) {
+    const { match: startMatch, isRelative } = candidates[cIdx];
+    const startPos = startMatch.index;
+    const beforeSnippet = html.slice(Math.max(0, startPos - 6), startPos + 55);
+    if (/^(?:<p[^>]*>)?\s*(?:<strong>)?\s*(?:Nam|Nữ|Người|M-|W-)/i.test(beforeSnippet)) {
+      continue;
+    }
+
+    const tail = html.slice(startPos + startMatch[0].length);
+    let endOffset = tail.length;
+
+    // End at ANY other question block in the same group (handles out-of-order ETS 2026 blocks like [168],[171]...[169])
+    for (const on of otherNums) {
+      const nextRe = new RegExp(numTagPattern(on), "i");
+      const nm = tail.match(nextRe);
+      if (nm && nm.index < endOffset) {
+        endOffset = nm.index;
       }
     }
+    if (isRelative || explSecStart >= 0) {
+      for (const or of otherRelNums) {
+        const relNextRe = new RegExp(relTagPattern(or), "i");
+        const nm = tail.match(relNextRe);
+        if (nm && nm.index < endOffset) {
+          endOffset = nm.index;
+        }
+      }
+    }
+
+    // Stop before full Vietnamese passage translation markers
+    for (const pm of passageMarkers) {
+      const m = tail.match(pm);
+      if (m && m.index > 30 && m.index < endOffset) {
+        endOffset = m.index;
+      }
+    }
+
+    // Stop immediately after `<p>=> Đáp án (X)</p>` when followed by a passage paragraph (ETS 2024 Part 6)
+    const afterDapAn = tail.match(/<p[^>]*>[^<]*(?:=&gt;|=>|→)\s*Đáp\s*án\s*\(?[A-D]\)?[^<]*<\/p>/i);
+    if (afterDapAn && afterDapAn.index + afterDapAn[0].length < endOffset) {
+      const rest = tail.slice(afterDapAn.index + afterDapAn[0].length);
+      const restPlain = stripHtmlFlat(rest.slice(0, 140));
+      if (restPlain && !explContinueRe.test(restPlain)) {
+        endOffset = afterDapAn.index + afterDapAn[0].length;
+      }
+    }
+
+    // Stop after `</ul>` containing option list if followed by a passage/document paragraph
+    const ulEnd = tail.indexOf("</ul>");
+    if (ulEnd > 0 && ulEnd + 5 < endOffset) {
+      const ulSlicePlain = stripHtmlFlat(tail.slice(0, ulEnd + 5));
+      if (/(?:\(D\)|D[.)])\s/.test(ulSlicePlain)) {
+        const afterUl = tail.slice(ulEnd + 5);
+        const restPlain = stripHtmlFlat(afterUl.slice(0, 140));
+        if (restPlain && !explContinueRe.test(restPlain)) {
+          endOffset = ulEnd + 5;
+        }
+      }
+    }
+
+    // Also stop after `<p>...(D) ...</p><p><br></p>` when followed by a passage paragraph or inline evidence (ETS 2026 Part 7)
+    const afterDOption = tail.match(/<p[^>]*>[^<]*(?:\(D\)|D[.)])[\s\S]{1,260}?<\/p>\s*(?:<p[^>]*>\s*<br\s*\/?>\s*<\/p>\s*)+/i);
+    if (afterDOption && afterDOption.index + afterDOption[0].length < endOffset) {
+      const rest = tail.slice(afterDOption.index + afterDOption[0].length);
+      const restPlain = stripHtmlFlat(rest.slice(0, 140));
+      if (restPlain && !explContinueRe.test(restPlain)) {
+        endOffset = afterDOption.index + afterDOption[0].length;
+      }
+    }
+
+    const chunk = html.slice(startPos, startPos + startMatch[0].length + endOffset).trim();
+    const plain = stripHtmlFlat(chunk);
+    if (plain.length < 18) continue;
+
+    // Safeguard: distinguish real Per-Question Explanation/Translation Block from Inline Passage-Evidence Tag!
+    const hasOptionChoices = /(?:^|[\s✓✔✅])(?:\(A\)|A[.)])\s/.test(plain) && /(?:^|[\s✓✔✅])(?:\(B\)|B[.)])\s/.test(plain);
+    const hasReasoningCues = /(?:Chỗ trống|Giải thích|Dịch đáp án|Phân tích|Đáp án|Từ vựng|Điền câu|Đây là câu|Cấu trúc|chọn đáp án|→\s*[A-D]\b|=>\s*Đáp án|Cần\s+(?:điền|một|đại từ|tính từ|danh từ|động từ|trạng từ|liên từ|giới từ))/i.test(plain);
+    const hasBulletOptions = /<li\b|\n\s*[-•]\s*[a-zA-Z]/.test(chunk);
+    const startsWithDialogue = /^\s*(?:\[\d+\]|\(\d+\))?\s*(?:M-(?:Cn|Au|Am|Br)|W-(?:Cn|Au|Am|Br)|Nam|Nữ|Man|Woman)\s*[:.]?/i.test(plain);
+    const looksLikeQuestionBlock = !startsWithDialogue && (hasOptionChoices || hasReasoningCues || hasBulletOptions);
+    if (!looksLikeQuestionBlock) continue;
+
+    // Safeguard: reject if chunk leaks inline `[otherNum]` or `(otherNum)` tags
+    const leaksOtherInline = otherNums.some((on) => new RegExp(`\\[${on}\\]|\\(${on}\\)`).test(plain));
+    if (leaksOtherInline) continue;
+
+    return { qHtml: chunk, hasSplit: true };
   }
 
-  const chunk = html.slice(startPos, startPos + startMatch[0].length + endOffset).trim();
-  const plain = stripHtmlFlat(chunk);
-  if (plain.length < 18) return { qHtml: "", hasSplit: false };
-  return { qHtml: chunk, hasSplit: true };
+  return { qHtml: "", hasSplit: false };
 }
 
 /**
- * Extracts inline `[qNum]` or `(qNum)` highlighted quote from HTML (works for both EN transcript & VI translation!).
+ * Extracts inline `[qNum]`, `(qNum)`, or `Câu qNum →` highlighted quote from HTML
+ * (works for both EN transcript & VI translation!).
  */
 function extractBracketEvidence(html = "", qNum = 0) {
   if (!html || !qNum) return "";
   const raw = decodeRichEntities(String(html));
-  // Prefer [qNum] or (qNum) inside dialogue/passage text
+  // 1. Check ETS 2023 Test 3/4/8 summary format: "(Câu 68 → A: Tại công ty vận chuyển...)"
+  const cauRe = new RegExp(`(?:Câu\\s*${qNum}\\s*(?:→|=>|:)[^)<\\n]{6,200})`, "i");
+  const cauMatch = stripHtmlFlat(raw).match(cauRe);
+  if (cauMatch) {
+    // Also try to grab the preceding sentence before (Câu N → ...)
+    const idx = stripHtmlFlat(raw).indexOf(cauMatch[0]);
+    const before = stripHtmlFlat(raw).slice(Math.max(0, idx - 180), idx).replace(/^[^.!?]*[.!?]\s*/, "").replace(/\(\s*$/, "").trim();
+    const combined = before.length >= 16 ? `${before} (${cauMatch[0].trim()})` : cauMatch[0].trim();
+    return truncateQuote(combined, 235);
+  }
+
+  // 2. Prefer [qNum] or (qNum) inside dialogue/passage text
   const patterns = [
-    new RegExp(`\\[${qNum}\\]([\\s\\S]{8,280}?)(?=\\[\\d{2,3}\\]|<\\/strong>|<\\/p>|<br|$)`, "i"),
-    new RegExp(`\\(${qNum}\\)([\\s\\S]{8,280}?)(?=\\(\\d{2,3}\\)|<\\/strong>|<\\/p>|<br|$)`, "i")
+    new RegExp(`\\[${qNum}\\]([\\s\\S]{8,280}?)(?=\\[\\d{2,3}\\]|<\\/strong>|<\\/p>|<br|$)`, "gi"),
+    new RegExp(`\\(${qNum}\\)([\\s\\S]{8,280}?)(?=\\(\\d{2,3}\\)|<\\/strong>|<\\/p>|<br|$)`, "gi")
   ];
   for (const re of patterns) {
-    const m = raw.match(re);
-    if (m && m[1]) {
+    const matches = Array.from(raw.matchAll(re));
+    for (const m of matches) {
+      if (!m[1]) continue;
       const clean = stripHtmlFlat(m[1])
-        .replace(/^(?:M-Cn|M-Au|W-Am|W-Br|Man|Woman|Nam|Nữ|Speaker\s*\d*)\s*:\s*/i, "")
+        .replace(/^(?:M-Cn|M-Au|M-Am|M-Br|W-Am|W-Br|W-Cn|W-Au|Man|Woman|Nam|Nữ|Speaker\s*\d*)\s*[:.]?\s*/i, "")
+        .replace(/^[•\-–—\s]+/, "")
         .trim();
-      // Skip if this match is actually the translated question stem itself (ends with ?)
-      if (clean.length >= 12 && !/^(?:Người đàn ông|Người phụ nữ|Điều gì|Tại sao|Ai |Ở đâu|Khi nào)/.test(clean)) {
+      // Skip if this match is actually the translated question stem itself (ends with ? or starts with question words)
+      if (clean.length >= 12 && !/^(?:Người đàn ông|Người phụ nữ|Điều gì|Tại sao|Ai |Ở đâu|Khi nào|Ông |Bà |Cô |Mục đích|Có thể kết luận|Gợi ý gì|Thông tin nào|Vào lúc|Lúc \d)/.test(clean) && !/\?\s*\(A\)/.test(clean)) {
         return truncateQuote(clean, 225);
       }
     }
+  }
+  return "";
+}
+
+/**
+ * Fallback for ETS 2024 Tests 6–10 & ETS 2023 Test 10 where group.explanationHtml highlights
+ * answer evidence with green spans (`var(--ok)` / `rgb(0, 138, 0)`) or `<strong>` without `[qNum]` tags.
+ * Strictly requires 1-to-1 segment count with group questions and rejects tagged/option/header spans
+ * so it NEVER assigns an adjacent question's evidence or Q&A option text as passage evidence.
+ */
+function extractHighlightedEvidence(explanationHtml = "", qIndexInGroup = 0, totalQsInGroup = 1) {
+  if (!explanationHtml || totalQsInGroup <= 0) return "";
+  const html = String(explanationHtml);
+  // If HTML already has explicit [N] / (N) question tags or `Phân tích:` / `Dịch đáp án:` sections,
+  // never guess evidence positionally from <strong> tags (would leak adjacent question tags or options).
+  if (/(?:\[\d{2,3}\]|\(\d{2,3}\)|Dịch\s+đáp\s+án\s*:|Phân\s*tích\s*:)/i.test(html)) return "";
+
+  const isBadSeg = (txt = "") =>
+    txt.length < 14 ||
+    /^(?:M-|W-|Nam|Nữ|Giải thích|Bản dịch|Dịch|Phân tích|PHIẾU|EMAIL|THƯ|THÔNG BÁO|BÀI BÁO|QUẢNG CÁO|CÂU\s*\d|Gửi|Từ|Đến|Ngày|Chủ đề|Kính gửi|Thân gửi|Chào\s|Câu hỏi|Đoạn|Bài|Từ vựng|\([A-D]\)|[A-D][.)]\s|\[\d+\]|\(\d+\))/i.test(txt) ||
+    /\?\s*$/.test(txt) ||
+    /(?:\(A\)|\(B\)|\(C\)|\(D\))/.test(txt);
+
+  const segs = [];
+  // Prefer green highlight spans first
+  const greenRe = /<span[^>]*style="[^"]*(?:--ok|rgb\(\s*0\s*,\s*138\s*,\s*0\s*\))[^"]*"[^>]*>([\s\S]{10,260}?)<\/span>/gi;
+  for (const m of html.matchAll(greenRe)) {
+    const txt = stripHtmlFlat(m[1]).trim();
+    if (!isBadSeg(txt)) segs.push(txt);
+  }
+
+  // Fallback to <strong> segments (strictly filtered)
+  if (!segs.length) {
+    const boldRe = /<strong>([\s\S]{14,260}?)<\/strong>/gi;
+    for (const m of html.matchAll(boldRe)) {
+      const txt = stripHtmlFlat(m[1]).trim();
+      if (txt.length >= 18 && !isBadSeg(txt)) segs.push(txt);
+    }
+  }
+
+  // Require exact 1-to-1 alignment with questions in group so we NEVER misassign evidence across questions
+  if (segs.length === totalQsInGroup && qIndexInGroup >= 0 && qIndexInGroup < segs.length) {
+    return truncateQuote(segs[qIndexInGroup], 225);
   }
   return "";
 }
@@ -516,35 +792,56 @@ function analyzePart1({ q, group, optMap }) {
    PART 2 ANALYZER (2,314 Qs)
    ============================================================ */
 function classifyPart2Stem(stem = "") {
-  const s = stem.trim();
+  // Normalize curly apostrophes & strip conversational politeness prefixes (Excuse me, / Ms. Kim, / Jim, / Actually,)
+  const normalized = String(stem || "")
+    .replace(/[’‘`]/g, "'")
+    .trim();
+  let s = normalized
+    .replace(/^(?:excuse me|sorry|actually|hey|hi|hello|well|by the way|pardon me|listen|say|oh|um|uh|(?:mr|ms|mrs|dr)\.?\s+[a-z'-]+|[A-Z][a-z]{1,12})\s*,\s+/i, "")
+    .trim();
+  // If 2-sentence prompt ends with a question (e.g. "You look exhausted. Why don't you take a break?"), classify the question sentence
+  // Never split on title/abbreviation periods (Mr., Ms., Mrs., Dr., St., Prof., etc.)
+  if (/\?\s*$/.test(s) && /(?<!\b(?:Mr|Ms|Mrs|Dr|St|Jr|Sr|Inc|Co|Ltd|Prof|No|Dept|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec))[.!]\s+[A-Z]/.test(s)) {
+    const lastSent = s.split(/(?<!\b(?:Mr|Ms|Mrs|Dr|St|Jr|Sr|Inc|Co|Ltd|Prof|No|Dept|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec))[.!]\s+/).pop().trim();
+    if (lastSent.length >= 6) s = lastSent;
+  }
+  // If conditional lead-in precedes a direct question (e.g. "If the office is closed, can I send...?"), inspect the main clause
+  if (/^if\b[^,]+,\s+/i.test(s) && /\?\s*$/.test(s)) {
+    s = s.replace(/^if\b[^,]+,\s+/i, "").trim();
+  }
   const low = s.toLowerCase();
-  if (/^who\b/i.test(low)) return { code: "WHO", label: "Part 2 · Câu hỏi WHO (Người / Bộ phận)", isWh: true };
-  if (/^where\b/i.test(low)) return { code: "WHERE", label: "Part 2 · Câu hỏi WHERE (Địa điểm)", isWh: true };
-  if (/^(when|what time)\b/i.test(low)) return { code: "WHEN", label: "Part 2 · Câu hỏi WHEN (Thời gian)", isWh: true };
+  // Suggestions ("Why don't we/you/I...?", "How about...?", "What about...?", "Shall we/I...?", "Would you like to...?")
+  if (/^(?:why don't (?:we|you|i)|how about|what about|shall (?:we|i)|would you like to)\b/i.test(low)) {
+    return { code: "SUGGESTION", label: "Part 2 · Câu Đề nghị (Suggestion)", isWh: false, isSuggestion: true };
+  }
+  if (/^(?:who|(?:to|for|with|from|by)\s+whom)\b/i.test(low)) return { code: "WHO", label: "Part 2 · Câu hỏi WHO (Người / Bộ phận)", isWh: true };
+  if (/^(?:where|(?:from|to|in|at)\s+where)\b/i.test(low)) return { code: "WHERE", label: "Part 2 · Câu hỏi WHERE (Địa điểm)", isWh: true };
+  if (/^(when|what time|at what time|by when|until when)\b/i.test(low)) return { code: "WHEN", label: "Part 2 · Câu hỏi WHEN (Thời gian)", isWh: true };
   if (/^why\b/i.test(low)) return { code: "WHY", label: "Part 2 · Câu hỏi WHY (Lý do)", isWh: true };
   if (/^how often\b/i.test(low)) return { code: "HOW_OFTEN", label: "Part 2 · Câu hỏi HOW OFTEN (Tần suất)", isWh: true };
   if (/^how long\b/i.test(low)) return { code: "HOW_LONG", label: "Part 2 · Câu hỏi HOW LONG (Thời lượng)", isWh: true };
   if (/^how (?:many|much|far)\b/i.test(low)) return { code: "HOW_NUM", label: "Part 2 · Hỏi Số lượng / Giá / Khoảng cách", isWh: true };
   if (/^how\b/i.test(low)) return { code: "HOW", label: "Part 2 · Câu hỏi HOW (Cách thức / Đánh giá)", isWh: true };
-  if (/^(what|which|whose)\b/i.test(low)) return { code: "WHAT", label: "Part 2 · Câu hỏi WHAT / WHICH", isWh: true };
+  if (/^(?:what|which|whose|(?:in|on|at|to|for|by|with|from)\s+(?:what|which))\b/i.test(low)) return { code: "WHAT", label: "Part 2 · Câu hỏi WHAT / WHICH", isWh: true };
   if (/\bor\b.+\?$/i.test(low) && !/^(who|where|when|why|how|what|which)\b/i.test(low)) {
     return { code: "CHOICE", label: "Part 2 · Câu hỏi Lựa chọn (A or B)", isWh: false, isChoice: true };
   }
-  if (/,\s*(?:isn't|aren't|wasn't|weren't|don't|doesn't|didn't|haven't|hasn't|won't|can't|couldn't|shouldn't|wouldn't|is|are|do|does|did|will|can)\s+(?:it|he|she|they|we|you|there)\??$/i.test(low)) {
+  if (/,\s*(?:(?:isn't|aren't|wasn't|weren't|don't|doesn't|didn't|haven't|hasn't|hadn't|won't|can't|couldn't|shouldn't|wouldn't|is|are|was|were|do|does|did|has|have|had|will|would|should|can|could|must)\s+(?:it|he|she|they|we|you|i|there)|right|don't you think(?:\s+so)?|wouldn't you say|isn't that right)\??$/i.test(low)) {
     return { code: "TAG", label: "Part 2 · Câu hỏi Đuôi (Tag Question)", isWh: false, isYesNo: true };
   }
-  if (/^(?:don't|doesn't|didn't|isn't|aren't|wasn't|weren't|haven't|hasn't|won't|can't|couldn't|shouldn't|wouldn't)\b/i.test(low)) {
+  if (/^(?:don't|doesn't|didn't|isn't|aren't|wasn't|weren't|haven't|hasn't|hadn't|won't|can't|couldn't|shouldn't|wouldn't)\b/i.test(low)) {
     return { code: "NEG", label: "Part 2 · Câu hỏi Phủ định (Negative)", isWh: false, isYesNo: true };
   }
-  if (/^(?:do|does|did|is|are|was|were|have|has|had|will|would|can|could|should|may|might)\b/i.test(low) && /\?$/.test(s)) {
+  if (/^(?:do|does|did|is|are|was|were|have|has|had|will|would|can|could|should|shall|may|might)\b/i.test(low) && /\?$/.test(s)) {
     return { code: "YESNO", label: "Part 2 · Câu hỏi Yes / No", isWh: false, isYesNo: true };
   }
   return { code: "STATEMENT", label: "Part 2 · Câu Trần thuật / Đề nghị", isWh: false, isStatement: true };
 }
 
-function isPart2IndirectAnswer(ansText = "") {
-  const a = ansText.trim();
+function isPart2IndirectAnswer(ansText = "", cls = null) {
+  const a = String(ansText || "").replace(/[’‘`]/g, "'").trim();
   if (!a) return false;
+  if (cls?.isChoice && /^(?:neither|both)\b/i.test(a)) return false;
   return (
     /\?$/.test(a) ||
     /\b(i don't know|not sure|haven't decided|haven't heard|let me check|ask\s+\w+|check with|it depends|i was out|actually|neither|nobody told|hard to say|i'd rather|why don't|check the)\b/i.test(a)
@@ -552,11 +849,11 @@ function isPart2IndirectAnswer(ansText = "") {
 }
 
 function analyzePart2({ q, group, optMap, parsedP12 }) {
-  const stem = decodeRichEntities(q?.stem || parsedP12?.stem || "").trim();
+  const stem = stripPart12SpeakerTags(decodeRichEntities(q?.stem || parsedP12?.stem || "").trim());
   const ans = String(q?.answer || "").toUpperCase();
   const ansText = optMap[ans] || "";
   const cls = classifyPart2Stem(stem);
-  const indirect = isPart2IndirectAnswer(ansText);
+  const indirect = isPart2IndirectAnswer(ansText, cls);
   const { viStem, viOptions, isPureTranslation } = parsePart12ViTranslation(group?.explanationHtml || "");
 
   const stemTokens = tokenizeContent(stem);
@@ -580,6 +877,8 @@ function analyzePart2({ q, group, optMap, parsedP12 }) {
         whyRight = "Chỉ rõ người phụ trách, chức danh hoặc phòng ban trả lời cho Who.";
       } else if (cls.code === "WHY") {
         whyRight = "Nêu trực tiếp nguyên nhân / mục đích hợp logic cho câu hỏi Why.";
+      } else if (cls.code === "SUGGESTION") {
+        whyRight = "Phản hồi tự nhiên cho lời đề nghị (đồng ý, góp ý thêm hoặc từ chối khéo kèm lý do).";
       } else if (cls.code === "CHOICE") {
         whyRight = "Chọn rõ 1 phương án / cả hai / không chọn đúng cấu trúc câu hỏi lựa chọn (or).";
       }
@@ -643,6 +942,7 @@ function analyzePart2({ q, group, optMap, parsedP12 }) {
     HOW_NUM: "Bắt “How many / much / far”: chú ý con số, đơn vị tiền/khoảng cách hoặc “at least / around / free of charge”.",
     HOW: "Bắt “How”: hỏi cách thức (by + V-ing / phương tiện) hoặc đánh giá cảm nhận (It was useful / Very well).",
     WHAT: "Bắt danh từ ngay sau “What / Which” (what time, what floor, which model) để khóa đúng phạm vi trả lời.",
+    SUGGESTION: "Câu Đề nghị (Why don't we/you... / How about...): ĐỪNG tìm Because! Đáp án đúng là đồng ý (Sure / Sounds great / Good idea) hoặc từ chối khéo kèm lý do.",
     CHOICE: "Câu hỏi “A or B”: loại ngay Yes/No; đáp án đúng chọn 1 trong 2, chọn cả hai (Both), không chọn (Neither), hoặc trả lời gián tiếp.",
     TAG: "Câu hỏi Đuôi: BỎ QUA phần đuôi phủ định/khẳng định — đúng sự thật chọn Yes, sai sự thật chọn No.",
     NEG: "Câu hỏi Phủ định (Don't / Isn't / Haven't...): dịch như câu hỏi thường; Yes = có/vẫn vậy, No = không.",
@@ -713,24 +1013,44 @@ function analyzePart34({ part, q, group, optMap }) {
   const transcriptText = stripHtmlFlat(transcriptHtml);
 
   // Extract bilingual evidence (EN from transcript + VI from group.explanationHtml)
+  const allQNums = (group?.questions || []).map((x) => x.num);
+  const qIndexInGroup = Math.max(0, allQNums.indexOf(q?.num));
   let evidenceQuote = extractBracketEvidence(transcriptHtml, q?.num);
   if (!evidenceQuote && transcriptHtml) {
-    const lines = stripHtmlToLines(transcriptHtml);
-    const queryTokens = new Set([...tokenizeContent(stem), ...tokenizeContent(ansText)].map(stemWord));
+    // Split transcript into sentences for tighter evidence extraction
+    const rawLines = stripHtmlToLines(transcriptHtml);
+    const sentences = [];
+    for (const ln of rawLines) {
+      const cleaned = ln.replace(/^(?:M-(?:Cn|Au|Am|Br)|W-(?:Cn|Au|Am|Br)|Man|Woman|M\d?|W\d?|Speaker\s*\d*)\s*[:.]?\s*/i, "").trim();
+      for (const s of cleaned.split(/(?<=[.!?])\s+/)) {
+        if (s.trim().length >= 16) sentences.push(s.trim());
+      }
+    }
+    const candidates = sentences.length ? sentences : rawLines;
+    const ansTokens = new Set(tokenizeContent(ansText).map(stemWord));
+    const stemTokens = new Set(tokenizeContent(stem).map(stemWord));
+    const properNouns = new Set((`${stem} ${ansText}`.match(/\b[A-Z][a-z]{2,}\b/g) || []).map((w) => w.toLowerCase()));
     let bestLine = "";
     let bestScore = 0;
-    for (const ln of lines) {
-      if (ln.length < 18) continue;
-      let hits = 0;
-      for (const st of tokenizeContent(ln).map(stemWord)) {
-        if (queryTokens.has(st)) hits++;
+    for (const ln of candidates) {
+      if (ln.length < 16) continue;
+      let score = 0;
+      const lStems = tokenizeContent(ln).map(stemWord);
+      for (const st of lStems) {
+        if (ansTokens.has(st)) score += 2;
+        else if (stemTokens.has(st)) score += 1;
       }
-      if (hits > bestScore) { bestScore = hits; bestLine = ln; }
+      for (const pn of properNouns) {
+        if (ln.toLowerCase().includes(pn)) score += 1.5;
+      }
+      if (score > bestScore) { bestScore = score; bestLine = ln; }
     }
     if (bestScore >= 2) evidenceQuote = truncateQuote(bestLine, 220);
   }
-  const evidenceVi = extractBracketEvidence(explanationHtml, q?.num);
-  const allQNums = (group?.questions || []).map((x) => x.num);
+  let evidenceVi = extractBracketEvidence(explanationHtml, q?.num);
+  if (!evidenceVi && explanationHtml) {
+    evidenceVi = extractHighlightedEvidence(explanationHtml, qIndexInGroup, allQNums.length);
+  }
   const { qHtml: perQuestionHtml } = !q?.explanation
     ? extractPerQuestionGroupHtml(explanationHtml, q?.num, allQNums)
     : { qHtml: "" };
@@ -867,37 +1187,117 @@ function longestCommonPrefixLen(arr = []) {
   return prefix.length;
 }
 
-function getBlankNeighbors(stem = "", passageHtml = "", qNum = 0) {
+function getBlankNeighbors(stem = "", passageHtml = "", qNum = 0, qIndexInGroup = 0) {
   let text = decodeRichEntities(stem || "");
   let match = text.match(/([^\n]*?)[_-]{3,}([^\n]*)/);
   if (!match && passageHtml) {
     const pFlat = stripHtmlFlat(passageHtml);
-    match = pFlat.match(new RegExp(`([^\\n]*?)(?:\\(${qNum}\\)|\\[${qNum}\\]|[_-]{3,})([^\\n]*)`));
+    if (qNum) {
+      // Match the exact numbered Part 6 blank first:
+      // e.g. `----- 71 ----`, `(69) ___`, `---64---`, `___ (131)`, `(131)`, `[131]`
+      match = pFlat.match(new RegExp(`([\\s\\S]*?)(?:[_-]{2,}\\s*\\(?${qNum}\\)?\\s*[_-]*|\\(${qNum}\\)\\s*[_-]*|\\[${qNum}\\]\\s*[_-]*|\\b${qNum}\\s*[_-]{2,})([\\s\\S]*)`));
+    }
+    if (!match) {
+      const allBlanks = Array.from(pFlat.matchAll(/[_-]{3,}/g));
+      const picked = allBlanks[qIndexInGroup] || allBlanks[0];
+      if (picked) {
+        match = [picked[0], pFlat.slice(0, picked.index), pFlat.slice(picked.index + picked[0].length)];
+      }
+    }
   }
   if (!match) return { beforeWord: "", afterWord: "", beforeTwo: "", afterTwo: "", afterRaw: "" };
-  const beforeWords = (match[1] || "").trim().split(/\s+/).filter((w) => w && !/^[_-]+$/.test(w));
-  const afterWords = (match[2] || "").trim().split(/\s+/).filter((w) => w && !/^[_-]+$/.test(w));
+  const cleanNeighborTokens = (str = "") =>
+    str
+      .replace(/(?:[_-]{2,}|\(\d{1,3}\)|\[\d{1,3}\])/g, " ")
+      .trim()
+      .split(/\s+/)
+      .filter((w) => w && !/^[_-]+$/.test(w) && !/^\d{2,3}[_-]*$/.test(w));
+  const beforeWords = cleanNeighborTokens(match[1] || "");
+  const afterWords = cleanNeighborTokens(match[2] || "");
   return {
     beforeWord: (beforeWords[beforeWords.length - 1] || "").replace(/^[^a-zA-Z']+|[^a-zA-Z']+$/g, ""),
     afterWord: (afterWords[0] || "").replace(/^[^a-zA-Z']+|[^a-zA-Z']+$/g, ""),
     beforeTwo: beforeWords.slice(-2).join(" "),
     afterTwo: afterWords.slice(0, 2).join(" "),
-    afterRaw: (match[2] || "").trim()
+    afterRaw: (match[2] || "").replace(/^\s*(?:[_-]+|\d{2,3}[_-]*)\s*/g, "").trim()
   };
 }
 
+const COMMON_ER_OR_VERBS = new Set([
+  "deliver", "consider", "register", "offer", "order", "enter", "cover", "discover",
+  "remember", "refer", "prefer", "transfer", "gather", "bother", "alter", "foster",
+  "hinder", "lower", "sponsor", "monitor", "tailor", "mentor", "honor", "favor",
+  "differ", "suffer", "wander", "wonder", "answer", "encounter", "trigger", "render",
+  "recover", "reconsider", "empower", "master", "filter", "counter", "administer"
+]);
+
+const COMMON_ARY_ORY_ADJS = new Set([
+  "mandatory", "satisfactory", "advisory", "compulsory", "introductory", "regulatory",
+  "temporary", "necessary", "customary", "ordinary", "voluntary", "primary", "secondary",
+  "complementary", "supplementary", "preliminary", "extraordinary", "budgetary",
+  "monetary", "stationary", "sanitary", "military", "solitary", "obligatory", "exploratory",
+  "preparatory", "explanatory", "migratory", "contradictory", "inflationary", "proprietary"
+]);
+
+const COMMON_ATE_ADJS = new Set([
+  "accurate", "inaccurate", "appropriate", "inappropriate", "adequate", "inadequate",
+  "private", "separate", "immediate", "moderate", "fortunate", "unfortunate", "deliberate",
+  "intricate", "elaborate", "ultimate", "legitimate", "corporate", "considerate",
+  "approximate", "passionate", "intimate", "desperate", "intermediate", "subordinate", "accurate"
+]);
+
+const COMMON_AL_IVE_NOUNS = new Set([
+  "proposal", "approval", "arrival", "renewal", "removal", "withdrawal", "survival",
+  "referral", "disposal", "rental", "manual", "individual", "material", "official",
+  "professional", "credential", "editorial", "tutorial", "testimonial", "representative",
+  "executive", "alternative", "objective", "initiative", "incentive", "directive",
+  "perspective", "narrative", "detective", "relative"
+]);
+
+const COMMON_COMPARATIVES = new Set([
+  "higher", "lower", "better", "worse", "greater", "larger", "smaller", "older", "newer",
+  "faster", "slower", "closer", "wider", "longer", "shorter", "stronger", "easier", "harder",
+  "earlier", "later", "further", "farther", "broader", "deeper", "cheaper", "quicker", "safer"
+]);
+
+const IRREGULAR_PAST_V3 = new Set([
+  "went", "sent", "built", "held", "kept", "made", "paid", "said", "sold", "told",
+  "took", "gave", "came", "began", "chose", "wrote", "spoke", "drove", "fell", "found",
+  "got", "knew", "left", "lost", "met", "ran", "saw", "spent", "stood", "thought",
+  "won", "done", "gone", "seen", "taken", "given", "written", "spoken", "chosen",
+  "known", "shown", "grown", "drawn", "driven", "broken", "forgotten", "proven", "risen",
+  "begun", "brought", "bought", "caught", "fought", "sought", "taught", "understood",
+  "withdrawn", "withstood", "heard", "read", "led", "fed", "set", "put", "cut", "shut",
+  "hurt", "cost", "hit", "let", "split", "spread", "worn", "torn", "borne", "sworn", "dealt", "felt", "meant", "lent", "bent"
+]);
+
 function classifyWordSuffixPOS(word = "") {
   const w = word.toLowerCase().trim();
-  if (/ly$/i.test(w) && !/^(?:only|early|daily|weekly|monthly|yearly|friendly|costly|timely|likely|orderly)$/i.test(w)) {
+  if (/ly$/i.test(w) && !/^(?:only|early|daily|weekly|monthly|yearly|friendly|costly|timely|likely|orderly|quarterly|hourly|biweekly)$/i.test(w)) {
     return { pos: "Trạng từ (Adv)", hint: "Bổ nghĩa cho Động từ, Tính từ, Trạng từ khác hoặc cả mệnh đề." };
   }
+  if (/^(?:only|early|daily|weekly|monthly|yearly|quarterly|hourly|biweekly|friendly|costly|timely|likely|orderly)$/i.test(w)) {
+    return { pos: "Tính từ / Trạng từ (-ly đặc biệt)", hint: "Chú ý bẫy ETS: đuôi -ly nhưng có thể làm Tính từ đứng trước Danh từ (e.g. timely manner, costly repair, early arrival)." };
+  }
+  if (COMMON_COMPARATIVES.has(w)) {
+    return { pos: "Tính từ so sánh hơn", hint: "Dùng so sánh giữa 2 đối tượng (thường đi với than / much / even)." };
+  }
+  if (COMMON_ARY_ORY_ADJS.has(w) || COMMON_ATE_ADJS.has(w)) {
+    return { pos: "Tính từ (Adj)", hint: "Đứng trước Danh từ để bổ nghĩa hoặc đứng sau be/seem/become/remain." };
+  }
+  if (COMMON_AL_IVE_NOUNS.has(w)) {
+    return { pos: "Danh từ / Tính từ (N / Adj)", hint: "Thường dùng làm Danh từ trong TOEIC (sau mạo từ a/an/the, tính từ sở hữu, giới từ) hoặc Tính từ tùy ngữ cảnh." };
+  }
+  if (COMMON_ER_OR_VERBS.has(w)) {
+    return { pos: "Động từ (V)", hint: "Động từ nguyên mẫu (V0) — làm động từ chính số nhiều hoặc đi sau modal verb / to." };
+  }
   if (/(?:tion|sion|ment|ness|ity|ance|ence|ship|age|ism|ist|ery|ory|er|or|ee|eer|ant|ent)s?$/i.test(w)) {
-    if (/(?:ant|ent)$/i.test(w) && !/(?:assistant|applicant|accountant|consultant|participant|client|resident|president|department|agreement|management|document|equipment)$/i.test(w)) {
+    if (/(?:ant|ent)$/i.test(w) && !/(?:assistant|applicant|accountant|consultant|participant|client|resident|president|department|agreement|management|document|equipment|recipient|correspondent|tenant|merchandise|attendant)$/i.test(w)) {
       return { pos: "Tính từ / Danh từ", hint: "Thường làm tính từ đứng trước danh từ hoặc sau be/linking verb." };
     }
     return { pos: "Danh từ (N)", hint: "Làm chủ ngữ, tân ngữ, đứng sau mạo từ (a/an/the), tính từ sở hữu hoặc giới từ." };
   }
-  if (/(?:ive|al|ous|ful|less|able|ible|ic|ical|ary|ory|ish|worthy)$/i.test(w)) {
+  if (/(?:ive|al|ous|ful|less|able|ible|ic|ical|ary|ish|worthy)$/i.test(w)) {
     return { pos: "Tính từ (Adj)", hint: "Đứng trước Danh từ để bổ nghĩa hoặc đứng sau be/seem/become/remain." };
   }
   if (/(?:ize|ise|ify|ate)$/i.test(w)) {
@@ -912,25 +1312,70 @@ function classifyWordSuffixPOS(word = "") {
   return { pos: "Từ gốc (V / N)", hint: "Đóng vai trò động từ nguyên mẫu hoặc danh từ gốc tùy ngữ cảnh câu." };
 }
 
+function isLikelyPastParticiple(word = "") {
+  const w = word.toLowerCase().replace(/[^a-z]/g, "");
+  if (!w) return false;
+  if (IRREGULAR_PAST_V3.has(w)) return true;
+  if (/(?:ed|en|wn|pt|lt|nt|ht|un|id)$/.test(w) && !/(?:open|even|often|sudden|wooden|golden|woolen|absent|present|urgent|recent|silent|current|valid|solid|rapid|rigid|stupid|acid|fluid|humid|vivid|candid|lucid|timid|hybrid)$/i.test(w)) {
+    return true;
+  }
+  return false;
+}
+
+function hasNonVerbDerivSuffix(t = "") {
+  const w = String(t || "").toLowerCase().trim();
+  if (!/^[a-z-]+$/.test(w)) return false;
+  if (/(?:ly|tion|sion|ment|ness|ity|ance|ence|ship|ism|ist|ery|ory|ary|al|ous|ful|less|able|ible|ic|ical|ee|eer|ant|ent|age|ive)s?$/i.test(w)
+    && !/^(?:arrive|receive|achieve|believe|approve|improve|remove|involve|resolve|solve|serve|reserve|observe|preserve|deserve|conserve|encourage|manage|damage|package|engage|arrange|change|charge|stage|average|leverage|guarantee|agree|free|see|flee|foresee|oversee|create|update|operate|generate|negotiate|evaluate|participate|coordinate|communicate|collaborate|implement|document|comment|supplement|complement|install|recall|enroll|appeal|reveal|deal|seal|heal|steal|signal|total|cancel|travel|label|model|level|panel|represent|present|prevent|consent|rent|sent|went|spent|lent|bent)$/i.test(w)) {
+    return true;
+  }
+  if (/(?:er|or)s?$/i.test(w)) {
+    const base = w.replace(/s$/, "");
+    if (!COMMON_ER_OR_VERBS.has(base)) return true;
+  }
+  return false;
+}
+
 function classifyVerbForm(opt = "") {
   const t = opt.toLowerCase().trim();
   if (/^to\s+be\s+\w+(?:ed|en|wn|pt|lt|nt|ht|un|id)\b/.test(t)) return { tag: "To be + V3 (Bị động nguyên mẫu)", detail: "Chỉ mục đích bị động hoặc đi sau động từ yêu cầu to-V." };
   if (/^to\s+/.test(t)) return { tag: "To-V (Nguyên mẫu có to)", detail: "Dùng chỉ mục đích hoặc sau V/Adj yêu cầu to-V — KHÔNG làm động từ chia thì chính." };
   if (/^having\s+/.test(t)) return { tag: "Having + V3 (Phân từ hoàn thành)", detail: "Nhấn mạnh hành động xảy ra trước mệnh đề chính — không làm V chính." };
   if (/^(?:will|would|should|can|could|may|might|must)\s+be\s+\w+(?:ed|en|wn|pt|lt|nt|ht|un|id)\b/.test(t)) return { tag: "Modal + be + V3 (Bị động)", detail: "Động từ chia thì bị động (tương lai / khiếm khuyết), sau nó không cần tân ngữ trực tiếp." };
+  if (/^(?:will|would|should|can|could|may|might|must)\s+have\s+been\b/.test(t)) return { tag: "Modal + have been (Hoàn thành)", detail: "Nhấn mạnh hành động hoàn tất trước một mốc tương lai / giả định." };
   if (/^(?:will|would|should|can|could|may|might|must)\s+/.test(t)) return { tag: "Modal + V0 (Chủ động)", detail: "Động từ chia thì tương lai / khiếm khuyết chủ động." };
-  if (/^(?:has|have)\s+been\s+\w+(?:ed|en|wn|pt|lt|nt|ht|un|id)\b/.test(t)) return { tag: "HTHT Bị động (has/have been V3)", detail: "Thì hiện tại hoàn thành bị động (thường đi với since / for / recently / already)." };
-  if (/^had\s+been\s+\w+(?:ed|en|wn|pt|lt|nt|ht|un|id)\b/.test(t)) return { tag: "QKHT Bị động (had been V3)", detail: "Quá khứ hoàn thành bị động — dùng khi xảy ra TRƯỚC một mốc quá khứ khác." };
+  if (/^(?:has|have)\s+been\s+\w+ing\b/.test(t)) return { tag: "HTHTTD (has/have been V-ing)", detail: "Thì hiện tại hoàn thành tiếp diễn (nhấn mạnh hành động kéo dài liên tục tới hiện tại)." };
+  if (/^(?:has|have)\s+been\s+\w+/.test(t)) return { tag: "HTHT Bị động (has/have been V3)", detail: "Thì hiện tại hoàn thành bị động (thường đi với since / for / recently / already)." };
+  if (/^had\s+been\s+\w+/.test(t)) return { tag: "QKHT Bị động (had been V3)", detail: "Quá khứ hoàn thành bị động — dùng khi xảy ra TRƯỚC một mốc quá khứ khác." };
+  if (/^(?:is|are|am)\s+to\s+/.test(t)) return { tag: "Be + to-V (Kế hoạch / Quy định)", detail: "Diễn tả kế hoạch, lịch trình hoặc nhiệm vụ dự kiến ở hiện tại/tương lai." };
+  if (/^(?:was|were)\s+to\s+/.test(t)) return { tag: "Was/Were + to-V (Dự kiến quá khứ)", detail: "Diễn tả kế hoạch hoặc sự sắp đặt dự kiến trong quá khứ." };
   if (/^(?:is|are|am)\s+being\s+/.test(t)) return { tag: "HTTD Bị động (is/are being V3)", detail: "Hành động đang chịu tác động ngay tại thời điểm nói." };
-  if (/^(?:is|are|am)\s+\w+ing\b/.test(t)) return { tag: "HTTD Chủ động (is/are + V-ing)", detail: "Thì hiện tại tiếp diễn chủ động (đang diễn ra / kế hoạch gần)." };
-  if (/^(?:is|are|am)\s+\w+/.test(t)) return { tag: "HTĐ Bị động (is/are + V3)", detail: "Thì hiện tại đơn bị động (lịch trình, sự thật, quy định định kỳ)." };
-  if (/^(?:was|were)\s+\w+ing\b/.test(t)) return { tag: "QKTD (was/were + V-ing)", detail: "Đang diễn ra tại một thời điểm xác định trong quá khứ." };
-  if (/^(?:was|were)\s+\w+/.test(t)) return { tag: "QKĐ Bị động (was/were + V3)", detail: "Thì quá khứ đơn bị động (có mốc thời gian quá khứ rõ ràng)." };
+  if (/^(?:is|are|am)\s+(?:not\s+)?\w+ing\b/.test(t)) return { tag: "HTTD Chủ động (is/are + V-ing)", detail: "Thì hiện tại tiếp diễn chủ động (đang diễn ra / kế hoạch gần)." };
+  const isPresBe = t.match(/^(?:is|are|am)\s+(?:not\s+)?(\w+)/);
+  if (isPresBe) {
+    if (isLikelyPastParticiple(isPresBe[1])) {
+      return { tag: "HTĐ Bị động (is/are + V3)", detail: "Thì hiện tại đơn bị động (lịch trình, sự thật, quy định định kỳ)." };
+    }
+    return { tag: "To be (HTĐ) + Bổ ngữ", detail: "Động từ to be chia thì hiện tại đơn kèm tính từ / bổ ngữ." };
+  }
+  if (/^(?:was|were)\s+(?:not\s+)?\w+ing\b/.test(t)) return { tag: "QKTD (was/were + V-ing)", detail: "Đang diễn ra tại một thời điểm xác định trong quá khứ." };
+  const isPastBe = t.match(/^(?:was|were)\s+(?:not\s+)?(\w+)/);
+  if (isPastBe) {
+    if (isLikelyPastParticiple(isPastBe[1])) {
+      return { tag: "QKĐ Bị động (was/were + V3)", detail: "Thì quá khứ đơn bị động (có mốc thời gian quá khứ rõ ràng)." };
+    }
+    return { tag: "To be (QKĐ) + Bổ ngữ", detail: "Động từ to be chia thì quá khứ đơn kèm tính từ / bổ ngữ." };
+  }
+  if (/^be\s+\w+(?:ed|en|wn|pt|lt|nt|ht|un|id)\b/.test(t)) return { tag: "Be + V3 (Bị động nguyên mẫu)", detail: "Dùng ngay sau động từ khiếm khuyết (can/will/must/should + be + V3)." };
   if (/^(?:has|have)\s+/.test(t)) return { tag: "HTHT Chủ động (has/have + V3)", detail: "Hành động bắt đầu từ quá khứ kéo dài đến hiện tại (since / for / so far)." };
   if (/^had\s+/.test(t)) return { tag: "QKHT Chủ động (had + V3)", detail: "Xảy ra trước một hành động quá khứ khác." };
   if (/ing$/.test(t)) return { tag: "V-ing (Danh động từ / Phân từ)", detail: "Dùng sau giới từ hoặc rút gọn mệnh đề chủ động — không làm động từ chính chia thì." };
-  if (/ed$/.test(t)) return { tag: "V-ed / V3 (Quá khứ / Phân từ bị động)", detail: "Chia thì quá khứ đơn hoặc rút gọn mệnh đề bị động." };
-  if (/s$/.test(t) && !/ss$/.test(t)) return { tag: "V-s/es (HTĐ chủ ngữ số ít)", detail: "Động từ chia hiện tại đơn cho chủ ngữ ngôi 3 số ít." };
+  if (/ed$/.test(t) || IRREGULAR_PAST_V3.has(t)) return { tag: "V-ed / V2-V3 (Quá khứ / Phân từ)", detail: "Chia thì quá khứ đơn hoặc rút gọn mệnh đề bị động / đi sau have-has-be." };
+  if (hasNonVerbDerivSuffix(t)) {
+    const pos = classifyWordSuffixPOS(t);
+    return { tag: pos.pos, detail: pos.hint };
+  }
+  if (/s$/.test(t) && !/(?:ss|ous|is|us|ics)$/i.test(t)) return { tag: "V-s/es (HTĐ chủ ngữ số ít)", detail: "Động từ chia hiện tại đơn cho chủ ngữ ngôi 3 số ít." };
   return { tag: "V0 (Nguyên mẫu / HTĐ số nhiều)", detail: "Dùng sau modal verb / to hoặc chia HTĐ cho chủ ngữ số nhiều." };
 }
 
@@ -943,10 +1388,13 @@ function analyzePart56({ part, q, group, optMap }) {
   const avgLen = optTexts.reduce((a, b) => a + b.length, 0) / Math.max(1, optTexts.length);
   const allQNums = (group?.questions || []).map((x) => x.num);
 
-  // Extract per-question explanation block for Part 6 (ETS 2026 / Thi Thử)
+  // Extract per-question explanation block for Part 6 (ETS 2026 / ETS 2023-2024 / Thi Thử)
   const { qHtml: perQuestionHtml } = (part === 6 && !q?.explanation)
     ? extractPerQuestionGroupHtml(group?.explanationHtml || "", q?.num, allQNums)
     : { qHtml: "" };
+  const p6EvidenceVi = (part === 6 && !q?.explanation && !perQuestionHtml)
+    ? extractBracketEvidence(group?.explanationHtml || "", q?.num)
+    : "";
 
   // 1. Part 6 Sentence Insertion
   if (part === 6 && avgLen >= 25) {
@@ -960,7 +1408,7 @@ function analyzePart56({ part, q, group, optMap }) {
       isHardTrap: true,
       formulaBox,
       evidenceQuote: "",
-      evidenceVi: "",
+      evidenceVi: p6EvidenceVi,
       viStem: "",
       perQuestionHtml,
       foldGroupExpl: false,
@@ -977,9 +1425,10 @@ function analyzePart56({ part, q, group, optMap }) {
     };
   }
 
+  const qIdxInGroup = Math.max(0, allQNums.indexOf(q?.num));
   const singleWordOpts = optTexts.filter((t) => /^[a-z-]+$/i.test(t));
   const prefixLen = singleWordOpts.length >= 3 ? longestCommonPrefixLen(singleWordOpts) : 0;
-  const ctx = getBlankNeighbors(stem, group?.passageHtml || "", q?.num);
+  const ctx = getBlankNeighbors(stem, group?.passageHtml || "", q?.num, qIdxInGroup);
   const ctxSlot = (ctx.beforeTwo || ctx.afterTwo)
     ? `… ${ctx.beforeTwo || ""} [ ___ ] ${ctx.afterTwo || ""} …`
     : "";
@@ -1008,7 +1457,7 @@ function analyzePart56({ part, q, group, optMap }) {
       isHardTrap: false,
       formulaBox,
       evidenceQuote: "",
-      evidenceVi: "",
+      evidenceVi: p6EvidenceVi,
       viStem: "",
       perQuestionHtml,
       foldGroupExpl: false,
@@ -1022,25 +1471,68 @@ function analyzePart56({ part, q, group, optMap }) {
   }
 
   // 3. Conjunction vs Preposition vs Conjunctive Adverb
+  const lookupConjPrep = (w = "") => {
+    const k = String(w || "").toLowerCase().trim();
+    if (CONJ_PREP_META[k]) return CONJ_PREP_META[k];
+    if (PREP_CORE_META[k]) return { kind: "Giới từ (+ Cụm N)", meaning: PREP_CORE_META[k].meaning };
+    return null;
+  };
   const conjHits = optTexts.filter((t) => CONJ_PREP_META[t.toLowerCase()]).length;
   if (conjHits >= 2) {
-    const ansMeta = CONJ_PREP_META[ansText.toLowerCase()];
-    const hasClauseAfter = /\b(?:is|are|was|were|will|has|have|had|can|could|should|do|does|did|\w+ed)\b/i.test(ctx.afterRaw || "");
+    const ansMeta = lookupConjPrep(ansText);
+    // Only inspect the immediate phrase/clause after the blank (before comma/semicolon/period)
+    const immediateAfter = (ctx.afterRaw || "").split(/[,;.?!]/)[0] || "";
+    const detectedClause = /\b(?:is|are|was|were|will|would|has|have|had|can|could|should|do|does|did|may|might|must)\b/i.test(immediateAfter);
+    // Respect ground-truth ansMeta so formulaBox NEVER contradicts the correct answer!
+    let structureHint = detectedClause ? "Mệnh đề (S + V)" : "Cụm danh từ / V-ing";
+    if (ansMeta) {
+      if (/^Giới từ/.test(ansMeta.kind) && !/Liên từ/.test(ansMeta.kind)) {
+        structureHint = "Cụm danh từ / V-ing";
+      } else if (/^Liên từ/.test(ansMeta.kind) && !/Giới từ/.test(ansMeta.kind)) {
+        structureHint = "Mệnh đề (S + V)";
+      } else if (/^Trạng từ nối/.test(ansMeta.kind)) {
+        structureHint = "câu độc lập (kèm dấu phẩy / dấu chấm phẩy)";
+      } else if (/^Cụm chỉ mục đích/.test(ansMeta.kind)) {
+        structureHint = "Động từ nguyên mẫu (V0)";
+      }
+    }
     const formulaBox = ctxSlot
-      ? `Công thức 3 giây: ${ctxSlot} → phía sau là ${hasClauseAfter ? "Mệnh đề (S + V)" : "Cụm danh từ / V-ing"} → chọn (${ans}) ${ansText}${ansMeta ? ` [${ansMeta.kind}]` : ""}.`
+      ? `Công thức 3 giây: ${ctxSlot} → phía sau là ${structureHint} → chọn (${ans}) ${ansText}${ansMeta ? ` [${ansMeta.kind}]` : ""}.`
       : `Quy tắc: Sau chỗ trống có S + V → Liên từ; chỉ có Cụm N/V-ing → Giới từ.`;
 
     const optionBreakdown = optEntries.map(([ch, txt]) => {
-      const m = CONJ_PREP_META[txt.toLowerCase()];
-      const role = m ? m.kind : "Từ nối / Khác";
+      const m = lookupConjPrep(txt);
+      const low = txt.toLowerCase().trim();
+      let role = m ? m.kind : "";
+      let fallbackRule = "";
+      if (!role) {
+        if (PRONOUN_ROLES[low]) {
+          role = PRONOUN_ROLES[low].role;
+          fallbackRule = PRONOUN_ROLES[low].rule;
+        } else if (/^(?:should|were|had|could|would|will|may|must)$/i.test(low)) {
+          role = "Trợ động từ / Đảo ngữ";
+          fallbackRule = "Dùng mở đầu mệnh đề đảo ngữ điều kiện (Should/Were/Had + S + V) hoặc làm trợ động từ.";
+        } else if (/^(?:all|both|some|any|many|few|several|most|much|no|none|various|numerous|next|last|former|latter|such|own|same|very|even|still|already|yet|almost|nearly|just|quite|rather|soon|ago|now|then|here|there)$/i.test(low)) {
+          role = /^(?:very|even|still|already|yet|almost|nearly|just|quite|rather|soon|ago|now|then|here|there)$/i.test(low)
+            ? "Trạng từ (Adv)"
+            : "Lượng từ / Từ hạn định";
+          fallbackRule = role === "Trạng từ (Adv)"
+            ? "Bổ nghĩa cho động từ/tính từ/cả câu, không nối trực tiếp 2 mệnh đề như liên từ."
+            : "Đứng trước danh từ để chỉ lượng/xác định, không có chức năng liên từ/giới từ.";
+        } else {
+          const posInfo = classifyWordSuffixPOS(txt);
+          role = posInfo.pos;
+          fallbackRule = posInfo.hint;
+        }
+      }
       const mean = m ? `Nghĩa: “${m.meaning}”. ` : "";
       return {
         choice: ch, text: txt, viText: "",
         isCorrect: ch === ans,
         roleBadge: role,
         reason: ch === ans
-          ? `${mean}Khớp cả cấu trúc ngữ pháp lẫn quan hệ logic của câu.`
-          : `${mean}Sai cấu trúc theo sau (Liên từ ≠ Giới từ) hoặc sai quan hệ nghĩa.`
+          ? `${mean}${fallbackRule ? `${fallbackRule} ` : ""}Khớp cả cấu trúc ngữ pháp lẫn quan hệ logic của câu.`
+          : `${mean}${fallbackRule || "Sai cấu trúc theo sau (Liên từ ≠ Giới từ) hoặc sai quan hệ nghĩa."}`
       };
     });
 
@@ -1050,7 +1542,7 @@ function analyzePart56({ part, q, group, optMap }) {
       isHardTrap: true,
       formulaBox,
       evidenceQuote: "",
-      evidenceVi: "",
+      evidenceVi: p6EvidenceVi,
       viStem: "",
       perQuestionHtml,
       foldGroupExpl: false,
@@ -1069,7 +1561,7 @@ function analyzePart56({ part, q, group, optMap }) {
 
   // 4. Verb Tense / Voice / Verb Form
   const isVerbFormSet = optTexts.some((t) => /^(?:to |is |are |was |were |will |has |have |had |be |being |having )/i.test(t))
-    || (prefixLen >= 4 && optTexts.some((t) => /(?:ed|ing)$/i.test(t)) && !optTexts.some((t) => /(?:ly|tion|ment|ness|ity)$/i.test(t)));
+    || (prefixLen >= 4 && optTexts.some((t) => /(?:ed|ing)$/i.test(t)) && !optTexts.some((t) => hasNonVerbDerivSuffix(t)));
   if (isVerbFormSet) {
     const ansV = classifyVerbForm(ansText);
     const timeCue = stem.match(/\b(yesterday|last \w+|ago|next \w+|tomorrow|by next \w+|since \d{4}|since \w+|currently|now|every \w+|annually|already|yet|recently|so far)\b/i);
@@ -1091,7 +1583,7 @@ function analyzePart56({ part, q, group, optMap }) {
       isHardTrap: false,
       formulaBox,
       evidenceQuote: "",
-      evidenceVi: "",
+      evidenceVi: p6EvidenceVi,
       viStem: "",
       perQuestionHtml,
       foldGroupExpl: false,
@@ -1140,7 +1632,7 @@ function analyzePart56({ part, q, group, optMap }) {
       isHardTrap: false,
       formulaBox,
       evidenceQuote: "",
-      evidenceVi: "",
+      evidenceVi: p6EvidenceVi,
       viStem: "",
       perQuestionHtml,
       foldGroupExpl: false,
@@ -1157,6 +1649,48 @@ function analyzePart56({ part, q, group, optMap }) {
     };
   }
 
+  // 5b. Dedicated Preposition Set (in / on / at / by / for / to / with / from / of...)
+  const prepHits = optTexts.filter((t) => PREP_CORE_META[t.toLowerCase()]).length;
+  if (prepHits >= 3) {
+    const ansPrep = PREP_CORE_META[ansText.toLowerCase()];
+    const formulaBox = ctxSlot
+      ? `Công thức Giới từ: ${ctxSlot} → chọn (${ans}) ${ansText}${ansPrep ? ` (${ansPrep.meaning})` : ""}.`
+      : `Chọn giới từ (${ans}) ${ansText} khớp cụm cố định / mốc thời gian-địa điểm.`;
+
+    const optionBreakdown = optEntries.map(([ch, txt]) => {
+      const pm = PREP_CORE_META[txt.toLowerCase()];
+      const mean = pm ? pm.meaning : "Giới từ khác không khớp kết hợp của câu.";
+      return {
+        choice: ch, text: txt, viText: "",
+        isCorrect: ch === ans,
+        roleBadge: "Giới từ",
+        reason: ch === ans ? `Khớp chính xác cụm/ngữ cảnh: ${mean}.` : `Nghĩa/cách dùng: ${mean} — không khớp từ đi kèm quanh chỗ trống.`
+      };
+    });
+
+    return {
+      qTypeBadge: `Part ${part} · Giới từ & Cụm cố định`,
+      trapCategory: `Part ${part} · Giới từ & Collocation`,
+      isHardTrap: false,
+      formulaBox,
+      evidenceQuote: "",
+      evidenceVi: p6EvidenceVi,
+      viStem: "",
+      perQuestionHtml,
+      foldGroupExpl: false,
+      optionBreakdown,
+      distractorTraps: [
+        {
+          choice: "",
+          tag: "Bẫy Dịch từng từ sang tiếng Việt",
+          detail: "Giới từ ETS đi theo cụm cố định (on a ... basis, by teleconference, under review, prior to, familiar with) — dịch thô tiếng Việt rất dễ chọn nhầm in/at/for."
+        }
+      ],
+      quickTip: "Nhìn đồng thời 1 từ đứng TRƯỚC chỗ trống (Động từ/Tính từ cố định) và 1–2 từ đứng SAU (mốc giờ/ngày/tháng/phương tiện/địa điểm) để chốt giới từ trong 5 giây.",
+      strategyNote: "Bộ nhớ nhanh ETS: AT + giờ/điểm cụ thể · ON + ngày/thứ/basis · IN + tháng/năm/lĩnh vực · BY + hạn chót/phương tiện · FOR + khoảng thời gian."
+    };
+  }
+
   // 6. Vocabulary & Collocation
   const prepAfter = /^(?:to|for|with|in|on|at|of|from|by|about|into|over)$/i.test(ctx.afterWord) ? ctx.afterWord : "";
   const formulaBox = prepAfter
@@ -1169,7 +1703,7 @@ function analyzePart56({ part, q, group, optMap }) {
     isHardTrap: false,
     formulaBox,
     evidenceQuote: "",
-    evidenceVi: "",
+    evidenceVi: p6EvidenceVi,
     viStem: "",
     perQuestionHtml,
     foldGroupExpl: false,
@@ -1197,17 +1731,36 @@ function analyzePart7({ q, group, optMap }) {
   const stem = decodeRichEntities(q?.stem || "").trim();
   const ans = String(q?.answer || "").toUpperCase();
   const imgCount = Array.isArray(group?.images) ? group.images.length : 0;
-  const multiDoc = imgCount >= 2;
-  const docTag = imgCount >= 3 ? "Đọc 3 đoạn (Triple)" : (imgCount === 2 ? "Đọc 2 đoạn (Double)" : "Đọc đoạn đơn");
   const allQNums = (group?.questions || []).map((x) => x.num);
+  const pHtml = String(group?.passageHtml || "");
+  const htmlSeps = pHtml
+    ? (pHtml.match(/(?:={6,}|—-{4,}|-{8,}|<hr\b)/gi) || []).length
+    : 0;
+  // Detect document count from BOTH images (ETS) and HTML passage separators / 5-question multi-passage groups (Mini/Pro/Part-7 banks)
+  let docCount = imgCount;
+  if (docCount < 2) {
+    if (htmlSeps >= 2) docCount = 3;
+    else if (htmlSeps === 1) docCount = 2;
+    else if (allQNums.length >= 5) {
+      docCount = Number(allQNums[0] || 0) >= 186 ? 3 : 2;
+    } else {
+      docCount = 1;
+    }
+  }
+  const multiDoc = docCount >= 2;
+  const docTag = docCount >= 3 ? "Đọc 3 đoạn (Triple)" : (docCount === 2 ? "Đọc 2 đoạn (Double)" : "Đọc đoạn đơn");
 
-  // Extract per-question block [147] from ETS 2026 / Thi Thử OR inline evidence [147] from ETS 2023
+  // Extract per-question block [147]/(147)/147./CÂU 196: OR inline/highlighted evidence
+  const qIndexInGroup = Math.max(0, allQNums.indexOf(q?.num));
   const { qHtml: perQuestionHtml } = !q?.explanation
     ? extractPerQuestionGroupHtml(group?.explanationHtml || "", q?.num, allQNums)
     : { qHtml: "" };
-  const evidenceVi = (!q?.explanation && !perQuestionHtml)
+  let evidenceVi = (!q?.explanation && !perQuestionHtml)
     ? extractBracketEvidence(group?.explanationHtml || "", q?.num)
     : "";
+  if (!q?.explanation && !perQuestionHtml && !evidenceVi && group?.explanationHtml) {
+    evidenceVi = extractHighlightedEvidence(group.explanationHtml, qIndexInGroup, allQNums.length);
+  }
 
   // Scan wrong options for REAL ETS Part 7 traps (Extreme words, Numbers/Prices/Dates, Comparisons)
   const distractorTraps = [];

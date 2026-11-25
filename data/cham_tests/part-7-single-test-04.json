@@ -565,7 +565,7 @@
             },
             {
               "choice": "D",
-              "text": "(c) Request a shipment of lace"
+              "text": "Request a shipment of lace"
             }
           ],
           "answer": "A",
