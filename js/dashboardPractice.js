@@ -17,13 +17,13 @@ import {
   getTodayStudyMinutes,
   isDailyTaskDone,
   setDailyTaskDone
-} from "./store.js?v=27.0";
+} from "./store.js?v=27.1";
 import { getIcon } from "./uiIcons.js";
 import {
   estimateListeningScaledScore,
   estimateReadingScaledScore,
   mapTotalScoreToCEFR
-} from "./examSimulator.js?v=27.0";
+} from "./examSimulator.js?v=27.1";
 
 const CHAM_STORAGE_KEY = "neuro_cham_toeic_history_v1";
 const CHAM_DRAFT_KEY = "neuro_cham_toeic_draft_v1";

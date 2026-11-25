@@ -14,9 +14,9 @@
  */
 
 import { getIcon } from "./uiIcons.js";
-import { state, saveState, recordActiveTime } from "./store.js?v=27.0";
-import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js?v=27.0";
-import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=27.0";
+import { state, saveState, recordActiveTime } from "./store.js?v=27.1";
+import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js?v=27.1";
+import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=27.1";
 import { analyzeQuestionTrapsAndTips, decodeRichEntities, stripPart12SpeakerTags } from "./toeicTrapEngine.js?v=25.4";
 
 const CHAM_SVG = {
@@ -510,9 +510,9 @@ class ChamTestCenter {
     return data;
   }
 
-  flushActiveStudyTime() {
+  flushActiveStudyTime(immediate = false) {
     if (this._activeStudySecBuf > 0) {
-      recordActiveTime(this._activeStudySecBuf);
+      recordActiveTime(this._activeStudySecBuf, { immediate });
       if (this.session) {
         this.session._recordedStudySec = (this.session._recordedStudySec || 0) + this._activeStudySecBuf;
       }
@@ -571,11 +571,20 @@ class ChamTestCenter {
     const key = this.getCanonicalQKey(q, session);
     if (!key || !uAns) return "none";
     const items = this.mistakeVault.items || (this.mistakeVault.items = {});
+    const sessionRecSet = session
+      ? (session._mistakeRecordedKeys instanceof Set
+          ? session._mistakeRecordedKeys
+          : (session._mistakeRecordedKeys = new Set()))
+      : null;
     if (uAns !== q.answer) {
       const prev = items[key];
       const slug = q.origSlug || session?.slug;
       const origNum = Number(q.origNum || q.num);
       const catalogMeta = (this.catalog?.tests || []).find((t) => t.slug === slug);
+      const alreadyCountedThisSession = Boolean(sessionRecSet && sessionRecSet.has(key));
+      const nextWrongCount = alreadyCountedThisSession
+        ? Math.max(1, Number(prev?.wrongCount || 1))
+        : Number(prev?.wrongCount || 0) + 1;
       items[key] = {
         slug,
         qNum: origNum,
@@ -583,11 +592,13 @@ class ChamTestCenter {
         testTitle: testTitle || catalogMeta?.title || session?.title || slug,
         lastWrongChoice: uAns,
         correctAnswer: q.answer || "",
-        wrongCount: Number(prev?.wrongCount || 0) + 1,
+        wrongCount: nextWrongCount,
         lastWrongAt: Date.now()
       };
+      if (sessionRecSet) sessionRecSet.add(key);
       return "recorded";
     }
+    if (sessionRecSet) sessionRecSet.delete(key);
     if (items[key]) {
       delete items[key];
       return "graduated";
@@ -629,7 +640,7 @@ class ChamTestCenter {
   }
 
   stopTimersAndAudio() {
-    this.flushActiveStudyTime();
+    this.flushActiveStudyTime(true);
     this.flushQuestionNotes();
     this.clearAudioABLoop();
     if (this.clockInterval) {
@@ -2002,19 +2013,28 @@ class ChamTestCenter {
     if (!filteredGroups.length) return;
 
     const totalQ = filteredGroups.reduce((acc, g) => acc + (g.questions?.length || 0), 0);
-    const pNum = prev.practicePartNum || prev.parts?.[0] || 5;
+    const activeParts = Array.from(new Set(filteredGroups.map((g) => Number(g.part) || 5))).sort((a, b) => a - b);
+    const pNum = prev.isGlobalMistakeReview
+      ? (activeParts[0] || 5)
+      : (prev.practicePartNum || activeParts[0] || 5);
     this.showHelpModal = false;
     this.showReviewModal = false;
     this.showSectionGate = false;
     this.volumeMenuOpen = false;
     this.vocabSaveDraft = null;
     this.focusedQNum = null;
+    this.openNoteQNums.clear();
+    this.clearAudioABLoop();
     this.paletteFilter = "ALL";
     this.listeningReviewTab = "transcript";
     this.dictationState = {};
 
     this.session = {
       ...prev,
+      practicePartNum: pNum,
+      parts: activeParts,
+      hasListeningSection: activeParts.some((p) => p <= 4),
+      hasReadingSection: activeParts.some((p) => p >= 5),
       title: prev.isGlobalMistakeReview
         ? `Ôn lại ${totalQ} câu sai · Kho câu sai`
         : `Ôn lại ${totalQ} câu sai · Part ${pNum}`,
@@ -2028,6 +2048,8 @@ class ChamTestCenter {
       totalSecLimit: 0,
       elapsedSec: 0,
       examPauseSec: 0,
+      _recordedStudySec: 0,
+      _mistakeRecordedKeys: new Set(),
       answers: {},
       eliminations: {},
       flags: {},
@@ -2039,7 +2061,7 @@ class ChamTestCenter {
     };
     this.view = "runner";
     this.mobilePaletteOpen = false;
-    this.syncUrlHash(`#/practice/part/${pNum}/run`);
+    this.syncUrlHash(prev.isGlobalMistakeReview ? "#/practice/mistakes/run" : `#/practice/part/${pNum}/run`);
     this.startSessionClock();
     this.render();
     this.preloadNextGroupAudio();
@@ -2202,7 +2224,10 @@ class ChamTestCenter {
     this.startSessionClock();
     this.render();
     this.preloadNextGroupAudio();
-    showToast(`Bắt đầu ôn ${collectedCount} câu sai! Trả lời đúng sẽ tự động xóa khỏi Kho câu sai.`, "info");
+    const skipNote = offlineSkipped > 0
+      ? ` (bỏ qua ${offlineSkipped} đề chưa tải offline)`
+      : "";
+    showToast(`Bắt đầu ôn ${collectedCount} câu sai${skipNote}! Trả lời đúng sẽ tự động xóa khỏi Kho câu sai.`, "info");
     return true;
   }
 
@@ -3749,8 +3774,9 @@ class ChamTestCenter {
     }
 
     if (!s._recordedStudySec) {
-      recordActiveTime(Math.max(1, Number(resultObj.elapsedSec || 1)));
-      s._recordedStudySec = Math.max(1, Number(resultObj.elapsedSec || 1));
+      const fallbackSec = Math.max(1, Number(resultObj.elapsedSec || 1));
+      recordActiveTime(fallbackSec, { immediate: true });
+      s._recordedStudySec = fallbackSec;
     }
     this.history.attemptsBySlug[s.slug].push({
       id: resultObj.id,
@@ -4310,6 +4336,12 @@ class ChamTestCenter {
       if (lightbox) {
         e.preventDefault();
         lightbox.remove();
+        return;
+      }
+      if (e.target && e.target.matches?.("[data-qnote-q]")) {
+        e.preventDefault();
+        this.flushQuestionNotes();
+        e.target.blur();
         return;
       }
     }
@@ -5936,6 +5968,13 @@ class ChamTestCenter {
         }
         audioEl.addEventListener("timeupdate", syncTimeUI, audioSig);
         audioEl.addEventListener("ended", () => {
+          if (!strictNoScrub && Number.isFinite(this.audioLoopA) && Number.isFinite(this.audioLoopB) && this.audioLoopB > this.audioLoopA + 0.25) {
+            audioEl.currentTime = this.audioLoopA;
+            audioEl.play().catch(() => {
+              if (playBtn) playBtn.innerHTML = getIcon("play", 16);
+            });
+            return;
+          }
           if (playBtn) playBtn.innerHTML = getIcon("play", 16);
           if (!isReview && this.session.mode === "exam") {
             this.triggerExamAudioPauseCountdown();
@@ -6068,8 +6107,17 @@ export function initChamTestCenter(options = {}) {
 
   window.addEventListener("hashchange", checkHashRoute);
   window.addEventListener("beforeunload", () => {
-    center.flushActiveStudyTime();
+    center.flushActiveStudyTime(true);
     center.flushQuestionNotes();
+  });
+  window.addEventListener("storage", (e) => {
+    if (!e) return;
+    if (e.key === CHAM_MISTAKE_VAULT_KEY) {
+      center.reloadMistakeVault();
+      center.onHistoryUpdated();
+    } else if (e.key === CHAM_QNOTES_KEY) {
+      center.reloadQuestionNotes();
+    }
   });
   checkHashRoute();
 

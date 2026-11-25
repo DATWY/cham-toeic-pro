@@ -152,24 +152,26 @@ export function loadState() {
 
 export const state = loadState();
 
-if (typeof window !== "undefined") {
-  window.addEventListener("beforeunload", () => {
-    try {
-      localStorage.setItem(STORAGE_KEY_V3, JSON.stringify(state));
-    } catch (_) {}
-  });
+let saveTimer = null;
+export function saveStateNow() {
+  clearTimeout(saveTimer);
+  saveTimer = null;
+  try {
+    localStorage.setItem(STORAGE_KEY_V3, JSON.stringify(state));
+  } catch (e) {
+    console.warn("Error saving state:", e);
+  }
 }
 
-let saveTimer = null;
 export function saveState() {
   clearTimeout(saveTimer);
-  saveTimer = setTimeout(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY_V3, JSON.stringify(state));
-    } catch (e) {
-      console.warn("Error saving state:", e);
-    }
-  }, 100);
+  saveTimer = setTimeout(saveStateNow, 100);
+}
+
+if (typeof window !== "undefined") {
+  window.addEventListener("beforeunload", () => {
+    saveStateNow();
+  });
 }
 
 export function subscribe(listener) {
@@ -197,13 +199,19 @@ export function getLocalDateKey(date = new Date()) {
 }
 
 /** Update Activity Heatmap Log */
-export function recordActiveTime(seconds = 1) {
+export function recordActiveTime(seconds = 1, options = {}) {
+  const sec = Number(seconds);
+  if (!Number.isFinite(sec) || sec <= 0) return;
   const today = getLocalDateKey();
   if (!state.activityLog[today]) {
     state.activityLog[today] = { seconds: 0, talksCompleted: 0 };
   }
-  state.activityLog[today].seconds = (state.activityLog[today].seconds || 0) + seconds;
-  saveState();
+  state.activityLog[today].seconds = (state.activityLog[today].seconds || 0) + sec;
+  if (options && options.immediate) {
+    saveStateNow();
+  } else {
+    saveState();
+  }
 }
 
 /** Current consecutive study streak in days (counts today or continuing from yesterday) */

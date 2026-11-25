@@ -4,18 +4,18 @@
  */
 
 import { icons, getIcon } from "./uiIcons.js";
-import { state, saveState, subscribe, updateMastery, recordActiveTime, getMasteryScore, getAnswer, setAnswer, deleteAnswer, getConfidence, setConfidence, deleteConfidence, getEliminations, toggleElimination, deleteEliminations } from "./store.js?v=27.0";
+import { state, saveState, subscribe, updateMastery, recordActiveTime, getMasteryScore, getAnswer, setAnswer, deleteAnswer, getConfidence, setConfidence, deleteConfidence, getEliminations, toggleElimination, deleteEliminations } from "./store.js?v=27.1";
 import { getAllFlashcards, saveFlashcard } from "./idb.js";
-import { AudioEngine, ambientSoundscape } from "./audioEngine.js?v=27.0";
-import { VoiceStudio } from "./voiceStudio.js?v=27.0";
-import { TranscriptSync } from "./transcriptSync.js?v=27.0";
-import { ExamSimulator } from "./examSimulator.js?v=27.0";
+import { AudioEngine, ambientSoundscape } from "./audioEngine.js?v=27.1";
+import { VoiceStudio } from "./voiceStudio.js?v=27.1";
+import { TranscriptSync } from "./transcriptSync.js?v=27.1";
+import { ExamSimulator } from "./examSimulator.js?v=27.1";
 import { VocabSRS } from "./vocabSrs.js?v=19.4";
-import { AnalyticsEngine } from "./analytics.js?v=27.0";
-import { initChamTestCenter } from "./chamTestCenter.js?v=27.0";
-import { initMaterialsCenter } from "./materialsCenter.js?v=27.0";
-import { initDashboardAndPractice } from "./dashboardPractice.js?v=27.0";
-import { showToast, clearToasts, openGraphicLightbox, renderMasteryRing, applyHighlights, renderEvidenceAnalysis, renderVocabAndNotes, renderPart7Passages, renderReadingInspectorScript } from "./renderers.js?v=27.0";
+import { AnalyticsEngine } from "./analytics.js?v=27.1";
+import { initChamTestCenter } from "./chamTestCenter.js?v=27.1";
+import { initMaterialsCenter } from "./materialsCenter.js?v=27.1";
+import { initDashboardAndPractice } from "./dashboardPractice.js?v=27.1";
+import { showToast, clearToasts, openGraphicLightbox, renderMasteryRing, applyHighlights, renderEvidenceAnalysis, renderVocabAndNotes, renderPart7Passages, renderReadingInspectorScript } from "./renderers.js?v=27.1";
 
 const CORE_TESTS = window.TOEIC_TESTS || [];
 const EXTRA_PART56_TESTS = Array.isArray(window.TOEIC_PART56_TESTS)
@@ -1616,6 +1616,8 @@ function initServiceWorker() {
   });
 
   document.getElementById("export-state-btn")?.addEventListener("click", async () => {
+    chamCenter?.flushActiveStudyTime?.(true);
+    chamCenter?.flushQuestionNotes?.();
     let chamHistory = null;
     let chamDraft = null;
     let materialsGrammarQuiz = null;
@@ -1687,34 +1689,40 @@ function initServiceWorker() {
           materialsCenter?.reloadQuizAnswers?.();
         }
         if (__mistakeVault && typeof __mistakeVault === "object" && typeof __mistakeVault.items === "object" && !Array.isArray(__mistakeVault.items)) {
-          const cleanItems = {};
-          Object.entries(__mistakeVault.items).forEach(([k, v]) => {
-            if (!v || typeof v !== "object" || typeof v.slug !== "string" || !v.slug.trim()) return;
+          const cleanItems = Object.create(null);
+          const forbiddenKeys = new Set(["__proto__", "constructor", "prototype"]);
+          Object.entries(__mistakeVault.items).forEach(([_rawKey, v]) => {
+            if (!v || typeof v !== "object" || typeof v.slug !== "string") return;
+            const cleanSlug = v.slug.trim();
+            if (!cleanSlug || forbiddenKeys.has(cleanSlug) || cleanSlug.startsWith("practice-part-") || cleanSlug === "practice-mistakes") return;
             const qNum = Number(v.qNum);
             const part = Number(v.part);
             if (!Number.isFinite(qNum) || qNum <= 0) return;
-            cleanItems[k] = {
-              slug: v.slug.trim(),
+            const canonicalKey = `${cleanSlug}:${qNum}`;
+            cleanItems[canonicalKey] = {
+              slug: cleanSlug,
               qNum,
               part: Number.isFinite(part) && part >= 1 && part <= 7 ? part : 5,
-              testTitle: typeof v.testTitle === "string" ? v.testTitle : v.slug.trim(),
+              testTitle: typeof v.testTitle === "string" ? v.testTitle : cleanSlug,
               lastWrongChoice: typeof v.lastWrongChoice === "string" ? v.lastWrongChoice : "",
               correctAnswer: typeof v.correctAnswer === "string" ? v.correctAnswer : "",
               wrongCount: Math.max(1, Number(v.wrongCount) || 1),
               lastWrongAt: Number(v.lastWrongAt) || Date.now()
             };
           });
-          try { localStorage.setItem("neuro_cham_toeic_mistakes_v1", JSON.stringify({ items: cleanItems })); } catch {}
+          try { localStorage.setItem("neuro_cham_toeic_mistakes_v1", JSON.stringify({ items: { ...cleanItems } })); } catch {}
           chamCenter?.reloadMistakeVault?.();
         }
         if (__questionNotes && typeof __questionNotes === "object" && !Array.isArray(__questionNotes)) {
-          const cleanNotes = {};
+          const cleanNotes = Object.create(null);
+          const forbiddenKeys = new Set(["__proto__", "constructor", "prototype"]);
           Object.entries(__questionNotes).forEach(([k, v]) => {
-            if (typeof k === "string" && k.includes(":") && typeof v === "string" && v.trim()) {
-              cleanNotes[k] = v.slice(0, 1200);
-            }
+            if (typeof k !== "string" || !k.includes(":") || typeof v !== "string" || !v.trim()) return;
+            const [slugPart, numPart] = k.split(":");
+            if (!slugPart || forbiddenKeys.has(slugPart) || forbiddenKeys.has(k) || !Number.isFinite(Number(numPart)) || Number(numPart) <= 0) return;
+            cleanNotes[k] = v.slice(0, 1200);
           });
-          try { localStorage.setItem("neuro_cham_toeic_qnotes_v1", JSON.stringify(cleanNotes)); } catch {}
+          try { localStorage.setItem("neuro_cham_toeic_qnotes_v1", JSON.stringify({ ...cleanNotes })); } catch {}
           chamCenter?.reloadQuestionNotes?.();
         }
         if (Array.isArray(__flashcards) && __flashcards.length > 0) {
