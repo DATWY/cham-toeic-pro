@@ -17,7 +17,7 @@ import { getIcon } from "./uiIcons.js";
 import { state, saveState, recordActiveTime } from "./store.js";
 import { estimateListeningScaledScore, estimateReadingScaledScore, mapTotalScoreToCEFR } from "./examSimulator.js";
 import { openGraphicLightbox, showToast, clearToasts } from "./renderers.js?v=19.4";
-import { analyzeQuestionTrapsAndTips, summarizeAttemptTraps, decodeRichEntities, stripPart12SpeakerTags } from "./toeicTrapEngine.js?v=25.2";
+import { analyzeQuestionTrapsAndTips, decodeRichEntities, stripPart12SpeakerTags } from "./toeicTrapEngine.js?v=25.3";
 
 const CHAM_SVG = {
   users: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
@@ -2458,34 +2458,29 @@ class ChamTestCenter {
               const ansOpt = (q.options || []).find((o) => o.choice === q.answer);
               const ansText = cleanChamOptionText(ansOpt?.text || "", q.answer) || parsedP12.options[q.answer] || "";
               const ansPreview = ansText.length > 56 ? `${ansText.slice(0, 55)}…` : ansText;
-              const trapInfo = analyzeQuestionTrapsAndTips({
-                part: curPart,
-                q,
-                group: curGroup,
-                parsedP12,
-                userChoice: uAns
-              });
-              const shouldFoldGroupExpl = (isSinglePart5Group && !q.explanation && Boolean(curGroup.explanationHtml))
-                || (trapInfo.foldGroupExpl && !q.explanation);
+              const isSingleFoldableGroup = (curPart === 1 || curPart === 2 || curPart === 5)
+                && (curGroup.questions || []).length === 1;
+              const trapInfo = (!q.explanation && !isSingleFoldableGroup)
+                ? analyzeQuestionTrapsAndTips({
+                    part: curPart,
+                    q,
+                    group: curGroup,
+                    parsedP12,
+                    userChoice: uAns
+                  })
+                : { perQuestionHtml: "", evidenceQuote: "", evidenceVi: "" };
+
+              const shouldFoldGroupExpl = isSingleFoldableGroup && !q.explanation && Boolean(curGroup.explanationHtml);
               if (shouldFoldGroupExpl) foldedGroupExplIntoCard = true;
               if (trapInfo.perQuestionHtml) extractedPerQCount++;
 
               const bodyRichHtml = q.explanation
                 ? sanitizeChamRichHtml(q.explanation)
-                : (isSinglePart5Group && curGroup.explanationHtml
+                : (shouldFoldGroupExpl
                   ? sanitizeChamRichHtml(curGroup.explanationHtml)
                   : (trapInfo.perQuestionHtml ? sanitizeChamRichHtml(trapInfo.perQuestionHtml) : ""));
 
-              const wrongChoicePill = (uAns && uAns !== q.answer)
-                ? `<span class="v21-expl-wrong-pill">Bạn chọn: (${escHtml(uAns)})</span>`
-                : "";
-              const viStemLine = trapInfo.viStem
-                ? `<div class="v21-vi-stem-line"><strong>Dịch câu hỏi:</strong> ${escHtml(trapInfo.viStem)}</div>`
-                : "";
-              const formulaBlock = trapInfo.formulaBox
-                ? `<div class="v21-formula-box">${getIcon("crosshair", 14)}<span>${escHtml(trapInfo.formulaBox)}</span></div>`
-                : "";
-              const hasEvidence = Boolean(trapInfo.evidenceQuote || trapInfo.evidenceVi);
+              const hasEvidence = !q.explanation && !shouldFoldGroupExpl && Boolean(trapInfo.evidenceQuote || trapInfo.evidenceVi);
               const evidenceBlock = hasEvidence ? `
                 <div class="v21-expl-evidence">
                   ${trapInfo.evidenceQuote ? `<div><strong>Dẫn chứng gốc:</strong> “${escHtml(trapInfo.evidenceQuote)}”</div>` : ""}
@@ -2493,23 +2488,11 @@ class ChamTestCenter {
                 </div>
               ` : "";
 
-              const optBreakdownHTML = (trapInfo.optionBreakdown && trapInfo.optionBreakdown.length) ? `
-                <div class="v21-opt-breakdown">
-                  ${trapInfo.optionBreakdown.map((ob) => `
-                    <div class="v21-opt-bk-row ${ob.isCorrect ? "is-ok" : (ob.isUserChoice ? "is-user-bad" : "is-trap")}">
-                      <span class="v21-opt-bk-letter">${ob.isCorrect ? "✓" : "✕"} ${escHtml(ob.choice)}</span>
-                      <div class="v21-opt-bk-main">
-                        <div class="v21-opt-bk-top">
-                          ${ob.text ? `<strong class="v21-opt-bk-en">${escHtml(ob.text)}</strong>` : ""}
-                          ${ob.viText ? `<span class="v21-opt-bk-vi">— ${escHtml(ob.viText)}</span>` : ""}
-                          <span class="v21-opt-role-badge ${ob.isCorrect ? "is-ok" : "is-trap"}">${escHtml(ob.roleBadge)}</span>
-                        </div>
-                        <div class="v21-opt-bk-reason">${escHtml(ob.reason)}</div>
-                      </div>
-                    </div>
-                  `).join("")}
-                </div>
-              ` : "";
+              if (!bodyRichHtml && !evidenceBlock) return "";
+
+              const wrongChoicePill = (uAns && uAns !== q.answer)
+                ? `<span class="v21-expl-wrong-pill">Bạn chọn: (${escHtml(uAns)})</span>`
+                : "";
 
               return `
               <div class="cham-explanation-box v21-expl-card">
@@ -2519,49 +2502,15 @@ class ChamTestCenter {
                       ${getIcon("sparkles", 14)}
                       <span>Giải thích câu ${q.num}</span>
                     </span>
-                    <span class="v21-qtype-badge">${escHtml(trapInfo.qTypeBadge)}</span>
                   </div>
                   <div class="v21-expl-head-right">
                     ${wrongChoicePill}
                     <span class="v21-expl-ans-pill">Đáp án đúng: (${escHtml(q.answer)})${ansPreview ? ` · ${escHtml(ansPreview)}` : ""}</span>
                   </div>
                 </div>
-                ${viStemLine}
-                ${formulaBlock}
-                ${(bodyRichHtml || evidenceBlock) ? `
-                  <div class="v21-expl-body">
-                    ${evidenceBlock}
-                    ${bodyRichHtml}
-                  </div>
-                ` : ""}
-                <div class="v21-trap-coach">
-                  <div class="v21-trap-head">
-                    <span class="v21-trap-head-main">
-                      ${getIcon("alertTriangle", 14)}
-                      <span>${optBreakdownHTML ? "Phân tích Đúng/Sai &amp; Bẫy từng đáp án" : "Phân tích bẫy &amp; Mẹo giải nhanh"}</span>
-                    </span>
-                    ${trapInfo.isHardTrap ? `<span class="v21-hard-trap-pill">Bẫy ETS cao</span>` : ""}
-                  </div>
-                  ${trapInfo.userMistakeCallout ? `
-                    <div class="v21-mistake-callout">${escHtml(trapInfo.userMistakeCallout)}</div>
-                  ` : ""}
-                  ${optBreakdownHTML || (trapInfo.distractorTraps && trapInfo.distractorTraps.length ? `
-                    <ul class="v21-trap-list">
-                      ${trapInfo.distractorTraps.map((t) => `
-                        <li>
-                          <span class="v21-trap-tag">${t.choice ? `Bẫy (${escHtml(t.choice)}) · ` : ""}${escHtml(t.tag)}</span>
-                          <span class="v21-trap-detail">${escHtml(t.detail)}</span>
-                        </li>
-                      `).join("")}
-                    </ul>
-                  ` : "")}
-                  <div class="v21-tip-row">
-                    ${getIcon("zap", 14)}
-                    <div>
-                      <strong>Mẹo giải nhanh:</strong> ${escHtml(trapInfo.quickTip)}
-                      ${trapInfo.strategyNote ? `<div class="v21-strategy-sub">${escHtml(trapInfo.strategyNote)}</div>` : ""}
-                    </div>
-                  </div>
+                <div class="v21-expl-body">
+                  ${evidenceBlock}
+                  ${bodyRichHtml}
                 </div>
               </div>
               `;
@@ -3312,7 +3261,6 @@ class ChamTestCenter {
     const cefrText = r.cefr || mapTotalScoreToCEFR(r.lcTotal > 0 && r.rcTotal > 0 ? r.scaledTotal : r.scaledTotal * 2);
     const cefrShort = cefrText.split(" ")[0] || "B1";
     const sortedPartStats = Object.values(r.partStats || {}).sort((a, b) => a.part - b.part);
-    const trapSummary = r.wrong > 0 ? summarizeAttemptTraps(s.groups, s.answers, parsePart12Transcript) : { totalWrong: 0, topTraps: [] };
 
     return `
       <div class="v21-container">
@@ -3440,40 +3388,6 @@ class ChamTestCenter {
             </div>
           ` : ""}
         </section>
-
-        ${trapSummary.topTraps.length > 0 ? `
-          <!-- 2b. Diagnostic Map of Recurring Traps in This Test -->
-          <section class="v21-card v21-trap-summary-card" style="margin-top: 16px;">
-            <div class="v21-card-head">
-              <div>
-                <h2 class="v21-section-title" style="display: inline-flex; align-items: center; gap: 7px;">
-                  ${getIcon("alertTriangle", 17)}
-                  <span>Bản đồ Bẫy hay mắc trong bài thi này</span>
-                </h2>
-                <p class="v21-section-sub">Tổng hợp tự động từ ${trapSummary.totalWrong} câu làm sai — bấm trực tiếp vào số câu để xem phân tích bẫy &amp; mẹo sửa lỗi.</p>
-              </div>
-            </div>
-            <div class="v21-trap-summary-grid">
-              ${trapSummary.topTraps.map((tb) => `
-                <div class="v21-trap-summary-item">
-                  <div class="v21-trap-summary-top">
-                    <strong class="v21-trap-summary-name">${escHtml(tb.category)}</strong>
-                    <span class="v21-trap-summary-cnt">${tb.count} câu sai</span>
-                  </div>
-                  <p class="v21-trap-summary-tip">${escHtml(tb.tip)}</p>
-                  <div class="cham-mini-q-pills">
-                    ${tb.items.map((it) => `
-                      <button type="button" class="cham-q-pill is-wrong" style="width: auto; min-width: 34px; padding: 0 7px; height: 26px;"
-                              data-review-gidx="${it.gIdx}" data-review-qnum="${it.num}" title="Câu ${it.num}: Bạn chọn (${it.userAns}) → Đúng (${it.correctAns})">
-                        #${it.num}
-                      </button>
-                    `).join("")}
-                  </div>
-                </div>
-              `).join("")}
-            </div>
-          </section>
-        ` : ""}
 
         <!-- 3. Review & Answer Explanation Panel -->
         <section class="v21-card" style="margin-top: 16px;">
